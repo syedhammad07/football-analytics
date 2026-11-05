@@ -1,0 +1,18 @@
+# Adds every new issue and pull request in this repo to your "Portfolio" project.
+# Needs a repository secret named ADD_TO_PROJECT_PAT (see SETUP.md, step 5).
+name: Add to Portfolio project
+
+on:
+  issues:
+    types: [opened, transferred]
+  pull_request:
+    types: [opened]
+
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@v1.0.2
+        with:
+          project-url: https://github.com/users/syedhammad07/projects/1
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}

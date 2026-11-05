@@ -1,0 +1,7 @@
+pandas>=2.2
+numpy>=1.26
+statsbombpy>=1.13
+matplotlib>=3.8
+mplsoccer>=1.4
+scikit-learn>=1.5
+jupyterlab>=4.2
