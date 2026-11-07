@@ -24,7 +24,7 @@ import numpy as np
 import pandas as pd
 
 ROOT = Path.cwd().parent if Path.cwd().name == "notebooks" else Path.cwd()  # project folder
-REPO = ROOT.parent  # repo root: shared code (src/) and downloaded data (data/raw, data/processed)
+REPO = next(p for p in [ROOT, *ROOT.parents] if (p / "src" / "football_analytics").exists())  # repo root: shared code and downloaded data
 DATA = REPO / "data" / "processed" / "2_27"
 FIGS = ROOT / "reports" / "figures"
 LEI = "Leicester City"

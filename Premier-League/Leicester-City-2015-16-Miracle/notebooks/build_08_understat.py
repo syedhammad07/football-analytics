@@ -28,7 +28,7 @@ import pandas as pd
 from mplsoccer import VerticalPitch
 
 ROOT = Path.cwd().parent if Path.cwd().name == "notebooks" else Path.cwd()  # project folder
-REPO = ROOT.parent  # repo root: shared code (src/) and downloaded data (data/raw, data/processed)
+REPO = next(p for p in [ROOT, *ROOT.parents] if (p / "src" / "football_analytics").exists())  # repo root: shared code and downloaded data
 sys.path.insert(0, str(REPO / "src"))
 from football_analytics.viz import leaderboard
 

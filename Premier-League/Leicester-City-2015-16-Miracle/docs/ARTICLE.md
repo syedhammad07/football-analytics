@@ -318,7 +318,7 @@ The data can't separate skill from luck exactly. But it shows the 5000–1 title
 | [Understat](https://understat.com) (via a [public copy on GitHub](https://github.com/douglasbc/scraping-understat-dataset)) | xG for every shot in 2014/15 and 2015/16, plus player xGChain and xA | Comparing both seasons on one xG model |
 | Published sources (Wikipedia, Sky Sports, Sportskeeda, Spielverlagerung, Coaches' Voice and others) | Fees, spending, tactics, context | Money, signings, tactics |
 
-The full data dictionary, cleaning log and validation checks (e.g. 1,026 goals = 988 + 38 own goals) are in [`dataset.md`](../../docs/dataset.md). Every number in this article is listed, with its evidence, in the [findings log](results.md).
+The full data dictionary, cleaning log and validation checks (e.g. 1,026 goals = 988 + 38 own goals) are in [`dataset.md`](../../../docs/dataset.md). Every number in this article is listed, with its evidence, in the [findings log](results.md).
 
 ### Limitations
 
