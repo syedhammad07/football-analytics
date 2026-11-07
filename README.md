@@ -1,94 +1,51 @@
-# The 5000–1 Season: how Leicester City won the Premier League
+# ⚽ Football Analytics
 
-> **A data analysis of Leicester City's 2015/16 title**, using 1.3 million StatsBomb match events, official Premier League (Opta) stats and published tactical analysis.
+> Data analysis projects on football, built with Python and open event data.
 >
-> Author: **Hammad** · Python · pandas · matplotlib · mplsoccer · Jupyter
+> Author: **Hammad** · BSc Computer Science (Data Science) · Python · pandas · matplotlib · mplsoccer · Jupyter
 
-**📄 Read the full report: [`docs/REPORT.md`](docs/REPORT.md)**
+Each project lives in its own folder with its own report, notebooks and charts. The data pipeline and chart helpers in `src/` are shared.
 
-![Points vs expected points](reports/figures/01_points_vs_expected_points.png)
+## Projects
 
----
-
-## The question
-
-Before the 2015/16 season, bookmakers gave Leicester City **5000–1** odds to win the Premier League. The previous season they had been bottom from November to April and finished 14th. Then they won the league by 10 points. **How?**
-
-## Key findings
-
-| | Finding |
-| --- | --- |
-| 📈 | **A 4th-place team on chances, champions on points.** Their shots were worth 66 expected points; they took **81**, the biggest gap in the league. |
-| 🧱 | **Defence made the difference after Christmas.** They conceded **11 goals in the last 19 games** from chances worth 20 goals. From January they pressed harder and gave up only poor chances. |
-| ⚡ | **Little of the ball, very fast attacks.** 42% possession (3rd-lowest), yet **67% of their shots came within 15 seconds** of winning the ball, the highest in the league. |
-| 🔁 | **The same XI every week.** **33** line-up changes all season, the fewest in the league (next: Spurs, 56). |
-| ⭐ | **Vardy and Mahrez were 1st and 2nd for goals + assists** (29 and 27), ahead of Kane and Agüero. |
-| 🛡️ | **Kanté was 1st in the league** for tackles, interceptions and ball recoveries. Fuchs led for blocks; Huth was 2nd for clearances. |
-| 💷 | **Spent 12th-most (~£27m).** Kanté, Fuchs, Huth and Okazaki cost **£15.6m** together, against **£154m** spent by Man City. |
-| 🚀 | **Vardy went from 5 league goals to 24, Mahrez from 4 to 17.** Vardy's chances got far better; it wasn't lucky finishing. |
-| 🧠 | **Ranieri kept Pearson's direct style but made it lethal.** The same number of passes (13,343 vs 13,370) produced **48% more xG**. |
-
-## Explore the project
-
-| Read | What's inside |
-| --- | --- |
-| 📄 [**Full report**](docs/REPORT.md) | The whole story in 11 sections, with all 23 charts |
-| ✅ [Findings log](docs/results.md) | 38 numbered findings, each with its evidence and a confidence rating |
-| ⚽ [Tactics: Pearson → Ranieri](docs/tactics_pearson_to_ranieri.md) | What Ranieri changed and kept, with every claim sourced |
-| 📓 [Notebooks](notebooks/README.md) | Six notebooks, one per question, all re-runnable |
-| 📊 [Chart gallery](reports/figures/README.md) | Every figure with a one-line takeaway |
-| 🗂️ [Data dictionary](docs/dataset.md) | Sources, cleaning steps and validation checks |
-| 🧭 [Decision records](docs/decisions/) | Why this data and this season |
-
-## Highlights
-
-| | |
-| --- | --- |
-| ![Tactical profile](reports/figures/18_leicester_tactical_profile.png) | ![Mahrez dribbles](reports/figures/09_mahrez_dribbles.png) |
-| ![Spend vs points](reports/figures/10_spend_vs_points.png) | ![Mid-season change](reports/figures/19_mid_season_change.png) |
-
-## Data
-
-| Source | What it contains | Used for |
+| Project | Question | Highlights |
 | --- | --- | --- |
-| [StatsBomb Open Data](https://github.com/statsbomb/open-data) | Premier League 2015/16: 380 matches, 1,305,608 on-ball events with locations and xG | All 2015/16 player and team analysis |
-| [Premier League stats](https://www.premierleague.com/en/stats) (Opta) | Season totals for Leicester players and the club, 2014/15 and 2015/16 (`data/external/`) | Comparing the two seasons |
-| EA Sports PPI via Sky Sports | Distance covered | Running analysis |
+| 🦊 [**Leicester City 2015-16 Miracle**](Leicester-City-2015-16-Miracle/) | How did a 5000–1 outsider win the Premier League? | 1.3M events · 28 charts · 48 findings · [article](Leicester-City-2015-16-Miracle/docs/ARTICLE.md) |
+| _Next project_ | _Coming soon_ | |
 
-| Dataset | Size |
-| --- | --- |
-| Matches | 380 (20 teams) |
-| On-ball events | 1,305,608 |
-| Players | 550 (327 with 900+ minutes) |
+### Leicester City 2015-16 Miracle
 
-Raw and processed data (~80 MB) aren't stored in the repo; the scripts below rebuild them in about five minutes. A sample is in [`data/sample/`](data/sample/player_season_2015_16.csv).
+[![Points vs expected points](Leicester-City-2015-16-Miracle/reports/figures/01_points_vs_expected_points.png)](Leicester-City-2015-16-Miracle/)
 
-## Project structure
+- Their chances were worth a **4th-place** total (66 points); they won the league with **81**.
+- **42% possession**, but **67%** of their shots came within 15 seconds of winning the ball.
+- **Vardy and Mahrez** were 1st and 2nd for goals + assists; **Kanté** was 1st for tackles, interceptions and ball recoveries.
+- They spent the **12th-most** that summer (~£27m); Man City spent £154m and finished 15 points behind.
+- Ranieri kept Pearson's direct style (the same number of passes) but it produced **48% more xG**.
+
+**➡️ [Open the project](Leicester-City-2015-16-Miracle/)** · [Read the article](Leicester-City-2015-16-Miracle/docs/ARTICLE.md) · [Findings log](Leicester-City-2015-16-Miracle/docs/results.md) · [Chart gallery](Leicester-City-2015-16-Miracle/reports/figures/README.md)
+
+## Repository structure
 
 ```
 football-analytics/
-├── README.md                  ← you are here
+├── README.md                          ← you are here
+├── Leicester-City-2015-16-Miracle/    ← project 1: report, notebooks, charts, findings
+├── src/football_analytics/            ← shared code
+│   ├── data.py                        ← download StatsBomb open data
+│   ├── clean.py                       ← clean events, compute minutes played
+│   ├── pl_stats.py                    ← parse Premier League (Opta) stats
+│   ├── understat.py                   ← download Understat shot and player data
+│   └── viz.py                         ← shared chart helpers
 ├── docs/
-│   ├── REPORT.md              ← the full written report
-│   ├── results.md             ← numbered findings with evidence
-│   ├── tactics_pearson_to_ranieri.md
-│   ├── dataset.md             ← data dictionary, cleaning log, validation
-│   └── decisions/             ← decision records
-├── notebooks/                 ← 02–07: one notebook per question (+ the scripts that build them)
-├── reports/figures/           ← all 23 charts
-├── src/football_analytics/
-│   ├── data.py                ← download StatsBomb data
-│   ├── clean.py               ← clean events, compute minutes played
-│   ├── pl_stats.py            ← parse Premier League (Opta) stats
-│   └── viz.py                 ← shared chart helpers
-├── data/
-│   ├── external/              ← Premier League stats (committed, small)
-│   ├── sample/                ← sample of the season player table
-│   ├── raw/ · processed/      ← rebuilt locally (git-ignored)
-└── requirements.txt
+│   ├── dataset.md                     ← data dictionary, cleaning log, validation
+│   └── decisions/                     ← repo-wide decision records
+├── data/                              ← raw/ and processed/ are rebuilt locally (git-ignored)
+├── requirements.txt
+└── pyproject.toml
 ```
 
-## How to run
+## Setup
 
 ```bash
 git clone https://github.com/syedhammad07/football-analytics.git
@@ -100,8 +57,18 @@ pip install -e .                       # makes src/football_analytics importable
 
 python -m football_analytics.data 2 27 # download Premier League 2015/16 (~4 min)
 python -m football_analytics.clean     # clean events, compute minutes played (~15 s)
-jupyter lab                            # open notebooks/ and run 02 → 07
+python -m football_analytics.understat # download Understat shots, 2014/15 and 2015/16 (~5 s)
 ```
+
+Then open a project folder and follow its README.
+
+## Data
+
+- [StatsBomb Open Data](https://github.com/statsbomb/open-data): free event data for non-commercial use with attribution.
+- [Premier League stats](https://www.premierleague.com/en/stats) (Opta): season totals, used where StatsBomb has no data.
+- [Understat](https://understat.com) shot data (via [a public copy](https://github.com/douglasbc/scraping-understat-dataset)): xG for every shot from 2014/15.
+
+See [`docs/dataset.md`](docs/dataset.md) for the data dictionary and cleaning log.
 
 ## Progress
 
@@ -109,4 +76,4 @@ Tracked on my GitHub Project board **Portfolio** (Area: Football analytics).
 
 ## Acknowledgements
 
-Event data provided by [StatsBomb](https://statsbomb.com/) Open Data. Season statistics from the [Premier League](https://www.premierleague.com/) (Opta). Tactical context from the sources listed in the [report](docs/REPORT.md#11-sources).
+Event data provided by [StatsBomb](https://statsbomb.com/) Open Data.

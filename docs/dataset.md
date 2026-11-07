@@ -8,7 +8,7 @@
 - **Downloaded on:** 2026-11-05
 - **Access:** `python -m football_analytics.data 2 27`, then `python -m football_analytics.clean`
 
-Why this season: see [decisions/0002-premier-league-2015-16.md](decisions/0002-premier-league-2015-16.md).
+Why this season: see [0002-premier-league-2015-16.md](../Leicester-City-2015-16-Miracle/docs/decisions/0002-premier-league-2015-16.md).
 
 ## Raw tables (`data/raw/2_27/`, not committed)
 

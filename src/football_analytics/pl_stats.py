@@ -1,6 +1,6 @@
 """Parse player season stats copied from premierleague.com player pages.
 
-Each line of data/external/pl_raw.txt is `<slug>@<season start year>#<label>|<value>|...`, taken from
+Each line of Leicester-City-2015-16-Miracle/data/external/pl_raw.txt is `<slug>@<season start year>#<label>|<value>|...`, taken from
 https://www.premierleague.com/en/players/<id>/<slug>/stats?season=<year>. Section headers (Attack,
 Possession, ...) carry no value. Missing stats (e.g. Goals for a player who scored none) mean zero.
 """
@@ -54,7 +54,7 @@ def parse_line(line):
     return row
 
 
-def load(path="data/external/pl_raw.txt"):
+def load(path="Leicester-City-2015-16-Miracle/data/external/pl_raw.txt"):
     rows = [parse_line(l) for l in Path(path).read_text(encoding="utf-8").splitlines() if l.strip()]
     df = pd.DataFrame(rows).fillna(0)
     df["pl_id"] = df.slug.map(PL_IDS)
@@ -64,6 +64,6 @@ def load(path="data/external/pl_raw.txt"):
 
 if __name__ == "__main__":
     out = load()
-    out.to_csv("data/external/pl_player_seasons_2014_2016.csv", index=False)
+    out.to_csv("Leicester-City-2015-16-Miracle/data/external/pl_player_seasons_2014_2016.csv", index=False)
     print(out[["player", "season", "appearances", "minutes_played", "goals", "assists", "xg", "xa",
                "total_tackles", "interceptions"]].to_string())
