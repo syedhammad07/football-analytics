@@ -5,6 +5,7 @@ Data analysis projects on the English Premier League. Part of [**football-analyt
 | Project | Season | Question | Read |
 | --- | --- | --- | --- |
 | 🦊 [**Leicester City 2015-16 Miracle**](Leicester-City-2015-16-Miracle/) | 2015/16 | How did a 5000–1 outsider win the Premier League? | [Article](Leicester-City-2015-16-Miracle/docs/ARTICLE.md) · [PDF](Leicester-City-2015-16-Miracle/reports/Leicester_2015-16_article.pdf) · [Findings](Leicester-City-2015-16-Miracle/docs/results.md) |
+| 🔵 [**Chelsea 2016-17: From 10th to Champions**](Chelsea-2016-17-Conte/) | 2016/17 | How did Conte turn a 10th-place team into champions in one season? | [Report](Chelsea-2016-17-Conte/docs/ARTICLE.md) · [PDF](Chelsea-2016-17-Conte/reports/Chelsea_2016-17_article.pdf) · [Findings](Chelsea-2016-17-Conte/docs/results.md) |
 | _Next project_ | | _Coming soon_ | |
 
 [![Points vs expected points](Leicester-City-2015-16-Miracle/reports/figures/01_points_vs_expected_points.png)](Leicester-City-2015-16-Miracle/)

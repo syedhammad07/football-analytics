@@ -6,7 +6,11 @@ ABBR = {"AFC Bournemouth": "BOU", "Arsenal": "ARS", "Aston Villa": "AVL", "Chels
         "Everton": "EVE", "Leicester City": "LEI", "Liverpool": "LIV", "Manchester City": "MCI", "Manchester United": "MUN",
         "Newcastle United": "NEW", "Norwich City": "NOR", "Southampton": "SOU", "Stoke City": "STK", "Sunderland": "SUN",
         "Swansea City": "SWA", "Tottenham Hotspur": "TOT", "Watford": "WAT", "West Bromwich Albion": "WBA",
-        "West Ham United": "WHU"}
+        "West Ham United": "WHU",
+        # Understat spellings
+        "Bournemouth": "BOU", "Burnley": "BUR", "Hull": "HUL", "Leicester": "LEI", "Middlesbrough": "MID",
+        "Swansea": "SWA", "Stoke": "STK", "Tottenham": "TOT", "West Ham": "WHU", "Watford": "WAT",
+        "West Bromwich Albion": "WBA", "Newcastle United": "NEW", "Norwich": "NOR", "Aston Villa": "AVL"}
 
 
 def leaderboard(ax, values, names, teams, highlight_team="Leicester City", n=10, fmt="{:.0f}", title=None):

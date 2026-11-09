@@ -13,6 +13,7 @@ Projects are grouped by competition. Each project has its own folder with an art
 | Project | Question | Highlights |
 | --- | --- | --- |
 | 🦊 [**Leicester City 2015-16 Miracle**](Premier-League/Leicester-City-2015-16-Miracle/) | How did a 5000–1 outsider win the Premier League? | 1.3M events · 28 charts · 48 findings · [article](Premier-League/Leicester-City-2015-16-Miracle/docs/ARTICLE.md) |
+| 🔵 [**Chelsea 2016-17: From 10th to Champions**](Premier-League/Chelsea-2016-17-Conte/) | How did Conte turn a 10th-place team into champions? | 21 figures · 35 findings · [report](Premier-League/Chelsea-2016-17-Conte/docs/ARTICLE.md) |
 | _Next project_ | _Coming soon_ | |
 
 ### Leicester City 2015-16 Miracle
@@ -61,7 +62,7 @@ pip install -e .                       # makes src/football_analytics importable
 
 python -m football_analytics.data 2 27 # download Premier League 2015/16 (~4 min)
 python -m football_analytics.clean     # clean events, compute minutes played (~15 s)
-python -m football_analytics.understat # download Understat shots, 2014/15 and 2015/16 (~5 s)
+python -m football_analytics.understat # download Understat shots, 2014/15 to 2016/17 (~5 s)
 ```
 
 Then open a project folder and follow its README.
