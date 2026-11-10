@@ -1,6 +1,6 @@
-# Xabi Alonso's Leverkusen: the philosophy in the data
+# Xabi Alonso 23-24: how Leverkusen went unbeaten
 
-**How Bayer Leverkusen went a whole Bundesliga season unbeaten, told through seven ideas and nine charts.**
+**Seven of Xabi Alonso's ideas, tested in the data, and one honest question: did they deserve it? Twelve charts.**
 
 *By Hammad · Data: StatsBomb open data, all 34 of Leverkusen's 2023/24 Bundesliga matches · Each idea is described from published analysis, then tested against the data*
 
@@ -16,8 +16,18 @@
 | **Share of all passes** | 62% on average; more than half in 28 of 34 games |
 | **Pass completion** | 88% (opponents 80%) |
 | **Goals in stoppage time** | 8, worth 9 points |
+| **Expected points** | 75 (what their chances were worth) |
+| **Chance of going unbeaten on those chances** | 0.3%, about 1 season in 345 |
 
-> **The short version.** Alonso's Leverkusen controlled games with the ball, built patiently from the goalkeeper, attacked through the middle with two wing-backs pushed high, won the ball back in the opponent's half, and refused to lose: three of their six draws were rescued in stoppage time.
+> **The short version.** Alonso's Leverkusen controlled games with the ball, built patiently from the goalkeeper, attacked through the middle with two wing-backs pushed high, and won the ball back in the opponent's half. That made them the best team in almost every game they played. Going **unbeaten** took something extra: finishing 16 goals above their chances, and three draws rescued in stoppage time. Replay their season from its chances 10,000 times, and they go unbeaten in only 29.
+
+## The question
+
+Bayer Leverkusen had never won the Bundesliga. In 2023/24 they won it without losing a game, the first team ever to do so. **How?**
+
+This report answers in two parts:
+- **Ideas 1–7:** what Xabi Alonso built. Each idea is described from published analysis, then tested against the data.
+- **The verdict:** whether the results matched the performances, using an expected-points simulation of every match.
 
 ---
 
@@ -135,6 +145,47 @@ Leverkusen's habit of scoring in the last minutes became a catchphrase in German
 
 ---
 
+## The verdict · Did they deserve to go unbeaten?
+
+Ideas 1–7 show a team that controlled almost every game. But did the performances add up to *34 games without a defeat*? To find out, I replayed every match 10,000 times. Each shot becomes a goal with a probability equal to its xG, so each replay gives a new score built from the same chances.
+
+![Points vs expected points](../reports/figures/10_points_vs_expected_points.png)
+
+*Figure 10 · Actual points vs expected points through the season.*
+
+**They were the best team, clearly.** Leverkusen created **72.7 xG and conceded 27.8**, and had the better chances in **29 of their 34 games**. Their chances were worth **75 points**, 2.2 per game, the output of a very strong side.
+
+**But they took 90.** The gap opened early and kept growing. It came from both boxes: they scored **89 goals from 72.7 xG** (16 above their chances) and conceded **24 from 27.8 xG** against (4 fewer than expected). Add the 8 stoppage-time goals from Idea 7, and that is where the extra 15 points came from.
+
+![Match probabilities](../reports/figures/11_match_probabilities.png)
+
+*Figure 11 · Each match's win, draw and defeat probabilities from 10,000 replays.*
+
+Figure 11 shows how close the run came to ending. In **six games** Leverkusen would have lost at least a third of the time on their chances, and they lost none of them:
+
+| Match | Score | Chance of defeat on the chances |
+| --- | --- | --- |
+| Stuttgart (A), matchday 14 | 1-1 | **60%** |
+| Leipzig (H), matchday 1 | 3-2 | 43% |
+| Hoffenheim (A), matchday 10 | 3-2 | 41% |
+| Stuttgart (H), matchday 31 | 2-2 | 41% |
+| Bayern (A), matchday 4 | 2-2 | 38% |
+| Mainz (H), matchday 23 | 2-1 | 35% |
+
+![Simulated defeats](../reports/figures/12_simulated_defeats.png)
+
+*Figure 12 · Defeats in each of 10,000 simulated seasons.*
+
+Across 10,000 simulated seasons, Leverkusen lost **4.8 games on average**. They went unbeaten in **0.3%** of them, about **one season in 345**, and reached 90 points in fewer than 1%.
+
+> **Verdict.** Leverkusen deserved the title: on their chances they were a 75-point team, and no simulation needed luck to make them very good. Going *unbeaten* was different. That needed elite finishing, a goalkeeper and defence that beat their expected goals, and the habit of scoring last. Some of that is skill, some of it is luck, and the data can't fully separate the two.
+
+**Two reasons the simulation may be too harsh.** First, teams that are winning often sit back and take fewer shots, so xG tends to undersell dominant sides. Second, the replays treat each shot as independent, so they can't model a team that keeps attacking until it scores, which is exactly what "Xabi time" describes.
+
+**What happened next.** In 2024/25 Leverkusen finished **second with 69 points**, and Alonso left at the end of the season. In my [Chelsea 2016/17 project](../../../Premier-League/Chelsea-2016-17-Conte/), Conte's champions also took about 17 points more than their chances were worth, and finished 5th the next year. Seasons this far above expectation are rarely repeated.
+
+---
+
 ## What clubs can learn
 
 1. **One clear shape, with roles everyone understands.** Alonso stuck with the 3-4-2-1, and a whole season of averages in Figure 4 still looks like the team sheet.
@@ -142,6 +193,7 @@ Leverkusen's habit of scoring in the last minutes became a catchphrase in German
 3. **Use full-backs who can attack.** Grimaldo and Frimpong scored or assisted 39 goals between them.
 4. **Possession is a tool, not a rule.** The best result of the season came with 39% of the ball.
 5. **Fitness and belief at the end.** Nine points came after the 90th minute. That is depth, conditioning and mentality as much as tactics.
+6. **Judge the performances, not just the results.** Leverkusen were a 75-point team that took 90. Planning the next season around the 90 would mean planning on the finishing and the late goals happening again.
 
 ---
 
@@ -158,12 +210,15 @@ Leverkusen's habit of scoring in the last minutes became a catchphrase in German
 - **Thirds** are measured from each team's own goal line (0–40, 40–80, 80–120 yards).
 - **Passes into the box** are completed passes ending in the penalty area that started outside it; "left wing" and "right wing" are the 18 yards nearest each touchline.
 - **Goals** include own goals scored by opponents (3). Assists are as recorded by StatsBomb.
+- **Expected points:** each match replayed 10,000 times (seed 42). Every shot is a goal with probability equal to its StatsBomb xG, penalties included; own goals aren't shots, so they aren't simulated. The same replays, added up across all 34 matches, give 10,000 simulated seasons.
 
 ### Limitations
 
 - Event data records what happens on the ball. It can't show off-ball movement, so the press and the shape without the ball are inferred from where actions happened.
 - Fewer pressures per match partly reflects how little of the ball opponents had; the useful comparison is where pressures happened, not how many.
 - The descriptions of Alonso's ideas come from published analysis, not from the coach himself, except where quoted.
+
+- The simulation ignores game state (teams that lead often stop attacking) and treats every shot as independent, so it tends to undersell dominant teams. Read the 0.3% as "very unlikely", not as a precise figure.
 
 ### Sources
 
@@ -173,3 +228,4 @@ Leverkusen's habit of scoring in the last minutes became a catchphrase in German
 - [Xabi Alonso's Bayer Leverkusen tactics](https://www.bundesliga.com/en/bundesliga/news/xabi-alonso-bayer-leverkusen-tactics-25350), bundesliga.com
 - [Leverkusen midfield analysis: Xhaka, Andrich, Palacios](https://www.bundesliga.com/en/bundesliga/news/bayer-leverkusen-midfield-tactical-analysis-xhaka-andrich-palacios-26871), bundesliga.com
 - [The statistics behind Leverkusen's historic unbeaten Bundesliga title win](https://www.aljazeera.com/sports/2024/5/19/the-statistics-behind-leverkusens-historic-unbeaten-bundesliga-title-win), Al Jazeera
+- [2024/25 season review, part II](https://www.bayer04.de/en-us/news/bayer04/202425-season-review-part-ii-from-title-dreams-to-goodbye-tears), Bayer 04 Leverkusen

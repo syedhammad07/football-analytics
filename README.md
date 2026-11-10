@@ -20,7 +20,7 @@ Projects are grouped by competition. Each project has its own folder with an art
 
 | Project | Question | Highlights |
 | --- | --- | --- |
-| 🔴 [**Xabi Alonso 23-24**](Managers/Xabi-Alonso-23-24/) | How did Xabi Alonso's Leverkusen go a whole Bundesliga season unbeaten? | 9 charts · [article](Managers/Xabi-Alonso-23-24/docs/ARTICLE.md) · [PDF](Managers/Xabi-Alonso-23-24/reports/Leverkusen_2023-24_Alonso_article.pdf) · [one-page report](Managers/Xabi-Alonso-23-24/reports/Leverkusen_build_up_one_page.pdf) |
+| 🔴 [**Xabi Alonso 23-24**](Managers/Xabi-Alonso-23-24/) | How did Xabi Alonso's Leverkusen go a whole Bundesliga season unbeaten? | 12 charts · [report](Managers/Xabi-Alonso-23-24/docs/ARTICLE.md) · [PDF](Managers/Xabi-Alonso-23-24/reports/Leverkusen_2023-24_Alonso_article.pdf) · [one-page report](Managers/Xabi-Alonso-23-24/reports/Leverkusen_build_up_one_page.pdf) |
 
 ### Leicester City 2015-16 Miracle
 

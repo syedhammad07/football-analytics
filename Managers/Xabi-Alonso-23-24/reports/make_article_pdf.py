@@ -128,12 +128,12 @@ def footer(c, doc):
     c.saveState()
     c.setFillColor(BLUE); c.rect(0, A4[1] - 6, A4[0], 6, fill=1, stroke=0)
     c.setFont(BODY, 8); c.setFillColor(MUTED)
-    c.drawString(20 * mm, 10 * mm, "Xabi Alonso's Leverkusen · 2023/24 · Hammad")
+    c.drawString(20 * mm, 10 * mm, "Xabi Alonso 23-24 · How Leverkusen went unbeaten · Hammad")
     c.drawRightString(A4[0] - 20 * mm, 10 * mm, str(doc.page))
     c.restoreState()
 
 doc = SimpleDocTemplate(str(OUT), pagesize=A4, leftMargin=20 * mm, rightMargin=20 * mm,
                         topMargin=18 * mm, bottomMargin=18 * mm,
-                        title="Xabi Alonso's Leverkusen", author="Hammad")
+                        title="Xabi Alonso 23-24", author="Hammad")
 doc.build(story, onFirstPage=footer, onLaterPages=footer)
 print("saved", OUT)

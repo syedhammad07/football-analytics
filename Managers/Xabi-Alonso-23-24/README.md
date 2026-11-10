@@ -1,10 +1,10 @@
 # Xabi Alonso 23-24
 
-How Xabi Alonso's Bayer Leverkusen went a whole Bundesliga season unbeaten: his ideas, tested against StatsBomb event data for all 34 league matches. A nine-chart article on his philosophy, plus a one-page build-up report.
+How Xabi Alonso's Bayer Leverkusen went a whole Bundesliga season unbeaten: his ideas, tested against StatsBomb event data for all 34 league matches. A twelve-chart report on his ideas and on whether they deserved to go unbeaten, plus a one-page build-up report.
 
 > Part of [**football-analytics**](../../README.md) › [**Managers**](../README.md) · Author: **Hammad** · Python · pandas · matplotlib · mplsoccer · Jupyter
 
-**📄 [The one-page report (PDF)](reports/Leverkusen_build_up_one_page.pdf)** · **📖 [Xabi Alonso's Leverkusen: the philosophy in the data](docs/ARTICLE.md)** ([PDF](reports/Leverkusen_2023-24_Alonso_article.pdf))
+**📄 [The one-page report (PDF)](reports/Leverkusen_build_up_one_page.pdf)** · **📖 [Xabi Alonso 23-24: how Leverkusen went unbeaten](docs/ARTICLE.md)** ([PDF](reports/Leverkusen_2023-24_Alonso_article.pdf))
 
 ## The question
 
@@ -36,6 +36,11 @@ How Xabi Alonso's Bayer Leverkusen went a whole Bundesliga season unbeaten: his 
 - **Central:** 16.1 passes into the box per match (opponents 7.6), half through the middle; only 16% were crosses.
 - **"Xabi time":** 8 stoppage-time goals, 0 conceded, worth 9 points. Without them, 3 of the 6 draws were defeats.
 
+**Did they deserve to go unbeaten?** ([verdict](docs/ARTICLE.md#the-verdict--did-they-deserve-to-go-unbeaten))
+- Their chances were worth **75 points**; they took **90**. They scored 89 from 72.7 xG and conceded 24 from 27.8.
+- In **6 games** they'd have lost at least a third of the time on their chances, and lost none.
+- Replaying the season 10,000 times, they lost **4.8 games on average** and went unbeaten in **0.3%** of seasons (about 1 in 345).
+
 ## Charts
 
 | | |
@@ -58,6 +63,17 @@ How Xabi Alonso's Bayer Leverkusen went a whole Bundesliga season unbeaten: his 
 | [![Passes into the box](reports/figures/08_passes_into_the_box.png)](reports/figures/08_passes_into_the_box.png) | [![Goals by minute](reports/figures/09_goals_by_minute.png)](reports/figures/09_goals_by_minute.png) |
 | **8 ·** Half of all box entries through the middle | **9 ·** "Xabi time": 8 stoppage-time goals, 9 points |
 
+### The verdict
+
+| | |
+| --- | --- |
+| [![Points vs expected points](reports/figures/10_points_vs_expected_points.png)](reports/figures/10_points_vs_expected_points.png) | [![Simulated defeats](reports/figures/12_simulated_defeats.png)](reports/figures/12_simulated_defeats.png) |
+| **10 ·** 90 points from chances worth 75 | **12 ·** Unbeaten in 0.3% of 10,000 simulated seasons |
+
+[![Match probabilities](reports/figures/11_match_probabilities.png)](reports/figures/11_match_probabilities.png)
+
+**11 ·** Every match's win, draw and defeat probabilities.
+
 ## Method
 
 - **Data:** [StatsBomb open data](https://github.com/statsbomb/open-data), Bundesliga 2023/24 (competition 9, season 281): Leverkusen's 34 league matches, 137,765 events.
@@ -75,8 +91,8 @@ From the repo root, after the [setup](../../README.md#setup):
 ```bash
 python -m football_analytics.data 9 281          # download the data (~20 s)
 cd Managers/Xabi-Alonso-23-24
-python notebooks/build_01_build_up.py && python notebooks/build_02_alonso_style.py
-jupyter nbconvert --to notebook --execute --inplace notebooks/01_build_up.ipynb notebooks/02_alonso_style.ipynb
+python notebooks/build_01_build_up.py && python notebooks/build_02_alonso_style.py && python notebooks/build_03_deserved.py
+jupyter nbconvert --to notebook --execute --inplace notebooks/01_build_up.ipynb notebooks/02_alonso_style.ipynb notebooks/03_deserved.ipynb
 ```
 
 The notebook writes the charts to `reports/figures/` and the one-page report to `reports/`.
@@ -87,16 +103,18 @@ The notebook writes the charts to `reports/figures/` and the one-page report to 
 Xabi-Alonso-23-24/
 ├── README.md                              ← you are here
 ├── docs/
-│   └── ARTICLE.md                         ← Xabi Alonso's philosophy, tested in 9 charts
+│   └── ARTICLE.md                         ← the report: 7 ideas + the verdict, 12 charts
 ├── notebooks/
 │   ├── build_01_build_up.py               ← builds notebook 01
 │   ├── 01_build_up.ipynb                  ← build-up analysis, charts 1–3, the one-page report
 │   ├── build_02_alonso_style.py           ← builds notebook 02
-│   └── 02_alonso_style.ipynb              ← Alonso's style, charts 4–9
+│   ├── 02_alonso_style.ipynb              ← Alonso's style, charts 4–9
+│   ├── build_03_deserved.py               ← builds notebook 03
+│   └── 03_deserved.ipynb                  ← expected-points simulation, charts 10–12
 └── reports/
     ├── Leverkusen_build_up_one_page.pdf   ← the report
     ├── Leverkusen_build_up_one_page.png
     ├── Leverkusen_2023-24_Alonso_article.pdf ← the article as a PDF
     ├── make_article_pdf.py                ← builds that PDF
-    └── figures/                           ← 9 charts
+    └── figures/                           ← 12 charts
 ```
