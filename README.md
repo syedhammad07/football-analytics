@@ -22,6 +22,12 @@ Projects are grouped by competition. Each project has its own folder with an art
 | --- | --- | --- |
 | 🔴 [**Xabi Alonso 23-24**](Managers/Xabi-Alonso-23-24/) | How did Xabi Alonso's Leverkusen go a whole Bundesliga season unbeaten? | 12 charts · [report](Managers/Xabi-Alonso-23-24/docs/ARTICLE.md) · [PDF](Managers/Xabi-Alonso-23-24/reports/Leverkusen_2023-24_Alonso_article.pdf) · [one-page report](Managers/Xabi-Alonso-23-24/reports/Leverkusen_build_up_one_page.pdf) |
 
+### 👤 [Players](Players/)
+
+| Project | Question | Highlights |
+| --- | --- | --- |
+| 🩵 [**Yaya Touré: Was He Under-Rated?**](Players/Yaya-Toure-Man-City/) | Was Yaya Touré under-rated, and who really was? | 1,629 midfielder-seasons · under-rated model · 11 charts · [report](Players/Yaya-Toure-Man-City/docs/ARTICLE.md) |
+
 ### Leicester City 2015-16 Miracle
 
 [![Points vs expected points](Premier-League/Leicester-City-2015-16-Miracle/reports/figures/01_points_vs_expected_points.png)](Premier-League/Leicester-City-2015-16-Miracle/)
@@ -46,6 +52,9 @@ football-analytics/
 ├── Managers/                          ← projects about a manager's ideas
 │   ├── README.md
 │   └── Xabi-Alonso-23-24/              ← Leverkusen 2023/24: article, one-page report, charts
+├── Players/                           ← projects about one player
+│   ├── README.md
+│   └── Yaya-Toure-Man-City/            ← was Yaya Touré under-rated? report + model
 ├── src/football_analytics/            ← shared code
 │   ├── data.py                        ← download StatsBomb open data
 │   ├── clean.py                       ← clean events, compute minutes played
