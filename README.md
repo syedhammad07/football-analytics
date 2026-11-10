@@ -16,6 +16,12 @@ Projects are grouped by competition. Each project has its own folder with an art
 | 🔵 [**Chelsea 2016-17: From 10th to Champions**](Premier-League/Chelsea-2016-17-Conte/) | How did Conte turn a 10th-place team into champions? | 21 figures · 35 findings · [report](Premier-League/Chelsea-2016-17-Conte/docs/ARTICLE.md) |
 | _Next project_ | _Coming soon_ | |
 
+### 🧠 [Managers](Managers/)
+
+| Project | Question | Highlights |
+| --- | --- | --- |
+| 🔴 [**Xabi Alonso 23-24**](Managers/Xabi-Alonso-23-24/) | How did Xabi Alonso's Leverkusen go a whole Bundesliga season unbeaten? | 9 charts · [article](Managers/Xabi-Alonso-23-24/docs/ARTICLE.md) · [PDF](Managers/Xabi-Alonso-23-24/reports/Leverkusen_2023-24_Alonso_article.pdf) · [one-page report](Managers/Xabi-Alonso-23-24/reports/Leverkusen_build_up_one_page.pdf) |
+
 ### Leicester City 2015-16 Miracle
 
 [![Points vs expected points](Premier-League/Leicester-City-2015-16-Miracle/reports/figures/01_points_vs_expected_points.png)](Premier-League/Leicester-City-2015-16-Miracle/)
@@ -35,7 +41,11 @@ football-analytics/
 ├── README.md                          ← you are here
 ├── Premier-League/                   ← Premier League projects
 │   ├── README.md
-│   └── Leicester-City-2015-16-Miracle/ ← project 1: article, notebooks, charts, findings
+│   ├── Leicester-City-2015-16-Miracle/ ← article, notebooks, charts, findings
+│   └── Chelsea-2016-17-Conte/          ← report, notebooks, charts, findings
+├── Managers/                          ← projects about a manager's ideas
+│   ├── README.md
+│   └── Xabi-Alonso-23-24/              ← Leverkusen 2023/24: article, one-page report, charts
 ├── src/football_analytics/            ← shared code
 │   ├── data.py                        ← download StatsBomb open data
 │   ├── clean.py                       ← clean events, compute minutes played
@@ -63,6 +73,7 @@ pip install -e .                       # makes src/football_analytics importable
 python -m football_analytics.data 2 27 # download Premier League 2015/16 (~4 min)
 python -m football_analytics.clean     # clean events, compute minutes played (~15 s)
 python -m football_analytics.understat # download Understat shots, 2014/15 to 2016/17 (~5 s)
+python -m football_analytics.data 9 281 # download Bundesliga 2023/24, Leverkusen's matches (~20 s)
 ```
 
 Then open a project folder and follow its README.
