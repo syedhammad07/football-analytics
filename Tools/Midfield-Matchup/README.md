@@ -4,7 +4,7 @@
 
 [**➡️ Open the tool**](https://syedhammad07.github.io/football-analytics/Tools/Midfield-Matchup/)
 
-![Midfield Matchup (Premier League Edition)](screenshot.png)
+![Midfield Matchup (Premier League Edition)](screenshot-opening.png)
 
 ## What it does
 
