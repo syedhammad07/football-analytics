@@ -1,19 +1,21 @@
-# Midfield Compare
+# Midfield Matchup
 
 **Pick any two Premier League midfielder seasons and compare them stat by stat, then find the players who played most like them.**
 
-[**➡️ Open the tool**](https://syedhammad07.github.io/football-analytics/Tools/Midfield-Compare/)
+[**➡️ Open the tool**](https://syedhammad07.github.io/football-analytics/Tools/Midfield-Matchup/)
 
-![Midfield Compare](screenshot.png)
+![Midfield Matchup](screenshot.png)
 
 ## What it does
 
 - **Two players, side by side.** Search any midfielder season since the Premier League began, 1992/93 to 2025/26. From 2008/09 every season has 22 stats across output, scoring, creating, passing, carrying and defending. Before that, the league only recorded goals, assists and minutes, so classic-era seasons (Keane, Vieira, Scholes, Le Tissier) are compared on those four numbers.
+- **Single season or whole career.** A switch at the top compares either one season against another, or each player's entire Premier League career: every season he played in midfield, added up and turned into per-90 numbers, then ranked against all 681 midfielders with 4,500+ Premier League minutes. For careers that started before 2008/09, passing and defending cover only his seasons from 2008/09 (the page says how much of his career that is), while goals, assists and minutes cover everything. Switching keeps the same two players, and tapping a season on a career's season-by-season chart jumps straight to that season.
 - **Percentiles, not raw totals.** Every bar shows where a player ranks against all Premier League midfielders with 900+ minutes *that season*, so a 1995 season and a 2023 season are each judged against their own league. The raw per-90 value sits next to it.
 - **Style match.** A single score for how alike the two profiles are, plus the two biggest differences in plain words (2008/09 onwards; classic-era comparisons show how many of the four numbers each player leads).
 - **Most similar players.** For each player, the six seasons by *other* midfielders with the closest profile. Tap one to load it.
 - **Summary.** A short written reading of every comparison: whose season was stronger overall (scoring, creating, passing, carrying and defending each count equally, so the five passing stats can't outweigh the rest), what kind of midfielder each one was (a holding 6, a box-to-box 8, a creative 10 or a wide attacker, learned from 60 well-known example seasons), each player's clearest edges and standout numbers, and a one-line verdict such as "De Bruyne is the better 10, Touré the better 8".
 - **Did you know?** Every player card shows the most remarkable thing in that player's numbers, found automatically, with up to three per player. Examples: Yaya Touré's 20 goals from 10.1 expected goals in 2013/14 (the biggest overperformance by a midfielder since 2013/14), Kanté's interceptions in 2015/16 (the most by any midfielder since 2008/09), Giggs's 21 regular seasons (more than any other midfielder). Every fact comes from the data on the page, so all of them can be checked.
+- **Two, three or four players.** "+ Add a third player" (then "+ Add a fourth player") adds more cards; each new one starts with the season most like Player A's. Every stat then shows a bar per player, the score becomes the closest pair's style match, and the summary ranks everyone, names the best at each area, shows each player's role, and says who is best at each of their roles. Removing a player moves the later ones up. Works in season and career mode, and the link keeps everyone.
 - **Career arc.** A small chart on each player card shows his all-round score for every season, with a link to his best one. Tap any season to load it.
 - **League map.** Both players placed on a map of every midfield season since 2008/09, by attacking and defending score, with four zones: does everything, attackers, ball-winners and quiet seasons.
 - **Expected goals and all-time ranks.** From 2013/14 the summary says how each player's goals compare with his expected goals (Yaya 2013/14: 20 from 10.1). Standout numbers are ranked against every midfield season on record, for example "3rd of 4,449 since 1992/93".
@@ -40,8 +42,8 @@ It grew out of my [Yaya Touré project](../../Players/Yaya-Toure-Man-City/): the
 # classic era: clone the appearance data into data/raw (ignored by git), then build
 git clone https://github.com/pssguy/epldata data/raw/epldata
 pip install pyreadr
-python Tools/Midfield-Compare/build_classic.py
-python Tools/Midfield-Compare/build_page.py
+python Tools/Midfield-Matchup/build_classic.py
+python Tools/Midfield-Matchup/build_page.py
 ```
 
 ## Limitations

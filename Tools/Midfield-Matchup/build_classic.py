@@ -1,4 +1,4 @@
-"""Builds the classic-era table (1992/93 to 2007/08) for Midfield Compare.
+"""Builds the classic-era table (1992/93 to 2007/08) for Midfield Matchup.
 
 Detailed Opta stats are only published from 2008/09, so this era has scoring output only:
 - minutes, appearances, starts and penalties: pssguy/epldata (every Premier League appearance with time on and off)
@@ -6,7 +6,7 @@ Detailed Opta stats are only published from 2008/09, so this era has scoring out
 
 Input:  data/raw/epldata/ (a clone of github.com/pssguy/epldata) and data/external/pl_classic_goals_assists.csv
 Output: Players/Yaya-Toure-Man-City/data/external/pl_midfielders_classic_1992-2008.csv
-Run from the repo root:  python Tools/Midfield-Compare/build_classic.py
+Run from the repo root:  python Tools/Midfield-Matchup/build_classic.py
 """
 import unicodedata
 from pathlib import Path

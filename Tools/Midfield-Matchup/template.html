@@ -1,6 +1,6 @@
-<title>Midfield Compare</title>
+<title>Midfield Matchup</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Compare any two Premier League midfielder seasons, per 90 minutes, and find the most similar players.">
+<meta name="description" content="Compare two, three or four Premier League midfielders, season by season or whole careers, and find the most similar players.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
@@ -8,17 +8,17 @@
 /* Layout: a scouting sheet. Two player slots face each other across a centre line; every stat is a bar growing out from that line. */
 :root {
   --bg: #F3F6F5; --surface: #FFFFFF; --ink: #13201C; --muted: #5A6A64; --line: #D9E1DE; --track: #E8EEEB;
-  --pitch: #0E6B4E; --a: #2563C9; --a-soft: #DCE7FA; --b: #D32F2F; --b-soft: #FADADA;
+  --pitch: #0E6B4E; --a: #2563C9; --a-soft: #DCE7FA; --b: #D32F2F; --b-soft: #FADADA; --c: #7A3FC9; --d: #C77700;
   --display: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
   --body: "Barlow", "Segoe UI", system-ui, sans-serif;
   --r: 10px;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --bg: #0D1412; --surface: #151F1C; --ink: #E5EEEA; --muted: #93A49E; --line: #26342F; --track: #1E2A26;
-  --pitch: #3FB98A; --a: #6EA2FF; --a-soft: #1B2B47; --b: #FF6B66; --b-soft: #3D1C1C; color-scheme: dark } }
+  --pitch: #3FB98A; --a: #6EA2FF; --a-soft: #1B2B47; --b: #FF6B66; --b-soft: #3D1C1C; --c: #C3A2FF; --d: #F5B544; color-scheme: dark } }
 :root[data-theme="dark"] {
   --bg: #0D1412; --surface: #151F1C; --ink: #E5EEEA; --muted: #93A49E; --line: #26342F; --track: #1E2A26;
-  --pitch: #3FB98A; --a: #6EA2FF; --a-soft: #1B2B47; --b: #FF6B66; --b-soft: #3D1C1C; color-scheme: dark }
+  --pitch: #3FB98A; --a: #6EA2FF; --a-soft: #1B2B47; --b: #FF6B66; --b-soft: #3D1C1C; --c: #C3A2FF; --d: #F5B544; color-scheme: dark }
 
 * { box-sizing: border-box }
 body { background: var(--bg); color: var(--ink); font: 400 15px/1.5 var(--body); font-variant-numeric: tabular-nums;
@@ -32,10 +32,29 @@ h1 span { color: var(--pitch) }
 
 /* Pickers */
 .slots { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: start }
+.slots.three { grid-template-columns: repeat(3, minmax(0, 1fr)) }
+.slots.four { grid-template-columns: repeat(2, minmax(0, 1fr)) }
+.slots.three .swap, .slots.four .swap, .slots.four .addc { display: none }
+.slots:not(.three):not(.four) .slot.c, .slots:not(.four) .slot.d { display: none }
+.addc { grid-column: 1 / -1; justify-self: center; font: 600 14px var(--body); color: var(--c); background: var(--surface); border: 1px dashed var(--c); border-radius: 999px; padding: 8px 16px; cursor: pointer }
+.slot .remove { position: absolute; top: 10px; right: 12px; font: 600 12px var(--body); color: var(--muted); background: none; border: 0; cursor: pointer }
+.slot .remove:hover { color: var(--b) }
+.similar.three { grid-template-columns: repeat(3, minmax(0, 1fr)) }
+.similar.four, .summary .roles.four { grid-template-columns: repeat(2, minmax(0, 1fr)) }
+.similar:not(.three):not(.four) .sim.c, .similar:not(.four) .sim.d { display: none }
+.summary .roles.three { grid-template-columns: repeat(3, minmax(0, 1fr)) }
+.row3 { padding: 6px 0; display: grid; gap: 3px }
+.row3 .nm { font-size: 14px } .row3 .nm small { color: var(--muted); font-size: 12px; margin-left: 6px }
+.b3 { display: grid; grid-template-columns: minmax(70px, 120px) 1fr 34px minmax(44px, 60px); align-items: center; gap: 8px; font-size: 13px }
+.b3 .who3 { color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+.b3 .track { height: 12px; background: var(--track); border-radius: 3px; overflow: hidden }
+.b3 .fill { height: 100%; border-radius: 3px; transition: width .35s ease }
+.b3 .p3 { text-align: right; color: var(--muted); font-weight: 600 } .b3 .p3.win { color: var(--ink); font-weight: 700 }
+.b3 .v3 { color: var(--muted); text-align: right }
 .slot { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px; display: grid; gap: 10px; min-width: 0; position: relative }
-.slot.a { border-top: 4px solid var(--a) } .slot.b { border-top: 4px solid var(--b) }
+.slot.a { border-top: 4px solid var(--a) } .slot.b { border-top: 4px solid var(--b) } .slot.c { border-top: 4px solid var(--c) } .slot.d { border-top: 4px solid var(--d) }
 .slot label { font: 600 12px/1 var(--body); letter-spacing: .1em; text-transform: uppercase }
-.slot.a label { color: var(--a) } .slot.b label { color: var(--b) }
+.slot.a label { color: var(--a) } .slot.b label { color: var(--b) } .slot.c label { color: var(--c) } .slot.d label { color: var(--d) }
 .slot input { width: 100%; font: 500 16px var(--body); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px }
 .slot input:focus-visible, button:focus-visible { outline: 2px solid var(--pitch); outline-offset: 2px }
 .who { font-family: var(--display); font-size: 28px; font-weight: 700; line-height: 1.05; overflow-wrap: anywhere }
@@ -86,7 +105,7 @@ h1 span { color: var(--pitch) }
 .similar { display: grid; grid-template-columns: 1fr 1fr; gap: 12px }
 .sim { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; min-width: 0 }
 .sim h2 { font-size: 20px; margin-bottom: 8px }
-.sim.a h2 span { color: var(--a) } .sim.b h2 span { color: var(--b) }
+.sim.a h2 span { color: var(--a) } .sim.b h2 span { color: var(--b) } .sim.c h2 span { color: var(--c) } .sim.d h2 span { color: var(--d) }
 .sim ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 2px }
 .sim li button { width: 100%; display: grid; grid-template-columns: 1fr auto; gap: 8px; text-align: left; background: none; border: 0; color: var(--ink); font: 400 15px var(--body); padding: 6px 8px; border-radius: 6px; cursor: pointer }
 .sim li button:hover { background: var(--track) }
@@ -104,16 +123,20 @@ h1 span { color: var(--pitch) }
 .summary .areas span { border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; font-size: 15px; display: grid; gap: 2px }
 .summary .areas small { font: 600 11px/1 var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted) }
 .summary .areas em { font-style: normal; color: var(--muted); white-space: nowrap }
-.summary .areas b { font-weight: 600 } .summary .areas b:not(.ca):not(.cb) { color: var(--muted) }
+.summary .areas b { font-weight: 600 } .summary .areas b:not(.ca):not(.cb):not(.cc):not(.cd) { color: var(--muted) }
 .summary p { margin: 0; max-width: 72ch }
-.summary .ca { color: var(--a); font-weight: 600 } .summary .cb { color: var(--b); font-weight: 600 }
+.summary .ca { color: var(--a); font-weight: 600 } .summary .cb { color: var(--b); font-weight: 600 } .summary .cc { color: var(--c); font-weight: 600 } .summary .cd { color: var(--d); font-weight: 600 }
 .summary .roles { display: grid; grid-template-columns: 1fr 1fr; gap: 10px }
 .summary .role { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; min-width: 0 }
-.summary .role.a { border-left: 4px solid var(--a) } .summary .role.b { border-left: 4px solid var(--b) }
+.summary .role.a { border-left: 4px solid var(--a) } .summary .role.b { border-left: 4px solid var(--b) } .summary .role.c { border-left: 4px solid var(--c) } .summary .role.d { border-left: 4px solid var(--d) }
 .summary .role b { font-family: var(--display); font-size: 20px; display: block }
 .summary .role small { color: var(--muted) }
 .summary .final { border-top: 1px solid var(--line); padding-top: 14px; font-size: 16px; max-width: none }
 @media (max-width: 640px) { .summary .roles { grid-template-columns: 1fr } }
+.mode { display: inline-flex; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; width: fit-content; max-width: 100%; flex-wrap: wrap }
+.mode button { font: 600 14px var(--body); color: var(--muted); background: none; border: 0; border-radius: 999px; padding: 8px 16px; cursor: pointer }
+.mode button[aria-pressed="true"] { background: var(--pitch); color: var(--surface) }
+.mode button:focus-visible { outline: 2px solid var(--pitch); outline-offset: 2px }
 .debates { display: grid; gap: 8px; margin-top: 14px }
 #debates { display: flex; flex-wrap: wrap; gap: 6px }
 #debates button { font: 500 14px var(--body); color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; cursor: pointer }
@@ -140,7 +163,7 @@ footer { color: var(--muted); font-size: 13px; display: grid; gap: 6px }
 footer a { color: var(--pitch) }
 
 @media (max-width: 640px) {
-  .slots { grid-template-columns: 1fr; }
+  .slots, .slots.three, .slots.four, .similar.three, .similar.four, .summary .roles.three, .summary .roles.four { grid-template-columns: 1fr; }
   .swap { justify-self: center; transform: rotate(90deg) }
   .row { grid-template-columns: 26px 1fr 1fr 26px; gap: 4px 6px }
   .row .stat { grid-column: 1 / -1; order: -1 }
@@ -153,13 +176,18 @@ footer a { color: var(--pitch) }
 <div class="wrap">
   <header>
     <div class="eyebrow">Premier League · __FIRST__ to __LAST__ · per 90 minutes</div>
-    <h1>Midfield <span>Compare</span></h1>
-    <p class="lede">Pick any two midfielder seasons. Every bar is a percentile against all Premier League midfielders who played __MIN__+ minutes that season, so a 1995 season and a 2023 season are each judged against their own league. Full stats start in 2008/09; before that the league only recorded goals, assists and minutes.</p>
+    <h1>Midfield <span>Matchup</span></h1>
+    <p class="lede">Compare two, three or four Premier League midfielders, one season against another or whole careers. In a single season every bar is a percentile against all midfielders who played __MIN__+ minutes that season, so a 1995 season and a 2023 season are each judged against their own league. Careers are ranked against every midfielder with 4,500+ Premier League minutes. Full stats start in 2008/09; before that the league only recorded goals, assists and minutes.</p>
     <div class="debates" aria-label="Famous debates">
       <span class="eyebrow">Settle a debate</span>
       <div id="debates"></div>
     </div>
   </header>
+
+  <div class="mode" id="modeSwitch" role="group" aria-label="Compare">
+    <button type="button" data-mode="season" aria-pressed="true">Single season</button>
+    <button type="button" data-mode="career" aria-pressed="false">Whole Premier League career</button>
+  </div>
 
   <section class="slots" aria-label="Choose two players">
     <div class="slot a" id="slotA">
@@ -183,6 +211,29 @@ footer a { color: var(--pitch) }
       <div class="fact" id="factB"></div>
       <div class="arc" id="arcB"></div>
     </div>
+    <div class="slot c" id="slotC">
+      <label for="qC">Player C</label>
+      <button class="remove" id="removeC" type="button">Remove ✕</button>
+      <input id="qC" type="search" placeholder="Type a name, e.g. Lampard" autocomplete="off" aria-controls="rC">
+      <ul class="results" id="rC" role="listbox" hidden></ul>
+      <div class="who" id="whoC"></div>
+      <div class="meta" id="metaC"></div>
+      <div class="facts" id="factsC"></div>
+      <div class="fact" id="factC"></div>
+      <div class="arc" id="arcC"></div>
+    </div>
+    <div class="slot d" id="slotD">
+      <label for="qD">Player D</label>
+      <button class="remove" id="removeD" type="button">Remove ✕</button>
+      <input id="qD" type="search" placeholder="Type a name, e.g. Vieira" autocomplete="off" aria-controls="rD">
+      <ul class="results" id="rD" role="listbox" hidden></ul>
+      <div class="who" id="whoD"></div>
+      <div class="meta" id="metaD"></div>
+      <div class="facts" id="factsD"></div>
+      <div class="fact" id="factD"></div>
+      <div class="arc" id="arcD"></div>
+    </div>
+    <button class="addc" id="addC" type="button">+ Add a third player</button>
   </section>
 
   <section class="verdict" aria-live="polite">
@@ -199,7 +250,7 @@ footer a { color: var(--pitch) }
 
   <section class="map">
     <div class="eyebrow">League map</div>
-    <h2>Where they sit among every midfield season since 2008/09</h2>
+    <h2 id="mapTitle">Where they sit among every midfield season since 2008/09</h2>
     <div id="map"></div>
     <p class="hint" id="mapNote"></p>
   </section>
@@ -207,8 +258,10 @@ footer a { color: var(--pitch) }
   <section class="similar">
     <div class="sim a"><h2>Most like <span id="simNameA"></span></h2><ol id="simA"></ol></div>
     <div class="sim b"><h2>Most like <span id="simNameB"></span></h2><ol id="simB"></ol></div>
+    <div class="sim c"><h2>Most like <span id="simNameC"></span></h2><ol id="simC"></ol></div>
+    <div class="sim d"><h2>Most like <span id="simNameD"></span></h2><ol id="simD"></ol></div>
   </section>
-  <p class="hint">Tap a name in either list to load it into that slot. Similarity compares the full percentile profile across every passing, carrying, creating, scoring and defending stat, so it finds players who played the same way, not players who were equally good. It covers 2008/09 onwards.</p>
+  <p class="hint">Tap a name in any list to load it into that slot. Similarity compares the full percentile profile across every passing, carrying, creating, scoring and defending stat, so it finds players who played the same way, not players who were equally good. It covers 2008/09 onwards.</p>
 
   <section class="summary" aria-live="polite">
     <div class="eyebrow">Summary</div>
@@ -225,13 +278,16 @@ footer a { color: var(--pitch) }
 
 <script>
 const D = __DATA__;
-const M = D.metrics, R = D.rows, G = D.groups;
-const K = {}; D.cols.forEach((c, i) => K[c] = i);
+const M = D.metrics, G = D.groups, SROWS = D.rows, CROWS = D.crows;
+const K = {}; D.ccols.forEach((c, i) => K[c] = i);   // career rows have the season columns plus a few extra
 const lab = s => `${s}/${String(s + 1).slice(-2)}`;
+const isC = r => r.length > D.cols.length;            // a whole-career row
+const lbl = r => isC(r) ? `${lab(r[K.first])}–${lab(r[K.season])}` : lab(r[K.season]);
 const key = r => `${r[K.id]}-${r[K.season]}`;
-const byKey = new Map(R.map(r => [key(r), r]));
-const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
-const searchIx = R.map(r => [norm(r[K.name] + " " + r[K.team]), r]);
+const byKey = new Map([...SROWS, ...CROWS].map(r => [key(r), r]));
+const norm = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+let MODE = "season", R = SROWS, searchIx = [];
+const W1 = () => MODE === "career" ? "career" : "season";
 let ADJ = true;   // adjust passing, touches and defending for team possession
 const hasA = k => K["pa_" + k] !== undefined;
 const P = (r, k) => { if (ADJ && hasA(k) && r[K["pa_" + k]] !== null) return r[K["pa_" + k]]; return r[K["p_" + k]] };
@@ -239,9 +295,22 @@ const V = (r, k) => (ADJ && hasA(k) && r[K[k + "_a"]] !== null) ? r[K[k + "_a"]]
 const PS = (r, k) => (hasA(k) && r[K["pa_" + k]] !== null) ? r[K["pa_" + k]] : r[K["p_" + k]];   // style always uses the adjusted numbers
 const STYLE_K = M.filter(m => m.g !== "Output" && !D.notStyle.includes(m.k)).map(m => m.k);   // style = everything except output and minutes
 const full = r => r[K.era] === 1;
-const DETAIL = R.filter(full);
+let DETAIL = [];
+function useMode(m) {
+  MODE = m; R = m === "career" ? CROWS : SROWS;
+  DETAIL = R.filter(full);
+  searchIx = R.map(r => [norm(r[K.name] + " " + r[K.team]), r]);
+  for (const k in rankCache) delete rankCache[k];
+  document.querySelectorAll("#modeSwitch button").forEach(b => b.setAttribute("aria-pressed", b.dataset.mode === m));
+  document.body.dataset.mode = m;
+}
 
-let state = { A: null, B: null };
+let state = { A: null, B: null, C: null, D: null };
+let NP = 2;                                       // how many players are being compared (2 to 4)
+const sides = () => ["A", "B", "C", "D"].slice(0, NP);
+const COL = { A: "var(--a)", B: "var(--b)", C: "var(--c)", D: "var(--d)" }, CLS = { A: "ca", B: "cb", C: "cc", D: "cd" };
+const NUM = n => ["", "", "two", "three", "four"][n], GRID = () => NP === 4 ? "four" : NP === 3 ? "three" : "";
+const ready = () => sides().every(x => state[x]);
 
 function fmt(v, m) { if (v === null || v === undefined) return "–"; return m.u === "%" ? Math.round(v) + "%" : v.toFixed(v >= 10 ? 0 : 2) }
 function sim(a, b) { let s = 0, n = 0; for (const k of STYLE_K) { const x = PS(a, k), y = PS(b, k); if (x === null || y === null) continue; s += Math.abs(x - y); n++ } return n ? 100 - s / n : 0 }
@@ -249,21 +318,26 @@ function sim(a, b) { let s = 0, n = 0; for (const k of STYLE_K) { const x = PS(a
 function renderSlot(side) {
   const r = state[side];
   document.getElementById("who" + side).textContent = r[K.name];
-  document.getElementById("meta" + side).innerHTML = `${r[K.team]} · ${lab(r[K.season])}${full(r) ? "" : ` <span class="tag">classic era</span>`}`;
+  document.getElementById("meta" + side).innerHTML = isC(r)
+    ? `${r[K.team]} · ${lbl(r)}${full(r) ? (r[K.fullmin] < r[K.min] ? ` <span class="tag">full stats from 2008/09</span>` : "") : ` <span class="tag">goals and assists only</span>`}`
+    : `${r[K.team]} · ${lbl(r)}${full(r) ? "" : ` <span class="tag">classic era</span>`}`;
   document.getElementById("facts" + side).innerHTML =
-    `<span><b>${r[K.min].toLocaleString("en-GB")}</b> mins</span>${r[K.possession] !== null ? `<span><b>${Math.round(r[K.possession])}%</b> team possession</span>` : ""}`
+    (isC(r) ? `<span><b>${r[K.nseas]}</b> season${r[K.nseas] === 1 ? "" : "s"}</span>` : "")
+    + `<span><b>${r[K.min].toLocaleString("en-GB")}</b> mins</span>${r[K.possession] !== null ? `<span><b>${Math.round(r[K.possession])}%</b> team possession${isC(r) ? " (avg)" : ""}</span>` : ""}`
     + `<span><b>${r[K.goals]}</b> goal${r[K.goals] === 1 ? "" : "s"}</span><span><b>${r[K.assists]}</b> assist${r[K.assists] === 1 ? "" : "s"}</span>`;
   document.getElementById("q" + side).value = "";
-  document.getElementById("simName" + side).textContent = `${r[K.name]}, ${lab(r[K.season])}`;
+  document.getElementById("simName" + side).textContent = `${r[K.name]}, ${lbl(r)}`;
   if (!full(r)) { document.getElementById("sim" + side).innerHTML = `<li class="none">Finding similar players needs the passing, carrying and defending stats that start in 2008/09.</li>`; return }
   const list = DETAIL.filter(o => o[K.id] !== r[K.id] || o[K.name] !== r[K.name]).map(o => [sim(r, o), o]).sort((x, y) => y[0] - x[0]).slice(0, 6);
   document.getElementById("sim" + side).innerHTML = list.map(([s, o]) =>
-    `<li><button type="button" data-k="${key(o)}" data-side="${side}"><span>${o[K.name]}<small>${o[K.team]} · ${lab(o[K.season])}</small></span><span class="m">${Math.round(s)}%</span></button></li>`).join("");
+    `<li><button type="button" data-k="${key(o)}" data-side="${side}"><span>${o[K.name]}<small>${o[K.team]} · ${lbl(o)}</small></span><span class="m">${Math.round(s)}%</span></button></li>`).join("");
 }
 
 function renderChart() {
   const a = state.A, b = state.B;
-  let html = (full(a) && full(b)) ? "" : `<p class="note">${!full(a) && !full(b) ? "Both seasons are" : (full(a) ? b : a)[K.name] + "'s season is"} from before 2008/09, when the Premier League only recorded goals, assists and minutes. ${full(a) || full(b) ? "The other stats are shown for one player only." : ""}</p>`;
+  const partial = MODE === "career" ? [a, b].filter(r => full(r) && r[K.fullmin] < r[K.min]) : [];
+  let html = (full(a) && full(b)) ? "" : `<p class="note">${!full(a) && !full(b) ? `Both ${W1()}s are` : (full(a) ? b : a)[K.name] + `'s ${W1()} is`} ${MODE === "career" ? "mostly" : ""} from before 2008/09, when the Premier League only recorded goals, assists and minutes. ${full(a) || full(b) ? "The other stats are shown for one player only." : ""}</p>`;
+  if (partial.length) html += `<p class="note">${partial.map(r => `${r[K.name]}'s passing, carrying and defending stats cover only his seasons from 2008/09 (${Math.round(100 * r[K.fullmin] / r[K.min])}% of his minutes).`).join(" ")} Goals, assists and minutes cover his whole career.</p>`;
   for (const g of G) {
     html += `<div class="group"><h2>${g}</h2>`;
     const ms = M.filter(m => m.g === g && (P(a, m.k) !== null || P(b, m.k) !== null));
@@ -289,7 +363,7 @@ function renderChart() {
   if (!(full(a) && full(b))) {
     document.getElementById("score").innerHTML = `${winsA0}–${winsB0}<span>stats ahead</span>`;
     const g = ok.map(m => [P(a, m.k) - P(b, m.k), m]).sort((x, y) => Math.abs(y[0]) - Math.abs(x[0]))[0];
-    document.getElementById("verdict").innerHTML = `<b>Output only.</b> A style match needs the detailed stats that start in 2008/09, so this compares the ${ok.length} numbers both seasons have, each against its own season. ${a[K.name]} is ahead on ${winsA0}, ${b[K.name]} on ${winsB0}. The biggest gap: ${g[0] > 0 ? a[K.name] : b[K.name]} on ${g[1].l.toLowerCase()}.`;
+    document.getElementById("verdict").innerHTML = `<b>Output only.</b> A style match needs the detailed stats that start in 2008/09, so this compares the ${ok.length} numbers both ${W1()}s have, ${MODE === "career" ? "each ranked against every midfield career" : "each against its own season"}. ${a[K.name]} is ahead on ${winsA0}, ${b[K.name]} on ${winsB0}. The biggest gap: ${g[0] > 0 ? a[K.name] : b[K.name]} on ${g[1].l.toLowerCase()}.`;
     return;
   }
   const s = Math.round(sim(a, b));
@@ -349,7 +423,7 @@ function allTimeRank(r, k) {
   if (!rankCache[ck]) {
     const vals = R.map(o => V(o, k)).filter(v => v !== null && v !== undefined);
     const first = Math.min(...R.filter(o => V(o, k) !== null && V(o, k) !== undefined).map(o => o[K.season]));
-    rankCache[ck] = { vals: vals.sort((x, y) => lower(k) ? x - y : y - x), first };
+    rankCache[ck] = { vals: vals.sort((x, y) => lower(k) ? x - y : y - x), first };   // cleared when the mode changes
   }
   const c = rankCache[ck], v = V(r, k);
   if (v === null || v === undefined) return null;
@@ -359,10 +433,13 @@ function allTimeRank(r, k) {
 const ord = n => n + (n % 100 >= 11 && n % 100 <= 13 ? "th" : ["th", "st", "nd", "rd"][n % 10] || "th");
 
 // ---- Career arc on each player card ----
-function careerOf(r) { return R.filter(o => o[K.name] === r[K.name]).sort((x, y) => x[K.season] - y[K.season]) }
+function careerOf(r) { return SROWS.filter(o => o[K.name] === r[K.name]).sort((x, y) => x[K.season] - y[K.season]) }
 function renderArc(side) {
   // Seasons before and after 2008/09 are scored on different stats, so the arc only shows the selected season's era.
-  const r = state[side], all = careerOf(r), seasons = all.filter(o => full(o) === full(r)), el = document.getElementById("arc" + side);
+  const sel = state[side], el = document.getElementById("arc" + side), all = careerOf(sel);
+  // In career mode the arc shows his seasons; the selected point is his best one with full stats where possible.
+  const r = isC(sel) ? (all.filter(full).length ? all.filter(full) : all).reduce((b, o) => allRound(o) > allRound(b) ? o : b) : sel;
+  const seasons = all.filter(o => full(o) === full(r));
   const other = all.filter(o => full(o) !== full(r));
   const otherLink = other.length ? `<button type="button" data-k="${key(other[full(r) ? other.length - 1 : 0])}" data-side="${side}">${full(r) ? `${other.length} earlier season${other.length > 1 ? "s" : ""} (goals and assists only)` : `${other.length} season${other.length > 1 ? "s" : ""} with full stats`} →</button>` : "";
   if (seasons.length < 2) { el.innerHTML = `<div class="top"><span>Only one ${full(r) ? "full-stats " : ""}season with 900+ minutes</span>${otherLink}</div>`; return }
@@ -370,16 +447,23 @@ function renderArc(side) {
   const lo = Math.min(35, ...ys) - 5, hi = Math.max(75, ...ys) + 5;   // zoomed so small changes show, always including 35-75
   const x = i => pad + i * (W - 2 * pad) / (seasons.length - 1), y = v => H - 16 - ((v - lo) / (hi - lo)) * (H - 24);
   const best = seasons[ys.indexOf(Math.max(...ys))];
-  const col = side === "A" ? "var(--a)" : "var(--b)";
+  const col = COL[side];
   const pts = seasons.map((o, i) => `${x(i).toFixed(1)},${y(ys[i]).toFixed(1)}`).join(" ");
-  const dots = seasons.map((o, i) => { const on = o === r;
-    return `<circle cx="${x(i).toFixed(1)}" cy="${y(ys[i]).toFixed(1)}" r="${on ? 5 : 3.2}" fill="${full(o) ? col : "var(--surface)"}" stroke="${col}" stroke-width="${full(o) ? 0 : 1.5}" opacity="${on ? 1 : .55}" data-k="${key(o)}" data-side="${side}"><title>${lab(o[K.season])} · ${o[K.team]} · all-round ${Math.round(ys[i])}${full(o) ? "" : " (goals and assists only)"}</title></circle>` }).join("");
-  el.innerHTML = `<div class="top"><span>Career arc · ${full(r) ? "all-round score" : "goals and assists score"} by season</span>${best !== r ? `<button type="button" data-k="${key(best)}" data-side="${side}">Best season: ${lab(best[K.season])} →</button>` : `<span>His best season</span>`}</div>`
+  const dots = seasons.map((o, i) => { const on = o === r && !isC(sel);
+    return `<circle cx="${x(i).toFixed(1)}" cy="${y(ys[i]).toFixed(1)}" r="${on ? 5 : 3.2}" fill="${full(o) ? col : "var(--surface)"}" stroke="${col}" stroke-width="${full(o) ? 0 : 1.5}" opacity="${on ? 1 : .55}" data-k="${key(o)}" data-side="${side}"><title>${lbl(o)} · ${o[K.team]} · all-round ${Math.round(ys[i])}${full(o) ? "" : " (goals and assists only)"}</title></circle>` }).join("");
+  el.innerHTML = `<div class="top"><span>${isC(sel) ? "Season by season · tap one to compare it" : "Career arc"} · ${full(r) ? "all-round score" : "goals and assists score"}</span>${best !== r || isC(sel) ? `<button type="button" data-k="${key(best)}" data-side="${side}">Best season: ${lbl(best)} →</button>` : `<span>His best season</span>`}</div>`
     + `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="All-round score for each of ${r[K.name]}'s seasons"><line x1="0" x2="${W}" y1="${y(50)}" y2="${y(50)}" stroke="var(--line)" stroke-dasharray="3 3"/><text class="ax" x="${W / 2}" y="${y(50) + 10}" text-anchor="middle">league average</text><polyline points="${pts}" fill="none" stroke="${col}" stroke-width="1.5" opacity=".5"/>${dots}`
-    + `<text class="ax" x="${pad}" y="${H}" >${lab(seasons[0][K.season])}</text><text class="ax" x="${W - pad}" y="${H}" text-anchor="end">${lab(seasons[seasons.length - 1][K.season])}</text></svg>`
+    + `<text class="ax" x="${pad}" y="${H}" >${lbl(seasons[0])}</text><text class="ax" x="${W - pad}" y="${H}" text-anchor="end">${lab(seasons[seasons.length - 1][K.season])}</text></svg>`
     + (otherLink ? `<div class="top"><span></span>${otherLink}</div>` : "");
 }
-document.addEventListener("click", e => { const t = e.target.closest(".arc [data-k]"); if (t) setSlot(t.dataset.side, byKey.get(t.dataset.k)) });
+document.addEventListener("click", e => {
+  const t = e.target.closest(".arc [data-k]"); if (!t) return;
+  const row = byKey.get(t.dataset.k), side = t.dataset.side;
+  if (MODE === "career") {        // jump to the single-season view: this season, against the others' best seasons
+    const others = sides().filter(x => x !== side).map(x => [x, bestSeason(state[x][K.name])]);
+    setMode("season", false); others.forEach(([x, r]) => setSlot(x, r, false)); setSlot(side, row);
+  } else setSlot(side, row);
+});
 
 // ---- League map: attack vs defence, every full season ----
 function renderMap() {
@@ -394,31 +478,32 @@ function renderMap() {
        + `<text class="axl" x="${(L + W) / 2}" y="${H - 6}" text-anchor="middle">Attacking: scoring + creating (percentile) →</text>`
        + `<text class="axl" transform="translate(13 ${(T + H - B) / 2}) rotate(-90)" text-anchor="middle">Defending (percentile) →</text>`;
   const note = [];
-  for (const [side, col] of [["A", "var(--a)"], ["B", "var(--b)"]]) {
+  for (const [side, col] of sides().map(x => [x, COL[x]])) {
     const r = state[side];
-    if (!full(r)) { note.push(`${r[K.name]}'s ${lab(r[K.season])} season is from before 2008/09, so it has no defending stats to place him.`); continue }
+    if (!full(r)) { note.push(`${r[K.name]}'s ${lbl(r)} ${W1()} is from before 2008/09, so it has no defending stats to place him.`); continue }
     const p = areaScore(r, ["Scoring", "Creating"]), q = areaScore(r, ["Defending"]);
     const anchor = p > 70 ? "end" : "start", dx = p > 70 ? -10 : 10;
-    svg += `<circle cx="${x(p)}" cy="${y(q)}" r="7" fill="${col}" stroke="var(--surface)" stroke-width="2"/><text class="name" x="${x(p) + dx}" y="${y(q) + 4}" fill="${col}" text-anchor="${anchor}">${r[K.name]} ${lab(r[K.season])}</text>`;
+    svg += `<circle cx="${x(p)}" cy="${y(q)}" r="7" fill="${col}" stroke="var(--surface)" stroke-width="2"/><text class="name" x="${x(p) + dx}" y="${y(q) + 4}" fill="${col}" text-anchor="${anchor}">${r[K.name]} ${lbl(r)}</text>`;
   }
   document.getElementById("map").innerHTML = svg + `</svg>`;
-  document.getElementById("mapNote").textContent = (note.join(" ") + ` Each grey dot is one midfielder's season (${DETAIL.length.toLocaleString("en-GB")} in all). ${ADJ ? "Defending is possession-adjusted." : ""}`).trim();
+  document.getElementById("mapTitle").textContent = MODE === "career" ? "Where they sit among every midfield career since 2008/09" : "Where they sit among every midfield season since 2008/09";
+  document.getElementById("mapNote").textContent = (note.join(" ") + ` Each grey dot is one midfielder's ${W1()} (${DETAIL.length.toLocaleString("en-GB")} in all). ${ADJ ? "Defending is possession-adjusted." : ""}`).trim();
 }
 
 // ---- Famous debates ----
 const DEBATES = [["Steven Gerrard", 2008, "Frank Lampard", 2009], ["Roy Keane", 1999, "Patrick Vieira", 2001], ["N'Golo Kanté", 2016, "Declan Rice", 2025],
   ["David Silva", 2011, "Martin Ødegaard", 2023], ["Cesc Fàbregas", 2009, "Kevin De Bruyne", 2019], ["Rodri", 2023, "Fernandinho", 2017],
   ["Matthew Le Tissier", 1994, "Cole Palmer", 2023], ["Paul Scholes", 2009, "Luka Modric", 2011], ["Eden Hazard", 2014, "Bukayo Saka", 2022]];
-const findRow = (n, s) => R.find(o => o[K.name] === n && o[K.season] === s);
+const findRow = (n, s) => MODE === "career" ? R.find(o => o[K.name] === n) : R.find(o => o[K.name] === n && o[K.season] === s);
 function renderDebates() {
-  const ok = DEBATES.map(d => [findRow(d[0], d[1]), findRow(d[2], d[3])]).filter(([x, y]) => x && y);
-  const short = r => r[K.name].split(" ").slice(-1)[0];
-  document.getElementById("debates").innerHTML = ok.map(([x, y], i) => `<button type="button" data-i="${i}">${short(x)} v ${short(y)}</button>`).join("")
+  const short = n => n.split(" ").slice(-1)[0];
+  document.getElementById("debates").innerHTML = DEBATES.map((d, i) => [d, i]).filter(([d]) => SROWS.some(o => o[K.name] === d[0]) && SROWS.some(o => o[K.name] === d[2]))
+    .map(([d, i]) => `<button type="button" data-i="${i}">${short(d[0])} v ${short(d[2])}</button>`).join("")
     + `<button type="button" class="rand" id="rand">Surprise me</button>`;
   document.getElementById("debates").onclick = e => {
     const b = e.target.closest("button"); if (!b) return;
-    if (b.id === "rand") { const pool = R.filter(o => o[K.min] >= 2500); const pick = () => pool[Math.floor(Math.random() * pool.length)]; let x = pick(), y = pick(); while (y[K.name] === x[K.name]) y = pick(); setSlot("A", x, false); setSlot("B", y) }
-    else { const [x, y] = ok[+b.dataset.i]; setSlot("A", x, false); setSlot("B", y) }
+    if (b.id === "rand") { const pool = R.filter(o => o[K.min] >= 2500); const pick = () => pool[Math.floor(Math.random() * pool.length)]; const got = []; for (const sd of sides()) { let x = pick(); while (got.some(g => g[K.name] === x[K.name])) x = pick(); got.push(x) } sides().forEach((sd, i) => setSlot(sd, got[i], i === got.length - 1)) }
+    else { const d = DEBATES[+b.dataset.i], x = findRow(d[0], d[1]), y = findRow(d[2], d[3]); if (!x || !y) return; NP = 2; state.C = state.D = null; setSlot("A", x, false); setSlot("B", y) }
     document.querySelector(".slots").scrollIntoView({ behavior: "smooth", block: "start" });
   };
 }
@@ -437,7 +522,7 @@ document.addEventListener("click", e => { const b = e.target.closest(".fact butt
 
 function renderSummary(a, b) {
   const A = `<span class="ca">${a[K.name]}</span>`, B = `<span class="cb">${b[K.name]}</span>`;
-  const sA = `${nm(a)} ${lab(a[K.season])}`, sB = `${nm(b)} ${lab(b[K.season])}`;
+  const sA = `${nm(a)} ${lbl(a)}`, sB = `${nm(b)} ${lbl(b)}`;
   const keys = M.map(m => m.k).filter(k => k !== "minshare" && P(a, k) !== null && P(b, k) !== null);
   // Overall = each area of the game counts equally (stats averaged within an area first), so an area with
   // many related stats (passing has five) can't outweigh one with few. Output repeats goals and assists, so it
@@ -451,9 +536,9 @@ function renderSummary(a, b) {
   const gap = ohi - olo;
   let h = "";
   const basis = both ? "with scoring, creating, passing, carrying and defending each counting equally" : `on the ${keys.length} numbers both seasons have`;
-  const overall = gap >= 12 ? `On these numbers it isn't close: ${hi}'s season was the stronger one, an all-round score of <b>${ohi}</b> against ${olo} for ${lo}, ${basis}.`
-    : gap >= 5 ? `${hi}'s season edges it overall, an all-round score of <b>${ohi}</b> against ${olo}, ${basis}. But ${lo} wins in places that matter.`
-    : `Overall these two seasons are almost level: an all-round score of <b>${oa}</b> for ${A} and <b>${ob}</b> for ${B}, ${basis}.`;
+  const overall = gap >= 12 ? `On these numbers it isn't close: ${hi}'s ${W1()} was the stronger one, an all-round score of <b>${ohi}</b> against ${olo} for ${lo}, ${basis}.`
+    : gap >= 5 ? `${hi}'s ${W1()} edges it overall, an all-round score of <b>${ohi}</b> against ${olo}, ${basis}. But ${lo} wins in places that matter.`
+    : `Overall these two ${W1()}s are almost level: an all-round score of <b>${oa}</b> for ${A} and <b>${ob}</b> for ${B}, ${basis}.`;
   const byArea = both ? `<p class="areas">${areas.map(([g], i) => {
       const x = Math.round(areaA[i][1]), y = Math.round(areaB[i][1]);
       return `<span><small>${g}</small><em><b class="${x > y ? "ca" : ""}">${x}</b> – <b class="${y > x ? "cb" : ""}">${y}</b></em></span>`; }).join("")}</p>` : "";
@@ -462,14 +547,16 @@ function renderSummary(a, b) {
     const best = keys.filter(k => P(r, k) >= 96 && k !== "ga").sort((x, y) => P(r, y) - P(r, x)).slice(0, 2);
     if (best.length) {
       const rk = best.map(k => [k, allTimeRank(r, k)]).filter(([, x]) => x && x.rank <= 25).sort((p, q) => p[1].rank - q[1].rank)[0];
-      stand.push(`${C}'s ${list(best.map(k => `${MK[k].l.toLowerCase()} (${val(r, k)}${MK[k].u === "%" ? "" : " per 90"})`))} ${best.length > 1 ? "were both" : "was"} ${topPct(Math.min(...best.map(k => P(r, k))))} that season.`
-        + (rk ? ` His ${MK[rk[0]].l.toLowerCase()} figure ranks <b>${ord(rk[1].rank)} of ${rk[1].n.toLocaleString("en-GB")}</b> midfield seasons since ${lab(rk[1].first)}.` : ""));
+      stand.push(`${C}'s ${list(best.map(k => `${MK[k].l.toLowerCase()} (${val(r, k)}${MK[k].u === "%" ? "" : " per 90"})`))} ${best.length > 1 ? "were both" : "was"} ${topPct(Math.min(...best.map(k => P(r, k))))} ${MODE === "career" ? "across whole careers" : "that season"}.`
+        + (rk ? ` His ${MK[rk[0]].l.toLowerCase()} figure ranks <b>${ord(rk[1].rank)} of ${rk[1].n.toLocaleString("en-GB")}</b> ${MODE === "career" ? "Premier League midfield careers" : `midfield seasons since ${lab(rk[1].first)}`}.` : ""));
     }
   }
   const eA = edges(a, b, keys), eB = edges(b, a, keys);
   const finishing = [[a, A], [b, B]].filter(([r]) => r[K.xgt] !== null).map(([r, C]) => {
-    const d = r[K.goals] - r[K.xgt], note = d >= 4 ? " Finishing like that rarely lasts." : d <= -4 ? " He was unlucky in front of goal." : "";
-    return `${C} scored ${r[K.goals]} from chances worth ${r[K.xgt].toFixed(1)} expected goals (${d >= 0 ? "+" : ""}${d.toFixed(1)}).${note}`; });
+    const gl = isC(r) ? r[K.xgg] : r[K.goals], d = gl - r[K.xgt];
+    const note = isC(r) ? (d >= 8 ? " He beat his chances season after season, which suggests real finishing skill rather than luck." : d <= -8 ? " Over a whole career that looks like a genuine weakness in front of goal." : "")
+                        : (d >= 4 ? " Finishing like that rarely lasts." : d <= -4 ? " He was unlucky in front of goal." : "");
+    return `${C} scored ${gl} from chances worth ${r[K.xgt].toFixed(1)} expected goals${isC(r) ? " in his seasons from 2013/14" : ""} (${d >= 0 ? "+" : ""}${d.toFixed(1)}).${note}`; });
   const finTxt = finishing.length ? `<p>${finishing.join(" ")}</p>` : "";
   const edgeTxt = [eA.length ? `${A} was clearly ahead on ${list(eA.map(k => statPhrase(k, a, b)))}.` : "", eB.length ? `${B} was clearly ahead on ${list(eB.map(k => statPhrase(k, b, a)))}.` : ""].join(" ");
 
@@ -478,7 +565,7 @@ function renderSummary(a, b) {
     h += `<p>${overall}</p>`;
     if (edgeTxt.trim()) h += `<p>${edgeTxt}</p>`;
     if (stand.length) h += `<p>${stand.join(" ")}</p>`;
-    h += `<p class="final"><b>Verdict:</b> ${gap >= 5 ? `${hi} was the more productive midfielder in his season` : "There's little to separate them on output"}. Without passing and defending stats before 2008/09, this says nothing about who did the dirty work, so holding midfielders will always look modest here.</p>`;
+    h += `<p class="final"><b>Verdict:</b> ${gap >= 5 ? `${hi} was the more productive midfielder ${MODE === "career" ? "over his career" : "in his season"}` : "There's little to separate them on output"}. Without passing and defending stats before 2008/09, this says nothing about who did the dirty work, so holding midfielders will always look modest here.</p>`;
     document.getElementById("sumBody").innerHTML = h; return;
   }
 
@@ -518,15 +605,122 @@ function renderSummary(a, b) {
   document.getElementById("sumBody").innerHTML = h;
 }
 
+
+// ---- Two, three or four players ----
+function layout() {
+  for (const sel of [".slots", ".similar"]) { const el = document.querySelector(sel); el.classList.toggle("three", NP === 3); el.classList.toggle("four", NP === 4) }
+  document.getElementById("addC").textContent = NP === 2 ? "+ Add a third player" : "+ Add a fourth player";
+}
+function renderAll() {
+  layout();
+  if (!ready()) return;
+  if (NP > 2) { renderChart3(); renderSummary3() } else { renderChart(); renderSummary(state.A, state.B) }
+  renderMap();
+}
+function addPlayer() {
+  if (NP >= 4) return;
+  // start the new card with the closest match to Player A who isn't already on the page
+  const a = state.A, taken = sides().map(x => state[x][K.name]);
+  const c = DETAIL.filter(o => !taken.includes(o[K.name])).map(o => [sim(a, o), o]).sort((x, y) => y[0] - x[0])[0]?.[1] || R[0];
+  NP++; setSlot(sides()[NP - 1], c);
+}
+function removePlayer(side) {
+  const xs = sides(), i = xs.indexOf(side);
+  for (let j = i; j < xs.length - 1; j++) state[xs[j]] = state[xs[j + 1]];     // later players move up a slot
+  state[xs[xs.length - 1]] = null; NP--;
+  sides().slice(i).forEach(x => { renderSlot(x); renderFact(x); renderArc(x) });
+  setSlot("A", state.A);
+}
+document.getElementById("addC").addEventListener("click", addPlayer);
+document.getElementById("removeC").addEventListener("click", () => removePlayer("C"));
+document.getElementById("removeD").addEventListener("click", () => removePlayer("D"));
+
+function renderChart3() {
+  const P3 = sides().map(x => state[x]);
+  const anyClassic = P3.some(r => !full(r));
+  let html = anyClassic ? `<p class="note">${P3.filter(r => !full(r)).map(r => r[K.name]).join(" and ")} ${P3.filter(r => !full(r)).length > 1 ? "are" : "is"} from before 2008/09, when the Premier League only recorded goals, assists and minutes. Other stats are shown only for the players who have them.</p>` : "";
+  for (const g of G) {
+    const ms = M.filter(m => m.g === g && P3.some(r => P(r, m.k) !== null));
+    if (!ms.length) continue;
+    html += `<div class="group"><h2>${g}</h2>`;
+    for (const m of ms) {
+      const ps = P3.map(r => P(r, m.k)), top = Math.max(...ps.filter(x => x !== null));
+      const unit = (m.u === "%" ? "percentage" : m.k === "loss" ? "per 90 · fewer ranks higher" : "per 90") + (ADJ && hasA(m.k) ? " · adjusted" : "");
+      html += `<div class="row3"><div class="nm">${m.l}<small>${unit}</small></div>` + P3.map((r, i) => {
+        const p = ps[i], x = sides()[i];
+        return `<div class="b3"><span class="who3">${r[K.name]}</span><div class="track"><div class="fill" style="width:${p ?? 0}%;background:${COL[x]}"></div></div>`
+          + `<span class="p3 ${p !== null && p === top && ps.filter(y => y === top).length === 1 ? "win" : ""}">${p ?? "n/a"}</span><span class="v3">${p === null ? "" : fmt(V(r, m.k), m)}</span></div>` }).join("") + `</div>`;
+    }
+    html += `</div>`;
+  }
+  html += `<div class="legend"><span>Bold number = best of the ${NUM(NP)}</span><span>Number = percentile · right = value</span></div>`;
+  document.getElementById("chart").innerHTML = html;
+
+  // verdict strip: who leads most stats, and which pair is most alike
+  const ok = M.filter(m => P3.every(r => P(r, m.k) !== null));
+  const leads = P3.map((r, i) => ok.filter(m => P3.every((o, j) => j === i || P(r, m.k) > P(o, m.k))).length);
+  if (P3.every(full)) {
+    const pairs = P3.flatMap((_, i) => P3.map((_, j) => [i, j]).filter(([, j]) => j > i)).map(([i, j]) => [sim(P3[i], P3[j]), i, j]).sort((x, y) => y[0] - x[0]);
+    const [s0, i0, j0] = pairs[0];
+    document.getElementById("score").innerHTML = `${Math.round(s0)}<small>%</small><span>closest pair</span>`;
+    document.getElementById("verdict").innerHTML = `<b>${P3[i0][K.name]} and ${P3[j0][K.name]} are the most alike</b> (${Math.round(s0)}% style match). `
+      + (NP === 3 ? pairs.slice(1).map(([v, i, j]) => `${P3[i][K.name]} and ${P3[j][K.name]}: ${Math.round(v)}%`).join(", ") + `. `
+        : `Least alike: ${P3[pairs.at(-1)[1]][K.name]} and ${P3[pairs.at(-1)[2]][K.name]} (${Math.round(pairs.at(-1)[0])}%). `)
+      + `Stats led outright: ${P3.map((r, i) => `${r[K.name]} ${leads[i]}`).join(", ")}, out of ${ok.length}.`;
+  } else {
+    document.getElementById("score").innerHTML = `${leads.join("–")}<span>stats led</span>`;
+    document.getElementById("verdict").innerHTML = `<b>Output only.</b> A style match needs the detailed stats that start in 2008/09, so this compares the ${ok.length} numbers all ${NUM(NP)} have. Stats led outright: ${P3.map((r, i) => `${r[K.name]} ${leads[i]}`).join(", ")}.`;
+  }
+}
+
+function renderSummary3() {
+  const xs = sides(), P3 = xs.map(x => state[x]), C3 = xs.map((x, i) => `<span class="${CLS[x]}">${P3[i][K.name]}</span>`);
+  const allFull = P3.every(full);
+  const keys = M.map(m => m.k).filter(k => k !== "minshare" && P3.every(r => P(r, k) !== null));
+  const areas = G.filter(g => allFull ? g !== "Output" : true).map(g => [g, keys.filter(k => MK[k].g === g)]).filter(([, ks]) => ks.length);
+  const areaOf = r => areas.map(([g, ks]) => avg(ks.map(k => P(r, k))));
+  const sc = P3.map(r => areaOf(r)), overall = sc.map(v => Math.round(avg(v)));
+  const idx = P3.map((_, i) => i), order = [...idx].sort((i, j) => overall[j] - overall[i]);
+  document.getElementById("sumTitle").textContent = `${NP === 3 ? "Three" : "Four"}-way matchup: ${P3.map(r => `${r[K.name]} ${lbl(r)}`).join(" v ")}`;
+  let h = `<p>${overall[order[0]] - overall[order[1]] < 4 ? `It's close at the top. ` : ""}Ranked on an all-round score${allFull ? ", with scoring, creating, passing, carrying and defending counting equally" : ` across the ${keys.length} numbers all ${NUM(NP)} have`}: `
+    + order.map((i, n) => `<b>${n + 1}.</b> ${C3[i]} (${overall[i]})`).join(", ") + `.</p>`;
+  if (allFull) h += `<p class="areas">${areas.map(([g], a) => { const v = sc.map(x => Math.round(x[a])), t = Math.max(...v);
+      return `<span><small>${g}</small><em>${v.map((y, i) => `<b class="${y === t && v.filter(z => z === t).length === 1 ? CLS[xs[i]] : ""}">${y}</b>`).join(" – ")}</em></span>` }).join("")}</p>`;
+  // best at each area
+  if (allFull) h += `<p>${areas.map(([g], a) => { const i = [...idx].sort((p, q) => sc[q][a] - sc[p][a])[0]; return `Best at ${g.toLowerCase()}: ${C3[i]}` }).join(". ")}.</p>`;
+  if (allFull) {
+    h += `<div class="roles ${GRID()}">${P3.map((r, i) => { const f = roleFits(r);
+      return `<div class="role ${xs[i].toLowerCase()}"><small>${r[K.name]} played most like ${f[0][1].t}</small><b>${f[0][1].n}</b><small>${f[0][1].d} · fit ${Math.round(f[0][0])}/100</small></div>` }).join("")}</div>`;
+  }
+  // standouts and finishing
+  const stand = P3.map((r, i) => { const best = keys.filter(k => P(r, k) >= 96 && k !== "ga").sort((x, y) => P(r, y) - P(r, x)).slice(0, 2);
+    return best.length ? `${C3[i]}: ${list(best.map(k => `${MK[k].l.toLowerCase()} (${val(r, k)}${MK[k].u === "%" ? "" : " per 90"})`))}, ${topPct(Math.min(...best.map(k => P(r, k))))}.` : "" }).filter(Boolean);
+  if (stand.length) h += `<p><b>Standout numbers.</b> ${stand.join(" ")}</p>`;
+  const fin = P3.map((r, i) => { if (r[K.xgt] === null || r[K.xgt] === undefined) return ""; const gl = isC(r) ? r[K.xgg] : r[K.goals], d = gl - r[K.xgt];
+    return `${C3[i]} ${gl} goals from ${r[K.xgt].toFixed(1)} xG (${d >= 0 ? "+" : ""}${d.toFixed(1)})` }).filter(Boolean);
+  if (fin.length) h += `<p><b>Finishing${MODE === "career" ? " (from 2013/14)" : ""}.</b> ${fin.join("; ")}.</p>`;
+  // verdict: the best of the group at each player's own role
+  let fin2;
+  if (allFull) {
+    const roles = [...new Set(P3.map(r => roleOf(r)[1]))];
+    fin2 = roles.map(role => { const s = P3.map(r => roleScore(r, role)), i = [...idx].sort((p, q) => s[q] - s[p])[0];
+      const why = role.k.filter(k => keys.includes(k) && P3.every((o, j) => j === i || P(P3[i], k) - P(o, k) >= 6)).slice(0, 3);
+      return `${C3[i]} is the best ${role.n} of the ${NUM(NP)}${why.length ? ` (${list(why.map(k => k === "loss" ? "keeping the ball" : MK[k].l.toLowerCase()))})` : ""}` }).join("; ")
+      + `. Best all-rounder: ${C3[order[0]]}.`;
+  } else fin2 = `${C3[order[0]]} was the most productive of the ${NUM(NP)}. Without passing and defending stats before 2008/09, this says nothing about who did the dirty work.`;
+  h += `<p class="final"><b>Verdict:</b> ${fin2}</p>`;
+  document.getElementById("sumBody").innerHTML = h;
+}
+
 function setSlot(side, r, push = true) {
-  state[side] = r; renderSlot(side); renderFact(side); renderArc(side); if (state.A && state.B) { renderChart(); renderMap(); renderSummary(state.A, state.B) }
-  if (push && state.A && state.B) { const h = `#${key(state.A)}-v-${key(state.B)}`; try { history.replaceState(null, "", h) } catch (e) { location.hash = h } }
+  state[side] = r; renderSlot(side); renderFact(side); renderArc(side); renderAll();
+  if (push && ready()) { const h = `#${MODE === "career" ? "career-" : ""}${sides().map(x => key(state[x])).join("-v-")}`; try { history.replaceState(null, "", h) } catch (e) { location.hash = h } }
 }
 
 function wireSearch(side) {
   const q = document.getElementById("q" + side), ul = document.getElementById("r" + side);
   let hits = [], on = 0;
-  const draw = () => { ul.innerHTML = hits.map((r, i) => `<li><button type="button" class="${i === on ? "on" : ""}" data-i="${i}"><span>${r[K.name]}</span><small>${r[K.team]} · ${lab(r[K.season])}${full(r) ? "" : " · classic"}</small></button></li>`).join(""); ul.hidden = !hits.length };
+  const draw = () => { ul.innerHTML = hits.map((r, i) => `<li><button type="button" class="${i === on ? "on" : ""}" data-i="${i}"><span>${r[K.name]}</span><small>${isC(r) ? `${lbl(r)} · ${r[K.nseas]} seasons` : `${r[K.team]} · ${lbl(r)}${full(r) ? "" : " · classic"}`}</small></button></li>`).join(""); ul.hidden = !hits.length };
   q.addEventListener("input", () => {
     const t = norm(q.value.trim()); on = 0;
     hits = t.length < 2 ? [] : searchIx.filter(([s]) => t.split(/\s+/).every(w => s.includes(w))).map(x => x[1])
@@ -546,15 +740,36 @@ function wireSearch(side) {
 
 document.addEventListener("click", e => { const b = e.target.closest(".sim button"); if (b) setSlot(b.dataset.side, byKey.get(b.dataset.k)) });
 document.getElementById("swap").addEventListener("click", () => { const t = state.A; state.A = state.B; state.B = t; renderSlot("A"); renderSlot("B"); renderFact("B"); renderArc("B"); setSlot("A", state.A) });
-wireSearch("A"); wireSearch("B");
-document.getElementById("adj").addEventListener("change", e => { ADJ = e.target.checked; renderChart(); renderMap(); renderSummary(state.A, state.B); renderArc("A"); renderArc("B") });
+["A", "B", "C", "D"].forEach(wireSearch);
+document.getElementById("adj").addEventListener("change", e => { ADJ = e.target.checked; renderAll(); sides().forEach(renderArc) });
 renderDebates();
 
-function fromHash() {
-  const m = location.hash.match(/^#(\d+-\d{4})-v-(\d+-\d{4})$/);
-  const a = m && byKey.get(m[1]), b = m && byKey.get(m[2]);
-  setSlot("A", a || byKey.get(D.start[0]), false); setSlot("B", b || byKey.get(D.start[1]), false);
+// Switching mode keeps the same two players: their whole careers, or each one's best season.
+function bestSeason(name) { const o = SROWS.filter(x => x[K.name] === name); if (!o.length) return null; const f = o.filter(full).length ? o.filter(full) : o; return f.reduce((b, x) => allRound(x) > allRound(b) ? x : b) }
+function setMode(m, carry = true) {
+  if (m === MODE) return;
+  const names = sides().map(x => state[x][K.name]);
+  useMode(m); renderDebates();
+  if (!carry) return;
+  const pick = n => m === "career" ? CROWS.find(o => o[K.name] === n) : bestSeason(n);
+  const st = m === "career" ? D.startCareer : D.start;
+  const a = pick(names[0]) || byKey.get(st[0]), b = pick(names[1]) || byKey.get(st[1]);
+  const rest = names.slice(2).map(n => pick(n) || a);
+  [a, b, ...rest].forEach((r, i) => setSlot(sides()[i], r, i === NP - 1));
 }
+document.getElementById("modeSwitch").addEventListener("click", e => { const b = e.target.closest("button"); if (b) setMode(b.dataset.mode) });
+
+function fromHash() {
+  const m = location.hash.match(/^#(career-)?(\d+-\d{4})-v-(\d+-\d{4})(?:-v-(\d+-\d{4}))?(?:-v-(\d+-\d{4}))?$/);
+  const mode = m && m[1] ? "career" : "season";
+  if (mode !== MODE) useMode(mode);
+  const a = m && byKey.get(m[2]), b = m && byKey.get(m[3]);
+  const st = mode === "career" ? D.startCareer : D.start;
+  const extra = m ? [m[4], m[5]].filter(Boolean).map(k => byKey.get(k)).filter(Boolean) : [];
+  NP = 2 + extra.length; state.C = state.D = null;
+  [a || byKey.get(st[0]), b || byKey.get(st[1]), ...extra].forEach((r, i) => setSlot(sides()[i], r, false));
+}
+useMode("season");
 window.addEventListener("hashchange", fromHash);
 fromHash();
 </script>

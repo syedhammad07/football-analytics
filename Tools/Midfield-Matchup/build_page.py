@@ -1,6 +1,6 @@
-"""Builds index.html for Midfield Compare from the Premier League midfielder data.
+"""Builds index.html for Midfield Matchup from the Premier League midfielder data.
 
-Run from the repo root:  python Tools/Midfield-Compare/build_page.py
+Run from the repo root:  python Tools/Midfield-Matchup/build_page.py
 """
 import json
 from pathlib import Path
@@ -83,11 +83,11 @@ ROLE_EXAMPLES = {
 }          # the only stats recorded before 2008/09
 
 
-def load():
+def load(min_minutes=MIN_MINUTES):
     d = pd.concat([pd.read_csv(EXT / f) for f in ("pl_midfielders_2008-2010.csv", "pl_midfielders_2010-2018.csv", "pl_midfielders_2018-2026.csv")])
     d = d.drop_duplicates(["season", "id"])
     d["name"] = d.id.map(d.sort_values("season").groupby("id").name.last())   # one spelling per player (latest)
-    d = d.query("timePlayed >= @MIN_MINUTES").copy()
+    d = d.query("timePlayed >= @min_minutes & timePlayed > 0").copy()
     p90 = lambda s: s / d.timePlayed * 90
     d["npg"] = p90(d.goals - d.penaltyGoals)
     d["shots"] = p90(d.totalShots)
@@ -129,10 +129,10 @@ def load():
     return d
 
 
-def load_classic():
+def load_classic(min_minutes=MIN_MINUTES):
     """1992/93 to 2007/08: minutes, goals and assists only (see build_classic.py)."""
     c = pd.read_csv(EXT / "pl_midfielders_classic_1992-2008.csv").rename(columns={"pl_id": "id"})
-    c = c.query("timePlayed >= @MIN_MINUTES").copy()
+    c = c.query("timePlayed >= @min_minutes & timePlayed > 0").copy()
     p90 = lambda s: s / c.timePlayed * 90
     c["npg"] = p90(c.goals - c.penaltyGoals)
     c["ast"] = p90(c.goalAssists)
@@ -169,6 +169,60 @@ def learn_roles(d):
         k = ["passes", "opp", "rec", "tklw", "npg", "drib"] if key == "8" else list(standout[key].sort_values(ascending=False).index[:6])
         roles.append({"id": key, "n": n, "t": t, "ts": ts, "d": desc, "c": {s_: round(float(v), 1) for s_, v in C[key].items()}, "k": k})
     return roles, f"{right}/{len(idx)} example seasons put back in their own role when left out"
+
+
+CAREER_MIN = 4500          # whole-career mode: 50 full games of Premier League football
+CAREER_FULL_MIN = 2700     # ...with at least 30 full games from 2008/09 to have detailed stats
+
+
+def build_careers(broken):
+    """One row per player for his whole Premier League career (every season he played in midfield, any minutes)."""
+    m = load(0)
+    for k, seasons in broken.items():                 # same blanking as the season view
+        if k in m:
+            m.loc[m.season.isin(seasons), k] = np.nan
+            if k + "_a" in m:
+                m.loc[m.season.isin(seasons), k + "_a"] = np.nan
+    c = load_classic(0)
+    a = pd.concat([c.assign(src="c"), m.assign(src="m")], ignore_index=True)
+    a["goals"], a["goalAssists"], a["penaltyGoals"] = a.goals.fillna(0), a.goalAssists.fillna(0), a.penaltyGoals.fillna(0)
+    out = []
+    for name, g in a.groupby("name"):
+        tot = g.timePlayed.sum()
+        if tot < CAREER_MIN:
+            continue
+        g = g.sort_values("season")
+        r = {"name": name, "first": int(g.season.min()), "season": int(g.season.max()), "nseas": int(g.season.nunique()),
+             "team": ", ".join(dict.fromkeys(g.team)), "min": int(tot), "goals": int(g.goals.sum()), "assists": int(g.goalAssists.sum())}
+        p90 = lambda x: x / tot * 90
+        r["npg"], r["ast"], r["ga"] = p90(g.goals.sum() - g.penaltyGoals.sum()), p90(g.goalAssists.sum()), p90(g.goals.sum() + g.goalAssists.sum())
+        games = np.where(g.src == "c", g.get("games", 38).fillna(38), 38)
+        r["minshare"] = float(np.mean(100 * g.timePlayed / (games * 90)))
+        f = g[g.src == "m"]
+        fm = f.timePlayed.sum()
+        r["fullmin"] = int(fm)
+        r["era"] = int(fm >= CAREER_FULL_MIN)
+        if r["era"]:
+            def wavg(col):                             # minutes-weighted average over the seasons that have the stat
+                ok = f[col].notna()
+                return float((f[col][ok] * f.timePlayed[ok]).sum() / f.timePlayed[ok].sum()) if f.timePlayed[ok].sum() >= CAREER_FULL_MIN / 2 else np.nan
+            for k in ["shots", "boxtouch", "kp", "tb", "passes", "opp", "long", "fwd", "drib", "touches", "loss", "tklw", "int", "rec", "aer", "xg", "xa"]:
+                r[k] = wavg(k)
+                if k + "_a" in f:
+                    r[k + "_a"] = wavg(k + "_a")
+            r["passpct"] = 100 * (1 - f.totalUnsuccessfulPassesExclCrossesAndCorners.sum() / f.totalPasses.sum())
+            att = f.successfulDribbles.sum() + f.unsuccessfulDribbles.sum()
+            r["dribpct"] = 100 * f.successfulDribbles.sum() / att if att >= 30 else np.nan
+            du = f.duelsWon.sum() + f.duelsLost.sum()
+            r["duelpct"] = 100 * f.duelsWon.sum() / du if du else np.nan
+            xs = f[f.xgt.notna()]
+            r["xgt"] = float(xs.xgt.sum()) if len(xs) else np.nan
+            r["xgg"] = int(xs.goals.sum()) if len(xs) else None
+            r["possession"] = float((f.possession * f.timePlayed).sum() / f.timePlayed.sum()) if "possession" in f and f.possession.notna().all() else np.nan
+        out.append(r)
+    C = pd.DataFrame(out)
+    C["id"] = range(1_000_000, 1_000_000 + len(C))
+    return C
 
 
 def blank_broken_seasons(d):
@@ -307,11 +361,42 @@ def main():
             else:
                 out.append(None if pd.isna(v) else round(float(v), 3 if c not in ("passpct", "dribpct", "duelpct", "minshare", "possession", "xgt") else 1))
         rows.append(out)
+    # ---- whole-career rows, ranked among all careers ----
+    C = build_careers(broken)
+    for k, _, _, _, hib in METRICS:
+        if k not in C:
+            C[k] = np.nan
+        C["p_" + k] = (C[k].rank(pct=True, ascending=hib) * 100).round().astype("Int64")
+        if k in adj:
+            if k + "_a" not in C:
+                C[k + "_a"] = np.nan
+            C["pa_" + k] = (C[k + "_a"].rank(pct=True, ascending=hib) * 100).round().astype("Int64")
+    for c_ in ("possession", "xgt", "xgg"):
+        if c_ not in C:
+            C[c_] = np.nan
+    ccols = cols + ["first", "nseas", "fullmin", "xgg"]
+    crows = []
+    for r in C[ccols].itertuples(index=False):
+        out = []
+        for c, v in zip(ccols, r):
+            if c in ("id", "season", "era", "min", "goals", "assists", "first", "nseas", "fullmin"):
+                out.append(int(v))
+            elif c == "xgg":
+                out.append(None if pd.isna(v) else int(v))
+            elif c in ("name", "team"):
+                out.append(v)
+            elif c.startswith("p_") or c.startswith("pa_"):
+                out.append(None if pd.isna(v) else int(v))
+            else:
+                out.append(None if pd.isna(v) else round(float(v), 3 if c not in ("passpct", "dribpct", "duelpct", "minshare", "possession", "xgt") else 1))
+        crows.append(out)
+    print(f"careers: {len(C)} players with {CAREER_MIN:,}+ minutes, {int(C.era.sum())} with detailed stats")
+
     facts = player_facts(d)
     print(f"facts: {len(facts)} players")
     roles, acc = learn_roles(d)
     print(f"roles: {acc}")
-    data = {"facts": facts, "roles": roles, "cols": cols, "rows": rows, "groups": GROUPS, "start": START, "classic": sorted(CLASSIC), "notStyle": sorted(NOT_STYLE),
+    data = {"startCareer": [f"{int(C.id[C.name == n].iloc[0])}-{int(C.season[C.name == n].iloc[0])}" for n in ("Yaya Touré", "Kevin De Bruyne")], "ccols": ccols, "crows": crows, "facts": facts, "roles": roles, "cols": cols, "rows": rows, "groups": GROUPS, "start": START, "classic": sorted(CLASSIC), "notStyle": sorted(NOT_STYLE),
             "metrics": [{"k": k, "l": l, "g": g, "u": u} for k, l, g, u, _ in METRICS]}
     last, first = int(d.season.max()), int(d.season.min())
     html = (HERE / "template.html").read_text(encoding="utf-8")
