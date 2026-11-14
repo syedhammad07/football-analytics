@@ -48,7 +48,7 @@ S = {
 
 def inline(text):
     text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-    text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)            # links -> text
+    text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2" color="#1C2C5B"><u>\1</u></a>', text)   # clickable links
     text = re.sub(r"`([^`]+)`", r"\1", text)
     text = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", text)
     text = re.sub(r"\*(.+?)\*", r"<i>\1</i>", text)

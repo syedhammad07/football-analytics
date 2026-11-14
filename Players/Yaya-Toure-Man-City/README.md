@@ -6,6 +6,8 @@ Yaya Touré's eight seasons at Manchester City, compared with every Premier Leag
 
 **📖 [Read the report](docs/ARTICLE.md)** ([PDF](reports/Yaya_Toure_article.pdf)) · closes repo issue #10 ("flag under-rated players with a simple model")
 
+**⚖️ [Compare him yourself in Midfield Matchup](https://syedhammad07.github.io/football-analytics/Tools/Midfield-Matchup/#14664-2013-v-61366-2019)**, the live comparison tool that grew out of this project.
+
 [![Scorer and passer](reports/figures/03_scorer_and_passer.png)](docs/ARTICLE.md)
 
 ## Key findings
@@ -74,7 +76,7 @@ Yaya-Toure-Man-City/
 │   ├── pl_midfielder_heights.csv           ← listed height of each midfielder
 │   └── pl_career_midfield_greats.csv       ← career totals, ten all-time great midfielders
 ├── docs/
-│   └── ARTICLE.md                          ← the report: 7 chapters, verdict and my take, 11 charts
+│   └── ARTICLE.md                          ← the report: 7 chapters, verdict and my take, 11 charts, a link to the live tool
 ├── notebooks/
 │   ├── setup_cell.py                       ← shared first cell
 │   ├── build_01_career.py / 01_career.ipynb                    ← charts 1–5
