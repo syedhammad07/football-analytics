@@ -35,7 +35,7 @@ Projects are grouped by competition. Each project has its own folder with an art
 
 | Tool | What it does | Highlights |
 | --- | --- | --- |
-| ⚖️ [**Midfield Matchup**](Tools/Midfield-Matchup/) | Compare any two Premier League midfielder seasons and find who played most alike | 4,449 player-seasons · 1992/93 to 2025/26 · 24 stats from 2008/09 · [**open the tool**](https://syedhammad07.github.io/football-analytics/Tools/Midfield-Matchup/) |
+| ⚖️ [**Midfield Matchup (Premier League Edition)**](Tools/Midfield-Matchup/) | Compare two to four Premier League midfielders, by season or whole career, with weekly-updated role leaderboards | 4,449 player-seasons · 1992/93 to 2025/26 · 24 stats from 2008/09 · [**open the tool**](https://syedhammad07.github.io/football-analytics/Tools/Midfield-Matchup/) |
 
 ## Highlights
 

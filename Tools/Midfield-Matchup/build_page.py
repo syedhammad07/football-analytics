@@ -11,6 +11,19 @@ import pandas as pd
 HERE = Path(__file__).parent
 EXT = HERE.parents[1] / "Players" / "Yaya-Toure-Man-City" / "data" / "external"
 MIN_MINUTES = 900          # about ten full games
+IN_PROGRESS_SHARE = 0.4    # while a season is still being played: 40% of the minutes so far (about 360 after 10 games), up to 900
+
+
+def season_status():
+    """(season, games played so far, minutes needed) if the latest season is still being played, else None."""
+    if not POSSESSION.exists():
+        return None
+    p = pd.read_csv(POSSESSION)
+    last = int(p.season.max())
+    games = int(p[p.season == last].games.median())
+    if games >= 38:
+        return None
+    return last, games, int(min(MIN_MINUTES, max(270, round(IN_PROGRESS_SHARE * games * 90 / 10) * 10)))
 POSSESSION = EXT / "pl_team_possession.csv"   # season, team, possession (%): official Premier League team stats
 
 # Possession adjustment: a team that has the ball more gives its players more passes and touches, and fewer
@@ -84,10 +97,13 @@ ROLE_EXAMPLES = {
 
 
 def load(min_minutes=MIN_MINUTES):
-    d = pd.concat([pd.read_csv(EXT / f) for f in ("pl_midfielders_2008-2010.csv", "pl_midfielders_2010-2018.csv", "pl_midfielders_2018-2026.csv")])
-    d = d.drop_duplicates(["season", "id"])
+    files = sorted(f for f in EXT.glob("pl_midfielders_*.csv") if "classic" not in f.name)   # incl. the current season (fetch_current_season.py)
+    d = pd.concat([pd.read_csv(f) for f in files])
+    d = d.drop_duplicates(["season", "id"], keep="last")
     d["name"] = d.id.map(d.sort_values("season").groupby("id").name.last())   # one spelling per player (latest)
-    d = d.query("timePlayed >= @min_minutes & timePlayed > 0").copy()
+    cur = season_status()
+    need = np.where(d.season == cur[0], min(min_minutes, cur[2]), min_minutes) if cur else min_minutes
+    d = d[(d.timePlayed >= need) & (d.timePlayed > 0)].copy()
     p90 = lambda s: s / d.timePlayed * 90
     d["npg"] = p90(d.goals - d.penaltyGoals)
     d["shots"] = p90(d.totalShots)
@@ -116,7 +132,7 @@ def load(min_minutes=MIN_MINUTES):
     d["duelpct"] = 100 * d.duelsWon / duels.where(duels > 0)
     d["aer"] = p90(d.aerialDuelsWon)
     d["ga"] = p90(d.goals + d.goalAssists)
-    d["minshare"] = 100 * d.timePlayed / (38 * 90)
+    d["minshare"] = 100 * d.timePlayed / (np.where(d.season == cur[0], cur[1], 38) if cur else 38) / 90
     d["era"] = 1
     if POSSESSION.exists():
         poss = pd.read_csv(POSSESSION)
@@ -229,9 +245,13 @@ def blank_broken_seasons(d):
     """Some Opta fields are missing (all zero) for some seasons on premierleague.com. Blank them rather than rank zeros."""
     report = {}
     for k, *_ in METRICS:
-        med = d.groupby("season")[k].median()
-        overall = med[med > 0].median()
-        bad = med[(med <= 0.15 * overall) | med.isna()].index.tolist()
+        med, mean = d.groupby("season")[k].median(), d.groupby("season")[k].mean()
+        overall, overall_mean = med[med > 0].median(), mean[mean > 0].median()
+        low = med <= 0.15 * overall
+        cur = season_status()
+        if cur:   # a few games in, most midfielders have no goals yet: for the live season also require a near-zero average
+            low[cur[0]] = low.get(cur[0], False) and mean.get(cur[0], 0) <= 0.15 * overall_mean
+        bad = med[low | med.isna()].index.tolist()
         if bad:
             d.loc[d.season.isin(bad), k] = np.nan
             report[k] = bad
@@ -250,6 +270,9 @@ def player_facts(d):
     fmt = lambda k, v: f"{v:.0f}%" if unit[k] == "%" else (f"{v:.1f}" if v >= 10 else f"{v:.2f}")
     cands = {}                                   # name -> list of (score, text); higher score = more remarkable
     add = lambda n, sc, t: cands.setdefault(n, []).append((sc, t))
+    cur = season_status()
+    live = d[d.season == cur[0]] if cur else d.iloc[:0]
+    d = d[d.season != cur[0]] if cur else d        # a part-season is too small to set all-time records
 
     # 1. A season that ranks near the top of the all-time list for one stat (raw per-90 values, every season with the stat)
     for k in [m[0] for m in METRICS if m[0] not in ("minshare", "ga")]:
@@ -281,6 +304,8 @@ def player_facts(d):
     # 3. Every single minute of a season
     for i, r in d[d.minshare >= 99.9].iterrows():
         add(r["name"], 78, f"He played every minute of the {season_label(r.season)} Premier League season for {r.team}.")
+    for i, r in live[live.minshare >= 99.9].iterrows():
+        add(r["name"], 40, f"He has played every minute of {r.team}'s Premier League season so far in {season_label(r.season)}.")
 
     # 4. Longevity and clubs
     car = d.groupby("name").agg(n=("season", "size"), first=("season", "min"), last=("season", "max"), clubs=("team", "nunique"))
@@ -301,7 +326,7 @@ def player_facts(d):
             f"Only {len(combo)} midfield seasons since 2008/09 have managed that.")
 
     # Fallback: his single best percentile in any season
-    for n_, grp in d.groupby("name"):
+    for n_, grp in pd.concat([d, live]).groupby("name"):
         if n_ in cands:
             continue
         best = None
@@ -313,7 +338,7 @@ def player_facts(d):
         if best:
             p, k, r = best
             add(n_, 10, f"His best number: {lab[k]} in {season_label(r.season)} ({fmt(k, r[k])}{'' if unit[k] == '%' else ' per 90'}), "
-                f"better than {int(p) - 1}% of Premier League midfielders that season.")
+                f"better than {int(p) - 1}% of Premier League midfielders that season{' so far' if cur and r.season == cur[0] else ''}.")
     out = {}
     for n_, lst in cands.items():
         seen, picks = set(), []
@@ -396,7 +421,8 @@ def main():
     print(f"facts: {len(facts)} players")
     roles, acc = learn_roles(d)
     print(f"roles: {acc}")
-    data = {"startCareer": [f"{int(C.id[C.name == n].iloc[0])}-{int(C.season[C.name == n].iloc[0])}" for n in ("Yaya Touré", "Kevin De Bruyne")], "ccols": ccols, "crows": crows, "facts": facts, "roles": roles, "cols": cols, "rows": rows, "groups": GROUPS, "start": START, "classic": sorted(CLASSIC), "notStyle": sorted(NOT_STYLE),
+    cur = season_status()
+    data = {"cur": {"season": cur[0], "games": cur[1], "min": cur[2]} if cur else None, "startCareer": [f"{int(C.id[C.name == n].iloc[0])}-{int(C.season[C.name == n].iloc[0])}" for n in ("Yaya Touré", "Kevin De Bruyne")], "ccols": ccols, "crows": crows, "facts": facts, "roles": roles, "cols": cols, "rows": rows, "groups": GROUPS, "start": START, "classic": sorted(CLASSIC), "notStyle": sorted(NOT_STYLE),
             "metrics": [{"k": k, "l": l, "g": g, "u": u} for k, l, g, u, _ in METRICS]}
     last, first = int(d.season.max()), int(d.season.min())
     html = (HERE / "template.html").read_text(encoding="utf-8")

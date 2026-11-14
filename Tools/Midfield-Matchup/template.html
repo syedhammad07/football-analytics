@@ -1,4 +1,4 @@
-<title>Midfield Matchup</title>
+<title>Midfield Matchup (Premier League Edition)</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Compare two, three or four Premier League midfielders, season by season or whole careers, and find the most similar players.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +27,7 @@ body { background: var(--bg); color: var(--ink); font: 400 15px/1.5 var(--body);
 h1, h2 { font-family: var(--display); font-weight: 700; letter-spacing: .01em; line-height: 1.05; margin: 0; text-wrap: balance }
 h1 { font-size: clamp(34px, 6vw, 52px) }
 h1 span { color: var(--pitch) }
+h1 .edition { display: inline-block; font-size: .42em; font-weight: 600; color: var(--muted); letter-spacing: .02em; vertical-align: .35em }
 .lede { color: var(--muted); max-width: 62ch; margin: 6px 0 0 }
 .eyebrow { font: 600 12px/1 var(--body); letter-spacing: .12em; text-transform: uppercase; color: var(--muted) }
 
@@ -138,6 +139,28 @@ h1 span { color: var(--pitch) }
 .mode button[aria-pressed="true"] { background: var(--pitch); color: var(--surface) }
 .mode button:focus-visible { outline: 2px solid var(--pitch); outline-offset: 2px }
 .debates { display: grid; gap: 8px; margin-top: 14px }
+.board { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 18px 20px; display: grid; gap: 12px }
+.board h2 { font-size: 26px }
+.board .bhead { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 10px }
+.board select { font: 600 14px var(--body); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px }
+.board .mode button small { font-weight: 400; opacity: .8; margin-left: 4px }
+.board ol { list-style: none; margin: 0; padding: 0; display: grid }
+.board li { display: grid; grid-template-columns: 28px minmax(0, 1.3fr) minmax(0, 2fr) 92px; gap: 12px; align-items: center; padding: 9px 0; border-top: 1px solid var(--line) }
+.board li:first-child { border-top: 0 }
+.board .rk { font: 700 20px var(--display); color: var(--muted); text-align: right }
+.board li:nth-child(-n+3) .rk { color: var(--pitch) }
+.board .pl button { font: 600 15px var(--body); color: var(--ink); background: none; border: 0; padding: 0; cursor: pointer; text-align: left }
+.board .pl button:hover { color: var(--pitch); text-decoration: underline }
+.board .pl small { display: block; color: var(--muted); font-size: 12px }
+.board .ks { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 12px; color: var(--muted) }
+.board .ks b { color: var(--ink); font-weight: 600 }
+.board .sc { display: grid; gap: 3px; text-align: right; font-size: 12px; color: var(--muted) }
+.board .sc b { font: 700 20px var(--display); color: var(--ink) }
+.board .sc i { display: block; height: 5px; background: var(--track); border-radius: 3px; overflow: hidden } .board .sc i span { display: block; height: 100%; background: var(--pitch) }
+.board .bfoot { display: flex; flex-wrap: wrap; gap: 10px; align-items: center }
+.board .bfoot button { font: 600 14px var(--body); color: var(--surface); background: var(--pitch); border: 0; border-radius: 999px; padding: 8px 16px; cursor: pointer }
+.board .empty { color: var(--muted); padding: 10px 0 }
+@media (max-width: 640px) { .board li { grid-template-columns: 24px minmax(0, 1fr) 70px } .board .ks { grid-column: 2 / -1; grid-row: 2 } }
 #debates { display: flex; flex-wrap: wrap; gap: 6px }
 #debates button { font: 500 14px var(--body); color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; cursor: pointer }
 #debates button:hover { border-color: var(--pitch); color: var(--pitch) }
@@ -175,9 +198,9 @@ footer a { color: var(--pitch) }
 
 <div class="wrap">
   <header>
-    <div class="eyebrow">Premier League · __FIRST__ to __LAST__ · per 90 minutes</div>
-    <h1>Midfield <span>Matchup</span></h1>
-    <p class="lede">Compare two, three or four Premier League midfielders, one season against another or whole careers. In a single season every bar is a percentile against all midfielders who played __MIN__+ minutes that season, so a 1995 season and a 2023 season are each judged against their own league. Careers are ranked against every midfielder with 4,500+ Premier League minutes. Full stats start in 2008/09; before that the league only recorded goals, assists and minutes.</p>
+    <div class="eyebrow">__FIRST__ to __LAST__ · per 90 minutes</div>
+    <h1>Midfield <span>Matchup</span> <small class="edition">(Premier League Edition)</small></h1>
+    <p class="lede">Compare two, three or four Premier League midfielders, one season against another or whole careers. In a single season every bar is a percentile against all midfielders who played __MIN__+ minutes that season, so a 1995 season and a 2023 season are each judged against their own league. Careers are ranked against every midfielder with 4,500+ Premier League minutes. Full stats start in 2008/09; before that the league only recorded goals, assists and minutes.<span id="curNote"></span></p>
     <div class="debates" aria-label="Famous debates">
       <span class="eyebrow">Settle a debate</span>
       <div id="debates"></div>
@@ -270,6 +293,17 @@ footer a { color: var(--pitch) }
     <p class="hint">Roles are learned from 60 well-known seasons, such as Kanté 2016/17 as a 6, Henderson 2019/20 as an 8, De Bruyne 2019/20 as a 10 and Hazard 2014/15 as a wide attacker. Each player is matched to the role whose style his profile is closest to, whatever his overall level.</p>
   </section>
 
+  <section class="board" id="board">
+    <div class="bhead">
+      <div><div class="eyebrow">Role leaderboards</div><h2 id="boardTitle"></h2></div>
+      <label><span class="eyebrow">Season </span><select id="boardSeason" aria-label="Season"></select></label>
+    </div>
+    <div class="mode" id="boardRoles" role="group" aria-label="Role"></div>
+    <ol id="boardList"></ol>
+    <div class="bfoot"><button type="button" id="boardCmp">Compare the top two</button><span class="hint" id="boardCount"></span></div>
+    <p class="hint">Each player is put in the role his style fits best (the same roles as the summary), then ranked by his percentiles in that role's key stats (his best three are listed). Tap a name to load him as Player A.</p>
+  </section>
+
   <footer>
     <div>Data: official Premier League stats (Opta) from premierleague.com, __NROWS__ midfielder seasons with __MIN__+ minutes: __NDETAIL__ from 2008/09 with full stats and __NCLASSIC__ classic-era seasons (1992/93 to 2007/08) with goals and assists from premierleague.com and minutes from <a href="https://github.com/pssguy/epldata" target="_blank" rel="noopener">pssguy/epldata</a>. A midfielder is a player listed as one in his club's squad. Possession lost is reversed, so a higher bar means he lost the ball less. Team possession: official Premier League team stats, used for the adjustment from 2008/09. Dribble success needs 15+ attempts. n/a = the stat isn't recorded for that season.</div>
     <div>Built by Hammad · <a href="https://github.com/syedhammad07/football-analytics" target="_blank" rel="noopener">Code and data on GitHub</a> · <a href="https://www.linkedin.com/in/syedhammadovais" target="_blank" rel="noopener">LinkedIn</a></div>
@@ -320,7 +354,7 @@ function renderSlot(side) {
   document.getElementById("who" + side).textContent = r[K.name];
   document.getElementById("meta" + side).innerHTML = isC(r)
     ? `${r[K.team]} · ${lbl(r)}${full(r) ? (r[K.fullmin] < r[K.min] ? ` <span class="tag">full stats from 2008/09</span>` : "") : ` <span class="tag">goals and assists only</span>`}`
-    : `${r[K.team]} · ${lbl(r)}${full(r) ? "" : ` <span class="tag">classic era</span>`}`;
+    : `${r[K.team]} · ${lbl(r)}${full(r) ? (soFar(r) ? ` <span class="tag">so far · ${D.cur.games} games</span>` : "") : ` <span class="tag">classic era</span>`}`;
   document.getElementById("facts" + side).innerHTML =
     (isC(r) ? `<span><b>${r[K.nseas]}</b> season${r[K.nseas] === 1 ? "" : "s"}</span>` : "")
     + `<span><b>${r[K.min].toLocaleString("en-GB")}</b> mins</span>${r[K.possession] !== null ? `<span><b>${Math.round(r[K.possession])}%</b> team possession${isC(r) ? " (avg)" : ""}</span>` : ""}`
@@ -712,6 +746,52 @@ function renderSummary3() {
   document.getElementById("sumBody").innerHTML = h;
 }
 
+
+// ---- Role leaderboards ----
+const soFar = r => !isC(r) && D.cur && r[K.season] === D.cur.season;
+const seasonName = s => `${s}/${String(s + 1).slice(-2)}`;
+let boardSeason = null, boardRole = ROLES[0].id;
+(function setupBoard() {
+  const seasons = [...new Set(SROWS.filter(full).map(r => r[K.season]))].sort((a, b) => b - a);
+  boardSeason = seasons[0];
+  const sel = document.getElementById("boardSeason");
+  sel.innerHTML = seasons.map(s => `<option value="${s}">${seasonName(s)}${D.cur && s === D.cur.season ? " (so far)" : ""}</option>`).join("") + `<option value="career">Whole careers</option>`;
+  sel.addEventListener("change", () => { boardSeason = sel.value === "career" ? "career" : +sel.value; renderBoard() });
+  document.getElementById("boardRoles").addEventListener("click", e => { const b = e.target.closest("button"); if (b) { boardRole = b.dataset.role; renderBoard() } });
+  document.getElementById("boardList").addEventListener("click", e => { const b = e.target.closest("button[data-k]"); if (!b) return; loadFromBoard([b.dataset.k]) });
+  document.getElementById("boardCmp").addEventListener("click", () => { const k = [...document.querySelectorAll("#boardList button[data-k]")].slice(0, 2).map(b => b.dataset.k); if (k.length === 2) loadFromBoard(k) });
+  if (D.cur) document.getElementById("curNote").textContent = ` ${seasonName(D.cur.season)} is still being played (${D.cur.games} games in), so for now it counts midfielders with ${D.cur.min}+ minutes.`;
+})();
+function boardPool() {
+  return boardSeason === "career" ? CROWS.filter(full) : SROWS.filter(r => full(r) && r[K.season] === boardSeason);
+}
+function renderBoard() {
+  const pool = boardPool().map(r => [r, roleOf(r)]);
+  document.getElementById("boardRoles").innerHTML = ROLES.map(role => `<button type="button" data-role="${role.id}" aria-pressed="${role.id === boardRole}">${role.n.replace(/^./, c => c.toUpperCase())}<small>${pool.filter(([, f]) => f[1].id === role.id).length}</small></button>`).join("");
+  const role = ROLES.find(x => x.id === boardRole);
+  const list = pool.filter(([, f]) => f[1].id === role.id).map(([r, f]) => [roleScore(r, role), r, f[0]]).sort((a, b) => b[0] - a[0]);
+  const when = boardSeason === "career" ? "whole Premier League careers" : `${seasonName(boardSeason)}${D.cur && boardSeason === D.cur.season ? " so far" : ""}`;
+  document.getElementById("boardTitle").textContent = `Best ${role.ts}, ${when}`;
+  document.getElementById("boardList").innerHTML = list.length ? list.slice(0, 10).map(([sc, r, fit], i) => {
+    const ks = role.k.filter(k => P(r, k) !== null).sort((a, b) => P(r, b) - P(r, a)).slice(0, 3);
+    return `<li><span class="rk">${i + 1}</span>`
+      + `<span class="pl"><button type="button" data-k="${key(r)}">${r[K.name]}</button><small>${isC(r) ? `${lbl(r)} · ${r[K.nseas]} seasons` : r[K.team]} · ${r[K.min].toLocaleString("en-GB")} mins</small></span>`
+      + `<span class="ks">${ks.map(k => `<span>${k === "loss" ? "keeping the ball" : MK[k].l.toLowerCase()} <b>${P(r, k)}</b></span>`).join("")}</span>`
+      + `<span class="sc"><b>${Math.round(sc)}</b><i><span style="width:${Math.round(sc)}%"></span></i>fit ${Math.round(fit)}</span></li>` }).join("")
+    : `<li class="empty">No midfielder${boardSeason === "career" ? "" : " that season"} fits this role best.</li>`;
+  document.getElementById("boardCount").textContent = `${list.length} ${list.length === 1 ? "player" : "players"} in this role${list.length > 10 ? ", top 10 shown" : ""}. Numbers are percentiles; the big number is his role score.`;
+  document.getElementById("boardCmp").hidden = list.length < 2;
+}
+function loadFromBoard(keys) {
+  const m = boardSeason === "career" ? "career" : "season", switched = m !== MODE;
+  if (switched) setMode(m, false);
+  if (keys.length === 2 || switched) { NP = 2; state.C = state.D = null }
+  const b = keys[1] ? byKey.get(keys[1]) : switched ? byKey.get((m === "career" ? D.startCareer : D.start)[1]) : null;
+  if (b) setSlot("B", b, false);
+  setSlot("A", byKey.get(keys[0]));
+  document.getElementById("modeSwitch").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
 function setSlot(side, r, push = true) {
   state[side] = r; renderSlot(side); renderFact(side); renderArc(side); renderAll();
   if (push && ready()) { const h = `#${MODE === "career" ? "career-" : ""}${sides().map(x => key(state[x])).join("-v-")}`; try { history.replaceState(null, "", h) } catch (e) { location.hash = h } }
@@ -741,7 +821,7 @@ function wireSearch(side) {
 document.addEventListener("click", e => { const b = e.target.closest(".sim button"); if (b) setSlot(b.dataset.side, byKey.get(b.dataset.k)) });
 document.getElementById("swap").addEventListener("click", () => { const t = state.A; state.A = state.B; state.B = t; renderSlot("A"); renderSlot("B"); renderFact("B"); renderArc("B"); setSlot("A", state.A) });
 ["A", "B", "C", "D"].forEach(wireSearch);
-document.getElementById("adj").addEventListener("change", e => { ADJ = e.target.checked; renderAll(); sides().forEach(renderArc) });
+document.getElementById("adj").addEventListener("change", e => { ADJ = e.target.checked; renderAll(); sides().forEach(renderArc); renderBoard() });
 renderDebates();
 
 // Switching mode keeps the same two players: their whole careers, or each one's best season.
@@ -772,4 +852,5 @@ function fromHash() {
 useMode("season");
 window.addEventListener("hashchange", fromHash);
 fromHash();
+renderBoard();
 </script>
