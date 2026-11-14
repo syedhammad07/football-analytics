@@ -455,12 +455,13 @@ const rankCache = {};
 function allTimeRank(r, k) {
   const ck = k + (ADJ ? "a" : "r");
   if (!rankCache[ck]) {
-    const vals = R.map(o => V(o, k)).filter(v => v !== null && v !== undefined);
-    const first = Math.min(...R.filter(o => V(o, k) !== null && V(o, k) !== undefined).map(o => o[K.season]));
+    const pool = R.filter(o => !soFar(o));   // a season still being played is too small to rank against complete ones
+    const vals = pool.map(o => V(o, k)).filter(v => v !== null && v !== undefined);
+    const first = Math.min(...pool.filter(o => V(o, k) !== null && V(o, k) !== undefined).map(o => o[K.season]));
     rankCache[ck] = { vals: vals.sort((x, y) => lower(k) ? x - y : y - x), first };   // cleared when the mode changes
   }
   const c = rankCache[ck], v = V(r, k);
-  if (v === null || v === undefined) return null;
+  if (v === null || v === undefined || soFar(r)) return null;   // no all-time records for a part-season
   const better = lower(k) ? c.vals.findIndex(x => x >= v) : c.vals.findIndex(x => x <= v);
   return { rank: better + 1, n: c.vals.length, first: c.first };
 }
@@ -590,8 +591,14 @@ function renderSummary(a, b) {
     const gl = isC(r) ? r[K.xgg] : r[K.goals], d = gl - r[K.xgt];
     const note = isC(r) ? (d >= 8 ? " He beat his chances season after season, which suggests real finishing skill rather than luck." : d <= -8 ? " Over a whole career that looks like a genuine weakness in front of goal." : "")
                         : (d >= 4 ? " Finishing like that rarely lasts." : d <= -4 ? " He was unlucky in front of goal." : "");
-    return `${C} scored ${gl} from chances worth ${r[K.xgt].toFixed(1)} expected goals${isC(r) ? " in his seasons from 2013/14" : ""} (${d >= 0 ? "+" : ""}${d.toFixed(1)}).${note}`; });
-  const finTxt = finishing.length ? `<p>${finishing.join(" ")}</p>` : "";
+    return [`${C} scored ${gl} from chances worth ${r[K.xgt].toFixed(1)} expected goals${isC(r) ? " in his seasons from 2013/14" : ""} (${d >= 0 ? "+" : ""}${d.toFixed(1)}).`, note]; });
+  if (finishing.length === 2 && finishing[0][1] && finishing[0][1] === finishing[1][1]) {   // same comment for both: say it once
+    const both = { " Finishing like that rarely lasts.": " For both of them, finishing like that rarely lasts.", " He was unlucky in front of goal.": " Both were unlucky in front of goal." };
+    finishing[1][1] = both[finishing[0][1]] || " Both beat their chances season after season, which suggests real finishing skill rather than luck.";
+    if (finishing[0][1].includes("genuine weakness")) finishing[1][1] = " Over whole careers, that looks like a genuine weakness for both.";
+    finishing[0][1] = "";
+  }
+  const finTxt = finishing.length ? `<p>${finishing.map(([t, n]) => t + n).join(" ")}</p>` : "";
   const edgeTxt = [eA.length ? `${A} was clearly ahead on ${list(eA.map(k => statPhrase(k, a, b)))}.` : "", eB.length ? `${B} was clearly ahead on ${list(eB.map(k => statPhrase(k, b, a)))}.` : ""].join(" ");
 
   if (!(full(a) && full(b))) {   // classic era: output only
