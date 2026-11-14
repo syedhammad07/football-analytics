@@ -31,6 +31,12 @@ Projects are grouped by competition. Each project has its own folder with an art
 | --- | --- | --- |
 | 🩵 [**Yaya Touré: Was He Under-Rated?**](Players/Yaya-Toure-Man-City/) | Was Yaya Touré under-rated, and who really was? | 1,629 midfielder-seasons · under-rated model · 11 charts · [report](Players/Yaya-Toure-Man-City/docs/ARTICLE.md) |
 
+### 🛠️ [Tools](Tools/)
+
+| Tool | What it does | Highlights |
+| --- | --- | --- |
+| ⚖️ [**Midfield Compare**](Tools/Midfield-Compare/) | Compare any two Premier League midfielder seasons and find who played most alike | 4,449 player-seasons · 1992/93 to 2025/26 · 24 stats from 2008/09 · [**open the tool**](https://syedhammad07.github.io/football-analytics/Tools/Midfield-Compare/) |
+
 ## Highlights
 
 ### Xabi Alonso's Leverkusen 2023-24
@@ -81,6 +87,8 @@ football-analytics/
 ├── Players/                           ← projects about one player
 │   ├── README.md
 │   └── Yaya-Toure-Man-City/            ← was Yaya Touré under-rated? report + model
+├── Tools/                             ← interactive pages
+│   └── Midfield-Compare/               ← compare any two Premier League midfielders
 ├── src/football_analytics/            ← shared code
 │   ├── data.py                        ← download StatsBomb open data
 │   ├── clean.py                       ← clean events, compute minutes played
