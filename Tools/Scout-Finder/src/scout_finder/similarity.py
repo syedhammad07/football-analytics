@@ -85,16 +85,21 @@ def biggest_gap(target: pd.Series, other: pd.Series) -> str:
 
 def find_similar(players: pd.DataFrame, target: pd.Series, *, same_position: bool = True,
                  max_age: float | None = None, max_value_m: float | None = None,
-                 min_minutes: int = MIN_MINUTES, exclude_team: bool = False, top: int = 10) -> pd.DataFrame:
+                 min_minutes: int = MIN_MINUTES, exclude_team: bool = False, in_pl_only: bool = False,
+                 top: int = 10) -> pd.DataFrame:
     """Rank everyone else by how closely their profile matches `target`, after applying the filters.
 
     `max_value_m` is in millions of euros and drops players with no known value.
+    `exclude_team` leaves out the target's current club; `in_pl_only` keeps players still in the league now.
     """
     pool = players[(players.pl_id != target.pl_id) & (players.timePlayed >= min_minutes)]
+    if in_pl_only and "in_pl_now" in pool:
+        pool = pool[pool.in_pl_now.fillna(False).astype(bool)]
     if same_position:
         pool = pool[pool.position == target.position]
     if exclude_team:
-        pool = pool[pool.team != target.team]
+        club = target.get("club_now", target.team)
+        pool = pool[pool.get("club_now", pool.team) != club]
     if max_age is not None:
         pool = pool[pool.age <= max_age]
     if max_value_m is not None:

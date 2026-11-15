@@ -3,9 +3,11 @@ import time
 
 import pandas as pd
 
-from .config import (AGE_ON, PLAYERS_CSV, POSSESSION_CSV, SEASON, TRANSFERMARKT_GZ, VALUES_CSV, POSITIONS)
+from .config import (AGE_ON, CURRENT_SEASON, IN_PROGRESS_SHARE, MIN_MINUTES, POSITIONS, POSSESSION_CSV, SEASON,
+                     SEASONS, SQUADS_CSV, TRANSFERMARKT_GZ, TRANSFERS_CSV, players_csv, values_csv)
 from .features import add_percentiles, adjust_for_possession, build_metrics
 from .similarity import normalise
+from .transfers import SHORT_NAMES, current_clubs
 
 PL_API = "https://sdp-prem-prod.premier-league-prod.pulselive.com/api/"
 PL_HEADERS = {"Origin": "https://www.premierleague.com", "Referer": "https://www.premierleague.com/",
@@ -23,22 +25,46 @@ RAW_FIELDS = ("appearances,starts,timePlayed,goals,penaltyGoals,goalAssists,expe
 
 # ---------- loading ----------
 
-def load_players() -> pd.DataFrame:
-    """Every outfield player of the season with metrics, percentiles, age and (where matched) market value."""
-    raw = pd.read_csv(PLAYERS_CSV)
+def season_label(season: int) -> str:
+    return f"{season}/{str(season + 1)[-2:]}"
+
+
+def possession(season: int) -> pd.DataFrame:
+    p = pd.read_csv(POSSESSION_CSV)
+    return p[p.season == season]
+
+
+def min_minutes(season: int) -> int:
+    """900 for a finished season; 40% of the minutes played so far for the season in progress."""
+    games = possession(season).games.median()
+    if pd.isna(games) or games >= 38:
+        return MIN_MINUTES
+    return int(min(MIN_MINUTES, max(270, round(IN_PROGRESS_SHARE * games * 90 / 10) * 10)))
+
+
+def load_players(season: int = SEASON) -> pd.DataFrame:
+    """Every outfield player of the season with metrics, percentiles, age, market value and his club now."""
+    raw = pd.read_csv(players_csv(season))
+    raw["team"] = raw.team.map(lambda t: SHORT_NAMES.get(t, t))
     raw = raw[raw.position.isin(POSITIONS) & (raw.timePlayed > 0)].reset_index(drop=True)
     d = build_metrics(raw)
-    d = adjust_for_possession(d, pd.read_csv(POSSESSION_CSV))
-    d = add_percentiles(d)
+    d = adjust_for_possession(d, possession(season))
+    d = add_percentiles(d, min_minutes(season))
+    d["season"] = season
     born = pd.to_datetime(d.birth_date, errors="coerce")
     d["age"] = ((pd.Timestamp(AGE_ON) - born).dt.days / 365.25).round(1)
-    if VALUES_CSV.exists():
-        values = pd.read_csv(VALUES_CSV)
+    if values_csv(season).exists():
+        values = pd.read_csv(values_csv(season))
         d = d.merge(values[["pl_id", "market_value_eur", "contract_until", "tm_url"]], on="pl_id", how="left")
     else:
         d["market_value_eur"] = pd.NA
         d["contract_until"] = pd.NA
         d["tm_url"] = pd.NA
+    if SQUADS_CSV.exists() and TRANSFERS_CSV.exists():
+        now = current_clubs(d, pd.read_csv(SQUADS_CSV), pd.read_csv(TRANSFERS_CSV))
+        d = d.merge(now, on="pl_id", how="left")
+    else:
+        d["club_now"], d["in_pl_now"], d["move"] = d.team, True, ""
     return d
 
 
@@ -117,14 +143,14 @@ def _one_day_out(p, by_dob):
     return None
 
 
-def build_values_file() -> pd.DataFrame:
-    """Match the downloaded Transfermarkt file to this season's players and save the small result."""
+def build_values_file(season: int = SEASON) -> pd.DataFrame:
+    """Match the downloaded Transfermarkt file to one season's players and save the small result."""
     if not TRANSFERMARKT_GZ.exists():
         raise FileNotFoundError(f"{TRANSFERMARKT_GZ} not found. Run `scout-finder fetch --values` first.")
-    pl = pd.read_csv(PLAYERS_CSV)
+    pl = pd.read_csv(players_csv(season))
     pl = pl[pl.position.isin(POSITIONS)]
     values = match_values(pl, pd.read_csv(TRANSFERMARKT_GZ))
-    values.to_csv(VALUES_CSV, index=False)
+    values.to_csv(values_csv(season), index=False)
     return values
 
 
@@ -163,7 +189,7 @@ def fetch_pl_season(season: int = SEASON) -> pd.DataFrame:
                          **{f: stats.get(f) or 0 for f in RAW_FIELDS}})
         print(f"  {tm['shortName']}: {sum(r['team'] == tm['shortName'] for r in rows)} players")
     d = pd.DataFrame(rows).sort_values(["team", "name"])
-    d.to_csv(PLAYERS_CSV, index=False)
+    d.to_csv(players_csv(season), index=False)
     return d
 
 

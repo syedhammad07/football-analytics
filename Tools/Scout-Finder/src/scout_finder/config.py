@@ -5,13 +5,25 @@ from pathlib import Path
 PROJECT_DIR = Path(__file__).resolve().parents[2]
 DATA_DIR = PROJECT_DIR / "data"
 
-SEASON = 2025                       # 2025 = the 2025/26 Premier League season
-PLAYERS_CSV = DATA_DIR / "pl_players_2025-26.csv"
-POSSESSION_CSV = DATA_DIR / "pl_team_possession_2025-26.csv"
+SEASON = 2025                       # default season to search: 2025 = 2025/26, the last complete one
+CURRENT_SEASON = 2026               # 2026/27, being played now
+SEASONS = {2025: "2025-26", 2026: "2026-27"}
+POSSESSION_CSV = DATA_DIR / "pl_team_possession.csv"      # every team's possession, both seasons
+SQUADS_CSV = DATA_DIR / "pl_squads_2026-27.csv"           # who is in each Premier League squad now
+TRANSFERS_CSV = DATA_DIR / "transfers_summer_2026.csv"    # every summer 2026 transfer and loan in English football
 TRANSFERMARKT_GZ = DATA_DIR / "tm_players.csv.gz"          # downloaded by `scout-finder fetch`, not committed
-VALUES_CSV = DATA_DIR / "pl_values_2025-26.csv"           # Transfermarkt value matched to each Premier League player
 
 MIN_MINUTES = 900                   # about ten full games: enough to trust per-90 numbers
+IN_PROGRESS_SHARE = 0.4             # for a season still being played: 40% of the minutes so far
+
+
+def players_csv(season: int) -> Path:
+    return DATA_DIR / f"pl_players_{SEASONS[season]}.csv"
+
+
+def values_csv(season: int) -> Path:
+    """Transfermarkt value matched to each Premier League player of that season."""
+    return DATA_DIR / f"pl_values_{SEASONS[season]}.csv"
 VALUE_DATE = "June 2026"            # when the Transfermarkt values were taken (end of the dataset)
 AGE_ON = "2026-09-01"               # ages are given at the start of the 2026/27 season
 
