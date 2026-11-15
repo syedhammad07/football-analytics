@@ -36,7 +36,7 @@ Projects are grouped by competition. Each project has its own folder with an art
 | Tool | What it does | Highlights |
 | --- | --- | --- |
 | ⚖️ [**Midfield Matchup (Premier League Edition)**](Tools/Midfield-Matchup/) | Compare two to four Premier League midfielders, by season or whole career, with weekly-updated role leaderboards | 4,530 player-seasons · 1992/93 to now · 24 stats from 2008/09 · [**open the tool**](https://syedhammad07.github.io/football-analytics/Tools/Midfield-Matchup/) |
-| 🔎 [**Scout Finder**](Tools/Scout-Finder/) | Who plays like a star, for less? | 491 Premier League players, 2025/26 · 27 stats · Transfermarkt values · Python CLI with tests |
+| 🔎 [**Scout Finder**](Tools/Scout-Finder/) | Who plays like a star, for less? Search the Premier League or all of Europe's top five leagues, filter by age and price | 2,474 players in five leagues, 2025/26 · Premier League 2026/27 so far · 27 stats · Transfermarkt values · clubs as of summer 2026 · [**open the tool**](https://syedhammad07.github.io/football-analytics/Tools/Scout-Finder/) |
 
 ## Highlights
 
