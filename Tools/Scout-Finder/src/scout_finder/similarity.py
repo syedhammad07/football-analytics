@@ -11,7 +11,9 @@ PCT_COLS = ["p_" + m.key for m in METRICS]
 
 def normalise(text: str) -> str:
     """Lower case, accents removed: 'Ødegaard' and 'odegaard' match."""
-    text = text.replace("ø", "o").replace("Ø", "O").replace("ß", "ss")
+    for a, b in (("ø", "o"), ("Ø", "O"), ("ß", "ss"), ("đ", "d"), ("Đ", "D"), ("ð", "d"), ("Ð", "D"), ("ł", "l"), ("Ł", "L"),
+                 ("ı", "i"), ("æ", "ae"), ("Æ", "Ae"), ("þ", "th")):
+        text = text.replace(a, b)
     return "".join(c for c in unicodedata.normalize("NFKD", text) if not unicodedata.combining(c)).lower().strip()
 
 
@@ -53,17 +55,25 @@ def similarity_to_all(target: pd.Series, players: pd.DataFrame) -> pd.Series:
     return pd.Series(100 - np.nanmean(gaps, axis=1), index=players.index)
 
 
-def shared_strengths(target: pd.Series, other: pd.Series, n: int = 3, floor: float = 75) -> list[str]:
+def label(key: str, labels: dict | None = None) -> str:
+    """A metric's name on screen. `labels` renames metrics for a data source that measures them differently."""
+    if key == "losses":
+        return "Keeping the ball"                 # its percentile is reversed: higher = loses the ball less
+    return (labels or {}).get(key, METRIC_BY_KEY[key].label)
+
+
+def shared_strengths(target: pd.Series, other: pd.Series, n: int = 3, floor: float = 75,
+                     labels: dict | None = None) -> list[str]:
     """Metrics where both players are in the top quarter of their position, strongest first."""
     out = []
     for col in PCT_COLS:
         t, o = target[col], other[col]
         if pd.notna(t) and pd.notna(o) and t >= floor and o >= floor:
-            out.append((min(t, o), METRIC_BY_KEY[col[2:]].label))
-    return [label for _, label in sorted(out, reverse=True)[:n]]
+            out.append((min(t, o), label(col[2:], labels)))
+    return [name for _, name in sorted(out, reverse=True)[:n]]
 
 
-def biggest_gap(target: pd.Series, other: pd.Series) -> str:
+def biggest_gap(target: pd.Series, other: pd.Series, labels: dict | None = None) -> str:
     """The metric where the two players differ most, in words."""
     best = None
     for col in PCT_COLS:
@@ -73,28 +83,31 @@ def biggest_gap(target: pd.Series, other: pd.Series) -> str:
     if best is None:
         return ""
     metric = METRIC_BY_KEY[best[0][2:]]
-    label = metric.label.lower()
-    if label.endswith("%"):
+    name = label(metric.key, labels).lower()
+    if name.endswith("%"):
         word = "higher" if best[1] > 0 else "lower"
     else:
         word = "more" if best[1] > 0 else "fewer"
-    if metric.key == "losses":               # percentile is reversed: higher = loses the ball less
-        word, label = ("loses the ball less" if best[1] > 0 else "loses the ball more"), ""
-    return f"{word}{' ' + label if label else ''} ({best[1]:+.0f} pts)"
+    if metric.key == "losses":
+        word, name = ("loses the ball less" if best[1] > 0 else "loses the ball more"), ""
+    return f"{word}{' ' + name if name else ''} ({best[1]:+.0f} pts)"
 
 
 def find_similar(players: pd.DataFrame, target: pd.Series, *, same_position: bool = True,
                  max_age: float | None = None, max_value_m: float | None = None,
                  min_minutes: int = MIN_MINUTES, exclude_team: bool = False, in_pl_only: bool = False,
-                 top: int = 10) -> pd.DataFrame:
+                 top: int = 10, labels: dict | None = None, leagues: list[str] | None = None) -> pd.DataFrame:
     """Rank everyone else by how closely their profile matches `target`, after applying the filters.
 
     `max_value_m` is in millions of euros and drops players with no known value.
     `exclude_team` leaves out the target's current club; `in_pl_only` keeps players still in the league now.
+    `leagues` keeps only players from those leagues (top-five-leagues data); `labels` renames metrics for that data.
     """
     pool = players[(players.pl_id != target.pl_id) & (players.timePlayed >= min_minutes)]
     if in_pl_only and "in_pl_now" in pool:
         pool = pool[pool.in_pl_now.fillna(False).astype(bool)]
+    if leagues and "league" in pool:
+        pool = pool[pool.league.isin(leagues)]
     if same_position:
         pool = pool[pool.position == target.position]
     if exclude_team:
@@ -107,6 +120,6 @@ def find_similar(players: pd.DataFrame, target: pd.Series, *, same_position: boo
     if pool.empty:
         return pool.assign(match=[], shared=[], gap=[])
     pool = pool.assign(match=similarity_to_all(target, pool)).sort_values("match", ascending=False).head(top)
-    pool["shared"] = [", ".join(shared_strengths(target, r)) for _, r in pool.iterrows()]
-    pool["gap"] = [biggest_gap(target, r) for _, r in pool.iterrows()]
+    pool["shared"] = [", ".join(shared_strengths(target, r, labels=labels)) for _, r in pool.iterrows()]
+    pool["gap"] = [biggest_gap(target, r, labels) for _, r in pool.iterrows()]
     return pool

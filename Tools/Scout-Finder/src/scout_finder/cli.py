@@ -4,10 +4,10 @@ import sys
 
 import pandas as pd
 
-from .config import GROUPS, METRICS, SEASON, SEASONS, VALUE_DATE
+from .config import GROUPS, LEAGUES, METRICS, MIN_MINUTES, SEASON, SEASONS, TOP5_LABELS, VALUE_DATE
 from .data import (build_values_file, download_transfermarkt, fetch_pl_season, load_players, min_minutes,
                    season_label)
-from .similarity import find_player, find_similar
+from .similarity import find_player, find_similar, label
 
 
 def money(v) -> str:
@@ -28,11 +28,14 @@ def club(r: pd.Series) -> str:
     now = r.get("club_now")
     if not isinstance(now, str) or not now:
         now = r.team
-    return now if r.get("in_pl_now", True) else f"{now} (left PL)"
+    if r.get("in_pl_now", True):
+        return now
+    return f"{now} (left top 5)" if "league" in r else f"{now} (left PL)"
 
 
 def describe(r: pd.Series) -> str:
-    return (f"{r['name']} ({club(r)}, {r.position.lower()}, {r.age:.0f}, {money(r.market_value_eur)}, "
+    age = "age n/a" if pd.isna(r.age) else int(r.age)
+    return (f"{r['name']} ({club(r)}, {r.position.lower()}, {age}, {money(r.market_value_eur)}, "
             f"{int(r.timePlayed):,} mins in {season_label(r.season)})")
 
 
@@ -56,7 +59,53 @@ def find_target(name: str, season: int, pools: dict) -> pd.Series:
         raise first_error
 
 
+LEAGUE_CODES = {"pl": "Premier League", "laliga": "La Liga", "seriea": "Serie A", "bundesliga": "Bundesliga", "ligue1": "Ligue 1"}
+
+
+def cmd_find_top5(args) -> None:
+    from .top5 import load_top5
+    players = load_top5()
+    target = find_player(players, args.player)
+    leagues = [LEAGUE_CODES[c] for c in args.league] if args.league else None
+    minutes = args.min_minutes if args.min_minutes is not None else MIN_MINUTES
+    found = find_similar(players, target, same_position=not args.any_position, max_age=args.max_age,
+                         max_value_m=args.max_value, min_minutes=minutes, exclude_team=args.other_clubs,
+                         in_pl_only=not args.include_departed, top=args.top, labels=TOP5_LABELS, leagues=leagues)
+    filters = [f"age ≤ {args.max_age:g}" if args.max_age else "", f"value ≤ €{args.max_value:g}m" if args.max_value else "",
+               "other clubs only" if args.other_clubs else "", "any position" if args.any_position else f"{target.position.lower()}s only",
+               ", ".join(leagues) if leagues else "all five leagues", "" if args.include_departed else "still in the top 5 leagues"]
+    print(f"\nPlayers most like {describe(target)}")
+    if moved_line(target):
+        print(f"  {moved_line(target)}")
+    print(f"2025/26, Europe's top five leagues · {', '.join(f for f in filters if f)} · {minutes}+ minutes")
+    print(f"Clubs as of now, summer 2026 moves included · values: Transfermarkt, {VALUE_DATE}\n")
+    if found.empty:
+        print("Nobody passes those filters. Try a higher --max-value or --max-age.")
+        return
+    print(f"{'':>3} {'Player':<24} {'Club now':<20} {'25/26 league':<15} {'Age':>3} {'Value':>6} {'Match':>6}")
+    for i, (_, r) in enumerate(found.iterrows(), 1):
+        print(f"{i:>3} {r['name'][:24]:<24} {club(r)[:20]:<20} {r.league:<15} {int(r.age):>3} {money(r.market_value_eur):>6} {r.match:>5.0f}%")
+        if moved_line(r):
+            print(f"      {moved_line(r)}")
+        if r.shared:
+            print(f"      also strong at: {r.shared}")
+        print(f"      biggest difference: {r.gap}")
+    best_cheaper(target, found)
+
+
+def best_cheaper(target, found) -> None:
+    if pd.notna(target.market_value_eur):
+        cheaper = found[found.market_value_eur <= 0.75 * target.market_value_eur]   # only worth saying if it's a real saving
+        if not cheaper.empty:
+            best = cheaper.iloc[0]
+            saving = target.market_value_eur - best.market_value_eur
+            print(f"\nBest cheaper option: {best['name']} ({club(best)}),")
+            print(f"a {best.match:.0f}% match for {money(best.market_value_eur)}, {money(saving)} less than {target['name']}.")
+
+
 def cmd_find(args) -> None:
+    if args.top5:
+        return cmd_find_top5(args)
     pools = {s: load_players(s) for s in SEASONS}
     players = pools[args.season]
     target = find_target(args.player, args.season, pools)
@@ -79,34 +128,33 @@ def cmd_find(args) -> None:
         return
     print(f"{'':>3} {'Player':<24} {'Club now':<16} {'Age':>4} {'Value':>7} {'Match':>6}")
     for i, (_, r) in enumerate(found.iterrows(), 1):
-        print(f"{i:>3} {r['name'][:24]:<24} {club(r)[:16]:<16} {r.age:>4.0f} {money(r.market_value_eur):>7} {r.match:>5.0f}%")
+        print(f"{i:>3} {r['name'][:24]:<24} {club(r)[:16]:<16} {int(r.age):>4} {money(r.market_value_eur):>7} {r.match:>5.0f}%")
         if moved_line(r):
             print(f"      {moved_line(r)}")
         if r.shared:
             print(f"      also strong at: {r.shared}")
         print(f"      biggest difference: {r.gap}")
-    if pd.notna(target.market_value_eur):
-        cheaper = found[found.market_value_eur <= 0.75 * target.market_value_eur]   # only worth saying if it's a real saving
-        if not cheaper.empty:
-            best = cheaper.iloc[0]
-            saving = target.market_value_eur - best.market_value_eur
-            print(f"\nBest cheaper option: {best['name']} ({club(best)}),")
-            print(f"a {best.match:.0f}% match for {money(best.market_value_eur)}, {money(saving)} less than {target['name']}.")
+    best_cheaper(target, found)
 
 
 def cmd_profile(args) -> None:
-    pools = {s: load_players(s) for s in SEASONS}
-    r = find_target(args.player, args.season, pools)
+    if args.top5:
+        from .top5 import load_top5
+        r, labels = find_player(load_top5(), args.player), TOP5_LABELS
+        scale = f"top-five-league {r.position.lower()}s with {MIN_MINUTES}+ minutes, 2025/26"
+    else:
+        pools = {s: load_players(s) for s in SEASONS}
+        r, labels = find_target(args.player, args.season, pools), None
+        scale = f"Premier League {r.position.lower()}s with {min_minutes(r.season)}+ minutes, {season_label(r.season)}"
     print(f"\n{describe(r)}")
     if moved_line(r):
         print(f"  {moved_line(r)}")
-    print(f"Percentiles against Premier League {r.position.lower()}s with {min_minutes(r.season)}+ minutes, "
-          f"{season_label(r.season)} (adjusted for team possession)\n")
+    print(f"Percentiles against {scale} (adjusted for team possession)\n")
     for g in GROUPS:
         print(g.upper())
         for m in [m for m in METRICS if m.group == g]:
             p = r["p_" + m.key]
-            print(f"  {m.label:<42} {bar(p)} {'' if pd.isna(p) else int(p):>3}")
+            print(f"  {label(m.key, labels):<42} {bar(p)} {'' if pd.isna(p) else int(p):>3}")
         print()
 
 
@@ -118,10 +166,27 @@ def cmd_fetch(args) -> None:
     if args.values:
         print("Downloading Transfermarkt values...")
         download_transfermarkt()
+    if args.top5:
+        from .top5 import download_top5
+        print("Downloading 2025/26 stats for the top five leagues...")
+        print(f"Saved {len(download_top5())} players.")
     if args.values or args.match:
         for s in SEASONS:
             v = build_values_file(s)
             print(f"{season_label(s)}: matched {len(v)} players to a Transfermarkt value.")
+    if args.values or args.match or args.top5:
+        from .config import TOP5_CSV
+        from .top5 import build_clubs_now, build_top5_values_file
+        if TOP5_CSV.exists():
+            print(f"Top five leagues: matched {len(build_top5_values_file())} players to Transfermarkt.")
+            now = build_clubs_now()
+            print(f"Top five leagues: {(now.move != '').sum()} players have moved, gone down or stopped since 2025/26.")
+
+
+def cmd_page(args) -> None:
+    from .web import build_page
+    out = build_page()
+    print(f"Saved the web version to {out} ({out.stat().st_size / 1e3:.0f} KB). Open it in a browser.")
 
 
 def main(argv=None) -> int:
@@ -136,6 +201,8 @@ def main(argv=None) -> int:
     f.add_argument("player")
     f.add_argument("--season", type=int, choices=seasons, default=SEASON,
                    help="2025 = 2025/26 (default), 2026 = 2026/27 so far, which includes this summer's signings")
+    f.add_argument("--top5", action="store_true", help="search Europe's top five leagues (2025/26) instead of the Premier League")
+    f.add_argument("--league", action="append", choices=sorted(LEAGUE_CODES), help="with --top5: only these leagues (repeatable)")
     f.add_argument("--max-age", type=float)
     f.add_argument("--max-value", type=float, help="in millions of euros")
     f.add_argument("--any-position", action="store_true", help="compare with every outfield player, not just the same position")
@@ -146,14 +213,17 @@ def main(argv=None) -> int:
     p = sub.add_parser("profile", help="one player's percentiles")
     p.add_argument("player")
     p.add_argument("--season", type=int, choices=seasons, default=SEASON)
+    p.add_argument("--top5", action="store_true", help="percentiles against Europe's top five leagues")
     g = sub.add_parser("fetch", help="download fresh data")
     g.add_argument("--season", type=int, choices=seasons, default=SEASON)
     g.add_argument("--stats", action="store_true", help="Premier League stats (slow)")
+    g.add_argument("--top5", action="store_true", help="top-five-leagues stats, then match values and clubs")
     g.add_argument("--values", action="store_true", help="Transfermarkt values, then match them")
     g.add_argument("--match", action="store_true", help="only re-match the Transfermarkt file you already have")
+    sub.add_parser("page", help="build the web version (index.html)")
     args = ap.parse_args(argv)
     try:
-        {"find": cmd_find, "profile": cmd_profile, "fetch": cmd_fetch}[args.cmd](args)
+        {"find": cmd_find, "profile": cmd_profile, "fetch": cmd_fetch, "page": cmd_page}[args.cmd](args)
     except (LookupError, FileNotFoundError) as e:
         print(e, file=sys.stderr)
         return 1

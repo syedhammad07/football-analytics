@@ -1,0 +1,2692 @@
+pl_id,name,club_2025,club_now,in_pl_now,league_now,move
+815202,Ionuț Radu,Celta Vigo,Celta Vigo,True,La Liga,
+369004,Antonio Sivera,Alavés,Alavés,True,La Liga,
+994363,Bart Verbruggen,Brighton,Brighton,True,Premier League,
+256667,Wladimiro Falcone,Lecce,Lecce,True,Serie A,
+138530,Jordan Pickford,Everton,Everton,True,Premier League,
+103335,Bernd Leno,Fulham,Fulham,True,Premier League,
+793986,Mile Svilar,Roma,Roma,True,Serie A,
+604258,David Soria,Getafe,Getafe,True,La Liga,
+947954,Elia Caprile,Cagliari,Cagliari,True,Serie A,
+599114,Jean Butez,Como,Como,True,Serie A,
+882604,Đorđe Petrović,Bournemouth,Bournemouth,True,Premier League,
+151545,Virgil van Dijk,Liverpool,Liverpool,True,Premier League,
+927361,James Garner,Everton,Everton,True,Premier League,
+552884,Jarrod Bowen,West Ham,West Ham,False,,relegated with West Ham
+999028,Adrien Truffert,Bournemouth,Bournemouth,True,Premier League,
+836168,Nikola Milenković,Nottingham Forest,Nottingham Forest,True,Premier League,
+994546,Elliot Anderson,Nottingham Forest,Manchester City,True,Premier League,"joined Manchester City (Jul 2026, £116m)"
+145188,James Tarkowski,Everton,Everton,True,Premier League,
+94527,Marko Dmitrović,Espanyol,Espanyol,True,La Liga,
+81992,Leandro Cabrera,Espanyol,Espanyol,True,La Liga,
+865646,Marco Carnesecchi,Atalanta,Atalanta,True,Serie A,
+827362,Caoimhin Kelleher,Brentford,Brentford,True,Premier League,
+791773,Álex Remiro,Real Sociedad,Real Sociedad,True,La Liga,
+69378,David De Gea,Fiorentina,Fiorentina,True,Serie A,
+797291,Unai Simón,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+581310,David Raya,Arsenal,Arsenal,True,Premier League,
+788134,Dean Henderson,Crystal Palace,Crystal Palace,True,Premier League,
+846148,Victor Nelsson,Verona,Verona,False,,relegated with Verona
+300522,Martin Valjent,Mallorca,Mallorca,False,,relegated with Mallorca
+191210,Mike Maignan,Milan,Milan,True,Serie A,
+830659,Marcos Senesi,Bournemouth,Tottenham,True,Premier League,"joined Tottenham (Jul 2026, Free)"
+294377,Sergio Herrera,Osasuna,Osasuna,True,La Liga,
+948261,Morgan Rogers,Aston Villa,Chelsea,True,Premier League,"joined Chelsea (Jul 2026, £117m)"
+1016907,Igor Thiago,Brentford,Brentford,True,Premier League,
+965330,Pierre Kalulu,Juventus,Juventus,True,Serie A,
+811629,Luis Milla,Getafe,Como,True,Serie A,joined Como (summer 2026)
+1137431,Michael Kayode,Brentford,Brentford,True,Premier League,
+385888,Mauro Arambarri,Getafe,River Plate,False,,joined River Plate (summer 2026)
+988275,Tyrick Mitchell,Crystal Palace,Crystal Palace,True,Premier League,
+368922,Aarón Escandell,Real Oviedo,Real Oviedo,False,,relegated with Real Oviedo
+134029,Mathew Ryan,Levante,Levante,True,La Liga,
+896073,Nahuel Tenaglia,Alavés,Alavés,True,La Liga,
+869856,Dominik Szoboszlai,Liverpool,Liverpool,True,Premier League,
+190839,Luke Shaw,Manchester United,Manchester United,True,Premier League,
+88528,Florian Lejeune,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+1651825,Tiago Gabriel,Lecce,Lecce,True,Serie A,
+889785,Johan Vásquez,Genoa,Genoa,True,Serie A,
+841977,Ylber Ramadani,Lecce,Çorum,False,,"joined Çorum (Jul 2026, Undisclosed)"
+962012,Jan Paul van Hecke,Brighton,Tottenham,True,Premier League,"joined Tottenham (Jun 2026, £52m)"
+927356,Neco Williams,Nottingham Forest,Nottingham Forest,True,Premier League,
+911355,Simone Canestrelli,Pisa,Pisa,False,,relegated with Pisa
+934354,Antoine Semenyo,Manchester City,Manchester City,True,Premier League,
+1396048,Carlos Romero,Espanyol,Villarreal,True,La Liga,back at Villarreal after his loan
+949707,Juan Iglesias,Getafe,Sevilla,True,La Liga,joined Sevilla (summer 2026)
+149606,Jeremy Toljan,Levante,Levante,True,La Liga,
+286167,Aleix Febas,Elche,Celta Vigo,True,La Liga,joined Celta Vigo (summer 2026)
+227894,Jesper Karlström,Udinese,Udinese,True,Serie A,
+253391,Lorenzo Montipò,Verona,Venezia,True,Serie A,"joined Venezia (Aug 2026, Undisclosed)"
+42209,Martin Dúbravka,Burnley,Tottenham,True,Premier League,"joined Tottenham (Jul 2026, Free)"
+1012928,Robin Roefs,Sunderland,Sunderland,True,Premier League,
+877994,Marc Guéhi,Manchester City,Manchester City,True,Premier League,
+822518,Dodô,Fiorentina,Fiorentina,True,Serie A,
+1485300,Vitor Reis,Girona,Girona,False,,relegated with Girona
+825844,Ferdi Kadıoğlu,Brighton,Brighton,True,Premier League,
+310874,Vedat Muriqi,Mallorca,Fenerbahçe,False,,joined Fenerbahçe (summer 2026)
+998253,Jake O'Brien,Everton,Everton,True,Premier League,
+847097,Ethan Ampadu,Leeds,Leeds,True,Premier League,
+974505,Enzo Fernández,Chelsea,Manchester City,True,Premier League,"joined Manchester City (Sep 2026, £125m)"
+855832,Antonio Blanco,Alavés,Alavés,True,La Liga,
+865912,Morgan Gibbs-White,Nottingham Forest,Nottingham Forest,True,Premier League,
+186855,Bryan Cristante,Roma,Roma,True,Serie A,
+164343,Paulo Gazzaniga,Girona,Girona,False,,relegated with Girona
+826215,Ibrahima Konaté,Liverpool,Real Madrid,True,La Liga,"joined Real Madrid (Jul 2026, Free)"
+856714,Declan Rice,Arsenal,Arsenal,True,Premier League,
+44614,Kyle Walker,Burnley,Burnley,False,,relegated with Burnley
+1089453,Saúl Coco,Torino,Torino,True,Serie A,
+918440,Morten Frendrup,Genoa,Genoa,True,Serie A,
+879674,Maxence Lacroix,Crystal Palace,Chelsea,True,Premier League,"joined Chelsea (Jul 2026, £52m)"
+1397736,Marco Palestra,Cagliari,Cagliari,True,Serie A,
+116666,Antonio Caracciolo,Pisa,Pisa,False,,relegated with Pisa
+900792,Alejandro Catena,Osasuna,Osasuna,True,La Liga,
+288205,Bruno Fernandes,Manchester United,Manchester United,True,Premier League,
+611210,Gianluca Mancini,Roma,Roma,True,Serie A,
+933641,Jay Idzes,Sassuolo,Sassuolo,True,Serie A,
+556866,Gregor Kobel,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+584722,Alexander Nübel,Stuttgart,Beşiktaş,False,,joined Beşiktaş (summer 2026)
+325061,Nikola Vasilj,St. Pauli,Al-Diriyah,False,,joined Al-Diriyah (summer 2026)
+40244,Oliver Baumann,Hoffenheim,Hoffenheim,True,Bundesliga,
+822564,Finn Dahmen,Augsburg,Augsburg,True,Bundesliga,
+980626,Noah Atubolu,Freiburg,Eintracht Frankfurt,True,Bundesliga,on loan to Eintracht Frankfurt (summer 2026)
+824509,Gianluigi Donnarumma,Manchester City,Manchester City,True,Premier League,
+358910,Augusto Batalla,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+187185,Marvin Schwäbe,Köln,Köln,True,Bundesliga,
+830803,Danilho Doekhi,Union Berlin,Lazio,True,Serie A,joined Lazio (summer 2026)
+318603,Emil Audero,Cremonese,Cremonese,False,,relegated with Cremonese
+254429,Patrick Mainka,Heidenheim,Heidenheim,False,,relegated with Heidenheim
+569784,Maximilian Eggestein,Freiburg,Freiburg,True,Bundesliga,
+578166,Moritz Nicolas,Gladbach,Gladbach,True,Bundesliga,
+902080,Kamil Grabara,Wolfsburg,Juventus,True,Serie A,on loan to Juventus (summer 2026)
+363042,Jordan Lefort,Angers,Angers,True,Ligue 1,
+1028307,Kaishu Sano,Mainz 05,Mainz 05,True,Bundesliga,
+945616,Antonino Gallo,Lecce,Lecce,True,Serie A,
+928777,Michel Adopo,Cagliari,Cagliari,True,Serie A,
+357596,Nikola Vlašić,Torino,Torino,True,Serie A,
+998247,Micky van de Ven,Tottenham,Tottenham,True,Premier League,
+920546,Robert Sánchez,Chelsea,Como,True,Serie A,on loan to Como (Sep 2026)
+989034,Trai Hume,Sunderland,Sunderland,True,Premier League,
+827679,Ezri Konsa,Aston Villa,Arsenal,True,Premier League,"joined Arsenal (Aug 2026, £51m)"
+976141,Jon Moncayola,Osasuna,Osasuna,True,La Liga,
+1142562,Mateus Fernandes,West Ham,Tottenham,True,Premier League,"joined Tottenham (Jul 2026, £85m)"
+1002045,Danilo Veiga,Lecce,Lecce,True,Serie A,
+833956,Matty Cash,Aston Villa,Aston Villa,True,Premier League,
+801263,Jakub Kamiński,Köln,Benfica,False,,joined Benfica (summer 2026)
+138024,Vladimír Coufal,Hoffenheim,Hoffenheim,True,Bundesliga,
+352736,Sebastiano Luperto,Cremonese,Cremonese,False,,relegated with Cremonese
+1034303,Filippo Terracciano,Cremonese,Cremonese,False,,relegated with Cremonese
+363860,Manuel Locatelli,Juventus,Juventus,True,Serie A,
+787827,Matthieu Udol,Lens,Lens,True,Ligue 1,
+966837,Martín Zubimendi,Arsenal,Arsenal,True,Premier League,
+1110136,Mandela Keita,Parma,Parma,True,Serie A,
+865167,Lloyd Kelly,Juventus,Juventus,True,Serie A,
+235648,Jonny Otto,Alavés,Alavés,True,La Liga,
+904897,Ryan Gravenberch,Liverpool,Liverpool,True,Premier League,
+1099296,Mateo Pellegrino,Parma,Fiorentina,True,Serie A,"joined Fiorentina (Aug 2026, Undisclosed)"
+830127,Romano Schmid,Werder Bremen,Frosinone,True,Serie A,joined Frosinone (summer 2026)
+958916,Nathan Collins,Brentford,Brentford,True,Premier League,
+1387161,Robin Risser,Lens,Lens,True,Ligue 1,
+1149148,Mike Penders,Strasbourg,Chelsea,True,Premier League,back at Chelsea after his loan
+113442,Daniel Fernandes,Hamburger SV,Hamburger SV,True,Bundesliga,
+1131909,Leo Román,Mallorca,Deportivo A Coruña,True,La Liga,joined Deportivo A Coruña (summer 2026)
+138149,Odysseas Vlachodimos,Sevilla,Sevilla,True,La Liga,
+282229,Nico Elvedi,Gladbach,Leeds,True,Premier League,"joined Leeds (Aug 2026, £8.5m)"
+1014286,Malick Thiaw,Newcastle,Newcastle,True,Premier League,
+16206,Yann Sommer,Inter,Inter,True,Serie A,
+892979,Oumar Solet,Udinese,Udinese,True,Serie A,
+876643,Vitaliy Mykolenko,Everton,Everton,True,Premier League,
+839956,Erling Haaland,Manchester City,Manchester City,True,Premier League,
+37318,Ante Budimir,Osasuna,Osasuna,True,La Liga,
+988672,David Affengruber,Elche,Fulham,True,Premier League,"joined Fulham (Sep 2026, Undisclosed)"
+928103,Enrico Delprato,Parma,Parma,True,Serie A,
+828640,Joe Rodon,Leeds,Leeds,True,Premier League,
+136924,Willi Orbán,RB Leipzig,RB Leipzig,True,Bundesliga,
+1001458,Issa Soumaré,Le Havre,Rennes,True,Ligue 1,joined Rennes (summer 2026)
+984014,Enzo Le Fée,Sunderland,Sunderland,True,Premier League,
+1154630,Guillaume Restes,Toulouse,Toulouse,True,Ligue 1,
+1117223,Maxime Estève,Burnley,RB Leipzig,True,Bundesliga,"joined RB Leipzig (Jul 2026, £27.3m)"
+836675,Pascal Struijk,Leeds,Brighton,True,Premier League,"joined Brighton (Jun 2026, £20m)"
+576276,Domingos Duarte,Getafe,Free agent,False,,"released, no club yet"
+826203,Malang Sarr,Lens,Neom,False,,joined Neom (summer 2026)
+847467,Marin Pongračić,Fiorentina,Fiorentina,True,Serie A,
+793167,Sander Berge,Fulham,Fulham,True,Premier League,
+117777,Granit Xhaka,Sunderland,Sunderland,True,Premier League,
+850891,Michel Aebischer,Pisa,Union Berlin,True,Bundesliga,joined Union Berlin (summer 2026)
+1171539,Noah Sadiki,Sunderland,Sunderland,True,Premier League,
+331209,Bernardo Silva,Manchester City,Real Madrid,True,La Liga,"joined Real Madrid (Jul 2026, Free)"
+362682,Joachim Andersen,Fulham,Fulham,True,Premier League,
+1171451,Nico Paz,Como,Como,True,Serie A,
+70988,Thibaut Courtois,Real Madrid,Real Madrid,True,La Liga,
+964753,Senne Lammens,Manchester United,Manchester United,True,Premier League,
+799046,Waldemar Anton,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+1083390,Mio Backhaus,Werder Bremen,Freiburg,True,Bundesliga,joined Freiburg (summer 2026)
+888971,Arijanet Murić,Sassuolo,Sassuolo,True,Serie A,
+164055,Brice Samba,Rennes,Rennes,True,Ligue 1,
+580642,Haris Belkebla,Angers,Angers,True,Ligue 1,
+1064305,Nicolai Remberg,Hamburger SV,Hamburger SV,True,Bundesliga,
+962710,Germán Valera,Elche,Elche,True,La Liga,
+965893,Strahinja Pavlović,Milan,Milan,True,Serie A,
+816763,Pablo Fornals,Real Betis,Real Betis,True,La Liga,
+945122,Matheus Nunes,Manchester City,Manchester City,True,Premier League,
+1104986,Alex Scott,Bournemouth,Bournemouth,True,Premier League,
+886243,Sebastian Walukiewicz,Sassuolo,Sassuolo,True,Serie A,
+555386,Ollie Watkins,Aston Villa,Al-Hilal,False,,"joined Al-Hilal (Aug 2026, £51m)"
+115365,Lewis Dunk,Brighton,Brighton,True,Premier League,
+1015267,João Gomes,Wolves,Aston Villa,True,Premier League,"joined Aston Villa (Jul 2026, £38m)"
+1495844,Mikel Jauregizar,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+881931,Weston McKennie,Juventus,Juventus,True,Serie A,
+1493305,Leon Avdullahu,Hoffenheim,Hoffenheim,True,Bundesliga,
+1149011,Kenan Yıldız,Juventus,Juventus,True,Serie A,
+142259,Matthias Ginter,Freiburg,Freiburg,True,Bundesliga,
+152813,Clinton Mata,Lyon,Lyon,True,Ligue 1,
+1118177,Tarik Muharemović,Sassuolo,Leeds,True,Premier League,"joined Leeds (Jul 2026, Undisclosed)"
+149479,Rani Khedira,Union Berlin,Union Berlin,True,Bundesliga,
+158263,Emiliano Martínez,Aston Villa,Chelsea,True,Premier League,"joined Chelsea (Aug 2026, £7.5m)"
+1151803,Kévin Danois,Auxerre,Auxerre,True,Ligue 1,
+581302,Robin Koch,Eintracht Frankfurt,Eintracht Frankfurt,True,Bundesliga,
+847494,Berke Özer,Lille,Lille,True,Ligue 1,
+1064026,Omar El Hilali,Espanyol,Espanyol,True,La Liga,
+931844,Chris Richards,Crystal Palace,Crystal Palace,True,Premier League,
+868812,Vinícius Júnior,Real Madrid,Real Madrid,True,La Liga,
+343971,Ludovic Ajorque,Brest,Brest,True,Ligue 1,
+15466,Luka Modrić,Milan,Milan,True,Serie A,
+383560,Manuel Akanji,Inter,Inter,True,Serie A,
+984789,Manuel Sánchez,Levante,Levante,True,La Liga,
+965031,Andrei Rațiu,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+1015287,Natan,Real Betis,Real Betis,True,La Liga,
+860461,Robin Fellhauer,Augsburg,Augsburg,True,Bundesliga,
+929132,Jayden Bogle,Leeds,Leeds,True,Premier League,
+805137,Omar Alderete,Sunderland,Sunderland,True,Premier League,
+987650,Moisés Caicedo,Chelsea,Chelsea,True,Premier League,
+913654,Pedro Porro,Tottenham,Tottenham,True,Premier League,
+901891,Alexis Saelemaekers,Milan,Milan,True,Serie A,
+917048,Andrea Cambiaso,Juventus,Juventus,True,Serie A,
+879346,Scott McTominay,Napoli,Napoli,True,Serie A,
+141080,Kenny Lala,Brest,Brest,True,Ligue 1,
+149656,Yvon Mvogo,Lorient,Lorient,True,Ligue 1,
+981562,Diant Ramaj,Heidenheim,Copenhagen,False,,on loan to Copenhagen (summer 2026)
+553606,Guglielmo Vicario,Tottenham,Juventus,True,Serie A,on loan to Juventus (Aug 2026)
+48535,Anthony Lopes,Nantes,Angers,True,Ligue 1,joined Angers (summer 2026)
+825956,Christoph Baumgartner,RB Leipzig,RB Leipzig,True,Bundesliga,
+964153,Adam Obert,Cagliari,Cagliari,True,Serie A,
+1116388,Jon Aramburu,Real Sociedad,Real Sociedad,True,La Liga,
+780014,Nordi Mukiele,Sunderland,Sunderland,True,Premier League,
+914309,Iliman Ndiaye,Everton,Manchester City,True,Premier League,"joined Manchester City (Sep 2026, £60m)"
+267619,Adam Marušić,Lazio,Lazio,True,Serie A,
+826134,Trevoh Chalobah,Chelsea,Como,True,Serie A,"joined Como (Aug 2026, Undisclosed)"
+927005,Lassine Sinayoko,Auxerre,Paris FC,True,Ligue 1,joined Paris FC (summer 2026)
+933203,Mikael Ellertsson,Genoa,Genoa,True,Serie A,
+976396,Joris Chotard,Brest,Brest,True,Ligue 1,
+69408,Marcos Alonso,Celta Vigo,Celta Vigo,True,La Liga,
+1035996,André,Wolves,Wolves,False,,relegated with Wolves
+924378,Sepp van den Berg,Brentford,Brentford,True,Premier League,
+1086417,Rasmus Højlund,Napoli,Napoli,True,Serie A,
+998490,Evanilson,Bournemouth,Bournemouth,True,Premier League,
+758168,Moussa Niakhaté,Lyon,Lyon,True,Ligue 1,
+826171,Senne Lynen,Werder Bremen,Werder Bremen,True,Bundesliga,
+1006387,Kevin Schade,Brentford,Brentford,True,Premier League,
+1134351,Ismael Koné,Sassuolo,Sassuolo,True,Serie A,
+862967,Cody Gakpo,Liverpool,Liverpool,True,Premier League,
+869792,Gabriel Magalhães,Arsenal,Arsenal,True,Premier League,
+901882,Angelo Stiller,Stuttgart,Stuttgart,True,Bundesliga,
+911848,Lucas Da Cunha,Como,Como,True,Serie A,
+1086286,Máximo Perrone,Como,Como,True,Serie A,
+831808,Federico Valverde,Real Madrid,Real Madrid,True,La Liga,
+581314,Valentin Rongier,Rennes,Rennes,True,Ligue 1,
+1403348,Jacobo Ramón,Como,Como,True,Serie A,
+1020680,Jaidon Anthony,Burnley,Brentford,True,Premier League,"joined Brentford (Jul 2026, £15m)"
+895576,Marcus Tavernier,Bournemouth,Bournemouth,True,Premier League,
+344847,Johan Mojica,Mallorca,Mallorca,False,,relegated with Mallorca
+876214,Eric García,Barcelona,Barcelona,True,La Liga,
+893008,Zeki Çelik,Roma,Roma,True,Serie A,
+372344,Dominic Calvert-Lewin,Leeds,Leeds,True,Premier League,
+831253,Toni Martínez,Alavés,Alavés,True,La Liga,
+1049538,Ousmane Camara,Angers,Angers,True,Ligue 1,
+982319,Moustapha Mbow,Paris FC,Paris FC,True,Ligue 1,
+149593,Pierre-Emile Højbjerg,Marseille,Marseille,True,Ligue 1,
+823622,Mikel Oyarzabal,Real Sociedad,Real Sociedad,True,La Liga,
+1471764,El Hadji Malick Diouf,West Ham,Brentford,True,Premier League,"joined Brentford (Aug 2026, £35m)"
+794939,Marc Cucurella,Chelsea,Real Madrid,True,La Liga,"joined Real Madrid (Jul 2026, £47.5m)"
+997244,Adrián de la Fuente,Levante,Levante,True,La Liga,
+84531,Yuri Berchiche,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+1402913,Pau Cubarsí,Barcelona,Barcelona,True,La Liga,
+855835,Sergio Gómez,Real Sociedad,Real Sociedad,True,La Liga,
+988351,Samú Costa,Mallorca,Mallorca,False,,relegated with Mallorca
+284361,Federico Dimarco,Inter,Inter,True,Serie A,
+100389,Marten de Roon,Atalanta,Roma,True,Serie A,"joined Roma (Aug 2026, Undisclosed)"
+1086547,Leopold Querfeld,Union Berlin,Union Berlin,True,Bundesliga,
+976575,Nicolas Seiwald,RB Leipzig,RB Leipzig,True,Bundesliga,
+966621,Esteban Lepaul,Rennes,Rennes,True,Ligue 1,
+69768,Jan Oblak,Atlético Madrid,Atlético Madrid,True,La Liga,
+930267,Joan García,Barcelona,Barcelona,True,La Liga,
+965008,Sebastiano Esposito,Cagliari,Sassuolo,True,Serie A,on loan to Sassuolo (Aug 2026)
+861324,Hugo Magnetti,Brest,Brest,True,Ligue 1,
+97926,Danny da Costa,Mainz 05,Mainz 05,True,Bundesliga,
+804621,Lassana Coulibaly,Lecce,Lecce,True,Serie A,
+960006,Lucien Agoumé,Sevilla,Sevilla,True,La Liga,
+1002764,Sergio Carreira,Celta Vigo,Celta Vigo,True,La Liga,
+355528,Harry Wilson,Fulham,Leeds,True,Premier League,"joined Leeds (Jul 2026, Free)"
+231946,Adrien Thomasson,Lens,Rennes,True,Ligue 1,joined Rennes (summer 2026)
+110783,Sergi Darder,Mallorca,Mallorca,False,,relegated with Mallorca
+848287,Evan Ndicka,Roma,Roma,True,Serie A,
+1010421,Pep Chavarría,Rayo Vallecano,Chelsea,True,Premier League,"joined Chelsea (Aug 2026, £16.3m)"
+1084081,Arnau Martínez,Girona,Valencia,True,La Liga,joined Valencia (summer 2026)
+796047,Aleix García,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+895324,Alexis Mac Allister,Liverpool,Liverpool,True,Premier League,
+1031258,Yehor Yarmoliuk,Brentford,Brentford,True,Premier League,
+975079,João Pedro,Chelsea,Chelsea,True,Premier League,
+788216,Pablo Maffeo,Mallorca,Valencia,True,La Liga,on loan to Valencia (summer 2026)
+1002461,Joel Chima Fujita,St. Pauli,St. Pauli,False,,relegated with St. Pauli
+44241,Nemanja Matić,Sassuolo,Sassuolo,True,Serie A,
+1145642,Víctor Muñoz,Osasuna,Liverpool,True,Premier League,"joined Liverpool (Jun 2026, £34.5m)"
+227864,Alessio Romagnoli,Lazio,Al Sadd,False,,"joined Al Sadd (Sep 2026, Undisclosed)"
+78152,Matz Sels,Nottingham Forest,Nottingham Forest,True,Premier League,
+1155423,Alessandro Circati,Parma,Benfica,False,,"joined Benfica (Aug 2026, Undisclosed)"
+916041,Mahdi Camara,Rennes,Rennes,True,Ligue 1,
+867299,Hervé Koffi,Angers,Union Saint-Gilloise,False,,on loan to Union Saint-Gilloise (summer 2026)
+1159759,Nathaniel Brown,Eintracht Frankfurt,Bayern Munich,True,Bundesliga,joined Bayern Munich (summer 2026)
+580226,Mory Diaw,Le Havre,Al-Shabab,False,,joined Al-Shabab (summer 2026)
+844609,Michele Di Gregorio,Juventus,Bournemouth,True,Premier League,on loan to Bournemouth (Aug 2026)
+1142703,Nico O'Reilly,Manchester City,Manchester City,True,Premier League,
+891346,Emanuele Valeri,Parma,Parma,True,Serie A,
+825681,Romain Del Castillo,Brest,Osasuna,True,La Liga,joined Osasuna (summer 2026)
+879349,Pedro Neto,Chelsea,Chelsea,True,Premier League,
+834308,Gabriel Gudmundsson,Leeds,Leeds,True,Premier League,
+319735,Viktor Tsygankov,Girona,Girona,False,,relegated with Girona
+137692,Frederik Rønnow,Union Berlin,Union Berlin,True,Bundesliga,
+1048650,Rocco Reitz,Gladbach,RB Leipzig,True,Bundesliga,joined RB Leipzig (summer 2026)
+900433,Luis Rioja,Valencia,Valencia,True,La Liga,
+861970,Kiernan Dewsbury-Hall,Everton,Everton,True,Premier League,
+1064009,Urko González,Espanyol,Espanyol,True,La Liga,
+873221,Ayumu Seko,Le Havre,Le Havre,True,Ligue 1,
+879746,Leo Østigård,Genoa,Genoa,True,Serie A,
+859025,Aurélien Tchouaméni,Real Madrid,Real Madrid,True,La Liga,
+927083,Bryan Mbeumo,Manchester United,Manchester United,True,Premier League,
+110846,Michael Keane,Everton,Everton,True,Premier League,
+891656,Maduka Okoye,Udinese,Udinese,True,Serie A,
+843200,Diogo Dalot,Manchester United,Manchester United,True,Premier League,
+941168,William Saliba,Arsenal,Arsenal,True,Premier League,
+932643,Armand Laurienté,Sassuolo,Sassuolo,True,Serie A,
+984998,Santiago Pierotti,Lecce,Lecce,True,Serie A,
+1855502,Arsène Kouassi,Lorient,Lorient,True,Ligue 1,
+1002920,Joe Scally,Gladbach,Gladbach,True,Bundesliga,
+791046,Dominik Greif,Lyon,Lyon,True,Ligue 1,
+879618,Montassar Talbi,Lorient,Lorient,True,Ligue 1,
+128383,Gerónimo Rulli,Marseille,Manchester City,True,Premier League,"joined Manchester City (Aug 2026, £1.7m)"
+44864,Daley Blind,Girona,Ajax,False,,joined Ajax (summer 2026)
+259281,Alberto Paleari,Torino,AEK Larnaca,False,,"joined AEK Larnaca (Sep 2026, Undisclosed)"
+911851,Yann Gboho,Toulouse,Coventry City,True,Premier League,joined Coventry City (summer 2026)
+1068885,Alessandro Marcandalli,Genoa,Genoa,True,Serie A,
+826643,Kylian Mbappé,Real Madrid,Real Madrid,True,La Liga,
+1174457,Samuele Angori,Pisa,Pisa,False,,relegated with Pisa
+996928,César Tárrega,Valencia,Valencia,True,La Liga,
+122951,Casemiro,Manchester United,Inter Miami,False,,"joined Inter Miami (Jul 2026, Free)"
+887055,Cucho Hernández,Real Betis,Real Betis,True,La Liga,
+814589,Giuseppe Pezzella,Cremonese,Cremonese,False,,relegated with Cremonese
+253469,Hauke Wahl,St. Pauli,Wolfsburg,False,,joined Wolfsburg (summer 2026)
+307702,Djené,Getafe,Getafe,True,La Liga,
+132318,Davide Zappacosta,Atalanta,Atalanta,True,Serie A,
+971481,Arkadiusz Pyrka,St. Pauli,St. Pauli,False,,relegated with St. Pauli
+826198,Andrea Pinamonti,Sassuolo,Lazio,True,Serie A,"joined Lazio (Aug 2026, Undisclosed)"
+883262,Edmond Tapsoba,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+992026,Rassoul Ndiaye,Le Havre,Le Havre,True,Ligue 1,
+855829,Juan Miranda,Bologna,Bologna,True,Serie A,
+798124,Rasmus Nicolaisen,Toulouse,Toulouse,True,Ligue 1,
+988639,Eric Martel,Köln,Mainz 05,True,Bundesliga,joined Mainz 05 (summer 2026)
+901850,Nicolò Fagioli,Fiorentina,Fiorentina,True,Serie A,
+1015240,José Ángel Carmona,Sevilla,Sevilla,True,La Liga,
+910978,Dani Vivian,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+788255,Fikayo Tomori,Milan,Milan,True,Serie A,
+1444690,Arthur Atta,Udinese,Fiorentina,True,Serie A,"joined Fiorentina (Jul 2026, Undisclosed)"
+1109771,Adam Wharton,Crystal Palace,Crystal Palace,True,Premier League,
+294593,Álex Moreno,Girona,Girona,False,,relegated with Girona
+1526627,Javi Rodríguez,Celta Vigo,Celta Vigo,True,La Liga,
+856076,David Raum,RB Leipzig,RB Leipzig,True,Bundesliga,
+842419,Valentin Rosier,Osasuna,Osasuna,True,La Liga,
+846308,Santiago Bueno,Wolves,Wolves,False,,relegated with Wolves
+250737,Adrien Rabiot,Milan,Milan,True,Serie A,
+825771,Marco Friedl,Werder Bremen,Werder Bremen,True,Bundesliga,
+168903,Robert Andrich,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+328035,Brendan Chardonnet,Brest,Brest,True,Ligue 1,
+1067582,Enzo Boyomo,Osasuna,Osasuna,True,La Liga,
+861972,Calvin Bassey,Fulham,Fulham,True,Premier League,
+892673,Sandro Tonali,Newcastle,Tottenham,True,Premier League,"joined Tottenham (Jul 2026, £92.5m)"
+877262,Edu Expósito,Espanyol,Espanyol,True,La Liga,
+786175,Federico Baschirotto,Cremonese,Cremonese,False,,relegated with Cremonese
+973699,Iván Martín,Girona,Racing Santander,True,La Liga,joined Racing Santander (summer 2026)
+829022,Konstantinos Mavropanos,West Ham,West Ham,False,,relegated with West Ham
+151003,Berat Djimsiti,Atalanta,Atalanta,True,Serie A,
+1020744,Charlie Cresswell,Toulouse,Rennes,True,Ligue 1,on loan to Rennes (summer 2026)
+35612,Axel Witsel,Girona,Nice,True,Ligue 1,joined Nice (summer 2026)
+363856,Nicolò Barella,Inter,Inter,True,Serie A,
+1102502,Quentin Merlin,Rennes,Rennes,True,Ligue 1,
+821728,Jonathan Clauss,Nice,Nice,True,Ligue 1,
+826195,Matteo Gabbia,Milan,Milan,True,Serie A,
+867440,Danny Namaso,Auxerre,Auxerre,True,Ligue 1,
+979118,Tyler Morton,Lyon,Lyon,True,Ligue 1,
+177177,Alejandro Grimaldo,Bayer Leverkusen,Atlético Madrid,True,La Liga,joined Atlético Madrid (summer 2026)
+284363,Federico Bonazzoli,Cremonese,Cremonese,False,,relegated with Cremonese
+1014595,Marc Aguado,Elche,Elche,True,La Liga,
+1066603,Luiz Júnior,Villarreal,Villarreal,True,La Liga,
+940871,Nico Schlotterbeck,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+964983,Álvaro Valles,Real Betis,Real Betis,True,La Liga,
+870263,Alessandro Buongiorno,Napoli,Napoli,True,Serie A,
+856553,Ridle Baku,RB Leipzig,RB Leipzig,True,Bundesliga,
+1020206,Sebastian Sebulonsen,Köln,Köln,True,Bundesliga,
+886363,Matheus Cunha,Manchester United,Manchester United,True,Premier League,
+878938,Cristian Cásseres Jr.,Toulouse,Toulouse,True,Ligue 1,
+999070,Matthis Abline,Nantes,Monaco,True,Ligue 1,joined Monaco (summer 2026)
+990209,Yannick Engelhardt,Gladbach,Gladbach,True,Bundesliga,
+962890,Ilaix Moriba,Celta Vigo,Celta Vigo,True,La Liga,
+825846,Jordan Teze,Monaco,Monaco,True,Ligue 1,
+934384,Adrián Bernabé,Parma,Parma,True,Serie A,
+1012444,Alberto Moleiro,Villarreal,Villarreal,True,La Liga,
+1184855,Konstantinos Koulierakis,Wolfsburg,Roma,True,Serie A,joined Roma (summer 2026)
+326343,Jean-Philippe Gbamin,Metz,CSKA Sofia,False,,joined CSKA Sofia (summer 2026)
+882475,Alberto Reina,Real Oviedo,Real Oviedo,False,,relegated with Real Oviedo
+1087359,Renato Veiga,Villarreal,Villarreal,True,La Liga,
+352768,Ainsley Maitland-Niles,Lyon,Everton,True,Premier League,"joined Everton (Sep 2026, Undisclosed)"
+900003,Jorge de Frutos,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+965828,Mario Gila,Lazio,Milan,True,Serie A,"joined Milan (Jul 2026, Undisclosed)"
+917005,Crysencio Summerville,West Ham,Al-Hilal,False,,"joined Al-Hilal (Jul 2026, £55m)"
+893998,Luca Ranieri,Fiorentina,Fiorentina,True,Serie A,
+2087085,Yan Diomande,RB Leipzig,Real Madrid,True,La Liga,joined Real Madrid (summer 2026)
+1138804,Hakon Arnar Haraldsson,Lille,Lille,True,Ligue 1,
+1063373,Thomas Kristensen,Udinese,Atalanta,True,Serie A,on loan to Atalanta (Aug 2026)
+973431,Brenden Aaronson,Leeds,Leeds,True,Premier League,
+942116,Mason Greenwood,Marseille,Fenerbahçe,False,,joined Fenerbahçe (summer 2026)
+830142,Jens Stage,Werder Bremen,Werder Bremen,True,Bundesliga,
+583806,Kevin Diks,Gladbach,Gladbach,True,Bundesliga,
+159837,Donovan Léon,Auxerre,Abha,False,,joined Abha (summer 2026)
+227922,José Luis Gayà,Valencia,Valencia,True,La Liga,
+148824,Florian Thauvin,Lens,Lens,True,Ligue 1,
+974087,Manu Koné,Roma,Roma,True,Serie A,
+958380,Antony,Real Betis,Real Betis,True,La Liga,
+924973,Kristian Thorstvedt,Sassuolo,Sassuolo,True,Serie A,
+1008037,Ilyas Chaira,Real Oviedo,Real Oviedo,False,,relegated with Real Oviedo
+875677,Giorgi Tsitaishvili,Metz,Rayo Vallecano,True,La Liga,joined Rayo Vallecano (summer 2026)
+958959,Jurriën Timber,Arsenal,Arsenal,True,Premier League,
+1134200,Wesley,Roma,Roma,True,Serie A,
+866469,Bruno Guimarães,Newcastle,Arsenal,True,Premier League,"joined Arsenal (Aug 2026, £75m)"
+939880,Philipp Sander,Gladbach,Gladbach,True,Bundesliga,
+1142672,Warren Zaïre-Emery,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+904832,Khéphren Thuram,Juventus,Juventus,True,Serie A,
+1021272,Daniel Svensson,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+976104,Federico Viñas,Real Oviedo,León,False,,back at León after his loan
+883537,Luis Díaz,Bayern Munich,Bayern Munich,True,Bundesliga,
+1390489,Davide Bartesaghi,Milan,Milan,True,Serie A,
+1405212,Luka Vušković,Hamburger SV,Brighton,True,Premier League,"joined Brighton (Jul 2026, £46m)"
+916946,Wouter Burger,Hoffenheim,Hoffenheim,True,Bundesliga,
+150383,Stanislav Lobotka,Napoli,Napoli,True,Serie A,
+1000269,Albian Hajdari,Hoffenheim,Hoffenheim,True,Bundesliga,
+548178,Rolando Mandragora,Fiorentina,Torino,True,Serie A,"joined Torino (Sep 2026, Undisclosed)"
+798303,Miro Muheim,Hamburger SV,Hamburger SV,True,Bundesliga,
+122810,Aïssa Mandi,Lille,Levante,True,La Liga,joined Levante (summer 2026)
+927340,Han-Noah Massengo,Augsburg,Augsburg,True,Bundesliga,
+807771,Dávid Hancko,Atlético Madrid,Atlético Madrid,True,La Liga,
+352770,Alex Iwobi,Fulham,Fulham,True,Premier League,
+905347,Yukinari Sugawara,Werder Bremen,Werder Bremen,True,Bundesliga,
+1063015,Tyrhys Dolan,Espanyol,Espanyol,True,La Liga,
+308182,Ivan Provedel,Lazio,Inter,True,Serie A,"joined Inter (Jul 2026, Undisclosed)"
+356160,Vanja Milinković-Savić,Napoli,Napoli,True,Serie A,
+1473092,Kojo Peprah Oppong,Nice,Fenerbahçe,False,,joined Fenerbahçe (summer 2026)
+863133,Aron Dønnum,Toulouse,Toulouse,True,Ligue 1,
+105734,Christian Eriksen,Wolfsburg,Free agent,False,,"released, no club yet"
+162653,Nick Pope,Newcastle,Newcastle,True,Premier League,
+843678,Santi Comesaña,Villarreal,Villarreal,True,La Liga,
+874812,Martin Frese,Verona,Verona,False,,relegated with Verona
+1119487,Nathan Ngoy,Lille,Lille,True,Ligue 1,
+1130939,Maghnes Akliouche,Monaco,Paris Saint-Germain,True,Ligue 1,joined Paris Saint-Germain (summer 2026)
+922759,Mark McKenzie,Toulouse,Toulouse,True,Ligue 1,
+870360,Daniel Muñoz,Crystal Palace,Nottingham Forest,True,Premier League,"joined Nottingham Forest (Aug 2026, £22m)"
+287887,Gautier Lloris,Le Havre,Brest,True,Ligue 1,joined Brest (summer 2026)
+1400106,Yankuba Minteh,Brighton,Brighton,True,Premier League,
+906075,Melvin Bard,Nice,Leeds,True,Premier League,on loan to Leeds (Sep 2026)
+593526,Nicolas Pépé,Villarreal,Villarreal,True,La Liga,
+259803,Haris Tabaković,Gladbach,Red Bull Salzburg,False,,joined Red Bull Salzburg (summer 2026)
+1019322,Florian Wirtz,Liverpool,Liverpool,True,Premier League,
+1392592,Roberto Fernández,Espanyol,Espanyol,True,La Liga,
+1023567,Ilya Zabarnyi,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+1468046,Santiago Mouriño,Villarreal,Villarreal,True,La Liga,
+108579,Harry Kane,Bayern Munich,Bayern Munich,True,Bundesliga,
+1149144,Matías Fernández-Pardo,Lille,Newcastle,True,Premier League,"joined Newcastle (Sep 2026, £51.4m)"
+790965,Ritsu Doan,Eintracht Frankfurt,Eintracht Frankfurt,True,Bundesliga,
+889861,Anton Stach,Leeds,Leeds,True,Premier League,
+990201,Jamie Leweling,Stuttgart,Stuttgart,True,Bundesliga,
+1013928,Hugo Bueno,Wolves,Wolves,False,,relegated with Wolves
+605672,Gorka Guruzeta,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+68332,Nemanja Gudelj,Sevilla,Getafe,True,La Liga,joined Getafe (summer 2026)
+1116577,Santiago Castro,Bologna,Roma,True,Serie A,"joined Roma (Jul 2026, Undisclosed)"
+1012235,Ransford Yeboah Königsdörffer,Hamburger SV,Mainz 05,True,Bundesliga,joined Mainz 05 (summer 2026)
+1048916,Lesley Ugochukwu,Burnley,Galatasaray,False,,on loan to Galatasaray (Jul 2026)
+929620,Fabian Rieder,Augsburg,Augsburg,True,Bundesliga,
+281277,Thilo Kehrer,Monaco,Ajax,False,,on loan to Ajax (summer 2026)
+1010117,Fisnik Asllani,Hoffenheim,Hoffenheim,True,Bundesliga,
+842391,Gauthier Hein,Metz,Nice,True,Ligue 1,joined Nice (summer 2026)
+1004550,Jonathan Fischer,Metz,Metz,False,,relegated with Metz
+904424,Elisha Owusu,Auxerre,Erzurumspor,False,,joined Erzurumspor (summer 2026)
+930191,Lorenzo Colombo,Genoa,Genoa,True,Serie A,
+1397882,Yanis Zouaoui,Le Havre,Montpellier,False,,joined Montpellier (summer 2026)
+328027,Serhou Guirassy,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+54308,Loic Négo,Le Havre,Omonia,False,,joined Omonia (summer 2026)
+152206,Dominik Kohr,Mainz 05,Mainz 05,True,Bundesliga,
+971037,Amad Diallo,Manchester United,Manchester United,True,Premier League,
+243609,Alisson,Liverpool,Liverpool,True,Premier League,
+845183,Yehvann Diouf,Nice,Nice,True,Ligue 1,
+1085081,Álvaro Carreras,Real Madrid,Real Madrid,True,La Liga,
+1564180,Ayyoub Bouaddi,Lille,Manchester City,True,Premier League,"joined Manchester City (Aug 2026, £81.4m)"
+844942,Gideon Mensah,Auxerre,Köln,True,Bundesliga,joined Köln (summer 2026)
+1035988,Arouna Sangante,Le Havre,Sevilla,True,La Liga,joined Sevilla (summer 2026)
+51665,Benjamin André,Lille,Lille,True,Ligue 1,
+832427,Carlos Soler,Real Sociedad,Real Sociedad,True,La Liga,
+311676,Jonas Föhrenbach,Heidenheim,Heidenheim,False,,relegated with Heidenheim
+1064697,Mamadou Sangare,Lens,Brentford,True,Premier League,"joined Brentford (Aug 2026, Undisclosed)"
+1568123,Bazoumana Touré,Hoffenheim,Newcastle,True,Premier League,"joined Newcastle (Jul 2026, £42m)"
+296434,Laurent Abergel,Lorient,Nice,True,Ligue 1,joined Nice (summer 2026)
+226974,Marc Kempf,Como,Como,True,Serie A,
+346948,Stefano Moreo,Pisa,Pisa,False,,relegated with Pisa
+837080,Antoine Bernede,Verona,Verona,False,,relegated with Verona
+981619,Igor Jesus,Nottingham Forest,Nottingham Forest,True,Premier League,
+828571,Bernardo,Hoffenheim,Hoffenheim,True,Bundesliga,
+978838,Michael Olise,Bayern Munich,Bayern Munich,True,Bundesliga,
+876599,Jørgen Strand Larsen,Crystal Palace,Crystal Palace,True,Premier League,
+542038,Eric Smith,St. Pauli,St. Pauli,False,,relegated with St. Pauli
+1003339,Jarell Quansah,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+187313,Lucas Torró,Osasuna,Osasuna,True,La Liga,
+343067,Corentin Tolisso,Lyon,Lyon,True,Ligue 1,
+886286,Nicolas Cozza,Nantes,Lausanne-Sport,False,,joined Lausanne-Sport (summer 2026)
+1097425,Miloš Kerkez,Liverpool,Liverpool,True,Premier League,
+818481,Jhon Lucumí,Bologna,Juventus,True,Serie A,"joined Juventus (Aug 2026, €20.1M)"
+863271,Jeff Chabot,Stuttgart,Stuttgart,True,Bundesliga,
+963043,Kristoffer Lund,Köln,Birmingham,False,,"joined Birmingham (Jul 2026, Undisclosed)"
+1014042,Iván Romero,Levante,Levante,True,La Liga,
+826326,Idrissa Touré,Pisa,Monza,True,Serie A,"joined Monza (Aug 2026, Undisclosed)"
+259117,Joshua Kimmich,Bayern Munich,Bayern Munich,True,Bundesliga,
+1106451,Dango Ouattara,Brentford,Brentford,True,Premier League,
+894863,Anastasios Douvikas,Como,Como,True,Serie A,
+153257,Giovanni Di Lorenzo,Napoli,Napoli,True,Serie A,
+799251,Mathias Jensen,Brentford,Brentford,True,Premier League,
+844752,Nacho Vidal,Real Oviedo,Real Oviedo,False,,relegated with Real Oviedo
+867575,Koffi Kouao,Metz,Neftchi Fergana,False,,joined Neftchi Fergana (summer 2026)
+800951,Julian Ryerson,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+794995,Niklas Dorsch,Heidenheim,Toronto FC,False,,joined Toronto FC (summer 2026)
+864898,Nicolò Zaniolo,Udinese,Udinese,True,Serie A,
+827212,Jules Koundé,Barcelona,Barcelona,True,La Liga,
+1402912,Lamine Yamal,Barcelona,Barcelona,True,La Liga,
+33902,Danny Welbeck,Brighton,Chelsea,True,Premier League,"joined Chelsea (Aug 2026, £5m)"
+996958,Malo Gusto,Chelsea,Chelsea,True,Premier League,
+1496360,Matias Moreno,Levante,Levante,True,La Liga,
+855810,Timothy Weah,Marseille,Marseille,True,Ligue 1,
+233826,Valentino Lazaro,Torino,Torino,True,Serie A,
+58351,Christian Kabasele,Udinese,Udinese,True,Serie A,
+804909,Albert Guðmundsson,Fiorentina,Lazio,True,Serie A,on loan to Lazio (Sep 2026)
+899982,Isi Palazón,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+933707,Jan Schöppner,Heidenheim,Heidenheim,False,,relegated with Heidenheim
+953767,Andrej Ilić,Union Berlin,Union Berlin,True,Bundesliga,
+1011375,Abdessamad Ezzalzouli,Real Betis,Real Betis,True,La Liga,
+804508,Viktor Gyökeres,Arsenal,Arsenal,True,Premier League,
+1093695,Vitinha,Genoa,Genoa,True,Serie A,
+827519,Romain Perraud,Lille,Lille,True,Ligue 1,
+1084381,Pablo Ibáñez,Alavés,Alavés,True,La Liga,
+988907,Lilian Brassier,Rennes,Eintracht Frankfurt,True,Bundesliga,joined Eintracht Frankfurt (summer 2026)
+957615,Robin Hranáč,Hoffenheim,Hoffenheim,True,Bundesliga,
+958517,Lautaro Valenti,Parma,Parma,True,Serie A,
+814876,Adrian Šemper,Pisa,Al-Fateh,False,,"joined Al-Fateh (Aug 2026, Undisclosed)"
+195850,Ruslan Malinovskyi,Genoa,Genoa,True,Serie A,
+1466116,Jon Martin,Real Sociedad,Real Sociedad,True,La Liga,
+826188,Alessandro Bastoni,Inter,Inter,True,Serie A,
+794298,Deniz Undav,Stuttgart,Stuttgart,True,Bundesliga,
+260031,Rubén García,Osasuna,Osasuna,True,La Liga,
+934237,Folarin Balogun,Monaco,Monaco,True,Ligue 1,
+341143,Giovanni Simeone,Torino,Torino,True,Serie A,
+255999,Omar Mascarell,Mallorca,Al-Khaleej,False,,joined Al-Khaleej (summer 2026)
+1170532,Jacques Ekomié,Angers,Wrexham,False,,joined Wrexham (summer 2026)
+84539,Koke,Atlético Madrid,Atlético Madrid,True,La Liga,
+946888,Éderson,Atalanta,Atalanta,True,Serie A,
+826948,Pepelu,Valencia,Valencia,True,La Liga,
+804764,Chidozie Awaziem,Nantes,Konyaspor,False,,joined Konyaspor (summer 2026)
+96365,Iñigo Ruiz de Galarreta,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+1049442,Ilan Kebbal,Paris FC,Paris FC,True,Ligue 1,
+934235,Bukayo Saka,Arsenal,Arsenal,True,Premier League,
+876600,Mousa Tamari,Rennes,Rennes,True,Ligue 1,
+848276,Jean-Philippe Mateta,Crystal Palace,Crystal Palace,True,Premier League,
+67647,Andrej Kramarić,Hoffenheim,Hoffenheim,True,Bundesliga,
+115516,Remo Freuler,Bologna,Bologna,True,Serie A,
+945062,Youssouf Fofana,Milan,Sevilla,True,La Liga,on loan to Sevilla (summer 2026)
+287057,Roberto Gagliardini,Verona,Cagliari,True,Serie A,"joined Cagliari (Aug 2026, Free)"
+1216309,Jon Gorrotxategi,Real Sociedad,Real Sociedad,True,La Liga,
+799041,Tomáš Souček,West Ham,West Ham,False,,relegated with West Ham
+904835,Fábio Vieira,Hamburger SV,Hamburger SV,True,Bundesliga,
+1087514,Brooke Norton-Cuffy,Genoa,Hull City,True,Premier League,"joined Hull City (Sep 2026, £12m)"
+235672,Matteo Politano,Napoli,Napoli,True,Serie A,
+99090,Dan Burn,Newcastle,Newcastle,True,Premier League,
+1097719,Kike Salas,Sevilla,Sevilla,True,La Liga,
+192442,Raúl Jiménez,Fulham,Wolves,False,,"joined Wolves (Jul 2026, Free)"
+1133743,Rômulo,RB Leipzig,RB Leipzig,True,Bundesliga,
+904887,Jürgen Ekkelenkamp,Udinese,Udinese,True,Serie A,
+1154587,Álvaro Rodriguez,Elche,Bournemouth,True,Premier League,"joined Bournemouth (Jul 2026, £25.7m)"
+537552,Jae-sung Lee,Mainz 05,Mainz 05,True,Bundesliga,
+364612,João Palhinha,Tottenham,Tottenham,True,Premier League,
+158037,Matteo Bianchetti,Cremonese,Cremonese,False,,relegated with Cremonese
+799054,Djibril Sow,Sevilla,Genoa,True,Serie A,joined Genoa (summer 2026)
+1410925,Joaquin Panichelli,Strasbourg,Strasbourg,True,Ligue 1,
+788949,Maximilian Mittelstädt,Stuttgart,Stuttgart,True,Bundesliga,
+979820,Philipp Treu,Freiburg,Freiburg,True,Bundesliga,
+891508,Grégoire Coudert,Brest,Burnley,False,,"joined Burnley (Aug 2026, Undisclosed)"
+960441,Charles De Ketelaere,Atalanta,Atalanta,True,Serie A,
+797286,Aarón Martín,Genoa,Racing Santander,True,La Liga,joined Racing Santander (summer 2026)
+353138,Marcos Llorente,Atlético Madrid,Atlético Madrid,True,La Liga,
+907463,Felix Nmecha,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+826010,Pol Lozano,Espanyol,Espanyol,True,La Liga,
+1142248,Arijon Ibrahimović,Heidenheim,Augsburg,True,Bundesliga,on loan to Augsburg (summer 2026)
+1136730,Lewis Hall,Newcastle,Newcastle,True,Premier League,
+823984,Lautaro Martínez,Inter,Inter,True,Serie A,
+976421,Castello Lukeba,RB Leipzig,RB Leipzig,True,Bundesliga,
+845286,Ismaïla Sarr,Crystal Palace,Crystal Palace,True,Premier League,
+963299,Johann Lepenant,Nantes,Nantes,False,,relegated with Nantes
+885197,Bremer,Juventus,Juventus,True,Serie A,
+1507384,Adama Camara,Paris FC,Paris FC,True,Ligue 1,
+1127057,Valentín Barco,Strasbourg,Chelsea,True,Premier League,"joined Chelsea (Aug 2026, £34m)"
+250223,John McGinn,Aston Villa,Aston Villa,True,Premier League,
+783374,Iñaki Williams,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+1082406,Matías Soulé,Roma,Roma,True,Serie A,
+855831,Víctor Chust,Elche,Elche,True,La Liga,
+985726,Victor Parada,Alavés,Spartak Moscow,False,,joined Spartak Moscow (summer 2026)
+592012,Álex Berenguer,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+973838,Abner Vinícius,Lyon,Lyon,True,Ligue 1,
+123388,Djibril Sidibé,Toulouse,Le Mans,True,Ligue 1,joined Le Mans (summer 2026)
+360396,Yerry Mina,Cagliari,Cagliari,True,Serie A,
+257091,Duje Ćaleta-Car,Real Sociedad,Real Sociedad,True,La Liga,
+985329,Aimar Oroz,Osasuna,Osasuna,True,La Liga,
+339909,Guillermo Maripán,Torino,Torino,True,Serie A,
+857205,Fernando Calero,Espanyol,Málaga,True,La Liga,joined Málaga (summer 2026)
+1195241,Yassin Belkhdim,Angers,Angers,True,Ligue 1,
+318941,Rúben Dias,Manchester City,Manchester City,True,Premier League,
+159665,Mohamed Salah,Liverpool,Trabzonspor,False,,"joined Trabzonspor (Aug 2026, Free)"
+958878,Daniel Ballard,Sunderland,Sunderland,True,Premier League,
+944164,Sofiane Diop,Nice,Nice,True,Ligue 1,
+879694,Pape Gueye,Villarreal,Villarreal,True,La Liga,
+965778,Arthur Theate,Eintracht Frankfurt,Bologna,True,Serie A,on loan to Bologna (summer 2026)
+1014835,Yerson Mosquera,Wolves,Wolves,False,,relegated with Wolves
+1605921,Samir El Mourabet,Strasbourg,Strasbourg,True,Ligue 1,
+1094827,Gerard Martín,Barcelona,Barcelona,True,La Liga,
+934409,Marcus Pedersen,Torino,Olympiacos,False,,"joined Olympiacos (Aug 2026, Undisclosed)"
+1065588,Diego Gómez,Brighton,Brighton,True,Premier League,
+996951,Sinaly Diomandé,Auxerre,Auxerre,True,Ligue 1,
+1154549,Mario Martín,Getafe,Getafe,True,La Liga,
+1199282,Murillo,Nottingham Forest,Nottingham Forest,True,Premier League,
+171919,Mark Flekken,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+793645,Riccardo Orsolini,Bologna,Bologna,True,Serie A,
+155997,Emerson,Marseille,Marseille,True,Ligue 1,
+1797852,Karim Coulibaly,Werder Bremen,Strasbourg,True,Ligue 1,joined Strasbourg (summer 2026)
+902029,Vitinha,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+1156586,James Hill,Bournemouth,Bournemouth,True,Premier League,
+855845,Florentino Luís,Burnley,Ipswich Town,True,Premier League,"joined Ipswich Town (Aug 2026, Undisclosed)"
+1009372,Georges Mikautadze,Villarreal,Villarreal,True,La Liga,
+1465307,Arthur Avom Ebong,Lorient,Lorient,True,Ligue 1,
+293581,Mattia Zaccagni,Lazio,Lazio,True,Serie A,
+933264,Torbjørn Heggem,Bologna,Bologna,True,Serie A,
+900008,Óscar Valentín,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+1963449,Sascha Britschgi,Parma,Parma,True,Serie A,
+1099352,Giuliano Simeone,Atlético Madrid,Atlético Madrid,True,La Liga,
+992587,Pedri,Barcelona,Barcelona,True,La Liga,
+822877,Alexis Claude-Maurice,Augsburg,Augsburg,True,Bundesliga,
+173827,Jamie Vardy,Cremonese,Cremonese,False,,relegated with Cremonese
+859765,Phil Foden,Manchester City,Manchester City,True,Premier League,
+345111,Álvaro García,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+106337,Idrissa Gana Gueye,Everton,Everton,True,Premier League,
+1120615,Antoine Mendy,Nice,Nice,True,Ligue 1,
+979222,Francisco Conceição,Juventus,Juventus,True,Serie A,
+818986,Gabriel Suazo,Sevilla,Sevilla,True,La Liga,
+353130,Mario Hermoso,Roma,Roma,True,Serie A,
+1518931,Johan Manzambi,Freiburg,Aston Villa,True,Premier League,"joined Aston Villa (Jul 2026, £52m)"
+327755,Nadiem Amiri,Mainz 05,Mainz 05,True,Bundesliga,
+838159,Igor Zubeldia,Real Sociedad,Real Sociedad,True,La Liga,
+1122610,Javier Guerra,Valencia,Valencia,True,La Liga,
+863653,Aaron Wan-Bissaka,West Ham,Aston Villa,True,Premier League,on loan to Aston Villa (Aug 2026)
+980621,Paul Nebel,Mainz 05,Mainz 05,True,Bundesliga,
+843754,Ibrahim Sangaré,Nottingham Forest,Nottingham Forest,True,Premier League,
+945798,Djed Spence,Tottenham,Inter,True,Serie A,"joined Inter (Aug 2026, Undisclosed)"
+830858,Keinan Davis,Udinese,Udinese,True,Serie A,
+907072,Mikkel Damsgaard,Brentford,Brentford,True,Premier League,
+789071,Dani Olmo,Barcelona,Barcelona,True,La Liga,
+1049517,Ismael Doukouré,Strasbourg,Strasbourg,True,Ligue 1,
+345333,David Costas,Real Oviedo,Real Oviedo,False,,relegated with Real Oviedo
+138126,Phillipp Mwene,Mainz 05,Mainz 05,True,Bundesliga,
+807116,Antonio Raíllo,Mallorca,Mallorca,False,,relegated with Mallorca
+946381,Akor Adams,Sevilla,Venezia,True,Serie A,joined Venezia (summer 2026)
+252669,José Sá,Wolves,Wolves,False,,relegated with Wolves
+822379,Santiago Colombatto,Real Oviedo,León,False,,back at León after his loan
+934498,Félix Correia,Lille,Sevilla,True,La Liga,on loan to Sevilla (summer 2026)
+141832,Pedro Bigas,Elche,Elche,True,La Liga,
+887500,Danel Sinani,St. Pauli,Sampdoria,False,,joined Sampdoria (summer 2026)
+280009,Lucas Höler,Freiburg,Freiburg,True,Bundesliga,
+1002033,Guéla Doué,Strasbourg,Bayer Leverkusen,True,Bundesliga,joined Bayer Leverkusen (summer 2026)
+149734,Aymeric Laporte,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+138605,Piotr Zieliński,Inter,Inter,True,Serie A,
+794373,Carlens Arcus,Angers,Angers,True,Ligue 1,
+835601,Moise Kean,Fiorentina,Como,True,Serie A,on loan to Como (Sep 2026)
+51498,Pierre-Emerick Aubameyang,Marseille,Deportivo A Coruña,True,La Liga,joined Deportivo A Coruña (summer 2026)
+1142233,Diego Moreira,Strasbourg,Milan,True,Serie A,joined Milan (summer 2026)
+1176744,Dean Huijsen,Real Madrid,Real Madrid,True,La Liga,
+980628,Maximilian Beier,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+1217613,Gift Orban,Verona,Verona,False,,relegated with Verona
+1121923,Antonio Nusa,RB Leipzig,RB Leipzig,True,Bundesliga,
+770677,Denis Zakaria,Monaco,Monaco,True,Ligue 1,
+916943,Ramon Hendriks,Stuttgart,Stuttgart,True,Bundesliga,
+891651,Keven Schlotterbeck,Augsburg,Southampton,False,,"joined Southampton (Aug 2026, Undisclosed)"
+831400,Mathias Pereira Lage,St. Pauli,St. Pauli,False,,relegated with St. Pauli
+1091116,Arda Güler,Real Madrid,Real Madrid,True,La Liga,
+847128,Marc Roca,Real Betis,Real Betis,True,La Liga,
+1142238,Álex Valle,Como,Como,True,Serie A,
+330051,Moses Simon,Paris FC,Paris FC,True,Ligue 1,
+227672,Jonathan Tah,Bayern Munich,Bayern Munich,True,Bundesliga,
+902657,Jessy Deminguet,Metz,Metz,False,,relegated with Metz
+53739,Kiko Femenía,Getafe,Getafe,True,La Liga,
+815612,Marco Grüll,Werder Bremen,Werder Bremen,True,Bundesliga,
+1408080,Ismaelo Ganiou,Lens,Lens,True,Ligue 1,
+227862,Wesley Saïd,Lens,Al-Shamal,False,,joined Al-Shamal (summer 2026)
+37096,Péter Gulácsi,RB Leipzig,Villarreal,True,La Liga,joined Villarreal (summer 2026)
+973564,Nicolás Capaldo,Hamburger SV,Hamburger SV,True,Bundesliga,
+869795,Michael Folorunsho,Cagliari,Cagliari,True,Serie A,
+135666,Leandro Trossard,Arsenal,Beşiktaş,False,,"joined Beşiktaş (Jul 2026, £15.3m)"
+913679,Pathé Ismaël Ciss,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+1010655,Juanlu Sánchez,Sevilla,Bournemouth,True,Premier League,joined Bournemouth (summer 2026)
+928236,Leonardo Balerdi,Marseille,Roma,True,Serie A,on loan to Roma (summer 2026)
+355492,Konrad Laimer,Bayern Munich,Bayern Munich,True,Bundesliga,
+280609,Patrik Schick,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+794937,Carles Aleñá,Alavés,Alavés,True,La Liga,
+317301,Danilo Cataldi,Lazio,Lazio,True,Serie A,
+972421,Keane Lewis-Potter,Brentford,Brentford,True,Premier League,
+1016788,Cesare Casadei,Torino,Torino,True,Serie A,
+909119,Hugo Duro,Valencia,Valencia,True,La Liga,
+175185,Pere Milla,Espanyol,Espanyol,True,La Liga,
+280453,Franck Honorat,Gladbach,Gladbach,True,Bundesliga,
+855833,Ferran Torres,Barcelona,Paris Saint-Germain,True,Ligue 1,joined Paris Saint-Germain (summer 2026)
+99519,Marc Bartra,Real Betis,Real Betis,True,La Liga,
+1012410,Alvaro Núñez,Celta Vigo,Celta Vigo,True,La Liga,
+1131541,Bamo Meïté,Lorient,Marseille,True,Ligue 1,back at Marseille after his loan
+981815,Igor Paixão,Marseille,Marseille,True,Ligue 1,
+309078,Alexander Sørloth,Atlético Madrid,Atlético Madrid,True,La Liga,
+556884,Matías Dituro,Elche,Elche,True,La Liga,
+984623,Rafa Marín,Villarreal,Villarreal,True,La Liga,
+38440,Kevin Trapp,Paris FC,Paris FC,True,Ligue 1,
+123689,Karl Darlow,Leeds,Manchester United,True,Premier League,"joined Manchester United (Jul 2026, Free)"
+1462778,Lilian Raolisoa,Angers,Angers,True,Ligue 1,
+897594,Domagoj Bradarić,Verona,Verona,False,,relegated with Verona
+190161,Michael Zetterer,Eintracht Frankfurt,Leeds,True,Premier League,"joined Leeds (Aug 2026, Undisclosed)"
+253367,Domenico Berardi,Sassuolo,Sassuolo,True,Serie A,
+855663,Diogo Leite,Union Berlin,Lazio,True,Serie A,"joined Lazio (Sep 2026, Free)"
+986245,Sergi Cardona,Villarreal,Villarreal,True,La Liga,
+831424,Reinildo Mandava,Sunderland,Sunderland,True,Premier League,
+1198074,Aljoscha Kemlein,Union Berlin,Union Berlin,True,Bundesliga,
+859773,Óscar Mingueza,Celta Vigo,Crystal Palace,True,Premier League,"joined Crystal Palace (Jul 2026, Free)"
+1200442,Terry Yegbe,Metz,Lech Poznań,False,,joined Lech Poznań (summer 2026)
+801306,Pierre Lees Melou,Paris FC,Paris FC,True,Ligue 1,
+1157713,Isak Hien,Atalanta,Atalanta,True,Serie A,
+982780,Cole Palmer,Chelsea,Chelsea,True,Premier League,
+801003,Jordan Torunarigha,Hamburger SV,Hamburger SV,True,Bundesliga,
+802143,Kelvin Amian,Nantes,Nantes,False,,relegated with Nantes
+1606792,Abdulay Juma Bah,Nice,Augsburg,True,Bundesliga,on loan to Augsburg (summer 2026)
+855647,Harvey Barnes,Newcastle,Newcastle,True,Premier League,
+885908,Reece James,Chelsea,Chelsea,True,Premier League,
+1022084,Tanner Tessmann,Lyon,Lyon,True,Ligue 1,
+352802,Maxime López,Paris FC,Paris FC,True,Ligue 1,
+976374,Vladyslav Vanat,Girona,Girona,False,,relegated with Girona
+814385,Lucas Boyé,Alavés,Alavés,True,La Liga,
+1014290,Tim Lemperle,Hoffenheim,Hoffenheim,True,Bundesliga,
+1800475,Said El Mala,Köln,Köln,True,Bundesliga,
+840217,Richarlison,Tottenham,Tottenham,True,Premier League,
+1005343,Justin Njinmah,Werder Bremen,Werder Bremen,True,Bundesliga,
+184661,Leon Goretzka,Bayern Munich,Aston Villa,True,Premier League,"joined Aston Villa (Aug 2026, Free)"
+560128,Joelinton,Newcastle,Newcastle,True,Premier League,
+318645,Jari Vandeputte,Cremonese,Cremonese,False,,relegated with Cremonese
+927353,Curtis Jones,Liverpool,Inter,True,Serie A,"joined Inter (Aug 2026, Undisclosed)"
+1387156,Clement Akpa,Auxerre,Auxerre,True,Ligue 1,
+604232,Diego Carlos,Como,Como,True,Serie A,
+910048,Brian Brobbey,Sunderland,Sunderland,True,Premier League,
+942836,Haissem Hassan,Real Oviedo,Celtic,False,,joined Celtic (summer 2026)
+1471683,Sadibou Sané,Metz,Monaco,True,Ligue 1,joined Monaco (summer 2026)
+867445,Emile Smith Rowe,Fulham,Fulham,True,Premier League,
+1036269,Yasin Ayari,Brighton,Brighton,True,Premier League,
+885892,James Sands,St. Pauli,New York City FC,False,,back at New York City FC after his loan
+1107591,Mohamed Amoura,Wolfsburg,Nice,True,Ligue 1,on loan to Nice (summer 2026)
+57627,Karol Mets,St. Pauli,VfL Bochum,False,,joined VfL Bochum (summer 2026)
+190437,Mario Pašalić,Atalanta,Atalanta,True,Serie A,
+1395746,Thierno Barry,Everton,Everton,True,Premier League,
+42694,Jordan Henderson,Brentford,Chelsea,True,Premier League,"joined Chelsea (Aug 2026, Free)"
+1103488,Rafik Belghali,Verona,Torino,True,Serie A,"joined Torino (Sep 2026, Undisclosed)"
+989276,Josh Doig,Sassuolo,Sassuolo,True,Serie A,
+1525863,Pau Navarro,Villarreal,Villarreal,True,La Liga,
+906275,Yann Bisseck,Inter,Inter,True,Serie A,
+991011,Jude Bellingham,Real Madrid,Real Madrid,True,La Liga,
+827681,James Justin,Leeds,Leeds,True,Premier League,
+840414,Ardian Ismajli,Torino,Torino,True,Serie A,
+979480,Willian Pacho,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+128587,Thomas Meunier,Lille,Sunderland,True,Premier League,"joined Sunderland (Jul 2026, Free)"
+959628,Mats Wieffer,Brighton,Brighton,True,Premier League,
+791702,Marcus Thuram,Inter,Inter,True,Serie A,
+886930,Jaka Bijol,Leeds,Leeds,True,Premier League,
+902019,Gianluca Gaetano,Cagliari,Atalanta,True,Serie A,"joined Atalanta (Jul 2026, Undisclosed)"
+851222,Mehdi Léris,Pisa,Pisa,False,,relegated with Pisa
+168861,Marnon Busch,Heidenheim,Heidenheim,False,,relegated with Heidenheim
+1172936,Louis Mouton,Angers,Angers,True,Ligue 1,
+886737,Derrick Köhn,Union Berlin,Union Berlin,True,Bundesliga,
+802159,Habibou Diallo,Metz,Metz,False,,relegated with Metz
+984184,Nicola Zalewski,Atalanta,Atalanta,True,Serie A,
+1462742,Ilyas Ansah,Union Berlin,Hull City,True,Premier League,"joined Hull City (Sep 2026, £12.8m)"
+1069159,Otávio,Paris FC,Paris FC,True,Ligue 1,
+794338,Daichi Kamada,Crystal Palace,Crystal Palace,True,Premier League,
+1010656,Carlos Álvarez,Levante,Club América,False,,joined Club América (summer 2026)
+148899,Leonardo Spinazzola,Napoli,Napoli,True,Serie A,
+785989,Borja Iglesias,Celta Vigo,Celta Vigo,True,La Liga,
+944656,Julián Alvarez,Atlético Madrid,Atlético Madrid,True,La Liga,
+354878,Dimitrios Giannoulis,Augsburg,Augsburg,True,Bundesliga,
+864921,Eberechi Eze,Arsenal,Arsenal,True,Premier League,
+801030,Atakan Karazor,Stuttgart,Stuttgart,True,Bundesliga,
+1131540,Théo Le Bris,Lorient,Lorient,True,Ligue 1,
+773409,Che Adams,Torino,Torino,True,Serie A,
+377118,Robin Gosens,Fiorentina,Schalke 04,True,Bundesliga,on loan to Schalke 04 (summer 2026)
+791190,Rodrigo Bentancur,Tottenham,Tottenham,True,Premier League,
+973556,Julio Enciso,Strasbourg,Ipswich Town,True,Premier League,"joined Ipswich Town (Aug 2026, Undisclosed)"
+94312,Daniel Batz,Mainz 05,Gladbach,True,Bundesliga,joined Gladbach (summer 2026)
+1111640,Matteo Prati,Torino,Torino,True,Serie A,
+1114422,Cher Ndour,Fiorentina,Fiorentina,True,Serie A,
+1170773,Giovane,Napoli,Napoli,True,Serie A,
+1894003,Dayann Methalie,Toulouse,Sunderland,True,Premier League,joined Sunderland (summer 2026)
+900669,Pedro Díaz,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+993952,Noah Cadiou,Lorient,Lorient,True,Ligue 1,
+1186010,Valentín Gómez,Real Betis,Real Betis,True,La Liga,
+916176,Cameron Puertas,Werder Bremen,Al-Qadsiah,False,,back at Al-Qadsiah after his loan
+48557,Christopher Trimmel,Union Berlin,Union Berlin,True,Bundesliga,
+997035,Alejandro Balde,Barcelona,Barcelona,True,La Liga,
+329417,Timothy Castagne,Fulham,Fulham,True,Premier League,
+352296,Breel Embolo,Rennes,Atlanta United,False,,joined Atlanta United (summer 2026)
+829932,Cristian Romero,Tottenham,Atlético Madrid,True,La Liga,"joined Atlético Madrid (Aug 2026, £34.2m)"
+351434,Hassane Kamara,Udinese,Udinese,True,Serie A,
+96538,Lucas Digne,Aston Villa,Paris Saint-Germain,True,Ligue 1,"joined Paris Saint-Germain (Aug 2026, £8.5m)"
+927066,Pablo Martínez,Levante,Free agent,False,,"released, no club yet"
+331737,Youri Tielemans,Aston Villa,Manchester United,True,Premier League,"joined Manchester United (Jul 2026, £35m)"
+147289,Maximilian Arnold,Wolfsburg,Wolfsburg,False,,relegated with Wolfsburg
+8959,Manuel Neuer,Bayern Munich,Bayern Munich,True,Bundesliga,
+1407524,Ibrahim Maza,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+851284,Rafael Leão,Milan,Galatasaray,False,,"joined Galatasaray (Aug 2026, €38M)"
+190159,André Silva,Elche,Porto,False,,joined Porto (summer 2026)
+927407,Josip Stanišić,Bayern Munich,Bayern Munich,True,Bundesliga,
+1096210,Jackson Tchatchoua,Wolves,Wolves,False,,relegated with Wolves
+1389846,Lamine Camara,Monaco,Monaco,True,Ligue 1,
+867442,Callum Hudson Odoi,Nottingham Forest,Nottingham Forest,True,Premier League,
+98059,Nicola Leali,Genoa,Verona,False,,"joined Verona (Jul 2026, Free)"
+798926,Cedric Zesiger,Augsburg,Young Boys,False,,joined Young Boys (summer 2026)
+188365,Héctor Bellerín,Real Betis,Real Betis,True,La Liga,
+280979,Gonçalo Guedes,Real Sociedad,Real Sociedad,True,La Liga,
+910046,Sven Botman,Newcastle,Newcastle,True,Premier League,
+791079,Xaver Schlager,RB Leipzig,Nottingham Forest,True,Premier League,"joined Nottingham Forest (Jul 2026, Free)"
+973290,Tajon Buchanan,Villarreal,Villarreal,True,La Liga,
+957921,Oliver Sørensen,Parma,Celtic,False,,on loan to Celtic (Sep 2026)
+1392829,Amine Sbai,Angers,Angers,True,Ligue 1,
+1099117,Samson Baidoo,Lens,Lens,True,Ligue 1,
+1090374,Kialonda Gaspar,Lecce,Lecce,True,Serie A,
+1392044,Quilindschy Hartman,Burnley,Espanyol,True,La Liga,on loan to Espanyol (Jul 2026)
+803033,Teun Koopmeiners,Juventus,Juventus,True,Serie A,
+609206,Kingsley Ehizibue,Udinese,Udinese,True,Serie A,
+1142211,Hugo Larsson,Eintracht Frankfurt,Fulham,True,Premier League,on loan to Fulham (Sep 2026)
+836698,Ryan Sessegnon,Fulham,Fulham,True,Premier League,
+133908,Marcel Sabitzer,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+576384,Kristoffer Ajer,Brentford,Brentford,True,Premier League,
+825133,Javi Galán,Osasuna,Celta Vigo,True,La Liga,joined Celta Vigo (summer 2026)
+157377,Silvan Widmer,Mainz 05,Mainz 05,True,Bundesliga,
+795228,Odsonne Édouard,Lens,Lens,True,Ligue 1,
+928104,Nadir Zortea,Bologna,Bologna,True,Serie A,
+945217,Jean-Clair Todibo,West Ham,Lens,True,Ligue 1,on loan to Lens (Sep 2026)
+914902,Anthony Gordon,Newcastle,Barcelona,True,La Liga,"joined Barcelona (Jul 2026, £69.3m)"
+1012176,Giorgio Scalvini,Atalanta,Atalanta,True,Serie A,
+825754,Rafa Mir,Elche,Aris,False,,on loan to Aris (summer 2026)
+893062,Aitor Ruibal,Real Betis,Real Betis,True,La Liga,
+802138,Jean Victor Makengo,Lorient,Lorient,True,Ligue 1,
+1112327,Ísak Bergmann Jóhannesson,Köln,Köln,True,Bundesliga,
+1458073,Nobel Mendy,Rayo Vallecano,Hull City,True,Premier League,"joined Hull City (Aug 2026, Undisclosed)"
+1048422,Hugo Ekitiké,Liverpool,Liverpool,True,Premier League,
+875137,Zian Flemming,Burnley,Ipswich Town,True,Premier League,"joined Ipswich Town (Sep 2026, £20m)"
+822340,Phillip Tietz,Mainz 05,Mainz 05,True,Bundesliga,
+1155226,Saël Kumbedi,Wolfsburg,Wolfsburg,False,,relegated with Wolfsburg
+1001828,Koni De Winter,Milan,Milan,True,Serie A,
+946695,Georginio Rutter,Brighton,Brighton,True,Premier League,
+1939173,Jan Virgili,Mallorca,Club Brugge,False,,joined Club Brugge (summer 2026)
+966801,Oihan Sancet,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+190877,Kenny Tete,Fulham,Fulham,True,Premier League,
+930272,Tom Krauß,Köln,Köln,True,Bundesliga,
+953097,Cenk Özkaçar,Köln,Trabzonspor,False,,joined Trabzonspor (summer 2026)
+332155,Amir Rrahmani,Napoli,Napoli,True,Serie A,
+97951,Stole Dimitrievski,Valencia,Valencia,True,La Liga,
+1134083,Jobe Bellingham,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+905351,Zion Suzuki,Parma,Aston Villa,True,Premier League,"joined Aston Villa (Aug 2026, £30m)"
+96531,Alphonse Aréola,West Ham,West Ham,False,,relegated with West Ham
+1899647,Mateus Mané,Wolves,Wolves,False,,relegated with Wolves
+814882,Nikola Moro,Bologna,Bologna,True,Serie A,
+1192318,Farès Chaïbi,Eintracht Frankfurt,Eintracht Frankfurt,True,Bundesliga,
+1153270,Fermín López,Barcelona,Barcelona,True,La Liga,
+798583,Dayot Upamecano,Bayern Munich,Bayern Munich,True,Bundesliga,
+1426597,Lucas Høgsberg,Strasbourg,Strasbourg,True,Ligue 1,
+935564,Jonathan David,Juventus,Atlético Madrid,True,La Liga,on loan to Atlético Madrid (summer 2026)
+979128,Rayan Cherki,Manchester City,Manchester City,True,Premier League,
+787751,Robin Le Normand,Atlético Madrid,Atlético Madrid,True,La Liga,
+920525,Moritz Jenz,Wolfsburg,Young Boys,False,,joined Young Boys (summer 2026)
+838232,Eljif Elmas,Napoli,Napoli,True,Serie A,
+826004,Manu Morlanes,Mallorca,Mallorca,False,,relegated with Mallorca
+892235,David Carmo,Real Oviedo,Olympiacos,False,,on loan to Olympiacos (summer 2026)
+839156,Nikola Krstović,Atalanta,Atalanta,True,Serie A,
+928033,Charles Vanhoutte,Nice,Feyenoord,False,,joined Feyenoord (summer 2026)
+1087805,Marvin Senaya,Auxerre,Auxerre,True,Ligue 1,
+783126,Emiliano Buendía,Aston Villa,Aston Villa,True,Premier League,
+1091303,Petar Sučić,Inter,Inter,True,Serie A,
+934386,Jérémy Doku,Manchester City,Manchester City,True,Premier League,
+552036,Josh Laurent,Burnley,Burnley,False,,relegated with Burnley
+1136399,Nicolò Bertola,Udinese,Udinese,True,Serie A,
+250133,Morgan Sanson,Nice,Nice,True,Ligue 1,
+979290,Vinícius Souza,Wolfsburg,Wolfsburg,False,,relegated with Wolfsburg
+800419,Tyler Adams,Bournemouth,Bournemouth,True,Premier League,
+1490783,Simon Ebonog,Le Havre,Le Havre,True,Ligue 1,
+998950,Diego López,Valencia,Valencia,True,La Liga,
+923973,Amadou Onana,Aston Villa,Aston Villa,True,Premier League,
+965011,Matteo Ruggeri,Atlético Madrid,Aston Villa,True,Premier League,"joined Aston Villa (Aug 2026, £17m)"
+1930811,Abdoul Ouattara,Strasbourg,Ipswich Town,True,Premier League,"joined Ipswich Town (Aug 2026, Undisclosed)"
+1174462,Pablo Pagis,Lorient,Paris FC,True,Ligue 1,joined Paris FC (summer 2026)
+966862,Ander Barrenetxea,Real Sociedad,Real Sociedad,True,La Liga,
+1000366,Warren Bondo,Cremonese,Cremonese,False,,relegated with Cremonese
+913695,José Copete,Valencia,Valencia,True,La Liga,
+350560,Diego Rico,Getafe,Osasuna,True,La Liga,joined Osasuna (summer 2026)
+991421,Azzedine Ounahi,Girona,Girona,False,,relegated with Girona
+929199,Carlos Augusto,Inter,Inter,True,Serie A,
+1156353,Kamory Doumbia,Brest,Brest,True,Ligue 1,
+1030829,Gvidas Gineitis,Torino,Torino,True,Serie A,
+857740,Ozan Kabak,Hoffenheim,Hoffenheim,True,Bundesliga,
+814590,Marcus Rashford,Barcelona,Manchester United,True,Premier League,back at Manchester United after his loan
+911350,Lameck Banda,Lecce,Lecce,True,Serie A,
+1632454,Hugo Rincón,Girona,Girona,False,,relegated with Girona
+186845,Alberto Grassi,Cremonese,Cremonese,False,,relegated with Cremonese
+253993,Grischa Prömel,Hoffenheim,Stuttgart,True,Bundesliga,joined Stuttgart (summer 2026)
+1085180,Brennan Johnson,Crystal Palace,Everton,True,Premier League,"joined Everton (Aug 2026, Undisclosed)"
+1426221,Nhoa Sangui,Paris FC,Paris FC,True,Ligue 1,
+352370,Lucas Hernández,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+1142315,Jack Hinshelwood,Brighton,Brighton,True,Premier League,
+996952,Bradley Barcola,Paris Saint-Germain,Liverpool,True,Premier League,"joined Liverpool (Aug 2026, £106m)"
+84972,Kike García,Espanyol,Espanyol,True,La Liga,
+1153315,Leny Yoro,Manchester United,Manchester United,True,Premier League,
+1010383,Jon Ander Olasagasti,Levante,Levante,True,La Liga,
+798002,Toma Bašić,Lazio,Venezia,True,Serie A,"joined Venezia (May 2026, Free)"
+1129365,Anton Kade,Augsburg,Augsburg,True,Bundesliga,
+1597260,Noahkai Banks,Augsburg,Augsburg,True,Bundesliga,
+1017649,Matteo Cancellieri,Lazio,Lazio,True,Serie A,
+579576,Ruben Aguilar,Lens,Lens,True,Ligue 1,
+371222,Saša Lukić,Fulham,Ipswich Town,True,Premier League,"joined Ipswich Town (Aug 2026, Undisclosed)"
+934383,Jon Pacheco,Alavés,Real Sociedad,True,La Liga,back at Real Sociedad after his loan
+1800245,Jesús Rodriguez,Como,Como,True,Serie A,
+355796,Jefferson Lerma,Crystal Palace,Crystal Palace,True,Premier League,
+945404,Javi López,Real Oviedo,Feyenoord,False,,on loan to Feyenoord (summer 2026)
+1120504,Abdel Rahim,Real Oviedo,Real Oviedo,False,,relegated with Real Oviedo
+923894,Wesley Fofana,Chelsea,Chelsea,True,Premier League,
+877544,Ragnar Ache,Köln,Köln,True,Bundesliga,
+1029748,Nikola Štulić,Lecce,Lecce,True,Serie A,
+2193204,Tylel Tati,Nantes,Nantes,False,,relegated with Nantes
+991479,Anthony Rouault,Rennes,Rennes,True,Ligue 1,
+1215906,Afonso Moreira,Lyon,Bayer Leverkusen,True,Bundesliga,joined Bayer Leverkusen (summer 2026)
+891510,Chris Führich,Stuttgart,Stuttgart,True,Bundesliga,
+1515554,Adrian Liso,Getafe,Getafe,True,La Liga,
+936849,Kaoru Mitoma,Brighton,Brighton,True,Premier League,
+171961,Vincenzo Grifo,Freiburg,Freiburg,True,Bundesliga,
+836711,Jan-Niklas Beste,Freiburg,Freiburg,True,Bundesliga,
+945448,Zé Pedro,Cagliari,Cagliari,True,Serie A,
+993389,Tommaso Barbieri,Cremonese,Cremonese,False,,relegated with Cremonese
+901892,Albert Sambi Lokonga,Hamburger SV,Hamburger SV,True,Bundesliga,
+1170693,Mateo Joseph,Mallorca,Mallorca,False,,relegated with Mallorca
+1014287,Jamil Siebert,Lecce,Lecce,True,Serie A,
+957602,Riccardo Calafiori,Arsenal,Arsenal,True,Premier League,
+1156645,Raúl Asencio,Real Madrid,Real Madrid,True,La Liga,
+1393673,Etta Eyong,Levante,Levante,True,La Liga,
+856739,Lutsharel Geertruida,Sunderland,Sunderland,True,Premier League,
+1135887,Daouda Guindo,Brest,Reims,False,,joined Reims (summer 2026)
+1210848,Pietro Comuzzo,Fiorentina,Torino,True,Serie A,on loan to Torino (Jul 2026)
+128285,Maxime Colin,Metz,Metz,False,,relegated with Metz
+958982,Roberto Piccoli,Fiorentina,Bologna,True,Serie A,on loan to Bologna (Aug 2026)
+825271,Jakub Piotrowski,Udinese,Udinese,True,Serie A,
+985923,Hicham Boudaoui,Nice,Nice,True,Ligue 1,
+1090963,Omari Hutchinson,Nottingham Forest,Milan,True,Serie A,on loan to Milan (Aug 2026)
+608362,Oliver Burke,Union Berlin,Union Berlin,True,Bundesliga,
+797290,Alfonso Pedraza,Villarreal,Lazio,True,Serie A,joined Lazio (summer 2026)
+1426228,Eli Junior Kroupi,Bournemouth,Bournemouth,True,Premier League,
+905639,Kwasi Sibo,Real Oviedo,Real Oviedo,False,,relegated with Real Oviedo
+975798,Malik Tillman,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+1085400,Nico Williams,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+898815,Sam Beukema,Napoli,Napoli,True,Serie A,
+999276,Aurèle Amenda,Eintracht Frankfurt,Coventry City,True,Premier League,"joined Coventry City (Jul 2026, £17m)"
+108484,Juan Jesus,Napoli,Napoli,True,Serie A,
+1063235,Mohamed Ali Cho,Nice,Hull City,True,Premier League,"joined Hull City (Aug 2026, Undisclosed)"
+1473491,Senny Mayulu,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+1199043,Carlos Baleba,Brighton,Manchester United,True,Premier League,"joined Manchester United (Aug 2026, £65m)"
+864169,Pau Torres,Aston Villa,Aston Villa,True,Premier League,
+1445625,Jérémy Jacquet,Rennes,Liverpool,True,Premier League,"joined Liverpool (Jul 2026, £55m)"
+845385,Brais Méndez,Real Sociedad,Columbus Crew,False,,joined Columbus Crew (summer 2026)
+871706,Randal Kolo Muani,Tottenham,Tottenham,True,Premier League,
+1142175,Kobbie Mainoo,Manchester United,Manchester United,True,Premier League,
+949962,Ferran Jutglà,Celta Vigo,Celta Vigo,True,La Liga,
+149380,Harry Maguire,Manchester United,Manchester United,True,Premier League,
+1142588,Pablo Barrios,Atlético Madrid,Atlético Madrid,True,La Liga,
+974581,Ivan Smolčić,Como,Como,True,Serie A,
+318963,Aleksandr Golovin,Monaco,Monaco,True,Ligue 1,
+1006489,Loïc Badé,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+1010165,Abel Bretones,Osasuna,Osasuna,True,La Liga,
+168985,Janik Haberer,Union Berlin,Union Berlin,True,Bundesliga,
+41789,Robert Lewandowski,Barcelona,Chicago Fire,False,,joined Chicago Fire (summer 2026)
+869888,Alessio Zerbin,Cremonese,Cremonese,False,,relegated with Cremonese
+796206,Kristijan Jakić,Augsburg,PAOK,False,,on loan to PAOK (summer 2026)
+909485,Marvin Pieringer,Heidenheim,SC Paderborn,True,Bundesliga,joined SC Paderborn (summer 2026)
+135700,Hakan Çalhanoğlu,Inter,Inter,True,Serie A,
+1197153,Junior Mwanga,Strasbourg,Le Havre,True,Ligue 1,joined Le Havre (summer 2026)
+893549,Tijjani Reijnders,Manchester City,Al-Qadsiah,False,,"joined Al-Qadsiah (Aug 2026, £52m)"
+1082981,Pablo Torre,Mallorca,Mallorca,False,,relegated with Mallorca
+795222,Frenkie de Jong,Barcelona,Barcelona,True,La Liga,
+1516324,Mariano Troilo,Parma,Parma,True,Serie A,
+1020422,Yuito Suzuki,Freiburg,Freiburg,True,Bundesliga,
+986397,Benjamin Šeško,Manchester United,Manchester United,True,Premier League,
+1126569,Bilal El Khannouss,Stuttgart,Stuttgart,True,Bundesliga,
+987504,Patrick Wimmer,Wolfsburg,Hoffenheim,True,Bundesliga,joined Hoffenheim (summer 2026)
+181581,Jackson Irvine,St. Pauli,Cerezo Osaka,False,,joined Cerezo Osaka (summer 2026)
+189061,Jack Grealish,Everton,Everton,True,Premier League,
+959872,Aitor Paredes,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+372336,Jacob Murphy,Newcastle,Newcastle,True,Premier League,
+977679,Luís Henrique,Inter,Inter,True,Serie A,
+827064,Arnaut Danjuma,Valencia,Valencia,True,La Liga,
+226978,Julian Brandt,Borussia Dortmund,Ajax,False,,joined Ajax (summer 2026)
+859021,Batista Mendy,Sevilla,Trabzonspor,False,,back at Trabzonspor after his loan
+588566,Unai López,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+39070,Olivier Giroud,Lille,Lille,True,Ligue 1,
+896569,Kim Min-jae,Bayern Munich,Bayern Munich,True,Bundesliga,
+856640,Mads Hermansen,West Ham,West Ham,False,,relegated with West Ham
+1014412,Julen Agirrezabala,Valencia,Racing Santander,True,La Liga,joined Racing Santander (summer 2026)
+868964,Philipp Köhn,Monaco,Monaco,True,Ligue 1,
+560756,Dani Calvo,Real Oviedo,Real Oviedo,False,,relegated with Real Oviedo
+1137900,Louis Oppie,St. Pauli,St. Pauli,False,,relegated with St. Pauli
+976263,Ian Maatsen,Aston Villa,Aston Villa,True,Premier League,
+887275,Matteo Tramoni,Pisa,Pisa,False,,relegated with Pisa
+827504,Léo Pétrot,Elche,Anderlecht,False,,joined Anderlecht (summer 2026)
+1190938,Martial Godo,Strasbourg,Strasbourg,True,Ligue 1,
+987489,Beto,Everton,Fiorentina,True,Serie A,"joined Fiorentina (Sep 2026, Undisclosed)"
+1065261,Jonathan Rowe,Bologna,Atalanta,True,Serie A,on loan to Atalanta (Sep 2026)
+1597191,Alpha Touré,Metz,Metz,False,,relegated with Metz
+817957,Christian Pulišić,Milan,Milan,True,Serie A,
+907152,Lewis Ferguson,Bologna,Bologna,True,Serie A,
+944225,Jorge Herrando,Osasuna,Osasuna,True,La Liga,
+872919,Rubén Vargas,Sevilla,Sevilla,True,La Liga,
+927304,Gabriele Zappa,Cagliari,Verona,False,,on loan to Verona (Aug 2026)
+999030,Warmed Omari,Hamburger SV,Hamburger SV,True,Bundesliga,
+378340,Marius Bülter,Köln,Köln,True,Bundesliga,
+973536,Martín Satriano,Getafe,Getafe,True,La Liga,
+802695,Ben Chilwell,Strasbourg,Crystal Palace,True,Premier League,"joined Crystal Palace (Sep 2026, Undisclosed)"
+1019312,Jens Castrop,Gladbach,Gladbach,True,Bundesliga,
+798147,Mërgim Vojvoda,Como,Udinese,True,Serie A,"joined Udinese (Jul 2026, Undisclosed)"
+976381,Gustav Isaksen,Lazio,Lazio,True,Serie A,
+910026,Bryan Gil,Girona,Girona,False,,relegated with Girona
+44906,Łukasz Skorupski,Bologna,Bologna,True,Serie A,
+906278,Josha Vagnoman,Stuttgart,Stuttgart,True,Bundesliga,
+142525,Lukas Kübler,Freiburg,Freiburg,True,Bundesliga,
+69256,Kieran Trippier,Newcastle,Wolves,False,,"joined Wolves (Jul 2026, Free)"
+1090019,Martin Baturina,Como,Como,True,Serie A,
+800417,Ola Aina,Nottingham Forest,Nottingham Forest,True,Premier League,
+996910,Bashir Humphreys,Burnley,Burnley,False,,relegated with Burnley
+193554,Will Hughes,Crystal Palace,Crystal Palace,True,Premier League,
+954056,Nico González,Manchester City,Newcastle,True,Premier League,"joined Newcastle (Aug 2026, £52m)"
+865523,Noah Okafor,Leeds,Leeds,True,Premier League,
+142231,Christian Günter,Freiburg,Freiburg,True,Bundesliga,
+910031,Alex Baena,Atlético Madrid,Atlético Madrid,True,La Liga,
+1012177,Lorenzo Bernasconi,Atalanta,Atalanta,True,Serie A,
+1156616,Francesco Pio Esposito,Inter,Inter,True,Serie A,
+1019321,Igor Matanović,Freiburg,Freiburg,True,Bundesliga,
+849274,Youssef Maleh,Cremonese,Cremonese,False,,relegated with Cremonese
+1108441,Lucas Beraldo,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+957604,Pavel Šulc,Lyon,Lyon,True,Ligue 1,
+1391541,Ngal'ayel Mukau,Lille,Lille,True,Ligue 1,
+894474,Max Kilman,West Ham,West Ham,False,,relegated with West Ham
+921789,Rasmus Kristensen,Eintracht Frankfurt,Midtjylland,False,,joined Midtjylland (summer 2026)
+835484,Fran Beltrán,Girona,Girona,False,,relegated with Girona
+1142675,Chemsdine Talbi,Sunderland,Sunderland,True,Premier League,
+67769,Ricardo Rodríguez,Real Betis,Torino,True,Serie A,"joined Torino (Sep 2026, Free)"
+1400993,Michel Diaz,Brest,Brest,True,Ligue 1,
+37151,Henrikh Mkhitaryan,Inter,Inter,True,Serie A,
+1010726,Jan Uwe Thielmann,Köln,Köln,True,Bundesliga,
+1177351,Lamine Sy,Auxerre,Auxerre,True,Ligue 1,
+825088,Ally Samatta,Le Havre,Le Havre,True,Ligue 1,
+806076,Ludovic Blas,Rennes,Rennes,True,Ligue 1,
+1173172,Jeanuël Belocian,Wolfsburg,Racing Santander,True,La Liga,on loan to Racing Santander (summer 2026)
+905163,Mohammed Kudus,Tottenham,Tottenham,True,Premier League,
+1083832,Kervin Arriaga,Levante,AEK Athens,False,,joined AEK Athens (summer 2026)
+1160559,Oliver Provstgaard,Lazio,Lazio,True,Serie A,
+845170,Caio Henrique,Monaco,Ajax,False,,joined Ajax (summer 2026)
+875360,Hjalmar Ekdal,Burnley,Burnley,False,,relegated with Burnley
+973887,Eduardo Camavinga,Real Madrid,Real Madrid,True,La Liga,
+1035986,Josué Casimir,Auxerre,Dynamo Moscow,False,,on loan to Dynamo Moscow (summer 2026)
+990411,Edoardo Corvi,Parma,Parma,True,Serie A,
+996953,Lucas Chevalier,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+971005,Nicolò Cambiaghi,Bologna,Bologna,True,Serie A,
+577726,Ramy Bensebaini,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+972886,Fabiano Parisi,Fiorentina,Fiorentina,True,Serie A,
+917087,Kang-in Lee,Paris Saint-Germain,Atlético Madrid,True,La Liga,joined Atlético Madrid (summer 2026)
+839981,Lucas Paquetá,West Ham,West Ham,False,,relegated with West Ham
+788061,M'bala Nzola,Sassuolo,Sassuolo,True,Serie A,
+792122,Josh Cullen,Burnley,Burnley,False,,relegated with Burnley
+284367,Arturo Calabresi,Pisa,Pisa,False,,relegated with Pisa
+920022,Omar Haktab Traore,Heidenheim,Watford,False,,"joined Watford (Jul 2026, Undisclosed)"
+827606,Rodri,Manchester City,Barcelona,True,La Liga,"joined Barcelona (Aug 2026, £65m)"
+910267,Jesús Areso,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+857482,Filip Ugrinić,Valencia,Valencia,True,La Liga,
+1184248,Henrik Wendel Meister,Pisa,Derby County,False,,on loan to Derby County (Aug 2026)
+1418649,Finn Jeltsch,Stuttgart,Stuttgart,True,Bundesliga,
+1139409,Pablo Marín,Real Sociedad,Real Sociedad,True,La Liga,
+1082968,Abderrahman Rebbach,Alavés,Alavés,True,La Liga,
+880218,Takefusa Kubo,Real Sociedad,Real Sociedad,True,La Liga,
+1048569,Nnamdi Collins,Eintracht Frankfurt,Eintracht Frankfurt,True,Bundesliga,
+794953,Kevin Danso,Tottenham,Sunderland,True,Premier League,on loan to Sunderland (Sep 2026)
+164511,Jean Daniel Akpa-Akpro,Verona,Verona,False,,relegated with Verona
+878081,Ermedin Demirović,Stuttgart,Stuttgart,True,Bundesliga,
+1085950,Tim Iroegbunam,Everton,Hull City,True,Premier League,"joined Hull City (Sep 2026, £13m)"
+1128844,Emersonn,Toulouse,Ipswich Town,True,Premier League,"joined Ipswich Town (Jul 2026, Undisclosed)"
+851254,Amos Pieper,Werder Bremen,Werder Bremen,True,Bundesliga,
+1142335,Archie Gray,Tottenham,Tottenham,True,Premier League,
+1018190,Isaac Romero,Sevilla,Sevilla,True,La Liga,
+963198,Chrislain Matsima,Augsburg,Augsburg,True,Bundesliga,
+1400650,Lewis Miley,Newcastle,Newcastle,True,Premier League,
+944973,Nuno Tavares,Lazio,Lazio,True,Serie A,
+542634,Pacha,Rayo Vallecano,Racing Avellaneda,False,,joined Racing Avellaneda (summer 2026)
+360718,Carl Starfelt,Celta Vigo,Celta Vigo,True,La Liga,
+803174,Antonee Robinson,Fulham,Fulham,True,Premier League,
+142622,Antonio Rüdiger,Real Madrid,Real Madrid,True,La Liga,
+908716,Miguel Gutiérrez,Napoli,Bayer Leverkusen,True,Bundesliga,joined Bayer Leverkusen (summer 2026)
+859027,Maxence Caqueret,Como,Como,True,Serie A,
+1119502,Ernest Poku,Bayer Leverkusen,Beşiktaş,False,,on loan to Beşiktaş (summer 2026)
+889259,Khvicha Kvaratskhelia,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+1127790,Dženan Pejčinović,Wolfsburg,Stuttgart,True,Bundesliga,joined Stuttgart (summer 2026)
+1391616,Joel Roca,Girona,Olympiacos,False,,joined Olympiacos (summer 2026)
+803039,Donyell Malen,Roma,Roma,True,Serie A,
+826186,Luca Pellegrini,Lazio,Lazio,True,Serie A,
+555540,Lorenzo Pellegrini,Roma,Roma,True,Serie A,
+85859,Antoine Griezmann,Atlético Madrid,Orlando City,False,,joined Orlando City (summer 2026)
+876259,Hans Nicolussi Caviglia,Parma,Parma,True,Serie A,
+850952,Federico Ravaglia,Bologna,Watford,False,,"joined Watford (Jul 2026, Undisclosed)"
+1390682,Mert Kömür,Augsburg,Augsburg,True,Bundesliga,
+975937,Jacob Ramsey,Newcastle,Newcastle,True,Premier League,
+1127788,Aaron Zehnter,Wolfsburg,Wolfsburg,False,,relegated with Wolfsburg
+786186,Hwang Hee-chan,Wolves,Schalke 04,True,Bundesliga,on loan to Schalke 04 (Sep 2026)
+1397168,Patrick Dorgu,Manchester United,Manchester United,True,Premier League,
+901325,Nicolás González,Atlético Madrid,Atlético Madrid,True,La Liga,
+1142251,Aleksandar Pavlović,Bayern Munich,Bayern Munich,True,Bundesliga,
+895592,Martín Payero,Cremonese,Cremonese,False,,relegated with Cremonese
+928796,Tommaso Pobega,Bologna,Bologna,True,Serie A,
+591706,Ellyes Skhiri,Eintracht Frankfurt,Köln,True,Bundesliga,joined Köln (summer 2026)
+814873,Vitaly Janelt,Brentford,Brentford,True,Premier League,
+798936,Benedikt Gimber,Heidenheim,Granada,False,,joined Granada (summer 2026)
+1529051,Abdoulaye Faye,Lorient,Celta Vigo,True,La Liga,on loan to Celta Vigo (summer 2026)
+1525367,Ebenezer Akinsanmiro,Pisa,Pisa,False,,relegated with Pisa
+997152,Maxim De Cuyper,Brighton,Brighton,True,Premier League,
+1405998,Louis Leroux,Nantes,Nantes,False,,relegated with Nantes
+877302,András Schäfer,Union Berlin,Union Berlin,True,Bundesliga,
+15219,Lukáš Hrádecký,Monaco,Monaco,True,Ligue 1,
+1101232,Abdel Abqar,Getafe,Getafe,True,La Liga,
+794949,Iñaki Peña,Elche,Panathinaikos,False,,joined Panathinaikos (summer 2026)
+871290,Lucas Perri,Leeds,Torino,True,Serie A,on loan to Torino (Aug 2026)
+909991,Simon Sohm,Bologna,Bologna,True,Serie A,
+987734,Tolu Arokodare,Wolves,Ajax,False,,on loan to Ajax (Jul 2026)
+328109,Alessandro Deiola,Cagliari,Cagliari,True,Serie A,
+138383,Denis Suárez,Alavés,Alavés,True,La Liga,
+1398524,Pablo Durán,Celta Vigo,Celta Vigo,True,La Liga,
+852404,Mattéo Guendouzi,Lazio,Lazio,True,Serie A,
+970998,Patrizio Masini,Genoa,Frosinone,True,Serie A,on loan to Frosinone (Aug 2026)
+1194333,Abdukodir Khusanov,Manchester City,Manchester City,True,Premier League,
+973418,Toti Gomes,Wolves,Wolves,False,,relegated with Wolves
+954061,Arnaud Kalimuendo,Eintracht Frankfurt,Nottingham Forest,True,Premier League,back at Nottingham Forest after his loan
+826204,Boubacar Kamara,Aston Villa,Aston Villa,True,Premier League,
+1597145,Abdelhamid Ait Boudlal,Rennes,Rennes,True,Ligue 1,
+1008259,Javier Rueda,Celta Vigo,Celta Vigo,True,La Liga,
+1534422,Oso,Sevilla,Strasbourg,True,Ligue 1,joined Strasbourg (summer 2026)
+1128532,Habib Diarra,Sunderland,Sunderland,True,Premier League,
+1116570,Nicolás Valentini,Verona,Verona,False,,relegated with Verona
+1136896,Lucas Pires,Burnley,Burnley,False,,relegated with Burnley
+826064,Jens Odgaard,Bologna,Bologna,True,Serie A,
+1102528,William Mikelbrencis,Hamburger SV,Darmstadt 98,False,,joined Darmstadt 98 (summer 2026)
+1129360,Clemens Riedel,Espanyol,Espanyol,True,La Liga,
+959806,Kenneth Taylor,Lazio,Lazio,True,Serie A,
+1002711,Pape Matar Sarr,Tottenham,Juventus,True,Serie A,on loan to Juventus (Sep 2026)
+1067120,Eren Dinkçi,Heidenheim,Werder Bremen,True,Bundesliga,on loan to Werder Bremen (summer 2026)
+877102,Nayef Aguerd,Marseille,Marseille,True,Ligue 1,
+39182,Dani Parejo,Villarreal,Free agent,False,,"released, no club yet"
+1066042,Julian Niehues,Heidenheim,Heidenheim,False,,relegated with Heidenheim
+798835,Giovani Lo Celso,Real Betis,Real Betis,True,La Liga,
+823085,Kyle Walker-Peters,West Ham,West Ham,False,,relegated with West Ham
+556696,Justin Bijlow,Genoa,Genoa,True,Serie A,
+851282,Thierry Correia,Valencia,Venezia,True,Serie A,joined Venezia (summer 2026)
+580550,Clément Lenglet,Atlético Madrid,Benfica,False,,on loan to Benfica (summer 2026)
+982613,Boubacar Traoré,Metz,Wolves,False,,back at Wolves after his loan
+831005,Raphinha,Barcelona,Barcelona,True,La Liga,
+826185,Raoul Bellanova,Atalanta,Atalanta,True,Serie A,
+126816,Francesco Acerbi,Inter,Inter,True,Serie A,
+1410148,Mamadou Coulibaly,Monaco,Monaco,True,Ligue 1,
+1094106,Marc Pubill,Atlético Madrid,Atlético Madrid,True,La Liga,
+1180758,Adam Daghim,Wolfsburg,Hoffenheim,True,Bundesliga,joined Hoffenheim (summer 2026)
+280991,Morten Thorsby,Cremonese,Cremonese,False,,relegated with Cremonese
+1634980,Honest Ahanor,Atalanta,Crystal Palace,True,Premier League,on loan to Crystal Palace (Sep 2026)
+1127313,Tom Louchet,Nice,PAOK,False,,joined PAOK (summer 2026)
+769333,Christopher Nkunku,Milan,RB Leipzig,True,Bundesliga,on loan to RB Leipzig (Aug 2026)
+860307,Facundo Medina,Marseille,Bayer Leverkusen,True,Bundesliga,joined Bayer Leverkusen (summer 2026)
+983066,Andrew Omobamidele,Strasbourg,Anderlecht,False,,on loan to Anderlecht (summer 2026)
+814594,Achraf Hakimi,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+964994,Joško Gvardiol,Manchester City,Manchester City,True,Premier League,
+841947,Lovro Majer,Wolfsburg,AEK Athens,False,,joined AEK Athens (summer 2026)
+901907,Lyle Foster,Burnley,Burnley,False,,relegated with Burnley
+547410,Martin Ødegaard,Arsenal,Arsenal,True,Premier League,
+805078,Mathías Olivera,Napoli,Napoli,True,Serie A,
+861850,Martijn Kaars,St. Pauli,St. Pauli,False,,relegated with St. Pauli
+980410,Beñat Turrientes,Real Sociedad,Real Sociedad,True,La Liga,
+962029,Lucas Beltrán,Valencia,River Plate,False,,on loan to River Plate (summer 2026)
+985086,Morato,Nottingham Forest,West Ham,False,,on loan to West Ham (Sep 2026)
+1130307,Karim Dermane,Lorient,Troyes,True,Ligue 1,joined Troyes (summer 2026)
+1961626,Rudy Matondo,Paris FC,Paris FC,True,Ligue 1,
+866810,Andoni Gorosabel,Athletic Bilbao,Espanyol,True,La Liga,on loan to Espanyol (summer 2026)
+1048888,Mathys Tel,Tottenham,Tottenham,True,Premier League,
+1154605,Désiré Doué,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+966849,Saud Abdulhamid,Lens,Lens,True,Ligue 1,
+976025,Armel Bella-Kotchap,Verona,Venezia,True,Serie A,"joined Venezia (Jun 2026, Undisclosed)"
+256219,Paulo Dybala,Roma,Roma,True,Serie A,
+1100646,Martim Neto,Elche,Elche,True,La Liga,
+1108450,Zaid Romero,Getafe,Getafe,True,La Liga,
+1649918,Carlos Espí,Levante,Real Madrid,True,La Liga,joined Real Madrid (summer 2026)
+800749,Matvey Safonov,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+146866,Gerard Moreno,Villarreal,Villarreal,True,La Liga,
+1000442,Yassine Kechta,Le Havre,Leganés,False,,joined Leganés (summer 2026)
+1403364,Youssef Enriquez,Alavés,Alavés,True,La Liga,
+1154935,Hugo Álvarez,Celta Vigo,Celta Vigo,True,La Liga,
+1120669,Hugo Sotelo,Celta Vigo,Levante,True,La Liga,on loan to Levante (summer 2026)
+95381,Kevin Stöger,Gladbach,Gladbach,True,Bundesliga,
+983572,Destiny Udogie,Tottenham,Tottenham,True,Premier League,
+939830,Jonathan Burkardt,Eintracht Frankfurt,Eintracht Frankfurt,True,Bundesliga,
+190405,Leander Dendoncker,Real Oviedo,Free agent,False,,"released, no club yet"
+1001858,Soumaila Coulibaly,Brest,Watford,False,,on loan to Watford (Sep 2026)
+814023,Eray Cömert,Valencia,Torino,True,Serie A,joined Torino (summer 2026)
+979232,Anthony Elanga,Newcastle,Newcastle,True,Premier League,
+1146148,Jean-Mattéo Bahoya,Eintracht Frankfurt,Leeds,True,Premier League,on loan to Leeds (Sep 2026)
+599128,Rico Henry,Brentford,Brentford,True,Premier League,
+911679,Ilia Gruev,Leeds,Leeds,True,Premier League,
+997012,Ansgar Knauff,Eintracht Frankfurt,Eintracht Frankfurt,True,Bundesliga,
+831799,Nahuel Molina,Atlético Madrid,Roma,True,Serie A,joined Roma (summer 2026)
+848279,Enzo Ebosse,Torino,Torino,True,Serie A,
+859026,Amine Gouiri,Marseille,Marseille,True,Ligue 1,
+980634,Tino Livramento,Newcastle,Newcastle,True,Premier League,
+759520,Denzel Dumfries,Inter,Real Madrid,True,La Liga,joined Real Madrid (summer 2026)
+859769,Oriol Rey,Levante,Levante,True,La Liga,
+1464641,Chema Andrés,Stuttgart,Brighton,True,Premier League,"joined Brighton (Sep 2026, £15.5m)"
+871886,Ao Tanaka,Leeds,Leeds,True,Premier League,
+1085913,Martin Vitík,Bologna,Bologna,True,Serie A,
+303638,Tyrone Mings,Aston Villa,Aston Villa,True,Premier League,
+906963,Andrias Edmundsson,Verona,Verona,False,,relegated with Verona
+934510,Gonçalo Ramos,Paris Saint-Germain,Milan,True,Serie A,"joined Milan (Jun 2026, Undisclosed)"
+1129935,Tom Bischof,Bayern Munich,Bayern Munich,True,Bundesliga,
+158243,Nicolás Tagliafico,Lyon,Lyon,True,Ligue 1,
+807301,Gianluca Scamacca,Atalanta,Atalanta,True,Serie A,
+1864760,Hennes Behrens,Heidenheim,Augsburg,True,Bundesliga,joined Augsburg (summer 2026)
+978062,Alexander Prass,Hoffenheim,Hoffenheim,True,Bundesliga,
+1004505,Loum Tchaouna,Burnley,Coventry City,True,Premier League,"joined Coventry City (Jul 2026, Undisclosed)"
+1485391,Juan Rodríguez,Cagliari,Cagliari,True,Serie A,
+1083382,Lukas Ullrich,Gladbach,Gladbach,True,Bundesliga,
+944660,Thiago Almada,Atlético Madrid,River Plate,False,,joined River Plate (summer 2026)
+998241,Darlin Yongwa,Lorient,Norwich City,False,,"joined Norwich City (Aug 2026, Free)"
+1199247,Santiago Hidalgo,Toulouse,Toulouse,True,Ligue 1,
+944165,Robert Navarro,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+1546231,Joshua King,Fulham,Fulham,True,Premier League,
+1398526,Miguel Román,Celta Vigo,Celta Vigo,True,La Liga,
+1131002,Derry Scherhant,Freiburg,Freiburg,True,Bundesliga,
+609752,Guido Rodríguez,Valencia,Valencia,True,La Liga,
+576266,Philipp Lienhart,Freiburg,Freiburg,True,Bundesliga,
+930189,Samuele Ricci,Milan,Como,True,Serie A,on loan to Como (Aug 2026)
+1154657,Mamadou Sarr,Strasbourg,Strasbourg,True,Ligue 1,
+34120,Alexis Sánchez,Sevilla,CF Montréal,False,,joined CF Montréal (summer 2026)
+1129382,Bradley Locko,Brest,Brest,True,Ligue 1,
+359272,Sofyan Amrabat,Real Betis,Real Betis,True,La Liga,
+1175821,Niccolò Pisilli,Roma,Roma,True,Serie A,
+252343,Adam Dźwigała,St. Pauli,St. Pauli,False,,relegated with St. Pauli
+797596,Marius Marin,Pisa,Pisa,False,,relegated with Pisa
+991824,Rayan Philippe,Hamburger SV,SC Paderborn,True,Bundesliga,on loan to SC Paderborn (summer 2026)
+922928,Alessandro Zanoli,Udinese,Udinese,True,Serie A,
+1513222,Ángel Pérez,Alavés,Alavés,True,La Liga,
+368120,Nabil Bentaleb,Lille,Lille,True,Ligue 1,
+1190933,João Neves,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+962408,Bafodé Diakité,Bournemouth,Bournemouth,True,Premier League,
+835485,Brahim Díaz,Real Madrid,Real Madrid,True,La Liga,
+1135873,Alejandro Garnacho,Chelsea,Aston Villa,True,Premier League,on loan to Aston Villa (Jul 2026)
+1405912,Dehmaine Tabibou,Nantes,Nantes,False,,relegated with Nantes
+1861975,Lennart Karl,Bayern Munich,Bayern Munich,True,Bundesliga,
+1428699,Andres Castrin,Sevilla,Sevilla,True,La Liga,
+1105779,Andrey Santos,Chelsea,Manchester United,True,Premier League,"joined Manchester United (Jul 2026, £48m)"
+1012657,Lucas Gourna-Douath,Le Havre,Hull City,True,Premier League,"joined Hull City (Aug 2026, Undisclosed)"
+2137784,Prosper Peter,Angers,Angers,True,Ligue 1,
+191182,Thomas Lemar,Girona,Elche,True,La Liga,on loan to Elche (summer 2026)
+979479,Gennaro Borrelli,Cagliari,Çaykur Rizespor,False,,on loan to Çaykur Rizespor (Sep 2026)
+2029648,Christian Kofane,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+1005648,Fredrik Oppegård,Auxerre,Auxerre,True,Ligue 1,
+1126779,Williot Swedberg,Celta Vigo,Celta Vigo,True,La Liga,
+2110897,Alejandro Rego Mora,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+945532,Daniel Elfadli,Hamburger SV,LASK,False,,on loan to LASK (summer 2026)
+1169436,Frank Magri,Toulouse,Al-Gharafa,False,,joined Al-Gharafa (summer 2026)
+113956,Callum Wilson,West Ham,Brentford,True,Premier League,"joined Brentford (Jul 2026, Free)"
+861981,Nikolas Nartey,Stuttgart,Stuttgart,True,Bundesliga,
+1125024,Tomoya Ando,St. Pauli,St. Pauli,False,,relegated with St. Pauli
+575952,Mathias Honsak,Heidenheim,Heidenheim,False,,relegated with Heidenheim
+788141,Jon Guridi,Alavés,Sevilla,True,La Liga,joined Sevilla (summer 2026)
+960080,Boulaye Dia,Lazio,Rennes,True,Ligue 1,on loan to Rennes (summer 2026)
+1084399,Carlos Vicente,Alavés,Alavés,True,La Liga,
+787941,Frank Anguissa,Napoli,Napoli,True,Serie A,
+960114,Olivier Deman,Werder Bremen,Werder Bremen,True,Bundesliga,
+827243,Axel Disasi,West Ham,West Ham,False,,relegated with West Ham
+1009386,Hannibal Mejbri,Burnley,Burnley,False,,relegated with Burnley
+989768,Nuno Mendes,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+845273,Jean-Ricner Bellegarde,Wolves,Wolves,False,,relegated with Wolves
+966637,Fran Pérez,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+909966,Largie Ramazani,Valencia,Valencia,True,La Liga,
+917485,Walid Cheddira,Lecce,Lecce,True,Serie A,
+190883,Branco Van den Boomen,Angers,Angers,True,Ligue 1,
+1035695,Fodé Doucouré,Le Havre,Nantes,False,,joined Nantes (summer 2026)
+229740,Alberto Moreno,Como,Como,True,Serie A,
+859999,Lisandro Martínez,Manchester United,Manchester United,True,Premier League,
+606346,Eric Bailly,Real Oviedo,Columbus Crew,False,,joined Columbus Crew (summer 2026)
+1047484,Sékou Mara,Auxerre,Strasbourg,True,Ligue 1,back at Strasbourg after his loan
+842364,Joakim Mæhle,Wolfsburg,Wolfsburg,False,,relegated with Wolfsburg
+1391752,Rodrigo Mendoza,Atlético Madrid,Atlético Madrid,True,La Liga,
+187433,Serge Gnabry,Bayern Munich,Bayern Munich,True,Bundesliga,
+966547,Noni Madueke,Arsenal,Arsenal,True,Premier League,
+305278,Diego Llorente,Real Betis,Real Betis,True,La Liga,
+142148,Sead Kolašinac,Atalanta,Atalanta,True,Serie A,
+831246,Igor Silva,Lorient,Free agent,False,,"released, no club yet"
+294597,Federico Bernardeschi,Bologna,Bologna,True,Serie A,
+855731,David Brooks,Bournemouth,Bournemouth,True,Premier League,
+1102503,Ahmadou Bamba Dieng,Lorient,Red Star Belgrade,False,,joined Red Star Belgrade (summer 2026)
+21555,César Azpilicueta,Sevilla,Retired,False,,retired
+149370,Moi Gómez,Osasuna,Osasuna,True,La Liga,
+940054,Karim Adeyemi,Borussia Dortmund,Barcelona,True,La Liga,joined Barcelona (summer 2026)
+286909,Przemysław Frankowski,Rennes,Rennes,True,Ligue 1,
+293127,Denis Vavro,Wolfsburg,Viktoria Plzeň,False,,joined Viktoria Plzeň (summer 2026)
+927405,Woo-Yeong Jeong,Union Berlin,Union Berlin,True,Bundesliga,
+974713,Luis Vázquez,Getafe,Birmingham City,False,,"joined Birmingham City (Jul 2026, Undisclosed)"
+983601,Kieron Bowie,Verona,Sassuolo,True,Serie A,on loan to Sassuolo (Jul 2026)
+817979,Axel Tuanzebe,Burnley,Auxerre,True,Ligue 1,"joined Auxerre (Sep 2026, Undisclosed)"
+1137814,Sergi Altimira,Real Betis,Sporting Lisbon,False,,joined Sporting Lisbon (summer 2026)
+326471,Gerard Gumbau,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+914755,Patrick Osterhage,Freiburg,Freiburg,True,Bundesliga,
+982778,Devyne Rensch,Roma,Roma,True,Serie A,
+1401005,Remy Labeau Lascary,Brest,Auxerre,True,Ligue 1,on loan to Auxerre (summer 2026)
+1407848,Christian Mawissa,Monaco,Monaco,True,Ligue 1,
+871765,Nicolás Domínguez,Nottingham Forest,Nottingham Forest,True,Premier League,
+262911,Andy Robertson,Liverpool,Tottenham,True,Premier League,"joined Tottenham (Jul 2026, Free)"
+935543,Dwight McNeil,Everton,Crystal Palace,True,Premier League,"joined Crystal Palace (Aug 2026, Undisclosed)"
+1131339,Jordy Makengo,Freiburg,Freiburg,True,Bundesliga,
+1596573,Bruno Ogbus,Freiburg,Freiburg,True,Bundesliga,
+822110,Deiver Machado,Nantes,Rodina Moscow,False,,joined Rodina Moscow (summer 2026)
+1410217,Pape Diop,Toulouse,Strasbourg,True,Ligue 1,back at Strasbourg after his loan
+1049515,Alidu Seidu,Rennes,Nice,True,Ligue 1,on loan to Nice (summer 2026)
+910121,Fisayo Dele-Bashiru,Lazio,Lazio,True,Serie A,
+1100354,Romano Floriani Mussolini,Cremonese,Cremonese,False,,relegated with Cremonese
+1100836,Samuel Mbangula,Werder Bremen,Bologna,True,Serie A,on loan to Bologna (summer 2026)
+1069244,Tijjani Noslin,Lazio,Lazio,True,Serie A,
+904994,Eric Ebimbe,Brest,Brest,True,Ligue 1,
+325355,José María Giménez,Atlético Madrid,Deportivo A Coruña,True,La Liga,on loan to Deportivo A Coruña (summer 2026)
+944327,Dan Ndoye,Nottingham Forest,Nottingham Forest,True,Premier League,
+1526628,Fer López,Celta Vigo,Wolves,False,,back at Wolves after his loan
+1067204,Giovanni Fabbian,Fiorentina,Parma,True,Serie A,on loan to Parma (Aug 2026)
+877980,Wilson Isidor,Sunderland,Sunderland,True,Premier League,
+1440948,Can Uzun,Eintracht Frankfurt,Eintracht Frankfurt,True,Bundesliga,
+873551,Mostafa Mohamed,Nantes,Konyaspor,False,,joined Konyaspor (summer 2026)
+1050692,Diego Coppola,Paris FC,Paris FC,True,Ligue 1,
+803031,Matthijs de Ligt,Manchester United,Manchester United,True,Premier League,
+70996,Kevin De Bruyne,Napoli,Napoli,True,Serie A,
+795064,Trent Alexander-Arnold,Real Madrid,Real Madrid,True,La Liga,
+1089582,Freddie Potts,West Ham,Club Brugge,False,,"joined Club Brugge (Aug 2026, Undisclosed)"
+919027,Ali Abdi,Nice,Nice,True,Ligue 1,
+1514916,Sidiki Cherif,Angers,Coventry City,True,Premier League,"joined Coventry City (Aug 2026, Undisclosed)"
+1153079,Jorrel Hato,Chelsea,Chelsea,True,Premier League,
+362014,Hamari Traoré,Paris FC,Paris FC,True,Ligue 1,
+151138,Dimitri Foulquier,Valencia,Valencia,True,La Liga,
+981168,Samir Chergui,Paris FC,Paris FC,True,Ligue 1,
+1086223,Ange-Yoan Bonny,Inter,Inter,True,Serie A,
+19356,Iago Aspas,Celta Vigo,Celta Vigo,True,La Liga,
+1649919,Kareem Tunde,Levante,West Bromwich Albion,False,,"joined West Bromwich Albion (Aug 2026, Undisclosed)"
+284441,Ruben Loftus-Cheek,Milan,Milan,True,Serie A,
+981604,Alemão,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+2127096,Khalis Merah,Lyon,Lyon,True,Ligue 1,
+844744,Thibault De Smet,Paris FC,Paris FC,True,Ligue 1,
+361352,Adam Armstrong,Wolves,Wolves,False,,relegated with Wolves
+149728,Budu Zivzivadze,Heidenheim,Heidenheim,False,,relegated with Heidenheim
+361696,Wout Faes,Monaco,Leicester City,False,,back at Leicester City after his loan
+822519,Éder Militão,Real Madrid,Real Madrid,True,La Liga,
+997087,Liam Delap,Chelsea,Nottingham Forest,True,Premier League,"joined Nottingham Forest (Aug 2026, £45m)"
+1014493,Rav van den Berg,Köln,Köln,True,Bundesliga,
+789192,Jean-Luc Dompé,Hamburger SV,Konyaspor,False,,joined Konyaspor (summer 2026)
+996820,Kristjan Asllani,Torino,Torino,True,Serie A,
+1084730,Bryan Zaragoza,Celta Vigo,Celta Vigo,True,La Liga,
+139235,Adrien Tameze,Torino,Torino,True,Serie A,
+1174761,Arthur,Bayer Leverkusen,Werder Bremen,True,Bundesliga,on loan to Werder Bremen (summer 2026)
+784655,Fabián Ruiz,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+964119,Jordan Zemura,Udinese,Watford,False,,on loan to Watford (Aug 2026)
+345195,Ayoze Pérez,Villarreal,Villarreal,True,La Liga,
+38162,Duván Zapata,Torino,Torino,True,Serie A,
+1142692,Rafael Obrador,Torino,Torino,True,Serie A,
+844096,Jhon Arias,Wolves,Palmeiras,False,,"joined Palmeiras (Feb 2026, Undisclosed)"
+1002347,Alejandro Francés,Girona,Girona,False,,relegated with Girona
+842188,Elvis Rexhbeçaj,Augsburg,Wolfsburg,False,,joined Wolfsburg (summer 2026)
+1464966,Rayan,Bournemouth,Bournemouth,True,Premier League,
+800408,Suat Serdar,Verona,Verona,False,,relegated with Verona
+959805,Quinten Timber,Marseille,Crystal Palace,True,Premier League,"joined Crystal Palace (Sep 2026, Undisclosed)"
+280551,Manolis Saliakas,St. Pauli,Olympiacos,False,,joined Olympiacos (summer 2026)
+1130647,Jonas Urbig,Bayern Munich,Bayern Munich,True,Bundesliga,
+1009334,Lorenz Assignon,Stuttgart,Stuttgart,True,Bundesliga,
+161717,James Ward-Prowse,Burnley,Burnley,False,,relegated with Burnley
+1083007,Mika Biereth,Monaco,Monaco,True,Ligue 1,
+991478,Amine Adli,Bournemouth,Bournemouth,True,Premier League,
+1089388,Lamare Bogarde,Aston Villa,Aston Villa,True,Premier League,
+802142,Jonathan Ikoné,Paris FC,Paris FC,True,Ligue 1,
+1013842,Emmanuel Agbadou,Wolves,Beşiktaş,False,,"joined Beşiktaş (Feb 2026, Undisclosed)"
+597876,Lucas Ahijado,Real Oviedo,Free agent,False,,"released, no club yet"
+1128063,Federico Gatti,Juventus,Juventus,True,Serie A,
+940328,Jean-Philippe Krasso,Paris FC,Paris FC,True,Ligue 1,
+1149113,Oscar Højlund,Eintracht Frankfurt,Eintracht Frankfurt,True,Bundesliga,
+822600,Exequiel Palacios,Bayer Leverkusen,Ipswich Town,True,Premier League,"joined Ipswich Town (Aug 2026, Undisclosed)"
+945830,Himad Abdelli,Marseille,Marseille,True,Ligue 1,
+44566,Adam Smith,Bournemouth,Bournemouth,True,Premier League,
+1201388,Christian Ordoñez,Parma,Parma,True,Serie A,
+2193194,Alexis Vossah,Toulouse,Toulouse,True,Ligue 1,
+988252,Tim Siersleben,Heidenheim,Heidenheim,False,,relegated with Heidenheim
+803185,Lukas Nmecha,Leeds,Leeds,True,Premier League,
+928672,Adrià Pedrosa,Elche,Rayo Vallecano,True,La Liga,on loan to Rayo Vallecano (summer 2026)
+101882,Fabian Schär,Newcastle,Newcastle,True,Premier League,
+1155625,Cristian Volpato,Sassuolo,Sassuolo,True,Serie A,
+1384847,Daniele Ghilardi,Roma,Roma,True,Serie A,
+1493689,Assane Diao,Como,Como,True,Serie A,
+949722,Antonio Sánchez,Mallorca,Mallorca,False,,relegated with Mallorca
+1022204,Amin Sarr,Verona,Verona,False,,relegated with Verona
+962883,Ansu Fati,Monaco,Monaco,True,Ligue 1,
+1134203,Kauã Santos,Eintracht Frankfurt,Eintracht Frankfurt,True,Bundesliga,
+925910,Shuto Machino,Gladbach,Gladbach,True,Bundesliga,
+1112796,Andreas Hountondji,St. Pauli,Burnley,False,,back at Burnley after his loan
+965950,Joel Schmied,Köln,Köln,True,Bundesliga,
+1015872,Obed Nkambadio,Paris FC,Paris FC,True,Ligue 1,
+946158,Mohammed Salisu,Monaco,Monaco,True,Ligue 1,
+98427,Sam Johnstone,Wolves,Wolves,False,,relegated with Wolves
+922573,Gabriel Martinelli,Arsenal,Arsenal,True,Premier League,
+795066,Marcus Edwards,Burnley,Burnley,False,,relegated with Burnley
+219572,Joël Veltman,Brighton,West Ham,False,,"joined West Ham (Aug 2026, Free)"
+925097,Ronald Araújo,Barcelona,Liverpool,True,Premier League,on loan to Liverpool (Aug 2026)
+893640,Riccardo Sottil,Lecce,Lecce,True,Serie A,
+1410231,Pathé Mboup,Brest,Brest,True,Ligue 1,
+169255,Yannick Gerhardt,Wolfsburg,Wolfsburg,False,,relegated with Wolfsburg
+604954,Borja Mayoral,Getafe,Getafe,True,La Liga,
+1122806,Arthur Chaves,Augsburg,Botafogo,False,,on loan to Botafogo (summer 2026)
+970361,Jeremie Frimpong,Liverpool,Liverpool,True,Premier League,
+875548,Aiyegun Tosin,Lorient,Lorient,True,Ligue 1,
+818244,Ousmane Dembélé,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+1088565,Ramón Terrats,Espanyol,Getafe,True,La Liga,joined Getafe (summer 2026)
+1031283,David Møller Wolfe,Wolves,Hamburger SV,True,Bundesliga,on loan to Hamburger SV (summer 2026)
+754710,Umar Sadiq,Valencia,Valencia,True,La Liga,
+1548910,Kacper Potulski,Mainz 05,Mainz 05,True,Bundesliga,
+962068,Sebastian Nanasi,Strasbourg,Strasbourg,True,Ligue 1,
+952222,Víctor García,Levante,Levante,True,La Liga,
+934385,Maarten Vandevoordt,RB Leipzig,RB Leipzig,True,Bundesliga,
+1407484,Samuel Amo-Ameyaw,Strasbourg,Strasbourg,True,Ligue 1,
+1065216,Oscar Bobb,Fulham,Fulham,True,Premier League,
+106662,Stefan Bell,Mainz 05,Mainz 05,True,Bundesliga,
+1403559,Franco Mastantuono,Real Madrid,Fiorentina,True,Serie A,on loan to Fiorentina (summer 2026)
+155995,Marquinhos,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+989894,Woyo Coulibaly,Sassuolo,Sassuolo,True,Serie A,
+866191,Sean Longstaff,Leeds,Leeds,True,Premier League,
+805465,Pervis Estupiñán,Milan,Milan,True,Serie A,
+895868,Nahuel Estévez,Parma,Palermo,False,,"joined Palermo (Jun 2026, Free)"
+928800,Marco Brescianini,Fiorentina,Fiorentina,True,Serie A,
+997280,Raúl García de Haro,Osasuna,Osasuna,True,La Liga,
+254119,Marius Wolf,Augsburg,Augsburg,True,Bundesliga,
+983540,Tiago Tomás,Stuttgart,Stuttgart,True,Bundesliga,
+1210666,Tom Alexander Rothe,Union Berlin,Union Berlin,True,Bundesliga,
+809276,Jacob Bruun Larsen,Burnley,Burnley,False,,relegated with Burnley
+1085381,Nicolas Jackson,Bayern Munich,Aston Villa,True,Premier League,"joined Aston Villa (Aug 2026, £47.5m)"
+1112879,Kevin,Fulham,Fulham,True,Premier League,
+35532,Salomón Rondón,Real Oviedo,Real Oviedo,False,,relegated with Real Oviedo
+592010,Mikel Merino,Arsenal,Arsenal,True,Premier League,
+845693,André Almeida,Valencia,Racing Santander,True,La Liga,on loan to Racing Santander (summer 2026)
+921033,Linton Maina,Köln,Köln,True,Bundesliga,
+1154898,Luca Lipani,Sassuolo,Sassuolo,True,Serie A,
+980624,Lazar Samardžić,Atalanta,Atalanta,True,Serie A,
+257205,Sofiane Boufal,Le Havre,Al-Ittihad,False,,joined Al-Ittihad (summer 2026)
+873534,Krépin Diatta,Monaco,Free agent,False,,"released, no club yet"
+1010220,Nicolò Savona,Nottingham Forest,Nottingham Forest,True,Premier League,
+847030,Noussair Mazraoui,Manchester United,Manchester United,True,Premier League,
+877979,Willem Geubbels,Paris FC,Lecce,True,Serie A,joined Lecce (summer 2026)
+944629,Nicolas Fonseca,Real Oviedo,Real Oviedo,False,,relegated with Real Oviedo
+1142612,Emirhan İlkhan,Torino,Torino,True,Serie A,
+949156,Luka Sučić,Real Sociedad,Real Sociedad,True,La Liga,
+836694,Mason Mount,Manchester United,Manchester United,True,Premier League,
+1154894,Lennon Miller,Udinese,Udinese,True,Serie A,
+142390,Jonas Hofmann,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+877201,Gabriel Strefezza,Parma,Parma,True,Serie A,
+997033,Peque Fernández,Sevilla,Sevilla,True,La Liga,
+987491,Bryan Okoh,Auxerre,Auxerre,True,Ligue 1,
+888550,Joe Willock,Newcastle,Newcastle,True,Premier League,
+1002813,Yan Couto,Borussia Dortmund,Como,True,Serie A,on loan to Como (summer 2026)
+902031,João Mário,Bologna,Bologna,True,Serie A,
+1019442,Kamaldeen Sulemana,Atalanta,Atalanta,True,Serie A,
+909554,Roger Brugué,Levante,Levante,True,La Liga,
+1144630,Cristhian Mosquera,Arsenal,Arsenal,True,Premier League,
+839410,Aaron Ramsdale,Newcastle,Newcastle,True,Premier League,
+1445628,Djaoui Cissé,Rennes,Rennes,True,Ligue 1,
+1003012,Ezequiel Fernández,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+361420,Dominic Solanke,Tottenham,Tottenham,True,Premier League,
+1000483,Marc Casadó,Barcelona,Deportivo A Coruña,True,La Liga,on loan to Deportivo A Coruña (summer 2026)
+1170560,Soungoutou Magassa,West Ham,West Ham,False,,relegated with West Ham
+1015256,Rodrigo Muniz,Fulham,Fulham,True,Premier League,
+1590918,Ibrahim Mbaye,Paris Saint-Germain,Aston Villa,True,Premier League,"joined Aston Villa (Sep 2026, £47m)"
+1128530,Neil El Aynaoui,Roma,RB Leipzig,True,Bundesliga,on loan to RB Leipzig (summer 2026)
+973437,Odilon Kossounou,Atalanta,Atalanta,True,Serie A,
+35428,Pedro,Lazio,Lazio,True,Serie A,
+894733,Marshall Munetsi,Paris FC,Wolves,False,,back at Wolves after his loan
+1142679,Wilson Odobert,Tottenham,Tottenham,True,Premier League,
+1402716,Gonzalo García,Real Madrid,Fulham,True,Premier League,"joined Fulham (Aug 2026, £34m)"
+839493,Amir Murillo,Marseille,Marseille,True,Ligue 1,
+842399,Alimami Gory,Paris FC,Abha,False,,joined Abha (summer 2026)
+309156,Caleb Ekuban,Genoa,Genoa,True,Serie A,
+322391,Ryan Christie,Bournemouth,Bournemouth,True,Premier League,
+143334,Victor Lindelöf,Aston Villa,Aston Villa,True,Premier League,
+1142606,Semih Kılıçsoy,Cagliari,Cagliari,True,Serie A,
+972523,Cheikh Niasse,Verona,Gençlerbirliği,False,,on loan to Gençlerbirliği (Aug 2026)
+1397558,Kassoum Ouattara,Monaco,Beşiktaş,False,,joined Beşiktaş (summer 2026)
+592794,Alex Meret,Napoli,Napoli,True,Serie A,
+1031548,Alieu Fadera,Sassuolo,Sassuolo,True,Serie A,
+829570,Jack Harrison,Fiorentina,Fiorentina,True,Serie A,
+45512,Youssef El Arabi,Nantes,Marko,False,,joined Marko (summer 2026)
+1391251,Lucas Bergvall,Tottenham,Tottenham,True,Premier League,
+1019125,Omri Gandelman,Lecce,Lecce,True,Serie A,
+1006073,Rodrigo Gomes,Wolves,Wolves,False,,relegated with Wolves
+832208,Dušan Vlahović,Juventus,Juventus,True,Serie A,
+942834,Cheick Tidiane Sabaly,Metz,Metz,False,,relegated with Metz
+138572,Dani Carvajal,Real Madrid,Getafe,True,La Liga,joined Getafe (summer 2026)
+931278,Rayan Aït-Nouri,Manchester City,Manchester City,True,Premier League,
+1418623,Assan Ouédraogo,RB Leipzig,RB Leipzig,True,Bundesliga,
+105951,Benjamin Stambouli,Metz,Free agent,False,,"released, no club yet"
+873347,Lars Ritzka,St. Pauli,St. Pauli,False,,relegated with St. Pauli
+996929,Jesús Vázquez,Valencia,Valencia,True,La Liga,
+1107439,Ali Youssef,Nantes,Al-Ittihad,False,,joined Al-Ittihad (summer 2026)
+868715,Jorge Cuenca,Fulham,Fulham,True,Premier League,
+138892,João Cancelo,Barcelona,Barcelona,True,La Liga,
+155818,Takumi Minamino,Monaco,Monaco,True,Ligue 1,
+813574,Unai Elgezabal,Levante,Eibar,False,,joined Eibar (summer 2026)
+1035752,Giorgi Gocholeishvili,Hamburger SV,Cádiz,False,,on loan to Cádiz (summer 2026)
+1177401,Alan Matturro,Levante,Levante,True,La Liga,
+273405,Manuel Lazzari,Lazio,Lazio,True,Serie A,
+970928,Daniel Maldini,Lazio,Lazio,True,Serie A,
+875890,Chidera Ejuke,Sevilla,Sevilla,True,La Liga,
+238612,Chancel Mbemba,Lille,Al-Diriyah,False,,joined Al-Diriyah (summer 2026)
+1119586,Iker Muñoz,Osasuna,Osasuna,True,La Liga,
+851596,Justin Kluivert,Bournemouth,Bournemouth,True,Premier League,
+1613917,Jeff Ekhator,Genoa,Juventus,True,Serie A,"joined Juventus (Jul 2026, €16,4M)"
+1391375,Unai Gómez,Athletic Bilbao,Udinese,True,Serie A,joined Udinese (summer 2026)
+1145100,Yoel Lago,Celta Vigo,Celta Vigo,True,La Liga,
+867887,Douglas Luiz,Aston Villa,Aston Villa,True,Premier League,
+840951,Marcão,Sevilla,Sevilla,True,La Liga,
+989186,Ignace Van der Brempt,Como,Sassuolo,True,Serie A,on loan to Sassuolo (Aug 2026)
+979144,Luca Netz,Gladbach,Gladbach,True,Bundesliga,
+558320,Ulisses Garcia,Sassuolo,Sassuolo,True,Serie A,
+333261,Antonio Sanabria,Cremonese,Internacional,False,,"joined Internacional (Aug 2026, Undisclosed)"
+1000175,Adam Karabec,Lyon,Sparta Prague,False,,back at Sparta Prague after his loan
+17651,Santi Cazorla,Real Oviedo,Retired,False,,retired
+994556,Carney Chukwuemeka,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+837205,Florian Neuhaus,Gladbach,Gladbach,True,Bundesliga,
+1445799,Ayden Heaven,Manchester United,Manchester United,True,Premier League,
+873189,Juan Foyth,Villarreal,Villarreal,True,La Liga,
+930245,Evann Guessand,Crystal Palace,Crystal Palace,True,Premier League,
+851271,Fran García,Real Madrid,Real Betis,True,La Liga,joined Real Betis (summer 2026)
+605374,Tete Morente,Elche,Elche,True,La Liga,
+873106,Hiroki Itō,Bayern Munich,Bayern Munich,True,Bundesliga,
+125407,Álvaro Morata,Como,Leganés,False,,on loan to Leganés (summer 2026)
+1008402,Conor Bradley,Liverpool,Liverpool,True,Premier League,
+316148,Thomas Partey,Villarreal,Villarreal,True,La Liga,
+96832,Janis Blaswich,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+184421,Stefano Sabelli,Genoa,Genoa,True,Serie A,
+848512,Grady Diangana,Elche,Elche,True,La Liga,
+915812,Abdou Harroui,Verona,Verona,False,,relegated with Verona
+1103141,Sambou Soumano,Lorient,Reims,False,,joined Reims (summer 2026)
+111483,Michael Gregoritsch,Augsburg,Augsburg,True,Bundesliga,
+1138856,Adam Buksa,Udinese,Mallorca,False,,on loan to Mallorca (summer 2026)
+850993,David Neres,Napoli,Napoli,True,Serie A,
+1172477,Tani Oluwaseyi,Villarreal,Villarreal,True,La Liga,
+1019236,Jofre Carreras,Espanyol,Espanyol,True,La Liga,
+892521,Unai Núñez,Valencia,Espanyol,True,La Liga,on loan to Espanyol (summer 2026)
+1494826,Conrad Harder,RB Leipzig,Strasbourg,True,Ligue 1,on loan to Strasbourg (summer 2026)
+993455,Salis Abdul Samed,Nice,Nice,True,Ligue 1,
+842526,Bakery Jatta,Hamburger SV,Hamburger SV,True,Bundesliga,
+992331,Iker Losada,Levante,Levante,True,La Liga,
+50480,Chris Wood,Nottingham Forest,Nottingham Forest,True,Premier League,
+548188,Lewis Cook,Bournemouth,Bournemouth,True,Premier League,
+105905,Ibrahim Sulemana,Cagliari,Cagliari,True,Serie A,
+1127823,Luca Jaquez,Stuttgart,Stuttgart,True,Bundesliga,
+908714,Arnau Tenas,Villarreal,Mallorca,False,,on loan to Mallorca (summer 2026)
+846425,Manuel Ugarte,Manchester United,Manchester United,True,Premier League,
+158233,Bouna Sarr,Metz,Metz,False,,relegated with Metz
+1089108,Ilias Akhomach,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+892141,Santiago Giménez,Milan,Porto,False,,on loan to Porto (Aug 2026)
+965264,Emil Holm,Juventus,Juventus,True,Serie A,
+867441,Angel Gomes,Marseille,Marseille,True,Ligue 1,
+920379,Nathan Tella,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+170129,Florent Hanin,Angers,Nea Salamis Famagusta,False,,joined Nea Salamis Famagusta (summer 2026)
+990169,Johnny Cardoso,Atlético Madrid,Atlético Madrid,True,La Liga,
+795044,Patrick Cutrone,Parma,Parma,True,Serie A,
+851100,Jadon Sancho,Aston Villa,Aston Villa,True,Premier League,
+966441,Aihen Muñoz,Real Sociedad,Real Sociedad,True,La Liga,
+845742,Adrian Beck,Heidenheim,VfL Osnabrück,False,,on loan to VfL Osnabrück (summer 2026)
+796987,Mattias Svanberg,Wolfsburg,Wolfsburg,False,,relegated with Wolfsburg
+975800,Benedict Hollerbach,Mainz 05,Mainz 05,True,Bundesliga,
+1142149,Medon Berisha,Lecce,Lecce,True,Serie A,
+66518,Mario Götze,Eintracht Frankfurt,Eintracht Frankfurt,True,Bundesliga,
+174345,Robin Zentner,Mainz 05,Mainz 05,True,Bundesliga,
+1035619,Kevin Carlos Omoruyi,Nice,Cagliari,True,Serie A,on loan to Cagliari (summer 2026)
+996985,Armando Broja,Burnley,Burnley,False,,relegated with Burnley
+970778,Gabriele Piccinini,Pisa,Pisa,False,,relegated with Pisa
+268903,Neal Maupay,Sevilla,Marseille,True,Ligue 1,back at Marseille after his loan
+1110842,Simon Adingra,Monaco,Sunderland,True,Premier League,back at Sunderland after his loan
+930997,Giorgi Mamardashvili,Liverpool,Liverpool,True,Premier League,
+1402924,Jahmai Simpson-Pusey,Köln,Köln,True,Bundesliga,
+849114,Radosław Majecki,Brest,Pafos,False,,on loan to Pafos (summer 2026)
+1048366,Waren Kamanzi,Toulouse,Toulouse,True,Ligue 1,
+98435,Ross Barkley,Aston Villa,Aston Villa,True,Premier League,
+1122603,William Osula,Newcastle,Newcastle,True,Premier League,
+805096,Francisco Sierralta,Auxerre,Piast Gliwice,False,,on loan to Piast Gliwice (summer 2026)
+965009,Gaetano Oristanio,Parma,Parma,True,Serie A,
+787889,Lucas Tousart,Brest,Brest,True,Ligue 1,
+997583,Malthe Højholt,Pisa,Górnik Zabrze,False,,"joined Górnik Zabrze (Sep 2026, Undisclosed)"
+870211,Alberto Dossena,Cagliari,Cagliari,True,Serie A,
+1597265,Estêvão,Chelsea,Chelsea,True,Premier League,
+3577,Dante,Nice,Retired,False,,retired
+1409700,Zachary Athekame,Milan,Lyon,True,Ligue 1,on loan to Lyon (summer 2026)
+146853,Jeffrey Gouweleeuw,Augsburg,Augsburg,True,Bundesliga,
+794294,Andreas Hanche Olsen,Mainz 05,Chicago Fire,False,,joined Chicago Fire (summer 2026)
+868958,Moatasem Al-Musrati,Verona,Verona,False,,relegated with Verona
+1175854,Oumar Ngom,Lecce,Lecce,True,Serie A,
+1046795,Savinho,Manchester City,Manchester City,True,Premier League,
+788170,Fodé Ballo-Touré,Metz,Free agent,False,,"released, no club yet"
+1404639,Sebastian Otoa,Genoa,Genoa,True,Serie A,
+1026015,Orri Óskarsson,Real Sociedad,Real Sociedad,True,La Liga,
+890329,Ignatius Ganago,Nantes,Nantes,False,,relegated with Nantes
+1103079,Nathaniel Adjei,Lorient,Lorient,True,Ligue 1,
+795508,Vincent Marchetti,Paris FC,Paris FC,True,Ligue 1,
+989113,Rodrigo Riquelme,Real Betis,Real Betis,True,La Liga,
+1122835,Alisson Santos,Napoli,Napoli,True,Serie A,
+1513896,David López,Mallorca,Mallorca,False,,relegated with Mallorca
+914835,Junior Firpo,Real Betis,Real Betis,True,La Liga,
+1021165,Rubén Sánchez,Espanyol,Elche,True,La Liga,joined Elche (summer 2026)
+910024,Sergio Camello,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+1868591,Aladji Bamba,Monaco,Newcastle,True,Premier League,"joined Newcastle (Jul 2026, £34m)"
+1149127,Arthur Vermeeren,Marseille,Royal Antwerp,False,,on loan to Royal Antwerp (summer 2026)
+1084311,Justin Devenny,Crystal Palace,Crystal Palace,True,Premier League,
+954076,Fábio Silva,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+905381,Thijs Dallinga,Bologna,Köln,True,Bundesliga,on loan to Köln (summer 2026)
+1406007,Bahereba Guirassy,Nantes,Nantes,False,,relegated with Nantes
+825719,Issa Diop,Fulham,Ipswich Town,True,Premier League,"joined Ipswich Town (Jul 2026, Undisclosed)"
+1101174,Pablo Felipe,West Ham,West Ham,False,,relegated with West Ham
+904991,Stanley Nsoki,Union Berlin,Union Berlin,True,Bundesliga,
+1201412,Thiago Fernández,Real Oviedo,Levante,True,La Liga,on loan to Levante (summer 2026)
+788784,Olivier Boscagli,Brighton,Brighton,True,Premier League,
+1398511,Adama Boiro,Athletic Bilbao,West Ham,False,,on loan to West Ham (summer 2026)
+966802,Unai Vencedor,Levante,Burgos,False,,joined Burgos (summer 2026)
+1545376,Rayan Fofana,Lens,Le Havre,True,Ligue 1,on loan to Le Havre (summer 2026)
+1127191,Oussama El Azzouzi,Auxerre,Bologna,True,Serie A,back at Bologna after his loan
+842922,Stefan Schimmer,Heidenheim,Buriram United,False,,joined Buriram United (summer 2026)
+829093,Ibrahima Sissoko,Nantes,Nantes,False,,relegated with Nantes
+1518983,Edoardo Motta,Lazio,Lazio,True,Serie A,
+1545409,Mahamadou Nagida,Rennes,Rennes,True,Ligue 1,
+548848,Pau López,Real Betis,Andorra,False,,joined Andorra (summer 2026)
+1084846,Franco Israel,Torino,Torino,True,Serie A,
+369650,Jonathan Gradit,Lens,Lens,True,Ligue 1,
+208988,Pablo Marí,Fiorentina,Fiorentina,True,Serie A,
+82566,Tom Cairney,Fulham,Fulham,True,Premier League,
+1014540,Ruben Kluivert,Lyon,Lyon,True,Ligue 1,
+246999,Raphaël Guerreiro,Bayern Munich,Free agent,False,,"released, no club yet"
+995316,Kilian Fischer,Wolfsburg,Wolfsburg,False,,relegated with Wolfsburg
+907668,Billy Gilmour,Napoli,Napoli,True,Serie A,
+791,James Milner,Brighton,Brighton,True,Premier League,
+361780,Calvin Verdonk,Lille,Lille,True,Ligue 1,
+352668,Tosin Adarabioyo,Chelsea,Tottenham,True,Premier League,"joined Tottenham (Sep 2026, £10m)"
+1526618,Marc Bernal,Barcelona,Barcelona,True,La Liga,
+879875,Facundo Garcés,Alavés,Alavés,True,La Liga,
+143047,Matt Doherty,Wolves,Sheffield United,False,,"joined Sheffield United (Jul 2026, Free)"
+1012172,Tommaso Baldanzi,Genoa,Genoa,True,Serie A,
+1423504,Andrija Bulatović,Lens,Lens,True,Ligue 1,
+847983,Sebastian Szymański,Rennes,Rennes,True,Ligue 1,
+369866,Luca Mazzitelli,Cagliari,Cagliari,True,Serie A,
+1123175,Riyad Idrissi,Cagliari,Cagliari,True,Serie A,
+984527,Abdoulaye Ndiaye,Parma,Parma,True,Serie A,
+1088896,Johan Bakayoko,RB Leipzig,RB Leipzig,True,Bundesliga,
+999231,Evan Ferguson,Roma,Roma,True,Serie A,
+1004790,Jacob Ondrejka,Parma,Groningen,False,,on loan to Groningen (Aug 2026)
+344751,Baptiste Santamaria,Valencia,PAOK Thessaloniki,False,,joined PAOK Thessaloniki (summer 2026)
+1394089,Chris Rigg,Sunderland,Sunderland,True,Premier League,
+356352,Hans Hateboer,Lyon,Free agent,False,,"released, no club yet"
+1168588,Eliezer Mayenda,Sunderland,Rennes,True,Ligue 1,"joined Rennes (Jul 2026, £22m)"
+1195784,Malick Fofana,Lyon,Sunderland,True,Premier League,"joined Sunderland (Sep 2026, £30m)"
+802034,Fabien Centonze,Nantes,Nantes,False,,relegated with Nantes
+79645,Mattia Perin,Juventus,Palermo,False,,"joined Palermo (Aug 2026, Undisclosed)"
+1630975,Manu Fernández,Celta Vigo,Cádiz,False,,joined Cádiz (summer 2026)
+1025895,Hyeok-kyu Kwon,Nantes,Nantes,False,,relegated with Nantes
+1046796,Calebe Gonçalves,Alavés,Internacional,False,,on loan to Internacional (summer 2026)
+885664,Luka Ilić,Real Oviedo,Real Oviedo,False,,relegated with Real Oviedo
+1198075,Brajan Gruda,RB Leipzig,RB Leipzig,True,Bundesliga,
+1210995,Isak Vural,Pisa,Pisa,False,,relegated with Pisa
+1397934,Urie-Michel Mboula,Metz,Metz,False,,relegated with Metz
+1402217,Panos Katseris,Lorient,Lorient,True,Ligue 1,
+933398,Felix Agu,Werder Bremen,Werder Bremen,True,Bundesliga,
+149732,Abdoulaye Touré,Le Havre,Free agent,False,,"released, no club yet"
+1568522,Montrell Culbreath,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+891829,Matt O'Riley,Marseille,Marseille,True,Ligue 1,
+1119345,Obed Vargas,Atlético Madrid,Atlético Madrid,True,La Liga,
+1424353,Francesco Folino,Cremonese,Modena,False,,on loan to Modena (Sep 2026)
+1064842,Denis Huseinbašić,Köln,Braga,False,,joined Braga (summer 2026)
+879543,Mateu Morey,Mallorca,Mallorca,False,,relegated with Mallorca
+1129401,Nelson Deossa,Real Betis,Real Betis,True,La Liga,
+873554,Omar Marmoush,Manchester City,Tottenham,True,Premier League,on loan to Tottenham (Aug 2026)
+1017392,Carlos Alcaraz,Everton,Everton,True,Premier League,
+1087364,Tiago Santos,Lille,Lille,True,Ligue 1,
+229544,Niklas Stark,Werder Bremen,Werder Bremen,True,Bundesliga,
+341589,Mahmoud Dahoud,Eintracht Frankfurt,Dubai United,False,,joined Dubai United (summer 2026)
+785468,Aritz Elustondo,Real Sociedad,PAOK Thessaloniki,False,,joined PAOK Thessaloniki (summer 2026)
+557166,Mama Baldé,Brest,Brest,True,Ligue 1,
+1423711,Myles Lewis-Skelly,Arsenal,Arsenal,True,Premier League,
+1097453,Luca Kerber,Heidenheim,Heidenheim,False,,relegated with Heidenheim
+1170694,Ugo Raghouber,Levante,Burnley,False,,"joined Burnley (Jul 2026, Undisclosed)"
+50490,Wojciech Szczęsny,Barcelona,Barcelona,True,La Liga,
+263651,Juan Musso,Atlético Madrid,Atlético Madrid,True,La Liga,
+96542,Maxime Dupé,Nice,Nantes,False,,joined Nantes (summer 2026)
+914765,Gonzalo Villar,Elche,Elche,True,La Liga,
+1029018,Abdallah Sima,Lens,Lens,True,Ligue 1,
+966869,Aaron Hickey,Brentford,Brentford,True,Premier League,
+823941,Alexander Isak,Liverpool,Liverpool,True,Premier League,
+846036,Ben White,Arsenal,Arsenal,True,Premier League,
+758664,Charles Pickel,Espanyol,Espanyol,True,La Liga,
+1398518,Álex Sancris,Getafe,Getafe,True,La Liga,
+1463509,Pape Sy,Metz,Metz,False,,relegated with Metz
+1034082,Ardon Jashari,Milan,Milan,True,Serie A,
+834244,Mathias Rasmussen,St. Pauli,St. Pauli,False,,relegated with St. Pauli
+149663,Nathan Aké,Manchester City,Fenerbahçe,False,,"joined Fenerbahçe (Jul 2026, £7m)"
+1403050,Josh Acheampong,Chelsea,Chelsea,True,Premier League,
+985199,Giorgi Abuashvili,Metz,Metz,False,,relegated with Metz
+1918369,Davinchi,Getafe,Getafe,True,La Liga,
+1088897,Jenson Seelt,Wolfsburg,Swansea City,False,,on loan to Swansea City (Aug 2026)
+877013,Valentín Castellanos,Lazio,Lazio,True,Serie A,
+1520771,Francesco Camarda,Lecce,Lecce,True,Serie A,
+989371,Aster Vranckx,Sassuolo,Sassuolo,True,Serie A,
+1165371,Luca Marianucci,Torino,Torino,True,Serie A,
+1130067,Fabio Chiarodia,Gladbach,Gladbach,True,Bundesliga,
+979563,Jarrad Branthwaite,Everton,Everton,True,Premier League,
+1177723,Jayden Addai,Como,Como,True,Serie A,
+146101,Eric Dier,Monaco,Monaco,True,Ligue 1,
+997104,Naouirou Ahamada,Auxerre,Auxerre,True,Ligue 1,
+1405239,Mohamed Bamba,Lorient,Lorient,True,Ligue 1,
+1010231,Jamal Musiala,Bayern Munich,Bayern Munich,True,Bundesliga,
+319861,Luca Waldschmidt,Köln,Köln,True,Bundesliga,
+862697,Nicolò Casale,Bologna,Bologna,True,Serie A,
+367056,Jérémie Boga,Juventus,Juventus,True,Serie A,
+1094758,John Donald,Elche,Elche,True,La Liga,
+1173575,Jones El-Abdellaoui,Celta Vigo,Celta Vigo,True,La Liga,
+1386065,Mario Sauer,Toulouse,1. FC Kaiserslautern,False,,on loan to 1. FC Kaiserslautern (summer 2026)
+217784,Patric,Lazio,Al-Ittifaq,False,,"joined Al-Ittifaq (Sep 2026, Undisclosed)"
+309546,Takuma Asano,Mallorca,Sanfrecce Hiroshima,False,,joined Sanfrecce Hiroshima (summer 2026)
+910536,Rodrygo,Real Madrid,Real Madrid,True,La Liga,
+891931,Ander Guevara,Alavés,Alavés,True,La Liga,
+891511,Javi Puado,Espanyol,Espanyol,True,La Liga,
+1015164,Isaac Schmidt,Werder Bremen,Young Boys,False,,"joined Young Boys (Jul 2026, Undisclosed)"
+835480,Loïs Openda,Juventus,Lyon,True,Ligue 1,on loan to Lyon (summer 2026)
+888219,Junior Messias,Genoa,Genoa,True,Serie A,
+41605,Timothée Kolodziejczak,Paris FC,Free agent,False,,"released, no club yet"
+846445,Martin Terrier,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+1048009,El Chadaille Bitshiabu,RB Leipzig,Galatasaray,False,,on loan to Galatasaray (summer 2026)
+91046,Stefan de Vrij,Inter,Inter,True,Serie A,
+839898,Alessio Castro-Montes,Köln,Köln,True,Bundesliga,
+387220,Timo Hübers,Köln,Köln,True,Bundesliga,
+875136,Noa Lang,Napoli,Napoli,True,Serie A,
+191188,Seko Fofana,Rennes,Porto,False,,on loan to Porto (summer 2026)
+1150952,Oliver Scarles,West Ham,West Ham,False,,relegated with West Ham
+917007,Joshua Zirkzee,Manchester United,Manchester United,True,Premier League,
+904970,Conor Gallagher,Atlético Madrid,Atlético Madrid,True,La Liga,
+1162107,Roony Bardghji,Barcelona,Barcelona,True,La Liga,
+1138150,Nikolas Veratschnig,Mainz 05,Red Bull Salzburg,False,,joined Red Bull Salzburg (summer 2026)
+209768,Pierrick Capelle,Angers,Retired,False,,retired
+814360,Juan Cruz,Osasuna,Real Oviedo,False,,joined Real Oviedo (summer 2026)
+959003,Filip Stojilković,Pisa,Rapid București,False,,on loan to Rapid București (Aug 2026)
+1166832,Keke Topp,Werder Bremen,Werder Bremen,True,Bundesliga,
+983815,Yunus Musah,Atalanta,Atalanta,True,Serie A,
+45925,Stephan El Shaarawy,Roma,Roma,True,Serie A,
+962064,Isak Jansson,Nice,Nice,True,Ligue 1,
+1468090,Alfon González,Villarreal,Villarreal,True,La Liga,
+877835,Nicolas-Gerrit Kühn,Como,Gladbach,True,Bundesliga,on loan to Gladbach (summer 2026)
+40672,Francis Coquelin,Nantes,Laval,False,,joined Laval (summer 2026)
+1513469,Livan Burcu,Union Berlin,Union Berlin,True,Bundesliga,
+1003007,Tanguy Nianzou,Sevilla,Lille,True,Ligue 1,joined Lille (summer 2026)
+132645,Niclas Füllkrug,Milan,Milan,True,Serie A,
+1127590,Mohamed Kaba,Lecce,Lecce,True,Serie A,
+318927,Joe Gomez,Liverpool,Liverpool,True,Premier League,
+786259,Kostas Tsimikas,Roma,Roma,True,Serie A,
+839585,Yangel Herrera,Real Sociedad,Real Sociedad,True,La Liga,
+168987,Robert Glatzel,Hamburger SV,Wolfsburg,False,,joined Wolfsburg (summer 2026)
+796320,Joseph Aidoo,Celta Vigo,Free agent,False,,"released, no club yet"
+218160,Bertrand Traoré,Sunderland,Sunderland,True,Premier League,
+1215904,Rodrigo Ribeiro,Augsburg,Augsburg,True,Bundesliga,
+1010223,Fabio Miretti,Juventus,Beşiktaş,False,,on loan to Beşiktaş (Aug 2026)
+1471095,Ibrahim Osman,Auxerre,Auxerre,True,Ligue 1,
+1031251,Antonín Kinský,Tottenham,Tottenham,True,Premier League,
+284349,Simone Scuffet,Pisa,Pisa,False,,relegated with Pisa
+980383,Raúl Moro,Osasuna,Osasuna,True,La Liga,
+846252,Ryan Yates,Nottingham Forest,Nottingham Forest,True,Premier League,
+98212,Charalampos Lykogiannis,Bologna,Bologna,True,Serie A,
+1131448,Conrad Jaden Egan-Riley,Marseille,Marseille,True,Ligue 1,
+111969,Leonardo Bittencourt,Werder Bremen,Energie Cottbus,False,,joined Energie Cottbus (summer 2026)
+824200,Ademola Lookman,Atlético Madrid,Atlético Madrid,True,La Liga,
+138156,Emre Can,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+892924,Hamed Junior Traorè,Marseille,Genoa,True,Serie A,on loan to Genoa (summer 2026)
+1001997,Răzvan Sava,Udinese,Craiova,False,,"joined Craiova (Jun 2026, Undisclosed)"
+800252,Tim Skarke,Union Berlin,Union Berlin,True,Bundesliga,
+800400,Sirlord Conteh,Heidenheim,Heidenheim,False,,relegated with Heidenheim
+1482424,Claudio Echeverri,Girona,Girona,False,,relegated with Girona
+1399503,Nidal Čelik,Lens,Lens,True,Ligue 1,
+48480,Pascal Groß,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+1069560,Antonio Vergara,Napoli,Napoli,True,Serie A,
+1152943,Rosen Bozhinov,Pisa,Pisa,False,,relegated with Pisa
+1090694,Vanderson,Monaco,Monaco,True,Ligue 1,
+1389689,Reda Belahyane,Lazio,Lazio,True,Serie A,
+1018179,Daniel Mosquera,Verona,Verona,False,,relegated with Verona
+372430,Frédéric Guilbert,Nantes,Nantes,False,,relegated with Nantes
+1069703,Carlos Domínguez,Celta Vigo,Real Oviedo,False,,on loan to Real Oviedo (summer 2026)
+998830,Daniel Oyegoke,Verona,Lincoln City,False,,"joined Lincoln City (Sep 2026, Undisclosed)"
+844842,Yves Bissouma,Tottenham,Tottenham,True,Premier League,
+1092769,Yáser Asprilla,Girona,Girona,False,,relegated with Girona
+43215,Nathaniel Clyne,Crystal Palace,Crystal Palace,True,Premier League,
+888854,Connor Metcalfe,St. Pauli,St. Pauli,False,,relegated with St. Pauli
+801837,Íñigo Lekue,Athletic Bilbao,Retired,False,,retired
+828239,Toni Lato,Mallorca,Mallorca,False,,relegated with Mallorca
+1155383,Ezechiel Banzuzi,RB Leipzig,RB Leipzig,True,Bundesliga,
+1095836,Théo De Percin,Auxerre,Bastia,False,,on loan to Bastia (summer 2026)
+1129527,Bilal Nadir,Marseille,Hamburger SV,True,Bundesliga,joined Hamburger SV (summer 2026)
+2237795,Thiago Pitarch,Real Madrid,Real Madrid,True,La Liga,
+1898148,Ayoube Amaimouni Echghouyab,Eintracht Frankfurt,Eintracht Frankfurt,True,Bundesliga,
+139273,Daniele Rugani,Fiorentina,Fiorentina,True,Serie A,
+152446,Iván Balliu,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+115665,Cédric Bakambu,Real Betis,Free agent,False,,"released, no club yet"
+96544,Geoffrey Kondogbia,Marseille,Marseille,True,Ligue 1,
+365812,Luke O'Nien,Sunderland,Sunderland,True,Premier League,
+1012179,Jacopo Fazzini,Fiorentina,Cagliari,True,Serie A,on loan to Cagliari (Jul 2026)
+913942,Romain Faivre,Auxerre,Auxerre,True,Ligue 1,
+1084043,Ibrahim Diabaté,Alavés,GAIS,False,,back at GAIS after his loan
+1152505,Nelson Weiper,Mainz 05,Sturm Graz,False,,on loan to Sturm Graz (summer 2026)
+100390,Marco Bizot,Aston Villa,Aston Villa,True,Premier League,
+1153333,Rafael Luis,Strasbourg,Benfica,False,,back at Benfica after his loan
+836705,Kai Havertz,Arsenal,Arsenal,True,Premier League,
+1152139,Angel Ortiz,Real Betis,Real Betis,True,La Liga,
+1881902,Rio Ngumoha,Liverpool,Liverpool,True,Premier League,
+835600,Davide Frattesi,Inter,Lazio,True,Serie A,on loan to Lazio (Aug 2026)
+72998,Rémy Cabella,Nantes,Olympiacos,False,,back at Olympiacos after his loan
+1103693,Gavi,Barcelona,Barcelona,True,La Liga,
+808955,Josan,Elche,Elche,True,La Liga,
+1027091,Joel Mugisha Mvuka,Lorient,Bodø/Glimt,False,,joined Bodø/Glimt (summer 2026)
+1402698,Ethan Mbappé,Lille,Lille,True,Ligue 1,
+828639,Daniel James,Leeds,Leeds,True,Premier League,
+1995809,Wael Mohya,Gladbach,Gladbach,True,Bundesliga,
+1511706,Alexsandro Amorim,Genoa,Genoa,True,Serie A,
+829296,Roman Yaremchuk,Lyon,Olympiacos,False,,back at Olympiacos after his loan
+353154,Javier Muñoz,Getafe,Getafe,True,La Liga,
+910076,Felix Mambimbi,Le Havre,Le Havre,True,Ligue 1,
+1542721,Buba Sangaré,Elche,Elche,True,La Liga,
+1470032,Ibou Sane,Metz,Metz,False,,relegated with Metz
+123976,Sergi Roberto,Como,Como,True,Serie A,
+1064218,Chadi Riad,Crystal Palace,Crystal Palace,True,Premier League,
+1130942,Félix Lemaréchal,Strasbourg,Strasbourg,True,Ligue 1,
+1005834,Armindo Sieb,Mainz 05,Los Angeles FC,False,,joined Los Angeles FC (summer 2026)
+788921,Florian Sotoca,Lens,Lens,True,Ligue 1,
+1862843,Marius Louër,Angers,Angers,True,Ligue 1,
+1142210,Hugo Bolin,Gladbach,Gladbach,True,Bundesliga,
+981470,Corrie Ndaba,Lecce,Lecce,True,Serie A,
+1146091,Damion Downs,Hamburger SV,Southampton,False,,back at Southampton after his loan
+838629,Álvaro Fidalgo,Real Betis,Real Betis,True,La Liga,
+1195782,Noah Nartey,Lyon,Lyon,True,Ligue 1,
+978327,N'Dri Konan,Lecce,Lecce,True,Serie A,
+1526934,Niccolò Fortini,Fiorentina,Torino,True,Serie A,on loan to Torino (Aug 2026)
+918437,Mikkel Kaufmann,Heidenheim,Heidenheim,False,,relegated with Heidenheim
+797306,Mouctar Diakhaby,Valencia,Valencia,True,La Liga,
+1162611,Benjamín Domínguez,Bologna,Sassuolo,True,Serie A,on loan to Sassuolo (Aug 2026)
+997103,Radu Drăguşin,Tottenham,Fiorentina,True,Serie A,on loan to Fiorentina (Jul 2026)
+1087043,Julián Malatini,Werder Bremen,FC Cincinnati,False,,on loan to FC Cincinnati (summer 2026)
+150611,Nícolas,Pisa,Pisa,False,,relegated with Pisa
+815890,Altay Bayındır,Manchester United,Celta Vigo,True,La Liga,on loan to Celta Vigo (Aug 2026)
+857574,Andriy Lunin,Real Madrid,Real Madrid,True,La Liga,
+976410,Tiago Gouveia,Nice,Benfica,False,,back at Benfica after his loan
+805123,Yoane Wissa,Newcastle,Newcastle,True,Premier League,
+1125917,Felipe Loyola,Pisa,Pisa,False,,relegated with Pisa
+1627560,Harrison Armstrong,Everton,Everton,True,Premier League,
+1518669,Kaïl Boudache,Nice,Lyon,True,Ligue 1,joined Lyon (summer 2026)
+998951,Wilfried Gnonto,Leeds,Fiorentina,True,Serie A,on loan to Fiorentina (Sep 2026)
+575852,Sandi Lovrić,Verona,Verona,False,,relegated with Verona
+843665,Alphonso Davies,Bayern Munich,Bayern Munich,True,Bundesliga,
+855837,Diego Pampín,Levante,Granada,False,,joined Granada (summer 2026)
+893752,Stefano Turati,Sassuolo,Sassuolo,True,Serie A,
+988801,Abu Francis,Toulouse,Toulouse,True,Ligue 1,
+122848,Cristiano Biraghi,Torino,Torino,True,Serie A,
+1606642,Mohamed Kader Meite,Rennes,Rennes,True,Ligue 1,
+215246,Franco Vázquez,Cremonese,Cremonese,False,,relegated with Cremonese
+103442,Anthony Jung,Freiburg,Freiburg,True,Bundesliga,
+1499991,Jan Ziółkowski,Roma,Monza,True,Serie A,on loan to Monza (Aug 2026)
+989056,Giovanni Reyna,Gladbach,Strasbourg,True,Ligue 1,joined Strasbourg (summer 2026)
+1170722,Jair,Nottingham Forest,Nottingham Forest,True,Premier League,
+128637,Allan Nyom,Getafe,Free agent,False,,"released, no club yet"
+893962,Lennard Maloney,Mainz 05,Mainz 05,True,Bundesliga,
+846471,Anthony Caci,Mainz 05,Mainz 05,True,Bundesliga,
+856737,Zakaria Aboukhlal,Torino,Torino,True,Serie A,
+1000150,Zito Luvumbo,Mallorca,Mallorca,False,,relegated with Mallorca
+838399,Joe Worrall,Burnley,Wrexham,False,,"joined Wrexham (Sep 2026, Undisclosed)"
+1049775,Alexsandro Ribeiro,Lille,Lille,True,Ligue 1,
+2142283,Lanroy Machine,Angers,Heerenveen,False,,on loan to Heerenveen (summer 2026)
+1638338,Gessime Yassine,Strasbourg,Strasbourg,True,Ligue 1,
+807648,Yeray Álvarez,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+1937833,Luca Reggiani,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+937324,Nicolò Rovella,Lazio,Lazio,True,Serie A,
+892430,Fali Candé,Sassuolo,Sassuolo,True,Serie A,
+1131337,Maximilian Rosenfelder,Freiburg,Freiburg,True,Bundesliga,
+965357,Osame Sahraoui,Lille,Lille,True,Ligue 1,
+2073555,Stephan Zagadou,Le Havre,Le Havre,True,Ligue 1,
+14718,Lorenzo De Silvestri,Bologna,Bologna,True,Serie A,
+3041,Raúl Albiol,Pisa,Pisa,False,,relegated with Pisa
+1146250,Max Finkgräfe,RB Leipzig,RB Leipzig,True,Bundesliga,
+300412,Giorgi Kvilitaia,Metz,Holstein Kiel,False,,joined Holstein Kiel (summer 2026)
+359664,Taiwo Awoniyi,Nottingham Forest,Coventry City,True,Premier League,"joined Coventry City (Aug 2026, £9m)"
+47743,Juan Cuadrado,Pisa,Pisa,False,,relegated with Pisa
+1154491,Jovan Milošević,Werder Bremen,Braga,False,,joined Braga (summer 2026)
+1198264,Rafik Messali,Toulouse,Toulouse,True,Ligue 1,
+1402908,Hector Fort,Elche,Real Sociedad,True,La Liga,joined Real Sociedad (summer 2026)
+1130946,Elias Saad,Augsburg,Nashville SC,False,,on loan to Nashville SC (summer 2026)
+255239,Lucas Vázquez,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+1048889,Andy Diouf,Inter,Inter,True,Serie A,
+547838,Dani Ceballos,Real Madrid,Real Betis,True,La Liga,joined Real Betis (summer 2026)
+1009661,Oier Zarraga,Udinese,Udinese,True,Serie A,
+76132,Milan Đurić,Cremonese,Cremonese,False,,relegated with Cremonese
+1140599,Jamie Gittens,Chelsea,Chelsea,True,Premier League,
+1183625,Giovanni Bonfanti,Pisa,Pisa,False,,relegated with Pisa
+850035,Luiz Felipe,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+126588,Filip Kostić,Juventus,Juventus,True,Serie A,
+139410,Federico Ceccherini,Cremonese,Castellón,False,,joined Castellón (summer 2026)
+894396,Terem Moffi,Nice,Hamburger SV,True,Bundesliga,joined Hamburger SV (summer 2026)
+1486808,Eivind Helland,Bologna,Bologna,True,Serie A,
+168937,Niklas Süle,Borussia Dortmund,SV Tiefenbach,False,,joined SV Tiefenbach (summer 2026)
+928295,Adrian Benedyczak,Parma,Kasımpaşa,False,,"joined Kasımpaşa (Jul 2026, Undisclosed)"
+990743,Morgan Guilavogui,Lens,Lens,True,Ligue 1,
+591132,Kike Barja,Osasuna,Osasuna,True,La Liga,
+357598,Josip Brekalo,Real Oviedo,Real Oviedo,False,,relegated with Real Oviedo
+1153265,Badredine Bouanani,Stuttgart,Rangers,False,,on loan to Rangers (summer 2026)
+826069,Jonas Wind,Wolfsburg,Braga,False,,joined Braga (summer 2026)
+1133715,Mathias Løvik,Parma,Parma,True,Serie A,
+1049528,Yassine Benhattab,Nantes,Montpellier,False,,joined Montpellier (summer 2026)
+988476,Philip Otele,Hamburger SV,Basel,False,,back at Basel after his loan
+1869106,Paco Cortés,Levante,Levante,True,La Liga,
+848458,Arnaud Nordin,Mainz 05,Rennes,True,Ligue 1,joined Rennes (summer 2026)
+218616,Portu,Girona,Girona,False,,relegated with Girona
+1002267,Jacen Russell Rowe,Toulouse,Toulouse,True,Ligue 1,
+904827,Benoît Badiashile,Chelsea,Napoli,True,Serie A,on loan to Napoli (Aug 2026)
+1131581,Carlos Martín,Rayo Vallecano,Hajduk Split,False,,on loan to Hajduk Split (summer 2026)
+825740,Alex Král,Union Berlin,Copenhagen,False,,joined Copenhagen (summer 2026)
+980418,Sacha Boey,Bayern Munich,Bayern Munich,True,Bundesliga,
+1494096,Francesco Coppola,Pisa,Pisa,False,,relegated with Pisa
+359742,Mikel Vesga,Athletic Bilbao,Almería,False,,joined Almería (summer 2026)
+902381,Junior Adamu,Freiburg,Schalke 04,True,Bundesliga,joined Schalke 04 (summer 2026)
+1546267,Fabio Baldé,Hamburger SV,Strasbourg,True,Ligue 1,joined Strasbourg (summer 2026)
+856065,Pontus Almqvist,Parma,Parma,True,Serie A,
+1048333,Emmanuel Emegha,Strasbourg,Chelsea,True,Premier League,"joined Chelsea (Jul 2026, £22m)"
+796455,Vakoun Issouf Bayo,Udinese,Udinese,True,Serie A,
+788180,Rémy Descamps,Lyon,Lyon,True,Ligue 1,
+996903,Lucas Bergström,Mallorca,Mallorca,False,,relegated with Mallorca
+286165,Adama Traoré,West Ham,Deportivo A Coruña,True,La Liga,joined Deportivo A Coruña (summer 2026)
+803034,Jeffrey De Lange,Marseille,Marseille,True,Ligue 1,
+845291,Josep Martínez,Inter,Inter,True,Serie A,
+22209,Ørjan Nyland,Sevilla,RB Leipzig,True,Bundesliga,joined RB Leipzig (summer 2026)
+152077,John Stones,Manchester City,Inter,True,Serie A,"joined Inter (Jul 2026, Free)"
+1066045,Arsen Zakharyan,Real Sociedad,Real Sociedad,True,La Liga,
+2195736,Nathan Mbala,Metz,Metz,False,,relegated with Metz
+1153355,Maxi Oyedele,Strasbourg,Strasbourg,True,Ligue 1,
+964154,Tomáš Suslov,Verona,Verona,False,,relegated with Verona
+1133236,Tobias Slotsager,Verona,Verona,False,,relegated with Verona
+2077075,Seny Koumbassa,Toulouse,Toulouse,True,Ligue 1,
+1120947,Jozhua Vertrouwd,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+826167,Sebastiaan Bornauw,Leeds,Hamburger SV,True,Bundesliga,on loan to Hamburger SV (Aug 2026)
+840103,John Victor,Nottingham Forest,Nottingham Forest,True,Premier League,
+893642,Marash Kumbulla,Mallorca,Rayo Vallecano,True,La Liga,on loan to Rayo Vallecano (summer 2026)
+186795,Andreas Christensen,Barcelona,Barcelona,True,La Liga,
+980406,Étienne Youte Kinkoue,Le Havre,Lausanne-Sport,False,,joined Lausanne-Sport (summer 2026)
+1464025,Kendry Páez,Strasbourg,Strasbourg,True,Ligue 1,
+32048,Cristhian Stuani,Girona,Girona,False,,relegated with Girona
+1152386,Rafiu Durosinmi,Pisa,Genk,False,,"joined Genk (Jul 2026, Undisclosed)"
+954044,Ki-Jana Hoever,Wolves,Sparta Prague,False,,"joined Sparta Prague (Aug 2026, Undisclosed)"
+66492,David Alaba,Real Madrid,Udinese,True,Serie A,joined Udinese (summer 2026)
+1140859,Hamza Igamane,Lille,Lille,True,Ligue 1,
+2076689,Believe Munongo,Metz,Metz,False,,relegated with Metz
+1536811,Idrissa Gueye,Udinese,Udinese,True,Serie A,
+793988,Orel Mangala,Lyon,Getafe,True,La Liga,on loan to Getafe (summer 2026)
+877037,Cyril Ngonge,Espanyol,Espanyol,True,La Liga,
+1136731,Rico Lewis,Manchester City,Manchester City,True,Premier League,
+1126175,Saba Goglichidze,Udinese,Monza,True,Serie A,on loan to Monza (Sep 2026)
+855808,Samuel Essende,Augsburg,Augsburg,True,Bundesliga,
+794839,Gabriel Jesus,Arsenal,Barcelona,True,La Liga,"joined Barcelona (Sep 2026, £8.6m)"
+962364,Lorenzo Lucca,Napoli,Napoli,True,Serie A,
+848355,Angeliño,Roma,Deportivo A Coruña,True,La Liga,on loan to Deportivo A Coruña (Aug 2026)
+1046028,Mayckel Lahdo,Nantes,Nantes,False,,relegated with Nantes
+858194,Eddie Nketiah,Crystal Palace,Crystal Palace,True,Premier League,
+877371,Ivan Ilić,Torino,Lecce,True,Serie A,on loan to Lecce (Aug 2026)
+1116571,Nilson Angulo,Sunderland,Sunderland,True,Premier League,
+1094440,Romaine Mundle,Sunderland,Sunderland,True,Premier League,
+1418703,Max Moerstedt,Hoffenheim,Hoffenheim,True,Bundesliga,
+975811,Mattia Felici,Cagliari,Cagliari,True,Serie A,
+1426224,Mathis Amougou,Strasbourg,Toulouse,True,Ligue 1,on loan to Toulouse (summer 2026)
+1392092,Sebastián Boselli,Getafe,Getafe,True,La Liga,
+355486,Stefan Posch,Como,Mainz 05,True,Bundesliga,"joined Mainz 05 (Aug 2026, Undisclosed)"
+933833,Christian Conteh,Heidenheim,Heidenheim,False,,relegated with Heidenheim
+1126447,Lucas Cepeda,Elche,Elche,True,La Liga,
+347010,Allan Saint-Maximin,Lens,Charlotte FC,False,,joined Charlotte FC (summer 2026)
+831290,David Okereke,Cremonese,Cremonese,False,,relegated with Cremonese
+845386,Federico Chiesa,Liverpool,Liverpool,True,Premier League,
+136922,Dominique Heintz,Köln,Fortuna Düsseldorf,False,,joined Fortuna Düsseldorf (summer 2026)
+975300,Godson Kyeremeh,Le Havre,Red Star,False,,joined Red Star (summer 2026)
+798820,Artem Dovbyk,Roma,Bologna,True,Serie A,on loan to Bologna (Jul 2026)
+1442036,Emmanuel Biumla,Angers,Angers,True,Ligue 1,
+789381,Chimy Ávila,Real Betis,Free agent,False,,"released, no club yet"
+869275,Dennis Johnsen,Cremonese,Cremonese,False,,relegated with Cremonese
+947929,Jesper Lindstrøm,Wolfsburg,RB Salzburg,False,,on loan to RB Salzburg (Sep 2026)
+1979970,Ameen Al-Dakhil,Stuttgart,Stuttgart,True,Bundesliga,
+1893910,Pablo García,Real Betis,Racing Santander,True,La Liga,joined Racing Santander (summer 2026)
+887766,Edon Zhegrova,Juventus,Juventus,True,Serie A,
+2277165,Enzo Koffi,Le Havre,Le Havre,True,Ligue 1,
+2198657,Kenny Quetant,Le Havre,Werder Bremen,True,Bundesliga,joined Werder Bremen (summer 2026)
+1462434,George Ilenikhena,Monaco,Monaco,True,Ligue 1,
+1416535,Charalampos Kostoulas,Brighton,Brighton,True,Premier League,
+1106573,Jhon Solís,Girona,Birmingham City,False,,"joined Birmingham City (Jul 2026, Undisclosed)"
+1861666,Samuele Inacio,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+344129,José Luis Morales,Levante,Free agent,False,,"released, no club yet"
+1086128,Álex Forés,Real Oviedo,Burgos,False,,joined Burgos (summer 2026)
+932764,Randy Nteka,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+1824137,Timothee Pembele,Le Havre,Le Havre,True,Ligue 1,
+1894085,Raphaël Le Guen,Brest,Brest,True,Ligue 1,
+962053,Filip Jørgensen,Chelsea,Strasbourg,True,Ligue 1,on loan to Strasbourg (Aug 2026)
+1069488,Roméo Lavia,Chelsea,Chelsea,True,Premier League,
+1406130,Veljko Milosavljević,Bournemouth,Bournemouth,True,Premier League,
+1506932,Marius Courcoul,Angers,La Louvière,False,,on loan to La Louvière (summer 2026)
+1399702,Asier Osambela,Osasuna,Osasuna,True,La Liga,
+1174472,Tyler Dibling,Everton,Everton,True,Premier League,
+1403061,Tyrique George,Everton,Everton,True,Premier League,
+888537,Andreas Skov Olsen,Wolfsburg,İstanbul Başakşehir,False,,on loan to İstanbul Başakşehir (summer 2026)
+1500263,Aarón Anselmino,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+1512354,Noah Edjouma,Lille,Brest,True,Ligue 1,on loan to Brest (summer 2026)
+1019318,Nico Serrano,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+1807070,Jorge Cabello,Levante,Levante,True,La Liga,
+839925,Michele Collocolo,Cremonese,Cremonese,False,,relegated with Cremonese
+1597197,Hamidou Makalou,Brest,Bastia,False,,on loan to Bastia (summer 2026)
+1392054,Coba Da Costa,Getafe,Getafe,True,La Liga,
+941179,Niels Nkounkou,Torino,Torino,True,Serie A,
+965832,Dani Cárdenas,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+1153083,Valentín Carboni,Genoa,Genoa,True,Serie A,
+43970,Marco Silvestri,Cremonese,Fatih Karagümrük,False,,"joined Fatih Karagümrük (Jun 2026, Undisclosed)"
+980643,James Trafford,Manchester City,Leeds,True,Premier League,"joined Leeds (Aug 2026, £45m)"
+1144143,Kota Takai,Gladbach,Sint-Truiden,False,,on loan to Sint-Truiden (Sep 2026)
+1184541,Alexander Freeman,Villarreal,Villarreal,True,La Liga,
+1426577,Tidiam Gomis,RB Leipzig,RB Leipzig,True,Bundesliga,
+1861665,Quentin Ndjantou,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+287643,Oleksandr Zinchenko,Nottingham Forest,Nottingham Forest,True,Premier League,
+315916,Renzo Saravia,Valencia,Valencia,True,La Liga,
+1888501,Abdoulie Ceesay,St. Pauli,St. Pauli,False,,relegated with St. Pauli
+1191892,Tochukwu Nnadi,Marseille,Marseille,True,Ligue 1,
+1530540,Massimo Pessina,Bologna,Bologna,True,Serie A,
+994529,Ricky-Jade Jones,St. Pauli,St. Pauli,False,,relegated with St. Pauli
+1596105,Patrice Čović,Werder Bremen,Dynamo Dresden,False,,on loan to Dynamo Dresden (summer 2026)
+827506,Gaëtan Perrin,Lille,Lille,True,Ligue 1,
+1508537,Cyriaque Irié,Freiburg,Freiburg,True,Bundesliga,
+135264,Yussuf Poulsen,Hamburger SV,Hamburger SV,True,Bundesliga,
+949062,Silas,Mainz 05,Mainz 05,True,Bundesliga,
+235538,Younes Namli,Le Havre,Le Havre,True,Ligue 1,
+2049928,Paul Mendy,Cagliari,Cagliari,True,Serie A,
+873717,Carlos Benavídez,Alavés,Alavés,True,La Liga,
+791642,Josip Juranović,Union Berlin,Union Berlin,True,Bundesliga,
+1862226,Alexander Røssing-Lelesiit,Hamburger SV,Hamburger SV,True,Bundesliga,
+979315,Elye Wahi,Eintracht Frankfurt,Nice,True,Ligue 1,on loan to Nice (summer 2026)
+148167,Carl Klaus,Union Berlin,Union Berlin,True,Bundesliga,
+1499696,Kento Shiogai,Wolfsburg,Wolfsburg,False,,relegated with Wolfsburg
+1014987,Dennis Cirkin,Sunderland,Queens Park Rangers,False,,"joined Queens Park Rangers (Aug 2026, Free)"
+1129751,Julien Le Cardinal,Saint-Étienne,Saint-Étienne,False,,relegated with Saint-Étienne
+1028306,Sota Kawasaki,Mainz 05,Mainz 05,True,Bundesliga,
+978521,Victor Okoh Boniface,Werder Bremen,Bayer Leverkusen,True,Bundesliga,back at Bayer Leverkusen after his loan
+2318284,Harouna Djibirin,Angers,Angers,True,Ligue 1,
+1126588,Lasso Coulibaly,Auxerre,Viborg,False,,on loan to Viborg (summer 2026)
+1401702,Ethan Nwaneri,Marseille,Borussia Dortmund,True,Bundesliga,on loan to Borussia Dortmund (Sep 2026)
+855864,Ethan Pinnock,Brentford,Coventry City,True,Premier League,"joined Coventry City (Aug 2026, £6m)"
+1003334,James McAtee,Nottingham Forest,Nottingham Forest,True,Premier League,
+328145,Adnan Januzaj,Sevilla,Free agent,False,,"released, no club yet"
+930813,Tuomas Ollila,Paris FC,Guingamp,False,,joined Guingamp (summer 2026)
+49639,Nicolas Höfler,Freiburg,Freiburg,True,Bundesliga,
+319857,Benjamin Henrichs,RB Leipzig,RB Leipzig,True,Bundesliga,
+876858,Robin Hack,Gladbach,Gladbach,True,Bundesliga,
+377512,Pasquale Mazzocchi,Napoli,Venezia,True,Serie A,on loan to Venezia (Aug 2026)
+356032,Filippo Romagna,Sassuolo,Sassuolo,True,Serie A,
+850823,Joël Piroe,Leeds,West Ham,False,,on loan to West Ham (Aug 2026)
+1897492,Telli Siwe,Auxerre,Auxerre,True,Ligue 1,
+599192,Lionel Mpasi Nzau,Le Havre,Le Havre,True,Ligue 1,
+844480,Pol Lirola,Verona,Verona,False,,relegated with Verona
+1493157,Alieu Njie,Torino,Fiorentina,True,Serie A,"joined Fiorentina (Aug 2026, Undisclosed)"
+1402990,Julio Díaz,Atlético Madrid,Sevilla,True,La Liga,joined Sevilla (summer 2026)
+826026,Sandro Kulenović,Torino,Torino,True,Serie A,
+1545023,Mathys de Carvalho,Lyon,Al-Diriyah,False,,joined Al-Diriyah (summer 2026)
+1486729,Nesta Elphege,Parma,Parma,True,Serie A,
+1128638,Muhammed Damar,Hoffenheim,Wolfsburg,False,,joined Wolfsburg (summer 2026)
+1463503,Malick Mbaye,Metz,Metz,False,,relegated with Metz
+1499870,Luc Zogbé,Brest,Brest,True,Ligue 1,
+1099344,Antoniu Roca,Espanyol,Mallorca,False,,on loan to Mallorca (summer 2026)
+252815,Fábio Cardoso,Sevilla,Sevilla,True,La Liga,
+1142591,Javier Boñar,Atlético Madrid,Girona,False,,joined Girona (summer 2026)
+988037,Juan Cabal,Juventus,Juventus,True,Serie A,
+175753,Mariano Díaz,Alavés,Alavés,True,La Liga,
+610766,Tammy Abraham,Aston Villa,Aston Villa,True,Premier League,
+135116,David López,Girona,Girona,False,,relegated with Girona
+873947,Dani Raba,Valencia,Valencia,True,La Liga,
+1069252,Lasse Riess,Mainz 05,Fortuna Düsseldorf,False,,on loan to Fortuna Düsseldorf (summer 2026)
+1092515,Yago Santiago,Elche,Elche,True,La Liga,
+1568535,Otto Stange,Hamburger SV,Hamburger SV,True,Bundesliga,
+1130111,Marius Broholm,Lille,Utrecht,False,,on loan to Utrecht (summer 2026)
+907667,Tino Anjorin,Torino,Göztepe,False,,on loan to Göztepe (Sep 2026)
+942937,Hong Hyun-seok,Nantes,Nantes,False,,relegated with Nantes
+1520799,Maroan Sannadi,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+999178,Ville Koski,Alavés,Alavés,True,La Liga,
+845486,Tanguy Ndombélé,Nice,Free agent,False,,"released, no club yet"
+1142094,Manu Bueno,Sevilla,Sevilla,True,La Liga,
+1154647,Lucas Michal,Metz,Cercle Brugge,False,,on loan to Cercle Brugge (summer 2026)
+1414933,Marc Guiu,Chelsea,RB Leipzig,True,Bundesliga,"joined RB Leipzig (Sep 2026, £14.6m)"
+78781,Florian Kainz,Köln,Retired,False,,retired
+1597270,Pedro Lima,Wolves,Wolves,False,,relegated with Wolves
+1083359,Frank Feller,Heidenheim,Heidenheim,False,,relegated with Heidenheim
+125274,Stefan Ortega,Nottingham Forest,Nottingham Forest,True,Premier League,
+253369,Simone Perilli,Verona,Verona,False,,relegated with Verona
+583312,Bingourou Kamara,Lorient,Lorient,True,Ligue 1,
+1099795,Melker Ellborg,Sunderland,Sunderland,True,Premier League,
+101367,Daniel Bentley,Wolves,Wolves,False,,relegated with Wolves
+1128801,Max Weiss,Burnley,Burnley,False,,relegated with Burnley
+1884145,Christantus Uche,Getafe,Getafe,True,La Liga,
+1013239,Edoardo Iannoni,Sassuolo,Verona,False,,on loan to Verona (Sep 2026)
+1068891,Jose Salinas,Espanyol,Málaga,True,La Liga,on loan to Málaga (summer 2026)
+1009268,Mattia Viti,Fiorentina,Fiorentina,True,Serie A,
+1405926,Mathieu Acapandié,Nantes,Hajduk Split,False,,joined Hajduk Split (summer 2026)
+1910527,Joseph Liteta,Cagliari,Cagliari,True,Serie A,
+121180,Abdoulaye Bamba,Angers,Retired,False,,retired
+1020141,Nathan Patterson,Everton,Torino,True,Serie A,"joined Torino (Sep 2026, Undisclosed)"
+1087476,Abu Kamara,Getafe,Getafe,True,La Liga,
+1394353,Eliesse Ben Seghir,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+1568511,Jan Bürger,Wolfsburg,PEC Zwolle,False,,joined PEC Zwolle (summer 2026)
+336655,Enes Ünal,Bournemouth,Getafe,True,La Liga,"joined Getafe (Aug 2026, Free)"
+822708,Amadou Haidara,Lens,Lens,True,Ligue 1,
+363774,Mihailo Ristić,Celta Vigo,Free agent,False,,"released, no club yet"
+1618563,Lorenzo Venturino,Roma,Roma,True,Serie A,
+1152923,Kosta Nedeljković,RB Leipzig,Rangers,False,,on loan to Rangers (Aug 2026)
+14990,Edin Džeko,Fiorentina,Fiorentina,True,Serie A,
+1002564,Mikayil Faye,Cremonese,Cremonese,False,,relegated with Cremonese
+865651,Giacomo Raspadori,Atlético Madrid,Atlético Madrid,True,La Liga,
+877842,Yannik Keitel,Augsburg,Augsburg,True,Bundesliga,
+19352,Matteo Darmian,Inter,Inter,True,Serie A,
+132704,Leonardo Pavoletti,Cagliari,Cagliari,True,Serie A,
+1562126,Bahmed Deuff,Nantes,Antwerp,False,,on loan to Antwerp (summer 2026)
+782240,Assane Dioussé,Auxerre,Auxerre,True,Ligue 1,
+891505,Goduine Koyalipou,Levante,Levante,True,La Liga,
+1945133,Fallou Cham,Verona,Verona,False,,relegated with Verona
+825901,Joel Asoro,Metz,Apollon Limassol,False,,joined Apollon Limassol (summer 2026)
+220223,Andrea Belotti,Cagliari,Cagliari,True,Serie A,
+259995,Adam Masina,Torino,Torino,True,Serie A,
+949780,Luca Moro,Sassuolo,Padova,False,,on loan to Padova (Aug 2026)
+174975,Arthur Masuaku,Lens,Sunderland,True,Premier League,back at Sunderland after his loan
+103417,Isco,Real Betis,Real Betis,True,La Liga,
+1394735,Morgan Bokele Mputu,Metz,Metz,False,,relegated with Metz
+1101942,Petar Ratkov,Lazio,Levante,True,La Liga,on loan to Levante (summer 2026)
+1910643,Christ-Owen Kouassi,Lecce,Grenoble,False,,on loan to Grenoble (summer 2026)
+1021075,William Bøving,Mainz 05,1. FC Nürnberg,False,,on loan to 1. FC Nürnberg (summer 2026)
+934351,Miguel Rubio,Espanyol,Valladolid,False,,joined Valladolid (summer 2026)
+878898,Arnaud Bodart,Lille,Le Havre,True,Ligue 1,joined Le Havre (summer 2026)
+857229,Oier Luengo,Real Oviedo,Burgos,False,,joined Burgos (summer 2026)
+996911,Levi Colwill,Chelsea,Chelsea,True,Premier League,
+1162309,Javi Llabrés,Mallorca,Burgos,False,,joined Burgos (summer 2026)
+327863,Robert Skov,Union Berlin,Union Berlin,True,Bundesliga,
+995671,Reda Khadra,Le Havre,Qarabağ,False,,joined Qarabağ (summer 2026)
+1514800,Robinio Vaz,Roma,Hull City,True,Premier League,on loan to Hull City (Sep 2026)
+1937795,Axel Tape,Bayer Leverkusen,Levante,True,La Liga,on loan to Levante (summer 2026)
+963201,Melvin Zinga,Angers,Angers,True,Ligue 1,
+123228,Rachid Ghezzal,Lyon,Free agent,False,,"released, no club yet"
+985262,Moussa Diarra,Alavés,Al Wahda,False,,joined Al Wahda (summer 2026)
+1117026,Federico Redondo,Elche,Elche,True,La Liga,
+1914318,Marc Domenech,Mallorca,Mallorca,False,,relegated with Mallorca
+1155571,Iker Bravo,Udinese,Watford,False,,"joined Watford (Jul 2026, Undisclosed)"
+254297,Ihlas Bebou,Hoffenheim,Free agent,False,,"released, no club yet"
+2197599,Youssoupha Niang,Köln,St. Pauli,False,,on loan to St. Pauli (summer 2026)
+809219,Mads Pedersen,Augsburg,Hertha BSC,False,,joined Hertha BSC (summer 2026)
+284417,Freddie Woodman,Liverpool,Liverpool,True,Premier League,
+826205,Dan Zagadou,Stuttgart,Stuttgart,True,Bundesliga,
+1864786,Salim Musah,Werder Bremen,Werder Bremen,True,Bundesliga,
+1499054,Luís Balbo,Fiorentina,Sturm Graz,False,,"joined Sturm Graz (Jul 2026, Undisclosed)"
+1657108,Julian Vignolo,Toulouse,Toulouse,True,Ligue 1,
+792073,Ferland Mendy,Real Madrid,Real Madrid,True,La Liga,
+143040,Wataru Endo,Liverpool,Liverpool,True,Premier League,
+962898,Leonidas Stergiou,Heidenheim,Stuttgart,True,Bundesliga,back at Stuttgart after his loan
+1936816,Soriba Diaoune,Lille,Lille,True,Ligue 1,
+353250,Álvaro Odriozola,Real Sociedad,Real Sociedad,True,La Liga,
+153218,Thomas Delaine,Le Havre,Le Havre,True,Ligue 1,
+1525361,Mateus Lusuardi,Pisa,Pisa,False,,relegated with Pisa
+1953923,Selton Sanchez,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+1476922,Juan Arizala,Udinese,Udinese,True,Serie A,
+845025,Ovie Ejaria,Real Oviedo,Free agent,False,,"released, no club yet"
+1392819,Gaby Jean,Lecce,Lecce,True,Serie A,
+1495856,Iñigo Arguibide,Osasuna,Osasuna,True,La Liga,
+826013,Abel Ruíz,Girona,Girona,False,,relegated with Girona
+1149288,Vasilije Adžić,Juventus,Sassuolo,True,Serie A,on loan to Sassuolo (Aug 2026)
+108673,Nicolae Stanciu,Genoa,Genoa,True,Serie A,
+940236,Thomas Keller,Heidenheim,Dynamo Dresden,False,,joined Dynamo Dresden (summer 2026)
+45923,Ciro Immobile,Bologna,Bologna,True,Serie A,
+1018547,Thiago Borbas,Real Oviedo,Atlético Mineiro,False,,on loan to Atlético Mineiro (summer 2026)
+1546405,Kyllian Antonio,Lens,Lens,True,Ligue 1,
+1430667,Urko Izeta,Athletic Bilbao,Cádiz,False,,joined Cádiz (summer 2026)
+156236,Patrik Carlgren,Nantes,Free agent,False,,"released, no club yet"
+1476524,Alex Tóth,Bournemouth,Bournemouth,True,Premier League,
+808590,Leon Bailey,Roma,Roma,True,Serie A,
+1157382,Alex Sala,Lecce,Mallorca,False,,on loan to Mallorca (summer 2026)
+1435226,Nils Zätterström,Genoa,Genoa,True,Serie A,
+991591,Karl Hein,Werder Bremen,Werder Bremen,True,Bundesliga,
+88625,Marc-André Ter Stegen,Girona,Ajax,False,,on loan to Ajax (summer 2026)
+2899,Daniele Padelli,Udinese,Udinese,True,Serie A,
+1471671,Jaydee Canvot,Toulouse,Toulouse,True,Ligue 1,
+856250,Ladislav Krejčí,Girona,Girona,False,,relegated with Girona
+857065,Horațiu Moldovan,Real Oviedo,Eyüpspor,False,,on loan to Eyüpspor (summer 2026)
+1651830,Oumar Pona,Angers,Angers,True,Ligue 1,
+984095,Alessio Furlanetto,Lazio,Lazio,True,Serie A,
+1513605,Mathys Silistrie,Rennes,Quevilly-Rouen,False,,on loan to Quevilly-Rouen (summer 2026)
+1090458,David Datro Fofana,Strasbourg,Servette,False,,"joined Servette (Aug 2026, £2.5m)"
+1524396,Renato Marin,Paris Saint-Germain,Nacional,False,,on loan to Nacional (summer 2026)
+823631,Dodi Lukebakio,Sevilla,Sevilla,True,La Liga,
+1386651,Leo Scienza,Heidenheim,Heidenheim,False,,relegated with Heidenheim
+2660173,Pablo Cunat Campos,Levante,Levante,True,La Liga,
+96369,Juanmi,Getafe,Getafe,True,La Liga,
+595572,Daniele Sommariva,Genoa,Genoa,True,Serie A,
+1016810,Kevin Paredes,Wolfsburg,Utrecht,False,,joined Utrecht (summer 2026)
+352544,Sheraldo Becker,Osasuna,Mainz 05,True,Bundesliga,joined Mainz 05 (summer 2026)
+1086346,Iker Benito,Osasuna,Querétaro,False,,joined Querétaro (summer 2026)
+136322,Elseid Hysaj,Lazio,Lazio,True,Serie A,
+1832076,Javi Morcillo,Atlético Madrid,Elche,True,La Liga,joined Elche (summer 2026)
+1516047,Amady Camara,Nantes,Sturm Graz,False,,back at Sturm Graz after his loan
+1008456,Oliver Sonne,Burnley,Burnley,False,,relegated with Burnley
+1390490,Zach Abbott,Nottingham Forest,Southampton,False,,on loan to Southampton (Sep 2026)
+1155321,Stefanos Tzimas,Brighton,Brighton,True,Premier League,
+1546073,Xavi Espart,Barcelona,Barcelona,True,La Liga,
+845464,Andy Irving,West Ham,West Ham,False,,relegated with West Ham
+2070311,Brian Madjo,Metz,Metz,False,,relegated with Metz
+1917626,Max Dowman,Arsenal,Arsenal,True,Premier League,
+1831525,Branimir Mlačić,Udinese,Watford,False,,on loan to Watford (Sep 2026)
+842869,Maxim Leitsch,Mainz 05,Free agent,False,,"released, no club yet"
+984624,Yéremy Pino,Villarreal,Villarreal,True,La Liga,
+816810,Mathieu Cafaro,Paris FC,Nantes,False,,joined Nantes (summer 2026)
+254449,Marvin Friedrich,Gladbach,Union Berlin,True,Bundesliga,joined Union Berlin (summer 2026)
+1542818,Yaya Diémé,Strasbourg,Strasbourg,True,Ligue 1,
+871621,Oladapo Afolayan,St. Pauli,St. Pauli,False,,relegated with St. Pauli
+862223,Manor Solomon,Villarreal,Villarreal,True,La Liga,
+826139,Reiss Nelson,Brentford,Brentford,True,Premier League,
+1398521,Damián Cáceres,Getafe,Getafe,True,La Liga,
+357752,Aurélio Buta,Eintracht Frankfurt,Eintracht Frankfurt,True,Bundesliga,
+1216080,Damián Rodríguez,Celta Vigo,Cádiz,False,,on loan to Cádiz (summer 2026)
+148256,Jonas Meffert,Hamburger SV,Hamburger SV,True,Bundesliga,
+2427970,Bara Sapoko Ndiaye,Bayern Munich,Bayern Munich,True,Bundesliga,
+146852,Abdón Prats,Mallorca,Mallorca,False,,relegated with Mallorca
+2049311,Nacho Pérez,Levante,Levante,True,La Liga,
+1469180,Moise Bombito,Nice,Nice,True,Ligue 1,
+886628,Þórir Jóhann Helgason,Lecce,Venezia,True,Serie A,"joined Venezia (Jul 2026, Undisclosed)"
+1482340,Souza,Tottenham,Tottenham,True,Premier League,
+1823916,Darryl Bakola,Sassuolo,Sassuolo,True,Serie A,
+1459459,Benjamin Cremaschi,Parma,Parma,True,Serie A,
+831510,Veljko Birmančević,Getafe,Getafe,True,La Liga,
+829581,Nicholas Pierini,Sassuolo,Sassuolo,True,Serie A,
+158615,Matías Vecino,Celta Vigo,Free agent,False,,"released, no club yet"
+983816,Jeremy Sarmiento,Cremonese,Cremonese,False,,relegated with Cremonese
+1605225,Aboubaka Soumahoro,Hamburger SV,Mallorca,False,,on loan to Mallorca (summer 2026)
+147745,Michy Batshuayi,Eintracht Frankfurt,Abha,False,,joined Abha (summer 2026)
+1961628,Rémi Himbert,Lyon,Lyon,True,Ligue 1,
+21949,Óscar Trejo,Rayo Vallecano,Retired,False,,retired
+1474296,Younes Ebnoutalib,Eintracht Frankfurt,Eintracht Frankfurt,True,Bundesliga,
+94758,Ben Davies,Tottenham,Tottenham,True,Premier League,
+1083410,Umut Tohumcu,Hoffenheim,Red Bull Salzburg,False,,on loan to Red Bull Salzburg (summer 2026)
+1482457,Felipe Chávez,Köln,1. FC Magdeburg,False,,on loan to 1. FC Magdeburg (summer 2026)
+1218056,Jonas Adjei Adjetey,Wolfsburg,Wolfsburg,False,,relegated with Wolfsburg
+1551242,Everton Pereira,Nice,Nice,True,Ligue 1,
+99516,Aitor Fernández,Osasuna,Osasuna,True,La Liga,
+1521733,Vladyslav Krapyvtsov,Girona,Girona,False,,relegated with Girona
+1099175,Jon Karrikaburu,Real Sociedad,Burgos,False,,joined Burgos (summer 2026)
+982316,Formose Mendy,Lorient,Lorient,True,Ligue 1,
+882592,Daniel Boloca,Sassuolo,Sassuolo,True,Serie A,
+1168513,Max Alleyne,Manchester City,Burnley,False,,on loan to Burnley (Aug 2026)
+136710,Mateo Kovačić,Manchester City,Manchester City,True,Premier League,
+1179148,Rayane Belaid,Atlético Madrid,Rayo Vallecano,True,La Liga,joined Rayo Vallecano (summer 2026)
+920680,Gabriel Osho,Auxerre,Auxerre,True,Ligue 1,
+1639543,Aitor Mañas,Alavés,Alavés,True,La Liga,
+1652590,Ezra Mayers,West Ham,West Ham,False,,relegated with West Ham
+111802,Paul Pogba,Monaco,Free agent,False,,"released, no club yet"
+2017474,Bernard Nguene,Nice,Nice,True,Ligue 1,
+1137131,Filippo Mané,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,
+988632,Jim Allevinah,Angers,Angers,True,Ligue 1,
+991604,Fabio Carvalho,Brentford,Brentford,True,Premier League,
+1170523,Lohann Doucet,Paris FC,Vitória Guimarães,False,,joined Vitória Guimarães (summer 2026)
+1485292,Pedro Felipe,Sassuolo,Sassuolo,True,Serie A,
+1403216,Paris Brunner,Monaco,Monaco,True,Ligue 1,
+365802,Harrison Reed,Fulham,Fulham,True,Premier League,
+1482433,Alejo Sarco,Gladbach,Sporting Gijón,False,,joined Sporting Gijón (summer 2026)
+1516812,Ali Houary,Elche,Elche,True,La Liga,
+1495719,Matteo Palma,Udinese,Udinese,True,Serie A,
+136856,Pietro Terracciano,Milan,Milan,True,Serie A,
+1922473,Daniel Denoon,Pisa,Pisa,False,,relegated with Pisa
+1545297,Anthony Bermont,Lens,Angers,True,Ligue 1,on loan to Angers (summer 2026)
+1086199,Franco Carboni,Parma,Parma,True,Serie A,
+842513,Igor Júlio,Brighton,Burnley,False,,"joined Burnley (Sep 2026, Undisclosed)"
+841985,Emir Sahiti,Hamburger SV,Hannover 96,False,,joined Hannover 96 (summer 2026)
+1154861,Ben Gannon-Doak,Bournemouth,Bournemouth,True,Premier League,
+1130950,Grant-Leon Ranos,Gladbach,Tenerife,False,,joined Tenerife (summer 2026)
+1016893,Luís Guilherme,West Ham,West Ham,False,,relegated with West Ham
+280439,Maxwel Cornet,Genoa,Genoa,True,Serie A,
+1895964,Ismael Bekhoucha,Getafe,Extremadura,False,,joined Extremadura (summer 2026)
+2245371,Fynn Schenten,Köln,Roda JC Kerkrade,False,,on loan to Roda JC Kerkrade (summer 2026)
+955245,Harvey Elliott,Aston Villa,Aston Villa,True,Premier League,
+1068286,Rui Modesto,Udinese,Vancouver Whitecaps,False,,"joined Vancouver Whitecaps (Sep 2026, Undisclosed)"
+1459764,Lorran,Pisa,Pisa,False,,relegated with Pisa
+151900,Uroš Radaković,Nantes,Buriram United,False,,joined Buriram United (summer 2026)
+1523623,Mohamadou Kanté,West Ham,West Ham,False,,relegated with West Ham
+1160250,Tai Abed,Levante,Valladolid,False,,on loan to Valladolid (summer 2026)
+1895829,Daren Mosengo,Le Havre,Le Havre,True,Ligue 1,
+135256,Christian Nørgaard,Arsenal,Everton,True,Premier League,"joined Everton (Aug 2026, £7m)"
+352562,Pascal Stenzel,Stuttgart,Free agent,False,,"released, no club yet"
+849731,Bambo Diaby,Elche,Elche,True,La Liga,
+1000263,Albert Grønbæk,Genoa,Genoa,True,Serie A,
+996919,Samuel Iling Junior,Pisa,Pisa,False,,relegated with Pisa
+1402726,Jack Fletcher,Manchester United,Manchester United,True,Premier League,
+1526932,Riccardo Braschi,Fiorentina,Thun,False,,"joined Thun (Aug 2026, Undisclosed)"
+1518971,Adam Boayar,Elche,Elche,True,La Liga,
+1891021,Nordan Mukiele,Rennes,Montpellier,False,,on loan to Montpellier (summer 2026)
+1457536,Andrés García,Aston Villa,Getafe,True,La Liga,on loan to Getafe (Jul 2026)
+963298,Dilane Bakwa,Strasbourg,Strasbourg,True,Ligue 1,
+1615784,Yael Trepy,Cagliari,Cagliari,True,Serie A,
+1539149,Luken Beitia,Real Sociedad,Real Sociedad,True,La Liga,
+1426222,Fode Sylla,Lens,Sion,False,,joined Sion (summer 2026)
+319853,Lukas Klostermann,RB Leipzig,RB Leipzig,True,Bundesliga,
+1893993,Gabin Bernardeau,Nice,Lorient,True,Ligue 1,joined Lorient (summer 2026)
+1090681,Ramón Martínez,Sevilla,Sevilla,True,La Liga,
+1134578,Cole Campbell,Hoffenheim,SV Elversberg,True,Bundesliga,joined SV Elversberg (summer 2026)
+357584,Borna Sosa,Crystal Palace,Köln,True,Bundesliga,on loan to Köln (summer 2026)
+1895833,Noam Obougou,Le Havre,Nancy,False,,on loan to Nancy (summer 2026)
+204286,Nouha Dicko,Paris FC,Paris FC,True,Ligue 1,
+1152477,Ioan Vermesan,Verona,Widzew Łódź,False,,on loan to Widzew Łódź (Sep 2026)
+1142683,Manuel Ángel Morán,Real Madrid,Fulham,True,Premier League,"joined Fulham (Sep 2026, Undisclosed)"
+1130662,Sadik Fofana,Lecce,Lecce,True,Serie A,
+1111081,Job Ochieng,Real Sociedad,Real Sociedad,True,La Liga,
+795005,Salih Özcan,Borussia Dortmund,Beşiktaş,False,,joined Beşiktaş (summer 2026)
+1627806,Harry Howell,Brighton,Leicester City,False,,on loan to Leicester City (Aug 2026)
+1587199,Pablo Agudín,Real Oviedo,Real Oviedo,False,,relegated with Real Oviedo
+27028,Ashley Barnes,Burnley,Burnley,False,,relegated with Burnley
+1113488,Ismael Gharbi,Augsburg,Braga,False,,back at Braga after his loan
+1211632,Wesley,Real Sociedad,Real Sociedad,True,La Liga,
+1484974,Justin-Noel Kalumba,Mallorca,Mallorca,False,,relegated with Mallorca
+1910444,Tommaso Macchioni,Sassuolo,Carrarese,False,,on loan to Carrarese (Aug 2026)
+1002837,Piero Hincapié,Bayer Leverkusen,Arsenal,True,Premier League,"joined Arsenal (Jun 2026, £34.5m)"
+842718,Matheo Raab,Union Berlin,Union Berlin,True,Bundesliga,
+26768,Sven Ulreich,Bayern Munich,Bayern Munich,True,Bundesliga,
+1005959,Hákon Rafn Valdimarsson,Brentford,Brentford,True,Premier League,
+1926085,Dro Fernández,Barcelona,Barcelona,True,La Liga,
+997183,Xavi Simons,RB Leipzig,RB Leipzig,True,Bundesliga,
+176301,Marco Sportiello,Atalanta,Atalanta,True,Serie A,
+1464652,Álvaro Cortés,Barcelona,Royal Antwerp,False,,joined Royal Antwerp (summer 2026)
+1030355,Sander Tangvik,Hamburger SV,Hamburger SV,True,Bundesliga,
+123226,Mathieu Gorgelin,Lens,Lens,True,Ligue 1,
+1414932,Dani Martinez,Atlético Madrid,Atlético Madrid,True,La Liga,
+1155116,Alex Padilla,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+2168291,Brad-Hamilton Mantsounga,Nice,Virton,False,,on loan to Virton (summer 2026)
+1426218,Paul Argney,Le Havre,Dinan Léhon,False,,on loan to Dinan Léhon (summer 2026)
+1094782,Unai Marrero,Real Sociedad,Real Sociedad,True,La Liga,
+1002428,Filippo Rinaldi,Parma,Catania,False,,on loan to Catania (Jul 2026)
+40973,Karl-Johan Johnsson,Strasbourg,Free agent,False,,"released, no club yet"
+787505,Benjamin Pavard,Inter,Inter,True,Serie A,
+2269442,Luis Orejuela,Mallorca,Mallorca,False,,relegated with Mallorca
+980623,Nick Woltemade,Stuttgart,Stuttgart,True,Bundesliga,
+1935903,Amadou Cissé,Strasbourg,Strasbourg,True,Ligue 1,
+249859,Walter Benítez,Crystal Palace,Crystal Palace,True,Premier League,
+1082734,Angel Fortuno,Espanyol,Espanyol,True,La Liga,
+50539,Adrián,Real Betis,Retired,False,,retired
+1469007,Rio Cardines,Crystal Palace,Bristol City,False,,on loan to Bristol City (Aug 2026)
+232422,Kepa Arrizabalaga,Arsenal,Arsenal,True,Premier League,
+2192753,Adam Kölle,Heidenheim,Heidenheim,False,,relegated with Heidenheim
+1029456,Faris Moumbagna,Cremonese,Cremonese,False,,relegated with Cremonese
+885864,Frank Onyeka,Brentford,Coventry City,True,Premier League,"joined Coventry City (Jun 2026, Undisclosed)"
+2114948,Pharell Hensel,Wolfsburg,Wolfsburg,False,,relegated with Wolfsburg
+1406171,Andrija Maksimović,RB Leipzig,RB Leipzig,True,Bundesliga,
+860306,Oliver Christensen,Fiorentina,Fiorentina,True,Serie A,
+1402688,César Palacios,Real Madrid,Fulham,True,Premier League,"joined Fulham (Aug 2026, Undisclosed)"
+1627804,Steeve Kango,Lyon,Lyon,True,Ligue 1,
+1136721,Willy Kambwala,Villarreal,Como,True,Serie A,on loan to Como (summer 2026)
+1117025,Facundo Buonanotte,Leeds,Leeds,True,Premier League,
+2509490,Jahyann Pandore,Metz,Metz,False,,relegated with Metz
+1012409,Beñat Prados,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+1823913,Cenny Neumann,Köln,Köln,True,Bundesliga,
+1136702,Mikel Goti,Real Sociedad,Real Oviedo,False,,on loan to Real Oviedo (summer 2026)
+1526933,Eddy Kouadio,Fiorentina,Monza,True,Serie A,on loan to Monza (Jul 2026)
+1520814,Alejandro Mestanza,Getafe,Getafe,True,La Liga,
+857471,Pierre-Yves Hamel,Paris FC,Free agent,False,,"released, no club yet"
+1901143,Víctor Valdepeñas,Real Madrid,Fiorentina,True,Serie A,joined Fiorentina (summer 2026)
+2238900,Carlos Maciá,Villarreal,Villarreal,True,La Liga,
+827192,Guilherme Ramos,Hamburger SV,Hamburger SV,True,Bundesliga,
+1065051,Fabio Moreno Fell,Mainz 05,Mainz 05,True,Bundesliga,
+846147,Abdul Mumin,Rayo Vallecano,Free agent,False,,"released, no club yet"
+1977245,Love Arrhov,Eintracht Frankfurt,Eintracht Frankfurt,True,Bundesliga,
+1142689,David Jiménez,Real Madrid,Real Madrid,True,La Liga,
+1423452,Daniel Mikołajewski,Parma,Luzern,False,,on loan to Luzern (Aug 2026)
+1606641,Pape Cabral,Monaco,Monaco,True,Ligue 1,
+1167066,Tom Watson,Brighton,Brighton,True,Premier League,
+869931,Yvan Neyou,Getafe,Volos,False,,on loan to Volos (summer 2026)
+985934,Youssouf Ndayishimiye,Nice,Nice,True,Ligue 1,
+1151851,Dawda Camara,Girona,Alverca,False,,joined Alverca (summer 2026)
+1403018,Elias Baum,Eintracht Frankfurt,Eintracht Frankfurt,True,Bundesliga,
+906276,Jessic Ngankam,Eintracht Frankfurt,Eintracht Frankfurt,True,Bundesliga,
+944899,Valentin Gendrey,Hoffenheim,Hoffenheim,True,Bundesliga,
+990550,Zeki Amdouni,Burnley,Burnley,False,,relegated with Burnley
+156019,Hernani,Parma,Parma,True,Serie A,
+349526,Dani Rodríguez,Mallorca,Mallorca,False,,relegated with Mallorca
+1064082,Merlin Röhl,Freiburg,Everton,True,Premier League,"joined Everton (Jul 2026, £17.3m)"
+1170197,Abakar Sylla,Nantes,Gaziantep,False,,joined Gaziantep (summer 2026)
+1860172,Lass Kourouma,Girona,Girona,False,,relegated with Girona
+930231,Christopher Wooh,Rennes,Rennes,True,Ligue 1,
+1606013,Yassir Zabiri,Rennes,Racing Santander,True,La Liga,on loan to Racing Santander (summer 2026)
+989203,Immanuel Pherai,Hamburger SV,Hamburger SV,True,Bundesliga,
+2509247,Miguel Sierra,Sevilla,Sevilla,True,La Liga,
+292665,Glen Kamara,Rennes,Queens Park Rangers,False,,on loan to Queens Park Rangers (Aug 2026)
+826183,Mike Trésor,Burnley,Burnley,False,,relegated with Burnley
+1916256,Andrés Antañón,Celta Vigo,Celta Vigo,True,La Liga,
+1492676,Rabby Nzingoula,Strasbourg,West Bromwich Albion,False,,"joined West Bromwich Albion (Aug 2026, Undisclosed)"
+857480,Calvin Stengs,Pisa,Pisa,False,,relegated with Pisa
+301288,Solly March,Brighton,Brighton,True,Premier League,
+928814,Alessandro Di Pardo,Cagliari,Cagliari,True,Serie A,
+1216282,Luca Koleosho,Espanyol,Espanyol,True,La Liga,
+1464642,Jeremy Arevalo,Stuttgart,Estrela da Amadora,False,,on loan to Estrela da Amadora (summer 2026)
+1985103,Gorka Carrera Zarranz,Real Sociedad,Real Sociedad,True,La Liga,
+791566,Grigoris Kastanos,Verona,Verona,False,,relegated with Verona
+1936801,Dimitri Lucea,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+1512333,Ange Lago,Marseille,Marseille,True,Ligue 1,
+1394099,Callum Marshall,West Ham,Luton Town,False,,"joined Luton Town (Jul 2026, Undisclosed)"
+187423,Kevin Akpoguma,Hoffenheim,Frosinone,True,Serie A,joined Frosinone (summer 2026)
+1944828,Idrissa Sabaly,Strasbourg,Red Star,False,,on loan to Red Star (summer 2026)
+801411,Derek Cornelius,Marseille,Marseille,True,Ligue 1,
+1631879,Alysson,Aston Villa,Aston Villa,True,Premier League,
+1861695,Tyrese Noubissie,Strasbourg,Strasbourg,True,Ligue 1,
+1966890,Hugo López,Villarreal,Andorra,False,,on loan to Andorra (summer 2026)
+1008245,Oscar Fraulo,Gladbach,Gladbach,True,Bundesliga,
+1438837,Romain Esse,Crystal Palace,Crystal Palace,True,Premier League,
+2282845,Javier Olaizola,Mallorca,Mallorca,False,,relegated with Mallorca
+1013041,Nicolò Cavuoti,Cagliari,Catania,False,,on loan to Catania (Sep 2026)
+1513466,Ousmane Touré,Lille,Dunkerque,False,,on loan to Dunkerque (summer 2026)
+1465865,Shea Lacey,Manchester United,Manchester United,True,Premier League,
+78893,Romelu Lukaku,Napoli,Fenerbahçe,False,,"joined Fenerbahçe (Aug 2026, Undisclosed)"
+826492,Julien López,Paris FC,Cannes,False,,joined Cannes (summer 2026)
+1010891,Mourad El Ghezouani,Elche,Elche,True,La Liga,
+356398,James Maddison,Tottenham,Tottenham,True,Premier League,
+1996846,Uchenna Ogundu,Augsburg,Augsburg,True,Bundesliga,
+2246841,Wedtoin Latif Ouedraogo,Genoa,Genoa,True,Serie A,
+2238907,Miguel Cubo,Atlético Madrid,Atlético Madrid,True,La Liga,
+1202024,Ernest Nuamah,Lyon,Lyon,True,Ligue 1,
+1445945,Trey Nyoni,Liverpool,Liverpool,True,Premier League,
+1587196,Jofre Torrents ,Barcelona,Ajax,False,,joined Ajax (summer 2026)
+2250107,Tadjidine Mmadi,Marseille,Marseille,True,Ligue 1,
+280631,Václav Černý,Wolfsburg,Wolfsburg,False,,relegated with Wolfsburg
+1100964,Aleksa Purić,Atlético Madrid,Atlético Madrid,True,La Liga,
+1415436,Sékou Doucouré,Nantes,Nantes,False,,relegated with Nantes
+2158647,Alessandro Cardinali,Parma,Spezia,False,,on loan to Spezia (Jul 2026)
+2189165,Yannik Wagner,Heidenheim,Heidenheim,False,,relegated with Heidenheim
+1590761,Toni Fernández,Barcelona,Venezia,True,Serie A,on loan to Venezia (summer 2026)
+227946,Angus Gunn,Nottingham Forest,San Jose Earthquakes,False,,"joined San Jose Earthquakes (Jul 2026, Free)"
+1149152,Stanis Idumbo Muzambo,Sevilla,Sevilla,True,La Liga,
+1139724,Pelayo Fernández,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+1546404,Daniel Yáñez,Real Madrid,Real Madrid,True,La Liga,
+1126692,Antoni Milambo,Brentford,Brentford,True,Premier League,
+978301,Jean Onana,Genoa,Genoa,True,Serie A,
+1548439,Marco Esteban,Real Oviedo,Real Oviedo,False,,relegated with Real Oviedo
+1184308,Álex Jiménez,Milan,Fiorentina,True,Serie A,on loan to Fiorentina (Jul 2026)
+150396,Emil Krafth,Newcastle,Newcastle,True,Premier League,
+1550775,Jesse Derry,Chelsea,Sporting CP,False,,on loan to Sporting CP (Jul 2026)
+790977,Koki Machida,Hoffenheim,Hoffenheim,True,Bundesliga,
+945768,Bojan Miovski,Girona,Girona,False,,relegated with Girona
+1427148,Lazar Jovanović,Stuttgart,Udinese,True,Serie A,on loan to Udinese (Sep 2026)
+1163083,Giuseppe Ambrosino,Napoli,Napoli,True,Serie A,
+2111258,Elias Legendre Quiñonez Zae,Rennes,Rennes,True,Ligue 1,
+361790,Donny van de Beek,Girona,Girona,False,,relegated with Girona
+2588613,Miguel Calatayud,Mallorca,Mallorca,False,,relegated with Mallorca
+1386639,Ibrahim Salah,Rennes,Rennes,True,Ligue 1,
+1121333,Amir Richardson,Fiorentina,Le Havre,True,Ligue 1,on loan to Le Havre (summer 2026)
+1521250,Jan Urbich,Gladbach,Eintracht Braunschweig,False,,on loan to Eintracht Braunschweig (summer 2026)
+2138729,Jocelin Ta Bi,Sunderland,Sunderland,True,Premier League,
+76632,Séamus Coleman,Everton,Everton,True,Premier League,
+1586020,Romelle Donovan,Brentford,Sheffield United,False,,on loan to Sheffield United (Jul 2026)
+1937040,Maxima Goffi,Lille,Lille,True,Ligue 1,
+1471239,Isaac,Verona,Istra,False,,on loan to Istra (Aug 2026)
+1165722,Skelly Alvero,Werder Bremen,Werder Bremen,True,Bundesliga,
+1976732,Wisdom Mike,Bayern Munich,Bayern Munich,True,Bundesliga,
+1819178,Louis Buffon,Pisa,Pisa,False,,relegated with Pisa
+1568521,Mick Schmetgens,Werder Bremen,Werder Bremen,True,Bundesliga,
+963801,Adam Hložek,Hoffenheim,Hoffenheim,True,Bundesliga,
+1425060,Eder Garcia,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+1481370,Aiman Dardari,Augsburg,Rot-Weiss Essen,False,,on loan to Rot-Weiss Essen (summer 2026)
+1928232,Ismaël Guerti,Metz,Grazer AK,False,,joined Grazer AK (summer 2026)
+794962,Maximilian Wöber,Werder Bremen,Schalke 04,True,Bundesliga,joined Schalke 04 (summer 2026)
+1110006,Dário Essugo,Chelsea,Strasbourg,True,Ligue 1,on loan to Strasbourg (Sep 2026)
+1201520,Julio Soler,Bournemouth,Bournemouth,True,Premier League,
+1927696,Ryan Rodin,Auxerre,Auxerre,True,Ligue 1,
+161325,Arkadiusz Milik,Juventus,Juventus,True,Serie A,
+1418624,Bence Dárdai,Wolfsburg,Wolfsburg,False,,relegated with Wolfsburg
+1925480,Ilane Touré,Monaco,Monaco,True,Ligue 1,
+1550822,Asier Hierro,Athletic Bilbao,Athletic Bilbao,True,La Liga,
+914691,Tariq Lamptey,Fiorentina,Queens Park Rangers,False,,"joined Queens Park Rangers (Jul 2026, Free)"
+1801193,Matías Pérez,Lecce,La Serena,False,,on loan to La Serena (Aug 2026)
+2236502,Maycon Cardozo,Bayern Munich,Bayern Munich,True,Bundesliga,
+171927,Maximilian Philipp,Freiburg,Free agent,False,,"released, no club yet"
+825839,Tyrell Malacia,Manchester United,Manchester United,True,Premier League,
+812946,Christian Kouamé,Fiorentina,Fiorentina,True,Serie A,
+1014651,Balthazar Pierret,Lecce,Lecce,True,Serie A,
+925790,Taichi Hara,St. Pauli,St. Pauli,False,,relegated with St. Pauli
+1164381,Seydou Fini,Genoa,Frosinone,True,Serie A,on loan to Frosinone (Jul 2026)
+1005725,Tawanda Chirewa,Wolves,Wolves,False,,relegated with Wolves
+1493480,Dan Sinaté,Angers,Amiens,False,,on loan to Amiens (summer 2026)
+1464187,Agustín Albarracín,Cagliari,Albacete,False,,on loan to Albacete (summer 2026)
+2011326,Nouhoum Kamissoko,Marseille,Marseille,True,Ligue 1,
+1961638,Ilyas Azizi,Toulouse,Toulouse,True,Ligue 1,
+1928235,Cléo Mélières,Metz,Bastia,False,,on loan to Bastia (summer 2026)
+792318,Kjetil Haug,Toulouse,Go Ahead Eagles,False,,joined Go Ahead Eagles (summer 2026)
+1614687,Diego Aguado,Real Madrid,Real Madrid,True,La Liga,
+911853,Logan Costa,Villarreal,Villarreal,True,La Liga,
+1153193,Dachi Lordkipanidze,Cremonese,Cremonese,False,,relegated with Cremonese
+1012650,Isaak Touré,Lorient,Lorient,True,Ligue 1,
+2369898,Adil Hamdani,Lyon,Lyon,True,Ligue 1,
+1832286,Jano Monserrate,Atlético Madrid,Ajax,False,,joined Ajax (summer 2026)
+2020789,Djibril Coulibaly,Nice,Nice,True,Ligue 1,
+361326,Patrick Roberts,Sunderland,Sunderland,True,Premier League,
+1403088,Olaf Gorter,Lecce,Lecce,True,Serie A,
+1489220,David Daiber,Bayern Munich,Bayern Munich,True,Bundesliga,
+1544428,Iker Luque,Atlético Madrid,Racing Santander,True,La Liga,joined Racing Santander (summer 2026)
+804472,Pablo Rosario,Nice,Nice,True,Ligue 1,
+1445189,Tom Edozie,Wolves,Wolves,False,,relegated with Wolves
+1177565,Damián Pizarro,Le Havre,Le Havre,True,Ligue 1,
+1895197,Jorge Montes,Getafe,Getafe,True,La Liga,
+1922996,Serigne Diop,Brest,Brest,True,Ligue 1,
+1064630,Fin Stevens,St. Pauli,Leyton Orient,False,,"joined Leyton Orient (Jun 2026, Undisclosed)"
+1398204,George Hemmings,Aston Villa,Aston Villa,True,Premier League,
+807400,Abdelhamid Sabiri,Fiorentina,Fiorentina,True,Serie A,
+602164,Jairo Izquierdo,Elche,Elche,True,La Liga,
+1923599,Antonio Arena,Roma,Roma,True,Serie A,
+1998104,Ugo Lamare El Kadmiri,Marseille,Marseille,True,Ligue 1,
+153444,Jamaal Lascelles,Newcastle,Newcastle,True,Premier League,
+1467990,Divine Mukasa,Manchester City,West Ham,False,,on loan to West Ham (Aug 2026)
+1530727,Mattia Mosconi,Inter,Inter,True,Serie A,
+822470,Samuel Chukwueze,Milan,Milan,True,Serie A,
+2007717,Joel Drakes-Thomas,Crystal Palace,Crystal Palace,True,Premier League,
+1397347,Ali Dembélé,Torino,Lecce,True,Serie A,on loan to Lecce (Aug 2026)
+1893907,Alassane Diatta,Villarreal,Villarreal,True,La Liga,
+936848,Theo Bair,Auxerre,Bolton Wanderers,False,,on loan to Bolton Wanderers (Sep 2026)
+591750,Joan Jordán,Sevilla,Estrela da Amadora,False,,joined Estrela da Amadora (summer 2026)
+1563578,Taufik Seidu,Atlético Madrid,Atlético Madrid,True,La Liga,
+907530,Jusuf Gazibegović,Köln,Widzew Łódź,False,,on loan to Widzew Łódź (summer 2026)
+1643838,Jacopo Grossi,Genoa,Genoa,True,Serie A,
+998772,Dane Scarlett,Tottenham,Tottenham,True,Premier League,
+856260,Josh Dasilva,Brentford,Brentford,True,Premier League,
+1090010,Marin Ljubičić,Union Berlin,Union Berlin,True,Bundesliga,
+1491660,José Luis Pérez,Getafe,Getafe,True,La Liga,
+850971,Manuel De Luca,Cremonese,Cremonese,False,,relegated with Cremonese
+1482463,Juan Arango,Girona,Girona,False,,relegated with Girona
+228981,Tim Kleindienst,Gladbach,Gladbach,True,Bundesliga,
+1927719,Tidiane Devernois,Auxerre,Auxerre,True,Ligue 1,
+1466117,Lluc Castell,Espanyol,Burnley,False,,"joined Burnley (Jul 2026, Undisclosed)"
+254713,Sam Byram,Leeds,Middlesbrough,False,,"joined Middlesbrough (Aug 2026, Free)"
+1149293,Vincent Burlet,Lille,Cracovia,False,,joined Cracovia (summer 2026)
+1466128,Dani Díaz,Real Sociedad,Real Sociedad,True,La Liga,
+1402850,Tyler Fletcher,Manchester United,Manchester United,True,Premier League,
+2263877,Jerome Abbey,Wolves,Wolves,False,,relegated with Wolves
+1138778,Tim Oermann,Bayer Leverkusen,Bayer Leverkusen,True,Bundesliga,
+1905699,Jan Salas,Mallorca,Mallorca,False,,relegated with Mallorca
+1416579,Matteo Cocchi,Inter,Padova,False,,on loan to Padova (Jul 2026)
+1125214,Alex Murphy,Newcastle,1. FC Kaiserslautern,False,,on loan to 1. FC Kaiserslautern (summer 2026)
+1899712,Bradley Burrowes,Aston Villa,Wigan Athletic,False,,on loan to Wigan Athletic (Sep 2026)
+1418620,Almugera Kabar,Borussia Dortmund,NEC,False,,on loan to NEC (summer 2026)
+1863206,Pau Cabanes,Villarreal,Eldense,False,,joined Eldense (summer 2026)
+836706,Arne Maier,Augsburg,Augsburg,True,Bundesliga,
+1891025,Justin Bourgault,Brest,Brest,True,Ligue 1,
+1952393,Pierre Mounguengue,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+1937806,Noah Nsoki,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+1545190,Bendito Mantato,Manchester United,Manchester United,True,Premier League,
+1842137,Erawan Garnier,Lens,Bastia,False,,joined Bastia (summer 2026)
+295133,Edoardo Goldaniga,Como,Como,True,Serie A,
+1542759,Ivan Corralejo,Real Betis,Real Betis,True,La Liga,
+2204961,Shafiq Nandja,Hamburger SV,Hamburger SV,True,Bundesliga,
+870038,Saša Kalajdžić,Wolves,LASK,False,,"joined LASK (Aug 2026, Undisclosed)"
+1392812,Joseph N'Duquidi,Metz,Metz,False,,relegated with Metz
+235460,André Gomes,Lille,Lille,True,Ligue 1,
+1403190,Callum Olusesi,Tottenham,Tottenham,True,Premier League,
+2216007,Alex Sanchez,Elche,Elche,True,La Liga,
+1012165,Gioele Zacchi,Sassuolo,Sassuolo,True,Serie A,
+2311163,Linus Guther,Union Berlin,Union Berlin,True,Bundesliga,
+964106,Dan Neil,Sunderland,Rangers,False,,"joined Rangers (Jul 2026, Free)"
+2007889,Ben Winterburn,Bournemouth,Bournemouth,True,Premier League,
+232306,Timo Werner,RB Leipzig,RB Leipzig,True,Bundesliga,
+758666,Borja Sánchez,Real Oviedo,Real Oviedo,False,,relegated with Real Oviedo
+979210,Tomás Esteves,Pisa,Pisa,False,,relegated with Pisa
+2284001,Brando Bettazzi,Pisa,Pisa,False,,relegated with Pisa
+2115056,Omar Falah,Real Oviedo,Real Oviedo,False,,relegated with Real Oviedo
+1511675,Sean Neave,Newcastle,Newcastle,True,Premier League,
+1858279,Hugo Burcio,Celta Vigo,Celta Vigo,True,La Liga,
+996931,Hugo González,Celta Vigo,Celta Vigo,True,La Liga,
+1939137,Tomás Marqués,Barcelona,Barcelona,True,La Liga,
+966836,Álex Sola,Getafe,Getafe,True,La Liga,
+1822931,Matteo Lavelli,Inter,Inter,True,Serie A,
+1590121,Jorge Cestero,Real Madrid,Real Madrid,True,La Liga,
+1469998,Othniël Raterink,Cagliari,ADO Den Haag,False,,on loan to ADO Den Haag (Aug 2026)
+1167704,Rubén Iranzo,Valencia,Valencia,True,La Liga,
+2199216,Mezian Mesloub,Lens,Lens,True,Ligue 1,
+1961644,Abdoulaye Camara,Udinese,Ajax,False,,on loan to Ajax (Aug 2026)
+914749,Sergio Lozano,Levante,Levante,True,La Liga,
+1211005,Yellu Santiago,Verona,Marítimo,False,,on loan to Marítimo (Jul 2026)
+2198232,Samu Becerra,Rayo Vallecano,Rayo Vallecano,True,La Liga,
+1011895,Jota Silva,Nottingham Forest,Nottingham Forest,True,Premier League,
+1937750,Noham Kamara,Lyon,Lyon,True,Ligue 1,
+1135605,Axel Camblan,Brest,Estoril,False,,joined Estoril (summer 2026)
+2418022,Jean-Baptiste Bosey,Strasbourg,Strasbourg,True,Ligue 1,
+2217897,Rouven Tarnutzer,Freiburg,Freiburg,True,Bundesliga,
+1861987,Tim Schnitzer,Augsburg,Augsburg,True,Bundesliga,
+1174937,Endrick,Real Madrid,Real Madrid,True,La Liga,
+1417034,Alessandro Romano,Roma,Cagliari,True,Serie A,"joined Cagliari (Jul 2026, Undisclosed)"
+2430329,Daniel Semedo,Lorient,Lorient,True,Ligue 1,
+1937851,Mathis Jangeal,Paris Saint-Germain,Paris Saint-Germain,True,Ligue 1,
+1545061,Ibai Aguirre,Real Sociedad,Real Sociedad,True,La Liga,
+1503757,Jonah Kusi-Asare,Bayern Munich,Fulham,True,Premier League,"joined Fulham (Jun 2026, Undisclosed)"
+1913038,Jun'ai Byfield,Tottenham,Tottenham,True,Premier League,
+1403204,Gael Lafont,Genoa,Genoa,True,Serie A,
+1470008,Charles Herrmann,Gladbach,Gladbach,True,Bundesliga,
+40239,Timothy Chandler,Eintracht Frankfurt,Eintracht Frankfurt,True,Bundesliga,
+1429059,Hugo Solozábal,Getafe,Getafe,True,La Liga,
+1643836,Filippo Carbone,Genoa,Genoa,True,Serie A,
+352728,Nikita Contini,Napoli,Napoli,True,Serie A,
+1142182,Tyler Fredricson,Manchester United,Lausanne-Sport,False,,"joined Lausanne-Sport (Jul 2026, Undisclosed)"
+1403098,Kaye Furo,Brentford,Brentford,True,Premier League,
+941464,Federico Gattoni,Sevilla,Ascoli,False,,joined Ascoli (summer 2026)
+1134525,Ben Bobzien,Mainz 05,Dynamo Dresden,False,,joined Dynamo Dresden (summer 2026)
+1402787,Shumaira Mheuka,Chelsea,Chelsea,True,Premier League,
+1142573,Jaydon Banel,Burnley,Burnley,False,,relegated with Burnley
+928879,Andrea Ghion,Sassuolo,Sassuolo,True,Serie A,
+1397739,Dominic Vavassori,Atalanta,Atalanta,True,Serie A,
+1838644,Christian Frangella,Sassuolo,Sassuolo,True,Serie A,
+1034241,Laurs Skjellerup,Sassuolo,Sassuolo,True,Serie A,
+1424191,David Odogu,Milan,Toulouse,True,Ligue 1,on loan to Toulouse (summer 2026)
+2205650,Cheveyo Mul-Balentien,Milan,Milan,True,Serie A,
+1823080,Mohamed Benoit-Dao,Paris FC,Paris FC,True,Ligue 1,
+1861678,Enzo Molebe,Lyon,Lausanne-Sport,False,,on loan to Lausanne-Sport (summer 2026)
+1403196,Hilan Hamzaoui Slimani,Marseille,Marseille,True,Ligue 1,
+1214843,Zoumana Diallo,Nice,Nice,True,Ligue 1,
+1215062,Luka Topalović,Inter,Carrarese,False,,on loan to Carrarese (Aug 2026)
+1430809,Diego Morcillo,Alavés,Alavés,True,La Liga,
+1402936,Carlos Ballestero,Alavés,Alavés,True,La Liga,
+301162,Raffaele Di Gennaro,Inter,Inter,True,Serie A,
+1185603,Kaden Rodney,Crystal Palace,Crystal Palace,True,Premier League,
+2216257,Luka Duric,Hoffenheim,SC Paderborn,True,Bundesliga,joined SC Paderborn (summer 2026)
+2557443,Bané Diatta,Angers,Angers,True,Ligue 1,
+1606631,Ibrahim Yayiya Kante,Brest,Brest,True,Ligue 1,
+1884150,Mathis Saka,Rodez,Rodez,False,,relegated with Rodez
+1618552,Simone Lottici Tessadri,Cremonese,Cremonese,False,,relegated with Cremonese
+1526308,Mamedi Doucoure,Genoa,Genoa,True,Serie A,
+980732,Adrià Altimira,Villarreal,Villarreal,True,La Liga,
+1145644,Manuel Serrano Salazar,Real Madrid,Real Madrid,True,La Liga,
+856638,Mitchel Bakker,Atalanta,Atalanta,True,Serie A,
+2269705,Samba Konaté,RB Leipzig,RB Leipzig,True,Bundesliga,
+1410178,Jamaldeen Jimoh,Aston Villa,Aston Villa,True,Premier League,
+1466806,Adrian Przyborek,Lazio,Lazio,True,Serie A,
+1212165,George Earthy,West Ham,Reading,False,,"joined Reading (Aug 2026, Undisclosed)"
+1584884,Deniz Ofli,Bayern Munich,Bayern Munich,True,Bundesliga,
+948250,Billal Brahimi,Nice,Nice,True,Ligue 1,
+151581,Leart Paqarada,Heidenheim,Heidenheim,False,,relegated with Heidenheim
+1568506,Dmytro Bogdanov,Union Berlin,Union Berlin,True,Bundesliga,
+1994983,Erblin Osmani,Bayern Munich,Bayern Munich,True,Bundesliga,
+84251,Kevin Kampl,RB Leipzig,RB Leipzig,True,Bundesliga,
+1110138,Alvaro Leiva,Real Madrid,Real Madrid,True,La Liga,
+139272,Luca Lezzerini,Fiorentina,Fiorentina,True,Serie A,
+2077096,Lucas Rosier,Rennes,Concarneau,False,,on loan to Concarneau (summer 2026)
+1382235,Bertuğ Yıldırım,Rennes,Rennes,True,Ligue 1,
+2033811,Henrick Do Marcolino,Rennes,Rennes,True,Ligue 1,
+2409356,Mamoudou Cissokho,Auxerre,Auxerre,True,Ligue 1,
+1994978,Cassiano Kiala,Bayern Munich,Bayern Munich,True,Bundesliga,
+2255188,Tobias Weigel,Heidenheim,Heidenheim,False,,relegated with Heidenheim
+980649,Myles Peart-Harris,Brentford,Brentford,True,Premier League,
+1899611,Nehemiah Oriola,Brighton,Brighton,True,Premier League,
+1565348,Joe Knight,Brighton,Brighton,True,Premier League,
+1566349,Samuel Nibombe,Monaco,Monaco,True,Ligue 1,
+1974226,Yvan Zaddy,Auxerre,Auxerre,True,Ligue 1,
+991677,Cas Odenthal,Sassuolo,Sassuolo,True,Serie A,
+1597141,Hamza Koutoune,Nice,Nice,True,Ligue 1,
+1535581,Lander Astiazaran,Real Sociedad,Real Sociedad,True,La Liga,
+1019011,Isak Hansen Aarøen,Werder Bremen,Werder Bremen,True,Bundesliga,
+1122588,Lander Pinillos,Alavés,Alavés,True,La Liga,
+2266256,Martin Bley,Lorient,Lorient,True,Ligue 1,
+2198226,Georges Gomis,Le Havre,Le Havre,True,Ligue 1,
+1440627,Yannick Eduardo,Hoffenheim,ADO Den Haag,False,,on loan to ADO Den Haag (summer 2026)
+1403130,James Rowswell,Tottenham,Tottenham,True,Premier League,
+1030200,Tjaš Begić,Parma,Sampdoria,False,,"joined Sampdoria (Jun 2026, Undisclosed)"
+1657024,Iñaki Rupérez,Real Sociedad,Real Sociedad,True,La Liga,
+1526575,Arkaitz Mariezkurrena,Real Sociedad,Real Sociedad,True,La Liga,
+1474846,Junior Ajayi,Verona,Casertana,False,,on loan to Casertana (Jul 2026)
+1605324,Joi Xheto Nuredini,Genoa,Genoa,True,Serie A,
+2199322,Andrea Le Borgne,Como,Verona,False,,on loan to Verona (Aug 2026)
+1171626,Dani Pérez,Real Betis,Real Betis,True,La Liga,
+1995000,Louis Lemke,Hamburger SV,Hamburger SV,True,Bundesliga,
+1937835,Mathis Albert,Borussia Dortmund,Borussia Dortmund,True,Bundesliga,

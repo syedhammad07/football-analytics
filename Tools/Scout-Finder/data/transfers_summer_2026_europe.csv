@@ -1,0 +1,2835 @@
+kind,date,end,player,from_club,to_club,fee,source
+transfer,,,Nicolás Valentini,Fiorentina,Alavés,,Spanish list
+transfer,,,Ville Koski,Istra 1961,Alavés,,Spanish list
+transfer,,,Mikel Rodríguez,Real Sociedad B,Alavés,,Spanish list
+transfer,,,Miguel Rodríguez,Utrecht,Alavés,,Spanish list
+return,,,Calebe,Alavés,Fortaleza,,Spanish list
+loan,,,Calebe,Fortaleza,Internacional,,Spanish list
+transfer,,,Moussa Diarra,Alavés,Al Wahda,,Spanish list
+return,,,Ibrahim Diabate,Alavés,GAIS,,Spanish list
+transfer,,,Raúl Fernández,Alavés,Leganés,,Spanish list
+transfer,,,Jon Guridi,Alavés,Sevilla,,Spanish list
+released,,,Nikola Maraš,Alavés,Free agent,,Spanish list
+transfer,,,Jesús Owono,Alavés,Andorra,,Spanish list
+return,,,Jon Pacheco,Alavés,Real Sociedad,,Spanish list
+transfer,,,Víctor Parada,Alavés,Spartak Moscow,,Spanish list
+transfer,,,Asier Villalibre,Alavés,Racing Santander,,Spanish list
+loan,,,Andoni Gorosabel,Athletic Bilbao,Espanyol,,Spanish list
+transfer,,,Mikel Vesga,Athletic Bilbao,Almería,,Spanish list
+retired,,,Iñigo Lekue,Athletic Bilbao,Retired,,Spanish list
+loan,,,Adama Boiro,Athletic Bilbao,West Ham United,,Spanish list
+transfer,,,Unai Gómez,Athletic Bilbao,Udinese,,Spanish list
+transfer,,,Urko Izeta,Athletic Bilbao,Cádiz,,Spanish list
+transfer,,,Julen Agirrezabala,Athletic Bilbao,Racing Santander,,Spanish list
+transfer,,,Unai Vencedor,Athletic Bilbao,Burgos,,Spanish list
+transfer,,,Lee Kang-in,Paris Saint-Germain,Atlético Madrid,,Spanish list
+loan,,,Jonathan David,Juventus,Atlético Madrid,,Spanish list
+transfer,,,Cristian Romero,Tottenham Hotspur,Atlético Madrid,,Spanish list
+transfer,,,Alejandro Grimaldo,Bayer Leverkusen,Atlético Madrid,,Spanish list
+transfer,,,Morten Hjulmand,Sporting Lisbon,Atlético Madrid,,Spanish list
+loan,,,José María Giménez,Atlético Madrid,Deportivo A Coruña,,Spanish list
+transfer,,,Matteo Ruggeri,Atlético Madrid,Aston Villa,,Spanish list
+transfer,,,Antoine Griezmann,Atlético Madrid,Orlando City,,Spanish list
+transfer,,,Thiago Almada,Atlético Madrid,River Plate,,Spanish list
+loan,,,Clément Lenglet,Atlético Madrid,Benfica,,Spanish list
+transfer,,,Nahuel Molina,Atlético Madrid,Roma,,Spanish list
+transfer,,,Jano Monserrate,Atlético Madrid,Ajax,,Spanish list
+transfer,,,Rayane Belaid,Atlético Madrid,Rayo Vallecano,,Spanish list
+transfer,,,Javier Boñar,Atlético Madrid,Girona,,Spanish list
+transfer,,,Julio Díaz,Atlético Madrid,Sevilla,,Spanish list
+transfer,,,Iker Luque,Atlético Madrid,Racing Santander,,Spanish list
+transfer,,,Javi Morcillo,Atlético Madrid,Elche,,Spanish list
+loan,,,Thomas Lemar,Atlético Madrid,Elche,,Spanish list
+loan,,,Carlos Martín,Atlético Madrid,Hajduk Split,,Spanish list
+transfer,,,João Cancelo,Al Hilal,Barcelona,,Spanish list
+transfer,,,Gabriel Jesus,Arsenal,Barcelona,,Spanish list
+transfer,,,Karim Adeyemi,Borussia Dortmund,Barcelona,,Spanish list
+transfer,,,Rodri,Manchester City,Barcelona,,Spanish list
+transfer,,,Anthony Gordon,Newcastle United,Barcelona,,Spanish list
+transfer,,,Dominik Livaković,Fenerbahçe,Barcelona,,Spanish list
+transfer,,,Jesse Bisiwu,Club NXT,Barcelona,,Spanish list
+transfer,,,Hamza Abdelkarim,Al Ahly,Barcelona,,Spanish list
+loan,,,Ronald Araújo,Barcelona,Liverpool,,Spanish list
+transfer,,,Ferran Torres,Barcelona,Paris Saint-Germain,,Spanish list
+transfer,,,Robert Lewandowski,Barcelona,Chicago Fire,,Spanish list
+return,,,Marcus Rashford,Barcelona,Manchester United,,Spanish list
+loan,,,Marc Casadó,Barcelona,Deportivo A Coruña,,Spanish list
+transfer,,,Jofre Torrents,Barcelona,Ajax,,Spanish list
+loan,,,Toni Fernández,Barcelona,Venezia,,Spanish list
+transfer,,,Guille Fernández,Barcelona,Mallorca,,Spanish list
+loan,,,Diego Kochen,Barcelona,Lyngby,,Spanish list
+transfer,,,Alexis Olmedo,Barcelona,Celta Fortuna,,Spanish list
+transfer,,,Álvaro Cortés,Barcelona,Royal Antwerp,,Spanish list
+transfer,,,Dani Rodríguez,Barcelona,Dinamo Zagreb,,Spanish list
+transfer,,,Tommy Marqués,Barcelona,Braga,,Spanish list
+transfer,,,Ander Astralaga,Barcelona,Atlético Madrileño,,Spanish list
+transfer,,,Iñaki Peña,Barcelona,Panathinaikos,,Spanish list
+loan,,,Marc-André ter Stegen,Barcelona,Ajax,,Spanish list
+loan,,,Áron Yaakobishvili,Barcelona,Almería,,Spanish list
+transfer,,,Andrés Cuenca,Barcelona,Como,,Spanish list
+transfer,,,Héctor Fort,Barcelona,Real Sociedad,,Spanish list
+transfer,,,Ansu Fati,Barcelona,Monaco,,Spanish list
+transfer,,,Facundo Bernal,Fluminense,Betis,,Spanish list
+transfer,,,Fran García,Real Madrid,Betis,,Spanish list
+loan,,,Diego Conde,Villarreal,Betis,,Spanish list
+transfer,,,Troy Parrott,AZ,Betis,,Spanish list
+transfer,,,Dani Ceballos,Real Madrid,Betis,,Spanish list
+transfer,,,Sergi Altimira,Betis,Sporting Lisbon,,Spanish list
+released,,,Chimy Ávila,Betis,Free agent,,Spanish list
+released,,,Cédric Bakambu,Betis,Free agent,,Spanish list
+released,,,Ricardo Rodriguez,Betis,Free agent,,Spanish list
+retired,,,Adrián San Miguel,Betis,Retired,,Spanish list
+transfer,,,Pau López,Betis,Andorra,,Spanish list
+transfer,,,Pablo García,Betis,Racing Santander,,Spanish list
+transfer,,,Guilherme Fernandes,Betis,Córdoba,,Spanish list
+transfer,,,Nobel Mendy,Betis,Rayo Vallecano,,Spanish list
+loan,,,Gonzalo Petit,Betis,Cádiz,,Spanish list
+loan,,,Altay Bayındır,Manchester United,Celta Vigo,,Spanish list
+loan,,,Abdoulaye Faye,Bayer Leverkusen,Celta Vigo,,Spanish list
+transfer,,,Aleix Febas,Elche,Celta Vigo,,Spanish list
+transfer,,,Sebastián Cáceres,Club América,Celta Vigo,,Spanish list
+transfer,,,Javi Galán,Osasuna,Celta Vigo,,Spanish list
+transfer,,,Couhaib Driouech,PSV,Celta Vigo,,Spanish list
+transfer,,,Óscar Mingueza,Celta Vigo,Crystal Palace,,Spanish list
+released,,,Joseph Aidoo,Celta Vigo,Free agent,,Spanish list
+return,,,Fer López,Celta Vigo,Wolverhampton Wanderers,,Spanish list
+transfer,,,Franco Cervi,Celta Vigo,Rosario Central,,Spanish list
+transfer,,,Manu Fernández,Celta Vigo,Cádiz,,Spanish list
+released,,,Matías Vecino,Celta Vigo,Free agent,,Spanish list
+released,,,Mihailo Ristić,Celta Vigo,Free agent,,Spanish list
+loan,,,Hugo Sotelo,Celta Vigo,Levante,,Spanish list
+loan,,,Carlos Domínguez,Celta Vigo,Oviedo,,Spanish list
+released,,,Marc Vidal,Celta Vigo,Free agent,,Spanish list
+loan,,,Unai Nuñez,Celta Vigo,Espanyol,,Spanish list
+loan,,,Manu Sánchez,Celta Vigo,Levante,,Spanish list
+loan,,,Carlos Dotor,Celta Vigo,Málaga,,Spanish list
+transfer,,,Carles Pérez,Celta Vigo,Girona,,Spanish list
+loan,,,Damián Rodríguez,Celta Vigo,Cádiz,,Spanish list
+transfer,,,Pierre-Emerick Aubameyang,Olympique Marseille,Deportivo A Coruña,,Spanish list
+transfer,,,Leo Román,Mallorca,Deportivo A Coruña,,Spanish list
+transfer,,,Lorenzo Amatucci,Fiorentina,Deportivo A Coruña,,Spanish list
+loan,,,Angeliño,Roma,Deportivo A Coruña,,Spanish list
+transfer,,,Jonathan Asp Jensen,Bayern Munich II,Deportivo A Coruña,,Spanish list
+transfer,,,Bright Ede,Motor Lublin,Deportivo A Coruña,,Spanish list
+transfer,,,Adama Traoré,West Ham United,Deportivo A Coruña,,Spanish list
+transfer,,,Teun Gijselhart,De Graafschap,Deportivo A Coruña,,Spanish list
+loan,,,Charlie Patiño,Deportivo A Coruña,VfL Bochum,,Spanish list
+loan,,,Eric Puerto,Deportivo A Coruña,Penafiel,,Spanish list
+return,,,José Gragera,Deportivo A Coruña,Espanyol,,Spanish list
+loan,,,José Gragera,Espanyol,Burgos,,Spanish list
+released,,,Cristian Herrera,Deportivo A Coruña,Free agent,,Spanish list
+transfer,,,Sergio Escudero,Deportivo A Coruña,Zaragoza,,Spanish list
+released,,,José Ángel,Deportivo A Coruña,Free agent,,Spanish list
+loan,,,Teun Gijselhart,Deportivo A Coruña,Al Ain,,Spanish list
+loan,,,Diego Gómez,Deportivo A Coruña,Huesca,,Spanish list
+transfer,,,Mohamed Bouldini,Deportivo A Coruña,Académico de Viseu,,Spanish list
+transfer,,,Buba Sangaré,Roma,Elche,,Spanish list
+transfer,,,Roy Revivo,Maccabi Tel Aviv,Elche,,Spanish list
+transfer,,,Ezequiel Ponce,Houston Dynamo,Elche,,Spanish list
+loan,,,Facundo Buonanotte,Brighton & Hove Albion,Elche,,Spanish list
+transfer,,,Fer Niño,Burgos,Elche,,Spanish list
+transfer,,,Kevin Lomónaco,Independiente,Elche,,Spanish list
+transfer,,,Rubén Sánchez,Espanyol,Elche,,Spanish list
+transfer,,,Tiziano Perrotta,Banfield,Elche,,Spanish list
+return,,,Adrià Pedrosa,Elche,Sevilla,,Spanish list
+loan,,,Adrià Pedrosa,Sevilla,Rayo Vallecano,,Spanish list
+transfer,,,André Silva,Elche,Porto,,Spanish list
+return,,,Rafa Mir,Elche,Sevilla,,Spanish list
+loan,,,Rafa Mir,Sevilla,Aris,,Spanish list
+return,,,Iñaki Peña,Elche,Barcelona,,Spanish list
+loan,,,John Chetauya,Elche,Mallorca,,Spanish list
+transfer,,,Álvaro Rodríguez,Elche,Bournemouth,,Spanish list
+transfer,,,Léo Pétrot,Elche,Anderlecht,,Spanish list
+transfer,,,David Affengruber,Elche,Fulham,,Spanish list
+loan,,,Pablo Felipe,Elche,Teruel,,Spanish list
+loan,,,Umaru Konare,Elche,Ceuta,,Spanish list
+return,,,Héctor Fort,Elche,Barcelona,,Spanish list
+loan,,,Axel Werner,Elche,Rosario Central,,Spanish list
+loan,,,Nordin Al-Lal,Elche,Extremadura,,Spanish list
+loan,,,Tiziano Perrotta,Elche,Defensa y Justicia,,Spanish list
+loan,,,Quilindschy Hartman,Burnley,Espanyol,,Spanish list
+loan,,,Bryan Zaragoza,Bayern Munich,Espanyol,,Spanish list
+loan,,,Vanja Drkušić,Zenit Saint Petersburg,Espanyol,,Spanish list
+loan,,,Gabriel Moscardo,Paris Saint-Germain,Espanyol,,Spanish list
+transfer,,,Álex Calatrava,Castellón,Espanyol,,Spanish list
+transfer,,,Fernando Calero,Espanyol,Málaga,,Spanish list
+loan,,,José Salinas,Espanyol,Málaga,,Spanish list
+return,,,Ramon Terrats,Espanyol,Villarreal,,Spanish list
+transfer,,,Ramon Terrats,Villarreal,Getafe,,Spanish list
+transfer,,,Miguel Rubio,Espanyol,Valladolid,,Spanish list
+loan,,,Antoniu Roca,Espanyol,Mallorca,,Spanish list
+return,,,Carlos Romero,Espanyol,Villarreal,,Spanish list
+transfer,,,Lluc Castell,Espanyol,Burnley,,Spanish list
+transfer,,,Hugo Pérez,Espanyol,Torreense,,Spanish list
+transfer,,,Pablo Ramón,Espanyol,Racing Santander,,Spanish list
+transfer,,,Saba Sazonov,Torino,Getafe,,Spanish list
+transfer,,,Nemanja Gudelj,Sevilla,Getafe,,Spanish list
+transfer,,,Martín Satriano,Lyon,Getafe,,Spanish list
+transfer,,,Ramón Terrats,"Villarreal, previouly on loan at Espanyol",Getafe,,Spanish list
+transfer,,,Dani Carvajal,Real Madrid,Getafe,,Spanish list
+transfer,,,Francho Serrano,Zaragoza,Getafe,,Spanish list
+transfer,,,Enes Ünal,Bournemouth,Getafe,,Spanish list
+loan,,,Iván Azón,Como,Getafe,,Spanish list
+loan,,,Andrés García,Aston Villa,Getafe,,Spanish list
+loan,,,Orel Mangala,Lyon,Getafe,,Spanish list
+transfer,,,Zaid Romero,Club Brugge,Getafe,,Spanish list
+loan,,,Jean Ives Valou,Villarreal B,Getafe,,Spanish list
+transfer,,,Luis Milla,Getafe,Como,,Spanish list
+transfer,,,Mauro Arambarri,Getafe,River Plate,,Spanish list
+released,,,Allan Nyom,Getafe,Free agent,,Spanish list
+transfer,,,Javi Muñoz,Getafe,Almería,,Spanish list
+transfer,,,Diego Rico,Getafe,Osasuna,,Spanish list
+return,,,Luis Vázquez,Getafe,Anderlecht,,Spanish list
+transfer,,,Luis Vázquez,Anderlecht,Birmingham City,,Spanish list
+transfer,,,Juan Iglesias,Getafe,Sevilla,,Spanish list
+released,,,Domingos Duarte,Getafe,Free agent,,Spanish list
+released,,,Mykyta Aleksandrov,Getafe,Free agent,,Spanish list
+transfer,,,Ismael Bekhoucha,Getafe,Extremadura,,Spanish list
+loan,,,Vladyslav Kysil,Getafe,Ponferradina,,Spanish list
+transfer,,,Juan Berrocal,Getafe,Málaga,,Spanish list
+loan,,,Yvan Neyou,Getafe,Volos,,Spanish list
+transfer,,,Peter González,Getafe,Górnik Zabrze,,Spanish list
+transfer,,,Aïssa Mandi,Lille,Levante,,Spanish list
+loan,,,Ifeanyi Ndukwe,Liverpool,Levante,,Spanish list
+loan,,,Dani Requena,Villarreal,Levante,,Spanish list
+loan,,,Petar Ratkov,Lazio,Levante,,Spanish list
+transfer,,,Yanis Musuayi,Club NXT,Levante,,Spanish list
+loan,,,Axel Tape,Bayer Leverkusen,Levante,,Spanish list
+transfer,,,Enzo Bardeli,Dunkerque,Levante,,Spanish list
+loan,,,Thiago Fernández,Villarreal,Levante,,Spanish list
+transfer,,,Unai Elgezabal,Levante,Eibar,,Spanish list
+transfer,,,Diego Pampín,Levante,Granada,,Spanish list
+released,,,Pablo Martínez,Levante,Free agent,,Spanish list
+released,,,José Luis Morales,Levante,Free agent,,Spanish list
+return,,,Unai Vencedor,Levante,Athletic Bilbao,,Spanish list
+return,,,Ugo Raghouber,Levante,Lille,,Spanish list
+transfer,,,Ugo Raghouber,Lille,Burnley,,Spanish list
+transfer,,,Kervin Arriaga,Levante,AEK Athens,,Spanish list
+transfer,,,Carlos Espí,Levante,Real Madrid,,Spanish list
+transfer,,,Carlos Álvarez,Levante,Club América,,Spanish list
+transfer,,,Kareem Tunde,Levante,West Bromwich Albion,,Spanish list
+loan,,,Martín Krug,Levante,Juventud Torremolinos,,Spanish list
+loan,,,Tai Abed,Levante,Valladolid,,Spanish list
+loan,,,Dani Martín,Levante,Valladolid,,Spanish list
+transfer,,,Xavi Grande,Levante,Académica de Coimbra,,Spanish list
+transfer,,,Edgar Alcañiz,Levante,Atlético Madrileño,,Spanish list
+loan,,,Jens Cajuste,Napoli,Málaga,,Spanish list
+loan,,,Juan Cruz,Leganés,Málaga,,Spanish list
+loan,,,Adam Aznou,Everton,Málaga,,Spanish list
+transfer,,,Jokin Gabilondo,Málaga,Zaragoza,,Spanish list
+released,,,Darko Brašanac,Málaga,Free agent,,Spanish list
+released,,,Víctor García,Málaga,Free agent,,Spanish list
+released,,,Dani Sánchez,Málaga,Free agent,,Spanish list
+retired,,,Luismi,Málaga,Retired,,Spanish list
+released,,,Javi Montero,Málaga,Free agent,,Spanish list
+released,,,Josué Dorrio,Málaga,Free agent,,Spanish list
+transfer,,,Romain Del Castillo,Brest,Osasuna,,Spanish list
+transfer,,,Jonathan Dubasin,Sporting Gijón,Osasuna,,Spanish list
+transfer,,,Rockson Yeboah,Göteborg,Osasuna,,Spanish list
+transfer,,,Iker Benito,Osasuna,Querétaro,,Spanish list
+transfer,,,Juan Cruz,Osasuna,Oviedo,,Spanish list
+transfer,,,Víctor Muñoz,Osasuna,Liverpool,,Spanish list
+transfer,,,Aarón Martín,Genoa,Racing Santander,,Spanish list
+loan,,,André Almeida,Valencia,Racing Santander,,Spanish list
+transfer,,,Facundo González,Juventus,Racing Santander,,Spanish list
+loan,,,Matteo Prati,Cagliari,Racing Santander,,Spanish list
+transfer,,,Sergio Canales,Monterrey,Racing Santander,,Spanish list
+loan,,,Yassir Zabiri,Rennes,Racing Santander,,Spanish list
+transfer,,,Pedro Felipe,Juventus,Racing Santander,,Spanish list
+transfer,,,Iván Martín,Girona,Racing Santander,,Spanish list
+loan,,,Jeanuël Belocian,Bayer Leverkusen,Racing Santander,,Spanish list
+loan,,,Jokin Ezkieta,Racing Santander,Cádiz,,Spanish list
+transfer,,,Mario García,Racing Santander,Widzew Łódź,,Spanish list
+transfer,,,Javi Castro,Racing Santander,Cádiz,,Spanish list
+loan,,,Aritz Aldasoro,Racing Santander,Oviedo,,Spanish list
+released,,,Marco Sangalli,Racing Santander,Free agent,,Spanish list
+released,,,Jaime Mata,Racing Santander,Free agent,,Spanish list
+transfer,,,Gustavo Puerta,Racing Santander,Olympiacos,,Spanish list
+transfer,,,Suleiman Camara,Racing Santander,Slovan Bratislava,,Spanish list
+return,,,Damían Rodríguez,Racing Santander,Celta Vigo,,Spanish list
+loan,,,Damían Rodríguez,Celta Vigo,Cádiz,,Spanish list
+loan,,,Diego Díaz,Racing Santander,Andorra,,Spanish list
+transfer,,,Sergio Martínez,Racing Santander,Real Madrid Castilla,,Spanish list
+transfer,,,Yeray Cabanzón,Racing Santander,Valladolid,,Spanish list
+loan,,,Marash Kumbulla,Roma,Rayo Vallecano,,Spanish list
+transfer,,,Giorgi Tsitaishvili,Dynamo Kyiv,Rayo Vallecano,,Spanish list
+loan,,,Mujaid Sadick,Genk,Rayo Vallecano,,Spanish list
+return,,,Pelayo Fernández,Cádiz,Rayo Vallecano,,Spanish list
+loan,,,Emil Audero,Como,Rayo Vallecano,,Spanish list
+transfer,,,Gnangoro Bouare,Betis Deportivo,Rayo Vallecano,,Spanish list
+transfer,,,Pep Chavarría,Rayo Vallecano,Chelsea,,Spanish list
+retired,,,Óscar Trejo,Rayo Vallecano,Retired,,Spanish list
+return,,,Carlos Martín,Rayo Vallecano,Atlético Madrid,,Spanish list
+released,,,Abdul Mumin,Rayo Vallecano,Free agent,,Spanish list
+transfer,,,Pacha Espino,Rayo Vallecano,Racing Avellaneda,,Spanish list
+transfer,,,Nobel Mendy,Rayo Vallecano,Hull City,,Spanish list
+loan,,,Etienne Eto'o,Rayo Vallecano,Racing Ferrol,,Spanish list
+return,,,Endrick,Lyon,Real Madrid,,Spanish list
+transfer,,,Ibrahima Konaté,Liverpool,Real Madrid,,Spanish list
+transfer,,,Marc Cucurella,Chelsea,Real Madrid,,Spanish list
+transfer,,,Bernardo Silva,Manchester City,Real Madrid,,Spanish list
+transfer,,,Denzel Dumfries,Inter,Real Madrid,,Spanish list
+transfer,,,Yan Diomande,RB Leipzig,Real Madrid,,Spanish list
+transfer,,,David Alaba,Real Madrid,Udinese,,Spanish list
+transfer,,,Gonzalo García,Real Madrid,Fulham,,Spanish list
+transfer,,,Fran González,Real Madrid,Sevilla,,Spanish list
+loan,,,Franco Mastantuono,Real Madrid,Fiorentina,,Spanish list
+transfer,,,Manuel Ángel,Real Madrid,Fulham,,Spanish list
+transfer,,,César Palacios,Real Madrid,Fulham,,Spanish list
+transfer,,,Víctor Valdepeñas,Real Madrid,Fiorentina,,Spanish list
+loan,,,Mamadou Sarr,Chelsea,Real Sociedad,,Spanish list
+transfer,,,Aritz Elustondo,Real Sociedad,PAOK Thessaloniki,,Spanish list
+transfer,,,Jon Karrikaburu,Real Sociedad,Burgos,,Spanish list
+transfer,,,Brais Méndez,Real Sociedad,Columbus Crew,,Spanish list
+loan,,,Javi López,Real Sociedad,Feyenoord,,Spanish list
+loan,,,Mikel Goti,Real Sociedad,Oviedo,,Spanish list
+transfer,,,Carlos Fernández,Real Sociedad,Oviedo,,Spanish list
+loan,,,Odysseas Vlachodimos,Newcastle United,Sevilla,,Spanish list
+transfer,,,Giorgi Kochorashvili,Sporting CP,Sevilla,,Spanish list
+transfer,,,Robbie Ure,Sirius,Sevilla,,Spanish list
+transfer,,,Arouna Sangante,Le Havre,Sevilla,,Spanish list
+loan,,,Lucas Stassin,Saint-Étienne,Sevilla,,Spanish list
+loan,,,Félix Correia,Lille,Sevilla,,Spanish list
+loan,,,Youssouf Fofana,Milan,Sevilla,,Spanish list
+retired,,,César Azpilicueta,Sevilla,Retired,,Spanish list
+transfer,,,Tanguy Nianzou,Sevilla,Lille,,Spanish list
+transfer,,,Joan Jordán,Sevilla,Estrela da Amadora,,Spanish list
+transfer,,,Akor Adams,Sevilla,Venezia,,Spanish list
+transfer,,,Alexis Sánchez,Sevilla,CF Montréal,,Spanish list
+transfer,,,Ørjan Nyland,Sevilla,RB Leipzig,,Spanish list
+transfer,,,Juanlu Sánchez,Sevilla,Bournemouth,,Spanish list
+return,,,Neal Maupay,Sevilla,Marseille,,Spanish list
+return,,,Batista Mendy,Sevilla,Trabzonspor,,Spanish list
+transfer,,,Djibril Sow,Sevilla,Genoa,,Spanish list
+transfer,,,Federico Gattoni,Sevilla,Ascoli,,Spanish list
+released,,,Adnan Januzaj,Sevilla,Free agent,,Spanish list
+transfer,,,Alberto Flores,Sevilla,Granada,,Spanish list
+transfer,,,Oso,Sevilla,Strasbourg,,Spanish list
+transfer,,,Guido Rodríguez,West Ham United,Valencia,,Spanish list
+loan,,,Harvey Elliott,Liverpool,Valencia,,Spanish list
+transfer,,,Justin de Haas,Famalicão,Valencia,,Spanish list
+transfer,,,Aliou Dieng,Al Ahly,Valencia,,Spanish list
+transfer,,,Arnau Martínez,Girona,Valencia,,Spanish list
+loan,,,Pablo Maffeo,Olympiacos,Valencia,,Spanish list
+loan,,,Kayne van Oevelen,Ipswich Town,Valencia,,Spanish list
+transfer,,,Ryunosuke Sato,FC Tokyo,Valencia,,Spanish list
+return,,,Unai Nuñez,Valencia,Celta Vigo,,Spanish list
+transfer,,,Thierry Correia,Valencia,Venezia,,Spanish list
+return,,,Lucas Beltrán,Valencia,Fiorentina,,Spanish list
+loan,,,Lucas Beltrán,Fiorentina,River Plate,,Spanish list
+transfer,,,Baptiste Santamaria,Valencia,PAOK Thessaloniki,,Spanish list
+transfer,,,Eray Cömert,Valencia,Torino,,Spanish list
+return,,,Julen Agirrezabala,Valencia,Athletic Bilbao,,Spanish list
+loan,,,Mario Domínguez,Valencia,Excelsior,,Spanish list
+transfer,,,Cenk Özkacar,Valencia,Trabzonspor,,Spanish list
+transfer,,,Alberto Marí,Valencia,Kispest-Honvéd,,Spanish list
+transfer,,,Nathan Saliba,Anderlecht,Villarreal,,Spanish list
+transfer,,,Péter Gulácsi,RB Leipzig,Villarreal,,Spanish list
+loan,,,Willy Kambwala,Villarreal,Como,,Spanish list
+released,,,Dani Parejo,Villarreal,Free agent,,Spanish list
+transfer,,,Alfonso Pedraza,Villarreal,Lazio,,Spanish list
+loan,,,Arnau Tenas,Villarreal,Mallorca,,Spanish list
+loan,,,Dani Budesca,Villarreal,Córdoba,,Spanish list
+loan,,,Hugo López,Villarreal,Andorra,,Spanish list
+transfer,,,Pau Cabanes,Villarreal,Eldense,,Spanish list
+transfer,,,Álex Forés,Villarreal,Burgos,,Spanish list
+transfer,,,Carlos Marín,Córdoba,Albacete,,Spanish list
+transfer,,,Mario Soberón,Zaragoza,Albacete,,Spanish list
+transfer,,,Rober,NEC,Albacete,,Spanish list
+transfer,,,Munir El Haddadi,Esteghlal,Albacete,,Spanish list
+transfer,,,José Corpas,Eibar,Albacete,,Spanish list
+transfer,,,Sergio Ortuño,Cádiz,Albacete,,Spanish list
+loan,,,Agustín Albarracín,Cagliari,Albacete,,Spanish list
+return,,,Jonathan Gómez,Albacete,PAOK Thessaloniki,,Spanish list
+return,,,Jefté Betancor,Albacete,Olympiacos,,Spanish list
+transfer,,,Jefté Betancor,Olympiacos,Las Palmas,,Spanish list
+transfer,,,Raúl Lizoain,Albacete,Granada,,Spanish list
+released,,,José Carlos Lazo,Albacete,Free agent,,Spanish list
+transfer,,,Ale Meléndez,Albacete,Ceuta,,Spanish list
+transfer,,,Jorge Pulido,Huesca,Almería,,Spanish list
+loan,,,Leonardo Lelo,Braga,Almería,,Spanish list
+transfer,,,Brian Cipenga,Castellón,Almería,,Spanish list
+transfer,,,Álex Sola,Granada,Almería,,Spanish list
+transfer,,,Miguel de la Fuente,Leganés,Almería,,Spanish list
+transfer,,,Andrej Popović,Hellas Verona,Almería,,Spanish list
+transfer,,,Quim Junyent,Barcelona B,Almería,,Spanish list
+transfer,,,André Horta,Braga,Almería,,Spanish list
+transfer,,,Arnau Puigmal,Almería,Mallorca,,Spanish list
+loan,,,Nélson Monte,Almería,Córdoba,,Spanish list
+transfer,,,Dion Lopy,Almería,Al-Ittihad,,Spanish list
+loan,,,Patrick Soko,Almería,Leganés,,Spanish list
+transfer,,,Álex Centelles,Almería,Levski Sofia,,Spanish list
+transfer,,,Bruno Iribarne,Almería,Burgos,,Spanish list
+loan,,,Edgar González,Almería,Sabadell,,Spanish list
+transfer,,,Bruno Langa,Almería,Qarabağ,,Spanish list
+transfer,,,Alejandro Pozo,Almería,ADO Den Haag,,Spanish list
+loan,,,Selvi Clua,Almería,Casa Pia,,Spanish list
+transfer,,,André Horta,Almería,Al-Ula,,Spanish list
+transfer,,,Marko Perović,Almería,Raków Częstochowa,,Spanish list
+transfer,,,Juan Manuel Gutiérrez,Almería,Defensa y Justicia,,Spanish list
+transfer,,,Marko Milovanović,Almería,Portsmouth,,Spanish list
+transfer,,,Juan Sebastián,Zaragoza,Andorra,,Spanish list
+transfer,,,Lautaro Spatz,Villarreal B,Andorra,,Spanish list
+transfer,,,Hugo Solozábal,Getafe B,Andorra,,Spanish list
+loan,,,Julian Rijkhoff,Jong Ajax,Andorra,,Spanish list
+transfer,,,Enes Sali,FC Dallas,Andorra,,Spanish list
+transfer,,,Jordi Cano,Europa,Andorra,,Spanish list
+transfer,,,Randy Schneider,Winterthur,Andorra,,Spanish list
+transfer,,,Andoni López,Ponferradina,Andorra,,Spanish list
+transfer,,,Nacho Quintana,Eldense,Andorra,,Spanish list
+transfer,,,Moró Sidibe,Atlètic Lleida,Andorra,,Spanish list
+transfer,,,Aron Rodrigo,Huesca B,Andorra,,Spanish list
+return,,,Álex Petxarroman,Andorra,Deportivo A Coruña,,Spanish list
+transfer,,,Álex Petxarroman,Deportivo A Coruña,Ceuta,,Spanish list
+return,,,Yeray Cabanzón,Andorra,Racing Santander,,Spanish list
+transfer,,,Dani Villahermosa,Andorra,Oviedo,,Spanish list
+transfer,,,Manu Nieto,Andorra,Eldense,,Spanish list
+transfer,,,Álvaro Martín,Andorra,Castellón,,Spanish list
+return,,,Edgar González,Andorra,Almería,,Spanish list
+return,,,Jastin García,Andorra,Girona,,Spanish list
+return,,,Imanol García de Albéniz,Andorra,Sparta Prague,,Spanish list
+transfer,,,Imanol García de Albéniz,Sparta Prague,Eibar,,Spanish list
+transfer,,,Josep Cerdà,Andorra,Mallorca,,Spanish list
+released,,,Marc Cardona,Andorra,Free agent,,Spanish list
+return,,,Áron Yaakobishvili,Andorra,Barcelona,,Spanish list
+return,,,Kim Min-su,Andorra,Girona,,Spanish list
+transfer,,,Kim Min-su,Girona,Rangers,,Spanish list
+loan,,,Jan Lagunas,Andorra,Santa Coloma,,Spanish list
+transfer,,,Jan Encuentra,Andorra,Villarreal B,,Spanish list
+loan,,,Iván Rodríguez,Andorra,Huesca,,Spanish list
+transfer,,,Luismi Redondo,Andorra,Huesca,,Spanish list
+loan,,,Aron Rodrigo,Andorra,Mirandés,,Spanish list
+loan,,,Bilal Achhiba,Andorra,Manresa,,Spanish list
+transfer,,,Juanda Fuentes,Andorra,Penafiel,,Spanish list
+loan,,,Berto Rosas,Andorra,Logroñés,,Spanish list
+loan,,,Aitor Uzkudun,Andorra,Mirandés,,Spanish list
+transfer,,,Ignasi Vilarrasa,Córdoba,Burgos,,Spanish list
+transfer,,,Oier Luengo,Oviedo,Burgos,,Spanish list
+transfer,,,Javi Llabrés,Mallorca,Burgos,,Spanish list
+transfer,,,Alberto Dadie,Real Sociedad B,Burgos,,Spanish list
+loan,,,Santiago Lencina,River Plate,Burgos,,Spanish list
+transfer,,,Jesús Ruiz,Burgos,Mirandés,,Spanish list
+transfer,,,Miguel Atienza,Burgos,Leganés,,Spanish list
+loan,,,Mateo Mejía,Burgos,Panetolikos,,Spanish list
+transfer,,,Florian Miguel,Burgos,Metz,,Spanish list
+released,,,Aitor Buñuel,Burgos,Free agent,,Spanish list
+transfer,,,Mario González,Burgos,Noah,,Spanish list
+transfer,,,Iñigo Córdoba,Burgos,Castellón,,Spanish list
+transfer,,,Iván Morante,Burgos,Girona,,Spanish list
+transfer,,,Beñat de Jesús,Barakaldo,Cádiz,,Spanish list
+transfer,,,Marco Doué,Castellón,Cádiz,,Spanish list
+loan,,,Giorgi Gocholeishvili,Shakhtar Donetsk,Cádiz,,Spanish list
+transfer,,,Kenan Toibibou,Bravo,Cádiz,,Spanish list
+loan,,,Antonio Cordero,Newcastle United,Cádiz,,Spanish list
+loan,,,Aïmen Moueffek,Saint-Étienne,Cádiz,,Spanish list
+transfer,,,Jandro Orellana,Estoril,Cádiz,,Spanish list
+transfer,,,Vladyslav Kopotun,Alcorcón,Cádiz,,Spanish list
+loan,,,Cristian Gutiérrez,Las Palmas,Cádiz,,Spanish list
+transfer,,,Ibon Sánchez,Bilbao Athletic,Cádiz,,Spanish list
+loan,,,Dilan Zárate,Inter Milan U23,Cádiz,,Spanish list
+transfer,,,José Andújar,Atlético Sanluqueño,Cádiz,,Spanish list
+transfer,,,Jorge Moreno,Cádiz,Tenerife,,Spanish list
+transfer,,,Rominigue Kouamé,Cádiz,Clermont,,Spanish list
+loan,,,Moussa Diakité,Cádiz,Çaykur Rizespor,,Spanish list
+transfer,,,Iker Recio,Cádiz,Eldense,,Spanish list
+released,,,Lucas Pérez,Cádiz,Free agent,,Spanish list
+transfer,,,Álex Fernández,Cádiz,Dibba Al-Hisn,,Spanish list
+released,,,Roger Martí,Cádiz,Free agent,,Spanish list
+transfer,,,Brian Ocampo,Cádiz,Coritiba,,Spanish list
+transfer,,,Victor Aznar,Cádiz,Lion City Sailors,,Spanish list
+return,,,Dawda Camara,Cádiz,Girona,,Spanish list
+transfer,,,Dawda Camara,Girona,Alverca,,Spanish list
+loan,,,Yussi Diarra,Cádiz,Córdoba,,Spanish list
+transfer,,,José Antonio de la Rosa,Cádiz,Wieczysta Kraków,,Spanish list
+loan,,,Joaquín González,Cádiz,Ceuta,,Spanish list
+return,,,Alfred Caicedo,Cádiz,Jong Genk,,Spanish list
+transfer,,,Alfred Caicedo,Jong Genk,Vizela,,Spanish list
+transfer,,,Raúl Pereira,Cádiz,Zaragoza,,Spanish list
+loan,,,Jerónimo Dómina,Cádiz,Tigre,,Spanish list
+transfer,,,Isaac Obeng,Cádiz,Hércules,,Spanish list
+transfer,,,Amir Saipi,Lugano,Castellón,,Spanish list
+transfer,,,Juanjo Nieto,Celje,Castellón,,Spanish list
+loan,,,Matías Orozco,Brighton & Hove Albion,Castellón,,Spanish list
+transfer,,,Federico Ceccherini,Cremonese,Castellón,,Spanish list
+transfer,,,Ilias Kostis,Atlético Madrileño,Castellón,,Spanish list
+transfer,,,Fran Castillo,Ibiza,Castellón,,Spanish list
+transfer,,,Hamza Bellari,Valencia Mestalla,Castellón,,Spanish list
+transfer,,,David Nzanza,Leça,Castellón,,Spanish list
+transfer,,,Jari Vlak,ADO Den Haag,Castellón,,Spanish list
+loan,,,Rodrigo Rêgo,Brighton & Hove Albion,Castellón,,Spanish list
+transfer,,,Antonio Gala,Campobasso,Castellón,,Spanish list
+released,,,Amir Abedzadeh,Castellón,Free agent,,Spanish list
+transfer,,,Awer Mabil,Castellón,Melbourne City,,Spanish list
+loan,,,Douglas Aurélio,Castellón,Huesca,,Spanish list
+transfer,,,Salva Ruiz,Castellón,Huesca,,Spanish list
+released,,,Ronaldo Pompeu,Castellón,Free agent,,Spanish list
+loan,,,Ismael Fadel,Castellón,Ibiza,,Spanish list
+transfer,,,Carlos Segura,Castellón,Gimnàstic Tarragona,,Spanish list
+loan,,,José Albert,Castellón,Zamora,,Spanish list
+loan,,,Serpeta,Castellón,Águilas,,Spanish list
+transfer,,,Bernard Somuah,Asante Kotoko,Celta Fortuna,,Spanish list
+loan,,,Hugo Cuenca,Genoa,Celta Fortuna,,Spanish list
+transfer,,,Stefan Bajcetic,Liverpool,Celta Fortuna,,Spanish list
+return,,,Jaime Vázquez,Celta Fortuna,Oviedo,,Spanish list
+transfer,,,Ayoub Akabou,Rennes,Ceuta,,Spanish list
+transfer,,,Álex Camacho,Juventud Torremolinos,Ceuta,,Spanish list
+transfer,,,Jordi Escobar,Huesca,Ceuta,,Spanish list
+transfer,,,Adrián Lapeña,CSKA Sofia,Ceuta,,Spanish list
+transfer,,,Kenneth Mamah,Vanspor,Ceuta,,Spanish list
+loan,,,Omar Sadik,Espanyol,Ceuta,,Spanish list
+loan,,,Edgar Sevikyan,Ferencváros,Ceuta,,Spanish list
+transfer,,,Cedric Teguía,Moreirense,Ceuta,,Spanish list
+transfer,,,Aisar Ahmed,Ceuta,Oviedo,,Spanish list
+transfer,,,Gonzalo Almenara,Ceuta,Ibiza,,Spanish list
+return,,,Konrad de la Fuente,Ceuta,Lausanne,,Spanish list
+transfer,,,Konrad de la Fuente,Lausanne,Sporting Gijón,,Spanish list
+transfer,,,Rubén Díez,Ceuta,Zaragoza,,Spanish list
+transfer,,,Diego González,Ceuta,Zaragoza,,Spanish list
+transfer,,,Youness Lachhab,Ceuta,Oviedo,,Spanish list
+transfer,,,Cristian Rodríguez,Ceuta,Juventud Torremolinos,,Spanish list
+released,,,Ignacio Schor,Ceuta,Free agent,,Spanish list
+transfer,,,Damián Cáceres,Getafe B,Córdoba,,Spanish list
+transfer,,,Salim El Jebari,Atlético Madrid B,Córdoba,,Spanish list
+loan,,,Eder García,Bilbao Athletic,Córdoba,,Spanish list
+transfer,,,Adnane Ghailan,Europa,Córdoba,,Spanish list
+transfer,,,Juan Gutiérrez,Mirandés,Córdoba,,Spanish list
+transfer,,,Jacobo Martí,Mérida,Córdoba,,Spanish list
+loan,,,Egoitz Muñoz,Alavés B,Córdoba,,Spanish list
+transfer,,,Enol Rodríguez,Huesca,Córdoba,,Spanish list
+transfer,,,Unai Sabroso,Rayo Vallecano B,Córdoba,,Spanish list
+loan,,,Ibai Sanz,Bilbao Athletic,Córdoba,,Spanish list
+transfer,,,Dani Tasende,Zaragoza,Córdoba,,Spanish list
+transfer,,,Juan María Alcedo,Córdoba,Torreense,,Spanish list
+loan,,,Dalisson de Almeida,Córdoba,Hajduk Split,,Spanish list
+return,,,Alberto del Moral,Córdoba,Oviedo,,Spanish list
+transfer,,,Alberto del Moral,Oviedo,Hajduk Split,,Spanish list
+transfer,,,Adrián Fuentes,Córdoba,Mallorca,,Spanish list
+transfer,,,Jacobo González,Córdoba,Oviedo,,Spanish list
+return,,,Mikel Goti,Córdoba,Real Sociedad,,Spanish list
+retired,,,Sergi Guardiola,Córdoba,Retired,,Spanish list
+transfer,,,Pedro Ortiz,Córdoba,Ibiza,,Spanish list
+return,,,Dani Requena,Córdoba,Villarreal,,Spanish list
+released,,,Xavi Sintes,Córdoba,Free agent,,Spanish list
+loan,,,Dinis Rodrigues,Napoli,Eldense,,Spanish list
+loan,,,Mariano Carmona,Córdoba,Eldense,,Spanish list
+transfer,,,Jordi Martín,Huesca,Eldense,,Spanish list
+transfer,,,Javi Martínez,Eibar,Eldense,,Spanish list
+transfer,,,Juan Palomares,Mirandés,Eldense,,Spanish list
+transfer,,,Jorge Rastrojo,Algeciras,Eldense,,Spanish list
+transfer,,,Justin Smith,Espanyol,Eldense,,Spanish list
+transfer,,,Rodri Val,Atlético Sanluqueño,Eldense,,Spanish list
+loan,,,Julien Yanda,Bayern Munich II,Eldense,,Spanish list
+return,,,Hamza Bellari,Eldense,Valencia Mestalla,,Spanish list
+loan,,,Boston Billups,Eldense,Cartagena,,Spanish list
+released,,,Dario Đumić,Eldense,Free agent,,Spanish list
+released,,,Manu Molina,Eldense,Free agent,,Spanish list
+return,,,Rubén Quintanilla,Eldense,Almería,,Spanish list
+transfer,,,Rubén Quintanilla,Almería,Rayo Majadahonda,,Spanish list
+transfer,,,Iván Gil,Las Palmas,Eibar,,Spanish list
+loan,,,Lucas Núñez,Valencia Mestalla,Eibar,,Spanish list
+transfer,,,Francisco Pejiño,Las Palmas,Eibar,,Spanish list
+loan,,,Hodei Arrillaga,Eibar,Mirandés,,Spanish list
+transfer,,,Marco Moreno,Eibar,Bahia,,Spanish list
+transfer,,,Toni Villa,Eibar,Cartagena,,Spanish list
+transfer,,,Izan González,Cornellà,Girona,,Spanish list
+transfer,,,Oleksandr Pyshchur,Győri ETO,Girona,,Spanish list
+transfer,,,Rubén Blanco,Girona,Yokohama Marinos,,Spanish list
+transfer,,,Joel Roca,Girona,Olympiacos,,Spanish list
+transfer,,,Daley Blind,Girona,Ajax,,Spanish list
+transfer,,,Axel Witsel,Girona,Nice,,Spanish list
+released,,,Juan Carlos,Girona,Free agent,,Spanish list
+return,,,Thomas Lemar,Girona,Atlético Madrid,,Spanish list
+transfer,,,Jhon Solís,Girona,Birmingham City,,Spanish list
+return,,,Marc-André ter Stegen,Girona,Barcelona,,Spanish list
+transfer,,,Viktor Tsyhankov,Girona,Ajax,,Spanish list
+transfer,,,Alberto Flores,Sevila,Granada,,Spanish list
+transfer,,,Kader Bamba,Clermont Foot,Granada,,Spanish list
+transfer,,,Benedikt Gimber,1. FC Heidenheim,Granada,,Spanish list
+transfer,,,Sergio López,Darmstadt,Granada,,Spanish list
+transfer,,,Alejandro Marqués,Estoril,Granada,,Spanish list
+return,,,Ander Astralaga,Granada,Barcelona,,Spanish list
+return,,,Mohamed Bouldini,Granada,Deportivo A Coruña,,Spanish list
+return,,,Baba Diocou,Granada,Tenerife,,Spanish list
+return,,,Izan González,Granada,Cornellà,,Spanish list
+return,,,Gonzalo Petit,Granada,Betis,,Spanish list
+transfer,,,Sergio Ruiz,Granada,Las Palmas,,Spanish list
+transfer,,,Pablo Sáenz,Granada,Oviedo,,Spanish list
+retired,,,Manu Trigueros,Granada,Retired,,Spanish list
+loan,,,Giovanni Bonfanti,Atalanta,Las Palmas,,Spanish list
+transfer,,,Mateo Aćimović,Olimpija Ljubljana,Las Palmas,,Spanish list
+transfer,,,Andrés Rodríguez,Teruel,Las Palmas,,Spanish list
+return,,,Lorenzo Amatucci,Las Palmas,Fiorentina,,Spanish list
+return,,,Sergio Barcia,Las Palmas,Legia Warsaw,,Spanish list
+transfer,,,Sergio Barcia,Legia Warsaw,Braga,,Spanish list
+transfer,,,Nicolás Benedetti,Las Palmas,Deportivo Cali,,Spanish list
+return,,,Iker Bravo,Las Palmas,Udinese,,Spanish list
+transfer,,,Iker Bravo,Udinese,Watford,,Spanish list
+transfer,,,Mika Mármol,Las Palmas,Feyenoord,,Spanish list
+return,,,Estanis Pedrola,Las Palmas,Sampdoria,,Spanish list
+transfer,,,Estanis Pedrola,Sampdoria,Oviedo,,Spanish list
+released,,,Jonathan Viera,Las Palmas,Free agent,,Spanish list
+transfer,,,Yassine Kechta,Le Havre,Leganés,,Spanish list
+transfer,,,Zico Buurmeester,"AZ Alkmaar, previouly on loan at PEC Zwolle",Leganés,,Spanish list
+loan,,,Ismaël Gharbi,"Braga, previouly on loan at Augsburg",Leganés,,Spanish list
+loan,,,Álvaro Morata,Como,Leganés,,Spanish list
+transfer,,,Álvaro Tejero,Aris Thessaloniki,Leganés,,Spanish list
+transfer,,,Alfred Gøthler,Køge,Leganés,,Spanish list
+transfer,,,Seydouba Cissé,Leganés,Al-Kholood,,Spanish list
+transfer,,,Duk,Leganés,Atlas,,Spanish list
+transfer,,,Diego García,Leganés,Malmö,,Spanish list
+loan,,,David Hamansenya,Leganés,Slovan Liberec,,Spanish list
+transfer,,,Jorge Sáenz,Leganés,Sporting Gijón,,Spanish list
+loan,,,Adam Buksa,Udinese,Mallorca,,Spanish list
+loan,,,Álex Sala,Lecce,Mallorca,,Spanish list
+loan,,,Aboubaka Soumahoro,Hamburg,Mallorca,,Spanish list
+transfer,,,Takuma Asano,Mallorca,Sanfrecce Hiroshima,,Spanish list
+return,,,Marash Kumbulla,Mallorca,Roma,,Spanish list
+transfer,,,Cyle Larin,Mallorca,Southampton,,Spanish list
+transfer,,,Pablo Maffeo,Mallorca,Olympiacos,,Spanish list
+transfer,,,Omar Mascarell,Mallorca,Al-Khaleej,,Spanish list
+transfer,,,Vedat Muriqi,Mallorca,Fenerbahçe,,Spanish list
+transfer,,,Jan Virgili,Mallorca,Club Brugge,,Spanish list
+loan,,,Chris Ramos,Botafogo,Oviedo,,Spanish list
+transfer,,,Samu Rodríguez,Alcorcón,Oviedo,,Spanish list
+transfer,,,Víctor Mingo,Arenteiro,Oviedo,,Spanish list
+transfer,,,Alexandru Ișfan,Farul Constanța,Oviedo,,Spanish list
+released,,,Lucas Ahijado,Oviedo,Free agent,,Spanish list
+transfer,,,Rahim Alhassane,Oviedo,Bologna,,Spanish list
+transfer,,,Eric Bailly,Oviedo,Columbus Crew,,Spanish list
+return,,,Thiago Borbas,Oviedo,Red Bull Bragantino,,Spanish list
+loan,,,Thiago Borbas,Red Bull Bragantino,Atlético Mineiro,,Spanish list
+return,,,David Carmo,Oviedo,Nottingham Forest,,Spanish list
+loan,,,David Carmo,Nottingham Forest,Olympiacos,,Spanish list
+retired,,,Santi Cazorla,Oviedo,Retired,,Spanish list
+return,,,Santiago Colombatto,Oviedo,León,,Spanish list
+released,,,Leander Dendoncker,Oviedo,Free agent,,Spanish list
+released,,,Ovie Ejaria,Oviedo,Free agent,,Spanish list
+return,,,Thiago Fernández,Oviedo,Villarreal,,Spanish list
+return,,,Álex Forés,Oviedo,Villarreal,,Spanish list
+transfer,,,Haissem Hassan,Oviedo,Celtic,,Spanish list
+return,,,Javi López,Oviedo,Real Sociedad,,Spanish list
+return,,,Horațiu Moldovan,Oviedo,Atlético Madrid,,Spanish list
+loan,,,Horațiu Moldovan,Atlético Madrid,Eyüpspor,,Spanish list
+return,,,Federico Viñas,Oviedo,León,,Spanish list
+transfer,,,Javier Soroeta,Real Unión,Real Sociedad B,,Spanish list
+transfer,,,Egoitz Arana,Real Sociedad B,Sporting Gijón,,Spanish list
+released,,,Jakes Gorosabel,Real Sociedad B,Free agent,,Spanish list
+loan,,,Patrick Nuamah,Sassuolo,Sabadell,,Spanish list
+transfer,,,Pipa Ávila,Ludogorets Razgrad,Sabadell,,Spanish list
+transfer,,,Ángel Baena,Widzew Łódź,Sabadell,,Spanish list
+transfer,,,José Luis Catalá,Espanyol B,Sabadell,,Spanish list
+transfer,,,Miki Codina,Zamora,Sabadell,,Spanish list
+transfer,,,Pere Pons,AEK Larnaca,Sabadell,,Spanish list
+transfer,,,Yanis Rahmani,Cartagena,Sabadell,,Spanish list
+transfer,,,Alain Ribeiro,Pontevedra,Sabadell,,Spanish list
+transfer,,,Óscar Sanz,Gimnàstic Tarragona,Sabadell,,Spanish list
+released,,,Carlos García-Die,Sabadell,Free agent,,Spanish list
+retired,,,Rubén Martínez,Sabadell,Retired,,Spanish list
+transfer,,,Jordi Ortega,Sabadell,Olot,,Spanish list
+transfer,,,Nil Ruiz,Sabadell,Europa,,Spanish list
+released,,,Sergi Segura,Sabadell,Free agent,,Spanish list
+transfer,,,Albert Tolosa,Sabadell,Europa,,Spanish list
+loan,,,Antonio Casas,Venezia,Sporting Gijón,,Spanish list
+loan,,,Andrés Cuenca,Como,Sporting Gijón,,Spanish list
+transfer,,,Aimar Duñabeitia,Bilbao Athletic,Sporting Gijón,,Spanish list
+transfer,,,Hugo Guillamón,Hajduk Split,Sporting Gijón,,Spanish list
+transfer,,,Emanuel Gularte,Puebla,Sporting Gijón,,Spanish list
+transfer,,,Nikita Iosifov,Celje,Sporting Gijón,,Spanish list
+transfer,,,Alejo Sarco,Bayer Leverkusen,Sporting Gijón,,Spanish list
+transfer,,,Jesús Bernal,Sporting Gijón,Racing Ferrol,,Spanish list
+loan,,,Amadou Coundoul,Sporting Gijón,Académica Coimbra,,Spanish list
+return,,,Andrés Cuenca,Sporting Gijón,Barcelona Atlètic,,Spanish list
+transfer,,,Andrés Cuenca,Barcelona Atlètic,Como,,Spanish list
+released,,,Eric Curbelo,Sporting Gijón,Free agent,,Spanish list
+transfer,,,Christian Joel,Sporting Gijón,União Leiria,,Spanish list
+released,,,Brian Oliván,Sporting Gijón,Free agent,,Spanish list
+transfer,,,Lucas Perrin,Sporting Gijón,Nantes,,Spanish list
+released,,,Dani Queipo,Sporting Gijón,Free agent,,Spanish list
+return,,,Justin Smith,Sporting Gijón,Espanyol,,Spanish list
+released,,,Kevin Vázquez,Sporting Gijón,Free agent,,Spanish list
+transfer,,,Jesús Álvarez,Huesca,Tenerife,,Spanish list
+loan,,,Christian Gomis,Schalke 04,Tenerife,,Spanish list
+transfer,,,Anes Krdžalić,Sarajevo,Tenerife,,Spanish list
+transfer,,,Grant-Leon Ranos,Borussia Möenchengladbach,Tenerife,,Spanish list
+transfer,,,Víctor Moreno,Villarreal B,Tenerife,,Spanish list
+transfer,,,Martin Pečar,Bravo,Tenerife,,Spanish list
+transfer,,,Mauro Pittón,Unión de Santa Fe,Tenerife,,Spanish list
+loan,,,Neal Viereck,Jong Utrecht,Tenerife,,Spanish list
+released,,,Facundo Agüero,Tenerife,Free agent,,Spanish list
+loan,,,Josep Calavera,Tenerife,Ibiza,,Spanish list
+loan,,,Jeremy Jorge,Tenerife,Rayo Majadahonda,,Spanish list
+released,,,Maikel Mesa,Tenerife,Free agent,,Spanish list
+released,,,Javi Pérez,Tenerife,Free agent,,Spanish list
+retired,,,Aitor Sanz,Tenerife,Retired,,Spanish list
+released,,,Gastón Valles,Tenerife,Free agent,,Spanish list
+transfer,,,Álex Balboa,Lugo,Valladolid,,Spanish list
+transfer,,,Víctor Barberá,Barcelona Atlètic,Valladolid,,Spanish list
+transfer,,,Luis Chacón,Deportivo A Coruña,Valladolid,,Spanish list
+transfer,,,Kaj de Rooij,PEC Zwolle,Valladolid,,Spanish list
+loan,,,Víctor Fernandez Jr.,Valencia Mestalla,Valladolid,,Spanish list
+transfer,,,Thiago Ojeda,Villarreal,Valladolid,,Spanish list
+transfer,,,Dani Pérez,Betis Deportivo,Valladolid,,Spanish list
+transfer,,,Robin van Duiven,Jong PSV,Valladolid,,Spanish list
+transfer,,,Stipe Biuk,Valladolid,Widzew Łódź,,Spanish list
+transfer,,,Chuki,Valladolid,Werder Bremen,,Spanish list
+transfer,,,Vegard Erlien,Valladolid,Tromsø,,Spanish list
+return,,,Peter Federico,Valladolid,Getafe,,Spanish list
+transfer,,,Peter Federico,Getafe,Górnik Zabrze,,Spanish list
+return,,,Guilherme Fernandes,Valladolid,Betis,,Spanish list
+transfer,,,Mario Maroto,Valladolid,UD Logroñés,,Spanish list
+transfer,,,Víctor Meseguer,Valladolid,Wisła Kraków,,Spanish list
+transfer,,,Clément Michelin,Valladolid,Basel,,Spanish list
+transfer,,,Nathaniel Brown,Eintracht Frankfurt,Bayern Munich,,German list
+transfer,,,Ismael Saibari,PSV,Bayern Munich,,German list
+transfer,,,Bara Sapoko Ndiaye,Gambinos Stars,Bayern Munich,,German list
+transfer,,,Noël Aséko Nkili,Hannover 96,Bayern Munich,,German list
+transfer,,,Leon Goretzka,Bayern Munich,Aston Villa,,German list
+return,,,Nicolas Jackson,Bayern Munich,Chelsea,,German list
+released,,,Raphaël Guerreiro,Bayern Munich,Free agent,,German list
+loan,,,Felipe Chávez,Bayern Munich,1. FC Magdeburg,,German list
+loan,,,Arijon Ibrahimović,Bayern Munich,FC Augsburg,,German list
+transfer,,,Noël Aséko Nkili,Bayern Munich,Eintracht Frankfurt,,German list
+transfer,,,Daniel Peretz,Bayern Munich,Southampton,,German list
+transfer,,,Alexander Nübel,Bayern Munich,Beşiktaş,,German list
+transfer,,,Noël Aséko Nkili,Bayern Munich,Hannover 96,,German list
+transfer,,,João Palhinha,Bayern Munich,Benfica,,German list
+transfer,,,Lovro Zvonarek,Bayern Munich,Estrela da Amadora,,German list
+transfer,,,Maurice Krattenmacher,Bayern Munich,SV Elversberg,,German list
+transfer,,,Jonah Kusi-Asare,Bayern Munich,Fulham,,German list
+transfer,,,Armindo Sieb,Bayern Munich,Los Angeles FC,,German list
+loan,,,Ethan Nwaneri,Arsenal,Borussia Dortmund,,German list
+transfer,,,Konstantinos Karetsas,Genk,Borussia Dortmund,,German list
+transfer,,,Joane Gadou,Red Bull Salzburg,Borussia Dortmund,,German list
+transfer,,,Joey Veerman,PSV,Borussia Dortmund,,German list
+transfer,,,Justin Lerma,Independiente del Valle,Borussia Dortmund,,German list
+transfer,,,Kauã Prates,Cruzeiro,Borussia Dortmund,,German list
+transfer,,,Giannis Konstantelias,PAOK,Borussia Dortmund,,German list
+loan,,,Yan Couto,Borussia Dortmund,Como,,German list
+transfer,,,Salih Özcan,Borussia Dortmund,Beşiktaş,,German list
+transfer,,,Julian Brandt,Borussia Dortmund,Ajax,,German list
+transfer,,,Niklas Süle,Borussia Dortmund,SV Tiefenbach,,German list
+loan,,,Almugera Kabar,Borussia Dortmund,NEC,,German list
+loan,,,Diant Ramaj,Borussia Dortmund,Copenhagen,,German list
+transfer,,,Kjell Wätjen,Borussia Dortmund,Midtjylland,,German list
+transfer,,,Cole Campbell,Borussia Dortmund,SV Elversberg,,German list
+transfer,,,Julien Duranville,Borussia Dortmund,Lyon,,German list
+transfer,,,Maxime Estève,Burnley,RB Leipzig,,German list
+transfer,,,Marc Guiu,Chelsea,RB Leipzig,,German list
+transfer,,,Rocco Reitz,Borussia Mönchengladbach,RB Leipzig,,German list
+loan,,,Neil El Aynaoui,Roma,RB Leipzig,,German list
+loan,,,Christopher Nkunku,AC Milan,RB Leipzig,,German list
+transfer,,,Ota Yamamoto,RB Omiya Ardija,RB Leipzig,,German list
+loan,,,El Chadaille Bitshiabu,RB Leipzig,Galatasaray,,German list
+loan,,,Conrad Harder,RB Leipzig,Strasbourg,,German list
+return,,,Kosta Nedeljković,RB Leipzig,Aston Villa,,German list
+transfer,,,Ayodele Thomas,RB Leipzig,NEC,,German list
+transfer,,,Xaver Schlager,RB Leipzig,Nottingham Forest,,German list
+loan,,,Ota Yamamoto,RB Leipzig,RB Omiya Ardija,,German list
+loan,,,Timo Schlieck,RB Leipzig,SC Verl,,German list
+loan,,,Lutsharel Geertruida,RB Leipzig,PSV,,German list
+loan,,,Joyeux Masanka Bungi,RB Leipzig,VfB Stuttgart II,,German list
+loan,,,Eljif Elmas,RB Leipzig,Atalanta,,German list
+loan,,,Arthur Vermeeren,RB Leipzig,Royal Antwerp,,German list
+transfer,,,Frederik Jäkel,RB Leipzig,Eintracht Braunschweig,,German list
+transfer,,,Jonathan Norbye,RB Leipzig,Haugesund,,German list
+transfer,,,Loïs Openda,RB Leipzig,Juventus,,German list
+transfer,,,Robert Ramšak,RB Leipzig,Aluminij,,German list
+transfer,,,Bilal El Khannouss,Leicester City,VfB Stuttgart,,German list
+transfer,,,Dženan Pejčinović,VfL Wolfsburg,VfB Stuttgart,,German list
+transfer,,,Grischa Prömel,TSG Hoffenheim,VfB Stuttgart,,German list
+transfer,,,Marius Funk,Energie Cottbus,VfB Stuttgart,,German list
+transfer,,,Leo Sauer,Feyenoord,VfB Stuttgart,,German list
+released,,,Pascal Stenzel,VfB Stuttgart,Free agent,,German list
+loan,,,Noah Darvich,VfB Stuttgart,SV Elversberg,,German list
+loan,,,Jeremy Arévalo,VfB Stuttgart,Estrela da Amadora,,German list
+loan,,,Badredine Bouanani,VfB Stuttgart,Rangers,,German list
+transfer,,,Chema Andrés,VfB Stuttgart,Brighton & Hove Albion,,German list
+return,,,Alexander Nübel,VfB Stuttgart,Bayern Munich,,German list
+loan,,,Mirza Catovic,VfB Stuttgart,Barcelona Atlètic,,German list
+loan,,,Florian Hellstern,VfB Stuttgart,Greuther Fürth,,German list
+transfer,,,Lazar Jovanović,VfB Stuttgart,Udinese,,German list
+loan,,,Laurin Ulrich,VfB Stuttgart,SC Paderborn,,German list
+transfer,,,Jovan Milošević,VfB Stuttgart,Braga,,German list
+transfer,,,Sean Dulic,1860 Munich,TSG Hoffenheim,,German list
+transfer,,,Patrick Wimmer,VfL Wolfsburg,TSG Hoffenheim,,German list
+transfer,,,Adam Daghim,Red Bull Salzburg,TSG Hoffenheim,,German list
+transfer,,,Nathan De Cat,Anderlecht,TSG Hoffenheim,,German list
+transfer,,,Cajetan Lenz,VfL Bochum,TSG Hoffenheim,,German list
+transfer,,,Mats Rots,Twente,TSG Hoffenheim,,German list
+transfer,,,Alessandro Vogt,St. Gallen,TSG Hoffenheim,,German list
+released,,,Ihlas Bebou,TSG Hoffenheim,Free agent,,German list
+transfer,,,Muhammed Damar,TSG Hoffenheim,VfL Wolfsburg,,German list
+return,,,Cole Campbell,TSG Hoffenheim,Borussia Dortmund,,German list
+transfer,,,Kevin Akpoguma,TSG Hoffenheim,Frosinone,,German list
+transfer,,,Bazoumana Touré,TSG Hoffenheim,Newcastle United,,German list
+loan,,,Yannick Eduardo,TSG Hoffenheim,ADO Den Haag,,German list
+loan,,,Deniz Zeitler,TSG Hoffenheim,SC Paderborn,,German list
+loan,,,Kelven Frees,TSG Hoffenheim,1. FC Kaiserslautern,,German list
+transfer,,,Luka Đurić,TSG Hoffenheim,SC Paderborn,,German list
+transfer,,,Luca Erlein,TSG Hoffenheim,Bayer Leverkusen,,German list
+loan,,,Alessandro Vogt,TSG Hoffenheim,1. FC Heidenheim,,German list
+loan,,,Nahuel Noll,TSG Hoffenheim,SC Paderborn,,German list
+loan,,,Arthur Chaves,TSG Hoffenheim,Botafogo,,German list
+loan,,,Umut Tohumcu,TSG Hoffenheim,Red Bull Salzburg,,German list
+loan,,,Gift Orban,TSG Hoffenheim,Amedspor,,German list
+loan,,,Precious Benjamin,TSG Hoffenheim,Austria Lustenau,,German list
+loan,,,Erencan Yardımcı,TSG Hoffenheim,1. FC Kaiserslautern,,German list
+transfer,,,Stanley Nsoki,TSG Hoffenheim,Union Berlin,,German list
+transfer,,,Attila Szalai,TSG Hoffenheim,Pogoń Szczecin,,German list
+transfer,,,Hennes Behrens,TSG Hoffenheim,FC Augsburg,,German list
+transfer,,,Dennis Geiger,TSG Hoffenheim,NEC,,German list
+transfer,,,Haris Tabaković,TSG Hoffenheim,Red Bull Salzburg,,German list
+transfer,,,Facundo Medina,Marseille,Bayer Leverkusen,,German list
+transfer,,,Miguel Gutiérrez,Napoli,Bayer Leverkusen,,German list
+transfer,,,Afonso Moreira,Lyon,Bayer Leverkusen,,German list
+transfer,,,Kennet Eichhorn,Hertha BSC,Bayer Leverkusen,,German list
+transfer,,,Moussa Diaby,Al-Ittihad,Bayer Leverkusen,,German list
+transfer,,,Guéla Doué,Strasbourg,Bayer Leverkusen,,German list
+transfer,,,Kerim Alajbegović,Red Bull Salzburg,Bayer Leverkusen,,German list
+transfer,,,Ndjicoura Bomba,CS Bamako,Bayer Leverkusen,,German list
+loan,,,Arthur,Bayer Leverkusen,Werder Bremen,,German list
+return,,,Jonas Omlin,Bayer Leverkusen,Borussia Mönchengladbach,,German list
+loan,,,Ernest Poku,Bayer Leverkusen,Beşiktaş,,German list
+transfer,,,Álex Grimaldo,Bayer Leverkusen,Atlético Madrid,,German list
+transfer,,,Exequiel Palacios,Bayer Leverkusen,Ipswich Town,,German list
+transfer,,,Kerim Alajbegović,Bayer Leverkusen,Juventus,,German list
+loan,,,Issa Traoré,Bayer Leverkusen,Trenčín,,German list
+loan,,,Luca Erlein,Bayer Leverkusen,Energie Cottbus,,German list
+loan,,,Noah Mbamba,Bayer Leverkusen,Lorient,,German list
+loan,,,Francis Onyeka,Bayer Leverkusen,SV Elversberg,,German list
+loan,,,Farid Alfa-Ruprecht,Bayer Leverkusen,Hertha BSC,,German list
+transfer,,,Matěj Kovář,Bayer Leverkusen,PSV,,German list
+transfer,,,Piero Hincapié,Bayer Leverkusen,Arsenal,,German list
+transfer,,,Mio Backhaus,Werder Bremen,SC Freiburg,,German list
+transfer,,,Yannik Engelhardt,Como,SC Freiburg,,German list
+transfer,,,Rihito Yamamoto,Sint-Truiden,SC Freiburg,,German list
+transfer,,,Keisuke Gotō,Anderlecht,SC Freiburg,,German list
+transfer,,,Louey Ben Farhat,Karlsruher SC,SC Freiburg,,German list
+loan,,,Noah Atubolu,SC Freiburg,Eintracht Frankfurt,,German list
+transfer,,,Daniel-Kofi Kyereh,SC Freiburg,VfL Osnabrück,,German list
+released,,,Maximilian Philipp,SC Freiburg,Free agent,,German list
+loan,,,Karl Steinmann,SC Freiburg,Hannover 96,,German list
+transfer,,,Johan Manzambi,SC Freiburg,Aston Villa,,German list
+loan,,,Louey Ben Farhat,SC Freiburg,Karlsruher SC,,German list
+loan,,,Eren Dinkçi,SC Freiburg,Werder Bremen,,German list
+transfer,,,Merlin Röhl,SC Freiburg,Everton,,German list
+transfer,,,Robert Wagner,SC Freiburg,Dynamo Dresden,,German list
+transfer,,,Noah Weißhaupt,SC Freiburg,Darmstadt 98,,German list
+transfer,,,Junior Adamu,SC Freiburg,Schalke 04,,German list
+transfer,,,Lilian Brassier,Rennes,Eintracht Frankfurt,,German list
+transfer,,,Otávio,Estrela da Amadora,Eintracht Frankfurt,,German list
+transfer,,,Raphael Onyedika,Club Brugge,Eintracht Frankfurt,,German list
+transfer,,,Malik Pimpong,Midtjylland youth,Eintracht Frankfurt,,German list
+transfer,,,Noel Futkeu,Greuther Fürth,Eintracht Frankfurt,,German list
+loan,,,Arthur Theate,Eintracht Frankfurt,Bologna,,German list
+transfer,,,Aurèle Amenda,Eintracht Frankfurt,Coventry City,,German list
+transfer,,,Rasmus Kristensen,Eintracht Frankfurt,Midtjylland,,German list
+transfer,,,Ellyes Skhiri,Eintracht Frankfurt,1. FC Köln,,German list
+loan,,,Hugo Larsson,Eintracht Frankfurt,Fulham,,German list
+transfer,,,Mahmoud Dahoud,Eintracht Frankfurt,Dubai United,,German list
+loan,,,Jean-Mattéo Bahoya,Eintracht Frankfurt,Leeds United,,German list
+transfer,,,Michael Zetterer,Eintracht Frankfurt,Leeds United,,German list
+return,,,Arnaud Kalimuendo,Eintracht Frankfurt,Nottingham Forest,,German list
+transfer,,,Michy Batshuayi,Eintracht Frankfurt,Abha,,German list
+loan,,,Noel Futkeu,Eintracht Frankfurt,SV Elversberg,,German list
+loan,,,Elye Wahi,Eintracht Frankfurt,Nice,,German list
+loan,,,Niels Nkounkou,Eintracht Frankfurt,Nice,,German list
+transfer,,,Simon Simoni,Eintracht Frankfurt,Luzern,,German list
+transfer,,,Hrvoje Smolčić,Eintracht Frankfurt,Çorum,,German list
+transfer,,,Junior Dina Ebimbe,Eintracht Frankfurt,Schalke 04,,German list
+transfer,,,Calvin Brackelmann,SC Paderborn,FC Augsburg,,German list
+transfer,,,Seol Young-woo,Red Star Belgrade,FC Augsburg,,German list
+transfer,,,Sima Suso,Fortuna Düsseldorf,FC Augsburg,,German list
+transfer,,,Rodrigo Ribeiro,Sporting CP,FC Augsburg,,German list
+transfer,,,Faik Sakar,RB Leipzig youth,FC Augsburg,,German list
+loan,,,Juma Bah,Manchester City,FC Augsburg,,German list
+transfer,,,Michael Gregoritsch,Brøndby,FC Augsburg,,German list
+transfer,,,Tom Wisbereit,Union Berlin youth,FC Augsburg,,German list
+transfer,,,Mads Pedersen,FC Augsburg,Hertha BSC,,German list
+transfer,,,Elvis Rexhbeçaj,FC Augsburg,VfL Wolfsburg,,German list
+return,,,Ismaël Gharbi,FC Augsburg,Braga,,German list
+transfer,,,Dimitris Giannoulis,FC Augsburg,PAOK,,German list
+transfer,,,Cédric Zesiger,FC Augsburg,Young Boys,,German list
+loan,,,Kristijan Jakić,FC Augsburg,PAOK,,German list
+transfer,,,Thomas Kastanaras,FC Augsburg,Würzburger Kickers,,German list
+transfer,,,Daniel Klein,FC Augsburg,Aberdeen,,German list
+transfer,,,Keven Schlotterbeck,FC Augsburg,Southampton,,German list
+return,,,Arthur Chaves,FC Augsburg,TSG Hoffenheim,,German list
+transfer,,,Felix Meiser,FC Augsburg,Fortuna Düsseldorf,,German list
+transfer,,,Oliver Sorg,FC Augsburg,SV Ried,,German list
+loan,,,Marcel Łubik,FC Augsburg,Wisła Kraków,,German list
+loan,,,Yusuf Kabadayı,FC Augsburg,Rijeka,,German list
+loan,,,Kyliane Dong,FC Augsburg,Bolton Wanderers,,German list
+loan,,,Elias Saad,FC Augsburg,Nashville SC,,German list
+loan,,,Nathanaël Mbuku,FC Augsburg,Sint-Truiden,,German list
+loan,,,Aiman Dardari,FC Augsburg,Rot-Weiss Essen,,German list
+transfer,,,Maximilian Bauer,FC Augsburg,Arminia Bielefeld,,German list
+transfer,,,David Čolina,FC Augsburg,Zagłębie Lubin,,German list
+transfer,,,Henri Koudossou,FC Augsburg,Arminia Bielefeld,,German list
+transfer,,,Alexander Schwolow,Heart of Midlothian,Mainz 05,,German list
+transfer,,,Fabio Gruber,1. FC Nürnberg,Mainz 05,,German list
+transfer,,,Stefan Posch,Como,Mainz 05,,German list
+transfer,,,Eric Martel,1. FC Köln,Mainz 05,,German list
+transfer,,,Ransford Königsdörffer,Hamburger SV,Mainz 05,,German list
+transfer,,,Sheraldo Becker,Osasuna,Mainz 05,,German list
+transfer,,,Sōta Kawasaki,Kyoto Sanga,Mainz 05,,German list
+loan,,,Lasse Rieß,Mainz 05,Fortuna Düsseldorf,,German list
+released,,,Maxim Leitsch,Mainz 05,Free agent,,German list
+return,,,Armindo Sieb,Mainz 05,Bayern Munich,,German list
+loan,,,William Bøving,Mainz 05,1. FC Nürnberg,,German list
+loan,,,Kasey Bos,Mainz 05,Excelsior,,German list
+transfer,,,Nikolas Veratschnig,Mainz 05,Red Bull Salzburg,,German list
+transfer,,,Andreas Hanche-Olsen,Mainz 05,Chicago Fire,,German list
+transfer,,,Niklas Tauer,Mainz 05,TSV Havelse,,German list
+transfer,,,Daniel Batz,Mainz 05,Borussia Mönchengladbach,,German list
+loan,,,Daniel Gleiber,Mainz 05,1. FC Saarbrücken,,German list
+loan,,,Nelson Weiper,Mainz 05,Sturm Graz,,German list
+transfer,,,Maxim Dal,Mainz 05,Greuther Fürth,,German list
+loan,,,Hong Hyun-seok,Mainz 05,Midtjylland,,German list
+transfer,,,Tom Krauß,Mainz 05,1. FC Köln,,German list
+released,,,Marco Richter,Mainz 05,Free agent,,German list
+transfer,,,Ben Bobzien,Mainz 05,Dynamo Dresden,,German list
+transfer,,,Arnaud Nordin,Mainz 05,Rennes,,German list
+transfer,,,Felix Uduokhai,Beşiktaş,Union Berlin,,German list
+transfer,,,Zeno Van Den Bosch,Royal Antwerp,Union Berlin,,German list
+transfer,,,Marvin Friedrich,Borussia Mönchengladbach,Union Berlin,,German list
+transfer,,,Michel Aebischer,Pisa,Union Berlin,,German list
+loan,,,Emmanuel Latte Lath,Atlanta United,Union Berlin,,German list
+transfer,,,Kastriot Imeri,Young Boys,Union Berlin,,German list
+released,,,Diogo Leite,Union Berlin,Free agent,,German list
+transfer,,,Danilho Doekhi,Union Berlin,Lazio,,German list
+transfer,,,Ilyas Ansah,Union Berlin,Hull City,,German list
+transfer,,,David Preu,Union Berlin,VfB Stuttgart II,,German list
+loan,,,Dmytro Bohdanov,Union Berlin,Energie Cottbus,,German list
+transfer,,,Alex Král,Union Berlin,Copenhagen,,German list
+loan,,,Tim Blaszczak,Union Berlin,FSV Luckenwalde,,German list
+loan,,,Leon Prosche,Union Berlin,Erzgebirge Aue,,German list
+loan,,,Oluwaseun Ogbemudia,Union Berlin,Waldhof Mannheim,,German list
+transfer,,,Yannic Stein,Union Berlin,Hansa Rostock,,German list
+transfer,,,László Bénes,Union Berlin,Gent,,German list
+transfer,,,Chris Bedia,Union Berlin,Al-Nasr,,German list
+transfer,,,Isac Lidberg,Darmstadt 98,Borussia Mönchengladbach,,German list
+transfer,,,Jan Leszczyński,Legia Warsaw,Borussia Mönchengladbach,,German list
+transfer,,,Kō Itakura,Ajax,Borussia Mönchengladbach,,German list
+transfer,,,Enzo Leopold,Hannover 96,Borussia Mönchengladbach,,German list
+loan,,,Daiki Hashioka,Slavia Prague,Borussia Mönchengladbach,,German list
+loan,,,Nicolas Kühn,Como,Borussia Mönchengladbach,,German list
+transfer,,,David Herold,Karlsruher SC,Borussia Mönchengladbach,,German list
+transfer,,,Yukhym Konoplya,Shakhtar Donetsk,Borussia Mönchengladbach,,German list
+transfer,,,Hugo Bolin,Malmö,Borussia Mönchengladbach,,German list
+transfer,,,Zento Uno,Shimizu S-Pulse,Borussia Mönchengladbach,,German list
+return,,,Yannik Engelhardt,Borussia Mönchengladbach,Como,,German list
+return,,,Alejo Sarco,Borussia Mönchengladbach,Bayer Leverkusen,,German list
+transfer,,,Giovanni Reyna,Borussia Mönchengladbach,Strasbourg,,German list
+return,,,Kōta Takai,Borussia Mönchengladbach,Tottenham Hotspur,,German list
+return,,,Haris Tabaković,Borussia Mönchengladbach,TSG Hoffenheim,,German list
+transfer,,,Nathan Ngoumou,Borussia Mönchengladbach,Nice,,German list
+transfer,,,Nico Elvedi,Borussia Mönchengladbach,Leeds United,,German list
+loan,,,Niklas Swider,Borussia Mönchengladbach,Viktoria Köln,,German list
+loan,,,Jan Urbich,Borussia Mönchengladbach,Eintracht Braunschweig,,German list
+loan,,,Tiago Pereira Cardoso,Borussia Mönchengladbach,RAAL La Louvière,,German list
+loan,,,Tomáš Čvančara,Borussia Mönchengladbach,Hradec Králové,,German list
+transfer,,,Jonas Omlin,Borussia Mönchengladbach,Basel,,German list
+transfer,,,Noah Pesch,Borussia Mönchengladbach,Rot-Weiss Essen,,German list
+transfer,,,Shiō Fukuda,Borussia Mönchengladbach,Karlsruher SC,,German list
+transfer,,,Grant-Leon Ranos,Borussia Mönchengladbach,Tenerife,,German list
+loan,,,David Møller Wolfe,Wolverhampton Wanderers,Hamburger SV,,German list
+transfer,,,Bilal Nadir,Marseille,Hamburger SV,,German list
+transfer,,,Martin Adeline,Troyes,Hamburger SV,,German list
+transfer,,,Zakaria El Ouahdi,Genk,Hamburger SV,,German list
+transfer,,,Terem Moffi,Nice,Hamburger SV,,German list
+transfer,,,Albert Grønbæk,Rennes,Hamburger SV,,German list
+transfer,,,Fábio Vieira,Arsenal,Hamburger SV,,German list
+transfer,,,Kofi Amoako,Dynamo Dresden,Hamburger SV,,German list
+transfer,,,Patson Daka,Leicester City,Hamburger SV,,German list
+loan,,,Sebastiaan Bornauw,Leeds United,Hamburger SV,,German list
+transfer,,,William Mikelbrencis,Hamburger SV,Darmstadt 98,,German list
+loan,,,Noah Katterbach,Hamburger SV,Eintracht Braunschweig,,German list
+transfer,,,Jean-Luc Dompé,Hamburger SV,Konyaspor,,German list
+loan,,,Daniel Elfadli,Hamburger SV,LASK,,German list
+transfer,,,Robert Glatzel,Hamburger SV,VfL Wolfsburg,,German list
+loan,,,Rayan Philippe,Hamburger SV,SC Paderborn,,German list
+return,,,Giorgi Gocholeishvili,Hamburger SV,Shakhtar Donetsk,,German list
+return,,,Damion Downs,Hamburger SV,Southampton,,German list
+return,,,Philip Otele,Hamburger SV,Basel,,German list
+loan,,,Hannes Hermann,Hamburger SV,Jahn Regensburg,,German list
+return,,,Luka Vušković,Hamburger SV,Tottenham Hotspur,,German list
+transfer,,,Fábio Baldé,Hamburger SV,Strasbourg,,German list
+loan,,,Aboubaka Soumahoro,Hamburger SV,Mallorca,,German list
+transfer,,,Łukasz Poręba,Hamburger SV,SV Elversberg,,German list
+transfer,,,Emir Sahiti,Hamburger SV,Hannover 96,,German list
+loan,,,Borna Sosa,Crystal Palace,1. FC Köln,,German list
+transfer,,,Reigan Heskey,Manchester City,1. FC Köln,,German list
+transfer,,,Gideon Mensah,Auxerre,1. FC Köln,,German list
+transfer,,,Jakub Kamiński,VfL Wolfsburg,1. FC Köln,,German list
+transfer,,,Martin James,Paris Saint-Germain,1. FC Köln,,German list
+transfer,,,Jahmai Simpson-Pusey,Manchester City,1. FC Köln,,German list
+transfer,,,Paul Okon-Engstler,Sydney FC,1. FC Köln,,German list
+transfer,,,Luka Lochoshvili,1. FC Nürnberg,1. FC Köln,,German list
+loan,,,Thijs Dallinga,Bologna,1. FC Köln,,German list
+transfer,,,Gil Neves,Benfica B,1. FC Köln,,German list
+loan,,,Mikey Moore,Tottenham Hotspur,1. FC Köln,,German list
+transfer,,,Dominique Heintz,1. FC Köln,Fortuna Düsseldorf,,German list
+transfer,,,Denis Huseinbašić,1. FC Köln,Braga,,German list
+retired,,,Florian Kainz,1. FC Köln,Retired,,German list
+released,,,Luca Kilian,1. FC Köln,Free agent,,German list
+transfer,,,Jakub Kamiński,1. FC Köln,Benfica,,German list
+return,,,Felipe Chávez,1. FC Köln,Bayern Munich,,German list
+return,,,Kristoffer Lund,1. FC Köln,Palermo,,German list
+loan,,,Youssoupha Niang,1. FC Köln,FC St. Pauli,,German list
+return,,,Cenk Özkacar,1. FC Köln,Valencia,,German list
+loan,,,Fynn Schenten,1. FC Köln,Roda JC Kerkrade,,German list
+loan,,,Julian Pauli,1. FC Köln,OB,,German list
+loan,,,Jusuf Gazibegović,1. FC Köln,Widzew Łódź,,German list
+loan,,,Elias Bakatukanda,1. FC Köln,VfL Osnabrück,,German list
+transfer,,,Rasmus Carstensen,1. FC Köln,AGF,,German list
+transfer,,,Emin Kujović,1. FC Köln,Zalaegerszeg,,German list
+transfer,,,Karl Hein,Arsenal,Werder Bremen,,German list
+transfer,,,Oskar Wójcik,Cracovia,Werder Bremen,,German list
+loan,,,Niclas Füllkrug,West Ham United,Werder Bremen,,German list
+transfer,,,Ludovit Reis,Club Brugge,Werder Bremen,,German list
+loan,,,Moussa N'Diaye,Anderlecht,Werder Bremen,,German list
+transfer,,,Kenny Quetant,Le Havre,Werder Bremen,,German list
+transfer,,,Dariusz Stalmach,1. FC Magdeburg,Werder Bremen,,German list
+transfer,,,Cedric Itten,Fortuna Düsseldorf,Werder Bremen,,German list
+transfer,,,Alexander Schlager,Red Bull Salzburg,Werder Bremen,,German list
+transfer,,,Darwin Soylu,VfL Wolfsburg youth,Werder Bremen,,German list
+loan,,,Youri Regeer,Ajax,Werder Bremen,,German list
+loan,,,Samuel Mbangula,Werder Bremen,Bologna,,German list
+transfer,,,Leonardo Bittencourt,Werder Bremen,Energie Cottbus,,German list
+return,,,Cameron Puertas,Werder Bremen,Al-Qadsiah,,German list
+return,,,Jovan Milošević,Werder Bremen,VfB Stuttgart,,German list
+transfer,,,Romano Schmid,Werder Bremen,Frosinone,,German list
+loan,,,Julián Malatini,Werder Bremen,FC Cincinnati,,German list
+return,,,Isaac Schmidt,Werder Bremen,Leeds United,,German list
+loan,,,Patrice Čović,Werder Bremen,Dynamo Dresden,,German list
+transfer,,,Karim Coulibaly,Werder Bremen,Strasbourg,,German list
+loan,,,Wesley Adeh,Werder Bremen,Preußen Münster,,German list
+return,,,Maximilian Wöber,Werder Bremen,Leeds United,,German list
+return,,,Victor Boniface,Werder Bremen,Bayer Leverkusen,,German list
+loan,,,Leon Opitz,Werder Bremen,VfL Osnabrück,,German list
+loan,,,Hwang Hee-chan,Wolverhampton Wanderers,Schalke 04,,German list
+loan,,,Robin Gosens,Fiorentina,Schalke 04,,German list
+transfer,,,Satoshi Tanaka,Fortuna Düsseldorf,Schalke 04,,German list
+transfer,,,Kevin Müller,1. FC Heidenheim,Schalke 04,,German list
+transfer,,,Maximilian Wöber,Leeds United,Schalke 04,,German list
+loan,,,Felipe Sánchez,Schalke 04,Santos Laguna,,German list
+loan,,,Dylan Leonard,Schalke 04,Alemannia Aachen,,German list
+return,,,Moussa N'Diaye,Schalke 04,Anderlecht,,German list
+released,,,Christopher Antwi-Adjei,Schalke 04,Free agent,,German list
+loan,,,Luca Podlech,Schalke 04,Aalesund,,German list
+loan,,,Mika Wallentowitz,Schalke 04,Greuther Fürth,,German list
+loan,,,Peter Remmert,Schalke 04,MSV Duisburg,,German list
+released,,,Henning Matriciani,Schalke 04,Free agent,,German list
+loan,,,Martin Wasinski,Schalke 04,Almere City,,German list
+transfer,,,Ilyes Hamache,Schalke 04,Cambuur,,German list
+transfer,,,Elias Etringer,SC Freiburg youth,SV Elversberg,,German list
+transfer,,,Luca Sirch,1. FC Kaiserslautern,SV Elversberg,,German list
+released,,,Manuel Feil,SV Elversberg,Free agent,,German list
+return,,,Bambasé Conté,SV Elversberg,TSG Hoffenheim,,German list
+return,,,Jarzinho Malanga,SV Elversberg,VfB Stuttgart,,German list
+transfer,,,Mohammad Mahmoud,SV Elversberg,Austria Salzburg,,German list
+return,,,Immanuel Pherai,SV Elversberg,Hamburger SV,,German list
+transfer,,,Carlo Sickinger,SV Elversberg,Darmstadt 98,,German list
+transfer,,,Daniel Pantschenko,SV Elversberg,Rot-Weiß Koblenz,,German list
+retired,,,Patryk Dragon,SV Elversberg,Retired,,German list
+loan,,,Jason Çeka,SV Elversberg,Cambuur,,German list
+transfer,,,Filimon Gerezgiher,SV Elversberg,Fortuna Düsseldorf,,German list
+transfer,,,Nyamekye Awortwie-Grant,Energie Cottbus,SC Paderborn,,German list
+transfer,,,Tom Baack,1. FC Nürnberg,SC Paderborn,,German list
+transfer,,,Oliver Batista Meier,Preußen Münster,SC Paderborn,,German list
+transfer,,,Marvin Pieringer,1. FC Heidenheim,SC Paderborn,,German list
+transfer,,,Albert Millgramm,1. FC Magdeburg II,SC Paderborn,,German list
+transfer,,,Jano ter Horst,Preußen Münster,SC Paderborn,,German list
+transfer,,,Clemens Lippmann,1860 Munich,SC Paderborn,,German list
+transfer,,,Gabriel Vidović,Dinamo Zagreb,SC Paderborn,,German list
+transfer,,,Timur Gayret,SC Verl,SC Paderborn,,German list
+transfer,,,Filip Bilbija,SC Paderborn,Derby County,,German list
+transfer,,,David Kinsombi,SC Paderborn,Würzburger Kickers,,German list
+transfer,,,Nick Bätzner,SC Paderborn,Rot-Weiss Essen,,German list
+loan,,,Kennedy Okpala,SC Paderborn,Dynamo Dresden,,German list
+transfer,,,Mika Baur,SC Paderborn,Celtic,,German list
+transfer,,,Lucas Copado,SC Paderborn,Energie Cottbus,,German list
+loan,,,Bennit Bröger,SC Paderborn,Fortuna Köln,,German list
+return,,,Dennis Seimen,SC Paderborn,VfB Stuttgart,,German list
+loan,,,Martin Ens,SC Paderborn,MSV Duisburg,,German list
+loan,,,Marco Wörner,SC Paderborn,Jahn Regensburg,,German list
+transfer,,,Timon Wellenreuther,Feyenoord,VfL Wolfsburg,,German list
+transfer,,,Hauke Wahl,FC St. Pauli,VfL Wolfsburg,,German list
+transfer,,,Fraser Hornby,Darmstadt 98,VfL Wolfsburg,,German list
+transfer,,,Fabian Reese,Hertha BSC,VfL Wolfsburg,,German list
+transfer,,,Alexander Bernhardsson,Holstein Kiel,VfL Wolfsburg,,German list
+transfer,,,Alessio Besio,SC Freiburg II,VfL Wolfsburg,,German list
+loan,,,Kamil Grabara,VfL Wolfsburg,Juventus,,German list
+transfer,,,Denis Vavro,VfL Wolfsburg,Viktoria Plzeň,,German list
+transfer,,,Konstantinos Koulierakis,VfL Wolfsburg,Roma,,German list
+return,,,Jeanuël Belocian,VfL Wolfsburg,Bayer Leverkusen,,German list
+loan,,,Mohamed Amoura,VfL Wolfsburg,Nice,,German list
+transfer,,,Lovro Majer,VfL Wolfsburg,AEK Athens,,German list
+return,,,Adam Daghim,VfL Wolfsburg,Red Bull Salzburg,,German list
+return,,,Jenson Seelt,VfL Wolfsburg,Sunderland,,German list
+transfer,,,Moritz Jenz,VfL Wolfsburg,Young Boys,,German list
+return,,,Jesper Lindstrøm,VfL Wolfsburg,Napoli,,German list
+transfer,,,Jonas Wind,VfL Wolfsburg,Braga,,German list
+released,,,Christian Eriksen,VfL Wolfsburg,Free agent,,German list
+transfer,,,Marius Müller,VfL Wolfsburg,Aberdeen,,German list
+loan,,,Till Neininger,VfL Wolfsburg,Dynamo Dresden,,German list
+transfer,,,Kevin Paredes,VfL Wolfsburg,Utrecht,,German list
+transfer,,,Jan Bürger,VfL Wolfsburg,PEC Zwolle,,German list
+loan,,,Elia Dittrich,VfL Wolfsburg,Eintracht Trier,,German list
+loan,,,Andreas Skov Olsen,VfL Wolfsburg,İstanbul Başakşehir,,German list
+transfer,,,Nicolas Cozza,VfL Wolfsburg,Lausanne-Sport,,German list
+transfer,,,Bartol Franjić,VfL Wolfsburg,Venezia,,German list
+transfer,,,Eryk Grzywacz,VfL Wolfsburg,Holstein Kiel,,German list
+transfer,,,Paul Hennrich,TSG Hoffenheim II,1. FC Heidenheim,,German list
+transfer,,,Oualid Mhamdi,SC Verl,1. FC Heidenheim,,German list
+transfer,,,Marcel Costly,FC Ingolstadt,1. FC Heidenheim,,German list
+transfer,,,Michael Heule,Thun,1. FC Heidenheim,,German list
+transfer,,,Thomas Dähne,1860 Munich,1. FC Heidenheim,,German list
+return,,,Eren Dinkçi,1. FC Heidenheim,SC Freiburg,,German list
+transfer,,,Stefan Schimmer,1. FC Heidenheim,Buriram United,,German list
+loan,,,Adrian Beck,1. FC Heidenheim,VfL Osnabrück,,German list
+return,,,Arijon Ibrahimović,1. FC Heidenheim,Bayern Munich,,German list
+transfer,,,Omar Haktab Traoré,1. FC Heidenheim,Udinese,,German list
+return,,,Leonidas Stergiou,1. FC Heidenheim,VfB Stuttgart,,German list
+return,,,Hennes Behrens,1. FC Heidenheim,TSG Hoffenheim,,German list
+transfer,,,Niklas Dorsch,1. FC Heidenheim,Toronto FC,,German list
+loan,,,Nick Rothweiler,1. FC Heidenheim,Hessen Kassel,,German list
+return,,,Diant Ramaj,1. FC Heidenheim,Borussia Dortmund,,German list
+loan,,,Luka Janeš,1. FC Heidenheim,Tasmania Berlin,,German list
+transfer,,,Thomas Keller,1. FC Heidenheim,Dynamo Dresden,,German list
+transfer,,,Rony Jansson,Kalmar,FC St. Pauli,,German list
+loan,,,Gísli Þórðarson,Lech Poznań,FC St. Pauli,,German list
+transfer,,,Marcus Mathisen,1. FC Magdeburg,FC St. Pauli,,German list
+transfer,,,Branimir Hrgota,Greuther Fürth,FC St. Pauli,,German list
+transfer,,,Sam Klein,Brisbane Roar,FC St. Pauli,,German list
+transfer,,,Dimitar Mitov,Aberdeen,FC St. Pauli,,German list
+transfer,,,Manolis Saliakas,FC St. Pauli,Olympiacos,,German list
+transfer,,,Karol Mets,FC St. Pauli,VfL Bochum,,German list
+return,,,James Sands,FC St. Pauli,New York City FC,,German list
+transfer,,,Jackson Irvine,FC St. Pauli,Cerezo Osaka,,German list
+transfer,,,Danel Sinani,FC St. Pauli,Sampdoria,,German list
+transfer,,,Fin Stevens,FC St. Pauli,Leyton Orient,,German list
+transfer,,,Nikola Vasilj,FC St. Pauli,Al-Diriyah,,German list
+return,,,Andréas Hountondji,FC St. Pauli,Burnley,,German list
+loan,,,Jannik Robatsch,FC St. Pauli,Beveren,,German list
+return,,,Emil Gazdov,FC St. Pauli,CF Montréal,,German list
+transfer,,,Pascal Loretz,Luzern,Hannover 96,,German list
+transfer,,,Jean Hugonet,1. FC Magdeburg,Hannover 96,,German list
+transfer,,,Marcel Hartel,St. Louis City SC,Hannover 96,,German list
+transfer,,,Daisuke Yokota,Gent,Hannover 96,,German list
+transfer,,,Yunus Ünal,Hertha BSC youth,Hannover 96,,German list
+transfer,,,Taycan Etçibaşı,Borussia Dortmund Youth Sector,Hannover 96,,German list
+return,,,Nahuel Noll,Hannover 96,TSG Hoffenheim,,German list
+return,,,Hendry Blank,Hannover 96,Red Bull Salzburg,,German list
+return,,,Maik Nawrocki,Hannover 96,Celtic,,German list
+return,,,Noah Weißhaupt,Hannover 96,SC Freiburg,,German list
+released,,,Håvard Nielsen,Hannover 96,Free agent,,German list
+transfer,,,Daisuke Yokota,Hannover 96,Rangers,,German list
+loan,,,William Kokolo,Hannover 96,Nacional,,German list
+return,,,Elias Saad,Hannover 96,FC Augsburg,,German list
+transfer,,,Brooklyn Ezeh,Hannover 96,Dynamo Dresden,,German list
+transfer,,,Leon-Oumar Wechsel,Hannover 96,Eintracht Trier,,German list
+transfer,,,Jonas Sterner,Hannover 96,Dynamo Dresden,,German list
+transfer,,,Jannik Rochelt,Hannover 96,Arminia Bielefeld,,German list
+transfer,,,Florian Kleinhansl,1. FC Kaiserslautern,Darmstadt 98,,German list
+transfer,,,Grayson Dettoni,Bayern Munich II,Darmstadt 98,,German list
+released,,,Marco Richter,Darmstadt 98,Free agent,,German list
+transfer,,,Lee Ho-jae,Pohang Steelers,Darmstadt 98,,German list
+transfer,,,Nicolas Verkooijen,Jong PSV,Darmstadt 98,,German list
+transfer,,,Ibrahim El Kadiri,De Graafschap,Darmstadt 98,,German list
+transfer,,,Hiroki Akiyama,Albirex Niigata,Darmstadt 98,,German list
+transfer,,,Lars Kehl,VfL Osnabrück,Darmstadt 98,,German list
+transfer,,,Christopher Lannert,Arminia Bielefeld,Darmstadt 98,,German list
+loan,,,Milan Smit,Stoke City,Darmstadt 98,,German list
+transfer,,,Lance Duijvestijn,Sparta Rotterdam,Darmstadt 98,,German list
+transfer,,,Yannik Lührs,TSG Hoffenheim II,Darmstadt 98,,German list
+transfer,,,Sergio López,Darmstadt 98,Granada,,German list
+transfer,,,Matej Maglica,Darmstadt 98,Kocaelispor,,German list
+transfer,,,Serhat-Semih Güler,Darmstadt 98,Sportfreunde Siegen,,German list
+return,,,Marco Richter,Darmstadt 98,Mainz 05,,German list
+transfer,,,Bartosz Białek,Darmstadt 98,Wieczysta Kraków,,German list
+return,,,Niklas Schmidt,Darmstadt 98,Toulouse,,German list
+released,,,Fabian Holland,Darmstadt 98,Free agent,,German list
+transfer,,,Killian Corredor,Darmstadt 98,Nantes,,German list
+transfer,,,Leon Klassen,Darmstadt 98,Grazer AK,,German list
+transfer,,,Paul Will,Darmstadt 98,Greuther Fürth,,German list
+loan,,,Alex Murphy,Newcastle United,1. FC Kaiserslautern,,German list
+loan,,,Ibrahim Kanaté,Anderlecht,1. FC Kaiserslautern,,German list
+loan,,,Mário Sauer,Toulouse,1. FC Kaiserslautern,,German list
+transfer,,,Paul Joly,Auxerre,1. FC Kaiserslautern,,German list
+transfer,,,Yannick Onohiol,TSG Hoffenheim II,1. FC Kaiserslautern,,German list
+transfer,,,Thierry Tazemeta,Borussia Dortmund Youth Sector,1. FC Kaiserslautern,,German list
+loan,,,Miloš Luković,Strasbourg,1. FC Kaiserslautern,,German list
+return,,,Kim Ji-soo,1. FC Kaiserslautern,Brentford,,German list
+loan,,,Mahir Emreli,1. FC Kaiserslautern,Raków Częstochowa,,German list
+released,,,Kenny Prince Redondo,1. FC Kaiserslautern,Free agent,,German list
+transfer,,,Erik Wekesser,1. FC Kaiserslautern,Fortuna Düsseldorf,,German list
+return,,,Atanas Chernev,1. FC Kaiserslautern,Estrela da Amadora,,German list
+return,,,Norman Bassette,1. FC Kaiserslautern,Coventry City,,German list
+transfer,,,Daniel Hanslik,1. FC Kaiserslautern,VfL Bochum,,German list
+return,,,Simon Simoni,1. FC Kaiserslautern,Eintracht Frankfurt,,German list
+released,,,Avdo Spahić,1. FC Kaiserslautern,Free agent,,German list
+released,,,Frank Ronstadt,1. FC Kaiserslautern,Free agent,,German list
+transfer,,,Jannis Heuer,1. FC Kaiserslautern,Greuther Fürth,,German list
+transfer,,,Dickson Abiama,1. FC Kaiserslautern,Rot-Weiss Essen,,German list
+transfer,,,Jannik Mause,1. FC Kaiserslautern,Fortuna Köln,,German list
+transfer,,,Faride Alidou,1. FC Kaiserslautern,Holstein Kiel,,German list
+loan,,,Gustaf Nilsson,Club Brugge,Hertha BSC,,German list
+loan,,,Oluwaseun Adewumi,Burnley,Hertha BSC,,German list
+transfer,,,Tjark Ernst,Hertha BSC,Feyenoord,,German list
+transfer,,,Leon Jensen,Hertha BSC,Arminia Bielefeld,,German list
+released,,,Diego Demme,Hertha BSC,Free agent,,German list
+return,,,Dawid Kownacki,Hertha BSC,Werder Bremen,,German list
+transfer,,,Michaël Cuisance,Hertha BSC,Lens,,German list
+return,,,Maurice Krattenmacher,Hertha BSC,Bayern Munich,,German list
+transfer,,,Marten Winkler,Hertha BSC,Anderlecht,,German list
+transfer,,,John Brooks,Hertha BSC,VSG Altglienicke,,German list
+transfer,,,Jeremy Dudziak,Hertha BSC,Beijing Guoan,,German list
+transfer,,,Michał Karbownik,Hertha BSC,İstanbul Başakşehir,,German list
+loan,,,Janne Berner,Hertha BSC,SC Verl,,German list
+released,,,Toni Leistner,Hertha BSC,Free agent,,German list
+transfer,,,Tim Hoffmann,Hertha BSC,SC Verl,,German list
+loan,,,Gustav Christensen,Hertha BSC,Kristiansund,,German list
+transfer,,,Alexis Kalogeropoulos,Olympiacos,1. FC Nürnberg,,German list
+transfer,,,Rayan Ghrieb,1. FC Magdeburg,1. FC Nürnberg,,German list
+transfer,,,Sigurd Haugen,1860 Munich,1. FC Nürnberg,,German list
+transfer,,,Andrea Ceresoli,Atalanta U23,1. FC Nürnberg,,German list
+loan,,,Mikayil Faye,Rennes,1. FC Nürnberg,,German list
+transfer,,,Fynn Otto,SC Verl,1. FC Nürnberg,,German list
+transfer,,,Giannis Masouras,Omonia,1. FC Nürnberg,,German list
+transfer,,,Can Moustfa,Energie Cottbus,1. FC Nürnberg,,German list
+transfer,,,Xaver Kiefersauer,1860 Munich II,1. FC Nürnberg,,German list
+transfer,,,Danilo Soares,1. FC Nürnberg,Austria Lustenau,,German list
+loan,,,Mickaël Biron,1. FC Nürnberg,Batman Petrolspor,,German list
+return,,,Henri Koudossou,1. FC Nürnberg,FC Augsburg,,German list
+loan,,,Ayoub Chaikhoun,1. FC Nürnberg,Wehen Wiesbaden,,German list
+return,,,Eryk Grzywacz,1. FC Nürnberg,VfL Wolfsburg,,German list
+return,,,Berkay Yılmaz,1. FC Nürnberg,SC Freiburg,,German list
+return,,,Rabby Nzingoula,1. FC Nürnberg,Strasbourg,,German list
+loan,,,Justin von der Hitz,1. FC Nürnberg,Alemannia Aachen,,German list
+return,,,Tarek Buchmann,1. FC Nürnberg,Bayern Munich,,German list
+loan,,,Noah Maboulou,1. FC Nürnberg,Viktoria Köln,,German list
+loan,,,Xaver Kiefersauer,1. FC Nürnberg,Würzburger Kickers,,German list
+loan,,,Michal Kukučka,1. FC Nürnberg,Jablonec,,German list
+loan,,,Semir Telalović,1. FC Nürnberg,Rot-Weiss Essen,,German list
+transfer,,,Jannik Hofmann,1. FC Nürnberg,Rot-Weiss Essen,,German list
+transfer,,,Nick Seidel,1. FC Nürnberg,SC Verl,,German list
+transfer,,,Florian Flick,1. FC Nürnberg,Eintracht Braunschweig,,German list
+transfer,,,Dustin Forkel,1. FC Nürnberg,Rot-Weiß Erfurt,,German list
+transfer,,,Sean Klaiber,Brøndby,VfL Bochum,,German list
+transfer,,,Yiğit Karademir,VfL Osnabrück,VfL Bochum,,German list
+transfer,,,Enis Çokaj,Panathinaikos,VfL Bochum,,German list
+transfer,,,Christian Rasmussen,Fortuna Düsseldorf,VfL Bochum,,German list
+transfer,,,Jean-Manuel Mbom,Viborg,VfL Bochum,,German list
+transfer,,,Berkan Taz,SC Verl,VfL Bochum,,German list
+loan,,,Jarne Steuckers,Genk,VfL Bochum,,German list
+transfer,,,Michael Steinwender,Heart of Midlothian,VfL Bochum,,German list
+transfer,,,Tino Casali,Rot-Weiss Essen,VfL Bochum,,German list
+transfer,,,Babis Drakas,Borussia Dortmund II,VfL Bochum,,German list
+transfer,,,Mansour Ouro-Tagba,1. FC Köln II,VfL Bochum,,German list
+transfer,,,Leon Sawas,SC Freiburg youth,VfL Bochum,,German list
+transfer,,,Erhan Mašović,VfL Bochum,Vojvodina,,German list
+retired,,,Kevin Vogt,VfL Bochum,Retired,,German list
+return,,,Kjell Wätjen,VfL Bochum,Borussia Dortmund,,German list
+transfer,,,Ibrahim Sissoko,VfL Bochum,Muğlaspor,,German list
+transfer,,,Moritz-Broni Kwarteng,VfL Bochum,1. FC Magdeburg,,German list
+return,,,Callum Marshall,VfL Bochum,West Ham United,,German list
+loan,,,Mikkel Rakneberg,VfL Bochum,OB,,German list
+transfer,,,Matúš Bero,VfL Bochum,Ferencváros,,German list
+transfer,,,Noah Loosli,VfL Bochum,Universitatea Cluj,,German list
+return,,,Francis Onyeka,VfL Bochum,Bayer Leverkusen,,German list
+transfer,,,Niclas Thiede,VfL Bochum,ADO Den Haag,,German list
+transfer,,,Daniel Hülsenbusch,VfL Bochum,SSV Ulm,,German list
+transfer,,,Romario Rösch,VfL Bochum,Preußen Münster,,German list
+return,,,Farid Alfa-Ruprecht,VfL Bochum,Bayer Leverkusen,,German list
+loan,,,Darnell Keumo,VfL Bochum,Waldhof Mannheim,,German list
+released,,,Marcel Sobottka,VfL Bochum,Free agent,,German list
+loan,,,Kacper Koscierski,VfL Bochum,Alemannia Aachen,,German list
+return,,,Leandro Morgalla,VfL Bochum,Red Bull Salzburg,,German list
+transfer,,,Mathis Clairicia,VfL Bochum,Sochaux,,German list
+transfer,,,Samuel Bamba,VfL Bochum,Marítimo,,German list
+loan,,,Deniz Ofli,Bayern Munich II,Karlsruher SC,,German list
+transfer,,,Héliton,Göztepe,Karlsruher SC,,German list
+transfer,,,Santeri Väänänen,Rosenborg,Karlsruher SC,,German list
+transfer,,,Kevin Wiethaup,VfL Osnabrück,Karlsruher SC,,German list
+loan,,,Moritz Broschinski,Basel,Karlsruher SC,,German list
+transfer,,,Noel Eichinger,Jahn Regensburg,Karlsruher SC,,German list
+transfer,,,Paul Scholl,Bayern Munich II,Karlsruher SC,,German list
+transfer,,,Ferdinand Gebert,Astoria Walldorf,Karlsruher SC,,German list
+transfer,,,Tim Civeja,1. FC Saarbrücken,Karlsruher SC,,German list
+transfer,,,Sandro Trémoulet,Radnik Surdulica,Karlsruher SC,,German list
+transfer,,,Viktor Bergh,Djurgården,Karlsruher SC,,German list
+transfer,,,Jason Ponente-Ramirez,1. FC Köln youth,Karlsruher SC,,German list
+released,,,Marcel Beifus,Karlsruher SC,Free agent,,German list
+return,,,Stephan Ambrosius,Karlsruher SC,St. Gallen,,German list
+transfer,,,Nicolai Rapp,Karlsruher SC,Dynamo Dresden,,German list
+transfer,,,Dženis Burnić,Karlsruher SC,Volos,,German list
+return,,,Roko Šimić,Karlsruher SC,Cardiff City,,German list
+transfer,,,Philipp Förster,Karlsruher SC,Fortuna Düsseldorf,,German list
+loan,,,Andreas Müller,Karlsruher SC,Fortuna Düsseldorf,,German list
+return,,,Leon Opitz,Karlsruher SC,Werder Bremen,,German list
+transfer,,,Aki Koch,Karlsruher SC,Machida Zelvia,,German list
+transfer,,,Meiko Wäschenbach,Karlsruher SC,Alemannia Aachen,,German list
+transfer,,,Fabian Schleusener,Karlsruher SC,Fortuna Düsseldorf,,German list
+transfer,,,Ali-Eren Ersungur,Karlsruher SC,VSG Altglienicke,,German list
+loan,,,Niclas Dühring,Karlsruher SC,SV Drochtersen/Assel,,German list
+loan,,,Mateo Kritzer,Karlsruher SC,Eintracht Trier,,German list
+transfer,,,Efe-Kaan Sihlaroğlu,Karlsruher SC,Iğdır,,German list
+transfer,,,Noah Rupp,Karlsruher SC,Wil,,German list
+transfer,,,Kenneth Schmidt,Fortuna Düsseldorf,Dynamo Dresden,,German list
+transfer,,,Kaan İnanoğlu,Eintracht Frankfurt II,Dynamo Dresden,,German list
+transfer,,,Ahmet Muhamedbegović,Olimpija Ljubljana,Dynamo Dresden,,German list
+transfer,,,Tobias Raschl,Preußen Münster,Dynamo Dresden,,German list
+transfer,,,Simon Straudi,Energie Cottbus,Dynamo Dresden,,German list
+return,,,Konrad Faber,Dynamo Dresden,St. Gallen,,German list
+transfer,,,Vinko Šapina,Dynamo Dresden,FC Ingolstadt,,German list
+return,,,Jason Çeka,Dynamo Dresden,SV Elversberg,,German list
+return,,,Julian Pauli,Dynamo Dresden,1. FC Köln,,German list
+transfer,,,Claudio Kammerknecht,Dynamo Dresden,Waldhof Mannheim,,German list
+loan,,,Tony Menzel,Dynamo Dresden,Rot-Weiss Essen,,German list
+transfer,,,Jan-Hendrik Marx,Dynamo Dresden,Kickers Offenbach,,German list
+transfer,,,Sascha Risch,Dynamo Dresden,Fortuna Düsseldorf,,German list
+retired,,,Stefan Kutschke,Dynamo Dresden,Retired,,German list
+loan,,,Marlon Faß,Dynamo Dresden,Sonnenhof Großaspach,,German list
+transfer,,,Paul Lehmann,Dynamo Dresden,SC Verl,,German list
+transfer,,,Dennis Duah,Dynamo Dresden,TSV Havelse,,German list
+transfer,,,Jonas Oehmichen,Dynamo Dresden,Alemannia Aachen,,German list
+transfer,,,Robin Meißner,Dynamo Dresden,VfL Osnabrück,,German list
+transfer,,,Dominik Kother,Dynamo Dresden,MSV Duisburg,,German list
+loan,,,Niko Takahashi,Cerezo Osaka,Holstein Kiel,,German list
+transfer,,,Sebastian Schonlau,Vancouver Whitecaps,Holstein Kiel,,German list
+transfer,,,Noah Madsen,Maritimo,Holstein Kiel,,German list
+transfer,,,Guillermo Balzi,Newell's Old Boys,Holstein Kiel,,German list
+transfer,,,Giorgi Kvilitaia,Metz,Holstein Kiel,,German list
+transfer,,,Gyan de Regt,Excelsior,Holstein Kiel,,German list
+transfer,,,Moritz Reimers,Hamburger SV II,Holstein Kiel,,German list
+loan,,,Taisei Abe,V-Varen Nagasaki,Holstein Kiel,,German list
+loan,,,Hiroki Sekine,Reims,Holstein Kiel,,German list
+transfer,,,Ben Schmit,Eintracht Trier,Holstein Kiel,,German list
+transfer,,,Marco Komenda,Holstein Kiel,Arka Gdynia,,German list
+retired,,,Patrick Erras,Holstein Kiel,Retired,,German list
+released,,,Carl Johansson,Holstein Kiel,Free agent,,German list
+transfer,,,Marko Ivezić,Holstein Kiel,Hibernian,,German list
+return,,,Umut Tohumcu,Holstein Kiel,TSG Hoffenheim,,German list
+loan,,,Aldin Jakupović,Holstein Kiel,Bravo,,German list
+loan,,,Jonas Krumrey,Holstein Kiel,VfL Osnabrück,,German list
+transfer,,,Stefan Schwab,Holstein Kiel,SV Ried,,German list
+loan,,,Marcus Müller,Holstein Kiel,Wehen Wiesbaden,,German list
+loan,,,Niklas Niehoff,Holstein Kiel,SCR Altach,,German list
+transfer,,,Tyler Doğan,Holstein Kiel,TSV Steinbach,,German list
+loan,,,Eryk Grzywacz,Holstein Kiel,TSV Havelse,,German list
+loan,,,Mladen Cvjetinović,Holstein Kiel,1. FC Saarbrücken,,German list
+loan,,,Luca Prasse,Holstein Kiel,SV Meppen,,German list
+transfer,,,Tymoteusz Puchacz,Holstein Kiel,Sabah,,German list
+transfer,,,Max Geschwill,Holstein Kiel,Rot-Weiss Essen,,German list
+transfer,,,Louis Köster,Holstein Kiel,Alemannia Aachen,,German list
+loan,,,David Min,Utrecht,Arminia Bielefeld,,German list
+transfer,,,Mael Corboz,Arminia Bielefeld,Grenoble,,German list
+return,,,Semir Telalović,Arminia Bielefeld,1. FC Nürnberg,,German list
+transfer,,,Roberts Uldriķis,Arminia Bielefeld,Heerenveen,,German list
+released,,,Robin Knoche,Arminia Bielefeld,Free agent,,German list
+transfer,,,Justin Lukas,Arminia Bielefeld,FC Gütersloh,,German list
+transfer,,,Noah Sarenren Bazee,Arminia Bielefeld,Waldhof Mannheim,,German list
+transfer,,,Max Lippert,Arminia Bielefeld,1. FC Köln II,,German list
+transfer,,,Mika Schroers,Arminia Bielefeld,Alemannia Aachen,,German list
+transfer,,,Julian Kania,Arminia Bielefeld,De Graafschap,,German list
+transfer,,,Anselmo García MacNulty,PEC Zwolle,1. FC Magdeburg,,German list
+transfer,,,Paul Jaeckel,Preußen Münster,1. FC Magdeburg,,German list
+transfer,,,Emmanuel Iyoha,Fortuna Düsseldorf,1. FC Magdeburg,,German list
+loan,,,Roko Šimić,Cardiff City,1. FC Magdeburg,,German list
+transfer,,,Tony Reitz,Borussia Dortmund II,1. FC Magdeburg,,German list
+loan,,,Lee Chung-hyun,Bucheon,1. FC Magdeburg,,German list
+transfer,,,Kevin Manthey,Werder Bremen II,1. FC Magdeburg,,German list
+transfer,,,Torben Müsel,Rot-Weiss Essen,1. FC Magdeburg,,German list
+loan,,,Yoon Do-young,Brighton & Hove Albion,1. FC Magdeburg,,German list
+released,,,Samuel Loric,1. FC Magdeburg,Free agent,,German list
+return,,,Laurin Ulrich,1. FC Magdeburg,VfB Stuttgart,,German list
+return,,,Maximilian Breunig,1. FC Magdeburg,1. FC Heidenheim,,German list
+return,,,Noah Pesch,1. FC Magdeburg,Borussia Mönchengladbach,,German list
+transfer,,,Alexander Ahl Holmström,1. FC Magdeburg,OB,,German list
+transfer,,,Connor Krempicki,1. FC Magdeburg,Borussia Dortmund II,,German list
+transfer,,,Silas Gnaka,1. FC Magdeburg,ML Vitebsk,,German list
+transfer,,,Aleksa Marušić,1. FC Magdeburg,Radnički 1923,,German list
+transfer,,,Philipp Hercher,1. FC Magdeburg,Wehen Wiesbaden,,German list
+return,,,Max Geschwill,1. FC Magdeburg,Holstein Kiel,,German list
+transfer,,,Robert Leipertz,1. FC Magdeburg,Greifswalder FC,,German list
+transfer,,,Yann Sturm,SC Freiburg II,Eintracht Braunschweig,,German list
+transfer,,,Maximilian Entrup,LASK,Eintracht Braunschweig,,German list
+transfer,,,Samuele Di Benedetto,VfB Stuttgart II,Eintracht Braunschweig,,German list
+transfer,,,Arlet Junior Zé,Basel,Eintracht Braunschweig,,German list
+transfer,,,Isidoros Koutsidis,Olympiacos B,Eintracht Braunschweig,,German list
+transfer,,,Tristan Wagner,Greifswalder FC,Eintracht Braunschweig,,German list
+transfer,,,Benjamin Uphoff,Hansa Rostock,Eintracht Braunschweig,,German list
+transfer,,,Nick Bodon,Schalke 04 youth,Eintracht Braunschweig,,German list
+transfer,,,Damjan Kovačević,TSV Hartberg,Eintracht Braunschweig,,German list
+transfer,,,Patrick Nkoa,Eintracht Braunschweig,RAAL La Louvière,,German list
+transfer,,,Fabio Kaufmann,Eintracht Braunschweig,BG Pathum United,,German list
+return,,,Erencan Yardımcı,Eintracht Braunschweig,TSG Hoffenheim,,German list
+return,,,Faride Alidou,Eintracht Braunschweig,1. FC Kaiserslautern,,German list
+transfer,,,Elhan Kastrati,Eintracht Braunschweig,Athens Kallithea,,German list
+loan,,,Louis Breunig,Eintracht Braunschweig,Würzburger Kickers,,German list
+released,,,Anas Bakhat,Eintracht Braunschweig,Free agent,,German list
+released,,,Leon Bell Bell,Eintracht Braunschweig,Free agent,,German list
+return,,,Grant-Leon Ranos,Eintracht Braunschweig,Borussia Mönchengladbach,,German list
+transfer,,,Marko Rajkovačić,Eintracht Braunschweig,Würzburger Kickers,,German list
+return,,,Ken Izekor,Eintracht Braunschweig,Bayer Leverkusen,,German list
+transfer,,,Johan Gomez,Eintracht Braunschweig,Chicago Fire,,German list
+loan,,,Jona Borsum,Eintracht Braunschweig,SV Meppen,,German list
+transfer,,,Justin Duda,Eintracht Braunschweig,1. FC Lokomotive Leipzig,,German list
+transfer,,,Walid Ould-Chikh,Eintracht Braunschweig,Heracles Almelo,,German list
+loan,,,Elias Benkara,Borussia Dortmund II,Greuther Fürth,,German list
+transfer,,,Shinta Appelkamp,Fortuna Düsseldorf,Greuther Fürth,,German list
+transfer,,,Jordan Pefok,Reims,Greuther Fürth,,German list
+transfer,,,Ole Pohlmann,Rio Ave,Greuther Fürth,,German list
+transfer,,,Omar Megeed,Hamburger SV II,Greuther Fürth,,German list
+transfer,,,Benjamin Zank,Viktoria Köln,Greuther Fürth,,German list
+loan,,,Loris Giandomenico,Grasshoppers,Greuther Fürth,,German list
+loan,,,Krisztián Keresztes,Nyíregyháza,Greuther Fürth,,German list
+loan,,,Hendry Blank,Red Bull Salzburg,Greuther Fürth,,German list
+transfer,,,Faton Ademi,Alemannia Aachen,Greuther Fürth,,German list
+transfer,,,Christian Ortag,SSV Ulm,Greuther Fürth,,German list
+released,,,Nils Körber,Greuther Fürth,Free agent,,German list
+transfer,,,Philipp Ziereis,Greuther Fürth,Melbourne Victory,,German list
+transfer,,,Reno Münz,Greuther Fürth,Westerlo,,German list
+return,,,Aiman Dardari,Greuther Fürth,FC Augsburg,,German list
+transfer,,,Jomaine Consbruch,Greuther Fürth,Fortuna Düsseldorf,,German list
+return,,,Jan Elvedi,Greuther Fürth,1. FC Kaiserslautern,,German list
+loan,,,Noah König,Greuther Fürth,SC Verl,,German list
+transfer,,,Felix Higl,Greuther Fürth,Preußen Münster,,German list
+return,,,Timo Schlieck,Greuther Fürth,RB Leipzig,,German list
+transfer,,,Juan Ignacio Cabrera,Greuther Fürth,Vaduz,,German list
+released,,,Marco John,Greuther Fürth,Free agent,,German list
+transfer,,,Brynjar Ingi Bjarnason,Greuther Fürth,Sønderjyske,,German list
+transfer,,,Pelle Boevink,Greuther Fürth,Groningen,,German list
+transfer,,,Maximilian Dietz,Greuther Fürth,Górnik Zabrze,,German list
+released,,,Julian Green,Greuther Fürth,Free agent,,German list
+loan,,,David Abrangao,Greuther Fürth,Würzburger Kickers,,German list
+return,,,Keyan Varela,Greuther Fürth,Servette,,German list
+return,,,Sayfallah Ltaief,Greuther Fürth,Twente,,German list
+loan,,,Sebastian Jung,Greuther Fürth,FSV Zwickau,,German list
+transfer,,,Matti Wagner,Greuther Fürth,Alemannia Aachen,,German list
+transfer,,,Leander Popp,Greuther Fürth,SSV Ulm,,German list
+transfer,,,Mathias Olesen,Greuther Fürth,Sønderjyske,,German list
+transfer,,,Joel Abu Hanna,Levadiakos,VfL Osnabrück,,German list
+transfer,,,Jonathan Wensing,SV Meppen,VfL Osnabrück,,German list
+transfer,,,Leonhard Münst,Viktoria Köln,VfL Osnabrück,,German list
+transfer,,,Luca Raimund,Fortuna Düsseldorf,VfL Osnabrück,,German list
+loan,,,Leon Flach,Jagiellonia Białystok,VfL Osnabrück,,German list
+transfer,,,Konrad Faber,St. Gallen,VfL Osnabrück,,German list
+loan,,,Jonathan Gómez,PAOK,VfL Osnabrück,,German list
+transfer,,,Lukas Bornschein,Hamburger SV II,VfL Osnabrück,,German list
+return,,,Frederik Christensen,VfL Osnabrück,Brommapojkarna,,German list
+retired,,,Bashkim Ajdini,VfL Osnabrück,Retired,,German list
+retired,,,Robert Tesche,VfL Osnabrück,Retired,,German list
+return,,,Julian Kania,VfL Osnabrück,Arminia Bielefeld,,German list
+transfer,,,Kai Pröger,VfL Osnabrück,VfB Oldenburg,,German list
+transfer,,,Kevin Schumacher,VfL Osnabrück,TSV Havelse,,German list
+transfer,,,Luc Ihorst,VfL Osnabrück,Kickers Emden,,German list
+transfer,,,Lukas Jonsson,VfL Osnabrück,Djurgården,,German list
+transfer,,,David Kopacz,VfL Osnabrück,Hansa Rostock,,German list
+transfer,,,Mats Remberg,VfL Osnabrück,1. FC Bocholt,,German list
+loan,,,Lukas Bornschein,VfL Osnabrück,Fortuna Düsseldorf,,German list
+loan,,,Lion Semić,VfL Osnabrück,Greifswalder FC,,German list
+loan,,,Ibrahim Touray,VfL Osnabrück,Kickers Emden,,German list
+loan,,,Rohin Shivani,VfL Osnabrück,Sportfreunde Lotte,,German list
+transfer,,,Finn Cramer,VfL Osnabrück,BFC Preussen,,German list
+transfer,,,Marcel Lotka,Fortuna Düsseldorf,Energie Cottbus,,German list
+transfer,,,King Manu,Fortuna Düsseldorf,Energie Cottbus,,German list
+transfer,,,Christian Kinsombi,Hansa Rostock,Energie Cottbus,,German list
+transfer,,,Ryan Malone,Erzgebirge Aue,Energie Cottbus,,German list
+transfer,,,Julian Guttau,Erzgebirge Aue,Energie Cottbus,,German list
+loan,,,Fousseny Doumbia,Eintracht Frankfurt II,Energie Cottbus,,German list
+transfer,,,Kevin Kratzsch,Rot-Weiß Oberhausen,Energie Cottbus,,German list
+transfer,,,Yusuf Wardak,Waldhof Mannheim,Energie Cottbus,,German list
+retired,,,Alexander Sebald,Energie Cottbus,Retired,,German list
+released,,,Timmy Thiele,Energie Cottbus,Free agent,,German list
+transfer,,,Tolga Ciğerci,Energie Cottbus,VSG Altglienicke,,German list
+released,,,Leon Guwara,Energie Cottbus,Free agent,,German list
+return,,,Mladen Cvjetinović,Energie Cottbus,Holstein Kiel,,German list
+transfer,,,Ted Tattermusch,Energie Cottbus,VSG Altglienicke,,German list
+transfer,,,Dennis Slamar,Energie Cottbus,Chemnitzer FC,,German list
+transfer,,,Finn Heidrich,Energie Cottbus,Erzgebirge Aue,,German list
+transfer,,,Janis Juckel,Energie Cottbus,Greifswalder FC,,German list
+released,,,Merveille Biankadi,Energie Cottbus,Free agent,,German list
+loan,,,Yusuf Wardak,Energie Cottbus,TSV Havelse,,German list
+loan,,,Gianluca Pelzer,Energie Cottbus,Eintracht Trier,,German list
+transfer,,,Maghnes Akliouche,Monaco,Paris Saint-Germain,,French list
+transfer,,,Lucas Digne,Aston Villa,Paris Saint-Germain,,French list
+transfer,,,Alessandro Longoni,Milan Futuro,Paris Saint-Germain,,French list
+transfer,,,Mika Godts,Ajax,Paris Saint-Germain,,French list
+transfer,,,Khalil Ayari,Stade Tunisien,Paris Saint-Germain,,French list
+transfer,,,Gonçalo Ramos,Paris Saint-Germain,Milan,,French list
+transfer,,,Bradley Barcola,Paris Saint-Germain,Liverpool,,French list
+transfer,,,Ibrahim Mbaye,Paris Saint-Germain,Aston Villa,,French list
+loan,,,Renato Marin,Paris Saint-Germain,Nacional,,French list
+loan,,,Khalil Ayari,Paris Saint-Germain,Dunkerque,,French list
+loan,,,Yoram Zague,Paris Saint-Germain,Pafos,,French list
+transfer,,,Noham Kamara,Paris Saint-Germain,Lyon,,French list
+released,,,Renato Sanches,Paris Saint-Germain,Free agent,,French list
+transfer,,,Randal Kolo Muani,Paris Saint-Germain,Juventus,,French list
+transfer,,,Maik Nawrocki,Celtic,Lens,,French list
+transfer,,,Yacine Titraoui,Charleroi,Lens,,French list
+transfer,,,Thorgan Hazard,Anderlecht,Lens,,French list
+loan,,,Jean-Clair Todibo,West Ham United,Lens,,French list
+transfer,,,Michał Skóraś,Gent,Lens,,French list
+transfer,,,Saud Abdulhamid,Roma,Lens,,French list
+loan,,,Junior Kadile,Servette,Lens,,French list
+loan,,,Franjo Ivanović,Benfica,Lens,,French list
+transfer,,,Mamadou Sangaré,Lens,Brentford,,French list
+transfer,,,Allan Saint-Maximin,Lens,Charlotte FC,,French list
+transfer,,,Fodé Sylla,Lens,Sion,,French list
+transfer,,,Malang Sarr,Lens,Neom,,French list
+transfer,,,Wesley Saïd,Lens,Al-Shamal,,French list
+loan,,,Anthony Bermont,Lens,Angers,,French list
+return,,,Arthur Masuaku,Lens,Sunderland,,French list
+transfer,,,Adrien Thomasson,Lens,Rennes,,French list
+transfer,,,Erawan Garnier,Lens,Bastia,,French list
+loan,,,Rayan Fofana,Lens,Le Havre,,French list
+loan,,,Mattia Fortin,Lens,Palermo,,French list
+loan,,,Hervé Koffi,Lens,Union Saint-Gilloise,,French list
+loan,,,Rémy Labeau Lascary,Lens,Auxerre,,French list
+loan,,,Goduine Koyalipou,Lens,Kortrijk,,French list
+loan,,,Gabin Capuano,Lens,Quevilly-Rouen,,French list
+loan,,,Jeremy Agbonifo,Lens,Jagiellonia Białystok,,French list
+transfer,,,Yannick Pandor,Lens,Amiens,,French list
+transfer,,,Facundo Medina,Lens,Marseille,,French list
+transfer,,,Anass Zaroury,Lens,Panathinaikos,,French list
+transfer,,,Angelo Fulgini,Lens,Al-Khaleej,,French list
+transfer,,,Kembo Diliwidi,Lens,Dender,,French list
+transfer,,,Loun Srdanović,Servette,Lille,,French list
+loan,,,Dilane Bakwa,Nottingham Forest,Lille,,French list
+transfer,,,Orlando Gill,San Lorenzo,Lille,,French list
+transfer,,,Maurits Kjærgaard,Red Bull Salzburg,Lille,,French list
+transfer,,,Ayase Ueda,Feyenoord,Lille,,French list
+transfer,,,Başar Önal,NEC,Lille,,French list
+transfer,,,Matias Fernandez-Pardo,Lille,Newcastle United,,French list
+transfer,,,Thomas Meunier,Lille,Sunderland,,French list
+loan,,,Marius Broholm,Lille,Utrecht,,French list
+transfer,,,Arnaud Bodart,Lille,Le Havre,,French list
+transfer,,,Chancel Mbemba,Lille,Al-Diriyah,,French list
+loan,,,Noah Edjouma,Lille,Brest,,French list
+released,,,Marc-Aurèle Caillard,Lille,Free agent,,French list
+transfer,,,Ayyoub Bouaddi,Lille,Manchester City,,French list
+loan,,,Ousmane Touré,Lille,Dunkerque,,French list
+loan,,,Rafael Fernandes,Lille,Marítimo,,French list
+transfer,,,Lisandru Olmeta,Lille,Torreense,,French list
+transfer,,,Vincent Burlet,Lille,Cracovia,,French list
+transfer,,,Ichem Ferrah,Lille,Pisa,,French list
+transfer,,,Mohamed Bayo,Lille,Samsunspor,,French list
+transfer,,,Mads Bidstrup,Red Bull Salzburg,Lyon,,French list
+transfer,,,Keito Nakamura,Reims,Lyon,,French list
+loan,,,Zachary Athekame,Milan,Lyon,,French list
+loan,,,Loïs Openda,Juventus,Lyon,,French list
+transfer,,,Felix Bacher,Estoril,Lyon,,French list
+transfer,,,Kaïl Boudache,Nice,Lyon,,French list
+transfer,,,Mohamed Ouédraogo,SCR Altach,Lyon,,French list
+return,,,Adam Karabec,Lyon,Sparta Prague,,French list
+transfer,,,Malick Fofana,Lyon,Sunderland,,French list
+released,,,Rachid Ghezzal,Lyon,Free agent,,French list
+return,,,Hans Hateboer,Lyon,Rennes,,French list
+transfer,,,Achraf Laâziri,Lyon,Ittihad Tanger,,French list
+transfer,,,Mathys De Carvalho,Lyon,Al-Diriyah,,French list
+return,,,Roman Yaremchuk,Lyon,Olympiacos,,French list
+transfer,,,Ainsley Maitland-Niles,Lyon,Everton,,French list
+loan,,,Daryll Benlahlou,Lyon,Montpellier,,French list
+loan,,,Mahamadou Diawara,Lyon,Red Star,,French list
+loan,,,Enzo Molebe,Lyon,Lausanne-Sport,,French list
+transfer,,,Duje Ćaleta-Car,Lyon,Sassuolo,,French list
+transfer,,,Hamed Traorè,Bournemouth,Marseille,,French list
+transfer,,,Timothy Weah,Juventus,Marseille,,French list
+transfer,,,Gerónimo Rulli,Marseille,Manchester City,,French list
+loan,,,Leonardo Balerdi,Marseille,Roma,,French list
+transfer,,,Mason Greenwood,Marseille,Fenerbahçe,,French list
+return,,,Ethan Nwaneri,Marseille,Arsenal,,French list
+transfer,,,Pierre-Emerick Aubameyang,Marseille,Deportivo A Coruña,,French list
+return,,,Arthur Vermeeren,Marseille,RB Leipzig,,French list
+loan,,,Hamed Traorè,Marseille,Genoa,,French list
+transfer,,,Quinten Timber,Marseille,Crystal Palace,,French list
+return,,,Benjamin Pavard,Marseille,Inter Milan,,French list
+loan,,,Charlie Cresswell,Toulouse,Rennes,,French list
+transfer,,,Gonçalo Oliveira,Benfica B,Rennes,,French list
+transfer,,,Eliezer Mayenda,Sunderland,Rennes,,French list
+transfer,,,Bryan Reynolds,Westerlo,Rennes,,French list
+transfer,,,Nicolas Lemaître,Troyes,Rennes,,French list
+loan,,,Boulaye Dia,Lazio,Rennes,,French list
+transfer,,,Issa Soumaré,Le Havre,Rennes,,French list
+loan,,,Glen Kamara,Rennes,Queens Park Rangers,,French list
+transfer,,,Breel Embolo,Rennes,Atlanta United,,French list
+loan,,,Alidu Seidu,Rennes,Nice,,French list
+loan,,,Mathys Silistrie,Rennes,Quevilly-Rouen,,French list
+loan,,,Nordan Mukiele,Rennes,Montpellier,,French list
+loan,,,Lucas Rosier,Rennes,Concarneau,,French list
+loan,,,Paolo Limon,Rennes,Villefranche,,French list
+transfer,,,Jérémy Jacquet,Rennes,Liverpool,,French list
+loan,,,Seko Fofana,Rennes,Porto,,French list
+loan,,,Rayan Bamba,Rennes,Le Mans,,French list
+loan,,,Jordan James,Rennes,Wolverhampton Wanderers,,French list
+released,,,Hans Hateboer,Rennes,Free agent,,French list
+transfer,,,Jonathan Do Marcolino,Rennes,Annecy,,French list
+loan,,,Mathys Detourbet,Manchester City,Monaco,,French list
+transfer,,,Matthis Abline,Nantes,Monaco,,French list
+transfer,,,Flávio Nazinho,Cercle Brugge,Monaco,,French list
+transfer,,,Sadibou Sané,Metz,Monaco,,French list
+loan,,,Thilo Kehrer,Monaco,Ajax,,French list
+released,,,Paul Pogba,Monaco,Free agent,,French list
+transfer,,,Caio Henrique,Monaco,Ajax,,French list
+transfer,,,Kassoum Ouattara,Monaco,Beşiktaş,,French list
+transfer,,,Aladji Bamba,Monaco,Newcastle United,,French list
+return,,,Simon Adingra,Monaco,Sunderland,,French list
+return,,,Wout Faes,Monaco,Leicester City,,French list
+released,,,Krépin Diatta,Monaco,Free agent,,French list
+loan,,,Yann Lienard,Monaco,Cercle Brugge,,French list
+loan,,,Radosław Majecki,Monaco,Pafos,,French list
+loan,,,Lucas Michal,Monaco,Cercle Brugge,,French list
+loan,,,Filip Jörgensen,Chelsea,Strasbourg,,French list
+transfer,,,Jeyland Mitchell,Sturm Graz,Strasbourg,,French list
+transfer,,,Gio Reyna,Borussia Mönchengladbach,Strasbourg,,French list
+transfer,,,Miłosz Piekutowski,Jagiellonia Białystok,Strasbourg,,French list
+loan,,,Dário Essugo,Chelsea,Strasbourg,,French list
+transfer,,,Mateo Del Blanco,Unión Santa Fe,Strasbourg,,French list
+loan,,,Genesis Antwi,Chelsea,Strasbourg,,French list
+transfer,,,Diogo Sousa,Vitória Guimarães,Strasbourg,,French list
+transfer,,,Omari Kellyman,Chelsea,Strasbourg,,French list
+transfer,,,Jacobo Ortega,Real Madrid B,Strasbourg,,French list
+transfer,,,Deivid Washington,Chelsea,Strasbourg,,French list
+transfer,,,Benjamin Brantlind,Göteborg,Strasbourg,,French list
+transfer,,,Hermann Malonga,Paris Saint-Germain youth,Strasbourg,,French list
+released,,,Karl-Johan Johnsson,Strasbourg,Free agent,,French list
+loan,,,Andrew Omobamidele,Strasbourg,Anderlecht,,French list
+transfer,,,Ben Chilwell,Strasbourg,Crystal Palace,,French list
+return,,,Aarón Anselmino,Strasbourg,Chelsea,,French list
+transfer,,,Diego Moreira,Strasbourg,Milan,,French list
+transfer,,,Emmanuel Emegha,Strasbourg,Chelsea,,French list
+return,,,David Datro Fofana,Strasbourg,Chelsea,,French list
+loan,,,Mathis Amougou,Strasbourg,Toulouse,,French list
+transfer,,,Junior Mwanga,Strasbourg,Le Havre,,French list
+transfer,,,Julio Enciso,Strasbourg,Ipswich Town,,French list
+transfer,,,Valentín Barco,Strasbourg,Chelsea,,French list
+loan,,,Idrissa Sabaly,Strasbourg,Red Star,,French list
+return,,,Mike Penders,Strasbourg,Chelsea,,French list
+transfer,,,Abdoul Ouattara,Strasbourg,Ipswich Town,,French list
+transfer,,,Stefan Bajić,Strasbourg,Alemannia Aachen,,French list
+return,,,Rafael Luís,Strasbourg,Benfica,,French list
+loan,,,Saïdou Sow,Strasbourg,Strasbourg,,French list
+loan,,,Soumaïla Coulibaly,Strasbourg,Watford,,French list
+loan,,,Rayane Messi,Strasbourg,Al-Ettifaq,,French list
+transfer,,,Abakar Sylla,Strasbourg,Gaziantep,,French list
+transfer,,,Pape Diong,Strasbourg,Westerlo,,French list
+transfer,,,Rabby Nzingoula,Strasbourg,West Bromwich Albion,,French list
+transfer,,,Óscar Perea,Strasbourg,Club América,,French list
+transfer,,,Thomas Jørgensen,Viborg,Toulouse,,French list
+transfer,,,Sion Oppong,Brommapojkarna,Toulouse,,French list
+transfer,,,Christ Tapé,Horsens,Toulouse,,French list
+transfer,,,Niko Sigur,Hajduk Split,Toulouse,,French list
+loan,,,David Odogu,Milan,Toulouse,,French list
+transfer,,,Casper Tengstedt,Feyenoord,Toulouse,,French list
+transfer,,,Ismaïl Diallo,Dijon,Toulouse,,French list
+transfer,,,Frank Magri,Toulouse,Al-Gharafa,,French list
+transfer,,,Yann Gboho,Toulouse,Coventry City,,French list
+transfer,,,Warren Kamanzi,Toulouse,Malmö,,French list
+transfer,,,Kjetil Haug,Toulouse,Go Ahead Eagles,,French list
+return,,,Pape Demba Diop,Toulouse,Strasbourg,,French list
+transfer,,,Djibril Sidibé,Toulouse,Le Mans,,French list
+transfer,,,Emersonn,Toulouse,Ipswich Town,,French list
+loan,,,Enzo Faty,Toulouse,Francs Borains,,French list
+transfer,,,Dayann Methalie,Toulouse,Sunderland,,French list
+transfer,,,Álex Domínguez,Toulouse,Ponferradina,,French list
+loan,,,Aymen Sadi,Toulouse,Aubagne Air Bel,,French list
+loan,,,Ylies Aradj,Toulouse,Aubagne Air Bel,,French list
+loan,,,Mathis Saka,Toulouse,Rodez,,French list
+transfer,,,Edhy Zuliani,Toulouse,VVV-Venlo,,French list
+transfer,,,Ibrahim Cissoko,Toulouse,PEC Zwolle,,French list
+transfer,,,Alec Georgen,Dunkerque,Lorient,,French list
+loan,,,Isak Jensen,AZ,Lorient,,French list
+loan,,,Ibrahima Baldé,Rodez,Lorient,,French list
+loan,,,Souleymane Faye,Sporting CP,Lorient,,French list
+transfer,,,Srđan Kuzmić,Viborg,Lorient,,French list
+transfer,,,Gabin Bernardeau,Nice,Lorient,,French list
+loan,,,Nosa Edward Obaretin,Napoli,Lorient,,French list
+released,,,Igor Silva,Lorient,Free agent,,French list
+return,,,Bamo Meïté,Lorient,Marseille,,French list
+transfer,,,Laurent Abergel,Lorient,Nice,,French list
+transfer,,,Pablo Pagis,Lorient,Paris FC,,French list
+transfer,,,Bamba Dieng,Lorient,Red Star Belgrade,,French list
+return,,,Trevan Sanusi,Lorient,Newcastle United,,French list
+loan,,,Isaac Monnier,Lorient,Bastia,,French list
+return,,,Abdoulaye Faye,Lorient,Bayer Leverkusen,,French list
+transfer,,,Sambou Soumano,Lorient,Reims,,French list
+return,,,Dermane Karim,Lorient,Lommel,,French list
+transfer,,,Darlin Yongwa,Lorient,Norwich City,,French list
+loan,,,Enzo Genton,Lorient,Amiens,,French list
+loan,,,Jérémy Hatchi,Lorient,Montpellier,,French list
+transfer,,,Joel Mvuka,Lorient,Bodø/Glimt,,French list
+transfer,,,Emmanuel Mbemba,Paris Saint-Germain youth,Paris FC,,French list
+transfer,,,Patrick Zabi,Reims,Paris FC,,French list
+transfer,,,Lassine Sinayoko,Auxerre,Paris FC,,French list
+transfer,,,Luca Koleosho,Burnley,Paris FC,,French list
+transfer,,,Diego Coppola,Brighton & Hove Albion,Paris FC,,French list
+released,,,Rémy Riou,Paris FC,Free agent,,French list
+transfer,,,Tuomas Ollila,Paris FC,Guingamp,,French list
+transfer,,,Alimami Gory,Paris FC,Abha,,French list
+transfer,,,Willem Geubbels,Paris FC,Lecce,,French list
+transfer,,,Mathieu Cafaro,Paris FC,Nantes,,French list
+released,,,Timothée Kolodziejczak,Paris FC,Free agent,,French list
+return,,,Marshall Munetsi,Paris FC,Wolverhampton Wanderers,,French list
+transfer,,,Julien López,Paris FC,Cannes,,French list
+released,,,Sofiane Alakouch,Paris FC,Free agent,,French list
+released,,,Lamine Gueye,Paris FC,Free agent,,French list
+released,,,Pierre-Yves Hamel,Paris FC,Free agent,,French list
+retired,,,Ciro Immobile,Paris FC,Retired,,French list
+loan,,,Ylan El Hadary,Paris FC,Nancy,,French list
+transfer,,,Mathys Tourraine,Paris FC,Pau,,French list
+released,,,Gabriel Oualengbe,Paris FC,Free agent,,French list
+transfer,,,Lohann Doucet,Paris FC,Vitória Guimarães,,French list
+loan,,,Egil Selvik,Watford,Brest,,French list
+transfer,,,Gautier Lloris,Le Havre,Brest,,French list
+transfer,,,Mamady Diambou,Red Bull Salzburg,Brest,,French list
+transfer,,,Joseph Nonge,Kocaelispor,Brest,,French list
+transfer,,,Giovani Versini,Pau,Brest,,French list
+transfer,,,Noé Poillion,Metz youth,Brest,,French list
+transfer,,,Mathieu Patouillet,Al-Hilal,Brest,,French list
+loan,,,Djylian N'Guessan,Saint-Étienne,Brest,,French list
+released,,,Romain Cagnon,Brest,Free agent,,French list
+return,,,Radosław Majecki,Brest,Monaco,,French list
+return,,,Junior Diaz,Brest,Troyes,,French list
+return,,,Junior Dina Ebimbe,Brest,Eintracht Frankfurt,,French list
+return,,,Rémy Labeau Lascary,Brest,Lens,,French list
+transfer,,,Daouda Guindo,Brest,Reims,,French list
+transfer,,,Saliou Diop,Brest,AB,,French list
+transfer,,,Grégoire Coudert,Brest,Burnley,,French list
+loan,,,Hamidou Makalou,Brest,Bastia,,French list
+return,,,Soumaïla Coulibaly,Brest,Strasbourg,,French list
+transfer,,,Noah Jauny,Brest,Francs Borains,,French list
+transfer,,,Axel Camblan,Brest,Estoril,,French list
+transfer,,,Anthony Lopes,Nantes,Angers,,French list
+transfer,,,Usman Simbakoli,RWDM Brussels,Angers,,French list
+transfer,,,Branco van den Boomen,Ajax,Angers,,French list
+transfer,,,Joseph Kalulu,Pau,Angers,,French list
+loan,,,Amine El Ouazzani,Braga,Angers,,French list
+transfer,,,Jacques Ekomié,Angers,Wrexham,,French list
+loan,,,Marius Courcoul,Angers,La Louvière,,French list
+return,,,Goduine Koyalipou,Angers,Lens,,French list
+return,,,Hervé Koffi,Angers,Lens,,French list
+retired,,,Pierrick Capelle,Angers,Retired,,French list
+loan,,,Dan Sinaté,Angers,Amiens,,French list
+retired,,,Abdoulaye Bamba,Angers,Retired,,French list
+transfer,,,Florent Hanin,Angers,Nea Salamis Famagusta,,French list
+loan,,,Lanroy Machine,Angers,Heerenveen,,French list
+transfer,,,Yacine Gaya,Angers,Quevilly-Rouen,,French list
+transfer,,,Sidiki Cherif,Angers,Fenerbahçe,,French list
+loan,,,Ahmed Touba,Panathinaikos,Le Havre,,French list
+loan,,,Amir Richardson,Fiorentina,Le Havre,,French list
+transfer,,,Josh Maja,West Bromwich Albion,Le Havre,,French list
+loan,,,Elias Jelert,Galatasaray,Le Havre,,French list
+transfer,,,Kaito Mizuta,Rot-Weiss Essen,Le Havre,,French list
+transfer,,,Joan Tincres,Monaco youth,Le Havre,,French list
+transfer,,,Vincent Sasso,Dunkerque,Le Havre,,French list
+loan,,,Sōta Nakamura,Sanfrecce Hiroshima,Le Havre,,French list
+transfer,,,Timothée Pembélé,Sunderland,Le Havre,,French list
+transfer,,,Gauthier Gallon,Dender,Le Havre,,French list
+transfer,,,Lamine N'Diaye,Alverca B,Le Havre,,French list
+transfer,,,Étienne Youté Kinkoué,Le Havre,Lausanne-Sport,,French list
+transfer,,,Loïc Négo,Le Havre,Omonia,,French list
+transfer,,,Godson Kyeremeh,Le Havre,Red Star,,French list
+transfer,,,Fodé Doucouré,Le Havre,Nantes,,French list
+transfer,,,Sofiane Boufal,Le Havre,Al-Ittihad,,French list
+transfer,,,Yanis Zouaoui,Le Havre,Montpellier,,French list
+return,,,Lucas Gourna-Douath,Le Havre,Red Bull Salzburg,,French list
+loan,,,Noam Obougou,Le Havre,Nancy,,French list
+return,,,Reda Khadra,Le Havre,Reims,,French list
+loan,,,Paul Argney,Le Havre,Dinan Léhon,,French list
+released,,,Abdoulaye Touré,Le Havre,Free agent,,French list
+transfer,,,Mory Diaw,Le Havre,Al-Shabab,,French list
+transfer,,,Mokrane Bentoumi,Le Havre,Roda JC,,French list
+transfer,,,Paul Nardi,Queens Park Rangers,Auxerre,,French list
+transfer,,,Axel Tuanzebe,Burnley,Auxerre,,French list
+loan,,,Cameron Archer,Southampton,Auxerre,,French list
+transfer,,,Christ Makosso,Luton Town,Auxerre,,French list
+loan,,,Pierre Ekwah,Saint-Étienne,Auxerre,,French list
+transfer,,,Danny Namaso,Porto,Auxerre,,French list
+transfer,,,Mamadou Diop,Grenoble,Auxerre,,French list
+transfer,,,Arthur Piedfort,Westerlo,Auxerre,,French list
+transfer,,,Wei Xiangxin,Meizhou Hakka,Auxerre,,French list
+transfer,,,Sékou Fofana,Lausanne-Sport,Auxerre,,French list
+transfer,,,Ackah-Tidiane Zoukrou,Monaco youth,Auxerre,,French list
+loan,,,Francisco Sierralta,Auxerre,Piast Gliwice,,French list
+loan,,,Josué Casimir,Auxerre,Dynamo Moscow,,French list
+return,,,Sékou Mara,Auxerre,Strasbourg,,French list
+transfer,,,Donovan Léon,Auxerre,Abha,,French list
+return,,,Oussama El Azzouzi,Auxerre,Bologna,,French list
+loan,,,Lasso Coulibaly,Auxerre,Viborg,,French list
+released,,,Tom Negrel,Auxerre,Free agent,,French list
+loan,,,Théo De Percin,Auxerre,Bastia,,French list
+transfer,,,Elisha Owusu,Auxerre,Erzurumspor,,French list
+released,,,Nathan Buayi-Kiala,Auxerre,Free agent,,French list
+loan,,,Theo Bair,Auxerre,Bolton Wanderers,,French list
+transfer,,,Saad Agouzoul,Auxerre,Sochaux,,French list
+released,,,Eros Maddy,Auxerre,Free agent,,French list
+transfer,,,Gauthier Hein,Metz,Nice,,French list
+retired,,,Dante,Nice,Retired,,French list
+transfer,,,Tom Louchet,Nice,PAOK,,French list
+released,,,Tanguy Ndombele,Nice,Free agent,,French list
+transfer,,,Charles Vanhoutte,Nice,Feyenoord,,French list
+transfer,,,Mohamed-Ali Cho,Nice,Hull City,,French list
+loan,,,Melvin Bard,Nice,Leeds United,,French list
+return,,,Juma Bah,Nice,Manchester City,,French list
+released,,,Bartosz Żelazowski,Nice,Free agent,,French list
+transfer,,,Maxime Dupé,Nice,Nantes,,French list
+loan,,,Brad Mantsounga,Nice,Virton,,French list
+transfer,,,Kojo Peprah Oppong,Nice,Fenerbahçe,,French list
+return,,,Tiago Gouveia,Nice,Benfica,,French list
+loan,,,Kevin Carlos,Nice,Cagliari,,French list
+loan,,,Victor Orakpo,Nice,Gençlerbirliği,,French list
+transfer,,,Mattia Viti,Nice,Sampdoria,,French list
+transfer,,,Rareș Ilie,Nice,Mantova,,French list
+transfer,,,Aliou Baldé,Nice,St. Gallen,,French list
+transfer,,,Jérémie Boga,Nice,Juventus,,French list
+loan,,,Jérémy Le Douaron,Palermo,Troyes,,French list
+transfer,,,Iron Gomis,Zira,Troyes,,French list
+loan,,,Hugo Picard,Columbus Crew,Troyes,,French list
+loan,,,Timothé Nkada,Standard Liège,Troyes,,French list
+transfer,,,Dermane Karim,Lommel,Troyes,,French list
+transfer,,,Patrick Beach,Melbourne City,Troyes,,French list
+released,,,Xavier Chavalerin,Troyes,Free agent,,French list
+transfer,,,Mounaïm El Idrissy,Troyes,Raja Casablanca,,French list
+transfer,,,Mathys Detourbet,Troyes,Manchester City,,French list
+loan,,,Elijah Odede,Troyes,Lommel,,French list
+transfer,,,Thierno Baldé,Troyes,Nancy,,French list
+return,,,Tawfik Bentayeb,Troyes,Union Touarga,,French list
+return,,,Hugo Gambor,Troyes,Gent,,French list
+loan,,,Fred Ondoa,Troyes,Villefranche,,French list
+released,,,Tom Akpakoun,Troyes,Free agent,,French list
+transfer,,,Sankhoun Diawara,Troyes,Milan,,French list
+transfer,,,Yasser Larouci,Troyes,Le Mans,,French list
+transfer,,,Amar Fatah,Troyes,Lecce,,French list
+transfer,,,Billal Brahimi,Santos,Le Mans,,French list
+loan,,,João Almeida,Coritiba,Le Mans,,French list
+transfer,,,Habib Diallo,Metz,Le Mans,,French list
+transfer,,,Louis Mafouta,Guingamp,Le Mans,,French list
+loan,,,Raúl Torrente,Dinamo Zagreb,Le Mans,,French list
+loan,,,Daouda Traoré,Southampton,Le Mans,,French list
+loan,,,Enzo Vagner,Coritiba,Le Mans,,French list
+return,,,Isaac Cossier,Le Mans,Lille,,French list
+return,,,Malang Gomes,Le Mans,Nantes,,French list
+transfer,,,Anthony Ribelin,Le Mans,Amiens,,French list
+released,,,Baptiste Guillaume,Le Mans,Free agent,,French list
+transfer,,,Taylor Luvambo,Le Mans,Argeș Pitești,,French list
+transfer,,,Milan Robin,Le Mans,Estoril,,French list
+transfer,,,Mathis Hamdi,Le Mans,Quevilly-Rouen,,French list
+loan,,,Izhak Hammoudi,Le Mans,Bourges,,French list
+loan,,,Nathan Tronchet,Le Mans,Haguenau,,French list
+loan,,,Saïdou Sow,Strasbourg,Nantes,,French list
+transfer,,,Antoine Joujou,Parma,Nantes,,French list
+transfer,,,Wilitty Younoussa,Rodez,Nantes,,French list
+transfer,,,Ryad Hachem,Red Star,Nantes,,French list
+transfer,,,Thomas Robinet,Dunkerque,Nantes,,French list
+released,,,Patrik Carlgren,Nantes,Free agent,,French list
+transfer,,,Balthazar Pierret,Red Star,Nantes,,French list
+loan,,,Amin Cherni,Göztepe,Nantes,,French list
+transfer,,,Ali Youssef,Nantes,Al-Ittihad,,French list
+return,,,Nicolas Cozza,Nantes,VfL Wolfsburg,,French list
+return,,,Abakar Sylla,Nantes,Strasbourg,,French list
+transfer,,,Chidozie Awaziem,Nantes,Konyaspor,,French list
+transfer,,,Herba Guirassy,Nantes,Young Boys,,French list
+transfer,,,Francis Coquelin,Nantes,Laval,,French list
+return,,,Amady Camara,Nantes,Sturm Graz,,French list
+transfer,,,Youssef El-Arabi,Nantes,Marko,,French list
+return,,,Rémy Cabella,Nantes,Olympiacos,,French list
+return,,,Mohamed Kaba,Nantes,Lecce,,French list
+transfer,,,Mathieu Acapandié,Nantes,Hajduk Split,,French list
+transfer,,,Uroš Radaković,Nantes,Buriram United,,French list
+transfer,,,Deiver Machado,Nantes,Rodina Moscow,,French list
+transfer,,,Mostafa Mohamed,Nantes,Konyaspor,,French list
+loan,,,Bahmed Deuff,Nantes,Antwerp,,French list
+loan,,,Hugo Lamy,Nantes,La Roche-sur-Yon,,French list
+transfer,,,Alban Lafont,Nantes,Amedspor,,French list
+transfer,,,Jean-Kévin Duverne,Nantes,Omonia,,French list
+transfer,,,Yassine Benhattab,Nantes,Montpellier,,French list
+transfer,,,Jean Ruiz,Pau,Metz,,French list
+transfer,,,Nampalys Mendy,Watford,Metz,,French list
+transfer,,,Téji Savanier,Montpellier,Metz,,French list
+transfer,,,Alassane Sy,Génération Foot,Metz,,French list
+transfer,,,Abdourahmane Mbodji,Génération Foot,Metz,,French list
+transfer,,,Cristian Devenish,AVS,Metz,,French list
+transfer,,,Idris Mohamed,Le Puy,Metz,,French list
+transfer,,,Jean-Philippe Gbamin,Metz,CSKA Sofia,,French list
+return,,,Giorgi Tsitaishvili,Metz,Dynamo Kyiv,,French list
+return,,,Boubacar Traoré,Metz,Wolverhampton Wanderers,,French list
+transfer,,,Terry Yegbe,Metz,Lech Poznań,,French list
+return,,,Lucas Michal,Metz,Monaco,,French list
+released,,,Benjamin Stambouli,Metz,Free agent,,French list
+loan,,,Cléo Mélières,Metz,Bastia,,French list
+loan,,,Yannis Lawson,Metz,Seraing,,French list
+transfer,,,Ismaël Guerti,Metz,Grazer AK,,French list
+transfer,,,Koffi Kouao,Metz,Neftchi Fergana,,French list
+released,,,Fodé Ballo-Touré,Metz,Free agent,,French list
+loan,,,Édouard Soumah-Abbad,Metz,Paris 13 Atletico,,French list
+transfer,,,Kevin Van Den Kerkhof,Metz,Charleroi,,French list
+transfer,,,Joseph Nduquidi,Metz,Farense,,French list
+transfer,,,Idrissa Gueye,Metz,Udinese,,French list
+transfer,,,Joel Asoro,Metz,Apollon Limassol,,French list
+transfer,,,Mamour Ndiaye,Sarpsborg 08,Saint-Étienne,,French list
+transfer,,,Thierno Ballo,Wolfsberger,Saint-Étienne,,French list
+transfer,,,Jakob Breum,Go Ahead Eagles,Saint-Étienne,,French list
+transfer,,,Áron Csongvai,AIK,Saint-Étienne,,French list
+transfer,,,Tamar Svetlin,Korona Kielce,Saint-Étienne,,French list
+transfer,,,Sohaib Naïr,Guingamp,Saint-Étienne,,French list
+transfer,,,Lucas Lavallée,Châteauroux,Saint-Étienne,,French list
+transfer,,,Brice Maubleu,Saint-Étienne,Pau,,French list
+loan,,,Strahinja Stojković,Saint-Étienne,OFK Beograd,,French list
+transfer,,,Mickaël Nadé,Saint-Étienne,Dubai United,,French list
+transfer,,,Dennis Appiah,Saint-Étienne,Caen,,French list
+transfer,,,Florian Tardieu,Saint-Étienne,Montpellier,,French list
+return,,,Abdoulaye Kanté,Saint-Étienne,Middlesbrough,,French list
+return,,,Aboubaka Soumahoro,Saint-Étienne,Hamburger SV,,French list
+loan,,,Ebenezer Annan,Saint-Étienne,Rapid București,,French list
+loan,,,Igor Miladinović,Saint-Étienne,Partizan,,French list
+loan,,,Axel Dodote,Saint-Étienne,Pau,,French list
+loan,,,Luan Gadegbeku,Saint-Étienne,Pau,,French list
+loan,,,Jebryl Sahraoui,Saint-Étienne,Aubagne Air Bel,,French list
+transfer,,,Karim Cissé,Saint-Étienne,Aubagne Air Bel,,French list
+transfer,,,Beres Owusu,Saint-Étienne,Grazer AK,,French list
+transfer,,,Enzo Mayilla,Saint-Étienne,Dunkerque,,French list
+transfer,,,Yanis Benchaouch,Monaco youth,Red Star,,French list
+transfer,,,Elyaz Zidane,Betis Deportivo,Red Star,,French list
+transfer,,,Ilija Despotović,Lausanne-Sport,Red Star,,French list
+transfer,,,Leonardo Buta,Udinese,Red Star,,French list
+loan,,,Côme Bianay Balcot,Torino,Red Star,,French list
+transfer,,,Quentin Beunardeau,Red Star,Cannes,,French list
+transfer,,,Rayane Doucouré,Red Star,Aubagne Air Bel,,French list
+return,,,Pape Meïssa Ba,Red Star,Widzew Łódź,,French list
+released,,,Vincent Kany,Red Star,Free agent,,French list
+loan,,,Abdelsamad Hachem,Red Star,Virton,,French list
+return,,,Dembo Sylla,Red Star,Lorient,,French list
+transfer,,,Hacène Benali,Red Star,Pau,,French list
+return,,,Giovanni Haag,Red Star,Fortuna Düsseldorf,,French list
+transfer,,,Mohamed Sylla,Bourg-Péronnas,Rodez,,French list
+transfer,,,Damjan Pavlović,Kauno Žalgiris,Rodez,,French list
+transfer,,,Nachon Nsingi,La Louvière,Rodez,,French list
+transfer,,,Mathis Touho,Villefranche,Rodez,,French list
+transfer,,,Kélian Nsona,Casa Pia,Rodez,,French list
+transfer,,,Marco Essimi,Alverca,Rodez,,French list
+transfer,,,Steven Luyambula,Orléans,Rodez,,French list
+transfer,,,Antonin Cartillier,Rouen,Rodez,,French list
+transfer,,,Clément Jolibois,Rodez,Kifisia,,French list
+transfer,,,Mohamed Achi,Rodez,Cherno More,,French list
+released,,,Mehdi Baaloudj,Rodez,Free agent,,French list
+transfer,,,Taïryk Arconte,Rodez,Millwall,,French list
+transfer,,,Morgan Corredor,Rodez,Tarbes Pyrénées,,French list
+transfer,,,Nolan Galves,Rodez,West Bromwich Albion,,French list
+transfer,,,Samy Benchamma,Rodez,JS Kabylie,,French list
+transfer,,,Alexis Trouillet,Rodez,Standard Liège,,French list
+transfer,,,Aurélien Pelon,Rodez,Grenoble,,French list
+transfer,,,Tom Ritzy Hülsmann,TSV Hartberg,Reims,,French list
+transfer,,,John Otomewo,Hapoel Jerusalem,Reims,,French list
+transfer,,,Youssef El Kachati,NEC,Reims,,French list
+transfer,,,Edin Omeragić,Neuchâtel Xamax,Reims,,French list
+transfer,,,Alexis Sauvage,Amiens,Reims,,French list
+transfer,,,Samuel Kotto,Gent,Reims,,French list
+transfer,,,Seydou Dembélé,JMG Academy,Reims,,French list
+transfer,,,Chamsedin Kouranfal,Pagny,Reims,,French list
+transfer,,,Armel Zohouri,Iberia 1999,Reims,,French list
+transfer,,,Quentin Paris,Annecy,Reims,,French list
+transfer,,,Maxime Busi,Reims,Antwerp,,French list
+released,,,Nicolas Pallois,Reims,Free agent,,French list
+transfer,,,Thiemoko Diarra,Reims,Kasımpaşa,,French list
+transfer,,,Alexandre Olliero,Reims,Grenoble,,French list
+loan,,,Adama Bojang,Reims,Charleroi,,French list
+transfer,,,Ewen Jaouen,Reims,Newcastle United,,French list
+return,,,Yassine Benhattab,Reims,Nantes,,French list
+return,,,Abdoul Koné,Reims,RB Leipzig,,French list
+loan,,,Soumaïla Sylla,Reims,Nîmes,,French list
+loan,,,Malcolm Jeng,Reims,Groningen,,French list
+loan,,,Niama Pape Sissoko,Reims,SV Ried,,French list
+loan,,,Oumar Diakité,Reims,Sturm Graz,,French list
+transfer,,,Cédric Kipré,Reims,Ipswich Town,,French list
+transfer,,,Reda Khadra,Reims,Qarabağ,,French list
+transfer,,,Yohan Demoncy,Reims,Sochaux,,French list
+transfer,,,Antoine Leautey,Reims,Wuhan Three Towns,,French list
+transfer,,,Sacha Lima,UF Touraine,Annecy,,French list
+transfer,,,Alan Mondesir,Montlouis,Annecy,,French list
+transfer,,,Alexis Casadei,Basel,Annecy,,French list
+transfer,,,Souleymane Fofana,ASEC Mimosas,Annecy,,French list
+loan,,,Kadan Young,Aston Villa,Annecy,,French list
+transfer,,,Mohamed Koné,Aston Villa,Annecy,,French list
+transfer,,,Pascal Mozie,Legia Warsaw,Annecy,,French list
+loan,,,Zépiqueno Redmond,Aston Villa,Annecy,,French list
+transfer,,,Esteban Marre,Istres,Annecy,,French list
+transfer,,,David Oduro,Barcelona B,Annecy,,French list
+return,,,Triston Rowe,Annecy,Aston Villa,,French list
+return,,,Hamza Koutoune,Annecy,Nice,,French list
+transfer,,,Valentin Jacob,Annecy,Rumilly-Vallières,,French list
+transfer,,,Abdel Hbouch,Annecy,Boulogne,,French list
+return,,,Alejandro Gomes Rodríguez,Annecy,Lyon,,French list
+retired,,,Vincent Pajot,Annecy,Retired,,French list
+transfer,,,Axel Drouhin,Annecy,Kortrijk,,French list
+return,,,Travis Patterson,Annecy,Aston Villa,,French list
+released,,,Fabrice Nsakala,Annecy,Free agent,,French list
+transfer,,,Nolan Ferro,Annecy,Javor Matis,,French list
+loan,,,Cédric Makutungu,Annecy,Cannes,,French list
+transfer,,,Aymerick Nedelec,Annecy,Chambéry,,French list
+released,,,Wael Debbiche,Annecy,Free agent,,French list
+transfer,,,Ben Hamed Touré,Annecy,Barnsley,,French list
+loan,,,Ranjan Neelakandan,Annecy,Vaduz,,French list
+transfer,,,Mamadou Camara,Laval,Montpellier,,French list
+transfer,,,Oscar Etoundi,Academy Foot de Douala,Montpellier,,French list
+transfer,,,Daylam Meddah,Pau,Montpellier,,French list
+transfer,,,Alpha Sissoko,Guingamp,Montpellier,,French list
+transfer,,,Grégory Ayem,Racing Club de France,Montpellier,,French list
+transfer,,,Christopher Jullien,Montpellier,Dender,,French list
+return,,,Nathanaël Mbuku,Montpellier,FC Augsburg,,French list
+transfer,,,Yanis Issoufou,Montpellier,Millwall,,French list
+transfer,,,Khalil Fayad,Montpellier,Hajduk Split,,French list
+return,,,Enzo Molebe,Montpellier,Lyon,,French list
+transfer,,,Alexandre Mendy,Montpellier,Al-Faisaly,,French list
+transfer,,,Lucas Mincarelli,Montpellier,Estrela da Amadora,,French list
+return,,,Ayanda Sishuba,Montpellier,Rennes,,French list
+transfer,,,Enzo Tchato,Montpellier,Frosinone,,French list
+loan,,,Junior Ndiaye,Montpellier,Valenciennes,,French list
+transfer,,,Modibo Sagnan,Montpellier,Çaykur Rizespor,,French list
+transfer,,,Lorenzo Rajot,Caen,Pau,,French list
+transfer,,,Babacar Leye,Villefranche,Pau,,French list
+transfer,,,Alexis Lefebvre,RFC Liège,Pau,,French list
+transfer,,,Royce Openda,Bordeaux,Pau,,French list
+transfer,,,Maxime Adam,Colmar,Pau,,French list
+loan,,,Bilal Brahimi,Viborg,Pau,,French list
+loan,,,Jérémy Sebas,Bastia,Pau,,French list
+transfer,,,Tom Saettel,Haguenau,Pau,,French list
+transfer,,,Jessy Benet,Grenoble,Pau,,French list
+transfer,,,Rony Mimb Baheng,Marseille B,Pau,,French list
+transfer,,,Quentin Daubin,Valenciennes,Pau,,French list
+transfer,,,Gaëtan Paquiez,Grenoble,Pau,,French list
+transfer,,,Abdoulaye Mbaye,Génération Foot,Pau,,French list
+released,,,Axel Bamba,Pau,Free agent,,French list
+transfer,,,Akim Abdallah,Guingamp,Pau,,French list
+transfer,,,Setigui Karamoko,Pau,Sepsi OSK,,French list
+return,,,Kyliane Dong,Pau,FC Augsburg,,French list
+released,,,Antonin Bobichon,Pau,Free agent,,French list
+return,,,Omar Sissoko,Pau,Paris FC,,French list
+return,,,Omar Sadik,Pau,Espanyol,,French list
+retired,,,Ousmane Kanté,Pau,Retired,,French list
+transfer,,,Julien Anziani,Pau,Manisa,,French list
+transfer,,,Steeve Beusnard,Pau,Turan Tovuz,,French list
+transfer,,,Noah Raveyre,Pau,Alverca,,French list
+transfer,,,Neil Glossoa,Pau,Slavia Prague,,French list
+transfer,,,Salif Lebouath,Pau,Valenciennes,,French list
+transfer,,,Rayan Touzghar,Pau,Standard Liège,,French list
+return,,,Edhy Zuliani,Pau,Toulouse,,French list
+loan,,,Tom Gomes,Pau,Bourg-Péronnas,,French list
+transfer,,,Jordan Morel,Orléans,Dunkerque,,French list
+released,,,Gaëtan Robail,Dunkerque,Free agent,,French list
+transfer,,,Adrien Lebeau,Hansa Rostock,Dunkerque,,French list
+transfer,,,Yegor Prutsev,Red Star Belgrade,Dunkerque,,French list
+transfer,,,Steven Nzonzi,Stoke City,Dunkerque,,French list
+transfer,,,Maxence Prévot,OH Leuven,Dunkerque,,French list
+transfer,,,Souleymane Keita,Boulogne,Dunkerque,,French list
+transfer,,,Arthylio Nadé,Troyes B,Dunkerque,,French list
+transfer,,,Lenny Vallier,Nacional,Dunkerque,,French list
+loan,,,Franck Atoen,Samsunspor,Dunkerque,,French list
+released,,,Abner,Dunkerque,Free agent,,French list
+transfer,,,Moha Ramos,Marino,Dunkerque,,French list
+released,,,M'Baye Niang,Dunkerque,Free agent,,French list
+transfer,,,Marcos Lavín,Dunkerque,Académico de Viseu,,French list
+return,,,Pape Diong,Dunkerque,Strasbourg,,French list
+transfer,,,Eddy Sylvestre,Dunkerque,Farul Constanța,,French list
+transfer,,,Anto Sekongo,Dunkerque,Samsunspor,,French list
+transfer,,,Marco Essimi,Dunkerque,Alverca,,French list
+return,,,Lohann Doucet,Dunkerque,Paris FC,,French list
+transfer,,,Íñigo Eguaras,Dunkerque,Salamanca,,French list
+released,,,Malick Diop,Dunkerque,Free agent,,French list
+transfer,,,Abou Kanté,Dunkerque,Laval,,French list
+transfer,,,Marco Decherf,Dunkerque,Mechelen,,French list
+loan,,,Zaid Seha,Dunkerque,Aubagne Air Bel,,French list
+return,,,Mathys Niflore,Dunkerque,Toulouse,,French list
+return,,,Morgan Bokele,Dunkerque,Metz,,French list
+return,,,Aristide Zossou,Dunkerque,Auxerre,,French list
+transfer,,,Florent Sanchez,Orléans,Guingamp,,French list
+transfer,,,Teddy Averlant,Amiens,Guingamp,,French list
+transfer,,,Samir Ben Brahim,Versailles,Guingamp,,French list
+transfer,,,Brandon Bokangu,Nancy,Guingamp,,French list
+transfer,,,Jasser Chamakh,Saint-Priest,Guingamp,,French list
+transfer,,,Jeovanni Dianganga,Lokeren,Guingamp,,French list
+transfer,,,Tom Ducrocq,Bastia,Guingamp,,French list
+transfer,,,Zayon Chtaï-Telamio,Paris Saint-Germain youth,Guingamp,,French list
+transfer,,,Kalidou Sidibé,Guingamp,Akhmat Grozny,,French list
+transfer,,,Amadou Sagna,Guingamp,Ironi Kiryat Shmona,,French list
+return,,,Freddy Mbemba,Guingamp,Charleroi,,French list
+return,,,Jérémy Hatchi,Guingamp,Lorient,,French list
+return,,,Yohan Demoncy,Guingamp,Reims,,French list
+loan,,,Ibrahima Diakité,Guingamp,Aubagne Air Bel,,French list
+loan,,,Eden Gassama,Guingamp,La Roche-sur-Yon,,French list
+transfer,,,Youssef Njoya,Guingamp,Limonest,,French list
+transfer,,,Farouq Limouri,FC Eindhoven,Grenoble,,French list
+transfer,,,Yohann Magnin,CSKA 1948,Grenoble,,French list
+transfer,,,Leonardo Cerri,Juventus Next Gen,Grenoble,,French list
+loan,,,Owen Kouassi,Lecce,Grenoble,,French list
+transfer,,,Dillon Hoogewerf,Vitesse,Grenoble,,French list
+transfer,,,Théo Borne,Dynamo České Budějovice,Grenoble,,French list
+transfer,,,Zé Leite,Penafiel,Grenoble,,French list
+transfer,,,Owen Martinez-Jullien,Beauvais,Grenoble,,French list
+transfer,,,Jules Mouton,Saint-Étienne B,Grenoble,,French list
+transfer,,,Kyliann Fofana,Paris FC B,Grenoble,,French list
+transfer,,,Sakhalou Niakaté,Valenciennes,Grenoble,,French list
+loan,,,Jean-Guy Akpa Akpro,Pro Vercelli,Grenoble,,French list
+transfer,,,Yvann Maçon,AEL,Grenoble,,French list
+transfer,,,Maxime Pattier,Grenoble,Saint-Malo,,French list
+transfer,,,Stone Mambo,Grenoble,Noah,,French list
+transfer,,,Yadaly Diaby,Grenoble,Vancouver Whitecaps,,French list
+transfer,,,Mamady Bangré,Grenoble,Sumgayit,,French list
+transfer,,,Shaquil Delos,Grenoble,La Louvière,,French list
+transfer,,,Evans Maurin,Grenoble,Casa Pia,,French list
+transfer,,,Allan Tchaptchet,Grenoble,Virton,,French list
+transfer,,,Loris Mouyokolo,Grenoble,Baltika,,French list
+transfer,,,Mathieu Mion,Grenoble,Boulogne,,French list
+transfer,,,Efe Sarıkaya,Grenoble,Gaziantep,,French list
+transfer,,,Alan Kerouedan,Grenoble,Cannes,,French list
+transfer,,,Jean Grillot,Bordeaux,Clermont,,French list
+loan,,,Florian Bianchini,Swansea City,Clermont,,French list
+transfer,,,Luís Semedo,Sunderland,Clermont,,French list
+released,,,Junior Sambia,Clermont,Free agent,,French list
+transfer,,,Arthur Saintorens,Aviron Bayonnais,Clermont,,French list
+loan,,,Christ Okou,Paris FC B,Clermont,,French list
+return,,,Saïdou Sow,Clermont,Strasbourg,,French list
+released,,,Maximiliano Caufriez,Clermont,Free agent,,French list
+return,,,Axel Camblan,Clermont,Brest,,French list
+transfer,,,Yuliwes Bellache,Clermont,Andrézieux,,French list
+transfer,,,Amine Saïd,Clermont,Rumilly-Vallières,,French list
+released,,,Henri Saivet,Clermont,Free agent,,French list
+transfer,,,Famara Diédhiou,Clermont,Al-Orobah,,French list
+return,,,Mohamed Guindo,Clermont,La Louvière,,French list
+retired,,,Johan Gastien,Clermont,Retired,,French list
+transfer,,,İlhan Fakılı,Clermont,Beşiktaş,,French list
+transfer,,,Kader Bamba,Clermont,Granada,,French list
+return,,,Mathys Tourraine,Clermont,Paris FC,,French list
+transfer,,,Cheick Oumar Konaté,Clermont,Beveren,,French list
+transfer,,,Habib Keïta,Clermont,Kocaelispor,,French list
+transfer,,,Héliohdino Tavares,Guingamp B,Nancy,,French list
+transfer,,,Pape Meïssa Ba,Widzew Łódź,Nancy,,French list
+transfer,,,Kouroufia Kébé,Orléans,Nancy,,French list
+transfer,,,Ilyes Housni,Paris Saint-Germain youth,Nancy,,French list
+transfer,,,Mamadou Fofana,Aarau,Nancy,,French list
+released,,,Logan Ndenbe,Nancy,Free agent,,French list
+transfer,,,Issam Bouaoune,Châteauroux,Nancy,,French list
+transfer,,,Nordine Kandil,Amiens,Nancy,,French list
+transfer,,,Joël-Emmanuel Coulibaly,Rennes B,Nancy,,French list
+return,,,Justin Bourgault,Nancy,Brest,,French list
+transfer,,,Ćazim Suljić,Nancy,Amiens,,French list
+transfer,,,Teddy Bouriaud,Nancy,Laval,,French list
+return,,,Niama Pape Sissoko,Nancy,Reims,,French list
+transfer,,,Adrien Julloux,Nancy,Amiens,,French list
+transfer,,,Bakari Camara,Nancy,Rouen,,French list
+transfer,,,Martin Sourzac,Nancy,Imperia,,French list
+transfer,,,Maxence Carlier,Nancy,Ararat-Armenia,,French list
+transfer,,,Martin Expérience,Nancy,Dender,,French list
+transfer,,,Jimmy Evans,Nancy,Universidad Católica,,French list
+return,,,Rayan Bamba,Nancy,Rennes,,French list
+return,,,Victor Orakpo,Nancy,Nice,,French list
+released,,,Faitout Maouassa,Nancy,Free agent,,French list
+transfer,,,Patrick Ouotro,Nancy,Vitória Guimarães,,French list
+loan,,,Mattheo Guendez,Nancy,Paris 13 Atletico,,French list
+loan,,,Youssouf Tandia,Nancy,Épinal,,French list
+transfer,,,Oumar Sidibé,Nancy,Cannes,,French list
+transfer,,,Aymane Nassiri,Istres,Boulogne,,French list
+transfer,,,Ludéric Etonde,Bordeaux,Boulogne,,French list
+transfer,,,Benjamin Bešić,Bourg-Péronnas,Boulogne,,French list
+transfer,,,Théo Brusco,Differdange 03,Boulogne,,French list
+transfer,,,Oscar Lenne,Lens youth,Boulogne,,French list
+transfer,,,Théo Epailly,Gorica,Boulogne,,French list
+return,,,Vincent Burlet,Boulogne,Lille,,French list
+transfer,,,Nathan Zohoré,Boulogne,Ferencváros,,French list
+transfer,,,Luka Boiteau,Boulogne,Valenciennes,,French list
+transfer,,,Amine El Farissi,Boulogne,MAS,,French list
+transfer,,,Corentin Fatou,Boulogne,Laval,,French list
+transfer,,,Siad Gourville,Boulogne,La Louvière,,French list
+return,,,Gabin Capuano,Boulogne,Lens,,French list
+loan,,,Azamat Uriev,Boulogne,Haguenau,,French list
+transfer,,,Emmanuel Kouassi,Boulogne,Le Puy,,French list
+loan,,,Exaucé Mpembele Boula,Boulogne,Bourg-Péronnas,,French list
+transfer,,,Lilian Raillot,Boulogne,Orléans,,French list
+transfer,,,Hervé Touré,Boulogne,OFK Beograd,,French list
+transfer,,,Zanga Koné,Boulogne,Canet Roussillon,,French list
+transfer,,,Christian Kitenge,Boulogne,Progrès Niederkorn,,French list
+transfer,,,Chafik Gourichy,Thionville Lusitanos,Laval,,French list
+loan,,,Oumar Konaté,Monaco youth,Laval,,French list
+transfer,,,Aboubacar Lô,Amiens,Laval,,French list
+transfer,,,Jules Gaudin,Charleroi,Laval,,French list
+transfer,,,Esteban Mouton,Orléans,Laval,,French list
+transfer,,,Hermann Esmel,Le Puy,Laval,,French list
+transfer,,,Alpha Diallo,Lens youth,Laval,,French list
+transfer,,,Peter Ouaneh,Laval,UTA Arad,,French list
+released,,,Moïse Adiléhou,Laval,Free agent,,French list
+released,,,Thibaut Vargas,Laval,Free agent,,French list
+transfer,,,Titouan Thomas,Laval,Fleury,,French list
+transfer,,,Malik Sellouki,Laval,Rio Ave,,French list
+return,,,Dylan Mbayo,Laval,PEC Zwolle,,French list
+transfer,,,Malik Tchokounté,Laval,Rouen,,French list
+return,,,Ylies Aradj,Laval,Toulouse,,French list
+return,,,Owen Kouassi,Laval,Lecce,,French list
+transfer,,,Yohan Tavares,Laval,UF Touraine,,French list
+loan,,,Enzo Montet,Laval,Thionville Lusitanos,,French list
+released,,,William Benard,Laval,Free agent,,French list
+return,,,Eros Maddy,Laval,Auxerre,,French list
+loan,,,Loïs Martins,Laval,Avranches,,French list
+transfer,,,Noa Mupemba,Laval,Rapperswil-Jona,,French list
+transfer,,,Aymeric Faurand-Tournaire,Laval,Hà Nội,,French list
+transfer,,,Axel Bargain,GOAL FC,Dijon,,French list
+released,,,Tom Meynadier,Dijon,Free agent,,French list
+transfer,,,Moussa Faty,Le Puy,Dijon,,French list
+transfer,,,Ange Lago,Marseille B,Dijon,,French list
+transfer,,,Ismaïl Bouleghcha,Le Puy,Dijon,,French list
+transfer,,,Lenny Montfort,Dijon,Bourg-Péronnas,,French list
+released,,,Fady Khatir,Dijon,Free agent,,French list
+transfer,,,Julien Domingues,Dijon,Al-Kholood,,French list
+loan,,,Brayan Djadja,Dijon,Bordeaux,,French list
+loan,,,Loris Dupont,Dijon,Châteaubriant,,French list
+loan,,,Brayan Djadja,Dijon,Istres,,French list
+transfer,,,Jules Meyer,Dijon,CSKA 1948,,French list
+transfer,,,Samy Baghdadi,Valenciennes,Sochaux,,French list
+transfer,,,Louicius Deedson,FC Dallas,Sochaux,,French list
+transfer,,,Victor Lobry,Amiens,Sochaux,,French list
+released,,,Ethan Cortes,Sochaux,Free agent,,French list
+transfer,,,Landry Nomel,Stade Lausanne Ouchy,Sochaux,,French list
+transfer,,,Elson Mendes,Sochaux,Kasımpaşa,,French list
+loan,,,Aboubacar Sidibé,Sochaux,Paris 13 Atletico,,French list
+loan,,,Enzo-Noël Dodé,Sochaux,Paris 13 Atletico,,French list
+released,,,Prince Mendy,Sochaux,Free agent,,French list
+return,,,Solomon Loubao,Sochaux,Monza,,French list
+transfer,,,Aymen Boutoutaou,Sochaux,FCSB,,French list
+transfer,,,Abderrezzek Saidi,Sochaux,Unionistas,,French list
+transfer,,,Lamine Touré,Sochaux,UNA Strassen,,French list
+transfer,12 February 2026,,Álex Jiménez,Milan,Bournemouth,Undisclosed,Italian list
+transfer,18 February 2026,,Tommaso Pobega,Milan,Bologna,Undisclosed,Italian list
+transfer,19 May 2026,,Davide Biraschi,Frosinone,Fatih Karagümrük,Undisclosed,Italian list
+transfer,21 May 2026,,Lorenzo Colombo,Milan,Genoa,Undisclosed,Italian list
+transfer,26 May 2026,,Donyell Malen,Aston Villa,Roma,Undisclosed,Italian list
+transfer,26 May 2026,,Filippo Liberati,Caldiero Terme,Carrarese,Undisclosed,Italian list
+transfer,27 May 2026,,Toma Bašić,Lazio,Venezia,Free,Italian list
+transfer,1 June 2026,,Issa Doumbia,Venezia,Sporting,Undisclosed,Italian list
+transfer,1 June 2026,,Arijanet Muric,Ipswich Town,Sassuolo,Undisclosed,Italian list
+transfer,3 June 2026,,Rasmus Højlund,Man United,Napoli,Undisclosed,Italian list
+transfer,4 June 2026,,Manga Foe Ondoa,Estoril,Monza,Undisclosed,Italian list
+transfer,5 June 2026,,Aleksandar Stanković,Club Brugge,Inter,Undisclosed,Italian list
+transfer,5 June 2026,,Alisson Santos,Sporting,Napoli,Undisclosed,Italian list
+loan,10 June 2026,,Joaquín Sosa,Bologna,Colo-Colo,Loan,Italian list
+loan,11 June 2026,,Stefan Mitrović,Verona,Vojvodina,Loan,Italian list
+transfer,12 June 2026,,Marcelo Vaz,Varesina,Genoa,Undisclosed,Italian list
+loan,12 June 2026,,Adrian Raychev,Pisa,Levski Sofia,Loan,Italian list
+transfer,15 June 2026,,Nicolò Zaniolo,Galatasaray,Udinese,Undisclosed,Italian list
+transfer,15 June 2026,,Adrian Lickūnas,Perugia,Cremonese,Undisclosed,Italian list
+transfer,16 June 2026,,Tjaš Begić,Parma,Sampdoria,Undisclosed,Italian list
+transfer,16 June 2026,,Valerio Crespi,Avellino,Union Brescia,Undisclosed,Italian list
+transfer,17 June 2026,,Ruan Tressoldi,Sassuolo,Atlético Mineiro,Undisclosed,Italian list
+transfer,17 June 2026,,Sebastian Walukiewicz,Torino,Sassuolo,Undisclosed,Italian list
+transfer,17 June 2026,,Giacomo Calò,Cesena,Frosinone,Undisclosed,Italian list
+loan,18 June 2026,,Tommaso Corazza,Bologna,Vicenza,Loan,Italian list
+transfer,18 June 2026,,Fahem Benaïssa-Yahia,Casa Pia,Mantova,Undisclosed,Italian list
+transfer,19 June 2026,,Răzvan Sava,Udinese,Craiova,Undisclosed,Italian list
+loan,19 June 2026,,Thomas Gillier,Bologna,Montréal,6-month loan,Italian list
+transfer,19 June 2026,,Giacomo Faticanti,Lecce,Juve Next Gen,Undisclosed,Italian list
+loan,19 June 2026,,Jonathan Silva,Torino,Mantova,Loan,Italian list
+loan,21 June 2026,,Alessandro Nunziante,Udinese,Arezzo,Loan,Italian list
+loan,22 June 2026,,Bodin Tomasevic,Bologna,Mantova,Loan,Italian list
+transfer,24 June 2026,,Leorat Bega,Stade Nyonnais,Verona,Free,Italian list
+transfer,24 June 2026,,Yanis Khafi,PSG,Carrarese,Free,Italian list
+transfer,24 June 2026,,Luca Gemello,Perugia,Mantova,Undisclosed,Italian list
+transfer,25 June 2026,,Joris Manquant,Stade Nyonnais,Modena,Free,Italian list
+transfer,25 June 2026,,Marco Silvestri,Cremonese,Fatih Karagümrük,Undisclosed,Italian list
+transfer,25 June 2026,,Alexander Lind,Pisa,Nordsjælland,Undisclosed,Italian list
+transfer,26 June 2026,,Simone Lontani,Milan,Parma,Free,Italian list
+transfer,26 June 2026,,Tommaso Berti,Cesena,Cremonese,Undisclosed,Italian list
+transfer,26 June 2026,,Demba Seck,Torino,Partizan,Undisclosed,Italian list
+transfer,27 June 2026,,Benjamin Cremaschi,Inter Miami,Parma,Undisclosed,Italian list
+transfer,27 June 2026,,Iacopo Lipani,Virtus Entella,Latina,Undisclosed,Italian list
+transfer,27 June 2026,,Kornel Lisman,Lech Poznań,Venezia,Undisclosed,Italian list
+transfer,28 June 2026,,Alessandro Sersanti,Juve Next Gen,Modena,Undisclosed,Italian list
+loan,29 June 2026,,Ben Godfrey,Atalanta,Rangers,Loan,Italian list
+transfer,29 June 2026,,Diego Ronco,Monopoli,Modena,Undisclosed,Italian list
+transfer,29 June 2026,,Emanuele Schimmenti,Monopoli,Benevento,Undisclosed,Italian list
+transfer,29 June 2026,,Lorenzo Berardi,Pescara,Venezia,Undisclosed,Italian list
+transfer,29 June 2026,,Armel Bella-Kotchap,Verona,Venezia,Undisclosed,Italian list
+transfer,29 June 2026,,Mathis Lambourde,Verona,Servette,Undisclosed,Italian list
+transfer,30 June 2026,,Gonçalo Ramos,PSG,Milan,Undisclosed,Italian list
+transfer,30 June 2026,,Nahuel Estévez,Parma,Palermo,Free,Italian list
+transfer,30 June 2026,,Manuel Ricciardi,Cosenza,Juve Stabia,Undisclosed,Italian list
+transfer,30 June 2026,,Lorenzo Carissoni,Cittadella,Juve Stabia,Undisclosed,Italian list
+transfer,30 June 2026,,Andrea Giorgini,Südtirol,Juve Stabia,Undisclosed,Italian list
+loan,30 June 2026,,Nicola Bagnolini,Bologna,Gubbio,Loan,Italian list
+transfer,30 June 2026,,Ethan Meichtry,Thun,Genoa,Undisclosed,Italian list
+transfer,1 July 2026,,Jeff Ekhator,Genoa,Juventus,"€16,4M",Italian list
+transfer,1 July 2026,,Giovanni Daffara,Juventus,Parma,Undisclosed,Italian list
+loan,1 July 2026,,Dario Šits,Parma,Dordrecht,Loan,Italian list
+transfer,1 July 2026,,Viery,Grêmio,Fiorentina,Undisclosed,Italian list
+transfer,1 July 2026,,Alessandro Sorrentino,Monza,Padova,Undisclosed,Italian list
+transfer,1 July 2026,,Þórir Jóhann Helgason,Lecce,Venezia,Undisclosed,Italian list
+transfer,1 July 2026,,Alessandro Romano,Roma,Cagliari,Undisclosed,Italian list
+transfer,1 July 2026,,Marco Palestra,Atalanta,Chelsea,Undisclosed,Italian list
+transfer,1 July 2026,,Luigi Caccavo,Lumezzane,Bologna,Undisclosed,Italian list
+transfer,1 July 2026,,Ettore Gliozzi,Modena,Mantova,Free,Italian list
+transfer,1 July 2026,,Daniele Montevago,Perugia,Modena,Undisclosed,Italian list
+transfer,1 July 2026,,Luca Bacchin,Perugia,Modena,Undisclosed,Italian list
+transfer,1 July 2026,,Stefan Gartenmann,Ferencváros,Sampdoria,Undisclosed,Italian list
+transfer,1 July 2026,,Andrea Seculin,Reggiana,Arezzo,Free,Italian list
+loan,2 July 2026,,Kaiki Bruno,Cruzeiro,Como,Loan,Italian list
+transfer,2 July 2026,,David Puczka,Juve Next Gen,Genoa,Undisclosed,Italian list
+transfer,2 July 2026,,Samuel Wiafe,Modena,Genoa,Undisclosed,Italian list
+transfer,2 July 2026,,Leonardo Consiglio,Genoa,Modena,Undisclosed,Italian list
+transfer,2 July 2026,,Martino Odero,Genoa,Modena,Undisclosed,Italian list
+transfer,2 July 2026,,Michael Svoboda,Venezia,Brighton,Undisclosed,Italian list
+transfer,2 July 2026,,Marco Varnier,Juve Stabia,Südtirol,Free,Italian list
+transfer,2 July 2026,,Franco Carboni,Inter,Parma,Undisclosed,Italian list
+loan,2 July 2026,,Emanuele Bassi,Cremonese,Pergolettese,Loan,Italian list
+loan,2 July 2026,,Salvatore Dore,Cremonese,Renate,Loan,Italian list
+loan,3 July 2026,,Víctor Narro,Sampdoria,Hércules,Loan,Italian list
+transfer,3 July 2026,,Antonis Siatounis,Potenza,Benevento,Free,Italian list
+transfer,3 July 2026,,Gabriele Moncini,Bari,Vicenza,Undisclosed,Italian list
+transfer,4 July 2026,,Leonardo Baroncelli,Fiorentina,Gubbio,Undisclosed,Italian list
+transfer,4 July 2026,,Demi Akarakiri,Everton,Cagliari,Free,Italian list
+transfer,4 July 2026,,Tommaso Cassandro,Como,Palermo,Undisclosed,Italian list
+loan,4 July 2026,,Federico Chinetti,Como,Mantova,Loan,Italian list
+transfer,4 July 2026,,David Ankeye,Genoa,Železničar Pančevo,Undisclosed,Italian list
+transfer,5 July 2026,,Ylber Ramadani,Lecce,Çorum,Undisclosed,Italian list
+transfer,6 July 2026,,Giorgi Chakvetadze,Watford,Udinese,Undisclosed,Italian list
+transfer,6 July 2026,,Logan Gaspar,America RJ,Benevento,Undisclosed,Italian list
+transfer,6 July 2026,,Hernani,Monza,Palermo,Undisclosed,Italian list
+transfer,6 July 2026,,Alessandro Pietrelli,Juve Next Gen,Vicenza,Undisclosed,Italian list
+transfer,6 July 2026,,Giacomo De Pieri,Inter,Ascoli,Undisclosed,Italian list
+loan,7 July 2026,,Antonio Raimondo,Bologna,Frosinone,Loan,Italian list
+loan,7 July 2026,,Wisdom Amey,Bologna,Frosinone,Loan,Italian list
+loan,7 July 2026,,Tommaso Duca,Cremonese,Folgore Caratese,Loan,Italian list
+loan,7 July 2026,,Michele Paganetto,Cremonese,Ospitaletto,Loan,Italian list
+loan,7 July 2026,,Federico Ragnoli Galli,Cremonese,Ospitaletto,Loan,Italian list
+transfer,7 July 2026,,Luca Zanimacchia,Cremonese,Padova,Undisclosed,Italian list
+transfer,7 July 2026,,Julián Illanes,Carrarese,Arezzo,Undisclosed,Italian list
+loan,8 July 2026,,Giulio Patrignani,Cremonese,Savona,Loan,Italian list
+loan,8 July 2026,,Radu Drăgușin,Tottenham,Fiorentina,Loan,Italian list
+loan,8 July 2026,,Eddy Kouadio,Fiorentina,Monza,Loan,Italian list
+transfer,8 July 2026,,Riccardo Marchizza,Frosinone,Vicenza,Undisclosed,Italian list
+transfer,8 July 2026,,Ivan Provedel,Lazio,Inter,Undisclosed,Italian list
+loan,8 July 2026,,Christos Alexiou,Inter,AEK Athens,Loan,Italian list
+loan,8 July 2026,,Michele D'Ausilio,Avellino,Iraklis,Loan,Italian list
+loan,8 July 2026,,Antonio De Cristofaro,Avellino,Latina,Loan,Italian list
+loan,8 July 2026,,Marco Ladisa,Venezia,Trento,Loan,Italian list
+transfer,8 July 2026,,Sambaly Keita,Villefranche,Mantova,Undisclosed,Italian list
+transfer,8 July 2026,,Alioune Sylla,Siracusa,Benevento,Undisclosed,Italian list
+transfer,8 July 2026,,Lorenzo Insigne,Pescara,Sampdoria,Free,Italian list
+loan,8 July 2026,,Lapo Nava,Cremonese,Alcione,Loan,Italian list
+loan,8 July 2026,,Daniele Triacca,Cremonese,Lecco,Loan,Italian list
+loan,8 July 2026,,Michele Pezzolato,Modena,Pianese,Loan,Italian list
+loan,9 July 2026,,Gaetano Oristanio,Venezia,Torino,Loan,Italian list
+transfer,9 July 2026,,Lorenzo Amatucci,Fiorentina,Deportivo,Undisclosed,Italian list
+transfer,9 July 2026,,Albion Rrahmani,Sparta Prague,Venezia,Undisclosed,Italian list
+transfer,9 July 2026,,Kenny Mixtur,Villefranche,Südtirol,Undisclosed,Italian list
+loan,9 July 2026,,Giacomo Stabile,Inter,Südtirol,Loan,Italian list
+transfer,9 July 2026,,Ale Gomes,Zaragoza,Venezia,Undisclosed,Italian list
+loan,9 July 2026,,Sergiu Perciun,Torino,Ascoli,Loan,Italian list
+transfer,9 July 2026,,Gianluca Gaetano,Cagliari,Atalanta,Undisclosed,Italian list
+loan,9 July 2026,,Tommaso Guercio,Śląsk Wrocław,Carrarese,Loan,Italian list
+loan,9 July 2026,,Pietro Pinelli,Lazio,Carrarese,Loan,Italian list
+loan,9 July 2026,,Junior Ajayi,Verona,Casertana,Loan,Italian list
+loan,9 July 2026,,Federico Magro,Verona,Casertana,Loan,Italian list
+transfer,9 July 2026,,Giacomo Olzer,Pescara,Modena,Undisclosed,Italian list
+transfer,10 July 2026,,Gaëtan Coucke,Sampdoria,Cercle Brugge,Undisclosed,Italian list
+loan,10 July 2026,,Mattia Scaringi,Cremonese,Torres,Loan,Italian list
+loan,10 July 2026,,Alessandro Plizzari,Venezia,Südtirol,Loan,Italian list
+loan,10 July 2026,,Tommaso Martinelli,Fiorentina,Avellino,Loan,Italian list
+loan,10 July 2026,,Brando Moruzzi,Juve Next Gen,Avellino,Loan,Italian list
+loan,10 July 2026,,Giacomo Faticanti,Juve Next Gen,Avellino,Loan,Italian list
+transfer,10 July 2026,,Elias Havel,LASK,Genoa,Undisclosed,Italian list
+transfer,10 July 2026,,Mario Gila,Lazio,Milan,Undisclosed,Italian list
+transfer,10 July 2026,,Pietro Beruatto,Pisa,Benevento,Undisclosed,Italian list
+transfer,10 July 2026,,Alberto Cerri,Cesena,Arezzo,Undisclosed,Italian list
+loan,10 July 2026,,Giacomo Marconi,Parma,Carrarese,Loan,Italian list
+transfer,11 July 2026,,Arthur Atta,Udinese,Fiorentina,Undisclosed,Italian list
+transfer,11 July 2026,,Salvatore Cerbone,Casarano,Verona,Undisclosed,Italian list
+transfer,11 July 2026,,Nicola Leali,Genoa,Verona,Free,Italian list
+loan,11 July 2026,,Seid Korać,Venezia,Verona,Loan,Italian list
+transfer,11 July 2026,,Alessio Pozzi,Vis Pesaro,Venezia,Undisclosed,Italian list
+transfer,11 July 2026,,Paulo Azzi,Monza,Modena,Undisclosed,Italian list
+transfer,11 July 2026,,Mark Natta,Newcastle Jets,Cesena,Undisclosed,Italian list
+transfer,11 July 2026,,Tommaso Marras,Mantova,Pisa,Undisclosed,Italian list
+transfer,11 July 2026,,Nicolò Brighenti,Catanzaro,Vicenza,Free,Italian list
+loan,12 July 2026,,Giorgio Cittadini,Atalanta,Frosinone,Loan,Italian list
+loan,12 July 2026,,Seydou Fini,Genoa,Frosinone,Loan,Italian list
+loan,12 July 2026,,Gabriele Calvani,Genoa,Frosinone,Loan,Italian list
+transfer,12 July 2026,,Abdoulie Ndow,Frosinone,Spezia,Undisclosed,Italian list
+loan,13 July 2026,,Jacopo Fazzini,Fiorentina,Cagliari,Loan,Italian list
+transfer,13 July 2026,,Anouar El Azzouzi,Fortuna Düsseldorf,Frosinone,Undisclosed,Italian list
+loan,13 July 2026,,Kevin Cannavò,Venezia,Spezia,Loan,Italian list
+loan,13 July 2026,,Alessandro Cardinali,Parma,Spezia,Loan,Italian list
+transfer,13 July 2026,,Denis Cazzadori,Verona,Spezia,Undisclosed,Italian list
+transfer,13 July 2026,,Gastón Brugman,Pescara,Modena,Undisclosed,Italian list
+loan,13 July 2026,,Moustapha Cissé,Atalanta U23,Carrarese,Loan,Italian list
+transfer,13 July 2026,,Ismael Cajazzo,Casarano,Mantova,Undisclosed,Italian list
+loan,13 July 2026,,Matteo Spinaccè,Inter U23,Mantova,Loan,Italian list
+transfer,13 July 2026,,Gennaro Acampora,Pescara,Ascoli,Undisclosed,Italian list
+transfer,13 July 2026,,Alessandro Mallamo,Südtirol,Union Brescia,Undisclosed,Italian list
+loan,14 July 2026,,Leonardo Sernicola,Cremonese,Benevento,Loan,Italian list
+loan,14 July 2026,,Fellipe Jack,Como,Cremonese,Loan,Italian list
+transfer,14 July 2026,,Fabio Gerli,Modena,Cremonese,Undisclosed,Italian list
+transfer,14 July 2026,,Stênio,Karpaty Lviv,Modena,Undisclosed,Italian list
+transfer,14 July 2026,,Jonas Harder,Fiorentina,Basel,Undisclosed,Italian list
+loan,14 July 2026,,Maat Daniel Caprini,Fiorentina,Cesena,Loan,Italian list
+transfer,14 July 2026,,Luca Di Maggio,Inter,Avellino,Undisclosed,Italian list
+transfer,14 July 2026,,Edoardo Zanaga,Empoli,Milan Futuro,Undisclosed,Italian list
+transfer,14 July 2026,,Lorenzo Ignacchiti,Empoli,Mantova,Undisclosed,Italian list
+transfer,14 July 2026,,Filippo Vesentini,Union Brescia,Mantova,Undisclosed,Italian list
+loan,14 July 2026,,Federico Accornero,Carrarese,Trento,Loan,Italian list
+loan,14 July 2026,,Mateo Scheffer Bracco,Carrarese,Pineto,Loan,Italian list
+transfer,14 July 2026,,Nicolò Postiglione,Pineto,Catanzaro,Undisclosed,Italian list
+loan,14 July 2026,,Giacomo Corona,Palermo,Virtus Entella,Loan,Italian list
+transfer,14 July 2026,,Vasco Lopes,Radomiak,Südtirol,Undisclosed,Italian list
+loan,14 July 2026,,Samuele Capolupo,Monza,Spezia,Loan,Italian list
+transfer,14 July 2026,,Nicola Patanè,Verona,Juve Stabia,Undisclosed,Italian list
+transfer,15 July 2026,,Harry Winks,Leicester,Cagliari,Undisclosed,Italian list
+loan,15 July 2026,,Mattia Motolese,Bologna,Virtus Entella,Loan,Italian list
+transfer,15 July 2026,,Mattia Liberali,Catanzaro,Como,Undisclosed,Italian list
+transfer,15 July 2026,,Giuseppe Leone,Juve Stabia,Pisa,Undisclosed,Italian list
+transfer,15 July 2026,,Frank Tsadjout,Cremonese,Vicenza,Undisclosed,Italian list
+loan,16 July 2026,,Niklas Pyyhtiä,Bologna,Südtirol,Loan,Italian list
+loan,16 July 2026,,Riccardo Stivanello,Bologna,Südtirol,Loan,Italian list
+loan,16 July 2026,,Álex Jiménez,Bournemouth,Fiorentina,Loan,Italian list
+transfer,16 July 2026,,Diego Mascardi,Spezia,Torino,Undisclosed,Italian list
+transfer,16 July 2026,,Luca Schirone,Pineto,Cesena,Undisclosed,Italian list
+transfer,16 July 2026,,Terrence Douglas,Eindhoven,Juve Stabia,Free,Italian list
+transfer,17 July 2026,,Tarik Muharemović,Sassuolo,Leeds,Undisclosed,Italian list
+transfer,17 July 2026,,Omar Haktab Traoré,Udinese,Watford,Undisclosed,Italian list
+transfer,17 July 2026,,Bruno Galassi,Real Madrid,Lazio,Undisclosed,Italian list
+loan,18 July 2026,,Sebastiano Desplanches,Palermo,Frosinone,Loan,Italian list
+transfer,18 July 2026,,Mërgim Vojvoda,Como,Udinese,Undisclosed,Italian list
+loan,18 July 2026,,Mateusz Kowalski,Parma,Dolomiti Bellunesi,Loan,Italian list
+transfer,18 July 2026,,Luca Ravanelli,Monza,Sampdoria,Undisclosed,Italian list
+transfer,18 July 2026,,Tobias Lauritsen,Sparta Rotterdam,Sampdoria,Undisclosed,Italian list
+loan,18 July 2026,,Filip Marchwiński,Lecce,Cracovia,Loan,Italian list
+loan,18 July 2026,,Nicolas Trabucchi,Parma,Dolomiti Bellunesi,Loan,Italian list
+loan,18 July 2026,,Luigi Caccavo,Bologna,Juve Stabia,Loan,Italian list
+loan,18 July 2026,,Jacopo Antolini,Torino,Pergolettese,Loan,Italian list
+transfer,18 July 2026,,Lorenzo Moretti,Cremonese,Novara,Undisclosed,Italian list
+transfer,19 July 2026,,Christ Inao Oulaï,Trabzonspor,Fiorentina,Undisclosed,Italian list
+loan,19 July 2026,,Mirko Elia,Fiorentina,Bari,Loan,Italian list
+loan,20 July 2026,,Rahim Alhassane,Real Oviedo,Bologna,Loan,Italian list
+transfer,20 July 2026,,Francesco Dell'Aquila,Torino,Empoli,Undisclosed,Italian list
+transfer,20 July 2026,,Francesco Benassai,Vicenza,Trento,Undisclosed,Italian list
+transfer,21 July 2026,,Filippo Distefano,Fiorentina,Empoli,Undisclosed,Italian list
+transfer,21 July 2026,,Alessandro Bianco,Fiorentina,Modena,Undisclosed,Italian list
+loan,21 July 2026,,Marco Delle Monache,Lecce,Pineto,Loan,Italian list
+transfer,21 July 2026,,Giovanni Di Renzo,Venezia,Pineto,Undisclosed,Italian list
+loan,21 July 2026,,Daniel Fila,Venezia,Avellino,Loan,Italian list
+loan,21 July 2026,,Francesco Galuppini,Ascoli,Ospitaletto,Loan,Italian list
+transfer,21 July 2026,,Filippo Guccione,Arezzo,Pescara,Undisclosed,Italian list
+transfer,22 July 2026,,Antonín Barák,Fiorentina,APOEL,Undisclosed,Italian list
+loan,22 July 2026,,Matteo Cocchi,Inter,Padova,Loan,Italian list
+loan,22 July 2026,,Matteo Lovato,Salernitana,Padova,Loan,Italian list
+loan,22 July 2026,,Andrea Oliveri,Atalanta,Ascoli,Loan,Italian list
+loan,22 July 2026,,Jacopo Romio,Vicenza,Arzignano,Loan,Italian list
+loan,22 July 2026,,Francesco Reita,Monza,Catanzaro,Loan,Italian list
+loan,23 July 2026,,Filippo Rinaldi,Parma,Catania,Loan,Italian list
+loan,23 July 2026,,Gabriele Pagliai,Ascoli,Catania,Loan,Italian list
+transfer,23 July 2026,,Gian Marco Crespi,Athens Kallithea,Ascoli,Undisclosed,Italian list
+transfer,23 July 2026,,Rafiu Durosinmi,Pisa,Genk,Undisclosed,Italian list
+transfer,23 July 2026,,Mattia Valoti,Spezia,Vicenza,Free,Italian list
+loan,23 July 2026,,Romeo Sandrucci,Torino,Juve Stabia,Loan,Italian list
+loan,24 July 2026,,Andrea Bozzolan,Reggiana,Palermo,Loan,Italian list
+transfer,24 July 2026,,Luca Kjerrumgaard,Udinese,Watford,Undisclosed,Italian list
+transfer,24 July 2026,,Luis Hasa,Napoli,Frosinone,Undisclosed,Italian list
+transfer,24 July 2026,,Alessio Zerbin,Napoli,Frosinone,Undisclosed,Italian list
+loan,24 July 2026,,Nicola Pintus,Cagliari,Pianese,Loan,Italian list
+loan,24 July 2026,,Francesco Gallea,Cagliari,Juve Stabia,Loan,Italian list
+loan,24 July 2026,,Giulio Scuderi,Fiorentina,Juve Stabia,Loan,Italian list
+loan,24 July 2026,,Ricardo Mangas,Sporting CP,Monza,Loan,Italian list
+transfer,24 July 2026,,Alessandro Milani,Lazio,Inter U23,Undisclosed,Italian list
+loan,24 July 2026,,Antonio Candela,Spezia,Catanzaro,Loan,Italian list
+transfer,24 July 2026,,Franky Tchaouna,Enna,Catanzaro,Undisclosed,Italian list
+transfer,24 July 2026,,Franck Tchaouna,Enna,Catanzaro,Undisclosed,Italian list
+transfer,24 July 2026,,Felix Afena-Gyan,Cremonese,Iğdır,Undisclosed,Italian list
+transfer,24 July 2026,,Marco Festa,Mantova,Cremonese,Undisclosed,Italian list
+loan,24 July 2026,,Giacomo Gabbiani,Cremonese,Livorno,Loan,Italian list
+transfer,24 July 2026,,Xavello Druiventak,Fratria,Cesena,Undisclosed,Italian list
+transfer,24 July 2026,,Eliman Cham,Carrarese,Virtus Francavilla,Undisclosed,Italian list
+transfer,25 July 2026,,Samuele Regazzetti,Cremonese,Livorno,Undisclosed,Italian list
+transfer,25 July 2026,,Simone Pontisso,Catanzaro,Cremonese,Undisclosed,Italian list
+transfer,25 July 2026,,Ange Achi,Cremonese,SJK Akatemia,Undisclosed,Italian list
+transfer,27 July 2026,,Gustavo Varela,Benfica,Monza,Undisclosed,Italian list
+loan,27 July 2026,,Aljoša Vasić,Palermo,Südtirol,Loan,Italian list
+loan,27 July 2026,,Dimitrios Nikolaou,Palermo,OFI Crete,Loan,Italian list
+transfer,27 July 2026,,Lorenzo Carissoni,Juve Stabia,Padova,Undisclosed,Italian list
+transfer,27 July 2026,,Emanuele Zuelli,Carrarese,Padova,Undisclosed,Italian list
+transfer,28 July 2026,,Adrian Benedyczak,Parma,Kasımpaşa,Undisclosed,Italian list
+loan,28 July 2026,,Ed McJannet,Lecce,Cosenza,Loan,Italian list
+loan,28 July 2026,,Adi Kurti,Verona,Audace Cerignola,Loan,Italian list
+transfer,28 July 2026,,Federico Valentini,Cesena,Forlì,Undisclosed,Italian list
+transfer,29 July 2026,,Federico Barba,Persib,Palermo,Free,Italian list
+loan,29 July 2026,,Riccardo Pagano,Roma,Cesena,Loan,Italian list
+loan,29 July 2026,,Pietro Comuzzo,Fiorentina,Torino,Loan,Italian list
+transfer,29 July 2026,,Mikel Amondarain,Estudiantes,Bologna,Undisclosed,Italian list
+loan,29 July 2026,,Mattia Compagnon,Venezia,Verona,Loan,Italian list
+transfer,29 July 2026,,Luis Balbo,Fiorentina,Sturm Graz,Undisclosed,Italian list
+loan,29 July 2026,,Damián Pizarro,Udinese,Audax Italiano,Loan,Italian list
+transfer,29 July 2026,,Mattia Della Rocca,Roma,Avellino,Undisclosed,Italian list
+transfer,29 July 2026,,Filippo Scotti,Milan Futuro,Avellino,Undisclosed,Italian list
+transfer,29 July 2026,,Gianmarco Todisco,Avellino,Foggia,Undisclosed,Italian list
+transfer,29 July 2026,,Andrea Cagnano,Avellino,Arezzo,Undisclosed,Italian list
+loan,29 July 2026,,Stredair Appuah,Palermo,Lommel,Loan,Italian list
+transfer,29 July 2026,,Cheick Condé,Venezia,Beveren,Free,Italian list
+loan,30 July 2026,,Alessandro Dellavalle,Torino,Padova,Loan,Italian list
+transfer,30 July 2026,,John Stones,Manchester City,Inter,Free,Italian list
+transfer,30 July 2026,,Santiago Castro,Bologna,Roma,Undisclosed,Italian list
+loan,30 July 2026,,Artem Dovbyk,Roma,Bologna,Loan,Italian list
+loan,30 July 2026,,Rareș Burnete,Lecce,Südtirol,Loan,Italian list
+loan,30 July 2026,,Matías Moreno,Fiorentina,Venezia,Loan,Italian list
+transfer,30 July 2026,,Coli Saco,Napoli,Riga,Undisclosed,Italian list
+transfer,30 July 2026,,Gianluca Saro,Cremonese,Foggia,Undisclosed,Italian list
+transfer,30 July 2026,,Kristoffer Lund,Palermo,Birmingham,Undisclosed,Italian list
+loan,31 July 2026,,Samuele Mulattieri,Sassuolo,Verona,Loan,Italian list
+loan,31 July 2026,,Kieron Bowie,Verona,Sassuolo,Loan,Italian list
+loan,31 July 2026,,Emanuele Rao,Napoli,Pisa,Loan,Italian list
+loan,31 July 2026,,Mario Mitaj,Al-Ittihad,Genoa,Loan,Italian list
+transfer,31 July 2026,,Ousmane Diallo,Borussia Dortmund,Parma,Undisclosed,Italian list
+loan,31 July 2026,,Raphael Kofler,Südtirol,Cagliari,Loan,Italian list
+loan,31 July 2026,,Davide Veroli,Cagliari,Südtirol,Loan,Italian list
+transfer,31 July 2026,,Mateusz Wieteska,Cagliari,Wieczysta Kraków,Undisclosed,Italian list
+transfer,31 July 2026,,Federico Ravaglia,Bologna,Watford,Undisclosed,Italian list
+transfer,31 July 2026,,Martín Payero,Udinese,Watford,Undisclosed,Italian list
+loan,31 July 2026,,Simone Pafundi,Udinese,Catanzaro,Loan,Italian list
+transfer,31 July 2026,,Kian Fitz-Jim,Ajax,Torino,Undisclosed,Italian list
+transfer,31 July 2026,,Kacper Sezonienko,Lechia Gdańsk,Verona,Undisclosed,Italian list
+loan,31 July 2026,,Yellu Santiago,Verona,Marítimo,Loan,Italian list
+loan,31 July 2026,,Karlson Nwanege,Verona,SJK Akatemia,6-month loan,Italian list
+loan,1 August 2026,,Ebenezer Akinsanmiro,Inter,Monza,Loan,Italian list
+transfer,1 August 2026,,Redouane Halhal,Mechelen,Venezia,Undisclosed,Italian list
+loan,1 August 2026,,Marco Ruggero,Spezia,Catanzaro,Loan,Italian list
+loan,1 August 2026,,Lorenzo Malanca,Sampdoria,Vado,Loan,Italian list
+loan,1 August 2026,,Simone Zanon,Carrarese,Pisa,Loan,Italian list
+loan,1 August 2026,,Dominic Vavassori,Atalanta U23,Palermo,Loan,Italian list
+transfer,2 August 2026,,Willem Geubbels,Paris,Lecce,Undisclosed,Italian list
+loan,2 August 2026,,Jordan Zemura,Udinese,Watford,Loan,Italian list
+loan,2 August 2026,,Simon Sohm,Fiorentina,Venezia,Loan,Italian list
+loan,2 August 2026,,Velizar-Ilia Iliev,Cagliari,Cosenza,Loan,Italian list
+transfer,2 August 2026,,Andrea Cogoni,Cagliari,Cosenza,Undisclosed,Italian list
+loan,3 August 2026,,João Mário,Juventus,Fiorentina,Loan,Italian list
+loan,3 August 2026,,Vasilije Adžić,Juventus,Sassuolo,Loan,Italian list
+transfer,3 August 2026,,Giuseppe Panico,Avellino,Foggia,Undisclosed,Italian list
+transfer,3 August 2026,,Estanis Pedrola,Sampdoria,Real Oviedo,Undisclosed,Italian list
+loan,3 August 2026,,Mert Durmush,Pisa,Spezia,Loan,Italian list
+loan,4 August 2026,,Alessandro Debenedetti,Genoa,Cesena,Loan,Italian list
+loan,5 August 2026,,Angeliño,Roma,Deportivo,Loan,Italian list
+transfer,5 August 2026,,Christian Früchtl,Lecce,RB Salzburg,Undisclosed,Italian list
+loan,6 August 2026,,Ahmed Sidibé,Venezia,Vitória,Loan,Italian list
+loan,6 August 2026,,Daniel Mikołajewski,Parma,Luzern,Loan,Italian list
+transfer,6 August 2026,,Alessandro Vogliacco,Genoa,Cremonese,Undisclosed,Italian list
+transfer,6 August 2026,,Manuel Gasparini,Empoli,Mantova,Undisclosed,Italian list
+transfer,6 August 2026,,Gabriel Strefezza,Olympiacos,Palermo,Undisclosed,Italian list
+loan,6 August 2026,,Filip Stojilković,Pisa,Rapid București,Loan,Italian list
+transfer,6 August 2026,,Stefano Girelli,Sampdoria,Casertana,Undisclosed,Italian list
+transfer,7 August 2026,,Bjarki Steinn Bjarkason,Venezia,Südtirol,Undisclosed,Italian list
+transfer,7 August 2026,,Simone Ascione,Venezia,Vis Pesaro,Undisclosed,Italian list
+loan,7 August 2026,,El Bilal Touré,Atalanta,Parma,Loan,Italian list
+transfer,7 August 2026,,Dimitar Papazov,Bologna,Perugia,Undisclosed,Italian list
+loan,7 August 2026,,Jay Robinson,Southampton,Monza,Loan,Italian list
+loan,7 August 2026,,Lorenzo Sgarbi,Napoli,Sambenedettese,Loan,Italian list
+transfer,7 August 2026,,Marco Pompetti,Catanzaro,Padova,Undisclosed,Italian list
+loan,8 August 2026,,Antonio Boccadamo,Virtus Entella,Audace Cerignola,Loan,Italian list
+transfer,8 August 2026,,Claudio Manzi,Avellino,Scafatese,Undisclosed,Italian list
+transfer,9 August 2026,,Trevoh Chalobah,Chelsea,Como,Undisclosed,Italian list
+loan,9 August 2026,,Daniel Maldini,Atalanta,Cagliari,Loan,Italian list
+loan,9 August 2026,,Marco Cassin,Cremonese,Monopoli,Loan,Italian list
+loan,10 August 2026,,Patrizio Masini,Genoa,Frosinone,Loan,Italian list
+loan,10 August 2026,,Simone Scaglia,Juventus,Padova,Loan,Italian list
+transfer,10 August 2026,,Giuseppe Aurelio,Spezia,Cagliari,Undisclosed,Italian list
+transfer,10 August 2026,,Giuseppe Ciocci,Cagliari,Spezia,Undisclosed,Italian list
+loan,10 August 2026,,Radosław Żelezny,Roma,Perugia,Loan,Italian list
+transfer,10 August 2026,,Daniele Quieto,Inter,Cosenza,Undisclosed,Italian list
+transfer,10 August 2026,,Aymen Zouin,Inter,Parma,Undisclosed,Italian list
+loan,10 August 2026,,Filippo Tosi,Cremonese,Monopoli,Loan,Italian list
+transfer,10 August 2026,,Federico Caia,Verona,Verona,Undisclosed,Italian list
+loan,11 August 2026,,Benjamín Domínguez,Bologna,Sassuolo,Loan,Italian list
+transfer,11 August 2026,,Gabriele Guarino,Empoli,Samsunspor,Undisclosed,Italian list
+loan,11 August 2026,,Peter Vindahl,Sparta Prague,Sampdoria,Loan,Italian list
+transfer,11 August 2026,,Marco Nichetti,Virtus Entella,Novara,Undisclosed,Italian list
+loan,11 August 2026,,Michael Venturi,Venezia,Avellino,Loan,Italian list
+transfer,12 August 2026,,Romelu Lukaku,Napoli,Fenerbahçe,Undisclosed,Italian list
+transfer,12 August 2026,,Stefan Posch,Como,1. FSV Mainz 05,Undisclosed,Italian list
+transfer,12 August 2026,,Florian Grillitsch,Braga,Frosinone,Undisclosed,Italian list
+loan,12 August 2026,,Othniël Raterink,Cagliari,ADO Den Haag,Loan,Italian list
+transfer,12 August 2026,,Riccardo Braschi,Fiorentina,Thun,Undisclosed,Italian list
+transfer,12 August 2026,,Gabriele Bertolini,Fiorentina,Atalanta U23,Undisclosed,Italian list
+transfer,12 August 2026,,Nicola Mosti,Juve Stabia,Catanzaro,Undisclosed,Italian list
+transfer,12 August 2026,,Gennaro Iaccarino,Napoli,Arezzo,Undisclosed,Italian list
+loan,12 August 2026,,Jean-Pierre Longonda,Koper,Mantova,Loan,Italian list
+loan,13 August 2026,,Roberto Piccoli,Fiorentina,Bologna,Loan,Italian list
+transfer,13 August 2026,,Mateo Pellegrino,Parma,Fiorentina,Undisclosed,Italian list
+loan,13 August 2026,,Matías Pérez,Lecce,La Serena,Loan,Italian list
+loan,13 August 2026,,Thomas Kristensen,Udinese,Atalanta,Loan,Italian list
+loan,13 August 2026,,Tommaso Arrigoni,Cesena,Livorno,Loan,Italian list
+loan,13 August 2026,,Saná Fernandes,Lazio,Juve Stabia,Loan,Italian list
+loan,13 August 2026,,Mehdi Dorval,Bari,Catanzaro,Loan,Italian list
+transfer,13 August 2026,,Cristian Cauz,Modena,Empoli,Undisclosed,Italian list
+transfer,13 August 2026,,Salvatore Elia,Empoli,Cremonese,Undisclosed,Italian list
+loan,14 August 2026,,Davide Frattesi,Inter,Lazio,Loan,Italian list
+transfer,14 August 2026,,Matteo Motta,Inter,Pescara,Undisclosed,Italian list
+loan,14 August 2026,,Mihajlo Ilić,Bologna,Cesena,Loan,Italian list
+transfer,14 August 2026,,Giorgio Altare,Venezia,Pescara,Undisclosed,Italian list
+transfer,14 August 2026,,Aleksa Terzić,RB Salzburg,Frosinone,Undisclosed,Italian list
+transfer,14 August 2026,,David Romero,Tigre,Parma,Undisclosed,Italian list
+loan,14 August 2026,,Jacob Ondrejka,Parma,Groningen,Loan,Italian list
+loan,14 August 2026,,Jasper Samooja,Lecce,HJK,Loan,Italian list
+loan,14 August 2026,,Andréa Le Borgne,Como,Verona,Loan,Italian list
+loan,14 August 2026,,Agustín Álvarez,Sassuolo,Talleres,Loan,Italian list
+loan,14 August 2026,,Rafael Obrador,Benfica,Sassuolo,Loan,Italian list
+transfer,14 August 2026,,Jacopo Manconi,Benevento,Casertana,Undisclosed,Italian list
+transfer,14 August 2026,,Davide Bettella,Pescara,Juve Stabia,Undisclosed,Italian list
+transfer,14 August 2026,,David Vujević,Zürich,Carrarese,Undisclosed,Italian list
+loan,14 August 2026,,Karim Zedadka,Südtirol,Empoli,Loan,Italian list
+transfer,15 August 2026,,Djed Spence,Tottenham,Inter,Undisclosed,Italian list
+transfer,15 August 2026,,Antonio Cioffi,Napoli,Latina,Undisclosed,Italian list
+loan,15 August 2026,,Janis Antiste,Sassuolo,Górnik Zabrze,Loan,Italian list
+loan,15 August 2026,,Flavio Russo,Sassuolo,Catania,Loan,Italian list
+transfer,16 August 2026,,Andrea Giorgini,Juve Stabia,Südtirol,Undisclosed,Italian list
+transfer,17 August 2026,,Jhon Lucumí,Bologna,Juventus,€20.1M,Italian list
+loan,17 August 2026,,Mattia Vitale,Vicenza,Salernitana,Loan,Italian list
+loan,17 August 2026,,Salim Diakité,Palermo,Zulte Waregem,Loan,Italian list
+loan,18 August 2026,,Thomas Berenbruch,Inter,Avellino,Loan,Italian list
+loan,18 August 2026,,Mamadou Kebbeh,Cesena,Torres,Loan,Italian list
+loan,18 August 2026,,Luca D'Andrea,Sassuolo,Cesena,Loan,Italian list
+loan,18 August 2026,,Fabio Rispoli,Como,Südtirol,Loan,Italian list
+loan,18 August 2026,,Luigi Cherubini,Roma,Benevento,Loan,Italian list
+loan,18 August 2026,,Guglielmo Vicario,Tottenham,Juventus,Loan,Italian list
+loan,18 August 2026,,Wisdom Acquah,Torino,Modena,Loan,Italian list
+transfer,18 August 2026,,Nunzio Lella,Venezia,Verona,Undisclosed,Italian list
+transfer,18 August 2026,,Paweł Dawidowicz,Raków,Verona,Free,Italian list
+transfer,18 August 2026,,Arvid Brorsson,Monza,Raków,Undisclosed,Italian list
+loan,18 August 2026,,Matteo Cortesi,Arezzo,Perugia,Loan,Italian list
+loan,18 August 2026,,Thomás de Martis,Lanús,Parma,Loan,Italian list
+transfer,19 August 2026,,Rodrigo Mora,Porto,Roma,Undisclosed,Italian list
+transfer,19 August 2026,,Lorenzo Montipò,Verona,Venezia,Undisclosed,Italian list
+transfer,19 August 2026,,Michele Castagnetti,Cesena,Reggiana,Undisclosed,Italian list
+loan,19 August 2026,,Filippo Reale,Roma,Carrarese,Loan,Italian list
+loan,19 August 2026,,Costantino Favasuli,Catanzaro,Napoli,Loan,Italian list
+transfer,19 August 2026,,Nermin Karić,Virtus Entella,Juve Stabia,Undisclosed,Italian list
+transfer,19 August 2026,,Marco Bleve,Carrarese,Lecce,Undisclosed,Italian list
+transfer,19 August 2026,,Matteo Ricci,Sampdoria,Ascoli,Free,Italian list
+transfer,19 August 2026,,Alessandro Circati,Parma,Benfica,Undisclosed,Italian list
+transfer,19 August 2026,,Omar Fayed,Fenerbahçe,Frosinone,Undisclosed,Italian list
+transfer,19 August 2026,,Andrés Cuenca,Como,Sporting Gijón,Undisclosed,Italian list
+transfer,19 August 2026,,Alessandro Luchetti,Frosinone,Verona,Undisclosed,Italian list
+loan,20 August 2026,,Cheikh Niasse,Verona,Gençlerbirliği,Loan,Italian list
+loan,20 August 2026,,Isaac,Verona,Istra,Loan,Italian list
+transfer,20 August 2026,,Andrea Petagna,Monza,Pisa,Undisclosed,Italian list
+transfer,20 August 2026,,Enea Pitti,Cesena,Grosseto,Undisclosed,Italian list
+transfer,20 August 2026,,Giovanni Zaro,Cesena,Ravenna,Undisclosed,Italian list
+loan,20 August 2026,,Jacopo Gelli,Frosinone,Cesena,Loan,Italian list
+transfer,20 August 2026,,Emanuele Pecorino,Juventus,Catanzaro,Undisclosed,Italian list
+transfer,20 August 2026,,Samuel Giovane,Atalanta,Catanzaro,Undisclosed,Italian list
+loan,20 August 2026,,Nicola Pietrangeli,Südtirol,Juve Stabia,Loan,Italian list
+loan,21 August 2026,,Niccolò Fortini,Fiorentina,Torino,Loan,Italian list
+loan,21 August 2026,,Luca Moro,Sassuolo,Padova,Loan,Italian list
+transfer,21 August 2026,,Idrissa Touré,Pisa,Monza,Undisclosed,Italian list
+loan,21 August 2026,,Matheus Luz,Juve Stabia,Potenza,Loan,Italian list
+loan,21 August 2026,,Ante Vuković,Pisa,Juve Stabia,Loan,Italian list
+transfer,21 August 2026,,Omar Correia,Juve Stabia,Pisa,Undisclosed,Italian list
+transfer,21 August 2026,,Alessandro Confente,Juve Stabia,Pisa,Undisclosed,Italian list
+transfer,21 August 2026,,Curtis Jones,Liverpool,Inter,Undisclosed,Italian list
+loan,21 August 2026,,Fedde Leysen,Union SG,Sassuolo,Loan,Italian list
+loan,21 August 2026,,Alieu Fadera,Como,Cagliari,Loan,Italian list
+loan,21 August 2026,,Vanja Vlahović,Atalanta,Mantova,Loan,Italian list
+transfer,21 August 2026,,Antonio Sanabria,Cremonese,Internacional,Undisclosed,Italian list
+transfer,21 August 2026,,Sergio Kalaj,Frosinone,Spezia,Free,Italian list
+loan,21 August 2026,,Aaron Ciammaglichella,Torino,Pro Vercelli,Loan,Italian list
+loan,22 August 2026,,Benoît Badiashile,Chelsea,Napoli,Loan,Italian list
+loan,22 August 2026,,Josip Šutalo,Ajax,Lazio,Loan,Italian list
+loan,22 August 2026,,Abdoulaye Camara,Udinese,Ajax,Loan,Italian list
+loan,24 August 2026,,Tommaso Bordoni,Padova,Lecco,Loan,Italian list
+transfer,24 August 2026,,Luca Vignali,Spezia,Virtus Entella,Undisclosed,Italian list
+transfer,24 August 2026,,Milutin Osmajić,Preston,Genoa,Undisclosed,Italian list
+loan,25 August 2026,,Marco Dalla Vecchia,Torino,Cesena,Loan,Italian list
+loan,25 August 2026,,Michele Di Gregorio,Juventus,Bournemouth,Loan,Italian list
+transfer,25 August 2026,,Antonino La Gumina,Sampdoria,Salernitana,Free,Italian list
+loan,25 August 2026,,Simone Pieraccini,Cesena,Salernitana,Loan,Italian list
+loan,25 August 2026,,Nosa Obaretin,Napoli,Lorient,Loan,Italian list
+loan,25 August 2026,,Jérémy Oyono,Frosinone,Spezia,Loan,Italian list
+transfer,25 August 2026,,Tommaso Fumagalli,Como,Inter U23,Undisclosed,Italian list
+loan,25 August 2026,,Yvan Maye,Inter,Monza,Loan,Italian list
+loan,25 August 2026,,Christopher Nkunku,Milan,RB Leipzig,Loan,Italian list
+transfer,26 August 2026,,Mattia Perin,Juventus,Palermo,Undisclosed,Italian list
+transfer,26 August 2026,,Davide Mancini,Campobasso,Arezzo,Undisclosed,Italian list
+transfer,26 August 2026,,Lorenzo Coccia,Arezzo,Campobasso,Undisclosed,Italian list
+loan,26 August 2026,,Filippo Grosso,Frosinone,Crotone,Loan,Italian list
+transfer,26 August 2026,,Alan Matturro,Genoa,Shakhtar Donetsk,Undisclosed,Italian list
+loan,26 August 2026,,Niccolò Corrado,Frosinone,Empoli,Loan,Italian list
+transfer,26 August 2026,,Andrea Sodero,Empoli,Trento,Undisclosed,Italian list
+loan,26 August 2026,,Enrico Piovanello,Juve Stabia,Casertana,Loan,Italian list
+transfer,26 August 2026,,Emanuele Torrasi,Juve Stabia,Caaniaa,Undisclosed,Italian list
+loan,26 August 2026,,Sebastiano Di Paolo,Cagliari,Avellino,Loan,Italian list
+transfer,26 August 2026,,Cosimo Patierno,Avellino,Casarano,Undisclosed,Italian list
+loan,26 August 2026,,Matteo Brunori,Palermo,Ascoli,Loan,Italian list
+transfer,27 August 2026,,Andrea Pinamonti,Sassuolo,Lazio,Undisclosed,Italian list
+transfer,27 August 2026,,Antonio Di Nardo,Pescara,Juve Stabia,Undisclosed,Italian list
+transfer,27 August 2026,,Jacopo Martini,Südtirol,Carrarese,Undisclosed,Italian list
+loan,27 August 2026,,Luka Topalović,Inter,Carrarese,Loan,Italian list
+loan,27 August 2026,,Ivan Ilić,Torino,Lecce,Loan,Italian list
+loan,27 August 2026,,Antoine Makoumbou,Samsunspor,Sampdoria,Loan,Italian list
+loan,27 August 2026,,Daniel Bîrligea,Steaua București,Frosinone,Loan,Italian list
+transfer,27 August 2026,,Gabriele Artistico,Lazio,Padova,Undisclosed,Italian list
+loan,27 August 2026,,Filippo Liberati,Carrarese,Desenzano,Loan,Italian list
+transfer,28 August 2026,,Elia Tantalocchi,Sampdoria,Vicenza,Undisclosed,Italian list
+transfer,28 August 2026,,Ettore Broggian,Vicenza,Como,Undisclosed,Italian list
+loan,28 August 2026,,Semuel Pizzignacco,Monza,Carrarese,Loan,Italian list
+transfer,28 August 2026,,Marco Imperiale,Carrarese,Catanzaro,Undisclosed,Italian list
+loan,28 August 2026,,Gonçalo Esteves,Catanzaro,Carrarese,Loan,Italian list
+loan,28 August 2026,,Gabriele Zappa,Cagliari,Verona,Loan,Italian list
+loan,28 August 2026,,Lorenzo Russo,Napoli,Crotone,Loan,Italian list
+transfer,28 August 2026,,Walid Cheddira,Napoli,Avellino,Undisclosed,Italian list
+transfer,28 August 2026,,Adrian Šemper,Pisa,Al-Fateh,Undisclosed,Italian list
+transfer,28 August 2026,,Bartosz Mrozek,Lech Poznań,Udinese,Undisclosed,Italian list
+loan,28 August 2026,,Giovanni Fabbian,Fiorentina,Parma,Loan,Italian list
+loan,28 August 2026,,Cyril Ngonge,Napoli,Monza,Loan,Italian list
+loan,28 August 2026,,Rachid Kouda,Parma,Mantova,Loan,Italian list
+loan,28 August 2026,,Michael Folorunsho,Napoli,Monza,Loan,Italian list
+transfer,28 August 2026,,Luca Monticelli,Verona,Charleroi,Undisclosed,Italian list
+loan,28 August 2026,,Fabio Miretti,Juventus,Beşiktaş,Loan,Italian list
+transfer,28 August 2026,,Tomáš Bobček,Lechia Gdańsk,Frosinone,Undisclosed,Italian list
+loan,28 August 2026,,Sayha Seha,Catanzaro,Perugia,Loan,Italian list
+loan,29 August 2026,,Charlys,Verona,Inter U23,Loan,Italian list
+loan,29 August 2026,,Alessandro Gabrielloni,Como,Palermo,Loan,Italian list
+loan,29 August 2026,,Lucas Perri,Leeds,Torino,Loan,Italian list
+transfer,29 August 2026,,Marcus Holmgren Pedersen,Torino,Olympiacos,Undisclosed,Italian list
+transfer,29 August 2026,,Franck Kessié,Al-Ahli,Atalanta,Free,Italian list
+loan,29 August 2026,,Riccardo Ciervo,Sassuolo,Cagliari,Loan,Italian list
+loan,29 August 2026,,Sebastiano Esposito,Cagliari,Sassuolo,Loan,Italian list
+loan,29 August 2026,,Samuele Ricci,Milan,Como,Loan,Italian list
+loan,29 August 2026,,Alvin Okoro,Venezia,Südtirol,Loan,Italian list
+loan,29 August 2026,,Kristjan Asllani,Inter,Al Jazira,Loan,Italian list
+loan,29 August 2026,,Alessandro Capello,Arezzo,Lecco,Loan,Italian list
+transfer,29 August 2026,,Jacopo Bacci,Padova,Sorrento,Undisclosed,Italian list
+transfer,29 August 2026,,Alessandro Carnaroli,Vis Pesaro,Pisa,Undisclosed,Italian list
+loan,29 August 2026,,Alessandro Carnaroli,Pisa,Vis Pesaro,Loan,Italian list
+transfer,30 August 2026,,Rafael Leão,Milan,Galatasaray,€38M,Italian list
+transfer,30 August 2026,,Marten de Roon,Atalanta,Roma,Undisclosed,Italian list
+loan,30 August 2026,,Ignace Van Der Brempt,Como,Sassuolo,Loan,Italian list
+loan,30 August 2026,,Emil Bohinen,Venezia,Cesena,Loan,Italian list
+loan,30 August 2026,,Ali Dembélé,Torino,Lecce,Loan,Italian list
+transfer,30 August 2026,,Alieu Njie,Torino,Fiorentina,Undisclosed,Italian list
+loan,30 August 2026,,Eman Košpo,Fiorentina,Mantova,Loan,Italian list
+transfer,30 August 2026,,Davis Mensah,Mantova,Cittadella,Undisclosed,Italian list
+transfer,30 August 2026,,Filippo Pittarello,Catanzaro,Pisa,Undisclosed,Italian list
+loan,30 August 2026,,Henrik Meister,Pisa,Derby County,Loan,Italian list
+loan,30 August 2026,,Adin Ličina,Juventus Next Gen,Cremonese,Loan,Italian list
+transfer,30 August 2026,,Peter Amoran,Parma,Västerås,Undisclosed,Italian list
+loan,31 August 2026,,Tommaso Macchioni,Sassuolo,Carrarese,Loan,Italian list
+loan,31 August 2026,,Filippo Missori,Sassuolo,Avellino,Loan,Italian list
+loan,31 August 2026,,Jan Ziółkowski,Roma,Monza,Loan,Italian list
+loan,31 August 2026,,Yanis Massolin,Inter,Cagliari,Loan,Italian list
+transfer,31 August 2026,,Giuseppe Sibilli,Bari,Juve Stabia,Undisclosed,Italian list
+transfer,31 August 2026,,Roberto Gagliardini,Verona,Cagliari,Free,Italian list
+transfer,31 August 2026,,Joël Monteiro,Young Boys,Lecce,Undisclosed,Italian list
+transfer,31 August 2026,,Kevin Mbabu,Midtjylland,Sampdoria,Free,Italian list
+transfer,31 August 2026,,Arthur Melo,Juventus,Santos,Free,Italian list
+transfer,31 August 2026,,Juan Jesus,Unattached,Venezia,Free,Italian list
+loan,31 August 2026,,Pasquale Mazzocchi,Napoli,Venezia,Loan,Italian list
+loan,31 August 2026,,Kevin Miranda,Sassuolo,Audace Cerignola,Loan,Italian list
+transfer,31 August 2026,,Fabrizio Caligara,Sassuolo,Catania,Undisclosed,Italian list
+loan,31 August 2026,,Noel Törnqvist,Como,Monza,Loan,Italian list
+loan,31 August 2026,,Santiago Giménez,Milan,Porto,Loan,Italian list
+loan,31 August 2026,,Omari Hutchinson,Nottingham Forest,Milan,Loan,Italian list
+loan,31 August 2026,,Vincenzo Fiorillo,Carrarese,Pescara,Loan,Italian list
+transfer,1 September 2026,,Rafik Belghali,Verona,Torino,Undisclosed,Italian list
+transfer,1 September 2026,,Samuele Massolo,Vicenza,Sampdoria,Undisclosed,Italian list
+transfer,1 September 2026,,Filippo Bandinelli,Spezia,Empoli,Undisclosed,Italian list
+transfer,1 September 2026,,Giovanni Volpe,Catanzaro,Audace Cerignola,Undisclosed,Italian list
+loan,1 September 2026,,Kevin Barcella,Frosinone,Crotone,Loan,Italian list
+transfer,1 September 2026,,Honest Ahanor,Atalanta,Chelsea,Undisclosed,Italian list
+loan,1 September 2026,,Honest Ahanor,Atalanta,Crystal Palace,Loan,Italian list
+loan,1 September 2026,,Ibrahim Sulemana,Atalanta,Sassuolo,Loan,Italian list
+transfer,1 September 2026,,Botond Balogh,Parma,Westerlo,Undisclosed,Italian list
+transfer,1 September 2026,,Marko Farji,Venezia,Heerenveen,Undisclosed,Italian list
+loan,1 September 2026,,Lazar Jovanović,VfB Stuttgart,Udinese,Loan,Italian list
+loan,1 September 2026,,Branimir Mlačić,Udinese,Watford,Loan,Italian list
+transfer,1 September 2026,,Nicola Ravaglia,Sampdoria,Carrarese,Free,Italian list
+transfer,1 September 2026,,Simone Ghidotti,Sampdoria,Parma,Undisclosed,Italian list
+loan,1 September 2026,,Lorenzo Paratici,Sampdoria,Roma,Loan,Italian list
+loan,1 September 2026,,Filippo Delli Carri,Monza,Sampdoria,Loan,Italian list
+loan,1 September 2026,,Nicolas Galazzi,Monza,Padova,Loan,Italian list
+loan,1 September 2026,,Tommaso Ravaglioli,Bologna,Lumezzane,Loan,Italian list
+transfer,1 September 2026,,Jay Enem,Crvena zvezda,Bologna,Undisclosed,Italian list
+loan,1 September 2026,,Edoardo Iannoni,Sassuolo,Verona,Loan,Italian list
+loan,1 September 2026,,Daniele Casiraghi,Südtirol,Ravenna,Loan,Italian list
+transfer,1 September 2026,,Cristian Andreoni,Juve Stabia,Crotone,Undisclosed,Italian list
+loan,1 September 2026,,Marco Olivieri,Cesena,Arezzo,Loan,Italian list
+transfer,1 September 2026,,Antonio Ferrara,Benevento,Scafatese,Undisclosed,Italian list
+loan,1 September 2026,,Matteo Casarotto,Virtus Entella,Lecco,Loan,Italian list
+loan,1 September 2026,,Marwane Kritta,Lecco,Virtus Entella,Loan,Italian list
+loan,1 September 2026,,Pape Matar Sarr,Tottenham,Juventus,Loan,Italian list
+loan,1 September 2026,,Diego Carlos,Fenerbahçe,Parma,Loan,Italian list
+loan,1 September 2026,,Francesco Folino,Cremonese,Modena,Loan,Italian list
+loan,1 September 2026,,Nicholas Bonfanti,Pisa,Carrarese,Loan,Italian list
+loan,1 September 2026,,Tommaso Del Lungo,Atalanta,Mantova,Loan,Italian list
+loan,1 September 2026,,Paolo Vismara,Atalanta,Juve Stabia,Loan,Italian list
+transfer,1 September 2026,,Matteo Della Morte,Vicenza,Bari,Undisclosed,Italian list
+transfer,1 September 2026,,Michele Cavion,Vicenza,Reggiana,Undisclosed,Italian list
+loan,1 September 2026,,Lorenzo Tosto,Empoli,Inter U23,Loan,Italian list
+transfer,1 September 2026,,Flavio Bianchi,Empoli,Bari,Undisclosed,Italian list
+loan,1 September 2026,,Mattia Mannini,Roma,Benevento,Loan,Italian list
+transfer,1 September 2026,,Rui Modesto,Udinese,Vancouver Whitecaps,Undisclosed,Italian list
+transfer,1 September 2026,,M'Bala Nzola,Fiorentina,Cagliari,Undisclosed,Italian list
+transfer,1 September 2026,,Yukinari Sugawara,Southampton,Cagliari,Undisclosed,Italian list
+loan,1 September 2026,,Oliver Sørensen,Parma,Celtic,Loan,Italian list
+loan,1 September 2026,,Nick Woltemade,Newcastle,Juventus,Loan,Italian list
+loan,1 September 2026,,Kevin Zeroli,Milan,Südtirol,Loan,Italian list
+transfer,1 September 2026,,Matthias Braunöder,Como,Carrarese,Undisclosed,Italian list
+loan,1 September 2026,,Robert Sánchez,Chelsea,Como,Loan,Italian list
+loan,1 September 2026,,Moise Kean,Fiorentina,Como,Loan,Italian list
+loan,1 September 2026,,Albert Guðmundsson,Fiorentina,Lazio,Loan,Italian list
+loan,1 September 2026,,Robinio Vaz,Roma,Hull City,Loan,Italian list
+transfer,1 September 2026,,Cody Drameh,Hull City,Genoa,Undisclosed,Italian list
+loan,1 September 2026,,Jesper Lindstrøm,Napoli,RB Salzburg,Loan,Italian list
+loan,1 September 2026,,Tommaso Gabellini,Torino,Forlì,Loan,Italian list
+loan,1 September 2026,,Mattia Pellini,Torino,Südtirol,Loan,Italian list
+loan,1 September 2026,,Saba Goglichidze,Udinese,Monza,Loan,Italian list
+transfer,1 September 2026,,Exequiel Zeballos,Boca Juniors,Monza,Undisclosed,Italian list
+transfer,1 September 2026,,Beto,Everton,Fiorentina,Undisclosed,Italian list
+loan,1 September 2026,,Wilfried Gnonto,Leeds,Fiorentina,Loan,Italian list
+transfer,1 September 2026,,Rolando Mandragora,Fiorentina,Torino,Undisclosed,Italian list
+loan,1 September 2026,,Pedro Gonçalves,Sporting,Fiorentina,Loan,Italian list
+transfer,1 September 2026,,Federico Brancolini,Empoli,Novara,Undisclosed,Italian list
+loan,1 September 2026,,Daniel Bragança,Sporting,Torino,Loan,Italian list
+transfer,1 September 2026,,Nathan Patterson,Everton,Torino,Undisclosed,Italian list
+transfer,1 September 2026,,Federico Cassa,Atalanta,Bologna,Undisclosed,Italian list
+loan,1 September 2026,,Federico Cassa,Bologna,Catanzaro,Loan,Italian list
+loan,1 September 2026,,Jonathan Rowe,Bologna,Atalanta,Loan,Italian list
+loan,1 September 2026,,Nicolò Cavuoti,Cagliari,Catania,Loan,Italian list
+transfer,1 September 2026,,Roberto Insigne,Avellino,Catania,Undisclosed,Italian list
+loan,1 September 2026,,Rufai Mohammed,Elfsborg,Venezia,Loan,Italian list
+loan,1 September 2026,,Solomon Loubao,Monza,Catanzaro,Loan,Italian list
+loan,1 September 2026,,Andrej Pogačar,Radomlje,Catanzaro,Loan,Italian list
+loan,1 September 2026,,Ervin Bashi,Catanzaro,Crotone,Loan,Italian list
+transfer,2 September 2026,,Stephan El Shaarawy,Unattached,Genoa,Free,Italian list
+loan,2 September 2026,,Kingstone Mutandwa,Cagliari,Servette,Loan,Italian list
+transfer,2 September 2026,,Gady Beyuku,Modena,Blackburn,Undisclosed,Italian list
+transfer,3 September 2026,,Ricardo Rodriguez,Unattached,Torino,Free,Italian list
+loan,3 September 2026,,Jeremy Mbambi,Pisa,Sint-Truiden,Loan,Italian list
+transfer,3 September 2026,,Malthe Højholt,Pisa,Górnik Zabrze,Undisclosed,Italian list
+transfer,3 September 2026,,Fabrizio Bagheria,Unattached,Vicenza,Free,Italian list
+transfer,3 September 2026,,Kingsley Ehizibue,Unattached,Genoa,Free,Italian list
+transfer,3 September 2026,,Colin Dagba,Unattached,Carrarese,Free,Italian list
+transfer,3 September 2026,,Alessio Romagnoli,Lazio,Al Sadd,Undisclosed,Italian list
+loan,4 September 2026,,Ilias Koutsoupias,Frosinone,Anderlecht,Loan,Italian list
+loan,4 September 2026,,Alessandro Fontanarosa,Avellino,Leuven,Loan,Italian list
+transfer,4 September 2026,,Alberto Paleari,Torino,AEK Larnaca,Undisclosed,Italian list
+loan,4 September 2026,,Tino Anjorin,Torino,Göztepe,Loan,Italian list
+loan,4 September 2026,,Gennaro Borrelli,Cagliari,Çaykur Rizespor,Loan,Italian list
+transfer,4 September 2026,,Pedro Mendes,Modena,Gençlerbirliği,Undisclosed,Italian list
+transfer,4 September 2026,,Vincent Sierro,Unattached,Parma,Free,Italian list
+transfer,5 September 2026,,Yann Karamoh,Unattached,Sampdoria,Free,Italian list
+loan,7 September 2026,,Junior Ligue,Venezia,Rijeka,Loan,Italian list
+transfer,8 September 2026,,Edoardo Piana,Udinese,Koper,Undisclosed,Italian list
+loan,8 September 2026,,David Pejičić,Udinese,Koper,Loan,Italian list
+transfer,8 September 2026,,Diogo Leite,Unattached,Lazio,Free,Italian list
+transfer,8 September 2026,,Andrea Belotti,Unattached,Modena,Free,Italian list
+transfer,8 September 2026,,Alessandro Pio Riccio,Sampdoria,Pogoń Szczecin,Undisclosed,Italian list
+loan,8 September 2026,,Jesper Karlsson,Bologna,Servette,Loan,Italian list
+loan,10 September 2026,,Ioan Vermeșan,Verona,Widzew Łódź,Loan,Italian list
+transfer,10 September 2026,,Luca Mazzitelli,Unattached,Palermo,Free,Italian list
+loan,14 September 2026,,Anass Salah-Eddine,Roma,Panathinaikos,Loan,Italian list
+transfer,24 September 2026,,David Alaba,Unattached,Udinese,Free,Italian list
+transfer,25 September 2026,,Gian Marco Ferrari,Unattached,Arezzo,Free,Italian list
+transfer,28 September 2026,,Patric,Lazio,Al-Ittifaq,Undisclosed,Italian list

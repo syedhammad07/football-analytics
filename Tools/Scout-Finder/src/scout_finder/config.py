@@ -13,6 +13,16 @@ SQUADS_CSV = DATA_DIR / "pl_squads_2026-27.csv"           # who is in each Premi
 TRANSFERS_CSV = DATA_DIR / "transfers_summer_2026.csv"    # every summer 2026 transfer and loan in English football
 TRANSFERMARKT_GZ = DATA_DIR / "tm_players.csv.gz"          # downloaded by `scout-finder fetch`, not committed
 
+# Europe's top five leagues, 2025/26 (see top5.py)
+TOP5_SEASON = 2526
+TOP5_URL = "https://raw.githubusercontent.com/m-mahadi/top5-football-dataset/master/data/clean/sofascore_player_seasons.csv"
+TOP5_CSV = DATA_DIR / "top5_players_2025-26.csv"           # downloaded by `scout-finder fetch --top5`, not committed
+TOP5_VALUES_CSV = DATA_DIR / "top5_values_2025-26.csv"     # Transfermarkt position, birth date and value per player
+TOP5_NOW_CSV = DATA_DIR / "top5_clubs_now.csv"             # each player's club after the summer 2026 window
+EUROPE_TRANSFERS_CSV = DATA_DIR / "transfers_summer_2026_europe.csv"   # Spanish, Italian, German and French moves
+LEAGUES = {"ENG-Premier League": "Premier League", "ESP-La Liga": "La Liga", "ITA-Serie A": "Serie A",
+           "GER-Bundesliga": "Bundesliga", "FRA-Ligue 1": "Ligue 1"}
+
 MIN_MINUTES = 900                   # about ten full games: enough to trust per-90 numbers
 IN_PROGRESS_SHARE = 0.4             # for a season still being played: 40% of the minutes so far
 
@@ -68,5 +78,8 @@ METRICS = [
     Metric("aerial_pct", "Aerial duels won %", "Defending"),
 ]
 METRIC_BY_KEY = {m.key: m for m in METRICS}
+# The top-five-leagues source doesn't publish three of these, so that mode uses the closest stat it has.
+TOP5_LABELS = {"box_touches": "Shots inside the box", "through_balls": "Big chances created",
+               "forward_passes": "Passes completed in the final third"}
 GROUPS = ["Scoring", "Creating", "Passing", "Carrying", "Defending"]
 POSITIONS = ["Defender", "Midfielder", "Forward"]
