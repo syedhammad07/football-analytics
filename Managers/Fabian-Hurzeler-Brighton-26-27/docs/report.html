@@ -1,0 +1,229 @@
+<title>Hürzeler's Brighton</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: one centred column; navy hero band, then cards per section. Blues only, one coral for decline. */
+:root {
+  --bg:#0A1628; --surface:#111F36; --raised:#172842; --ink:#E6EDF7; --muted:#94A3BC; --line:#22355A; --track:#1A2C4A;
+  --t:#5AB0FF; --t2:#3B82D6; --t3:#1E4F96; --t-soft:rgba(90,176,255,.16); --warn:#FF8A7A; --warn-soft:rgba(255,138,122,.16);
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif; --body:"Barlow",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --r:14px; color-scheme:dark;
+}
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) {
+  --bg:#EEF3FA; --surface:#FFFFFF; --raised:#F6F9FD; --ink:#0F1B2D; --muted:#56657C; --line:#D5DEEB; --track:#E3EAF4;
+  --t:#1D5FD1; --t2:#4F86E0; --t3:#A9C6F2; --t-soft:rgba(29,95,209,.12); --warn:#C62828; --warn-soft:rgba(198,40,40,.10); color-scheme:light } }
+:root[data-theme="light"] {
+  --bg:#EEF3FA; --surface:#FFFFFF; --raised:#F6F9FD; --ink:#0F1B2D; --muted:#56657C; --line:#D5DEEB; --track:#E3EAF4;
+  --t:#1D5FD1; --t2:#4F86E0; --t3:#A9C6F2; --t-soft:rgba(29,95,209,.12); --warn:#C62828; --warn-soft:rgba(198,40,40,.10); color-scheme:light }
+* { box-sizing:border-box }
+body { margin:0; background:var(--bg); color:var(--ink); font:400 16px/1.6 var(--body); font-variant-numeric:tabular-nums; -webkit-font-smoothing:antialiased }
+.wrap { max-width:880px; margin:0 auto; padding-inline:max(16px, env(safe-area-inset-left,0px)) max(16px, env(safe-area-inset-right,0px)) }
+h1,h2,h3 { font-family:var(--display); font-weight:700; letter-spacing:.01em; line-height:1.05; margin:0; text-wrap:balance }
+.eyebrow { font:600 12px/1 var(--body); letter-spacing:.12em; text-transform:uppercase; color:var(--muted) }
+a { color:var(--t) }
+.hero { background:linear-gradient(160deg,var(--t3) 0%,var(--surface) 55%,var(--bg) 100%); border-bottom:1px solid var(--line) }
+.hero .wrap { padding-block:56px 40px }
+.hero .eyebrow { color:var(--t) }
+h1 { font-size:clamp(44px,9vw,76px); margin:14px 0 14px }
+.lede { font-size:18px; color:var(--ink); max-width:60ch; margin:0 0 6px }
+.meta { color:var(--muted); font-size:14px; margin:0 }
+.kpis { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin-top:32px }
+.kpi { background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:16px 16px 14px; min-width:0 }
+.kpi b { display:block; font:700 40px/1 var(--display); color:var(--t); margin:8px 0 6px }
+.kpi span { font-size:13.5px; color:var(--muted); line-height:1.35; display:block }
+main { padding-block:36px 64px; display:grid; gap:28px }
+section { background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:28px clamp(16px,4vw,32px) }
+section > .eyebrow { display:block; margin-bottom:10px; color:var(--t) }
+h2 { font-size:clamp(30px,5vw,40px); margin-bottom:14px }
+h3 { font-size:22px; margin:26px 0 10px; color:var(--ink) }
+p { margin:0 0 14px; max-width:68ch } p:last-child { margin-bottom:0 }
+section p, section li { color:var(--ink) }
+.mut { color:var(--muted) !important; font-size:14px }
+.callout { background:var(--t-soft); border:1px solid var(--line); border-left:4px solid var(--t); border-radius:10px; padding:14px 16px; margin:18px 0 0; max-width:none }
+.chart { background:var(--raised); border:1px solid var(--line); border-radius:12px; padding:14px 14px 10px; margin:18px 0 6px }
+.chart svg { display:block; width:100%; height:auto; max-width:620px; margin:0 auto; font-family:var(--body) }
+.legend { display:flex; flex-wrap:wrap; gap:6px 18px; font-size:13px; color:var(--muted); margin:2px 4px 8px; justify-content:center }
+.legend i { display:inline-block; width:11px; height:11px; border-radius:50%; margin-right:6px; vertical-align:-1px }
+svg .grid { stroke:var(--line); stroke-width:1 } svg .ax { fill:var(--muted); font-size:11px }
+svg .grp { fill:var(--t); font:600 11px var(--body); letter-spacing:.12em }
+svg .lbl { fill:var(--ink); font:600 13px var(--body) } svg .val { fill:var(--muted); font:400 11.5px var(--body) }
+svg .con { stroke-width:3; stroke-linecap:round } svg .con.up { stroke:var(--t2) } svg .con.down { stroke:var(--warn) }
+svg .from { fill:var(--surface); stroke:var(--muted); stroke-width:2 }
+svg .to.up { fill:var(--t) } svg .to.down { fill:var(--warn) }
+svg .rk { font:700 12px var(--body) } svg .rk.up { fill:var(--t) } svg .rk.down { fill:var(--warn) }
+.axnote { display:flex; justify-content:space-between; font-size:12px; color:var(--muted); max-width:620px; margin:0 auto; padding:0 4px }
+ul { padding-left:20px; margin:14px 0 0; display:grid; gap:10px; max-width:68ch } li::marker { color:var(--t) }
+.tw { overflow-x:auto; border:1px solid var(--line); border-radius:12px; margin:12px 0 16px; background:var(--raised) }
+table { border-collapse:collapse; width:100%; min-width:520px; font-size:14.5px }
+th { text-align:left; font:600 12px/1.2 var(--body); letter-spacing:.08em; text-transform:uppercase; color:var(--muted); padding:12px 14px; background:var(--track); white-space:nowrap }
+td { padding:11px 14px; border-top:1px solid var(--line); vertical-align:top; line-height:1.45 }
+tbody tr:hover { background:var(--t-soft) }
+td:first-child { font-weight:600; white-space:nowrap }
+.num34 td:nth-child(n+4), .num45 td:nth-child(n+4), .num234 td:nth-child(n+2) { text-align:right; white-space:nowrap }
+.num34 th:nth-child(n+4), .num45 th:nth-child(n+4), .num234 th:nth-child(n+2) { text-align:right }
+.roles td:nth-child(n+2) { min-width:170px }
+.pill { display:inline-block; font:600 12px/1 var(--body); padding:5px 9px; border-radius:999px; margin-right:6px; white-space:nowrap }
+.pill.s { background:var(--t-soft); color:var(--t) } .pill.c { background:var(--warn-soft); color:var(--warn) }
+.pill.u { background:var(--track); color:var(--muted) }
+.split { display:grid; gap:18px; margin:18px 0 6px }
+.bar { display:flex; height:30px; border-radius:8px; overflow:hidden; background:var(--track) }
+.bar > div { height:100% } .s0 { background:var(--t3) } .s1 { background:var(--t2) } .s2 { background:var(--t) }
+.bl { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px; gap:8px; flex-wrap:wrap }
+.bl b { font:700 20px/1 var(--display); letter-spacing:.03em } .bl span { font-size:13px; color:var(--muted) }
+.keys { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:6px 12px; margin-top:8px; font-size:13px }
+.keys div { min-width:0 } .keys i { display:inline-block; width:10px; height:10px; border-radius:3px; margin-right:6px }
+.keys b { display:block; font:700 17px/1.2 var(--display); letter-spacing:.02em; margin-top:2px }
+.cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:16px }
+.card { background:var(--raised); border:1px solid var(--line); border-radius:12px; padding:16px; min-width:0 }
+.card .q { font:600 12px/1.3 var(--body); letter-spacing:.1em; text-transform:uppercase; color:var(--muted) }
+.card .a { font:700 26px/1.1 var(--display); color:var(--t); margin:8px 0 10px }
+.card p { font-size:14.5px; color:var(--muted) !important; margin:0 }
+.src { columns:2 280px; column-gap:28px; font-size:14px; padding-left:18px; display:block } .src li { margin-bottom:8px; break-inside:avoid }
+footer { color:var(--muted); font-size:13px; text-align:center; padding:0 0 40px }
+@media (max-width:720px) { .kpis { grid-template-columns:repeat(2,minmax(0,1fr)) } .cards { grid-template-columns:1fr } .hero .wrap { padding-block:40px 28px } }
+@media (max-width:420px) { .keys { grid-template-columns:1fr } }
+</style>
+<header class="hero"><div class="wrap">
+<span class="eyebrow">Premier League · Brighton &amp; Hove Albion · 2026/27</span>
+<h1>Hürzeler's Brighton: what changed, and why</h1>
+<p class="lede">The attack changed mainly because the same pressing system is being run through different roles, not because of signings.</p>
+<p class="meta">Hammad · 15 November 2026 · first 9 to 10 league games against all of 2025/26</p>
+<div class="kpis">
+<div class="kpi"><span class="eyebrow">Shots per 90</span><b>5th → 1st</b><span>10.5 to 14.5</span></div>
+<div class="kpi"><span class="eyebrow">xG per 90</span><b>9th → 2nd</b><span>1.67 to 2.17</span></div>
+<div class="kpi"><span class="eyebrow">Returning players</span><b>65%</b><span>of the rise in shots per 90</span></div>
+<div class="kpi"><span class="eyebrow">Signings</span><b>19%</b><span>of shots, in 21% of minutes</span></div>
+</div></div></header>
+<div class="wrap"><main>
+
+<section><span class="eyebrow">Bottom line</span><h2>Same press, different cast</h2>
+<p>Between roughly two-thirds and four-fifths of the rise in shots and expected goals (xG) comes from players who were already at Brighton doing more per 90 minutes. The summer signings are mostly defenders and took 19% of the shots in 21% of the minutes.</p>
+<p>The sales matter too: the players who left or have barely played this season took 42% of last season's shots and 52% of its xG, so Brighton are producing more with a different front line.</p>
+<p class="callout"><b>Confidence is moderate.</b> It is 10 league games, the fixture list is uneven, and the data does not show positions or line-ups. Some of the "tactics" effect may be role changes forced by injuries, not a planned new system.</p>
+</section>
+
+<section><span class="eyebrow">On the pitch</span><h2>What changed</h2>
+<p>Brighton keep the ball more and shoot far more, but with slightly weaker chances and far fewer dribbles. Against the other 19 Premier League teams, shots per 90 went from 5th to 1st and xG per 90 from 9th to 2nd (2025/26 is 38 games; 2026/27 is the first 9 to 10).</p>
+<div class="chart"><div class="legend"><span><i style="background:var(--surface);border:2px solid var(--muted)"></i>2025/26 rank</span><span><i style="background:var(--t)"></i>2026/27 rank, up</span><span><i style="background:var(--warn)"></i>2026/27 rank, down</span></div>
+<svg viewBox="0 0 520 538" role="img" aria-label="Brighton rank among 20 Premier League teams on ten measures, 2025/26 against 2026/27"><line class="grid" x1="485.0" x2="485.0" y1="34" y2="524"/>
+<text class="ax" x="485.0" y="24" text-anchor="middle">1</text>
+<line class="grid" x1="415.5" x2="415.5" y1="34" y2="524"/>
+<text class="ax" x="415.5" y="24" text-anchor="middle">5</text>
+<line class="grid" x1="328.7" x2="328.7" y1="34" y2="524"/>
+<text class="ax" x="328.7" y="24" text-anchor="middle">10</text>
+<line class="grid" x1="241.8" x2="241.8" y1="34" y2="524"/>
+<text class="ax" x="241.8" y="24" text-anchor="middle">15</text>
+<line class="grid" x1="155.0" x2="155.0" y1="34" y2="524"/>
+<text class="ax" x="155.0" y="24" text-anchor="middle">20</text>
+<text class="grp" x="0" y="60">POSSESSION & BUILD-UP</text>
+<text class="lbl" x="0" y="83">Possession</text><text class="val" x="0" y="97">53.8% → 59.0%</text>
+<line class="con up" x1="415.5" x2="432.9" y1="86" y2="86"/>
+<circle class="from" cx="415.5" cy="86" r="5.5"/><circle class="to up" cx="432.9" cy="86" r="6.5"/>
+<text class="rk up" x="420.9" y="90" text-anchor="end">4th</text>
+<text class="lbl" x="0" y="123">Passes per 90</text><text class="val" x="0" y="137">479 → 528</text>
+<line class="con up" x1="380.8" x2="398.2" y1="126" y2="126"/>
+<circle class="from" cx="380.8" cy="126" r="5.5"/><circle class="to up" cx="398.2" cy="126" r="6.5"/>
+<text class="rk up" x="386.2" y="130" text-anchor="end">6th</text>
+<text class="lbl" x="0" y="163">Forward-pass share</text><text class="val" x="0" y="177">29.4% → 27.1%</text>
+<line class="con down" x1="224.5" x2="189.7" y1="166" y2="166"/>
+<circle class="from" cx="224.5" cy="166" r="5.5"/><circle class="to down" cx="189.7" cy="166" r="6.5"/>
+<text class="rk down" x="201.7" y="170" text-anchor="start">18th</text>
+<text class="lbl" x="0" y="203">Opposition-half passes</text><text class="val" x="0" y="217">41.2% → 47.9%</text>
+<line class="con up" x1="276.6" x2="398.2" y1="206" y2="206"/>
+<circle class="from" cx="276.6" cy="206" r="5.5"/><circle class="to up" cx="398.2" cy="206" r="6.5"/>
+<text class="rk up" x="386.2" y="210" text-anchor="end">6th</text>
+<text class="grp" x="0" y="248">SHOTS & CHANCES</text>
+<text class="lbl" x="0" y="271">Shots per 90</text><text class="val" x="0" y="285">10.5 → 14.5</text>
+<line class="con up" x1="415.5" x2="485.0" y1="274" y2="274"/>
+<circle class="from" cx="415.5" cy="274" r="5.5"/><circle class="to up" cx="485.0" cy="274" r="6.5"/>
+<text class="rk up" x="473.0" y="278" text-anchor="end">1st</text>
+<text class="lbl" x="0" y="311">xG per 90</text><text class="val" x="0" y="325">1.67 → 2.17</text>
+<line class="con up" x1="346.1" x2="467.6" y1="314" y2="314"/>
+<circle class="from" cx="346.1" cy="314" r="5.5"/><circle class="to up" cx="467.6" cy="314" r="6.5"/>
+<text class="rk up" x="455.6" y="318" text-anchor="end">2nd</text>
+<text class="lbl" x="0" y="351">xG per shot</text><text class="val" x="0" y="365">0.160 → 0.150</text>
+<line class="con down" x1="346.1" x2="311.3" y1="354" y2="354"/>
+<circle class="from" cx="346.1" cy="354" r="5.5"/><circle class="to down" cx="311.3" cy="354" r="6.5"/>
+<text class="rk down" x="323.3" y="358" text-anchor="start">11th</text>
+<text class="grp" x="0" y="396">DUELS & RECOVERIES</text>
+<text class="lbl" x="0" y="419">Dribbles per 90</text><text class="val" x="0" y="433">7.7 → 5.9</text>
+<line class="con down" x1="328.7" x2="172.4" y1="422" y2="422"/>
+<circle class="from" cx="328.7" cy="422" r="5.5"/><circle class="to down" cx="172.4" cy="422" r="6.5"/>
+<text class="rk down" x="184.4" y="426" text-anchor="start">19th</text>
+<text class="lbl" x="0" y="459">Tackles per 90</text><text class="val" x="0" y="473">19.5 → 16.5</text>
+<line class="con down" x1="398.2" x2="241.8" y1="462" y2="462"/>
+<circle class="from" cx="398.2" cy="462" r="5.5"/><circle class="to down" cx="241.8" cy="462" r="6.5"/>
+<text class="rk down" x="253.8" y="466" text-anchor="start">15th</text>
+<text class="lbl" x="0" y="499">Recoveries per 90</text><text class="val" x="0" y="513">44 → 41</text>
+<line class="con down" x1="398.2" x2="241.8" y1="502" y2="502"/>
+<circle class="from" cx="398.2" cy="502" r="5.5"/><circle class="to down" cx="241.8" cy="502" r="6.5"/>
+<text class="rk down" x="253.8" y="506" text-anchor="start">15th</text><text class="ax" x="150" y="538" text-anchor="start" style="display:none"></text></svg>
+<div class="axnote"><span>← 20th (worst)</span><span>1st (best) →</span></div></div>
+<ul>
+<li><b>More territory, slower build-up.</b> Possession rose from 53.8% to 59.0%. The share of passes completed in the opposition half went from 41% to 48% (13th to 6th), while forward passes fell from 29.4% to 27.1% of all passes.</li>
+<li><b>Volume, not quality.</b> Shots per 90 rose from 10.5 to 14.5, but xG per shot slipped from 0.160 to 0.150. Pascal Groß and Charalampos Kostoulas both scored from long range against Arsenal.</li>
+<li><b>Results.</b> 22 points from 10 games (7 wins, 1 draw, 2 defeats), 26 goals scored and 7 conceded, 2nd behind Arsenal as of 8 November.</li>
+</ul></section>
+
+<section><span class="eyebrow">Squad</span><h2>Who left and who arrived</h2>
+<p>Brighton lost their top scorer, their most-used defender and their holding midfielder, and the signings are mostly defenders. Goalkeeper Carl Rushworth also left for Coventry for £22m.</p>
+<h3>Left, or barely played this season</h3><div class="tw"><table class="num34"><thead><tr><th>Player</th><th>Position</th><th>What happened</th><th>Min 25/26</th><th>xG 25/26</th></tr></thead><tbody><tr><td>Danny Welbeck</td><td>Forward</td><td>Sold to Chelsea, £5m</td><td>2,263</td><td>12.4</td></tr><tr><td>Jan Paul van Hecke</td><td>Centre-back</td><td>Sold to Spurs, £51–52m</td><td>3,211</td><td>3.3</td></tr><tr><td>Carlos Baleba</td><td>Midfielder</td><td>Sold to Manchester United, about £65m</td><td>1,662</td><td>0.7</td></tr><tr><td>Kaoru Mitoma</td><td>Winger</td><td>Out injured (hamstring)</td><td>1,721</td><td>4.1</td></tr><tr><td>Yankuba Minteh</td><td>Winger</td><td>8 minutes this season, reason not found</td><td>2,398</td><td>3.8</td></tr><tr><td>Brajan Gruda</td><td>Midfielder</td><td>Loan to RB Leipzig</td><td>715</td><td>1.7</td></tr><tr><td>Joël Veltman</td><td>Defender</td><td>Free to West Ham</td><td>1,050</td><td>1.1</td></tr><tr><td>James Milner</td><td>Midfielder</td><td>Leaving, per FourFourTwo</td><td>778</td><td>1.0</td></tr></tbody></table></div>
+<h3>Arrived</h3><div class="tw"><table class="num45"><thead><tr><th>Player</th><th>Position</th><th>Fee</th><th>Min 26/27</th><th>Shots</th><th>xG</th></tr></thead><tbody><tr><td>Luka Vušković</td><td>Centre-back</td><td>£46m plus £4m add-ons (club record)</td><td>888</td><td>14</td><td>1.3</td></tr><tr><td>Chema Andrés</td><td>Defensive midfielder</td><td>£15.5m</td><td>453</td><td>4</td><td>0.5</td></tr><tr><td>Costinha</td><td>Right-back</td><td>£11m</td><td>354</td><td>3</td><td>0.3</td></tr><tr><td>Pascal Struijk</td><td>Centre-back</td><td>£20m</td><td>156</td><td>2</td><td>0.3</td></tr><tr><td>Jaouen Hadjam</td><td>Left-back</td><td>Undisclosed</td><td>37</td><td>1</td><td>0.1</td></tr><tr><td>Promise David</td><td>Forward</td><td>Loan</td><td>23</td><td>1</td><td>0.4</td></tr><tr><td>Zadok Yohanna</td><td>Winger</td><td>£21.5–24m</td><td>12</td><td>0</td><td>0.0</td></tr><tr><td>Femi Azeez</td><td>Winger</td><td>£12.5–15m</td><td>0</td><td>0</td><td>0.0</td></tr></tbody></table></div>
+<p class="mut">Fees come from Scout Finder's transfer list and press reports, which differ for some deals (shown as ranges). Mitoma's injury is from a Vavel report; I did not find a cause for Minteh's absence.</p></section>
+
+<section><span class="eyebrow">Test one</span><h2>The same-players test</h2>
+<p>Players who stayed are shooting and creating more per 90 minutes, which is the clearest sign that the system or their roles changed. Ayari, De Cuyper and Groß more than doubled their xG per 90, and Gómez, Ayari and De Cuyper all shoot more often (Boscagli's rise starts from near zero).</p>
+<div class="tw"><table class="num234"><thead><tr><th>Player</th><th>Minutes 25/26</th><th>Minutes 26/27</th><th>Shots per 90</th><th>xG per 90</th></tr></thead><tbody><tr><td>Diego Gómez</td><td>2,136</td><td>877</td><td>1.31 → 2.05</td><td>0.27 → 0.14</td></tr><tr><td>Yasin Ayari</td><td>1,924</td><td>746</td><td>1.40 → 2.17</td><td>0.13 → 0.26</td></tr><tr><td>Maxim De Cuyper</td><td>1,414</td><td>827</td><td>0.57 → 1.31</td><td>0.12 → 0.27</td></tr><tr><td>Pascal Groß</td><td>1,636</td><td>881</td><td>0.66 → 1.12</td><td>0.08 → 0.31</td></tr><tr><td>Olivier Boscagli</td><td>800</td><td>785</td><td>0.11 → 0.34</td><td>0.00 → 0.02</td></tr><tr><td>Ferdi Kadioglu</td><td>3,134</td><td>520</td><td>0.63 → 0.69</td><td>0.06 → 0.03</td></tr><tr><td>Lewis Dunk</td><td>2,837</td><td>749</td><td>0.60 → 0.12</td><td>0.05 → 0.00</td></tr></tbody></table></div>
+<p>To size the effect, I let these returning players shoot at last season's per-90 rates, counted everyone else as they have actually played, and compared. Result: 11.9 shots per 90, against 10.5 last season and 14.5 actual. So the returning players explain about 65% of the rise in shots (2.6 of 4.0) and about 66% of the rise in xG (0.33 of 0.50). Counting all 11 players with 600+ minutes last season, including tiny samples such as Jack Hinshelwood's 158 minutes, raises those shares to 79% and over 100%.</p>
+<div class="chart"><div class="split">
+<div><div class="bl"><b>Shots per 90</b><span>10.48 → 14.46</span></div>
+<div class="bar" role="img" aria-label="Shots per 90: 10.48 last season, plus 1.41 from roster change, plus 2.57 from returning players shooting more"><div class="s0" style="width:72.5%"></div><div class="s1" style="width:9.7%"></div><div class="s2" style="width:17.8%"></div></div>
+<div class="keys"><div><i class="s0"></i>2025/26<b>10.48</b></div><div><i class="s1"></i>Roster change<b>+1.41 (35%)</b></div><div><i class="s2"></i>Returners doing more<b>+2.57 (65%)</b></div></div></div>
+<div><div class="bl"><b>xG per 90</b><span>1.67 → 2.17</span></div>
+<div class="bar" role="img" aria-label="xG per 90: 1.67 last season, plus 0.17 from roster change, plus 0.33 from returning players creating more"><div class="s0" style="width:76.9%"></div><div class="s1" style="width:7.8%"></div><div class="s2" style="width:15.3%"></div></div>
+<div class="keys"><div><i class="s0"></i>2025/26<b>1.67</b></div><div><i class="s1"></i>Roster change<b>+0.17 (34%)</b></div><div><i class="s2"></i>Returners doing more<b>+0.33 (66%)</b></div></div></div>
+</div></div>
+<p>Some of this is role change. Vavel reports De Cuyper, a left-back, playing as a left winger while Mitoma is injured, and Total Football Analysis has Groß starting from the No. 10 position against Arsenal.</p></section>
+
+<section><span class="eyebrow">Test two</span><h2>The new-players test</h2>
+<p>The signings did not shoot their way into the team. The eight arrivals who have played took 21% of the minutes, 19% of the shots (25 of 131) and 15% of the xG (3.0 of 19.7), so they contribute roughly in proportion to their playing time, or less.</p>
+<p>The one outlier is Luka Vušković: a centre-back with 14 shots in 888 minutes. No striker or winger has been signed who plays. Zadok Yohanna has 12 minutes and Femi Azeez none.</p>
+<p>The attack instead runs through players already at the club: Groß (3.0 xG), Kostoulas (2.6), Hinshelwood (2.5), De Cuyper (2.4) and Ayari (2.2) lead the squad in xG. Kostoulas had only 353 minutes last season and now starts up front, in place of Welbeck, who scored 13 league goals last year.</p>
+<p>Where the signings do fit Hürzeler's style is behind the ball. Total Football Analysis has Vušković and Struijk stepping out onto Arsenal's Ødegaard and Havertz, and Vušković giving a short option in build-up. That is a plausible fit with a high press, but it is one match, not a pattern.</p></section>
+
+<section><span class="eyebrow">The manager</span><h2>What Hürzeler himself changed</h2>
+<p>This season's Brighton press high and keep the ball in the opposition half. Last season they led the league in high turnovers (192, ahead of Arsenal's 179), per Albion Analytics, so the pressing principle looks unchanged and the next section covers what did change.</p>
+<p>After four league games, The Analyst had Brighton with the lowest PPDA in the league (6.6, meaning the fewest opposition passes allowed per defensive action), the most high turnovers (41), the highest possession (71.1%) and the furthest average start to their passing sequences (46.9m from their own goal). It warns that red cards and extra-man minutes inflate some of these.</p>
+<p>The Arsenal win on 19 September shows the other side. Brighton had only 40.3% of the ball, took 17 shots worth 1.33 xG, and won the ball in the final third nine times. Total Football Analysis describes a diamond build-up, a goalkeeper playing 25 of 40 passes long (62.5%), a mid-block that drops into a 5-1-4, man-oriented marking, and quick forward play after winning the ball. Two of the three goals were from 20 to 25 yards.</p>
+<p>Taken together, that suggests a team that sets up to win the ball high or win second balls and then shoots early, not one that only holds possession. It is also consistent with more shots of lower quality per shot, as seen in the numbers above.</p></section>
+
+<section><span class="eyebrow">Tactics</span><h2>Same system, different roles?</h2>
+<p>The evidence points to the same principles with a rearranged cast: the press and the width are unchanged, while the positions around the No. 10, the centre-forward and the wings are filled by different players. That fits what Hürzeler said in July 2025: he wants flexibility and expects the shape to follow the players.</p>
+<div class="tw"><table class="roles"><thead><tr><th>Area</th><th>2025/26</th><th>2026/27</th><th>Same or changed</th></tr></thead><tbody><tr><td>Base shape</td><td>Flexible 4-2-3-1 with rotations (Vavel)</td><td>An August preview expected a 4-2-3-1; against Arsenal, a diamond build-up and a 5-1-4 mid-block (Total Football Analysis, one match)</td><td><span class="pill u">Not confirmed</span></td></tr><tr><td>Press</td><td>Man-oriented high press; most high turnovers in the league (192)</td><td>Most high turnovers again (41 after four games) and the lowest PPDA</td><td><span class="pill s">Same</span></td></tr><tr><td>Width</td><td>3.8 successful open-play crosses per 90 (3rd in the league)</td><td>3.6 per 90 (4th)</td><td><span class="pill s">Same volume</span> Minteh (31) and Kadioğlu (17) then; Groß (9), Boscagli (7) and De Cuyper (6) now</td></tr><tr><td>No. 10</td><td>Hinshelwood from the winter, after Groß returned from Dortmund; four goals and three assists</td><td>Groß starts there against Arsenal; Hinshelwood has one start</td><td><span class="pill c">Changed</span></td></tr><tr><td>Centre-forward</td><td>Welbeck, 13 league goals</td><td>Kostoulas starts, 9 starts in 10 games</td><td><span class="pill c">Changed</span> sale</td></tr><tr><td>Wide attackers</td><td>Minteh and Mitoma made 93 of the team's 266 successful dribbles (35%)</td><td>Mitoma injured, Minteh 8 minutes; De Cuyper, a left-back, plays on the left wing</td><td><span class="pill c">Changed</span> injury</td></tr><tr><td>Holding midfield</td><td>Baleba, with Groß, Ayari or Wieffer</td><td>Chema Andrés, Ayari, Gómez</td><td><span class="pill c">Changed</span> sale</td></tr></tbody></table></div>
+<p>Two things follow. First, the fall in dribbles from 7.7 to 5.9 per 90 is mostly a personnel effect: the two players who produced over a third of last season's dribbles are barely playing. Second, a June 2026 season review credits last winter's change (Groß back, Hinshelwood to No. 10) for giving the side "a clearer identity", so the current set-up builds on that, not on a break with it.</p>
+<p class="callout">What I cannot say is whether the 5-1-4 and the diamond are a new default or an Arsenal-specific plan. That needs line-ups from several matches.</p></section>
+
+<section><span class="eyebrow">Verdict</span><h2>Your three questions</h2>
+<div class="cards">
+<div class="card"><div class="q">Was it his tactics?</div><div class="a">Mostly roles within a similar system</div><p>Returning players explain 65–79% of the rise in shots and about two-thirds or more of the rise in xG. The caveat: some role changes look forced by injuries (Mitoma) and sales (Welbeck), not planned.</p></div>
+<div class="card"><div class="q">Did he buy players who suit his style?</div><div class="a">In defence, plausibly; in attack, no</div><p>Vušković, Struijk and Chema Andrés fit a high press and build-up. No attacker or winger signed has played much.</p></div>
+<div class="card"><div class="q">Did the new players just shoot more in his side?</div><div class="a">No</div><p>Arrivals took 19% of shots in 21% of minutes. Vušković (14 shots) is the only outlier.</p></div>
+</div>
+<p style="margin-top:18px">The fairest summary: Hürzeler kept most of the core, replaced a centre-back and the holding midfielder with players who plausibly fit, and the existing midfielders and left-back now shoot more because of where they play and how the team attacks.</p></section>
+
+<section><span class="eyebrow">Method</span><h2>Caveats and sources</h2>
+<ul>
+<li><b>Small sample.</b> This season is 9 to 10 games, so ranks can swing. The player stats cover about 9 matches of minutes, while the possession figure counts 10.</li>
+<li><b>No positions or line-ups.</b> Role changes come from two match articles, not from tracking or average-position data.</li>
+<li><b>Simple method.</b> The same-players test ignores opponent strength and game state, and some players have under 900 minutes this season.</li>
+<li><b>Fixtures are uneven.</b> They include Arsenal, Manchester City and Liverpool, but also newly promoted Coventry.</li>
+<li><b>Not found.</b> The reason for Minteh's absence, and any 2026/27 formation data beyond one match article.</li>
+<li><b>What would settle it:</b> match-by-match line-ups and positions, to see who plays where and whether the shape changed.</li>
+</ul>
+<p class="mut" style="margin-top:18px">Data: Premier League official stats (Opta), summed per team and player; Scout Finder's summer 2026 transfer list. As of 15 November 2026, with the results page last updated on 8 November.</p>
+<h3>Sources</h3><ul class="src"><li><a href="https://www.fourfourtwo.com/team/brighton-staggered-to-the-conference-league-finish-line-last-season-but-will-they-enjoy-the-fruits-of-their-labour-brighton-2026-27-season-preview" target="_blank" rel="noopener">FourFourTwo: Brighton 2026/27 preview</a></li><li><a href="https://www.vavel.com/en/data/brighton-hove-albion/results/" target="_blank" rel="noopener">Vavel: Brighton results</a></li><li><a href="https://theanalyst.com/articles/brighton-pressing-machine-arsenal-test-premier-league-stats" target="_blank" rel="noopener">The Analyst: Brighton pressing</a></li><li><a href="https://theanalyst.com/articles/brighton-vs-arsenal-stats-premier-league-09-2026" target="_blank" rel="noopener">The Analyst: Brighton v Arsenal</a></li><li><a href="https://totalfootballanalysis.com/tactical-analysis/brighton-arsenal-tactical-analysis" target="_blank" rel="noopener">Total Football Analysis: Brighton v Arsenal</a></li><li><a href="https://www.vavel.com/en/football/2026/09/02/brighton-hove-albion/1269971-seagulls-looking-to-fly-high-after-busy-transfer-window.html" target="_blank" rel="noopener">Vavel: Brighton's transfer window</a></li><li><a href="https://www.vavel.com/en/football/2026/09/19/brighton-hove-albion/1272155-brighton-3-0-arsenal-pressed-into-submission-and-ended-their-unbeaten-run.html" target="_blank" rel="noopener">Vavel: Brighton 3-0 Arsenal</a></li><li><a href="https://www.brightonandhovealbion.com/media-article/mft-albion-analytics-2025-26-season-review-june-2026" target="_blank" rel="noopener">Albion Analytics: 2025/26 season in review</a></li><li><a href="https://www.brightonandhovealbion.com/media-article/mft-interviews-fabian-hurzeler-tactical-approach-july-2025" target="_blank" rel="noopener">Albion: Hürzeler on his tactical approach, July 2025</a></li><li><a href="https://www.vavel.com/en/football/2026/08/17/brighton-hove-albion/1268232-brighton-2026-27-season-preview-the-return-to-europe.html" target="_blank" rel="noopener">Vavel: Brighton 2026/27 preview</a></li></ul></section>
+
+</main></div>
+<footer>Built with Scout Finder data</footer>
