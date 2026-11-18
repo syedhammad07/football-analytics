@@ -38,6 +38,7 @@ Projects are grouped by competition. Each project has its own folder with an art
 | --- | --- | --- |
 | ⚖️ [**Midfield Matchup (Premier League Edition)**](Tools/Midfield-Matchup/) | Compare two to four Premier League midfielders, by season or whole career, with weekly-updated role leaderboards | 4,530 player-seasons · 1992/93 to now · 24 stats from 2008/09 · [**open the tool**](https://syedhammad07.github.io/football-analytics/Tools/Midfield-Matchup/) |
 | 🔎 [**Scout Finder**](Tools/Scout-Finder/) | Who plays like a star, for less? Search the Premier League or all of Europe's top five leagues, filter by age and price | 2,474 players in five leagues, 2025/26 · Premier League 2026/27 so far · 27 stats · Transfermarkt values · clubs as of summer 2026 · [**open the tool**](https://syedhammad07.github.io/football-analytics/Tools/Scout-Finder/) |
+| 🧬 [**Player Style Finder**](Tools/Player-Style-Finder/) | Find footballers who play alike and see why each match works, with machine learning on StatsBomb event data | 1,350 players incl. 99 goalkeepers · Premier League, La Liga, Serie A, Ligue 1, 2015/16 · 42 style stats · 13 roles · team styles · role map · [**open the tool**](https://syedhammad07.github.io/football-analytics/Tools/Player-Style-Finder/) |
 
 ## Highlights
 
@@ -90,7 +91,9 @@ football-analytics/
 │   ├── README.md
 │   └── Yaya-Toure-Man-City/            ← was Yaya Touré under-rated? report + model
 ├── Tools/                             ← interactive pages
-│   └── Midfield-Matchup/               ← compare any two Premier League midfielders
+│   ├── Midfield-Matchup/               ← compare any two Premier League midfielders
+│   ├── Scout-Finder/                   ← find a cheaper player with the same numbers
+│   └── Player-Style-Finder/            ← players who play alike, with ML on StatsBomb data
 ├── src/football_analytics/            ← shared code
 │   ├── data.py                        ← download StatsBomb open data
 │   ├── clean.py                       ← clean events, compute minutes played
