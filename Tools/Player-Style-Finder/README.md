@@ -1,44 +1,125 @@
 # Player Style Finder
 
-**Find footballers who play alike, and see why: 1,350 players from the Premier League, La Liga, Serie A and Ligue 1, 2015/16, built from StatsBomb event data.**
+**Find footballers who play alike, and see why: 1,350 players (99 of them goalkeepers) from the Premier League, La Liga, Serie A and Ligue 1 in 2015/16, built with machine learning on StatsBomb event data.**
 
-**[Open the live version](https://syedhammad07.github.io/football-analytics/Tools/Player-Style-Finder/)**
+**[Open the live version](https://syedhammad07.github.io/football-analytics/Tools/Player-Style-Finder/)**: no install, works on phone and desktop.
 
-[![Player Style Finder: Mesut Özil's closest matches](screenshots/2-player.png)](https://syedhammad07.github.io/football-analytics/Tools/Player-Style-Finder/)
+[![Player Style Finder: Mesut Özil's closest matches and why they match](screenshots/2-player.png)](https://syedhammad07.github.io/football-analytics/Tools/Player-Style-Finder/)
 
-Every player is described by how he plays: where he gets the ball, how he passes, carries, shoots and defends. Pick a player and the site ranks everyone else by how close their style is, then explains each match: the three stats where they are most alike, the three where they differ most, and how unusual the match is.
+Most "similar player" tools compare output: goals, assists, minutes. This one compares **how** a player plays: where he receives the ball, how far and how forward he passes, how much he carries and dribbles, where he shoots from and how he defends. Pick a player and every other player in his position is ranked by how close his style is, and each match comes with the reasons: the three stats where they are most alike, the three where they differ most, and what share of all stats they share.
+
+## What it does
 
 | Page | What it shows |
 | --- | --- |
-| **Player** | Style fingerprint (percentiles within his position), the 10 closest players with league and same-role filters, and why each one matches |
-| **Compare** | Two players on a percentile radar, plus a stat-by-stat table |
-| **Replace** | The closest styles at other clubs, filtered by league, role and minutes |
-| **Roles** | 13 styles of play (five for attackers, two for every other position, goalkeepers included) and what defines each |
-| **Teams** | League tables with team style: possession, pressing, long passing, xG for and against, and each squad's role mix |
-| **Role map** | All 1,251 outfield players on one map, mouse or keyboard |
+| **Player** | His style fingerprint (percentiles within his position), the 10 closest players with league and same-role filters, a match score for each, and "why they match" |
+| **Compare** | Any two players on a percentile radar, with a stat-by-stat table and the match score between them |
+| **Replace** | The closest styles at other clubs, filtered by league, role and minutes played |
+| **Roles** | 13 styles of play found by the model (five for attackers, two each for centre-backs, full-backs, midfielders and goalkeepers), what defines each, its most typical players and its extremes |
+| **Teams** | All 80 teams: league table, team style (possession, pressing, long passing, defensive line, xG for and against) and each squad's mix of roles |
+| **Role map** | All 1,251 outfield players on one map, coloured by role; works with mouse, touch or keyboard |
 | **Out of position** | 64 players whose closest matches are mostly in another position group |
-| **Method** | The machine learning, the checks and the limits |
+| **Method** | The model, the checks and the limits, in plain language |
+
+Every page has its own link (for example `#compare-…`), so any view can be shared.
+
+| Home | Compare |
+| --- | --- |
+| [![Home page](screenshots/1-home.png)](https://syedhammad07.github.io/football-analytics/Tools/Player-Style-Finder/) | [![Compare two players on a radar](screenshots/3-compare.png)](https://syedhammad07.github.io/football-analytics/Tools/Player-Style-Finder/) |
 
 ## How it works
 
-- **Features:** 42 per-90 stats for outfield players, 16 for goalkeepers, from StatsBomb's event data (1,517 matches). Defensive actions are adjusted for team possession. Players need 900+ minutes.
-- **Machine learning (all unsupervised):** PCA to 8 dimensions (85% of variance) as the style fingerprint, nearest-neighbour search for similarity, k-means for roles (number of roles chosen with bootstrap stability, Gaussian mixture BIC and silhouette), UMAP for the 2D map. Goalkeepers have their own style space and are only compared with goalkeepers.
-- **Checks:** split each player's season in half. From one half, his own other half is in his top 5 matches 66% of the time (chance: 0.5%), median rank 3 of 982. Roles agree between halves 86% of the time. For goalkeepers the top-5 rate is 44% (chance: 5%).
+1. **Data.** Event data for all 1,517 open StatsBomb matches of 2015/16 (Premier League, La Liga, Serie A, Ligue 1, plus the 34 open Bundesliga matches). Every pass, carry, shot, pressure and tackle with its location.
+2. **Style stats.** 42 per-90 and share stats for outfield players (for example: average pitch position, pass length, progressive passes, share of passes forward, dribbles, touches in the box, shot distance, pressures, tackles). Defensive actions are adjusted for team possession, so players in dominant teams aren't marked down for having less to defend. Goalkeepers get 16 of their own (save %, goals prevented against pre-shot xG, distribution length and accuracy, sweeping distance, crosses claimed). Distances are converted from StatsBomb's yards to metres. Players need 900+ minutes.
+3. **Style fingerprint.** Counts are log-scaled, everything is standardised, and PCA compresses the 42 stats to 8 dimensions that keep 85% of the variation. Goalkeepers get their own 7-dimension space and are only compared with goalkeepers.
+4. **Similarity.** Nearest neighbours in the fingerprint space. The distance becomes a 0–100 score, scaled so that a typical best match scores about 66.
+5. **Roles.** k-means within each position group. The number of roles was chosen by how stable the clusters are when the data is resampled (bootstrap adjusted Rand index ≥ 0.7), checked against Gaussian mixture BIC and silhouette scores. Role names are tied to known players, so they stay correct when the model is re-run.
+6. **Map.** UMAP draws the fingerprints in 2D.
 
-## Limits
+All of this is unsupervised: there is no "right answer" to train on, so the checks below test whether the results are stable and meaningful.
 
-- One season (2015/16) and four leagues: StatsBomb's free data has no second divisions, and its other seasons cover a single club each. The Bundesliga has only 34 open matches.
-- Style is partly the team's system; only defensive actions are adjusted for possession.
-- "Goals prevented" uses pre-shot xG; the free data has no post-shot xG.
+## How good is it
 
-## Files
+The main check splits every player's season into two halves and builds a fingerprint from each half separately. If the fingerprint really describes a player's style, his first half should find his own second half.
 
-- `index.html`: the whole site (no build step).
-- `data/*.json`: derived per-player and per-team statistics and model results. No raw StatsBomb data is included.
-- Tested with 147 automated checks: data integrity, the browser maths against the Python pipeline, every page and filter, five screen widths and accessibility.
+| Check | Result | By chance |
+| --- | --- | --- |
+| Own other half is the closest match | 36.9% | 0.1% |
+| Own other half in the top 5 (of 982) | 65.6% | 0.5% |
+| Median rank of own other half | 3rd | 491st |
+| Same role in both halves | 86.3% | |
+| Top match is a teammate | 2.6% | 1.2% |
+| Goalkeepers: own other half in the top 5 | 43.9% | 5.1% |
+| Goalkeepers: same role in both halves | 96.9% | |
 
-## Data and credit
+Matches are only slightly more likely to be teammates than by chance, so the model is picking up the player more than the team's system.
 
-Data: [StatsBomb open data](https://github.com/statsbomb/open-data), used under the StatsBomb Public Data User Agreement. Analysis by Syed Hammad Ovais; not StatsBomb's views.
+The site itself is checked by 147 automated tests: data integrity, the browser's maths against the Python pipeline, every page, filter and link, five screen widths from 320 px phones to wide desktops, and accessibility (contrast, keyboard use, labels). **147/147 pass.**
+
+## Run it
+
+The site is a single `index.html` that reads `data/*.json`. To view it locally:
+
+```
+cd Tools/Player-Style-Finder
+python -m http.server 8000      # then open http://localhost:8000
+```
+
+To rebuild the data from scratch (downloads the StatsBomb events, about 2 minutes):
+
+```
+pip install -r requirements.txt
+bash pipeline/run_all.sh        # writes data/*.json
+```
+
+To run the tests:
+
+```
+pip install playwright && playwright install chromium
+python tests/suite.py           # prints a score per category; details in tests/results.json
+```
+
+## Project structure
+
+```
+Player-Style-Finder/
+├── index.html                  ← the whole website (no build step)
+├── data/                       ← derived stats and model results the site reads
+│   ├── players.json            ← every player: club, role, fingerprint, 42 style stats
+│   ├── teams.json              ← tables, team style, squads
+│   ├── roles.json              ← the 13 roles, their defining stats and players
+│   └── extras.json             ← out-of-position players, most unique players, check results
+├── pipeline/
+│   ├── run_all.sh              ← runs every step in order
+│   ├── build_features.py       ← download StatsBomb events → stats per player per match
+│   ├── make_features.py        ← per-90 style stats
+│   ├── explore_k.py            ← how many roles (BIC, silhouette)
+│   ├── explore_family.py       ← how many roles per position (stability)
+│   ├── roles.py                ← PCA fingerprint and k-means roles
+│   ├── validate.py             ← split-half test and nearest neighbours
+│   ├── explain.py              ← why each match: most alike and most different stats
+│   ├── nicknames.py            ← common names (Özil, not Mesut Özil) from lineups
+│   ├── map_extremes.py         ← UMAP map and the extremes of each role
+│   ├── gk_features.py          ← goalkeeper stats
+│   ├── gk_model.py             ← goalkeeper fingerprint, roles and split-half test
+│   ├── site_data.py            ← export data/*.json for the site
+│   └── METHOD.md               ← notes on every modelling choice
+├── tests/suite.py              ← the 147 checks
+├── img/statsbomb-logo.png
+└── screenshots/
+```
+
+## Limitations
+
+- **One season, four leagues.** StatsBomb's free data has full seasons only for these leagues in 2015/16 (the Bundesliga has just 34 matches). There are no second divisions or English lower leagues, and its other free seasons follow a single club. Clubs and ages are as of 2015/16.
+- **Style is partly the system.** Defensive actions are adjusted for possession, but a full-back's position and passing still depend on how his team plays.
+- **Style, not quality.** Two players can play the same way at very different levels. The match score says nothing about which is better.
+- **Goalkeepers.** "Goals prevented" uses pre-shot xG, because the free data has no post-shot xG. With only 99 keepers, their matches are less sharp than outfield ones.
+- **900-minute minimum.** Players with fewer minutes are left out, because their stats are too noisy.
+
+## Sources
+
+- Data: [StatsBomb open data](https://github.com/statsbomb/open-data), used under the StatsBomb Public Data User Agreement. This repository holds only derived statistics, no raw StatsBomb data.
+- Analysis and site: Syed Hammad Ovais. The views are mine, not StatsBomb's.
 
 ![StatsBomb](img/statsbomb-logo.png)

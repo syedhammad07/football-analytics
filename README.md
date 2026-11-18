@@ -93,7 +93,7 @@ football-analytics/
 ├── Tools/                             ← interactive pages
 │   ├── Midfield-Matchup/               ← compare any two Premier League midfielders
 │   ├── Scout-Finder/                   ← find a cheaper player with the same numbers
-│   └── Player-Style-Finder/            ← players who play alike, with ML on StatsBomb data
+│   └── Player-Style-Finder/            ← players who play alike, with ML on StatsBomb data (site, pipeline, tests)
 ├── src/football_analytics/            ← shared code
 │   ├── data.py                        ← download StatsBomb open data
 │   ├── clean.py                       ← clean events, compute minutes played
