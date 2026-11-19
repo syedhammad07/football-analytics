@@ -6,6 +6,8 @@ C  Routing and page loading
 D  Interactions
 E  Layout at five screen widths
 F  Accessibility, content quality and performance
+G  Goalkeepers
+H  Seasons (club seasons and 2015/16 halves)
 Writes tests/results.json and prints a summary.
 """
 import os
@@ -20,6 +22,7 @@ D = json.load(open(f"{SITE}/data/players.json")); T = json.load(open(f"{SITE}/da
 R = json.load(open(f"{SITE}/data/roles.json")); X = json.load(open(f"{SITE}/data/extras.json"))
 P = D["players"]; F = D["feats"]; GKP = [p for p in P if p["fam"] == "Goalkeepers"]; OUT = [p for p in P if p["fam"] != "Goalkeepers"]; NO = len(OUT)
 RES = []
+S = json.load(open(f"{SITE}/data/seasons.json")); SPP = S["profiles"]; NB = len(P)
 
 def check(cat, name, fn):
     try:
@@ -68,6 +71,23 @@ check(A, "League role-usage shares sum to 100% per family", lambda: (all(abs(sum
       for f in {r["family"] for r in R} for l in R[0]["use"]), ""))
 check(A, "Misfits: 6+ of 10 matches elsewhere, other family", lambda: (all(m["share"] >= .6 and m["like"] != P[m["i"]]["fam"] for m in X["misfits"]), len(X["misfits"])))
 check(A, "Unique list sorted by best-match score", lambda: ([u["best"] for u in X["unique"]] == sorted(u["best"] for u in X["unique"]), [u["best"] for u in X["unique"]]))
+
+# ======================= H. SEASONS (data) =======================
+H = "H Seasons"
+check(H, "Season profiles: club seasons and 2015/16 halves", lambda: (sum(p["k"] == "club" for p in SPP) > 250 and sum(p["k"] == "half" for p in SPP) > 2000, Counter(p["k"] for p in SPP)))
+check(H, "Season stats and vectors have the right length", lambda: (all(len(p["v"]) == (16 if p["fam"] == "Goalkeepers" else 42) and len(p["e"]) == (7 if p["fam"] == "Goalkeepers" else 8) for p in SPP), ""))
+check(H, "No NaN/inf in season profiles", lambda: (all(all(math.isfinite(v) for v in p["v"] + p["e"]) for p in SPP), ""))
+check(H, "Minute floors: 900 club seasons, 600/450 halves", lambda: (all(p["min"] >= 900 for p in SPP if p["k"] == "club") and all(p["min"] >= (450 if p["fam"] == "Goalkeepers" else 600) for p in SPP if p["k"] == "half"), ""))
+check(H, "Club seasons only for the club whose matches are open", lambda: ({p["t"] for p in SPP if p["k"] == "club"} == {"Barcelona", "Arsenal", "Paris Saint-Germain", "Bayer Leverkusen"}, {p["t"] for p in SPP if p["k"] == "club"}))
+check(H, "Every half profile belongs to a 2015/16 player", lambda: ({(p["id"], p["t"]) for p in SPP if p["k"] == "half"} <= {(p["id"], p["t"]) for p in P}, ""))
+check(H, "Season list matches the profiles", lambda: ({(x["t"], x["s"]) for x in S["seasons"]} == {(p["t"], p["s"]) for p in SPP if p["k"] == "club"}, len(S["seasons"])))
+def h_reproduce():
+    # the 2015/16 halves rebuilt from the match rows land in the same space: same player's halves are close to his full season
+    full = {p["id"]: np.array(p["e"]) for p in OUT}
+    d = [np.linalg.norm(np.array(p["e"]) - full[p["id"]]) for p in SPP if p["k"] == "half" and p["fam"] != "Goalkeepers" and p["id"] in full]
+    return np.median(d) < D["scale"] * 1.2, round(float(np.median(d)), 3)
+check(H, "A half season sits near the same player's full season", h_reproduce)
+check(H, "Cross-season check: own 2015/16 in top 5 for adjacent seasons ≥ 70%", lambda: (S["check"]["other_seasons"]["adjacent_top5"] >= 70, S["check"]["other_seasons"]))
 
 G = "G Keepers"
 gk_csv = pd.read_csv(f"{STYLE}/gk_roles.csv")
@@ -454,6 +474,59 @@ with sync_playwright() as pw:
         nav(f"player-{[p['n'] for p in P].index('Sergio Busquets')}"); t = pg.inner_text("#app")
         ok = pg.evaluate(f"fmt(P[{OZ}], F.indexOf('avg_pass_len'), 20)") == "18.3 m"; return ok, pg.evaluate(f"fmt(P[{OZ}], F.indexOf('avg_pass_len'), 20)")
     check(F_cat := "F Quality", "Pass length converted from yards to metres", units_out)
+    # ======================= H. SEASONS (browser) =======================
+    XAVI = pg.evaluate("SP.find(p => p.n === 'Xavi' && p.s === '2008/09').i"); MESSI = [p["n"] for p in P].index("Lionel Messi")
+    def h_maths():
+        a = np.array(SPP[XAVI - NB]["e"]); out = [(p["n"], np.linalg.norm(np.array(p["e"]) - a)) for p in OUT if p["id"] != SPP[XAVI - NB]["id"]]
+        py = [n for n, _ in sorted(out, key=lambda x: x[1])[:5]]; js = pg.evaluate(f"neighbours({XAVI}, () => true, 5).map(x => x.b.n)"); return py == js, (py, js)
+    check(H, "Season matches in the browser equal numpy's", h_maths)
+    def h_pct():
+        q = SPP[XAVI - NB]; j = F.index("passes_p90"); vals = sorted(p["v"][j] for p in OUT if p["fam"] == q["fam"])
+        lo = sum(v < q["v"][j] for v in vals); eq = sum(v == q["v"][j] for v in vals); py = min(99, max(1, round(100 * (lo + eq / 2) / len(vals))))
+        js = pg.evaluate(f"PF[{XAVI}][F.indexOf('passes_p90')]"); return py == js, (py, js)
+    check(H, "Season percentiles measured against the 2015/16 pool", h_pct)
+    def h_self():
+        bad = pg.evaluate("SP.filter((p, k) => k % 7 === 0).filter(p => neighbours(p.i, () => true, 10).some(x => x.b.id === p.id)).length"); return bad == 0, bad
+    check(H, "A season never matches the same player", h_self)
+    def h_page():
+        errs.clear(); nav(f"player-{XAVI}")
+        on = pg.evaluate("[...document.querySelectorAll('.seastrip a[aria-current]')].map(a => a.textContent)")
+        rows = pg.evaluate("document.querySelectorAll('.seatab tbody tr').length"); n = pg.evaluate(f"BYID[ALL[{XAVI}].id].length")
+        return h1() == "Xavi" and on == ["08/09"] and rows == n and "2008/09" in pg.title() and not errs, (h1(), on, rows, n, errs[:2])
+    check(H, "Past-season player page: strip, season table, title", h_page)
+    def h_strip_nav():
+        nav(f"player-{XAVI}"); pg.click(".seastrip a:has-text('10/11')"); pg.wait_for_timeout(300); return "2010/11" in pg.title(), pg.title()
+    check(H, "Season strip switches season", h_strip_nav)
+    def h_base_table():
+        nav(f"player-{MESSI}"); cells = pg.evaluate("[...document.querySelectorAll('.seatab tr.cur td')].map(t => t.innerText.trim())")
+        return bool(cells) and cells[0].startswith("2015/16") and cells[5] == "–", cells
+    check(H, "2015/16 page lists his other seasons, current row marked", h_base_table)
+    def h_replace():
+        errs.clear(); nav(f"replace-{XAVI}"); ids = pg.evaluate("[...document.querySelectorAll('#rplist summary')].map(s => +s.parentElement.dataset.j)")
+        return ids and all(i < NB and P[i]["t"] != "Barcelona" for i in ids) and "08/09" in h1() and not errs, (h1(), len(ids))
+    check(H, "Replace a past season: 2015/16 players at other clubs", h_replace)
+    def h_replace_strip():
+        nav(f"replace-{MESSI}"); return pg.evaluate("[...document.querySelectorAll('.seastrip a')].every(a => a.getAttribute('href').startsWith('#replace-'))"), ""
+    check(H, "Replace page season strip stays on Replace", h_replace_strip)
+    def h_compare():
+        errs.clear(); nav(f"compare-{XAVI}-{MESSI}"); return "Xavi 08/09" in h1() and pg.evaluate("document.querySelectorAll('#app svg polygon').length") >= 6 and not errs, (h1(), errs[:2])
+    check(H, "Compare a past season with a 2015/16 player", h_compare)
+    def h_seasons_all():
+        errs.clear(); bad = []
+        for k in range(len(S["seasons"])):
+            nav(f"seasons-{k}"); n = pg.evaluate("document.querySelectorAll('#app tbody tr[data-i]').length")
+            want = sum(p["k"] == "club" and p["t"] == S["seasons"][k]["t"] and p["s"] == S["seasons"][k]["s"] for p in SPP)
+            if n != want: bad.append((k, n, want))
+        return not bad and not errs, (bad, errs[:2])
+    check(H, "Every club-season page lists its whole squad", h_seasons_all)
+    def h_search():
+        nav("home"); pg.fill("#homesearch input", "xavi"); pg.wait_for_timeout(150); t = pg.inner_text("#homesearch .sugg"); pg.keyboard.press("Enter"); pg.wait_for_timeout(300)
+        return "Barcelona" in t and pg.title().startswith("Xavi "), (t[:80], pg.title())
+    check(H, "Search finds players who only have past seasons", h_search)
+    def h_phone():
+        ph = br.new_page(viewport={"width": 360, "height": 800}); ph.goto(URL + f"#seasons"); ph.wait_for_timeout(600); w1 = ph.evaluate("document.documentElement.scrollWidth")
+        ph.goto(URL + f"#player-{XAVI}"); ph.wait_for_timeout(600); w2 = ph.evaluate("document.documentElement.scrollWidth"); ph.close(); return w1 <= 360 and w2 <= 360, (w1, w2)
+    check(H, "No sideways scroll on season pages at 360 px", h_phone)
     check(Fc, "No console errors during the whole run", lambda: (not errs, errs[:3]))
     br.close()
 srv.terminate()
