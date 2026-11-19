@@ -108,6 +108,8 @@ th{font:700 10.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;colo
 td{padding:9px 10px;border-bottom:1px solid var(--border);white-space:nowrap}
 td.n,th.n{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:13px}
 tr.link{cursor:pointer} tr.link:hover td{background:var(--raised)}
+.seastrip{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px}.seastrip .k{margin-right:4px}
+tr.cur td{background:var(--raised)} tr.cur td:first-child{box-shadow:inset 2px 0 0 var(--accent)}
 th.sortable{cursor:pointer} th.sortable:hover{color:var(--text)}
 .list > a{display:grid;align-items:center;gap:12px;padding:9px 2px;border-bottom:1px solid var(--border)}
 .list > a:hover{background:var(--raised)}
@@ -186,14 +188,14 @@ footer{border-top:1px solid var(--border);padding:20px 0 32px}
   <a class="brand" href="#home"><i aria-hidden="true"></i>Player Style Finder</a>
   <nav class="links" id="nav" aria-label="Pages">
     <a href="#players" data-p="players">Players</a><a href="#compare" data-p="compare">Compare</a><a href="#replace" data-p="replace">Replace</a><a href="#roles" data-p="roles">Roles</a>
-    <a href="#teams" data-p="teams">Teams</a><a href="#map" data-p="map">Role map</a><a href="#misfits" data-p="misfits">Out of position</a><a href="#method" data-p="method">Method</a>
+    <a href="#teams" data-p="teams">Teams</a><a href="#map" data-p="map">Role map</a><a href="#misfits" data-p="misfits">Out of position</a><a href="#seasons" data-p="seasons">Seasons</a><a href="#method" data-p="method">Method</a>
   </nav>
   <div class="navsearch search" id="navsearch"></div>
 </div></header>
 <div class="wrap"><main id="app"><div class="empty">Loading players…</div></main></div>
 <footer><div class="wrap row" style="justify-content:space-between;gap:16px">
   <div class="row" style="gap:14px"><span class="sb"><img src="img/statsbomb-logo.png" alt="StatsBomb"></span>
-  <span class="xs muted" style="max-width:70ch">Data: StatsBomb open data, 2015/16 Premier League, La Liga, Serie A and Ligue 1. Analysis by Syed Hammad Ovais. Not StatsBomb’s views.</span></div>
+  <span class="xs muted" style="max-width:70ch">Data: StatsBomb open data, 2015/16 Premier League, La Liga, Serie A and Ligue 1, plus single-club seasons 2003–2024. Analysis by Syed Hammad Ovais. Not StatsBomb’s views.</span></div>
   <a class="k" href="#method">Method</a>
 </div></footer>
 <script>
@@ -204,10 +206,15 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":
 const LEAGUES = ["Premier League", "La Liga", "Serie A", "Ligue 1"];
 const FAMS = ["Attackers", "Midfielders", "Full-backs", "Centre-backs", "Goalkeepers"];
 const OUTFAMS = FAMS.slice(0, 4);
-let D, T, R, X;           // players, teams, roles, extras
+let D, T, R, X, S;        // players, teams, roles, extras, seasons
+let SP = [], ALL, BYID = {}, SOLO = [];  // season profiles, every profile, profiles per player id, players with no 2015/16 profile
 let F, LAB, ROLES, P, GF, GLAB;  // outfield + goalkeeper feature keys and labels, roles, players
 let Z, PF, PA;            // z-scores, family percentiles, all-player percentiles
 const isGK = p => p.fam === "Goalkeepers";
+const sLabel = p => p.s || "2015/16";
+const seaOrder = p => sLabel(p).slice(0, 7) + (p.k === "half" ? "b" + p.s : "a" + p.t);
+const sShort = p => p.k === "half" ? "15/16 " + p.s.slice(8) : sLabel(p).replace(/^\d\d(\d\d)\/(\d\d)$/, "$1/$2");
+const spanOf = id => { const l = BYID[id].filter(p => p.k !== "half"); const a = sLabel(l[0]), b = sLabel(l[l.length - 1]); return a === b ? a : `${a.slice(0, 4)}–20${b.slice(5)}`; };
 const featsOf = p => isGK(p) ? GF : F;
 const labsOf = p => isGK(p) ? GLAB : LAB;
 const fi = k => F.indexOf(k);
@@ -221,38 +228,49 @@ const CONV = { avg_x: 105 / 120, gk_avg_x: 105 / 120, sweeper_dist: 105 / 120, a
 // ---------- data prep (mirrors the Python pipeline) ----------
 function prepData() {
   F = D.feats; LAB = D.labels; GF = D.gk.feats; GLAB = D.gk.labels; ROLES = D.roles; P = D.players;
-  P.forEach((p, i) => { p.i = i; p.key = (p.n + " " + p.f + " " + p.t).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); });
+  const keyOf = p => (p.n + " " + p.f + " " + p.t).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  P.forEach((p, i) => { p.i = i; p.key = keyOf(p); });
+  SP = S ? S.profiles : [];
+  SP.forEach((p, k) => { p.i = P.length + k; p.sea = true; p.key = keyOf(p); });
+  ALL = P.concat(SP);
   Z = []; PA = {}; PF = {};
-  const zfor = (idx, feats) => {   // z-scores within a group (log for per-90 counts), as in the pipeline
-    const m = feats.length, n = idx.length;
-    const tx = idx.map(i => P[i].v.map((v, j) => feats[j].endsWith("_p90") ? Math.log1p(v) : v));
+  // z-scores and percentiles are always measured against the 2015/16 pool (ref); season profiles (extra) are scored against it
+  const zfor = (ref, extra, feats) => {   // log for per-90 counts, as in the pipeline
+    const m = feats.length, n = ref.length;
+    const tx = i => ALL[i].v.map((v, j) => feats[j].endsWith("_p90") ? Math.log1p(v) : v);
+    const R0 = ref.map(tx);
     const mean = Array(m).fill(0), sd = Array(m).fill(0);
-    tx.forEach(r => r.forEach((v, j) => mean[j] += v / n));
-    tx.forEach(r => r.forEach((v, j) => sd[j] += (v - mean[j]) ** 2 / (n - 1)));
-    idx.forEach((i, k) => Z[i] = tx[k].map((v, j) => (v - mean[j]) / Math.sqrt(sd[j])));
+    R0.forEach(r => r.forEach((v, j) => mean[j] += v / n));
+    R0.forEach(r => r.forEach((v, j) => sd[j] += (v - mean[j]) ** 2 / (n - 1)));
+    ref.concat(extra).forEach(i => Z[i] = tx(i).map((v, j) => (v - mean[j]) / Math.sqrt(sd[j])));
   };
-  const pct = (idx, m, out) => {   // percentile within idx, per feature, kept to 1-99
+  const pct = (ref, extra, m, out) => {   // percentile within ref, per feature, kept to 1-99
     for (let j = 0; j < m; j++) {
-      const vals = idx.map(i => P[i].v[j]).sort((a, b) => a - b);
-      idx.forEach(i => {
-        const v = P[i].v[j]; let lo = 0, hi = vals.length;
+      const vals = ref.map(i => ALL[i].v[j]).sort((a, b) => a - b);
+      ref.concat(extra).forEach(i => {
+        const v = ALL[i].v[j]; let lo = 0, hi = vals.length;
         while (lo < hi) { const mid = (lo + hi) >> 1; vals[mid] < v ? lo = mid + 1 : hi = mid; }
         let eq = lo; while (eq < vals.length && vals[eq] === v) eq++;
         (out[i] = out[i] || [])[j] = Math.min(99, Math.max(1, Math.round(100 * (lo + (eq - lo) / 2) / vals.length)));
       });
     }
   };
-  const out = P.filter(p => !isGK(p)).map(p => p.i), gk = P.filter(isGK).map(p => p.i);
-  zfor(out, F); zfor(gk, GF);
-  pct(out, F.length, PA); pct(gk, GF.length, PA);
-  FAMS.forEach(f => pct(P.filter(p => p.fam === f).map(p => p.i), (f === "Goalkeepers" ? GF : F).length, PF));
+  const ids = (arr, f) => arr.filter(f).map(p => p.i);
+  const out = ids(P, p => !isGK(p)), gk = ids(P, isGK), sOut = ids(SP, p => !isGK(p)), sGk = ids(SP, isGK);
+  zfor(out, sOut, F); zfor(gk, sGk, GF);
+  pct(out, sOut, F.length, PA); pct(gk, sGk, GF.length, PA);
+  FAMS.forEach(f => pct(ids(P, p => p.fam === f), ids(SP, p => p.fam === f), (f === "Goalkeepers" ? GF : F).length, PF));
+  // every profile of a player, oldest season first; 2015/16 full season before its two halves
+  BYID = {}; ALL.forEach(p => (BYID[p.id] = BYID[p.id] || []).push(p));
+  Object.values(BYID).forEach(l => l.sort((a, b) => seaOrder(a).localeCompare(seaOrder(b))));
+  SOLO = Object.values(BYID).filter(l => !l.some(p => !p.sea)).map(l => l.filter(p => p.k === "club").sort((a, b) => b.min - a.min)[0] || l[0]);
   T.teams.forEach((t, i) => t.i = i);
 }
 const dist = (a, b) => { let s = 0; for (let k = 0; k < a.e.length; k++) s += (a.e[k] - b.e[k]) ** 2; return Math.sqrt(s); };
 const simOf = (a, b) => 100 * Math.exp(-dist(a, b) / (2 * scaleOf(a)));
 function neighbours(i, filt = () => true, k = 10) {
-  const a = P[i];
-  return P.filter(b => b.i !== i && isGK(b) === isGK(a) && filt(b)).map(b => ({ b, s: simOf(a, b) })).sort((x, y) => y.s - x.s).slice(0, k);
+  const a = ALL[i];   // the pool is always the 2015/16 players; a past season never matches the same player
+  return P.filter(b => b.i !== i && !(a.sea && b.id === a.id) && isGK(b) === isGK(a) && filt(b)).map(b => ({ b, s: simOf(a, b) })).sort((x, y) => y.s - x.s).slice(0, k);
 }
 function fmt(p, j, v) {
   const [, unit, dp] = labsOf(p)[j], key = featsOf(p)[j];
@@ -263,7 +281,7 @@ function fmt(p, j, v) {
 }
 const famProxy = fam => ({ fam });
 function explain(i, j) {
-  const zi = Z[i], zj = Z[j], m = featsOf(P[i]).length;
+  const zi = Z[i], zj = Z[j], m = featsOf(ALL[i]).length;
   const diff = zi.map((v, k) => Math.abs(v - zj[k]));
   const sig = [...Array(m).keys()].sort((a, b) => zi[b] - zi[a]).slice(0, 12);
   const alike = sig.sort((a, b) => diff[a] - diff[b]).slice(0, 3);
@@ -283,11 +301,11 @@ function searchBox(host, onPick, placeholder = "Search players") {
   const draw = () => {
     if (!hits.length) { box.hidden = true; return; }
     box.hidden = false;
-    box.innerHTML = hits.map((p, k) => `<a href="#" data-i="${p.i}" class="${k === hl ? "hl" : ""}"><span>${esc(p.n)}</span><small>${esc(p.t)} · ${esc(ROLES[p.r].name)}</small></a>`).join("");
+    box.innerHTML = hits.map((p, k) => `<a href="#" data-i="${p.i}" class="${k === hl ? "hl" : ""}"><span>${esc(p.n)}</span><small>${p.sea ? esc([...new Set(BYID[p.id].map(q => q.t))].join(", ") + " · " + spanOf(p.id)) : esc(p.t + " · " + ROLES[p.r].name)}</small></a>`).join("");
   };
   inp.addEventListener("input", () => {
     const q = inp.value.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().trim();
-    hits = q.length < 2 ? [] : P.filter(p => q.split(/\s+/).every(w => p.key.includes(w))).sort((a, b) => b.min - a.min).slice(0, 8);
+    hits = q.length < 2 ? [] : P.concat(SOLO).filter(p => q.split(/\s+/).every(w => p.key.includes(w))).sort((a, b) => b.min - a.min).slice(0, 8);
     hl = 0; draw();
   });
   inp.addEventListener("keydown", e => {
@@ -296,7 +314,7 @@ function searchBox(host, onPick, placeholder = "Search players") {
     else if (e.key === "Enter" && hits[hl]) { pick(hits[hl]); e.preventDefault(); }
     else if (e.key === "Escape") { box.hidden = true; }
   });
-  box.addEventListener("mousedown", e => { const a = e.target.closest("a"); if (a) { e.preventDefault(); pick(P[+a.dataset.i]); } });
+  box.addEventListener("mousedown", e => { const a = e.target.closest("a"); if (a) { e.preventDefault(); pick(ALL[+a.dataset.i]); } });
   inp.addEventListener("blur", () => setTimeout(() => box.hidden = true, 120));
   const pick = p => { inp.value = ""; hits = []; box.hidden = true; onPick(p); };
   return inp;
@@ -311,15 +329,22 @@ const fig = (v, label, acc = false) => `<div><b class="${acc ? "acc" : ""}">${v}
 const ord = n => n + (["th", "st", "nd", "rd"][(n % 100 - 20) % 10] || ["th", "st", "nd", "rd"][n % 100] || "th");
 const app = $("#app");
 const pages = {};
+// season strip: every profile of this player; links go to page `to` (player / replace)
+function seasonStrip(p, to = "player") {
+  const l = BYID[p.id]; if (l.length < 2) return "";
+  return `<div class="seastrip" role="navigation" aria-label="Seasons of ${esc(p.n)}"><span class="k">Season</span>${l.map(q => `<a class="pill${q === p ? " on" : ""}" href="#${to}-${q.i}"${q === p ? ' aria-current="page"' : ""} title="${esc(q.t + " · " + sLabel(q) + " · " + q.min.toLocaleString() + " min")}">${esc(sShort(q))}</a>`).join("")}</div>`;
+}
+const seaNote = p => p.sea ? (p.k === "half" ? `Only his ${p.s.slice(8)} matches (${p.mp}). ` : `A past season, measured on the same scale as 2015/16. `) : "";
 
 // ---------- home ----------
+const pastP = () => [["Xavi", "2008/09"], ["Thierry Henry", "2003/04"], ["Lionel Messi", "2011/12"], ["Granit Xhaka", "2023/24"]].map(([n, y]) => SP.find(p => p.n === n && p.s === y)).filter(Boolean);
 pages.home = () => {
   const v = X.validation, nGK = P.filter(isGK).length;
   const tryP = ["Mesut Özil", "N'Golo Kanté", "Sergio Busquets", "Dimitri Payet", "Hugo Lloris"].map(n => P.find(p => p.n === n)).filter(Boolean);
   const idx = [["players", "Players", `All ${P.length.toLocaleString()} players, filterable by league, position and role.`], ["compare", "Compare", "Two players on one radar, stat by stat."],
     ["replace", "Replace", "The closest styles at other clubs, with your filters."], ["roles", "Roles", "13 styles of play and what defines each."],
     ["teams", "Teams", "80 clubs: table, team style and squad roles."], ["map", "Role map", "1,251 outfield players on one map."],
-    ["misfits", "Out of position", "Listed in one position, plays like another."], ["method", "Method", "The machine learning, the checks, the limits."]];
+    ["misfits", "Out of position", "Listed in one position, plays like another."], ["seasons", "Seasons", "Barcelona 2004–2021, Arsenal 2003/04, PSG, Leverkusen: who in 2015/16 played like them?"]];
   app.innerHTML = `
   <section class="sheet">
     <div class="shead" style="align-items:center">
@@ -331,6 +356,7 @@ pages.home = () => {
       <div class="stack" style="flex:1;min-width:280px;max-width:460px">
         <div class="search big" id="homesearch"></div>
         <div class="row xs muted">Try ${tryP.map(p => `<a class="chip" href="#player-${p.i}">${esc(p.n)}</a>`).join("")}</div>
+        <div class="row xs muted">Or a past season ${pastP().map(p => `<a class="chip" href="#player-${p.i}">${esc(p.n)} ${esc(sShort(p))}</a>`).join("")}</div>
       </div>
     </div>
     <div class="cols c3e">
@@ -399,35 +425,36 @@ function whyHtml(p, b, s) {
     <div class="row"><a class="pill" href="#compare-${p.i}-${b.i}">Compare on a radar</a><a class="pill" href="#player-${b.i}">Open ${esc(b.n)}</a></div>`;
 }
 function matchRow(i, nb, k, open) {
-  const p = P[i], b = nb.b, ex = explain(i, b.i), R0 = ROLES[b.r];
+  const p = ALL[i], b = nb.b, ex = explain(i, b.i), R0 = ROLES[b.r];
   return `<details class="match${open ? " sel" : ""}" data-j="${b.i}" data-s="${nb.s}"${open ? " open" : ""}><summary><span class="rank">${String(k + 1).padStart(2, "0")}</span>
     <span class="who"><b>${esc(b.n)}</b><small>${esc(b.t)} · ${esc(b.l)}</small><span class="mrole"><i class="dot" style="background:${R0.color}"></i>${esc(R0.name)}</span></span>${roleChip(b.r, false)}
     <span class="ov">${ex.overlap}% alike</span><span class="simcell"><span class="track"><span style="width:${nb.s}%"></span></span><b>${Math.round(nb.s)}</b></span><span class="chev">›</span></summary>
     <div class="why">${whyHtml(p, b, nb.s)}</div></details>`;
 }
 pages.player = (arg) => {
-  const p = P[+arg]; if (!p) return notFound();
+  const p = ALL[+arg]; if (!p) return notFound();
   const st = { lg: "All", same: false };
   const best = neighbours(p.i, () => true, 1)[0];
-  const team = T.teams.find(t => t.t === p.t);
+  const team = p.sea ? null : T.teams.find(t => t.t === p.t);
+  const others = BYID[p.id];
   const famN = P.filter(q => q.fam === p.fam).length;
   app.innerHTML = `<section class="sheet">
     <div class="shead">
-      <div><span class="k acc">${esc(p.p)} · ${esc(p.l)} 2015/16</span><h1 style="margin-top:6px">${esc(p.n)}</h1>
-        <div class="meta">${team ? `<a href="#team-${team.i}"><b>${esc(p.t)}</b></a>` : `<b>${esc(p.t)}</b>`} · <b>${p.min.toLocaleString()}</b> minutes · <b>${p.mp}</b> matches · role fit <b>${p.fit.toFixed(2)}</b> · ${roleChip(p.r)}</div></div>
+      <div><span class="k acc">${esc(p.p)} · ${esc(p.l)} ${esc(sLabel(p))}</span><h1 style="margin-top:6px">${esc(p.n)}</h1>
+        <div class="meta">${team ? `<a href="#team-${team.i}"><b>${esc(p.t)}</b></a>` : `<b>${esc(p.t)}</b>`} · <b>${p.min.toLocaleString()}</b> minutes · <b>${p.mp}</b> matches · role fit <b>${p.fit.toFixed(2)}</b> · ${roleChip(p.r)}</div>${seasonStrip(p)}</div>
       <div class="row"><a class="btn" href="#replace-${p.i}">Find a replacement</a><a class="btn ghost" href="#compare-${p.i}-${best.b.i}">Compare</a></div>
     </div>
     <div class="cols c3">
       <div class="stack">${sec("I. Style fingerprint", `vs ${famN} ${p.fam.toLowerCase()}`)}
         <div class="stack" style="gap:11px">${FINGER[p.fam].map(k => { const j = fiOf(p, k), L = labsOf(p)[j]; return bar(L[0] + (L[1] === "per 90" ? " per 90" : ""), fmt(p, j, p.v[j]), PF[p.i][j]); }).join("")}</div>
-        <p class="xs muted">Percentile among ${p.fam.toLowerCase()} with 900+ minutes; amber = top 40%. ${isGK(p) ? "Goals prevented = xG of non-penalty shots faced minus goals conceded." : "Defensive actions are adjusted for team possession."}${best.s < typicalOf(p) - 15 ? ` His closest match scores only ${Math.round(best.s)}: an unusual player.` : ""}</p></div>
-      <div>${sec("II. Plays most like", isGK(p) ? "Goalkeepers only" : "Match / 100")}
+        <p class="xs muted">${seaNote(p)}Percentile among ${p.sea ? "2015/16 " : ""}${p.fam.toLowerCase()} with 900+ minutes; amber = top 40%. ${isGK(p) ? "Goals prevented = xG of non-penalty shots faced minus goals conceded." : "Defensive actions are adjusted for team possession."}${best.s < typicalOf(p) - 15 ? ` His closest match scores only ${Math.round(best.s)}: an unusual player.` : ""}</p></div>
+      <div>${sec(p.sea ? "II. Plays most like, in 2015/16" : "II. Plays most like", isGK(p) ? "Goalkeepers only" : "Match / 100")}
         <div class="row" id="pfilt" style="margin-bottom:10px">${["All", ...LEAGUES].map(l => `<button class="pill${l === "All" ? " on" : ""}" data-l="${l}">${l === "All" ? "All" : l}</button>`).join("")}<label class="tog" style="margin-left:auto"><input type="checkbox" id="psame"> Same role only</label></div>
         <div id="plist"></div>
         <p class="xs muted" style="margin-top:10px">Match = distance in the style space built from ${featsOf(p).length} stats. “% alike” counts stats within half a standard deviation and can disagree with the match score.</p></div>
       <div class="col3">${sec("III. Why they match", "")}<div id="pwhy" class="stack"></div>
-        ${isGK(p) ? "" : `<div style="margin-top:22px">${sec("Role map", `<a href="#map" class="acc">Open</a>`)}<div id="pmap"></div></div>`}</div>
-    </div></section>`;
+        ${isGK(p) ? "" : `<div style="margin-top:22px">${sec("Role map", `<a href="#map" class="acc">Open</a>`)}<div id="pmap"></div>${p.sea ? `<p class="xs muted" style="margin-top:6px">Rings mark his 10 closest 2015/16 matches.</p>` : ""}</div>`}</div>
+    </div>${others.length > 1 ? seasonTable(p, others) : ""}</section>`;
   const showWhy = el => {
     if (!el) { $("#pwhy").innerHTML = `<p class="small muted">No match selected.</p>`; return; }
     app.querySelectorAll("#plist details").forEach(d => d.classList.toggle("sel", d === el));
@@ -443,9 +470,20 @@ pages.player = (arg) => {
   $("#plist").addEventListener("click", e => { const s = e.target.closest("summary"); if (s) showWhy(s.parentElement); });
   $("#pfilt").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; st.lg = b.dataset.l; $("#pfilt").querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); draw(); });
   $("#psame").addEventListener("change", e => { st.same = e.target.checked; draw(); });
+  app.querySelectorAll(".seatab tr[data-i]").forEach(tr => tr.addEventListener("click", e => { if (!e.target.closest("a")) go("player-" + tr.dataset.i); }));
   draw();
-  if (!isGK(p)) drawMap($("#pmap"), { highlight: [p.i], neighbours: neighbours(p.i).map(x => x.b.i), height: 300 });
+  if (!isGK(p)) drawMap($("#pmap"), { highlight: p.sea ? [] : [p.i], neighbours: neighbours(p.i).map(x => x.b.i), height: 300 });
 };
+function seasonTable(p, l) {
+  const rows = l.map(q => {
+    const nb = neighbours(q.i, () => true, 1)[0], same = isGK(q) === isGK(p);
+    return `<tr class="link${q === p ? " cur" : ""}" data-i="${q.i}"><td><a href="#player-${q.i}"><b>${esc(sLabel(q))}</b></a>${q === p ? ` <span class="xs acc">shown</span>` : ""}</td><td class="muted">${esc(q.t)}</td><td class="n">${q.min.toLocaleString()}</td><td>${roleChip(q.r, false)}</td>
+      <td>${nb ? `<a href="#compare-${q.i}-${nb.b.i}">${esc(nb.b.n)}</a> <span class="muted num">${Math.round(nb.s)}</span>` : "–"}</td><td class="n num">${q === p || !same ? "–" : Math.round(simOf(p, q))}</td><td><a class="pill" href="#replace-${q.i}">Replace</a></td></tr>`;
+  }).join("");
+  return `<div class="cols" style="border-top:1px solid var(--border)"><div>${sec("IV. Season by season", `${l.length} profiles`)}
+    <p class="small muted" style="margin-bottom:10px">Each season is placed in the same style space as 2015/16, so every season gets its own closest 2015/16 players and its own replacements. “Like ${esc(sShort(p))}” is how close that season is to the one shown (100 = identical).</p>
+    <div class="tscroll"><table class="seatab"><thead><tr><th>Season</th><th>Club</th><th class="n">Minutes</th><th>Role</th><th>Closest 2015/16 player</th><th class="n">Like ${esc(sShort(p))}</th><th></th></tr></thead><tbody>${rows}</tbody></table></div></div></div>`;
+}
 
 // ---------- compare ----------
 const GK_RADAR = ["save_pct", "goals_prevented_p90", "sot_faced_p90", "gk_passes_p90", "gk_pass_cmp", "short_goal_kicks", "launch_share", "goal_kick_len", "sweeper_p90", "sweeper_dist", "claims_p90", "catch_share"];
@@ -464,19 +502,19 @@ function radar(a, b) {
 }
 pages.compare = (arg) => {
   let [ai, bi] = (arg || "").split("-").map(Number);
-  if (!(ai in P)) ai = P.findIndex(p => p.n === "Mesut Özil");
-  const mixed = (bi in P) && isGK(P[bi]) !== isGK(P[ai]);
-  if (!(bi in P) || bi === ai || mixed) bi = neighbours(ai, () => true, 1)[0].b.i;
-  const a = P[ai], b = P[bi], s = simOf(a, b);
+  if (!(ai in ALL)) ai = P.findIndex(p => p.n === "Mesut Özil");
+  const mixed = (bi in ALL) && isGK(ALL[bi]) !== isGK(ALL[ai]);
+  if (!(bi in ALL) || bi === ai || mixed) bi = neighbours(ai, () => true, 1)[0].b.i;
+  const a = ALL[ai], b = ALL[bi], s = simOf(a, b);
   const side = (p, col, id) => `<div class="stack" style="gap:8px"><span class="k" style="color:${col}">${col === "#F5B13D" ? "Player A" : "Player B"}</span>
      <div class="row"><a href="#player-${p.i}"><b style="font:700 24px var(--display)">${esc(p.n)}</b></a>${roleChip(p.r)}</div>
-     <span class="xs muted" style="font-family:var(--mono)">${esc(p.t)} · ${esc(p.l)} · ${esc(p.p)} · ${p.min.toLocaleString()} min</span><div class="search" id="${id}"></div></div>`;
+     <span class="xs muted" style="font-family:var(--mono)">${esc(p.t)} · ${esc(p.l)} ${esc(sLabel(p))} · ${esc(p.p)} · ${p.min.toLocaleString()} min</span><div class="search" id="${id}"></div></div>`;
   const statList = isGK(a) ? GF : RADAR.concat(["pass_cmp_pct", "through_balls_p90", "avg_x", "aerial_win_pct", "recoveries_p90"]);
   const rows = statList.map(f => { const j = fiOf(a, f), pa = PA[ai][j], pb = PA[bi][j];
     return `<tr><td>${esc(labsOf(a)[j][0])}</td><td class="n" style="color:${pa > pb ? "var(--accent)" : "var(--text)"}">${fmt(a, j, a.v[j])}</td><td class="n muted">${pa}</td><td class="n" style="color:${pb > pa ? "#5EA4FF" : "var(--text)"}">${fmt(a, j, b.v[j])}</td><td class="n muted">${pb}</td></tr>`; }).join("");
   app.innerHTML = `<section class="sheet">
-    <div class="shead"><div><span class="k acc">Compare</span><h1 style="margin-top:6px">${esc(a.n)} vs ${esc(b.n)}</h1>
-      <p class="meta">${isGK(a) ? `Percentiles against all ${groupN(a)} goalkeepers.` : `Percentiles against all ${groupN(a).toLocaleString()} outfield players, so positions can be compared fairly.`}${mixed ? " Goalkeepers can only be compared with goalkeepers, so the second player was swapped for the closest match." : ""}</p></div></div>
+    <div class="shead"><div><span class="k acc">Compare</span><h1 style="margin-top:6px">${esc(a.n)}${a.sea ? ` <span class="muted">${esc(sShort(a))}</span>` : ""} vs ${esc(b.n)}${b.sea ? ` <span class="muted">${esc(sShort(b))}</span>` : ""}</h1>
+      <p class="meta">${isGK(a) ? `Percentiles against all ${groupN(a)} goalkeepers.` : `Percentiles against all ${groupN(a).toLocaleString()} outfield players, so positions can be compared fairly.`}${a.sea || b.sea ? " Past seasons are measured against the 2015/16 players." : ""}${mixed ? " Goalkeepers can only be compared with goalkeepers, so the second player was swapped for the closest match." : ""}</p></div></div>
     <div class="cols c2">${side(a, "#F5B13D", "cmpA")}${side(b, "#5EA4FF", "cmpB")}</div>
     <div class="cols c2r" style="border-top:1px solid var(--border)">
       <div>${sec("I. Style radar", "Percentile 0–100")}<div style="max-width:600px;margin:0 auto">${radar(a, b)}</div></div>
@@ -491,14 +529,14 @@ pages.compare = (arg) => {
 
 // ---------- replace ----------
 pages.replace = (arg) => {
-  let i = +arg; if (!(i in P)) i = P.findIndex(p => p.n === "Mesut Özil");
-  const p = P[i];
+  let i = +arg; if (!(i in ALL)) i = P.findIndex(p => p.n === "Mesut Özil");
+  const p = ALL[i];
   const st = { lgs: new Set(LEAGUES), excl: true, same: false, minm: 900 };
   app.innerHTML = `<section class="sheet">
-    <div class="shead"><div><span class="k acc">Replace a player</span><h1 style="margin-top:6px">Who could replace ${esc(p.n)}?</h1><p class="meta">The closest styles at other clubs. Open a row to see why.</p></div></div>
+    <div class="shead"><div><span class="k acc">Replace a player</span><h1 style="margin-top:6px">Who could replace ${esc(p.n)}${BYID[p.id].length > 1 || p.sea ? ` <span class="muted">${esc(sShort(p))}</span>` : ""}?</h1><p class="meta">${p.sea ? `The 2015/16 players who play most like his ${esc(sLabel(p))} season. ` : "The closest styles at other clubs. "}Open a row to see why.</p>${seasonStrip(p, "replace")}</div></div>
     <div class="cols c2w">
       <div class="stack">${sec("I. Player and filters")}
-        <div class="stack" style="gap:4px"><b style="font:700 20px var(--display)"><a href="#player-${p.i}">${esc(p.n)}</a></b><span class="xs muted" style="font-family:var(--mono)">${esc(p.t)} · ${esc(p.l)}</span><div>${roleChip(p.r)}</div></div>
+        <div class="stack" style="gap:4px"><b style="font:700 20px var(--display)"><a href="#player-${p.i}">${esc(p.n)}</a></b><span class="xs muted" style="font-family:var(--mono)">${esc(p.t)} · ${esc(p.l)} ${esc(sLabel(p))}</span><div>${roleChip(p.r)}</div></div>
         <div class="search" id="rpq"></div>
         <div class="stack" style="gap:8px"><span class="k">Leagues</span><div class="row" id="rplg">${LEAGUES.map(l => `<button class="pill on" data-l="${l}">${l}</button>`).join("")}</div></div>
         <label class="tog"><input type="checkbox" id="rpex" checked> Exclude ${esc(p.t)}</label>
@@ -663,6 +701,31 @@ pages.misfits = () => {
   app.querySelectorAll("tr[data-i]").forEach(tr => tr.addEventListener("click", e => { if (!e.target.closest("a")) go("player-" + tr.dataset.i); }));
 };
 
+// ---------- seasons ----------
+pages.seasons = (arg) => {
+  const SS = S.seasons, c = S.check;
+  let k = +arg; if (!(k in SS)) k = SS.findIndex(x => x.t === "Barcelona" && x.s === "2008/09");
+  const cur = SS[k], squad = SP.filter(p => p.k === "club" && p.t === cur.t && p.s === cur.s).sort((a, b) => FAMS.indexOf(a.fam) - FAMS.indexOf(b.fam) || b.min - a.min);
+  const clubs = [...new Set(SS.map(x => x.t))];
+  app.innerHTML = `<section class="sheet">
+    <div class="shead"><div class="stack" style="gap:8px;max-width:760px"><span class="k acc">Seasons</span><h1>Other seasons, measured against 2015/16</h1>
+      <p class="lead">StatsBomb’s free data also has every league match of a few clubs in other seasons. Each of their players with 900+ minutes gets a profile for that season, measured on the same scale as 2015/16, so you can ask who in 2015/16 played like Xavi in 2008/09. Every 2015/16 player also has an August–December and a January–May profile.</p></div></div>
+    <div class="cols c2w">
+      <div class="stack">${sec("I. Club seasons", `${SS.length}`)}
+        ${clubs.map(t => `<div class="stack" style="gap:6px"><b class="small">${esc(t)}</b><div class="row" style="gap:6px">${SS.map((x, j) => x.t === t ? `<a class="pill${j === k ? " on" : ""}" href="#seasons-${j}"${j === k ? ' aria-current="page"' : ""}>${esc(x.s)}</a>` : "").join("")}</div></div>`).join("")}
+        ${sec("II. Does it hold up?")}
+        <div class="figs">${fig(c.other_seasons.adjacent_top5 + "%", "Own 2015/16 in top 5", true)}${fig(c.halves.top5 + "%", "Aug–Dec finds Jan–May")}</div>
+        <p class="xs muted">${c.other_seasons.adjacent_n} Barcelona players have a 2014/15 or 2016/17 season next to their 2015/16 one: their own 2015/16 profile is in their top 5 of ${c.other_seasons.pool.toLocaleString()} players ${c.other_seasons.adjacent_top5}% of the time (median rank ${c.other_seasons.adjacent_median_rank}). Seasons further apart drift more (top 5: ${c.other_seasons.top5}% over all ${c.other_seasons.n}). From his August–December profile, a player’s January–May profile is in his top 5 ${c.halves.top5}% of the time (${c.halves.n} players; chance under 1%).</p>
+      </div>
+      <div>${sec(`III. ${esc(cur.t)} ${esc(cur.s)}`, `${squad.length} players · ${esc(cur.l)}`)}
+        <div class="tscroll"><table><thead><tr><th>Player</th><th>Position</th><th class="n">Minutes</th><th>Role</th><th>Most like, in 2015/16</th><th class="n">Match</th></tr></thead><tbody>
+        ${squad.map(p => { const nb = neighbours(p.i, () => true, 1)[0]; return `<tr class="link" data-i="${p.i}"><td><a href="#player-${p.i}"><b>${esc(p.n)}</b></a></td><td class="muted">${esc(p.p)}</td><td class="n">${p.min.toLocaleString()}</td><td>${roleChip(p.r, false)}</td><td><a href="#compare-${p.i}-${nb.b.i}" title="${esc(nb.b.t)}">${esc(nb.b.n)}</a></td><td class="n num">${Math.round(nb.s)}</td></tr>`; }).join("") || `<tr><td colspan="6" class="empty">No player reached 900 minutes in the open matches of this season.</td></tr>`}
+        </tbody></table></div>
+        <p class="xs muted" style="margin-top:10px">Only ${esc(cur.t)}’s players: their opponents appear once or twice, too little to describe them. Open a player to see all his seasons and find replacements for each.</p></div>
+    </div></section>`;
+  app.querySelectorAll("tr[data-i]").forEach(tr => tr.addEventListener("click", e => { if (!e.target.closest("a")) go("player-" + tr.dataset.i); }));
+};
+
 // ---------- method ----------
 pages.method = () => {
   const v = X.validation, g = D.gk.check, nGK = P.filter(isGK).length;
@@ -674,8 +737,9 @@ pages.method = () => {
       ${part("02", "Machine learning used", `<ul><li><b>PCA</b> compresses the 42 stats into 8 dimensions that keep 85% of the variation: the style fingerprint.</li><li><b>Nearest-neighbour search</b> finds the closest players in that space; the 0–100 match score is a scaled distance.</li><li><b>k-means clustering</b>, run separately for each position group, creates the roles. Bootstrap stability, a Gaussian mixture model (BIC) and silhouette scores chose how many.</li><li><b>UMAP</b> flattens the 8 dimensions into the 2D role map.</li></ul><p>All of it is unsupervised: no model was trained to predict a known answer.</p>`)}
       ${part("03", "Checks", `<ul><li><b>Split-half test.</b> Each player’s stats were rebuilt from odd and even matches separately (${v.pool} players). From one half, his other half is his closest match ${v.top1}% of the time and in his top 5 ${v.top5}% of the time (chance: 0.1% and 0.5%). Median rank: ${v.median_rank}.</li><li><b>Role stability.</b> The two halves land in the same role ${v.role_agree}% of the time.</li><li><b>Team leakage.</b> ${v.team_leak}% of top-5 matches are team-mates, against ${v.team_leak_random}% by chance.</li><li><b>How many roles?</b> Stability fell below 0.7 beyond 2 roles per position (5 for attackers), so style within a position is mostly a spectrum and the similarity search is the main tool.</li></ul>`)}
       ${part("04", "Goalkeepers", `<p>Keepers get their own ${GF.length} stats and their own style space, and are only compared with other keepers: shot-stopping (save %, goals prevented against xG, xG per shot faced), distribution (passes, completion, pass and goal-kick length, long launches, short goal kicks), sweeping, and dealing with crosses.</p><p>Two styles are stable (stability ${g.stability}): ball-playing and long-ball keepers. In the split-half test a keeper’s other half is in his top 5 ${g.top5}% of the time (chance ${g.random_top5}%), and ${g.role_agree}% keep the same style in both halves. That is weaker than for outfield players: only ${g.n} keepers, and shot-stopping swings a lot over half a season.</p>`)}
-      ${part("05", "Limits", `<ul><li>One season, 2015/16; many of these players have since retired or changed role.</li><li>Style is partly the team’s system. Only defensive actions are adjusted for possession.</li><li>StatsBomb’s free data has no second or third divisions, and its other seasons cover a single club each, so these four leagues in 2015/16 are what is possible. The Bundesliga has only 34 matches; Ligue 1 is missing 3.</li><li>“Goals prevented” uses pre-shot xG, because the free data has no post-shot xG.</li><li>“% alike” and the match score can disagree: the score weights the stats that best separate styles.</li></ul>`)}
-      ${part("06", "Data and credit", `<p>All data comes from the <a class="acc" href="https://github.com/statsbomb/open-data">StatsBomb open data</a> repository and is used under the StatsBomb Public Data User Agreement. The raw data is not redistributed; this site shows derived statistics and analysis only. Analysis by Syed Hammad Ovais; not StatsBomb’s views.</p><span class="sb" style="align-self:flex-start"><img src="img/statsbomb-logo.png" alt="StatsBomb"></span>`)}
+      ${part("05", "Other seasons", `<p>StatsBomb’s free data covers every club only in 2015/16. For a few clubs it also has every league match of other seasons: Barcelona 2004/05 to 2020/21, Arsenal 2003/04, Paris Saint-Germain 2021/22 and 2022/23, and Bayer Leverkusen 2023/24. Those clubs’ players with 900+ minutes get a profile for each season (${SP.filter(p => p.k === "club").length} profiles).</p><p>The model is <b>not</b> refitted: the same standardisation, PCA and role centres from 2015/16 are applied unchanged, so a 2008/09 season and a 2015/16 season sit in the same space and can be matched. Matches for a past season are always 2015/16 players. Every 2015/16 player also gets an August–December and a January–May profile (600+ minutes each, 450 for keepers).</p><p>Check: a Barcelona player’s 2014/15 or 2016/17 profile finds his own 2015/16 profile in its top 5 ${S.check.other_seasons.adjacent_top5}% of the time (median rank ${S.check.other_seasons.adjacent_median_rank} of ${S.check.other_seasons.pool.toLocaleString()}).</p>`)}
+      ${part("06", "Limits", `<ul><li>Full league coverage is for one season, 2015/16; other seasons cover one club, and many of these players have since retired or changed role.</li><li>A past season is matched against 2015/16 players, not against the players of its own year, and a player at a dominant club like Barcelona can look different from anyone in a normal team.</li><li>Style is partly the team’s system. Only defensive actions are adjusted for possession.</li><li>StatsBomb’s free data has no second or third divisions, and its other seasons cover a single club each, so these four leagues in 2015/16 are what is possible. In 2015/16 the Bundesliga has only 34 matches; Ligue 1 is missing 3.</li><li>“Goals prevented” uses pre-shot xG, because the free data has no post-shot xG.</li><li>“% alike” and the match score can disagree: the score weights the stats that best separate styles.</li></ul>`)}
+      ${part("07", "Data and credit", `<p>All data comes from the <a class="acc" href="https://github.com/statsbomb/open-data">StatsBomb open data</a> repository and is used under the StatsBomb Public Data User Agreement. The raw data is not redistributed; this site shows derived statistics and analysis only. Analysis by Syed Hammad Ovais; not StatsBomb’s views.</p><span class="sb" style="align-self:flex-start"><img src="img/statsbomb-logo.png" alt="StatsBomb"></span>`)}
     </div></section>`;
 };
 function notFound() { app.innerHTML = `<section class="sheet"><div class="shead"><div><span class="k acc">404</span><h1 style="margin-top:6px">Page not found</h1><p class="meta">That link doesn’t match a page. <a class="acc" href="#home">Go to the home page</a>.</p></div></div></section>`; }
@@ -690,12 +754,12 @@ function route() {
   const navKey = { player: "players", role: "roles", team: "teams" }[name] || name;
   document.querySelectorAll("#nav a").forEach(a => a.classList.toggle("on", a.dataset.p === navKey));
   if (!fn) notFound(); else fn(arg);
-  const titles = { player: () => P[+arg]?.n, role: () => R[+arg]?.name, team: () => T.teams[+arg]?.t, compare: () => "Compare", replace: () => "Replace a player", roles: () => "Roles", teams: () => "Teams", map: () => "Role map", misfits: () => "Out of position", method: () => "Method", players: () => "Players" };
+  const titles = { player: () => ALL[+arg] && (ALL[+arg].n + (ALL[+arg].sea ? " " + sLabel(ALL[+arg]) : "")), role: () => R[+arg]?.name, team: () => T.teams[+arg]?.t, compare: () => "Compare", replace: () => "Replace a player", roles: () => "Roles", teams: () => "Teams", map: () => "Role map", misfits: () => "Out of position", seasons: () => "Seasons", method: () => "Method", players: () => "Players" };
   document.title = (titles[name] && titles[name]() ? titles[name]() + " · " : "") + "Player Style Finder";
   window.scrollTo(0, 0);
 }
-Promise.all(["players", "teams", "roles", "extras"].map(f => fetch(`data/${f}.json`).then(r => { if (!r.ok) throw new Error(f); return r.json(); })))
-  .then(([a, b, c, d]) => { D = a; T = b; R = c; X = d; prepData(); searchBox($("#navsearch"), p => go("player-" + p.i), "Search players"); route(); window.addEventListener("hashchange", route); })
+Promise.all(["players", "teams", "roles", "extras", "seasons"].map(f => fetch(`data/${f}.json`).then(r => { if (!r.ok) throw new Error(f); return r.json(); })))
+  .then(([a, b, c, d, e]) => { D = a; T = b; R = c; X = d; S = e; prepData(); searchBox($("#navsearch"), p => go("player-" + p.i), "Search players"); route(); window.addEventListener("hashchange", route); })
   .catch(err => { app.innerHTML = `<div class="sheet empty"><h2>The data didn’t load</h2><p class="muted">Reload the page to try again. (${esc(err.message)})</p></div>`; });
 </script>
 </body>

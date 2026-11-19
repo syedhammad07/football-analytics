@@ -10,6 +10,7 @@ from collections import defaultdict
 import numpy as np, pandas as pd
 from roles import prep, META
 from explain import LABEL
+from site_data_roles import POS
 import urllib.request
 
 
@@ -33,13 +34,6 @@ ROLES = [("Creative playmaker", "#2DD4BF", "Attackers"), ("Touchline winger", "#
          ("Ball-playing centre-back", "#93C5FD", "Centre-backs"), ("Defensive full-back", "#8B5CF6", "Full-backs"),
          ("Attacking full-back", "#E879F9", "Full-backs"), ("Box-to-box midfielder", "#FACC15", "Midfielders"), ("Holding midfielder", "#D97706", "Midfielders"),
          ("Ball-playing keeper", "#F472B6", "Goalkeepers"), ("Long-ball keeper", "#94A3B8", "Goalkeepers")]
-POS = {"Center Forward": "Centre-forward", "Left Center Forward": "Centre-forward", "Right Center Forward": "Centre-forward", "Secondary Striker": "Second striker",
-       "Left Wing": "Left winger", "Right Wing": "Right winger", "Left Midfield": "Left midfielder", "Right Midfield": "Right midfielder",
-       "Center Attacking Midfield": "Attacking midfielder", "Left Attacking Midfield": "Attacking midfielder", "Right Attacking Midfield": "Attacking midfielder",
-       "Center Midfield": "Central midfielder", "Left Center Midfield": "Central midfielder", "Right Center Midfield": "Central midfielder",
-       "Center Defensive Midfield": "Defensive midfielder", "Left Defensive Midfield": "Defensive midfielder", "Right Defensive Midfield": "Defensive midfielder",
-       "Center Back": "Centre-back", "Left Center Back": "Centre-back", "Right Center Back": "Centre-back",
-       "Left Back": "Left-back", "Right Back": "Right-back", "Left Wing Back": "Left wing-back", "Right Wing Back": "Right wing-back"}
 
 r = pd.read_csv(os.path.join(D, "roles.csv"))
 nick = dict(pd.read_csv(os.path.join(D, "nicknames.csv")).values)
