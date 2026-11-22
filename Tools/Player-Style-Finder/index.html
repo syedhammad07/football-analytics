@@ -327,7 +327,7 @@ function searchBox(host, onPick, placeholder = "Search players") {
 // ---------- shared pieces ----------
 const roleChip = (r, link = true) => { const R0 = ROLES[r]; const inner = `<i style="background:${R0.color}"></i>${esc(R0.name)}`;
   return link ? `<a class="chip" href="#role-${r}">${inner}</a>` : `<span class="chip">${inner}</span>`; };
-const bar = (label, val, pct) => `<div class="bar"><div class="lab"><span>${esc(label)}</span><b>${val} · <em class="${pct < 60 ? "lo" : ""}">${pct}th</em></b></div><div class="track ${pct < 60 ? "lo" : ""}"><div style="width:${Math.max(2, pct)}%"></div></div></div>`;
+const bar = (label, val, pct) => `<div class="bar"><div class="lab"><span>${esc(label)}</span><b>${val} · <em class="${pct < 60 ? "lo" : ""}">${ord(pct)}</em></b></div><div class="track ${pct < 60 ? "lo" : ""}"><div style="width:${Math.max(2, pct)}%"></div></div></div>`;
 const sec = (title, right = "") => `<div class="sec"><span class="k">${title}</span>${right ? `<span class="k">${right}</span>` : ""}</div>`;
 const fig = (v, label, acc = false) => `<div><b class="${acc ? "acc" : ""}">${v}</b><small>${label}</small></div>`;
 const ord = n => n + (["th", "st", "nd", "rd"][(n % 100 - 20) % 10] || ["th", "st", "nd", "rd"][n % 100] || "th");

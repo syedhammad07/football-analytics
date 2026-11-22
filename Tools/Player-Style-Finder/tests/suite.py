@@ -583,6 +583,12 @@ with sync_playwright() as pw:
         w1 = ph.evaluate("document.documentElement.scrollWidth"); ph.goto(URL + f"#replace-{CR}~2026"); ph.wait_for_timeout(700)
         w2 = ph.evaluate("document.documentElement.scrollWidth"); ph.close(); return w1 <= 360 and w2 <= 360, (w1, w2)
     check(I_, "No sideways scroll with recent seasons at 360 px", i_phone)
+    def ordinals():
+        bad = []
+        for h in [f"player-{CR}", f"player-{XAVI}", f"player-{GKI}", f"compare-{CR}-{XAVI}"]:
+            nav(h); t = pg.inner_text("#app"); bad += re.findall(r"\b\d*(?:1th|2th|3th)\b", t.replace("11th", "").replace("12th", "").replace("13th", ""))
+        return not bad, bad[:5]
+    check(Fc, "Percentiles use correct ordinals (1st, 2nd, 63rd)", ordinals)
     check(Fc, "No console errors during the whole run", lambda: (not errs, errs[:3]))
     br.close()
 srv.terminate()
