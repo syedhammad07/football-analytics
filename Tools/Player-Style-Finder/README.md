@@ -8,7 +8,7 @@
 
 Most "similar player" tools compare output: goals, assists, minutes. This one compares **how** a player plays: where he receives the ball, how far and how forward he passes, how much he carries and dribbles, where he shoots from and how he defends. Pick a player and every other player in his position is ranked by how close his style is, and each match comes with the reasons: the three stats where they are most alike, the three where they differ most, and what share of all stats they share.
 
-**Find in today's game.** A dropdown switches the search from 2015/16 to the **2025/26** or **2026/27** Premier League. Pick Cristiano Ronaldo 2015/16 and "2025/26" to see whose output and habits are closest now (Ekitiké, Watkins), with a stat match score, the stats that line up and the ones that don't, plus age and market value, so you can look for a cheaper player with similar numbers.
+**Find in any Premier League season.** A dropdown switches the search from 2015/16 to any **Premier League season from 2014/15 to 2026/27** (13 seasons, 3,843 player-seasons). Pick Cristiano Ronaldo 2015/16 and "2025/26" to see whose output and habits are closest now (Ekitiké, Watkins), with a stat match score, the stats that line up and the ones that don't, plus age and market value, so you can look for a cheaper player with similar numbers.
 
 [![Cristiano Ronaldo 2015/16, searched in the 2025/26 Premier League: Ekitiké and Watkins closest](screenshots/5-find-in.png)](https://syedhammad07.github.io/football-analytics/Tools/Player-Style-Finder/)
 
@@ -20,9 +20,9 @@ Players can also be picked **season by season**. Xavi in 2008/09, Henry in 2003/
 
 | Page | What it shows |
 | --- | --- |
-| **Player** | His style fingerprint (percentiles within his position), the 10 closest players with league and same-role filters, a match score for each, and "why they match". A season picker switches between his seasons, a season-by-season table shows how his style changed, and **Find in** searches 2015/16, 2025/26 or 2026/27 |
+| **Player** | His style fingerprint (percentiles within his position), the 10 closest players with league and same-role filters, a match score for each, and "why they match". A season picker switches between his seasons, a season-by-season table shows how his style changed, and **Find in** searches 2015/16 or any Premier League season from 2014/15 to 2026/27 |
 | **Compare** | Any two players on a percentile radar, with a stat-by-stat table and the match score between them |
-| **Replace** | The closest styles at other clubs, filtered by league, role and minutes played, for any of his seasons. **Find in** 2025/26 or 2026/27 adds position and market-value filters |
+| **Replace** | The closest styles at other clubs, filtered by league, role and minutes played, for any of his seasons. **Find in** a Premier League season adds a position filter, and market values for 2025/26 and 2026/27 |
 | **Roles** | 13 styles of play found by the model (five for attackers, two each for centre-backs, full-backs, midfielders and goalkeepers), what defines each, its most typical players and its extremes |
 | **Teams** | All 80 teams: league table, team style (possession, pressing, long passing, defensive line, xG for and against) and each squad's mix of roles |
 | **Role map** | All 1,251 outfield players on one map, coloured by role; works with mouse, touch or keyboard |
@@ -46,7 +46,7 @@ Every page has its own link (for example `#compare-…`), so any view can be sha
 6. **Map.** UMAP draws the fingerprints in 2D.
 7. **Other seasons.** StatsBomb also has every league match of a few clubs in other seasons. Those clubs' players with 900+ minutes get a profile per season, and every 2015/16 player gets an August–December and a January–May profile (600+ minutes). The model is not refitted: the 2015/16 scaler, PCA and role centres are applied unchanged, so every season sits in the same space and is matched against the 2015/16 players. Only the featured club's players are used, because their opponents appear just once or twice.
 
-8. **Recent seasons.** StatsBomb has no free data after 2015/16 for whole leagues, so the 2025/26 and 2026/27 searches use the Premier League's own (Opta) season stats, already in this repo for [Scout Finder](../Scout-Finder/). The two providers count some things differently, so players are compared on **16 stats both record** (non-penalty goals and xG, shots, key passes, through balls, dribbles and dribble success, touches, passes, pass completion, forward and long pass shares, possession-adjusted tackles and interceptions, recoveries, aerials won), each turned into a **percentile within its own season**. Stat match = 100 − the average gap in percentile points.
+8. **Premier League seasons.** StatsBomb has no free data for whole leagues outside 2015/16, so the 13 Premier League seasons use the league's own (Opta) season stats: 2014/15 to 2024/25 collected from the Premier League's stats site (see [pipeline/sources](pipeline/sources/README.md)), and 2025/26 and 2026/27 from this repo's [Scout Finder](../Scout-Finder/) data. The two providers count some things differently, so players are compared on **16 stats both record** (non-penalty goals and xG, shots, key passes, through balls, dribbles and dribble success, touches, passes, pass completion, forward and long pass shares, possession-adjusted tackles and interceptions, recoveries, aerials won), each turned into a **percentile within its own season**. Stat match = 100 − the average gap in percentile points.
 
 All of this is unsupervised: there is no "right answer" to train on, so the checks below test whether the results are stable and meaningful.
 
@@ -65,13 +65,13 @@ The main check splits every player's season into two halves and builds a fingerp
 | Goalkeepers: same role in both halves | 96.9% | |
 | Barcelona players' 2014/15 or 2016/17 season finds his own 2015/16 in the top 5 (26 players) | 80.8% | 0.4% |
 | August–December finds the same player's January–May in the top 5 (800 players) | 57.6% | 0.6% |
-| Two providers, same season: a 2015/16 Premier League midfielder's StatsBomb profile finds his own Opta profile first (129 players) | 95.3% | 0.8% |
+| Two providers, same season: a 2015/16 Premier League outfield player's StatsBomb profile finds his own Opta profile first (289 players) | 90.7% | 0.3% |
 
-The last check is what makes the recent-season search trustworthy: Opta's 2015/16 numbers exist for Premier League midfielders, so the same players can be measured by both providers. One stat failed it (touches in the box, rank correlation 0.14) and was left out; every stat kept agrees at 0.66 or better. Where the two providers' raw numbers are on different scales (touches, shots, through balls, interceptions, forward and long pass shares), the site shows only the percentiles.
+The last check is what makes the Premier League search trustworthy: 2015/16 is in both StatsBomb's and Opta's data, so the same players can be measured by both providers. Touches in the box failed an earlier version of it and was left out; every stat kept agrees at 0.72 or better. Where the two providers' raw numbers are on different scales (touches, shots, through balls, interceptions, aerials, forward and long pass shares), the site shows only the percentiles.
 
 Matches are only slightly more likely to be teammates than by chance, so the model is picking up the player more than the team's system.
 
-The site itself is checked by 186 automated tests: data integrity, the browser's maths against the Python pipeline, every page, filter and link, five screen widths from 320 px phones to wide desktops, and accessibility (contrast, keyboard use, labels). **186/186 pass**, including 21 checks of the season profiles and 17 of the recent-season search.
+The site itself is checked by 189 automated tests: data integrity, the browser's maths against the Python pipeline, every page, filter and link, five screen widths from 320 px phones to wide desktops, and accessibility (contrast, keyboard use, labels). **189/189 pass**, including 21 checks of the season profiles and 20 of the Premier League search.
 
 ## Run it
 
@@ -107,7 +107,7 @@ Player-Style-Finder/
 │   ├── roles.json              ← the 13 roles, their defining stats and players
 │   ├── extras.json             ← out-of-position players, most unique players, check results
 │   ├── seasons.json            ← past-season and half-season profiles, season checks
-│   └── now.json                ← 2025/26 and 2026/27 Premier League players and everyone's shared-stat percentiles
+│   └── now.json                ← 13 Premier League seasons (2014/15–2026/27) and everyone's shared-stat percentiles
 ├── pipeline/
 │   ├── run_all.sh              ← runs every step in order
 │   ├── build_features.py       ← download StatsBomb events → stats per player per match
@@ -125,9 +125,10 @@ Player-Style-Finder/
 │   ├── club_seasons.py         ← download the single-club seasons
 │   ├── seasons.py              ← season profiles in the 2015/16 style space
 │   ├── gk_model_space.py       ← the keeper style space, reused by seasons.py
-│   ├── cross_season.py         ← recent Premier League seasons on 16 shared stats, and the two-provider check
+│   ├── cross_season.py         ← Premier League seasons on 16 shared stats, and the two-provider check
+│   ├── sources/                ← Premier League season stats 2014/15–2024/25 (how they were collected: sources/README.md)
 │   └── METHOD.md               ← notes on every modelling choice
-├── tests/suite.py              ← the 186 checks
+├── tests/suite.py              ← the 189 checks
 ├── img/statsbomb-logo.png
 └── screenshots/
 ```
@@ -135,7 +136,8 @@ Player-Style-Finder/
 ## Limitations
 
 - **One full season, four leagues.** StatsBomb's free data has whole leagues only in 2015/16 (the Bundesliga has just 34 matches). There are no second divisions or English lower leagues. Its other free seasons follow a single club, so past seasons exist only for Barcelona, Arsenal, PSG and Leverkusen players.
-- **Recent seasons are Premier League only and use 16 stats.** They compare output and habits, not the full 42-stat style model, and a high stat match says nothing about level. 2026/27 is the season so far (10 rounds when the data was saved, players with 450+ minutes).
+- **Other leagues' seasons aren't covered.** La Liga, Serie A, Bundesliga and Ligue 1 have no free source with these stats outside StatsBomb's 2015/16 (Understat was down when this was built).
+- **Premier League seasons use 16 stats.** They compare output and habits, not the full 42-stat style model, and a high stat match says nothing about level. 2026/27 is the season so far (10 rounds when the data was saved, players with 450+ minutes).
 - **Past seasons are matched against 2015/16.** Xavi's 2008/09 is compared with 2015/16 players, not with the players of 2008/09. A player in a dominant side like Barcelona can look unlike anyone in an ordinary team.
 - **Style is partly the system.** Defensive actions are adjusted for possession, but a full-back's position and passing still depend on how his team plays.
 - **Style, not quality.** Two players can play the same way at very different levels. The match score says nothing about which is better.
@@ -145,7 +147,7 @@ Player-Style-Finder/
 ## Sources
 
 - Data: [StatsBomb open data](https://github.com/statsbomb/open-data), used under the StatsBomb Public Data User Agreement. This repository holds only derived statistics, no raw StatsBomb data.
-- Recent seasons: Premier League season stats (Opta) and Transfermarkt market values, from this repo's Scout Finder data.
+- Premier League seasons: the Premier League's season stats (Opta); 2025/26 and 2026/27, with Transfermarkt market values, from this repo's Scout Finder data.
 - Analysis and site: Syed Hammad Ovais. The views are mine, not StatsBomb's.
 
 ![StatsBomb](img/statsbomb-logo.png)
