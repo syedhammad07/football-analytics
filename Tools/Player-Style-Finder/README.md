@@ -71,7 +71,7 @@ The last check is what makes the recent-season search trustworthy: Opta's 2015/1
 
 Matches are only slightly more likely to be teammates than by chance, so the model is picking up the player more than the team's system.
 
-The site itself is checked by 185 automated tests: data integrity, the browser's maths against the Python pipeline, every page, filter and link, five screen widths from 320 px phones to wide desktops, and accessibility (contrast, keyboard use, labels). **185/185 pass**, including 21 checks of the season profiles and 17 of the recent-season search.
+The site itself is checked by 186 automated tests: data integrity, the browser's maths against the Python pipeline, every page, filter and link, five screen widths from 320 px phones to wide desktops, and accessibility (contrast, keyboard use, labels). **186/186 pass**, including 21 checks of the season profiles and 17 of the recent-season search.
 
 ## Run it
 
@@ -127,7 +127,7 @@ Player-Style-Finder/
 │   ├── gk_model_space.py       ← the keeper style space, reused by seasons.py
 │   ├── cross_season.py         ← recent Premier League seasons on 16 shared stats, and the two-provider check
 │   └── METHOD.md               ← notes on every modelling choice
-├── tests/suite.py              ← the 185 checks
+├── tests/suite.py              ← the 186 checks
 ├── img/statsbomb-logo.png
 └── screenshots/
 ```
