@@ -16,3 +16,4 @@ python3 gk_model.py         # goalkeeper style space, roles, split-half test
 python3 site_data.py        # re-export site data with goalkeepers
 python3 club_seasons.py     # single-club seasons (Barcelona 2004-21, Arsenal 03/04, PSG, Leverkusen) -> data/season_match.csv
 python3 seasons.py          # season profiles in the 2015/16 style space -> ../data/seasons.json
+python3 cross_season.py     # 2025/26 and 2026/27 Premier League on 16 shared stats -> ../data/now.json
