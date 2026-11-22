@@ -1,0 +1,30 @@
+# One-off data fetch for Player Style Finder: Understat season stats, top 5 leagues, 2014/15 on.
+# Runs only on pushes to the data-understat branch and commits the CSVs back to that branch.
+name: Fetch Understat seasons
+
+on:
+  push:
+    branches: [data-understat]
+    paths: [".github/workflows/fetch-understat.yml", "Tools/Player-Style-Finder/pipeline/fetch_understat.py"]
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Download
+        run: python Tools/Player-Style-Finder/pipeline/fetch_understat.py
+      - name: Commit the CSVs to this branch
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f Tools/Player-Style-Finder/pipeline/data/understat/ || true
+          git diff --cached --quiet || (git commit -m "Understat season stats (fetched $(date -u +%Y-%m-%d))" && git push)
