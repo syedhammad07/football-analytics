@@ -147,7 +147,7 @@ Player-Style-Finder/
 ## Sources
 
 - Data: [StatsBomb open data](https://github.com/statsbomb/open-data), used under the StatsBomb Public Data User Agreement. This repository holds only derived statistics, no raw StatsBomb data.
-- Premier League seasons: the Premier League's season stats (Opta); 2025/26 and 2026/27, with Transfermarkt market values, from this repo's Scout Finder data.
+- Premier League seasons: the Premier League's season stats (Opta). The raw statistics are not included in this repository; only the derived results are published. 2025/26 and 2026/27, with Transfermarkt market values, come from this repo's Scout Finder data.
 - Analysis and site: Syed Hammad Ovais. The views are mine, not StatsBomb's.
 
 ![StatsBomb](img/statsbomb-logo.png)
