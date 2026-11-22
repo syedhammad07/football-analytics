@@ -10,7 +10,7 @@
 
 | Tab | What you get |
 | --- | --- |
-| **Look up a signing** | Search a player: score out of 100, what the fee predicts, the gap (value), a verdict, a 90% range and how firm the verdict is |
+| **Look up a signing** | Search a player (if the name has several transfers, pick one from a list): score out of 100, what the fee predicts, the gap (value), a verdict, a 90% range and how firm the verdict is |
 | **Best and worst value** | Ranked boards by role, window and season |
 | **Player cards** | Every player with 90+ minutes since 2017/18, by role, with season-by-season stats |
 | **Compare** | Put two signings side by side, copy a share link, or save a share image |
