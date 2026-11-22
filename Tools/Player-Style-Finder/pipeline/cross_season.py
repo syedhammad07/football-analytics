@@ -1,7 +1,8 @@
 """Find similar players in recent Premier League seasons -> ../data/now.json
 
-StatsBomb has no free data for recent seasons, so this step uses the Premier League's own (Opta) season
-stats that this repo already keeps for Scout Finder: 2025/26 (full season) and 2026/27 (so far).
+StatsBomb has no free data for these seasons, so this step uses the Premier League's own (Opta) season
+stats: 2014/15 to 2024/25 from sources/ (collected from the Premier League stats site, see sources/README.md),
+and 2025/26 (full season) and 2026/27 (so far) that this repo already keeps for Scout Finder.
 
 The two providers count some things differently (what is a "long" pass, a "dribble", a "key pass"), and the
 seasons are ten years apart, so raw numbers are not compared directly. Instead:
@@ -12,8 +13,8 @@ seasons are ten years apart, so raw numbers are not compared directly. Instead:
      their own season (900+ minutes in 2025/26, 450+ in 2026/27 so far).
   3. Stat match = 100 - the average gap in percentile points across the stats.
 
-Check: 2015/16 Premier League midfielders appear in BOTH sources (repo file pl_midfielders_2010-2018.csv
-is Opta's 2015/16). If the method works, a player's StatsBomb profile should find his own Opta profile.
+Check: 2015/16 Premier League players appear in BOTH sources (StatsBomb events, and Opta's season stats in
+sources/). If the method works, a player's StatsBomb profile should find his own Opta profile.
 """
 import os, json, unicodedata, re
 import numpy as np, pandas as pd
@@ -23,6 +24,7 @@ D = os.path.join(H, "data")
 TOOL = os.path.dirname(H)
 REPO = os.path.dirname(os.path.dirname(TOOL))
 SF = os.path.join(REPO, "Tools", "Scout-Finder", "data")
+SRC = os.path.join(H, "sources")
 EXT = os.path.join(REPO, "Players", "Yaya-Toure-Man-City", "data", "external")
 
 # stat key, label, unit
@@ -73,7 +75,7 @@ def opta_totals(d, poss):
     """Premier League (Opta) season totals -> the same standard columns."""
     t = pd.DataFrame(dict(
         minutes=d.timePlayed, np_goals=d.goals - d.penaltyGoals, npxg=(d.expectedGoals - d.penaltyGoals).clip(lower=0),  # a penalty is worth ~0.78 xG and ~78% are scored, so pen xG ~ pen goals
-        shots=d.totalShots, box_touches=d.totalTouchesInOppositionBox, key_passes=d.keyPassesAttemptAssists, through_balls=d.throughBalls,
+        shots=d.totalShots, box_touches=d.get("totalTouchesInOppositionBox", 0), key_passes=d.keyPassesAttemptAssists, through_balls=d.throughBalls,
         crosses=d.get("successfulCrossesOpenPlay", 0) + d.get("unsuccessfulCrossesOpenPlay", 0),
         dribbles=d.successfulDribbles + d.unsuccessfulDribbles, dribbles_ok=d.successfulDribbles, touches=d.touches,
         passes=d.totalPasses, passes_ok=d.totalPasses - d.totalUnsuccessfulPassesExclCrossesAndCorners, fwd_passes=d.forwardPasses,
@@ -102,7 +104,10 @@ TEAM_SB = {"AFC Bournemouth": "Bournemouth", "Aston Villa": "A Villa", "Crystal 
 TEAM_FULL = {"A Villa": "Aston Villa", "C Palace": "Crystal Palace", "Man City": "Manchester City", "Man Utd": "Manchester United",
              "Nott'm Forest": "Nottingham Forest", "Spurs": "Tottenham Hotspur", "Newcastle": "Newcastle United", "West Ham": "West Ham United",
              "Wolves": "Wolverhampton Wanderers", "Brighton": "Brighton & Hove Albion", "Leeds": "Leeds United", "Hull": "Hull City",
-             "Ipswich": "Ipswich Town", "Coventry": "Coventry City"}
+             "Ipswich": "Ipswich Town", "Coventry": "Coventry City", "Stoke": "Stoke City", "Swansea": "Swansea City", "QPR": "Queens Park Rangers",
+             "West Brom": "West Bromwich Albion", "Leicester": "Leicester City", "Norwich": "Norwich City", "Cardiff": "Cardiff City",
+             "Huddersfield": "Huddersfield Town", "Sheffield Utd": "Sheffield United", "Sheff Utd": "Sheffield United", "Luton": "Luton Town",
+             "Villa": "Aston Villa", "Palace": "Crystal Palace", "Forest": "Nottingham Forest"}
 
 
 def main():
@@ -128,13 +133,19 @@ def main():
     # ---------- Premier League (Opta) seasons ----------
     poss = pd.read_csv(os.path.join(SF, "pl_team_possession.csv"))
     pools = []
-    for key, fn, yr, floor, label in [("2025/26", "2025-26", 2025, 900, "Premier League 2025/26"),
-                                      ("2026/27", "2026-27", 2026, 450, "Premier League 2026/27, so far")]:
-        d = pd.read_csv(os.path.join(SF, f"pl_players_{fn}.csv"))
+    # 2014/15 to 2024/25: the Premier League's season stats, collected with sources/README.md
+    hist = pd.read_csv(os.path.join(SRC, "pl_players_2014-2024.csv")).drop_duplicates(["season", "pl_id"])
+    hposs = pd.read_csv(os.path.join(SRC, "pl_team_possession_2014-2024.csv"))
+    jobs = [(f"{y}/{str(y + 1)[-2:]}", None, y, 900, f"Premier League {y}/{str(y + 1)[-2:]}") for y in sorted(hist.season.unique())]
+    jobs += [("2025/26", "2025-26", 2025, 900, "Premier League 2025/26"), ("2026/27", "2026-27", 2026, 450, "Premier League 2026/27, so far")]
+    for key, fn, yr, floor, label in jobs:
+        d = pd.read_csv(os.path.join(SF, f"pl_players_{fn}.csv")) if fn else hist[hist.season == yr]
         d = d[(d.position != "Goalkeeper") & (d.timePlayed >= floor)].reset_index(drop=True)
-        X = stats_from(opta_totals(d, dict(poss[poss.season == yr][["team", "possession"]].values))).values
+        pp = poss[poss.season == yr] if fn else hposs[hposs.season == yr]
+        X = stats_from(opta_totals(d, dict(pp[["team", "possession"]].values))).values
         q = pct_against(X, X)
-        val = pd.read_csv(os.path.join(SF, f"pl_values_{fn}.csv")).drop_duplicates("pl_id").set_index("pl_id").market_value_eur
+        val = (pd.read_csv(os.path.join(SF, f"pl_values_{fn}.csv")).drop_duplicates("pl_id").set_index("pl_id").market_value_eur
+               if fn else pd.Series(dtype=float))
         asof = pd.Timestamp("2026-11-18") if yr == 2026 else None
         age = lambda b: None if pd.isna(b) else int(((asof or pd.Timestamp(f"{yr + 1}-05-31")) - pd.Timestamp(b)).days // 365.25)
         pls = []
@@ -147,8 +158,9 @@ def main():
         print(key, len(pls), "players")
 
     # ---------- check: the same 2015/16 Premier League midfielders in both sources ----------
-    mid = pd.read_csv(os.path.join(EXT, "pl_midfielders_2010-2018.csv")); mid = mid[(mid.season == 2015) & (mid.timePlayed >= 900)].reset_index(drop=True)
-    pposs = pd.read_csv(os.path.join(EXT, "pl_team_possession.csv")); pposs = dict(pposs[pposs.season == 2015][["team", "possession"]].values)
+    # every 2015/16 Premier League outfield player with 900+ minutes, as Opta counted him
+    mid = hist[(hist.season == 2015) & (hist.position != "Goalkeeper") & (hist.timePlayed >= 900)].reset_index(drop=True)
+    pposs = dict(hposs[hposs.season == 2015][["team", "possession"]].values)
     nick = dict(pd.read_csv(os.path.join(D, "nicknames.csv")).values)
     sbpl = [p for p in players if p["l"] == "Premier League" and p["fam"] != "Goalkeepers"]
     idx = {}
@@ -164,6 +176,7 @@ def main():
         if p is not None:
             pairs.append((i, p))
     usable = KEYS
+    chk_pos = None
     cols = [KEYS.index(k) for k in usable]
     O = stats_from(opta_totals(mid, pposs)).values[:, cols]
     B = np.stack([base.loc[(p["id"], p["t"])].values[cols] for _, p in pairs]); Om = O[[i for i, _ in pairs]]

@@ -93,15 +93,16 @@ check(H, "Cross-season check: own 2015/16 in top 5 for adjacent seasons ≥ 70%"
 
 # ======================= I. RECENT SEASONS (data) =======================
 I_ = "I Recent"
-check(I_, "Two Premier League pools: 2025/26 (900+ min) and 2026/27 (450+)", lambda: ([x["key"] for x in NW["pools"]] == ["2025/26", "2026/27"] and all(min(b["min"] for b in x["players"]) >= x["floor"] for x in NW["pools"]), [(x["key"], len(x["players"])) for x in NW["pools"]]))
+check(I_, "13 Premier League seasons, 2014/15 to 2026/27, minute floors respected", lambda: ([x["key"] for x in NW["pools"]] == [f"{y}/{str(y + 1)[-2:]}" for y in range(2014, 2027)] and all(min(b["min"] for b in x["players"]) >= x["floor"] for x in NW["pools"]) and all(len(x["players"]) > 250 for x in NW["pools"][:-1]), [(x["key"], len(x["players"])) for x in NW["pools"]]))
+check(I_, "No player listed twice in one season", lambda: (all(len({(b["n"], b["t"]) for b in x["players"]}) == len(x["players"]) for x in NW["pools"]), ""))
 check(I_, "No goalkeepers in the recent pools", lambda: (all(b["p"] in ("Defender", "Midfielder", "Forward") for x in NW["pools"] for b in x["players"]), ""))
 check(I_, "Percentile vectors: 16 values from 1 to 99, everywhere", lambda: (all(len(v) == NS and all(1 <= t <= 99 for t in v) for v in [b["q"] for x in NW["pools"] for b in x["players"]] + [q for q in NW["base"] + NW["seasons"] if q]), NS))
 check(I_, "Every outfield profile has percentiles, keepers none", lambda: (all((q is None) == (p["fam"] == "Goalkeepers") for q, p in zip(NW["base"], P)) and all((q is None) == (p["fam"] == "Goalkeepers") for q, p in zip(NW["seasons"], SPP)), ""))
 def i_pct_recompute():
-    x = NW["pools"][0]; j = 0; vals = sorted(b["v"][j] for b in x["players"]); b = x["players"][7]
+    x = next(p for p in NW["pools"] if p["key"] == "2025/26"); j = 0; vals = sorted(b["v"][j] for b in x["players"]); b = x["players"][7]
     lo = sum(v < b["v"][j] for v in vals); eq = sum(v == b["v"][j] for v in vals); py = min(99, max(1, round(100 * (lo + eq / 2) / len(vals)))); return abs(py - b["q"][j]) <= 1, (py, b["q"][j])
 check(I_, "Stored percentiles match a recomputation", i_pct_recompute)
-check(I_, "Two-provider check: same player found first ≥ 85%", lambda: (NW["check"]["top1"] >= 85 and NW["check"]["n"] >= 100, {k: NW["check"][k] for k in ("n", "top1", "top5")}))
+check(I_, "Two-provider check (all 2015/16 PL outfielders): same player first ≥ 85%", lambda: (NW["check"]["top1"] >= 85 and NW["check"]["n"] >= 250, {k: NW["check"][k] for k in ("n", "top1", "top5")}))
 check(I_, "Every shared stat agrees across providers (rank corr ≥ 0.6)", lambda: (min(NW["check"]["rho"].values()) >= 0.6, min(NW["check"]["rho"].items(), key=lambda kv: kv[1])))
 check(I_, "Raw values hidden for stats on different scales", lambda: (all(x["raw"] == (0.8 <= NW["check"]["ratio"][x["k"]] <= 1.25) for x in NW["stats"]) and not next(x for x in NW["stats"] if x["k"] == "touches_p90")["raw"], ""))
 
@@ -546,7 +547,7 @@ with sync_playwright() as pw:
     # ======================= I. RECENT SEASONS (browser) =======================
     CR = [p["n"] for p in P].index("Cristiano Ronaldo")
     def i_maths():
-        q = np.array(NW["base"][CR]); x = NW["pools"][0]; Q = np.array([b["q"] for b in x["players"]]); g = np.abs(Q - q).mean(1)
+        q = np.array(NW["base"][CR]); x = next(p for p in NW["pools"] if p["key"] == "2025/26"); Q = np.array([b["q"] for b in x["players"]]); g = np.abs(Q - q).mean(1)
         py = [x["players"][j]["n"] for j in sorted(range(len(g)), key=lambda j: (g[j], j))[:5]]
         js = pg.evaluate(f"nowMatches(P[{CR}], poolOf('2025'), () => true, 5).map(x => x.b.n)"); return py == js, (py, js)
     check(I_, "Browser stat matches equal numpy's", i_maths)
@@ -566,18 +567,25 @@ with sync_playwright() as pw:
         nav(f"player-{CR}~2026"); return pg.evaluate("$('#pfin').value") == "2026" and "2026/27" in pg.inner_text("#psec"), pg.evaluate("$('#pfin').value")
     check(I_, "A link with ~2026 opens on 2026/27", i_deeplink)
     def i_back():
-        pg.select_option("#pfin", "2015"); pg.wait_for_timeout(300); return pg.evaluate("location.hash") == f"#player-{CR}" and pg.evaluate("document.querySelectorAll('#plist > details').length") == 10, pg.evaluate("location.hash")
+        pg.select_option("#pfin", "sb"); pg.wait_for_timeout(300); return pg.evaluate("location.hash") == f"#player-{CR}" and pg.evaluate("document.querySelectorAll('#plist > details').length") == 10, pg.evaluate("location.hash")
     check(I_, "Switching back to 2015/16 restores the style matches", i_back)
     def i_replace():
         errs.clear(); nav(f"replace-{XAVI}~2025"); pg.select_option("#rpval", str(int(25e6))); pg.wait_for_timeout(300)
         n = pg.evaluate("document.querySelectorAll('#rplist > details').length")
         names = pg.evaluate("[...document.querySelectorAll('#rplist > details')].map(d => +d.dataset.j)")
-        pool = NW["pools"][0]["players"]; ok = n > 0 and all(pool[j]["mv"] is not None and pool[j]["mv"] <= 25e6 for j in names)
+        pool = next(p for p in NW["pools"] if p["key"] == "2025/26")["players"]; ok = n > 0 and all(pool[j]["mv"] is not None and pool[j]["mv"] <= 25e6 for j in names)
         return ok and pg.evaluate("document.querySelector('.sb').hidden") and not errs, (n, errs[:2])
     check(I_, "Replace a past season in 2025/26 under a value cap", i_replace)
     def i_gk():
-        nav(f"player-{GKI}"); return pg.evaluate("[...$('#pfin').options].map(o => o.disabled)") == [False, True, True], ""
-    check(I_, "Goalkeepers cannot pick the recent seasons", i_gk)
+        nav(f"player-{GKI}"); o = pg.evaluate("[...$('#pfin').options].map(o => o.disabled)"); return o == [False] + [True] * 13, o
+    check(I_, "Goalkeepers cannot pick the Premier League seasons", i_gk)
+    def i_hist():
+        errs.clear(); nav(f"player-{CR}~2014"); rows = pg.evaluate("document.querySelectorAll('#plist > details').length")
+        return rows == 10 and "2014/15" in pg.inner_text("#psec") and not errs, (rows, errs[:2])
+    check(I_, "An older season (2014/15) lists 10 players", i_hist)
+    def i_hist_replace():
+        errs.clear(); nav(f"replace-{CR}~2019"); return pg.evaluate("$('#rpvalbox').hidden") and pg.evaluate("document.querySelectorAll('#rplist > details').length") > 0 and not errs, errs[:2]
+    check(I_, "Replace in a season without market values hides the value filter", i_hist_replace)
     def i_phone():
         ph = br.new_page(viewport={"width": 360, "height": 800}); ph.goto(URL + f"#player-{CR}~2025"); ph.wait_for_timeout(700)
         w1 = ph.evaluate("document.documentElement.scrollWidth"); ph.goto(URL + f"#replace-{CR}~2026"); ph.wait_for_timeout(700)

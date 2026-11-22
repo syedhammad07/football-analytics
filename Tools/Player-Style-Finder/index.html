@@ -437,8 +437,10 @@ function matchRow(i, nb, k, open) {
 }
 // ---------- recent seasons: Premier League 2025/26 and 2026/27, compared on 16 shared stats ----------
 const poolOf = code => N.pools.find(x => x.key.startsWith(code));
-const finOpts = (p, cur) => [["2015", "2015/16 · Top 5 leagues (style)"], ...N.pools.map(x => [x.key.slice(0, 4), `${x.key} · Premier League${x.key === "2026/27" ? ", so far" : ""}`])]
-  .map(([c, l]) => `<option value="${c}"${c === cur ? " selected" : ""}${c !== "2015" && isGK(p) ? " disabled" : ""}>${esc(l)}</option>`).join("");
+const finOpts = (p, cur) => {
+  const o = (c, l) => `<option value="${c}"${c === cur ? " selected" : ""}${c !== "sb" && isGK(p) ? " disabled" : ""}>${esc(l)}</option>`;
+  return `<optgroup label="Style model, 42 stats">${o("sb", "2015/16 · Top 5 leagues")}</optgroup><optgroup label="Premier League, 16 shared stats">${N.pools.slice().reverse().map(x => o(x.key.slice(0, 4), `${x.key} · Premier League${x.key === "2026/27" ? ", so far" : ""}`)).join("")}</optgroup>`;
+};
 const nowQ = p => p.sea ? N.seasons[p.i - P.length] : N.base[p.i];
 const nowV = p => p.sea ? N.seasons_v[p.i - P.length] : N.base_v[p.i];
 function nowMatches(p, pool, filt = () => true, k = 10) {
@@ -473,7 +475,7 @@ const setHash = h => history.replaceState(null, "", "#" + h);
 pages.player = (arg) => {
   const [ia, fa] = (arg || "").split("~");
   const p = ALL[+ia]; if (!p) return notFound();
-  const st = { lg: "All", same: false, fin: fa && poolOf(fa) && !isGK(p) ? fa : "2015", pos: "All" };
+  const st = { lg: "All", same: false, fin: fa && poolOf(fa) && !isGK(p) ? fa : "sb", pos: "All" };
   const best = neighbours(p.i, () => true, 1)[0];
   const team = p.sea ? null : T.teams.find(t => t.t === p.t);
   const others = BYID[p.id];
@@ -499,13 +501,13 @@ pages.player = (arg) => {
   const showWhy = el => {
     if (!el) { $("#pwhy").innerHTML = `<p class="small muted">No match selected.</p>`; return; }
     app.querySelectorAll("#plist details").forEach(d => d.classList.toggle("sel", d === el));
-    const pool = st.fin === "2015" ? null : poolOf(st.fin);
+    const pool = st.fin === "sb" ? null : poolOf(st.fin);
     const b = pool ? pool.players[+el.dataset.j] : P[+el.dataset.j];
     app.querySelector(".col3 .sec .k").textContent = `III. Why they match: ${lastName(b.n)}`;
     $("#pwhy").innerHTML = pool ? nowWhy(p, { b, s: +el.dataset.s, close: nowMatches(p, pool, q => q === b, 1)[0].close }, pool) : whyHtml(p, b, +el.dataset.s);
   };
   const filters = () => {
-    const pool = st.fin === "2015" ? null : poolOf(st.fin);
+    const pool = st.fin === "sb" ? null : poolOf(st.fin);
     $("#psec").innerHTML = pool ? sec(`II. Similar stats, ${pool.key} Premier League`, "Stat match / 100") : sec(p.sea ? "II. Plays most like, in 2015/16" : "II. Plays most like", isGK(p) ? "Goalkeepers only" : "Match / 100");
     $("#pfilt").innerHTML = pool
       ? ["All", "Defender", "Midfielder", "Forward"].map(l => `<button class="pill${l === st.pos ? " on" : ""}" data-pos="${l}">${l === "All" ? "All positions" : l + "s"}</button>`).join("")
@@ -513,7 +515,7 @@ pages.player = (arg) => {
     $("#pnote").innerHTML = pool ? `${NOWNOTE()} ${pool.key === "2026/27" ? `2026/27 is the season so far: ${pool.rounds} rounds, players with ${pool.floor}+ minutes.` : `Players with ${pool.floor}+ minutes.`}` : `Match = distance in the style space built from ${featsOf(p).length} stats. “% alike” counts stats within half a standard deviation and can disagree with the match score.`;
   };
   const draw = () => {
-    const pool = st.fin === "2015" ? null : poolOf(st.fin);
+    const pool = st.fin === "sb" ? null : poolOf(st.fin);
     if (pool) {
       const nb = nowMatches(p, pool, b => st.pos === "All" || b.p === st.pos, 10);
       $("#plist").innerHTML = nb.map((x, k) => nowRow(p, x, k, k === 0, pool)).join("") || `<div class="empty">No players match these filters.</div>`;
@@ -528,7 +530,7 @@ pages.player = (arg) => {
     if (b.dataset.pos) st.pos = b.dataset.pos; else st.lg = b.dataset.l;
     $("#pfilt").querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); draw(); });
   $("#pfilt").addEventListener("change", e => { if (e.target.id === "psame") { st.same = e.target.checked; draw(); } });
-  $("#pfin").addEventListener("change", e => { st.fin = e.target.value; setHash(`player-${p.i}${st.fin === "2015" ? "" : "~" + st.fin}`); filters(); draw(); });
+  $("#pfin").addEventListener("change", e => { st.fin = e.target.value; setHash(`player-${p.i}${st.fin === "sb" ? "" : "~" + st.fin}`); filters(); draw(); });
   filters();
   app.querySelectorAll(".seatab tr[data-i]").forEach(tr => tr.addEventListener("click", e => { if (!e.target.closest("a")) go("player-" + tr.dataset.i); }));
   draw();
@@ -592,7 +594,7 @@ pages.replace = (arg) => {
   const [ia, fa] = (arg || "").split("~");
   let i = +ia; if (!(i in ALL)) i = P.findIndex(p => p.n === "Mesut Özil");
   const p = ALL[i];
-  const st = { lgs: new Set(LEAGUES), excl: true, same: false, minm: 900, fin: fa && poolOf(fa) && !isGK(p) ? fa : "2015", pos: "All", maxv: 0 };
+  const st = { lgs: new Set(LEAGUES), excl: true, same: false, minm: 900, fin: fa && poolOf(fa) && !isGK(p) ? fa : "sb", pos: "All", maxv: 0 };
   app.innerHTML = `<section class="sheet">
     <div class="shead"><div><span class="k acc">Replace a player</span><h1 style="margin-top:6px">Who could replace ${esc(p.n)}${BYID[p.id].length > 1 || p.sea ? ` <span class="muted">${esc(sShort(p))}</span>` : ""}?</h1><p class="meta">${p.sea ? `The 2015/16 players who play most like his ${esc(sLabel(p))} season. ` : "The closest styles at other clubs. "}Open a row to see why.</p>${seasonStrip(p, "replace")}</div></div>
     <div class="cols c2w">
@@ -604,21 +606,23 @@ pages.replace = (arg) => {
         <label class="tog"><input type="checkbox" id="rpex" checked> Exclude ${esc(p.t)}</label>
         <label class="tog sb"><input type="checkbox" id="rpsame"> Same role only</label>
         <div class="stack pl" style="gap:8px"><span class="k">Position</span><div class="row" id="rppos">${["All", "Defender", "Midfielder", "Forward"].map(l => `<button class="pill${l === "All" ? " on" : ""}" data-pos="${l}">${l === "All" ? "All" : l + "s"}</button>`).join("")}</div></div>
-        <div class="stack pl" style="gap:6px"><label class="k" for="rpval">Market value up to</label><select id="rpval">${[[0, "Any"], [100e6, "€100m"], [50e6, "€50m"], [25e6, "€25m"], [10e6, "€10m"], [5e6, "€5m"]].map(([v, l]) => `<option value="${v}">${l}</option>`).join("")}</select></div>
+        <div class="stack pl" id="rpvalbox" style="gap:6px"><label class="k" for="rpval">Market value up to</label><select id="rpval">${[[0, "Any"], [100e6, "€100m"], [50e6, "€50m"], [25e6, "€25m"], [10e6, "€10m"], [5e6, "€5m"]].map(([v, l]) => `<option value="${v}">${l}</option>`).join("")}</select></div>
         <div class="stack" style="gap:6px"><label class="k" for="rpmin">Minimum minutes · <span id="rpminv" class="acc">900</span></label><input type="range" id="rpmin" min="900" max="3000" step="100" value="900"></div>
       </div>
       <div>${sec("II. Best replacements", `<span id="rpcount"></span>`)}<div id="rplist"></div><p class="xs muted" style="margin-top:10px" id="rpnote"></p></div>
     </div></section>`;
   searchBox($("#rpq"), q => go("replace-" + q.i), "Choose another player");
   const mode = () => {
-    const pool = st.fin === "2015" ? null : poolOf(st.fin);
+    const pool = st.fin === "sb" ? null : poolOf(st.fin);
     app.querySelectorAll(".sb").forEach(e => e.hidden = !!pool); app.querySelectorAll(".pl").forEach(e => e.hidden = !pool);
+    const hasVal = !!pool && pool.players.some(b => b.mv != null);
+    $("#rpvalbox").hidden = !hasVal; if (!hasVal) { st.maxv = 0; $("#rpval").value = "0"; }
     const r = $("#rpmin"), lo = pool ? pool.floor : 900, hi = pool ? Math.max(...pool.players.map(b => b.min)) : 3000;
     r.min = lo; r.max = hi; r.step = pool && pool.key === "2026/27" ? 45 : 100; st.minm = Math.min(Math.max(st.minm, lo), hi); if (pool) st.minm = lo; r.value = st.minm; $("#rpminv").textContent = st.minm.toLocaleString();
-    $("#rpnote").innerHTML = pool ? `${NOWNOTE()} Values: Transfermarkt, via this repo’s Scout Finder data.` : "";
+    $("#rpnote").innerHTML = pool ? `${NOWNOTE()}${hasVal ? " Values: Transfermarkt, via this repo’s Scout Finder data." : ""}` : "";
   };
   const draw = () => {
-    const pool = st.fin === "2015" ? null : poolOf(st.fin);
+    const pool = st.fin === "sb" ? null : poolOf(st.fin);
     if (pool) {
       const nb = nowMatches(p, pool, b => (!st.excl || b.t !== p.t) && (st.pos === "All" || b.p === st.pos) && (!st.maxv || (b.mv != null && b.mv <= st.maxv)) && b.min >= st.minm, 15);
       $("#rpcount").textContent = `${nb.length} shown`;
@@ -629,7 +633,7 @@ pages.replace = (arg) => {
     $("#rpcount").textContent = `${nb.length} shown`;
     $("#rplist").innerHTML = nb.map((x, k) => matchRow(i, x, k, false).replace(' class="match sel"', ' class="match"')).join("") || `<div class="empty">No players match these filters. Try more leagues or fewer minutes.</div>`;
   };
-  $("#rpfin").addEventListener("change", e => { st.fin = e.target.value; setHash(`replace-${i}${st.fin === "2015" ? "" : "~" + st.fin}`); mode(); draw(); });
+  $("#rpfin").addEventListener("change", e => { st.fin = e.target.value; setHash(`replace-${i}${st.fin === "sb" ? "" : "~" + st.fin}`); mode(); draw(); });
   $("#rppos").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; st.pos = b.dataset.pos; $("#rppos").querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); draw(); });
   $("#rpval").addEventListener("change", e => { st.maxv = +e.target.value; draw(); });
   $("#rplg").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; const l = b.dataset.l;
@@ -819,7 +823,7 @@ pages.method = () => {
       ${part("03", "Checks", `<ul><li><b>Split-half test.</b> Each player’s stats were rebuilt from odd and even matches separately (${v.pool} players). From one half, his other half is his closest match ${v.top1}% of the time and in his top 5 ${v.top5}% of the time (chance: 0.1% and 0.5%). Median rank: ${v.median_rank}.</li><li><b>Role stability.</b> The two halves land in the same role ${v.role_agree}% of the time.</li><li><b>Team leakage.</b> ${v.team_leak}% of top-5 matches are team-mates, against ${v.team_leak_random}% by chance.</li><li><b>How many roles?</b> Stability fell below 0.7 beyond 2 roles per position (5 for attackers), so style within a position is mostly a spectrum and the similarity search is the main tool.</li></ul>`)}
       ${part("04", "Goalkeepers", `<p>Keepers get their own ${GF.length} stats and their own style space, and are only compared with other keepers: shot-stopping (save %, goals prevented against xG, xG per shot faced), distribution (passes, completion, pass and goal-kick length, long launches, short goal kicks), sweeping, and dealing with crosses.</p><p>Two styles are stable (stability ${g.stability}): ball-playing and long-ball keepers. In the split-half test a keeper’s other half is in his top 5 ${g.top5}% of the time (chance ${g.random_top5}%), and ${g.role_agree}% keep the same style in both halves. That is weaker than for outfield players: only ${g.n} keepers, and shot-stopping swings a lot over half a season.</p>`)}
       ${part("05", "Other seasons", `<p>StatsBomb’s free data covers every club only in 2015/16. For a few clubs it also has every league match of other seasons: Barcelona 2004/05 to 2020/21, Arsenal 2003/04, Paris Saint-Germain 2021/22 and 2022/23, and Bayer Leverkusen 2023/24. Those clubs’ players with 900+ minutes get a profile for each season (${SP.filter(p => p.k === "club").length} profiles).</p><p>The model is <b>not</b> refitted: the same standardisation, PCA and role centres from 2015/16 are applied unchanged, so a 2008/09 season and a 2015/16 season sit in the same space and can be matched. Matches for a past season are always 2015/16 players. Every 2015/16 player also gets an August–December and a January–May profile (600+ minutes each, 450 for keepers).</p><p>Check: a Barcelona player’s 2014/15 or 2016/17 profile finds his own 2015/16 profile in its top 5 ${S.check.other_seasons.adjacent_top5}% of the time (median rank ${S.check.other_seasons.adjacent_median_rank} of ${S.check.other_seasons.pool.toLocaleString()}).</p>`)}
-      ${part("06", "Recent seasons", `<p>StatsBomb has no free data for recent seasons, so “Find in 2025/26” and “2026/27” use the Premier League’s own season stats (Opta), already kept in this repo for Scout Finder: ${N.pools.map(x => `${x.players.length} outfield players in ${x.key} (${x.floor}+ minutes${x.key === "2026/27" ? `, ${x.rounds} rounds so far` : ""})`).join(" and ")}.</p><p>The two providers count some things differently, so players are compared on the ${N.stats.length} stats both record (${N.stats.map(x => x.label.replace(" per 90", "").replace(" (poss. adj.)", "").toLowerCase()).join(", ")}), each turned into a <b>percentile within its own season</b>: a 2015/16 profile against the 2015/16 players, a Premier League player against his own season. Stat match = 100 − the average gap in percentile points.</p><p>Check: Opta’s 2015/16 numbers exist for ${N.check.of} Premier League midfielders. Matching ${N.check.n} of them to their StatsBomb profiles, the StatsBomb profile picks out the same player’s Opta profile first ${N.check.top1}% of the time and in the top 5 ${N.check.top5}% of the time (chance ${N.check.chance_top5}%). Touches in the box were left out because the two providers disagree on them.</p>`)}
+      ${part("06", "Recent seasons", `<p>StatsBomb has no free data for recent seasons, so the “Find in” Premier League seasons use the league’s own season stats (Opta): ${N.pools.length} seasons from ${N.pools[0].key} to ${N.pools[N.pools.length - 1].key}, ${N.pools.reduce((a, x) => a + x.players.length, 0).toLocaleString()} player-seasons in all (900+ minutes; 450+ for 2026/27, ${N.pools[N.pools.length - 1].rounds} rounds so far). 2025/26 and 2026/27 come from this repo’s Scout Finder data, with market values; 2014/15 to 2024/25 were collected from the Premier League’s stats site.</p><p>The two providers count some things differently, so players are compared on the ${N.stats.length} stats both record (${N.stats.map(x => x.label.replace(" per 90", "").replace(" (poss. adj.)", "").toLowerCase()).join(", ")}), each turned into a <b>percentile within its own season</b>: a 2015/16 profile against the 2015/16 players, a Premier League player against his own season. Stat match = 100 − the average gap in percentile points.</p><p>Check: Opta’s 2015/16 numbers exist for ${N.check.of} Premier League midfielders. Matching ${N.check.n} of them to their StatsBomb profiles, the StatsBomb profile picks out the same player’s Opta profile first ${N.check.top1}% of the time and in the top 5 ${N.check.top5}% of the time (chance ${N.check.chance_top5}%). Touches in the box were left out because the two providers disagree on them.</p>`)}
       ${part("07", "Limits", `<ul><li>Full league coverage is for one season, 2015/16; other seasons cover one club, and many of these players have since retired or changed role.</li><li>Recent seasons use 16 shared stats and Premier League players only, so they match output and habits, not the full style model, and say nothing about level.</li><li>A past season is matched against 2015/16 players, not against the players of its own year, and a player at a dominant club like Barcelona can look different from anyone in a normal team.</li><li>Style is partly the team’s system. Only defensive actions are adjusted for possession.</li><li>StatsBomb’s free data has no second or third divisions, and its other seasons cover a single club each, so these four leagues in 2015/16 are what is possible. In 2015/16 the Bundesliga has only 34 matches; Ligue 1 is missing 3.</li><li>“Goals prevented” uses pre-shot xG, because the free data has no post-shot xG.</li><li>“% alike” and the match score can disagree: the score weights the stats that best separate styles.</li></ul>`)}
       ${part("08", "Data and credit", `<p>All data comes from the <a class="acc" href="https://github.com/statsbomb/open-data">StatsBomb open data</a> repository and is used under the StatsBomb Public Data User Agreement. The raw data is not redistributed; this site shows derived statistics and analysis only. Analysis by Syed Hammad Ovais; not StatsBomb’s views.</p><span class="sb" style="align-self:flex-start"><img src="img/statsbomb-logo.png" alt="StatsBomb"></span>`)}
     </div></section>`;
