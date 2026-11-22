@@ -61,7 +61,7 @@ By role the correlation is strongest for central midfielders (0.63) and weakest 
 | Goalkeeper save data, 2024/25 | SofaScore |
 | Transfers and fees | [Transfermarkt](https://www.transfermarkt.com) files and the [ewenme/transfers](https://github.com/ewenme/transfers) dataset (through 2022) |
 
-The CSVs used to build the page are in [`data/`](data/). All data belongs to its original providers and is used here for non-commercial analysis.
+The signings and graded-signings CSVs and the other four leagues' stats are in [`data/`](data/). The Premier League's own player statistics are **not** included in this repository (the league's terms don't allow redistributing them), so the Premier League stats files are left out; the page shows the scores and season figures built from them. All data belongs to its original providers and is used here for non-commercial analysis.
 
 ## Limits
 
@@ -86,7 +86,7 @@ A GitHub Action in `pipeline/.github/refresh-reminder.yml` can open a reminder i
 ```
 Transfer-Report-Card/
 ├── index.html        ← the whole page (data inside)
-├── data/             ← stats, signings and graded signings, 2017 to 2025
+├── data/             ← signings and graded signings (all leagues), other-league stats, 2017 to 2025
 ├── pipeline/         ← scripts, page template, refresh guide
 ├── backtest/         ← backtest script, results and report
 ├── examples/         ← share-image examples
