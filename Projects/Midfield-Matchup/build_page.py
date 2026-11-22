@@ -1,6 +1,6 @@
 """Builds index.html for Midfield Matchup from the Premier League midfielder data.
 
-Run from the repo root:  python Tools/Midfield-Matchup/build_page.py
+Run from the repo root:  python Projects/Midfield-Matchup/build_page.py
 """
 import json
 from pathlib import Path

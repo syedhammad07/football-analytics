@@ -26,14 +26,14 @@ jobs:
       - name: Install
         run: pip install "pandas>=2.2" "numpy>=1.26" requests
       - name: Fetch this season's stats
-        run: python Tools/Midfield-Matchup/fetch_current_season.py
+        run: python Projects/Midfield-Matchup/fetch_current_season.py
       - name: Rebuild the page
-        run: python Tools/Midfield-Matchup/build_page.py
+        run: python Projects/Midfield-Matchup/build_page.py
       - name: Commit if anything changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add Players/Yaya-Toure-Man-City/data/external/ Tools/Midfield-Matchup/index.html
+          git add Players/Yaya-Toure-Man-City/data/external/ Projects/Midfield-Matchup/index.html
           if git diff --cached --quiet; then
             echo "No new stats since the last update."
           else

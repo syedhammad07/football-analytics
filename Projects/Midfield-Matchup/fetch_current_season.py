@@ -5,9 +5,9 @@ Writes, in Players/Yaya-Toure-Man-City/data/external/:
   pl_team_possession.csv       this season's rows are replaced; earlier seasons are left alone
 
 Run from the repo root:
-  python Tools/Midfield-Matchup/fetch_current_season.py            # fetch from the Premier League stats API
-  python Tools/Midfield-Matchup/fetch_current_season.py --season 2026
-  python Tools/Midfield-Matchup/fetch_current_season.py --from-dump dump.txt   # rows already fetched in a browser
+  python Projects/Midfield-Matchup/fetch_current_season.py            # fetch from the Premier League stats API
+  python Projects/Midfield-Matchup/fetch_current_season.py --season 2026
+  python Projects/Midfield-Matchup/fetch_current_season.py --from-dump dump.txt   # rows already fetched in a browser
 
 The GitHub Action in .github/workflows/update-midfield-matchup.yml runs this every week, then build_page.py.
 """

@@ -24,7 +24,7 @@ def matches(cid, season=27):
 
 H = os.path.dirname(os.path.abspath(__file__))
 D = os.path.join(H, "data")
-OUT = os.path.join(os.path.dirname(H), "data")  # Tools/Player-Style-Finder/data
+OUT = os.path.join(os.path.dirname(H), "data")  # Projects/Player-Style-Finder/data
 os.makedirs(OUT, exist_ok=True)
 
 ROLE_ID = ["Attackers:0", "Attackers:1", "Attackers:2", "Attackers:3", "Attackers:4", "Centre-backs:0", "Centre-backs:1",

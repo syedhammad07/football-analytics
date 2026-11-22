@@ -23,7 +23,7 @@ H = os.path.dirname(os.path.abspath(__file__))
 D = os.path.join(H, "data")
 TOOL = os.path.dirname(H)
 REPO = os.path.dirname(os.path.dirname(TOOL))
-SF = os.path.join(REPO, "Tools", "Scout-Finder", "data")
+SF = os.path.join(REPO, "Projects", "Scout-Finder", "data")
 SRC = os.path.join(H, "sources")
 EXT = os.path.join(REPO, "Players", "Yaya-Toure-Man-City", "data", "external")
 

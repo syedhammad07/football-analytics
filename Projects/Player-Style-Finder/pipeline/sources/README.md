@@ -1,7 +1,7 @@
 # Sources: Premier League season stats, 2014/15 to 2024/25
 
 Used by `cross_season.py` for the "Find in" Premier League seasons. The 2025/26 and 2026/27 files come from
-`Tools/Scout-Finder/data/` instead.
+`Projects/Scout-Finder/data/` instead.
 
 | File | What it holds |
 | --- | --- |
@@ -11,7 +11,7 @@ Used by `cross_season.py` for the "Find in" Premier League seasons. The 2025/26 
 `season` is the starting year: 2014 means 2014/15.
 
 **How it was collected (22 November 2026).** From the Premier League's own stats service (Opta data), the same
-one `Tools/Midfield-Matchup/fetch_current_season.py` uses:
+one `Projects/Midfield-Matchup/fetch_current_season.py` uses:
 
 - `v1/competitions/8/seasons/{season}/teams` for the clubs
 - `v2/competitions/8/seasons/{season}/teams/{team}/stats` for possession

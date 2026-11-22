@@ -239,7 +239,7 @@ So: not under-rated by the people who voted at the time. Under-rated, badly, by 
 
 While writing this, I kept wanting to check Yaya against "just one more" midfielder. So I built a tool for it: **Midfield Matchup (Premier League Edition)**. It puts two to four Premier League midfielders side by side, one season against another or whole careers, using the same official Opta numbers as this article, extended back to 1992/93 and up to the season being played now.
 
-**Try it here: [syedhammad07.github.io/football-analytics/Tools/Midfield-Matchup](https://syedhammad07.github.io/football-analytics/Tools/Midfield-Matchup/)**
+**Try it here: [syedhammad07.github.io/football-analytics/Projects/Midfield-Matchup](https://syedhammad07.github.io/football-analytics/Projects/Midfield-Matchup/)**
 
 ![Midfield Matchup: Yaya Touré 2013/14 against Kevin De Bruyne 2019/20](../reports/figures/12_midfield_matchup.png)
 
@@ -247,9 +247,9 @@ The tool also gave me one more piece of evidence. It sorts every midfielder into
 
 A few matchups to start with:
 
-- **[Yaya 2013/14 v De Bruyne 2019/20](https://syedhammad07.github.io/football-analytics/Tools/Midfield-Matchup/#14664-2013-v-61366-2019):** City's two best midfield seasons. The tool's verdict: De Bruyne is the better 10, Yaya the better 8.
-- **[Yaya 2013/14 v Lampard 2009/10 v Gerrard 2008/09](https://syedhammad07.github.io/football-analytics/Tools/Midfield-Matchup/#14664-2013-v-2051-2009-v-1814-2008):** three of the great goalscoring midfield seasons. Yaya leads the most stats of the three.
-- **[Yaya 2013/14 v Rodri 2023/24](https://syedhammad07.github.io/football-analytics/Tools/Midfield-Matchup/#14664-2013-v-220566-2023):** the engine of City's first title era against the engine of its latest.
+- **[Yaya 2013/14 v De Bruyne 2019/20](https://syedhammad07.github.io/football-analytics/Projects/Midfield-Matchup/#14664-2013-v-61366-2019):** City's two best midfield seasons. The tool's verdict: De Bruyne is the better 10, Yaya the better 8.
+- **[Yaya 2013/14 v Lampard 2009/10 v Gerrard 2008/09](https://syedhammad07.github.io/football-analytics/Projects/Midfield-Matchup/#14664-2013-v-2051-2009-v-1814-2008):** three of the great goalscoring midfield seasons. Yaya leads the most stats of the three.
+- **[Yaya 2013/14 v Rodri 2023/24](https://syedhammad07.github.io/football-analytics/Projects/Midfield-Matchup/#14664-2013-v-220566-2023):** the engine of City's first title era against the engine of its latest.
 
 ---
 

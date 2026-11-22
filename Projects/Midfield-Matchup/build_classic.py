@@ -6,7 +6,7 @@ Detailed Opta stats are only published from 2008/09, so this era has scoring out
 
 Input:  data/raw/epldata/ (a clone of github.com/pssguy/epldata) and data/external/pl_classic_goals_assists.csv
 Output: Players/Yaya-Toure-Man-City/data/external/pl_midfielders_classic_1992-2008.csv
-Run from the repo root:  python Tools/Midfield-Matchup/build_classic.py
+Run from the repo root:  python Projects/Midfield-Matchup/build_classic.py
 """
 import unicodedata
 from pathlib import Path
