@@ -1,0 +1,17 @@
+# Put this at .github/workflows/refresh-reminder.yml in the repo.
+# Opens an issue every 1 June with the refresh checklist.
+name: Transfer Report Card yearly refresh
+on:
+  schedule: [{cron: '0 8 1 6 *'}]
+  workflow_dispatch:
+permissions: {issues: write}
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.create({...context.repo,
+              title: `Transfer Report Card: refresh for ${new Date().getFullYear()-1}/${String(new Date().getFullYear()).slice(2)}`,
+              body: 'Follow Projects/Transfer-Report-Card/pipeline/REFRESH.md: add new stats and transfers, run run_all.sh, update the backtest, publish.'});

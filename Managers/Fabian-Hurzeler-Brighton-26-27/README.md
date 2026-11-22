@@ -41,4 +41,4 @@ python scripts/bridge.py
 
 ## Data
 
-Premier League official player and team stats (Opta), summed per team and player; possession from the league's team table; summer 2026 transfers from [Scout Finder](../../Tools/Scout-Finder/). As of 15 November 2026.
+Premier League official player and team stats (Opta), summed per team and player; possession from the league's team table; summer 2026 transfers from [Scout Finder](../../Projects/Scout-Finder/). As of 15 November 2026.

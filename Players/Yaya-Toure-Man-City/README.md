@@ -6,7 +6,7 @@ Yaya Touré's eight seasons at Manchester City, compared with every Premier Leag
 
 **📖 [Read the report](docs/ARTICLE.md)** ([PDF](reports/Yaya_Toure_article.pdf)) · closes repo issue #10 ("flag under-rated players with a simple model")
 
-**⚖️ [Compare him yourself in Midfield Matchup](https://syedhammad07.github.io/football-analytics/Tools/Midfield-Matchup/#14664-2013-v-61366-2019)**, the live comparison tool that grew out of this project.
+**⚖️ [Compare him yourself in Midfield Matchup](https://syedhammad07.github.io/football-analytics/Projects/Midfield-Matchup/#14664-2013-v-61366-2019)**, the live comparison tool that grew out of this project.
 
 [![Scorer and passer](reports/figures/03_scorer_and_passer.png)](docs/ARTICLE.md)
 

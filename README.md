@@ -32,13 +32,14 @@ Projects are grouped by competition. Each project has its own folder with an art
 | --- | --- | --- |
 | 🩵 [**Yaya Touré: Was He Under-Rated?**](Players/Yaya-Toure-Man-City/) | Was Yaya Touré under-rated, and who really was? | 1,629 midfielder-seasons · under-rated model · 11 charts · [report](Players/Yaya-Toure-Man-City/docs/ARTICLE.md) |
 
-### 🛠️ [Tools](Tools/)
+### 🛠️ [Projects](Projects/)
 
 | Tool | What it does | Highlights |
 | --- | --- | --- |
-| ⚖️ [**Midfield Matchup (Premier League Edition)**](Tools/Midfield-Matchup/) | Compare two to four Premier League midfielders, by season or whole career, with weekly-updated role leaderboards | 4,530 player-seasons · 1992/93 to now · 24 stats from 2008/09 · [**open the tool**](https://syedhammad07.github.io/football-analytics/Tools/Midfield-Matchup/) |
-| 🔎 [**Scout Finder**](Tools/Scout-Finder/) | Who plays like a star, for less? Search the Premier League or all of Europe's top five leagues, filter by age and price | 2,474 players in five leagues, 2025/26 · Premier League 2026/27 so far · 27 stats · Transfermarkt values · clubs as of summer 2026 · [**open the tool**](https://syedhammad07.github.io/football-analytics/Tools/Scout-Finder/) |
-| 🧬 [**Player Style Finder**](Tools/Player-Style-Finder/) | Find footballers who play alike and see why each match works, with machine learning on StatsBomb event data | 1,350 players incl. 99 goalkeepers · Premier League, La Liga, Serie A, Ligue 1, 2015/16 · 284 past seasons (Barcelona 2004–21, Arsenal, PSG, Leverkusen) · find similar numbers in any Premier League season 2014/15–2026/27 · 42 style stats · 13 roles · team styles · role map · [**open the tool**](https://syedhammad07.github.io/football-analytics/Tools/Player-Style-Finder/) |
+| 🧾 [**Transfer Report Card**](Projects/Transfer-Report-Card/) | Was the signing worth the fee? Grades every paid transfer in the top five leagues against what that fee usually buys | 5,628 signings, 3,510 graded · 2017/18 to now · backtest r = 0.50 |
+| ⚖️ [**Midfield Matchup (Premier League Edition)**](Projects/Midfield-Matchup/) | Compare two to four Premier League midfielders, by season or whole career, with weekly-updated role leaderboards | 4,530 player-seasons · 1992/93 to now · 24 stats from 2008/09 · [**open the tool**](https://syedhammad07.github.io/football-analytics/Projects/Midfield-Matchup/) |
+| 🔎 [**Scout Finder**](Projects/Scout-Finder/) | Who plays like a star, for less? Search the Premier League or all of Europe's top five leagues, filter by age and price | 2,474 players in five leagues, 2025/26 · Premier League 2026/27 so far · 27 stats · Transfermarkt values · clubs as of summer 2026 · [**open the tool**](https://syedhammad07.github.io/football-analytics/Projects/Scout-Finder/) |
+| 🧬 [**Player Style Finder**](Projects/Player-Style-Finder/) | Find footballers who play alike and see why each match works, with machine learning on StatsBomb event data | 1,350 players incl. 99 goalkeepers · Premier League, La Liga, Serie A, Ligue 1, 2015/16 · 284 past seasons (Barcelona 2004–21, Arsenal, PSG, Leverkusen) · find similar numbers in any Premier League season 2014/15–2026/27 · 42 style stats · 13 roles · team styles · role map · [**open the tool**](https://syedhammad07.github.io/football-analytics/Projects/Player-Style-Finder/) |
 
 ## Highlights
 
@@ -90,9 +91,10 @@ football-analytics/
 ├── Players/                           ← projects about one player
 │   ├── README.md
 │   └── Yaya-Toure-Man-City/            ← was Yaya Touré under-rated? report + model
-├── Tools/                             ← interactive pages
+├── Projects/                          ← interactive pages and tools
 │   ├── Midfield-Matchup/               ← compare any two Premier League midfielders
 │   ├── Scout-Finder/                   ← find a cheaper player with the same numbers
+│   ├── Transfer-Report-Card/           ← was the signing worth the fee? (page, pipeline, backtest)
 │   └── Player-Style-Finder/            ← players who play alike, with ML on StatsBomb data (site, pipeline, tests)
 ├── src/football_analytics/            ← shared code
 │   ├── data.py                        ← download StatsBomb open data

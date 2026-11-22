@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Transfer Report Card</title>
+<meta name="description" content="Was the signing worth the fee? Report cards for paid transfers into the Premier League and Europe's other top four leagues (all from 2017/18), summer and winter windows, judged after a full season at the new club.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap">
+<style>
+:root{--bg:#000;--surface:#0B1011;--raised:#111A1A;--ink:#E9F5F3;--muted:#8DA6A3;--line:#1B2B2A;--track:#142120;--t:#14C8B4;--good:#A3E635;--bad:#FF7A7A;--mid:#F5C542;--over:#FF9F43;--display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;--body:"Barlow","Segoe UI",system-ui,sans-serif;--r:12px;color-scheme:dark}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.5 var(--body);font-variant-numeric:tabular-nums;padding:28px max(16px,env(safe-area-inset-right,0px)) 56px max(16px,env(safe-area-inset-left,0px))}
+.wrap{max-width:1000px;margin:0 auto;display:grid;gap:18px}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:.01em;line-height:1.05;margin:0}
+h1{font-size:clamp(38px,7vw,60px)}h1 span{color:var(--t)}h2{font-size:24px}
+.eyebrow{font:600 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.lede{color:var(--muted);max-width:66ch;margin:8px 0 0;font-size:16px}.lede b{color:var(--ink);font-weight:600}
+a{color:var(--t)}button,input,select{font:inherit;color:inherit}:focus-visible{outline:2px solid var(--t);outline-offset:2px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}.tabs button{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 16px;cursor:pointer;font-weight:600}
+.tabs button[aria-pressed=true]{background:var(--t);border-color:var(--t);color:#001311}
+.bar{display:grid;grid-template-columns:minmax(0,2fr) repeat(4,minmax(0,1fr));gap:10px}.bar.b5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.bar input,.bar select{width:100%;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:10px 12px;min-height:44px}
+.bar label{display:grid;gap:4px;font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.04em}
+@media(max-width:700px){.bar,.bar.b5{grid-template-columns:1fr 1fr}.bar label:first-child{grid-column:1/-1}}
+.list{display:grid;gap:12px}
+.rc{padding:16px 18px;display:grid;gap:12px}.rc>*{min-width:0}
+.rc header{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:flex-start}
+.rc h3{font-size:30px}.sub{color:var(--muted);font-size:14px}
+.verdict{font:700 20px/1 var(--display);letter-spacing:.03em;text-transform:uppercase;padding:7px 12px;border-radius:8px;border:1px solid currentColor;white-space:nowrap}
+.v-good{color:var(--good)}.v-bad{color:var(--bad);background:rgba(255,122,122,.12)}.v-mid{color:var(--mid)}.v-na{color:var(--muted)}.v-over{color:var(--over)}.v-great{color:#0b1400;background:var(--good);border-color:var(--good)}.v-bargain{color:#001311;background:var(--t);border-color:var(--t)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.k{background:var(--raised);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.k small{display:block;color:var(--muted);font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase}.k b{font:700 26px/1.1 var(--display)}
+.track{position:relative;height:10px;border-radius:99px;background:var(--track);margin:22px 0 6px}
+.track .fill{position:absolute;left:0;top:0;bottom:0;border-radius:99px;background:var(--t);opacity:.85}
+.track .band{position:absolute;top:-2px;bottom:-2px;border-radius:4px;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.35)}
+.track .exp{position:absolute;top:-5px;width:3px;height:20px;background:var(--ink);border-radius:2px}
+.track span{position:absolute;top:-22px;font-size:11px;color:var(--muted);transform:translateX(-50%);white-space:nowrap}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:2px 8px;border-radius:99px;border:1px solid var(--line);color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td.n,th.n{text-align:right}tr.row{cursor:pointer}tr.row:hover td{background:var(--raised)}
+.tablewrap{overflow-x:auto}#pClubs,#pCompare{grid-template-columns:minmax(0,1fr)}
+.note{color:var(--muted);font-size:13px;max-width:80ch}.note b{color:var(--ink)}
+.btn{background:var(--raised);border:1px solid var(--line);border-radius:8px;padding:6px 12px;cursor:pointer;font-weight:600}
+.empty{padding:28px;text-align:center;color:var(--muted)}
+.why{border-top:1px solid var(--line);padding-top:12px;display:grid;gap:10px}
+.why h4{margin:0;font:700 18px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--t)}
+.why{grid-template-columns:minmax(0,1fr)}.rc{grid-template-columns:minmax(0,1fr)}.why>*{min-width:0}.why p{margin:0;font-size:14px;max-width:78ch}.why p b{font-weight:600}
+.why table{font-size:13px}.why td small{color:var(--muted);display:block}
+.pcl{font-weight:700}.rd-good{color:var(--good);font-weight:600}.rd-bad{color:var(--bad);font-weight:600}.rd-na{color:var(--muted)}
+details{padding:14px 18px}summary{cursor:pointer;font-weight:600}details p{color:var(--muted);margin:8px 0 0}
+.chip{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:5px 12px;cursor:pointer;color:inherit;font:inherit;font-size:13px}
+#pres .row{cursor:pointer}
+.cmpgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:700px){.cmpgrid{grid-template-columns:1fr}}
+.cmpslot{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px;display:grid;gap:8px;align-content:start}.cmpslot label{display:grid;gap:4px;font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.04em}.cmpslot input{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:10px 12px;min-height:44px}
+.pick{display:block;width:100%;text-align:left;border-radius:10px;margin-bottom:6px}.pick small{color:var(--muted)}
+.cmpt td:first-child,.cmpt th:first-child{color:var(--muted);font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;width:24%}.cmpt td small{display:block;color:var(--muted);font-size:12px}
+#cout .row td{cursor:pointer}
+:focus-visible{outline:2px solid var(--t);outline-offset:2px}tr.row:focus-visible{outline-offset:-2px}
+.few{display:block;color:var(--mid);font-size:11px}
+#pres td small{display:block;color:var(--muted);font-size:11px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+ <div class="eyebrow">Football analytics · Projects</div>
+ <h1>Transfer <span>Report Card</span></h1>
+ <p class="lede">Was the signing worth the fee? Every <b>paid transfer, summer and winter windows</b>, judged only after a <b>full season at the new club</b>, against what that fee usually buys. Two sections: the <b>Premier League</b>, and <b>La Liga, Serie A, the Bundesliga and Ligue 1</b>, all from summer 2017, the first season detailed stats exist for all five leagues. The <b>Player cards</b> tab covers every player in each section.</p>
+</header>
+<div class="tabs" id="secs" role="group" aria-label="Section"><button id="sPL" aria-pressed="true">Premier League · from 2017/18</button><button id="sRest" aria-pressed="false">Rest of the top five · from 2017/18</button></div>
+<div class="tabs" role="group" aria-label="View"><button id="tSearch" aria-pressed="true">Look up a signing</button><button id="tBoard" aria-pressed="false">Best and worst value</button><button id="tPlayers" aria-pressed="false">Player cards</button><button id="tCompare" aria-pressed="false">Compare</button><button id="tClubs" aria-pressed="false">Clubs</button></div>
+<section id="pSearch" class="grid1" style="display:grid;gap:14px">
+ <div class="bar">
+  <label>PLAYER<input id="q" type="search" placeholder="e.g. Baleba, Rice, Raya" autocomplete="off"></label>
+  <label>LEAGUE<select id="fl"><option value="">All</option></select></label>
+  <label>SEASON JOINED<select id="fy"><option value="">All</option></select></label>
+  <label>POSITION<select id="fp"><option value="">All</option><option value="GK">GK</option><option value="DF">CB</option><option value="FB">FB (full-back)</option><option value="DM">DM (6)</option><option value="CM">CM (8)</option><option value="AM">AM (10)</option><option value="FW">FW</option></select></label>
+  <label>VERDICT<select id="fv"><option value="">All</option></select></label>
+ </div>
+ <div id="res" class="list"></div>
+</section>
+<section id="pPlayers" style="display:none;gap:14px">
+ <div class="bar b5">
+  <label style="grid-column:span 2">PLAYER<input id="pq" type="search" placeholder="Any player in this section" autocomplete="off"></label>
+  <label>ROLE<select id="pr"><option value="">All</option><option value="GK">GK</option><option value="DF">CB</option><option value="FB">FB (full-back)</option><option value="DM">DM (6)</option><option value="CM">CM (8)</option><option value="AM">AM (10)</option><option value="FW">FW</option></select></label>
+  <label>STATUS<select id="pa"><option value="">All players</option><option value="1">Still playing in the top five (2025/26)</option></select></label>
+  <label>CAREER MINUTES<select id="pm"><option value="3000">3,000+</option><option value="0">Any</option><option value="9000">9,000+</option><option value="20000">20,000+</option></select></label>
+ </div>
+ <div id="pres" class="list"></div>
+</section>
+<section id="pCompare" style="display:none;gap:14px">
+ <p class="note" style="margin:0">Pick two signings from this section to put side by side: fee, score, what the fee predicts, value and verdict.</p>
+ <div class="cmpgrid"><div class="cmpslot"><label>FIRST SIGNING<input id="cqa" type="search" placeholder="Search a player" autocomplete="off"></label><div id="cra"></div></div><div class="cmpslot"><label>SECOND SIGNING<input id="cqb" type="search" placeholder="Search a player" autocomplete="off"></label><div id="crb"></div></div></div>
+ <div id="cmpout" aria-live="polite"></div>
+</section>
+<section id="pClubs" style="display:none;gap:14px">
+ <div class="bar b5" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+  <label>SORT BY<select id="cs"><option value="avg">Best average value</option><option value="avgw">Worst average value</option><option value="hit">Most good signings (%)</option><option value="miss">Most poor signings (%)</option><option value="n">Most signings</option><option value="spend">Biggest spend</option></select></label>
+  <label>MIN. GRADED SIGNINGS<select id="cm"><option value="3">3</option><option value="5" selected>5</option><option value="8">8</option><option value="12">12</option><option value="20">20</option></select></label>
+  <label>SIGNINGS FROM<select id="cy"><option value="0">All seasons</option></select></label>
+ </div>
+ <div id="cout" aria-live="polite"></div>
+</section>
+<section id="pBoard" style="display:none;gap:14px">
+ <div class="bar b5">
+  <label>SORT<select id="bs"><option value="best">Best value first</option><option value="worst">Worst value first</option></select></label>
+  <label>LEAGUE<select id="bl"><option value="">All</option></select></label>
+  <label>POSITION<select id="bp"><option value="">All</option><option value="GK">GK</option><option value="DF">CB</option><option value="FB">FB (full-back)</option><option value="DM">DM (6)</option><option value="CM">CM (8)</option><option value="AM">AM (10)</option><option value="FW">FW</option></select></label>
+  <label>VERDICT<select id="bv"><option value="">All graded</option></select></label>
+  <label>MIN FEE (€M)<select id="bf"><option value="0">Any</option><option value="5">5+</option><option value="15">15+</option><option value="30">30+</option><option value="60">60+</option></select></label>
+ </div>
+ <div class="card tablewrap"><table><thead><tr><th>Player</th><th>Club</th><th>Summer</th><th class="n">Fee €M</th><th class="n">Score</th><th class="n">Fee predicts</th><th class="n">Value</th><th>Verdict</th></tr></thead><tbody id="bt"></tbody></table></div>
+ <p class="note">Only signings with a complete score are ranked (outfield players with a defensive and attacking read, goalkeepers). Click a row for the full card.</p>
+</section>
+<details class="card"><summary>How the grade works, and what it can't tell you</summary>
+ <p><b>Counted seasons.</b> A season counts only if the player was at the club for all of it and still there at the end, however many minutes he played. A summer signing counts from that season. A winter signing (January) counts from the next full season, since the half-season he arrived in is not counted. The current season doesn't count until it ends.</p>
+ <p><b>Score.</b> Per 90 minutes, as a percentile against players in the same position group, season and data source. Forwards: expected goals plus assists. Midfielders depend on role. Defensive midfielders (6) are judged like defenders, on defensive output. Central midfielders (8) on how well they control the midfield (passing, territory and recoveries compared with their own team). Attacking midfielders (10) on attacking output like forwards. Goals and assists add bonus marks for 6s and 8s. Forwards and attacking midfielders are half judged against their own team's attacking output. Centre-backs: defensive output only (involvement compared with their own team, duel and aerial win rates), plus bonus points for goals and assists. Full-backs (left- and right-backs): 60% that defensive output and 40% attacking output, with no bonus. Goalkeepers: goals prevented. Seasons under 450 minutes are shown but not scored. Each scored season is pulled toward 50 in proportion to how few minutes it rests on (weight = minutes ÷ (minutes + 300)): 450 minutes keeps 60% of its distance from average, 900 minutes keeps 75%, 3,000 minutes keeps 91%.</p>
+ <p><b>Verdicts.</b> <b>Bargain</b>: cost €5m or less and beat the fee's prediction by 15+ points. <b>Great value</b>: 30+ above. <b>Good value</b>: 15 to 30 above. <b>About fair</b>: within 15 either way. <b>Overpriced</b>: 15+ below the prediction but a score of 25 or more. <b>Poor signing</b>: 15+ below and a score under 25.</p>
+ <p><b>Fee predicts.</b> A simple regression of score on the log of the fee, with position, year, league and window adjustments, and a separate fee slope for the Premier League section and the other four leagues (the Premier League's fee slope is steeper, and a cross-validation test shows this fits no worse than one shared slope). Fees are first converted to 2025 money using the average paid fee of each year within the same section, so a €30m fee in 2012 is compared with what €30m buys today only after that scaling. Value is the score minus what the fee predicts. Fee explains only about a tenth of the spread, so treat it as a lead, not a verdict.</p>
+ <p><b>Range.</b> The shaded band on the score bar and the "likely value range" are 90% ranges. They combine two things: how noisy a season's score is for the minutes behind it (measured from how much players' scores move between consecutive seasons, which also includes real year-to-year change), and how uncertain the fee line is. A "firm" verdict means at least 80% of that range sits inside the verdict's band; below 55% it could go either way.</p>
+ <p><b>Limits.</b> Data sources differ by league and year (Opta, FBref, SofaScore) and are never ranked against each other. FBref minutes cover all competitions. All five leagues start in 2017/18, the first season detailed stats (tackles, interceptions, duels, passes, expected goals) exist for all of them; before that only goals, assists and cards are on record, which is not enough to grade defenders or midfielders. Goalkeepers are graded on goals prevented (post-shot expected goals minus goals conceded). Fees are the stated transfer fee only. Players Transfermarkt lists as retired are excluded.</p>
+</details>
+<p class="note">Data: Transfermarkt transfers, Premier League (Opta), FBref and SofaScore. Built by Syed Hammad Ovais. Covers seasons through 2025/26; last built __BUILT__. Part of <a href="../Scout-Finder/">Scout Finder</a>'s family of tools.</p>
+</div>
+<script>
+const D=__DATA__;
+const CH=__CH__;const DET={},EV={},LOADED={};
+async function ensure(years){await Promise.all([...new Set(years)].filter(y=>CH[y]&&!LOADED[y]).map(async y=>{LOADED[y]=1;const b=Uint8Array.from(atob(CH[y]),c=>c.charCodeAt(0));const t=await new Response(new Blob([b]).stream().pipeThrough(new DecompressionStream('gzip'))).text();const o=JSON.parse(t);Object.assign(DET,o.d);Object.assign(EV,o.e)}))}
+D.forEach((r,i)=>r.i=i);
+const F={name:0,from:1,to:2,lg:3,yr:4,pos:5,fee:6,st:7,se:8,mean:9,first:10,basis:11,exp:12,res:13,cur:14,cst:15,rep:16,repP:17,repTo:18,win:19,fadj:20,raw:21,sse:22,ese:23};
+const LG={ENG:'Premier League',ESP:'La Liga',ITA:'Serie A',GER:'Bundesliga',FRA:'Ligue 1'};
+const $=s=>document.querySelector(s), esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const norm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+let SEC='ENG';const inSec=l=>SEC=='ENG'?l=='ENG':l!='ENG';
+function fillSec(){for(const id of['fl','bl']){const s=$('#'+id);s.innerHTML='<option value="">All</option>';if(SEC!='ENG')for(const k in LG)if(k!='ENG')s.add(new Option(LG[k],k));s.parentElement.style.display=SEC=='ENG'?'none':''}
+ const fy=$('#fy');fy.innerHTML='<option value="">All</option>';[...new Set(D.filter(r=>inSec(r[F.lg])).map(r=>r[F.yr]))].sort().forEach(y=>fy.add(new Option(y+'/'+String(y+1).slice(2),y)))}
+fillSec();
+
+const mins=r=>r[F.se].reduce((a,s)=>a+(s[2]||0),0);
+function conf(r){const m=mins(r);return m<450?['Early read',m]:m<900?['Settling',m]:['Solid read',m]}
+const TIERS={bargain:['Bargain','Cost about €5m or less (in 2025 money) and beat what that fee buys by 15+ points'],great:['Great value','Beat what the fee buys by 30+ points'],good:['Good value','Beat what the fee buys by 15 to 30 points'],mid:['About fair','Within 15 points of what the fee buys'],over:['Overpriced','15+ points below what the fee buys, but still a score of 25 or more'],bad:['Poor signing','15+ points below what the fee buys and a score under 25']};
+const Phi=x=>{const t=1/(1+.2316419*Math.abs(x)),d=.3989423*Math.exp(-x*x/2),p=d*t*(.3193815+t*(-.3565638+t*(1.781478+t*(-1.821256+t*1.330274))));return x>0?1-p:p};
+const TB={bargain:[15,1e9],great:[30,1e9],good:[15,30],mid:[-15,15],over:[-1e9,-15],bad:[-1e9,-15]};
+function rng(r){const a=r[F.sse],b=r[F.ese]||0,m=r[F.mean],v=r[F.res];if(m==null||a==null||v==null)return null;const se=Math.sqrt(a*a+b*b),z=1.645;
+ const pr=(lo,hi)=>Phi((hi-v)/se)-Phi((lo-v)/se),k=tier(r),[lo,hi]=TB[k],P=pr(lo,hi);
+ const opts=[['Overpriced or Poor',-1e9,-15],['About fair',-15,15],['Good value',15,30],['Great value',30,1e9]].map(o=>[o[0],pr(o[1],o[2])]).filter(o=>o[0]!=(k=='mid'?'About fair':k=='good'?'Good value':k=='great'?'Great value':k=='bargain'?'Good value':'Overpriced or Poor')).sort((x,y)=>y[1]-x[1]);
+ return{se,sLo:Math.max(0,m-z*a),sHi:Math.min(100,m+z*a),vLo:v-z*se,vHi:v+z*se,P,alt:opts[0]}}
+const fa=r=>r[F.fadj]!=null?r[F.fadj]:r[F.fee];
+function tier(r){const v=r[F.res],m=r[F.mean],f=fa(r);if(v==null)return null;
+ if(f<=5&&v>=15)return'bargain';if(v>=30)return'great';if(v>=15)return'good';if(v>-15)return'mid';return m>=25?'over':'bad'}
+function verdict(r){const k=tier(r);
+ if(k==null)return['Not graded','na',r[F.st]=='left early'?'Left before a full season':r[F.st]=='data gap'?'No stats source for those seasons':r[F.st]=='no appearances'?'No league appearances':r[F.st]=='low minutes'?'Under 450 minutes in every counted season':'Partial score only'];
+ const v=r[F.res],s={bargain:'Cheap, and far better than the fee suggests',great:'Far better than the fee suggests',good:'Better than the fee suggests',mid:'Close to what the fee usually buys',over:'Decent player, but below what the fee usually buys',bad:'Well below what the fee usually buys, and a low score in its own right'}[k];
+ return[TIERS[k][0],k,s]}
+function bar(r){if(r[F.mean]==null)return'';const a=r[F.mean],e=r[F.exp];
+ return `<div class="track" role="img" aria-label="Score ${a} out of 100${e!=null?', fee predicts '+e:''}"><div class="fill" style="width:${a}%"></div>${(()=>{const g=rng(r);return g?`<div class="band" style="left:${g.sLo}%;width:${g.sHi-g.sLo}%" title="Likely range (90%)"></div>`:''})()}${e!=null?`<div class="exp" style="left:calc(${e}% - 1px)"></div><span style="left:${e}%">fee predicts ${e}</span>`:''}</div>
+ <div class="legend"><span>● Score ${a} of 100 (${esc(r[F.basis]||'')})${(()=>{const g=rng(r);return g?` · likely ${Math.round(g.sLo)} to ${Math.round(g.sHi)}`:''})()}</span>${e!=null?'<span>| What the fee predicts</span>':''}</div>`}
+function seasonsTxt(r){return r[F.se].map(s=>`${s[0]}/${String(s[0]+1).slice(2)}: ${s[2]==null?'no data':s[2].toLocaleString()+' min'}`).join(' · ')}
+function card(r){const [v,c,why]=verdict(r),[ct,m]=conf(r),fee=r[F.fee];
+ return `<article class="card rc"><header><div><h3>${esc(r[F.name])}</h3><div class="sub">${esc(r[F.from])} → ${esc(r[F.to])} · ${LG[r[F.lg]]} · ${r[F.win]=='W'?'winter '+(r[F.yr]+1):'summer '+r[F.yr]} · ${POSN[r[F.pos]]||'—'}</div></div><div><div class="verdict v-${c}">${v}</div></div></header>
+ <div class="sub">${why}${r[F.res]!=null?` (${r[F.res]>0?'+':''}${r[F.res]} points vs fee)`:''}</div>
+ ${(()=>{const g=rng(r);if(!g)return'';const f=x=>(x>0?'+':'')+Math.round(x),lab=g.P>=.8?'Firm verdict':g.P>=.55?'Likely verdict':'Could go either way';return `<div class="sub" title="Based on how few minutes the seasons rest on and how loosely the fee predicts output">Likely value range <b>${f(g.vLo)} to ${f(g.vHi)}</b> (90%). <b>${lab}</b>${g.P<.8?`: it could also be ${g.alt[0]} (${Math.round(g.alt[1]*100)}% chance)`:''}.</div>`})()}
+ <div class="grid"><div class="k"><small>Fee</small><b>€${fee>=10?Math.round(fee):fee}m</b>${r[F.fadj]!=null&&Math.abs(r[F.fadj]-fee)/fee>0.08?`<small>about €${r[F.fadj]>=10?Math.round(r[F.fadj]):r[F.fadj].toFixed(1)}m in 2025 money</small>`:''}</div>
+ <div class="k"><small>Counted seasons</small><b>${r[F.se].length}</b></div>
+ <div class="k"><small>Confidence</small><b>${ct}</b><div class="sub">${m.toLocaleString()} min counted</div></div>
+ <div class="k"><small>Now</small><b style="font-size:20px">${esc((r[F.cst]=='retired (excluded)'||r[F.cst]=='retired')?'Retired':r[F.cur]=='Without Club'?'Free agent':r[F.cur]||'—')}</b></div></div>
+ ${bar(r)}
+ <div class="sub">${esc(seasonsTxt(r))||'No counted season'}</div>
+ ${r[F.rep]?`<div class="sub"><b>Replaced:</b> ${esc(r[F.rep])} (last season at the club: score ${r[F.repP]}${r[F.repTo]?', then to '+esc(r[F.repTo]):''})</div>`:''}
+ ${whyBlock(r)}
+ <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" data-share="${esc(r[F.name])}|${esc(r[F.to])}|${r[F.yr]}">Copy link</button><button class="btn" data-img="${D.indexOf(r)}">Save image</button></div></article>`}
+
+const POSL={FW:'forward',AM:'attacking midfielder',CM:'central midfielder',DM:'defensive midfielder',DF:'centre-back',FB:'full-back',GK:'goalkeeper'};
+const POSN={FW:'FW',AM:'AM · 10',CM:'CM · 8',DM:'DM · 6',DF:'CB',FB:'FB',GK:'GK'};
+const W={FW:'Forwards are scored on attacking output: expected goals plus expected assists per 90 minutes, half as a percentile against all forwards and half measured against their own team (share of the team\'s attacking output per minute), so a forward at a weak side is not marked down for fewer chances. Seasons before 2017/18 use goals plus assists.',DM:'Defensive midfielders (the classic 6) are judged on defensive output only, like defenders: how involved they are in defending compared with their own team (50%), how often they win duels (25%) and aerial duels (25%). Goals and assists are bonus marks on top: +2.5 points for every 0.1 goals plus assists per 90, capped at +10. Seasons with only attacking data are not graded.',CM:'Central midfielders (the 8) are judged on how well they control the midfield, compared with their own team so possession-heavy clubs are not flattered: passes completed (30%), pass accuracy (20%), passes into the opposition half (20%), ball recoveries (15%) and duels won (15%). Goals and assists are bonus marks on top (+2.5 per 0.1 per 90, capped at +10). Seasons with only attacking data are not graded.',AM:'Attacking midfielders (the 10) are judged on attacking output like the forwards: expected goals plus expected assists per 90 minutes, half against all attacking midfielders and half against their own team.',FB:'Full-backs are judged 60% on defending (involvement compared with their own team 50%, duels 25%, aerial duels 25%) and 40% on attacking output (expected goals plus expected assists per 90 minutes, compared with other full-backs), because a modern full-back also creates chances. Position comes from Transfermarkt (left-back or right-back).',DF:'Centre-backs and other defenders are judged on defensive output only: how involved they are in defending compared with their own team (50%, so players at dominant clubs are not marked down for facing fewer attacks), how often they win duels (25%) and aerial duels (25%). Goals and assists are bonus marks on top: +2.5 points for every 0.1 goals plus assists per 90, capped at +10. Seasons where only attacking data exists are not graded.',GK:'Goalkeepers are scored on goals prevented per 90: how many goals fewer they conceded than the shots they faced were expected to produce. Before 2017/18 that measure does not exist, so goalkeepers are scored on saves above the league-average save rate for the shots they faced, which is cruder.'};
+const BANDS=[[0,2,'under €2m (2025 money)'],[2,5,'€2–5m (2025 money)'],[5,10,'€5–10m (2025 money)'],[10,20,'€10–20m (2025 money)'],[20,40,'€20–40m (2025 money)'],[40,1e4,'€40m and over (2025 money)']];
+const ord=n=>{const s=['th','st','nd','rd'],v=n%100;return n+(s[(v-20)%10]||s[v]||s[0])};
+const f2=v=>v==null?'–':(Math.abs(v)>=10?v.toFixed(1):v.toFixed(2));
+function cell(v,typ,p){return v==null?'<td class="n">–</td>':`<td class="n">${f2(v)}<small>typical ${f2(typ)} · <span class="pcl">${p==null?'':ord(p)}</span>${p==null?'':' pct'}</small></td>`}
+
+const EVL={dr:'Dribbles completed',kp:'Key passes',sh:'Shots',tw:'Tackles won',ic:'Interceptions',cl:'Clearances',duw:'Duels won',aer:'Aerial duels won',rec:'Ball recoveries',prgp:'Progressive passes',prgc:'Progressive carries',sv:'Saves',fl:'Fouls conceded',yc:'Yellow cards',rc:'Red cards'};
+const EVP={FW:['sh','kp','dr','aer','prgc','fl','yc','rc'],AM:['sh','kp','dr','prgc','duw','fl','yc','rc'],CM:['kp','dr','tw','ic','duw','rec','prgp','prgc','fl','yc','rc'],DM:['tw','ic','duw','rec','aer','prgp','dr','fl','yc','rc'],DF:['tw','ic','cl','aer','duw','rec','prgp','dr','fl','yc','rc'],FB:['tw','ic','cl','aer','duw','kp','dr','prgp','prgc','fl','yc','rc'],GK:['sv','yc','rc']};
+const LOW=new Set(['fl','yc','rc']);
+function evidence(r){const ev=EV[r.i]||[],pos=r[F.pos],k=tier(r),pos_=['bargain','great','good'].includes(k),neg=['over','bad'].includes(k);let rows=[],sup=0,ag=0,n=0;
+ for(const key of EVP[pos]||[]){const e=ev.find(x=>x[0]==key);if(!e)continue;const [,p90,typ,pc,tot]=e;let read='',cls='';
+  if(k&&k!='mid'){
+   if(key=='rc'){if(tot>0){n++;if(pos_){ag++;read='Cuts against';cls='bad'}else{sup++;read='Backs it';cls='good'}}}
+   else if(pc!=null){const g=LOW.has(key)?100-pc:pc;n++;
+    if(g>=60){if(pos_){sup++;read='Backs it';cls='good'}else{ag++;read='Cuts against';cls='bad'}}
+    else if(g<=40){if(neg){sup++;read='Backs it';cls='good'}else{ag++;read='Cuts against';cls='bad'}}else{read='About typical';cls='na'}}}
+  rows.push(`<tr><td>${EVL[key]}</td><td class="n">${key=='rc'||key=='yc'?tot+' <small>('+f2(p90)+' / 90)</small>':f2(p90)}</td><td class="n">${typ==null?'–':f2(typ)}</td><td class="n">${pc==null?'–':ord(pc)}</td><td class="n">${key=='yc'||key=='rc'?'':tot.toLocaleString()}</td><td class="${cls?'rd-'+cls:''}">${read}</td></tr>`)}
+ if(!rows.length)return'';
+ const sm=k&&k!='mid'?`<p><b>Extra evidence:</b> of ${n} signals that point one way or the other, ${sup} back the verdict and ${ag} cut against it. The rest are about typical.</p>`:'<p><b>Extra evidence:</b> the same stats for context. They do not change the grade.</p>';
+ return `<h4 style="margin-top:6px">More stats, per 90 minutes</h4>${sm}<div class="tablewrap"><table><thead><tr><th>Stat</th><th class="n">Per 90</th><th class="n">Typical</th><th class="n">Percentile</th><th class="n">Total</th><th>Reads</th></tr></thead><tbody>${rows.join('')}</tbody></table></div><p class="note">Counted seasons combined, per 90 minutes. Percentile is against players in the same position, season and data source (450+ minutes); for fouls and cards, a lower rate is better. These extras are shown as evidence and do not change the grade. Opta has no red cards, and FBref seasons only carry cards and progression.</p>`}
+function whyBlock(r){const det=DET[r.i]||[],pos=r[F.pos],res=r[F.res],mean=r[F.mean],name=r[F.name],fee=r[F.fee],exp=r[F.exp];
+ const sc=det.filter(d=>d[8]!=null);let h='';
+ const sh=r[F.se].length?'':'';
+ if(res!=null){
+  const b=BANDS.find(b=>fa(r)>=b[0]&&fa(r)<b[1]);
+  const peers=D.filter(x=>x[F.res]!=null&&x[F.pos]==pos&&fa(x)>=b[0]&&fa(x)<b[1]);
+  const above=peers.filter(x=>x[F.mean]>mean).length,avg=peers.reduce((a,x)=>a+x[F.mean],0)/peers.length;
+  const k=tier(r),dd=`${res>0?'+':''}${res} points`;
+  const d={bargain:`${dd} above that on a fee of only €${fee}m, which makes him a <b>bargain</b> (cost €5m or less, beat the fee by 15+)`,great:`${dd} above that, past the +30 line for <b>great value</b>`,good:`${dd} above that, past the +15 line for <b>good value</b>`,mid:`${dd} from that, inside the ±15 band for <b>about fair</b>`,over:`${Math.abs(res)} points below that, past the −15 line, but his own score of ${mean} is not a flop, so he is <b>overpriced</b> rather than a poor signing`,bad:`${Math.abs(res)} points below that, past the −15 line, and his own score of ${mean} is under 25, so he is a <b>poor signing</b>`}[k];
+  h+=`<p><b>${esc(name)} scored ${mean} out of 100</b>${r[F.raw]!=null&&Math.abs(r[F.raw]-mean)>=2?` (<span title="Seasons with few minutes are pulled toward 50">minutes-adjusted; the plain average of his season scores is ${r[F.raw]}</span>)`:''} across ${sc.length} counted season${sc.length==1?'':'s'}, as a percentile against other ${POSL[pos]}s in the same data source and season. After adjusting for position, league and year, a fee like his (€${fee>=10?Math.round(fee):fee}m) usually buys about <b>${exp}</b>, so he finished ${d}.</p>
+  <p><b>Against the same price tag:</b> ${peers.length} ${POSL[pos]}s were graded at ${b[2]}. They average ${avg.toFixed(0)}, and ${above} of them (${Math.round(100*above/peers.length)}%) scored higher than ${esc(name)}.</p>`;
+ }else{
+  const why={'left early':`He left ${esc(r[F.to])} before a full season was completed, so no season counts for or against him.`,'data gap':'No stats source covers the counted seasons, so there is nothing to score.','no appearances':'The data shows no league appearances for him at this club in the counted seasons.','low minutes':'He played under 450 minutes in every counted season, too few to score fairly.'}[r[F.st]];
+  h+=`<p><b>Why it isn't graded.</b> ${why||(pos=='GK'?'The source for those seasons has no goalkeeper stats (none on record), so he cannot be scored.':mean!=null?`He has an attack-only score of ${mean} out of 100. No defensive data exists for ${pos=='GK'?'goalkeepers in':'that league and season in'} the source, so he can't be fairly set against what the fee buys.`:'There is no complete score for him.')}</p>`;
+ }
+ if(det.length&&det.some(d=>d[2]!=null||d[4]!=null||d[6]!=null)){
+  const fb=pos=='FB',gk=pos=='GK',df=(pos=='DF'||pos=='DM'||pos=='FB')&&det.some(d=>d[14]!=null),cm=pos=='CM'&&det.some(d=>d[30]&&d[30].pc[0]!=null);
+  const pc=(v,typ,p,fm)=>v==null?'<td class="n">–</td>':`<td class="n">${fm(v)}<small>typical ${typ==null?'–':fm(typ)} · <span class="pcl">${p==null?'':ord(p)}</span>${p==null?'':' pct'}</small></td>`;
+  const pctf=v=>(v*100).toFixed(0)+'%',xf=v=>'×'+v.toFixed(2),o1=v=>v.toFixed(1);
+  const head=gk?'<th class="n">Goals prevented / 90</th>':cm?'<th class="n">Passes completed vs team</th><th class="n">Pass accuracy</th><th class="n">Opp.-half passes vs team</th><th class="n">Ball recoveries vs team</th><th class="n">Duels won</th><th class="n">Goals + assists (bonus)</th>':df?'<th class="n">Defensive involvement vs team</th><th class="n">Duels won</th><th class="n">Aerial duels won</th>'+(fb?'<th class="n">xG + xA / 90 (40%)</th>':'<th class="n">Goals + assists (bonus)</th>'):(pos=='AM'||pos=='FW')?'<th class="n">xG + xA / 90 (goals + assists before 2017/18)</th><th class="n">xG + xA vs team (×1.00 = team average)</th>':'<th class="n">xG + xA / 90</th><th class="n">Tackles + int. + clear. / 90</th>';
+  const bon=d=>d[26]==null?'<td class="n">–</td>':`<td class="n">${d[26]+d[27]}<small>${d[28]>0?'+'+d[28].toFixed(1)+' pts':'no bonus'}</small></td>`;
+  const cells=d=>gk?cell(d[6],d[11],d[7]):cm?(d[30]?pc(d[30].pc[0],d[30].pc[2],d[30].pc[1],xf)+pc(d[30].ac[0],d[30].ac[2],d[30].ac[1],pctf)+pc(d[30].op[0],d[30].op[2],d[30].op[1],xf)+pc(d[30].rc[0],d[30].rc[2],d[30].rc[1],xf)+pc(d[17],d[19],d[18],pctf)+bon(d):'<td class="n" colspan="6">attacking data only</td>'):df?pc(d[14],d[16],d[15],xf)+pc(d[17],d[19],d[18],pctf)+pc(d[20],d[22],d[21],pctf)+(fb?cell(d[2],d[9],d[3]):(d[26]==null?'<td class="n">–</td>':`<td class="n">${d[26]+d[27]}<small>${d[28]>0?'+'+d[28].toFixed(1)+' pts':'no bonus'}</small></td>`)):cell(d[2],d[9],d[3])+(d[31]&&d[31].tx[0]!=null?pc(d[31].tx[0],d[31].tx[2],d[31].tx[1],xf):'<td class="n">–</td>');
+  h+=`<div class="tablewrap"><table><thead><tr><th>Season</th><th class="n">Minutes</th>${head}<th class="n">Score</th></tr></thead><tbody>`+
+  det.map(d=>`<tr><td>${d[0]}/${String(d[0]+1).slice(2)}<small>${esc(d[12])}</small></td><td class="n">${d[1]==null?'–':Math.round(d[1]).toLocaleString()}</td>${cells(d)}<td class="n"><b>${d[8]==null?(d[1]!=null&&d[1]<450?'under 450 min':'–'):d[8]}</b>${((df&&!fb)||cm)&&d[29]!=null&&d[8]!=null?`<small>base ${Math.round(d[29])}${d[28]>0?' + '+d[28].toFixed(1):''}</small>`:''}</td></tr>`).join('')+'</tbody></table></div>';
+  h+=`<p class="note">${W[pos]||''} "Typical" is the median for that position, season and source among players with 450+ minutes; the percentile ranks him in the same group. Ranks only compare players within one data source.${(df||cm)&&det.some(d=>d[12]=='FBref')?' In FBref seasons, "duels won" is the share of dribblers tackled and "opposition-half passes" is passes into the final third, because FBref does not record the others.':''}</p>`;
+ }
+ h+=evidence(r);
+ return `<details class="why" open style="padding:12px 0 0;border:0;border-top:1px solid var(--line);border-radius:0;background:none"><summary style="font-family:var(--display);font-size:18px;letter-spacing:.06em;text-transform:uppercase;color:var(--t)">Why this grade</summary>${h}</details>`}
+let SHOWTK=0;
+function show(){const q=norm($('#q').value.trim()),l=$('#fl').value,y=$('#fy').value,p=$('#fp').value,vv=$('#fv').value;
+ let rs=D.filter(r=>inSec(r[F.lg])&&(!q||norm(r[F.name]).includes(q))&&(!l||r[F.lg]==l)&&(!y||r[F.yr]==y)&&(!p||r[F.pos]==p)&&(!vv||tier(r)==vv));
+ if(!q&&!l&&!y&&!p&&!vv){$('#res').innerHTML='<div class="empty card">Type a player, or pick a league and summer. '+D.filter(r=>inSec(r[F.lg])).length.toLocaleString()+' signings loaded.</div>';return}
+ rs.sort((a,b)=>b[F.fee]-a[F.fee]);const n=rs.length;
+ const tk=++SHOWTK;ensure(rs.slice(0,25).map(r=>r[F.yr])).then(()=>{if(tk!=SHOWTK)return;$('#res').innerHTML=(n?rs.slice(0,25).map(card).join(''):'<div class="empty card">No signing matches.</div>')+(n>25?`<div class="note">Showing the 25 biggest fees of ${n}. Narrow it down above.</div>`:'')})}
+function board(){const l=$('#bl').value,p=$('#bp').value,f=+$('#bf').value,w=$('#bs').value=='worst';
+ let rs=D.filter(r=>inSec(r[F.lg])&&r[F.res]!=null&&(!l||r[F.lg]==l)&&(!p||r[F.pos]==p)&&r[F.fee]>=f&&(!$('#bv').value||tier(r)==$('#bv').value));rs.sort((a,b)=>w?a[F.res]-b[F.res]:b[F.res]-a[F.res]);
+ $('#bt').innerHTML=rs.slice(0,40).map((r,i)=>`<tr class="row" data-i="${D.indexOf(r)}"><td>${esc(r[F.name])}<div class="sub">${POSN[r[F.pos]]||r[F.pos]}</div></td><td>${esc(r[F.to])}</td><td>${r[F.yr]}</td><td class="n">${r[F.fee]}</td><td class="n">${r[F.mean]}</td><td class="n">${r[F.exp]}</td><td class="n" style="color:var(--${r[F.res]>=0?'good':'bad'})">${r[F.res]>0?'+':''}${r[F.res]}</td><td><span class="verdict v-${tier(r)}" style="font-size:13px;padding:3px 8px">${TIERS[tier(r)][0]}</span></td></tr>`).join('')||'<tr><td colspan=8 class="empty">Nothing matches.</td></tr>'}
+function tab(b){const n=b===true?1:b===false?0:b,P=['pSearch','pBoard','pPlayers','pCompare','pClubs'],T=['tSearch','tBoard','tPlayers','tCompare','tClubs'];P.forEach((id,i)=>$('#'+id).style.display=i==n?'grid':'none');T.forEach((id,i)=>$('#'+id).setAttribute('aria-pressed',i==n));if(n==1)board();if(n==2)pShow();if(n==3)cmpInit();if(n==4)clubs()}
+$('#tCompare').onclick=()=>tab(3);$('#tClubs').onclick=()=>tab(4);$('#tSearch').onclick=()=>tab(0);$('#tBoard').onclick=()=>tab(1);$('#tPlayers').onclick=()=>tab(2);
+for(const id of['q','fl','fy','fp','fv'])$('#'+id).addEventListener('input',()=>{show();hashSet()});
+for(const id of['bs','bl','bp','bf','bv'])$('#'+id).addEventListener('input',board);
+$('#bt').addEventListener('click',e=>{const t=e.target.closest('tr');if(!t)return;const r=D[+t.dataset.i];tab(false);$('#q').value=r[F.name];$('#fy').value=r[F.yr];$('#fl').value='';$('#fp').value='';show();hashSet();scrollTo(0,0)});
+$('#res').addEventListener('click',e=>{const b=e.target.closest('[data-share]');if(!b)return;const [n,t,y]=b.dataset.share.split('|');const u=location.href.split('#')[0]+'#p='+encodeURIComponent(n)+'&to='+encodeURIComponent(t)+'&y='+y;navigator.clipboard&&navigator.clipboard.writeText(u).then(()=>{b.textContent='Copied'},()=>{});history.replaceState(null,'',u)});
+function hashSet(){const q=$('#q').value.trim(),y=$('#fy').value;history.replaceState(null,'',q||y?'#p='+encodeURIComponent(q)+(y?'&y='+y:''):location.pathname)}
+function hashGet(){try{const h=new URLSearchParams(location.hash.slice(1));if(h.get('p')){$('#q').value=h.get('p');if(h.get('y'))$('#fy').value=h.get('y')}}catch(e){}}
+for(const id of['fv','bv'])for(const k of['bargain','great','good','mid','over','bad'])$('#'+id).add(new Option(TIERS[k][0],k));
+
+const PL=__PL__;let PIDX=null;const PBK={};let PTK=0;
+async function gz64(b){const u=Uint8Array.from(atob(b),c=>c.charCodeAt(0));return await new Response(new Blob([u]).stream().pipeThrough(new DecompressionStream('gzip'))).text()}
+async function pInit(){if(!PIDX){const a=JSON.parse(await gz64(PL.idx));a.forEach(p=>{p.n=norm(p[1]).replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim()});PIDX=a}}
+async function pRows(p){const b=p[9];if(!PBK[b])PBK[b]=JSON.parse(await gz64(PL.ch[b]));return PBK[b][p[0]]||[]}
+const SRCN={F:'FBref',O:'Opta',S:'SofaScore'},RSN={1:'under 450 min',2:'role unknown',3:'attack data only',4:'no goalkeeper stats'};
+async function pShow(){const tk=++PTK;await pInit();if(tk!=PTK)return;
+ const q=norm($('#pq').value.trim()).replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim(),role=$('#pr').value,act=$('#pa').value,mm=+$('#pm').value;
+ let rs=PIDX.filter(p=>(SEC=='ENG'?(p[10]||'').split(',').includes('ENG'):(p[10]||'').split(',').some(x=>x&&x!='ENG'))&&(!q||p.n.includes(q))&&(!role||p[6]==role)&&(!act||p[3]>=2025)&&(q||(p[4]>=mm&&p[5]!=null)));
+ rs=q?rs.sort((a,b)=>b[4]-a[4]):rs.sort((a,b)=>b[5]-a[5]);const n=rs.length;
+ $('#pres').innerHTML=n?`<div class="card tablewrap"><table><thead><tr><th>Player</th><th>Role</th><th>Seasons</th><th>Main club</th><th class="n">Minutes</th><th class="n">Career score</th></tr></thead><tbody>`+rs.slice(0,30).map(p=>`<tr class="row" data-pid="${p[0]}"><td>${esc(p[1])}</td><td>${POSN[p[6]]||'—'}</td><td>${p[2]}/${String(p[2]+1).slice(2)}–${String(p[3]+1).slice(2)}</td><td>${esc(p[8])}</td><td class="n">${p[4].toLocaleString()}</td><td class="n">${p[5]==null?'–':p[5]}</td></tr>`).join('')+`</tbody></table></div>`+(n>30?`<div class="note">Showing 30 of ${n.toLocaleString()}. ${q?'Type more of the name':'Sorted by career score'} to narrow it.</div>`:'')+(q?'':'<div class="note">Best career scores among players with the minutes shown. Type a name to find anyone.</div>'):'<div class="empty card">No player matches.</div>'}
+async function pCard(id){await pInit();const p=PIDX.find(x=>x[0]==id);if(!p)return;const rows=await pRows(p);
+ const gr=rows.filter(r=>r[6]!=null),adj=r=>50+r[4]/(r[4]+300)*(r[6]-50);let best=null;gr.forEach(r=>{if(!best||adj(r)>adj(best))best=r});
+ const sg=D.filter(r=>norm(r[F.name])==norm(p[1])&&r[F.yr]>=p[2]-1&&r[F.yr]<=p[3]);
+ const sgt=sg.map(r=>{const [v,c]=verdict(r);return `<button class="chip" data-sg="${D.indexOf(r)}"><span class="verdict v-${c}" style="font-size:12px;padding:2px 7px">${v}</span> ${esc(r[F.to])} · ${r[F.win]=='W'?'winter '+(r[F.yr]+1):'summer '+r[F.yr]} · €${r[F.fee]}m</button>`}).join(' ');
+ const sc=p[5],b=sc==null?'':`<div class="track" role="img" aria-label="Career score ${sc} out of 100"><div class="fill" style="width:${sc}%"></div></div>`;
+ const num=(v,t,fm)=>v==null?'<td class="n">–</td>':`<td class="n">${v.toFixed(2)}${t!=null?`<small>typical ${t.toFixed(2)}</small>`:''}</td>`;
+ const tr=rows.map(r=>{const m=PL.med[`${SRCN[r[3]]}|${r[0]}|${r[5]}`]||[null,null],gk=r[5]=='GK';
+  return `<tr><td>${r[0]}/${String(r[0]+1).slice(2)}<small>${SRCN[r[3]]}</small></td><td>${esc(r[1])}<small>${LG[r[2]]}</small></td><td>${POSN[r[5]]||'—'}</td><td class="n">${r[4].toLocaleString()}</td><td class="n">${r[6]!=null?`<b>${r[6]}</b>`:`<small>${RSN[r[7]]||''}</small>`}</td><td class="n">${r[8]==null?'–':r[8]+' + '+r[9]}</td>${gk?'<td class="n">–</td><td class="n">–</td>':num(r[10],m[0])+num(r[11],m[1])}</tr>`}).join('');
+ $('#pres').innerHTML=`<article class="card rc"><header><div><h3>${esc(p[1])}</h3><div class="sub">${POSN[p[6]]||'—'} · ${p[2]}/${String(p[2]+1).slice(2)} to ${p[3]}/${String(p[3]+1).slice(2)} · ${esc(p[8])}</div></div><button class="chip" id="pback">← Back to list</button></header>
+ <div class="grid"><div class="k"><small>Career score</small><b>${sc==null?'–':sc}</b><small>minutes-adjusted average of graded seasons</small></div><div class="k"><small>Best season</small><b>${best?best[6]:'–'}</b><small>${best?best[0]+'/'+String(best[0]+1).slice(2)+' · '+esc(best[1]):''}</small></div><div class="k"><small>Graded seasons</small><b>${gr.length}</b><small>of ${rows.length} played</small></div><div class="k"><small>Minutes</small><b>${p[4].toLocaleString()}</b></div></div>${b}
+ ${sgt?`<p class="note" style="margin:10px 0 0"><b>As a signing:</b> ${sgt}</p>`:''}
+ <div class="tablewrap"><table><thead><tr><th>Season</th><th>Club</th><th>Role</th><th class="n">Minutes</th><th class="n">Score</th><th class="n">Goals + assists</th><th class="n">xG + xA / 90 (G+A before 2017/18)</th><th class="n">Tackles + int. + clear. / 90</th></tr></thead><tbody>${tr}</tbody></table></div>
+ <p class="note">Each season's score is a percentile against players in the same role, season and data source (450+ minutes), so sources are never mixed. ${W[p[6]]||''} The career score pulls thin seasons toward 50 (weight = minutes ÷ (minutes + 300)) before averaging. Player cards cover every player with 90+ minutes in the five leagues since 2017/18. Roles come from Transfermarkt positions or FBref's position where the name is ambiguous.</p>
+ <button class="chip" id="pshare" data-n="${esc(p[1])}">Copy link</button></article>`;
+ history.replaceState(null,'','#pl='+encodeURIComponent(p[1]))}
+$('#pres').addEventListener('click',e=>{const t=e.target.closest('tr[data-pid]');if(t){pCard(+t.dataset.pid);scrollTo(0,0);return}
+ if(e.target.closest('#pback')){pShow();history.replaceState(null,'',location.pathname);return}
+ const sg=e.target.closest('[data-sg]');if(sg){const r=D[+sg.dataset.sg];tab(0);$('#q').value=r[F.name];$('#fy').value=r[F.yr];$('#fl').value='';$('#fp').value='';show();hashSet();scrollTo(0,0);return}
+ const sh=e.target.closest('#pshare');if(sh){const u=location.href.split('#')[0]+'#pl='+encodeURIComponent(sh.dataset.n);navigator.clipboard&&navigator.clipboard.writeText(u).then(()=>{sh.textContent='Copied'},()=>{})}});
+for(const id of['pq','pr','pa','pm'])$('#'+id).addEventListener('input',()=>pShow());
+(async()=>{try{const h=new URLSearchParams(location.hash.slice(1));if(h.get('pl')){tab(2);await pInit();const q=norm(h.get('pl'));const p=PIDX.filter(x=>norm(x[1])==q).sort((a,b)=>b[4]-a[4])[0];if(p)pCard(p[0])}}catch(e){}})();
+
+
+// ---------- Compare ----------
+let CMP=[null,null],CLUBSEL=null;
+const cmpLab=r=>`${esc(r[F.name])} <small>${esc(r[F.to])} · ${r[F.win]=='W'?'winter '+(r[F.yr]+1):'summer '+r[F.yr]} · €${r[F.fee]}m</small>`;
+function cmpList(slot){const q=norm($('#cq'+slot).value.trim()),box=$('#cr'+slot);if(CMP[slot=='a'?0:1]!=null&&!q){box.innerHTML='';return}
+ if(!q){box.innerHTML='<div class="note">Type a name.</div>';return}
+ const rs=D.filter(r=>inSec(r[F.lg])&&norm(r[F.name]).includes(q)).sort((a,b)=>(b[F.res]!=null)-(a[F.res]!=null)||b[F.fee]-a[F.fee]).slice(0,8);
+ box.innerHTML=rs.length?rs.map(r=>`<button class="chip pick" data-slot="${slot}" data-i="${D.indexOf(r)}">${cmpLab(r)}${r[F.res]==null?' <small>(not graded)</small>':''}</button>`).join(''):'<div class="note">No signing matches.</div>'}
+function cmpInit(){for(const s of['a','b']){const i=CMP[s=='a'?0:1],box=$('#cr'+s);if(i!=null&&!$('#cq'+s).value){box.innerHTML=`<div class="chip" style="display:flex;justify-content:space-between;gap:8px;align-items:center"><span>${cmpLab(D[i])}</span><button class="btn" data-clear="${s}">Change</button></div>`}else if(i==null&&!$('#cq'+s).value)box.innerHTML=''}cmpOut()}
+function cmpOut(){const out=$('#cmpout'),[a,b]=CMP.map(i=>i==null?null:D[i]);if(!a||!b){out.innerHTML='';return}
+ const rg=r=>{const g=rng(r);return g?`<small>likely ${Math.round(g.sLo)} to ${Math.round(g.sHi)} (90%)</small>`:''},vr=r=>{const g=rng(r);const f=x=>(x>0?'+':'')+Math.round(x);return g?`<small>likely ${f(g.vLo)} to ${f(g.vHi)} (90%)</small>`:''};
+ const chip=r=>{const [v,c]=verdict(r);return `<span class="verdict v-${c}" style="font-size:14px;padding:4px 9px">${v}</span>`};
+ const firm=r=>{const g=rng(r);return g?(g.P>=.8?'Firm verdict':g.P>=.55?'Likely verdict':'Could go either way'):''};
+ const m=r=>{const c=conf(r);return c[1].toLocaleString()+' min'};
+ const fe=r=>'€'+(r[F.fee]>=10?Math.round(r[F.fee]):r[F.fee])+'m'+(r[F.fadj]!=null&&Math.abs(r[F.fadj]-r[F.fee])/r[F.fee]>.08?`<small>about €${r[F.fadj]>=10?Math.round(r[F.fadj]):r[F.fadj].toFixed(1)}m in 2025 money</small>`:'');
+ const win=(x,y,hi=true)=>x==null||y==null||x==y?['','']:(hi?x>y:x<y)?['rd-good','']:['','rd-good'];
+ const wS=win(a[F.mean],b[F.mean]),wV=win(a[F.res],b[F.res]),wF=win(a[F.fee],b[F.fee],false);
+ const row=(l,x,y,cx='',cy='')=>`<tr><td>${l}</td><td class="${cx}">${x}</td><td class="${cy}">${y}</td></tr>`;
+ let sum='';if(a[F.res]!=null&&b[F.res]!=null){const d=a[F.res]-b[F.res];sum=Math.abs(d)<5?`<p class="note"><b>Roughly level on value.</b> Both are within 5 points of each other relative to what their fees predict (${esc(a[F.name])} ${a[F.res]>0?'+':''}${a[F.res]}, ${esc(b[F.name])} ${b[F.res]>0?'+':''}${b[F.res]}).</p>`:`<p class="note"><b>${esc((d>0?a:b)[F.name])} was the better value</b> by ${Math.abs(d).toFixed(1)} points (${esc(a[F.name])} ${a[F.res]>0?'+':''}${a[F.res]}, ${esc(b[F.name])} ${b[F.res]>0?'+':''}${b[F.res]}). Ranges around each grade are wide, so a gap this size is ${Math.abs(d)>=15?'a meaningful difference':'within noise'}.</p>`}
+ out.innerHTML=`<article class="card rc"><div class="tablewrap"><table class="cmpt"><thead><tr><th></th><th>${esc(a[F.name])}</th><th>${esc(b[F.name])}</th></tr></thead><tbody>
+ ${row('Move',`${esc(a[F.from])} → ${esc(a[F.to])}`,`${esc(b[F.from])} → ${esc(b[F.to])}`)}
+ ${row('When',`${LG[a[F.lg]]} · ${a[F.win]=='W'?'winter '+(a[F.yr]+1):'summer '+a[F.yr]}`,`${LG[b[F.lg]]} · ${b[F.win]=='W'?'winter '+(b[F.yr]+1):'summer '+b[F.yr]}`)}
+ ${row('Role',POSL[a[F.pos]]||'—',POSL[b[F.pos]]||'—')}
+ ${row('Fee',fe(a),fe(b),wF[0],wF[1])}
+ ${row('Counted seasons',`${a[F.se].length}<small>${m(a)}</small>`,`${b[F.se].length}<small>${m(b)}</small>`)}
+ ${row('Score',a[F.mean]==null?'–':`<b>${a[F.mean]}</b> of 100${rg(a)}`,b[F.mean]==null?'–':`<b>${b[F.mean]}</b> of 100${rg(b)}`,wS[0],wS[1])}
+ ${row('Fee predicts',a[F.exp]==null?'–':a[F.exp],b[F.exp]==null?'–':b[F.exp])}
+ ${row('Value vs fee',a[F.res]==null?'–':`<b>${a[F.res]>0?'+':''}${a[F.res]}</b> points${vr(a)}`,b[F.res]==null?'–':`<b>${b[F.res]>0?'+':''}${b[F.res]}</b> points${vr(b)}`,wV[0],wV[1])}
+ ${row('Verdict',`${chip(a)}<small>${firm(a)}</small>`,`${chip(b)}<small>${firm(b)}</small>`)}
+ ${row('Now',esc((a[F.cst]=='retired (excluded)'||a[F.cst]=='retired')?'Retired':a[F.cur]=='Without Club'?'Free agent':a[F.cur]||'—'),esc((b[F.cst]=='retired (excluded)'||b[F.cst]=='retired')?'Retired':b[F.cur]=='Without Club'?'Free agent':b[F.cur]||'—'))}
+ </tbody></table></div>${sum}
+ ${a[F.mean]!=null?`<div class="sub"><b>${esc(a[F.name])}</b></div>${bar(a)}`:''}${b[F.mean]!=null?`<div class="sub"><b>${esc(b[F.name])}</b></div>${bar(b)}`:''}
+ <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" id="cmpshare">Copy link</button><button class="btn" data-img="${CMP.join(',')}">Save image</button></div></article>`}
+$('#cqa').addEventListener('input',()=>cmpList('a'));$('#cqb').addEventListener('input',()=>cmpList('b'));
+$('#pCompare').addEventListener('click',e=>{const p=e.target.closest('.pick');if(p){const s=p.dataset.slot;CMP[s=='a'?0:1]=+p.dataset.i;$('#cq'+s).value='';cmpInit();return}
+ const c=e.target.closest('[data-clear]');if(c){const s=c.dataset.clear;CMP[s=='a'?0:1]=null;$('#cq'+s).value='';$('#cr'+s).innerHTML='';cmpOut();return}
+ if(e.target.id=='cmpshare'){const k=r=>encodeURIComponent(r[F.name])+'|'+encodeURIComponent(r[F.to])+'|'+r[F.yr];const u=location.href.split('#')[0]+'#c='+CMP.map(i=>k(D[i])).join('~');navigator.clipboard&&navigator.clipboard.writeText(u).then(()=>{e.target.textContent='Copied'},()=>{});history.replaceState(null,'',u)}});
+
+// ---------- Share images ----------
+function shareCanvas(rows,title){const W=1200,H=630,c=document.createElement('canvas');c.width=W;c.height=H;const x=c.getContext('2d'),css=getComputedStyle(document.documentElement),col=n=>css.getPropertyValue(n).trim();
+ x.fillStyle='#000';x.fillRect(0,0,W,H);x.fillStyle=col('--t');x.fillRect(0,0,W,8);
+ const F1='"Barlow Condensed","Arial Narrow",Arial,sans-serif',F2='"Barlow","Segoe UI",Arial,sans-serif',fit=(t,w,px)=>{x.font=`700 ${px}px ${F1}`;while(x.measureText(t).width>w&&px>22){px-=2;x.font=`700 ${px}px ${F1}`}return px};
+ const n=rows.length,cw=n==1?W-120:(W-180)/2;
+ rows.forEach((r,i)=>{const x0=60+i*(cw+60),[v,cl]=verdict(r),g=rng(r),vc={great:col('--good'),good:col('--good'),bargain:col('--t'),mid:col('--mid'),over:col('--over'),bad:col('--bad'),na:col('--muted')}[cl]||col('--ink');
+  x.fillStyle=col('--ink');x.textBaseline='alphabetic';let px=fit(r[F.name].toUpperCase(),cw,n==1?84:60);x.fillText(r[F.name].toUpperCase(),x0,110+px*.2);
+  x.font=`400 ${n==1?26:22}px ${F2}`;x.fillStyle=col('--muted');const mv=`${r[F.from]} → ${r[F.to]} · ${r[F.win]=='W'?'winter '+(r[F.yr]+1):'summer '+r[F.yr]} · €${r[F.fee]}m`;let t=mv;while(x.measureText(t).width>cw&&t.length>10)t=t.slice(0,-2);x.fillText(t+(t!=mv?'…':''),x0,n==1?160:150);
+  x.fillStyle=vc;x.font=`700 ${n==1?110:84}px ${F1}`;x.fillText(v.toUpperCase(),x0,n==1?330:300);
+  x.fillStyle=col('--ink');x.font=`700 ${n==1?64:52}px ${F1}`;
+  if(r[F.res]!=null){x.fillText(`${r[F.res]>0?'+':''}${r[F.res]} points vs fee`,x0,n==1?420:380);x.font=`400 ${n==1?26:22}px ${F2}`;x.fillStyle=col('--muted');
+   x.fillText(`Score ${r[F.mean]} of 100 · fee predicts ${r[F.exp]}`,x0,n==1?470:425);if(g)x.fillText(`90% range ${Math.round(g.vLo)>0?'+':''}${Math.round(g.vLo)} to ${Math.round(g.vHi)>0?'+':''}${Math.round(g.vHi)}`,x0,n==1?508:460)}
+  else{x.fillText('Not graded',x0,n==1?420:380)}});
+ x.font=`400 22px ${F2}`;x.fillStyle=col('--muted');x.fillText(title,60,H-34);x.textAlign='right';x.fillStyle=col('--t');x.fillText('Transfer Report Card',W-60,H-34);x.textAlign='left';return c}
+function saveImg(rows,name){const c=shareCanvas(rows,'Score vs what the fee usually buys');c.toBlob(b=>{const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=name.replace(/[^a-z0-9]+/gi,'-').toLowerCase()+'.png';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500)})}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-img]');if(!b)return;const ix=b.dataset.img.split(',').map(Number),rs=ix.map(i=>D[i]);saveImg(rs,rs.map(r=>r[F.name]).join(' vs '))});
+// ---------- Clubs ----------
+const f1=v=>(v>0?'+':'')+v.toFixed(1);
+function fillClubYears(){const y=$('#cy');y.innerHTML='<option value="0">All seasons</option>';[...new Set(D.filter(r=>inSec(r[F.lg])).map(r=>r[F.yr]))].sort().forEach(v=>{if(v>=2012&&SEC=='ENG'||SEC!='ENG')y.add(new Option(v+'/'+String(v+1).slice(2)+' onwards',v))})}
+function clubAgg(){const m={},y0=+$('#cy').value;D.forEach(r=>{if(!inSec(r[F.lg])||r[F.yr]<y0)return;const c=r[F.to];(m[c]=m[c]||{c,all:0,g:[]}).all++;if(r[F.res]!=null)m[c].g.push(r)});return Object.values(m)}
+function stat(g){const v=g.map(r=>r[F.res]),n=v.length,avg=v.reduce((a,b)=>a+b,0)/n,sd=Math.sqrt(v.reduce((a,b)=>a+(b-avg)**2,0)/Math.max(1,n-1)),good=g.filter(r=>['bargain','great','good'].includes(tier(r))).length,bad=g.filter(r=>['over','bad'].includes(tier(r))).length;
+ return{n,avg,hw:1.645*sd/Math.sqrt(n),good,bad,spend:g.reduce((a,r)=>a+r[F.fee],0),best:g.reduce((a,r)=>r[F.res]>a[F.res]?r:a),worst:g.reduce((a,r)=>r[F.res]<a[F.res]?r:a)}}
+function clubs(){const box=$('#cout');if(CLUBSEL){clubDetail(CLUBSEL);return}
+ const mn=+$('#cm').value,so=$('#cs').value;let A=clubAgg().filter(o=>o.g.length>=mn).map(o=>({...o,...stat(o.g)}));
+ const key={avg:o=>-o.avg,avgw:o=>o.avg,hit:o=>-o.good/o.n,miss:o=>-o.bad/o.n,n:o=>-o.n,spend:o=>-o.spend}[so];A.sort((a,b)=>key(a)-key(b));
+ box.innerHTML=A.length?`<div class="card tablewrap"><table><thead><tr><th>Club</th><th class="n">Graded signings</th><th class="n">Spend €M</th><th class="n">Avg value</th><th class="n">Good or better</th><th class="n">Overpriced or poor</th><th>Best</th><th>Worst</th></tr></thead><tbody>`+A.map(o=>`<tr class="row" tabindex="0" data-club="${esc(o.c)}"><td>${esc(o.c)}</td><td class="n">${o.n}${o.n<8?'<small class="few">small sample</small>':''}</td><td class="n">${Math.round(o.spend)}</td><td class="n" style="color:var(--${o.avg>=0?'good':'bad'})">${f1(o.avg)}<small style="display:block;color:var(--muted);font-size:11px">±${o.hw.toFixed(1)} (90%)</small></td><td class="n">${Math.round(100*o.good/o.n)}%</td><td class="n">${Math.round(100*o.bad/o.n)}%</td><td>${esc(o.best[F.name])}<small style="display:block;color:var(--muted);font-size:11px">${o.best[F.yr]} · ${f1(o.best[F.res])}</small></td><td>${esc(o.worst[F.name])}<small style="display:block;color:var(--muted);font-size:11px">${o.worst[F.yr]} · ${f1(o.worst[F.res])}</small></td></tr>`).join('')+`</tbody></table></div><p class="note">Value is the score minus what the fee usually buys, so a club that buys expensive, good players is not marked down for the price alone. The ± is the 90% range on the club average, which is wide for clubs with few graded signings. Click a club for its signings.</p>`:'<div class="empty card">No club has that many graded signings.</div>'}
+function clubDetail(c){const y0=+$('#cy').value,all=D.filter(r=>inSec(r[F.lg])&&r[F.to]==c&&r[F.yr]>=y0),g=all.filter(r=>r[F.res]!=null);
+ if(!g.length){CLUBSEL=null;clubs();return}const st=stat(g),srt=[...g].sort((a,b)=>b[F.res]-a[F.res]);
+ const trow=r=>{const [v,cl]=verdict(r);return `<tr class="row" tabindex="0" data-i="${D.indexOf(r)}"><td>${esc(r[F.name])}<small style="display:block;color:var(--muted);font-size:11px">${POSN[r[F.pos]]||''} · from ${esc(r[F.from])}</small></td><td>${r[F.win]=='W'?'winter '+(r[F.yr]+1):r[F.yr]}</td><td class="n">${r[F.fee]}</td><td class="n">${r[F.mean]}</td><td class="n">${r[F.exp]}</td><td class="n" style="color:var(--${r[F.res]>=0?'good':'bad'})">${r[F.res]>0?'+':''}${r[F.res]}</td><td><span class="verdict v-${cl}" style="font-size:12px;padding:2px 7px">${v}</span></td></tr>`};
+ $('#cout').innerHTML=`<article class="card rc"><header><div><h3>${esc(c)}</h3><div class="sub">${LG[all[0][F.lg]]} · ${all.length} paid signings, ${g.length} graded${y0?' · from '+y0+'/'+String(y0+1).slice(2):''}</div></div><button class="chip" id="cback">← All clubs</button></header>
+ <div class="grid"><div class="k"><small>Average value</small><b style="color:var(--${st.avg>=0?'good':'bad'})">${f1(st.avg)}</b><small>±${st.hw.toFixed(1)} (90%)</small></div><div class="k"><small>Good or better</small><b>${Math.round(100*st.good/st.n)}%</b><small>${st.good} of ${st.n}</small></div><div class="k"><small>Overpriced or poor</small><b>${Math.round(100*st.bad/st.n)}%</b><small>${st.bad} of ${st.n}</small></div><div class="k"><small>Spend on graded</small><b>€${Math.round(st.spend).toLocaleString()}m</b></div></div>
+ <div class="tablewrap"><table><thead><tr><th>Player</th><th>Joined</th><th class="n">Fee €M</th><th class="n">Score</th><th class="n">Fee predicts</th><th class="n">Value</th><th>Verdict</th></tr></thead><tbody>${[...g].sort((a,b)=>b[F.yr]-a[F.yr]||b[F.fee]-a[F.fee]).map(trow).join('')}</tbody></table></div>
+ <p class="note">Click a signing for its full card. ${all.length-g.length} further signing${all.length-g.length==1?'':'s'} not graded (left early, too few minutes or no stats).</p></article>`}
+$('#cout').addEventListener('click',e=>{if(e.target.closest('#cback')){CLUBSEL=null;clubs();return}
+ const t=e.target.closest('tr');if(!t)return;if(t.dataset.club){CLUBSEL=t.dataset.club;clubs();scrollTo(0,0);return}
+ if(t.dataset.i){const r=D[+t.dataset.i];tab(0);$('#q').value=r[F.name];$('#fy').value=r[F.yr];$('#fl').value='';$('#fp').value='';show();hashSet();scrollTo(0,0)}});
+$('#cout').addEventListener('keydown',e=>{if(e.key=='Enter'&&e.target.matches('tr.row'))e.target.click()});
+for(const id of['cs','cm','cy'])$('#'+id).addEventListener('input',()=>{CLUBSEL=null;clubs()});
+fillClubYears();
+hashGet();show();
+function setSec(v){SEC=v;$('#sPL').setAttribute('aria-pressed',v=='ENG');$('#sRest').setAttribute('aria-pressed',v!='ENG');fillSec()}
+function secGo(v){if(v==SEC)return;setSec(v);$('#q').value='';$('#fl').value='';$('#fp').value='';$('#fv').value='';$('#pq').value='';history.replaceState(null,'',location.pathname);CMP=[null,null];CLUBSEL=null;show();board();if($('#pPlayers').style.display!='none')pShow();cmpInit();fillClubYears();clubs()}
+{const hc=new URLSearchParams(location.hash.slice(1)).get('c');if(hc){const f=k=>{const [n,t,y]=k.split('|').map(decodeURIComponent);return D.findIndex(r=>r[F.name]==n&&r[F.to]==t&&r[F.yr]==+y)},ix=hc.split('~').map(f);if(ix.length==2&&ix.every(i=>i>=0)){setSec(D[ix[0]][F.lg]=='ENG'?'ENG':'REST');CMP=ix;fillClubYears();tab(3)}}}
+$('#sPL').onclick=()=>secGo('ENG');$('#sRest').onclick=()=>secGo('REST');
+{const h=new URLSearchParams(location.hash.slice(1)).get('p');if(h){const m=D.find(r=>norm(r[F.name])==norm(h));if(m&&!inSec(m[F.lg])){setSec(m[F.lg]=='ENG'?'ENG':'REST');$('#q').value=h;const y=new URLSearchParams(location.hash.slice(1)).get('y');if(y)$('#fy').value=y;show()}}}
+
+</script>
+</body>
+</html>
