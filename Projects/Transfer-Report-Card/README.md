@@ -16,7 +16,7 @@
 | **Compare** | Put two signings side by side, copy a share link, or save a share image |
 | **Clubs** | Which clubs buy well: average value with a 90% range, share of good and poor signings, best and worst signing |
 
-Two sections: the **Premier League**, and **the rest of the top five** (they get separate fee models because fees buy different amounts in each).
+Two views: the **Premier League** on its own, or **all top five** leagues together. The Premier League gets its own fee slope because fees buy more there; the other four leagues share another.
 
 | | |
 | --- | --- |
