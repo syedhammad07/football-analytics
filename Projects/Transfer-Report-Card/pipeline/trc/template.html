@@ -68,11 +68,11 @@ details{padding:14px 18px}summary{cursor:pointer;font-weight:600}details p{color
 <body>
 <div class="wrap">
 <header>
- <div class="eyebrow">Football analytics · Projects</div>
+ <div class="eyebrow">Football analytics · Tools</div>
  <h1>Transfer <span>Report Card</span></h1>
- <p class="lede">Was the signing worth the fee? Every <b>paid transfer, summer and winter windows</b>, judged only after a <b>full season at the new club</b>, against what that fee usually buys. Two sections: the <b>Premier League</b>, and <b>La Liga, Serie A, the Bundesliga and Ligue 1</b>, all from summer 2017, the first season detailed stats exist for all five leagues. The <b>Player cards</b> tab covers every player in each section.</p>
+ <p class="lede">Was the signing worth the fee? Every <b>paid transfer, summer and winter windows</b>, judged only after a <b>full season at the new club</b>, against what that fee usually buys. Two views: the <b>Premier League</b> on its own, or <b>all top five</b> (Premier League, La Liga, Serie A, the Bundesliga and Ligue 1 together), all from summer 2017, the first season detailed stats exist for all five leagues. The <b>Player cards</b> tab covers every player in each view.</p>
 </header>
-<div class="tabs" id="secs" role="group" aria-label="Section"><button id="sPL" aria-pressed="true">Premier League · from 2017/18</button><button id="sRest" aria-pressed="false">Rest of the top five · from 2017/18</button></div>
+<div class="tabs" id="secs" role="group" aria-label="Section"><button id="sPL" aria-pressed="true">Premier League · from 2017/18</button><button id="sRest" aria-pressed="false">All top five · from 2017/18</button></div>
 <div class="tabs" role="group" aria-label="View"><button id="tSearch" aria-pressed="true">Look up a signing</button><button id="tBoard" aria-pressed="false">Best and worst value</button><button id="tPlayers" aria-pressed="false">Player cards</button><button id="tCompare" aria-pressed="false">Compare</button><button id="tClubs" aria-pressed="false">Clubs</button></div>
 <section id="pSearch" class="grid1" style="display:grid;gap:14px">
  <div class="bar">
@@ -136,8 +136,8 @@ const F={name:0,from:1,to:2,lg:3,yr:4,pos:5,fee:6,st:7,se:8,mean:9,first:10,basi
 const LG={ENG:'Premier League',ESP:'La Liga',ITA:'Serie A',GER:'Bundesliga',FRA:'Ligue 1'};
 const $=s=>document.querySelector(s), esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const norm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
-let SEC='ENG';const inSec=l=>SEC=='ENG'?l=='ENG':l!='ENG';
-function fillSec(){for(const id of['fl','bl']){const s=$('#'+id);s.innerHTML='<option value="">All</option>';if(SEC!='ENG')for(const k in LG)if(k!='ENG')s.add(new Option(LG[k],k));s.parentElement.style.display=SEC=='ENG'?'none':''}
+let SEC='ENG';const inSec=l=>SEC=='ENG'?l=='ENG':true;
+function fillSec(){for(const id of['fl','bl']){const s=$('#'+id);s.innerHTML='<option value="">All</option>';if(SEC!='ENG')for(const k in LG)s.add(new Option(LG[k],k));s.parentElement.style.display=SEC=='ENG'?'none':''}
  const fy=$('#fy');fy.innerHTML='<option value="">All</option>';[...new Set(D.filter(r=>inSec(r[F.lg])).map(r=>r[F.yr]))].sort().forEach(y=>fy.add(new Option(y+'/'+String(y+1).slice(2),y)))}
 fillSec();
 
@@ -251,7 +251,7 @@ async function pRows(p){const b=p[9];if(!PBK[b])PBK[b]=JSON.parse(await gz64(PL.
 const SRCN={F:'FBref',O:'Opta',S:'SofaScore'},RSN={1:'under 450 min',2:'role unknown',3:'attack data only',4:'no goalkeeper stats'};
 async function pShow(){const tk=++PTK;await pInit();if(tk!=PTK)return;
  const q=norm($('#pq').value.trim()).replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim(),role=$('#pr').value,act=$('#pa').value,mm=+$('#pm').value;
- let rs=PIDX.filter(p=>(SEC=='ENG'?(p[10]||'').split(',').includes('ENG'):(p[10]||'').split(',').some(x=>x&&x!='ENG'))&&(!q||p.n.includes(q))&&(!role||p[6]==role)&&(!act||p[3]>=2025)&&(q||(p[4]>=mm&&p[5]!=null)));
+ let rs=PIDX.filter(p=>(SEC=='ENG'?(p[10]||'').split(',').includes('ENG'):(p[10]||'').split(',').some(x=>x))&&(!q||p.n.includes(q))&&(!role||p[6]==role)&&(!act||p[3]>=2025)&&(q||(p[4]>=mm&&p[5]!=null)));
  rs=q?rs.sort((a,b)=>b[4]-a[4]):rs.sort((a,b)=>b[5]-a[5]);const n=rs.length;
  $('#pres').innerHTML=n?`<div class="card tablewrap"><table><thead><tr><th>Player</th><th>Role</th><th>Seasons</th><th>Main club</th><th class="n">Minutes</th><th class="n">Career score</th></tr></thead><tbody>`+rs.slice(0,30).map(p=>`<tr class="row" data-pid="${p[0]}"><td>${esc(p[1])}</td><td>${POSN[p[6]]||'—'}</td><td>${p[2]}/${String(p[2]+1).slice(2)}–${String(p[3]+1).slice(2)}</td><td>${esc(p[8])}</td><td class="n">${p[4].toLocaleString()}</td><td class="n">${p[5]==null?'–':p[5]}</td></tr>`).join('')+`</tbody></table></div>`+(n>30?`<div class="note">Showing 30 of ${n.toLocaleString()}. ${q?'Type more of the name':'Sorted by career score'} to narrow it.</div>`:'')+(q?'':'<div class="note">Best career scores among players with the minutes shown. Type a name to find anyone.</div>'):'<div class="empty card">No player matches.</div>'}
 async function pCard(id){await pInit();const p=PIDX.find(x=>x[0]==id);if(!p)return;const rows=await pRows(p);
@@ -356,9 +356,9 @@ fillClubYears();
 hashGet();show();
 function setSec(v){SEC=v;$('#sPL').setAttribute('aria-pressed',v=='ENG');$('#sRest').setAttribute('aria-pressed',v!='ENG');fillSec()}
 function secGo(v){if(v==SEC)return;setSec(v);$('#q').value='';$('#fl').value='';$('#fp').value='';$('#fv').value='';$('#pq').value='';history.replaceState(null,'',location.pathname);CMP=[null,null];CLUBSEL=null;show();board();if($('#pPlayers').style.display!='none')pShow();cmpInit();fillClubYears();clubs()}
-{const hc=new URLSearchParams(location.hash.slice(1)).get('c');if(hc){const f=k=>{const [n,t,y]=k.split('|').map(decodeURIComponent);return D.findIndex(r=>r[F.name]==n&&r[F.to]==t&&r[F.yr]==+y)},ix=hc.split('~').map(f);if(ix.length==2&&ix.every(i=>i>=0)){setSec(D[ix[0]][F.lg]=='ENG'?'ENG':'REST');CMP=ix;fillClubYears();tab(3)}}}
-$('#sPL').onclick=()=>secGo('ENG');$('#sRest').onclick=()=>secGo('REST');
-{const h=new URLSearchParams(location.hash.slice(1)).get('p');if(h){const m=D.find(r=>norm(r[F.name])==norm(h));if(m&&!inSec(m[F.lg])){setSec(m[F.lg]=='ENG'?'ENG':'REST');$('#q').value=h;const y=new URLSearchParams(location.hash.slice(1)).get('y');if(y)$('#fy').value=y;show()}}}
+{const hc=new URLSearchParams(location.hash.slice(1)).get('c');if(hc){const f=k=>{const [n,t,y]=k.split('|').map(decodeURIComponent);return D.findIndex(r=>r[F.name]==n&&r[F.to]==t&&r[F.yr]==+y)},ix=hc.split('~').map(f);if(ix.length==2&&ix.every(i=>i>=0)){setSec(D[ix[0]][F.lg]=='ENG'?'ENG':'ALL');CMP=ix;fillClubYears();tab(3)}}}
+$('#sPL').onclick=()=>secGo('ENG');$('#sRest').onclick=()=>secGo('ALL');
+{const h=new URLSearchParams(location.hash.slice(1)).get('p');if(h){const m=D.find(r=>norm(r[F.name])==norm(h));if(m&&!inSec(m[F.lg])){setSec(m[F.lg]=='ENG'?'ENG':'ALL');$('#q').value=h;const y=new URLSearchParams(location.hash.slice(1)).get('y');if(y)$('#fy').value=y;show()}}}
 
 </script>
 </body>
