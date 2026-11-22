@@ -8,7 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap">
-<style>
+<style>.pickrow{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;width:100%;text-align:left;background:none;border:0;border-top:1px solid var(--line);padding:10px 4px;color:inherit;font:inherit;cursor:pointer;border-radius:0}.pickrow:hover,.pickrow:focus-visible{background:rgba(255,255,255,.05)}.pickrow .pn{font-weight:600}.pickrow small{display:block;font-weight:400;opacity:.7;margin-top:2px}.pickrow .pf{opacity:.8;font-variant-numeric:tabular-nums}.pickback{background:none;border:1px solid var(--line);color:inherit;font:inherit;padding:6px 12px;border-radius:999px;cursor:pointer;margin-bottom:10px}@media(max-width:560px){.pickrow{grid-template-columns:1fr auto}.pickrow .verdict{grid-column:1/3;justify-self:start}}
+
 :root{--bg:#000;--surface:#0B1011;--raised:#111A1A;--ink:#E9F5F3;--muted:#8DA6A3;--line:#1B2B2A;--track:#142120;--t:#14C8B4;--good:#A3E635;--bad:#FF7A7A;--mid:#F5C542;--over:#FF9F43;--display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;--body:"Barlow","Segoe UI",system-ui,sans-serif;--r:12px;color-scheme:dark}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.5 var(--body);font-variant-numeric:tabular-nums;padding:28px max(16px,env(safe-area-inset-right,0px)) 56px max(16px,env(safe-area-inset-left,0px))}
@@ -225,23 +226,28 @@ function whyBlock(r){const det=DET[r.i]||[],pos=r[F.pos],res=r[F.res],mean=r[F.m
  }
  h+=evidence(r);
  return `<details class="why" open style="padding:12px 0 0;border:0;border-top:1px solid var(--line);border-radius:0;background:none"><summary style="font-family:var(--display);font-size:18px;letter-spacing:.06em;text-transform:uppercase;color:var(--t)">Why this grade</summary>${h}</details>`}
-let SHOWTK=0;
+let SHOWTK=0,PICK=null,PICKN=0;
 function show(){const q=norm($('#q').value.trim()),l=$('#fl').value,y=$('#fy').value,p=$('#fp').value,vv=$('#fv').value;
  let rs=D.filter(r=>inSec(r[F.lg])&&(!q||norm(r[F.name]).includes(q))&&(!l||r[F.lg]==l)&&(!y||r[F.yr]==y)&&(!p||r[F.pos]==p)&&(!vv||tier(r)==vv));
  if(!q&&!l&&!y&&!p&&!vv){$('#res').innerHTML='<div class="empty card">Type a player, or pick a league and summer. '+D.filter(r=>inSec(r[F.lg])).length.toLocaleString()+' signings loaded.</div>';return}
  rs.sort((a,b)=>b[F.fee]-a[F.fee]);const n=rs.length;
- const tk=++SHOWTK;ensure(rs.slice(0,25).map(r=>r[F.yr])).then(()=>{if(tk!=SHOWTK)return;$('#res').innerHTML=(n?rs.slice(0,25).map(card).join(''):'<div class="empty card">No signing matches.</div>')+(n>25?`<div class="note">Showing the 25 biggest fees of ${n}. Narrow it down above.</div>`:'')})}
+ if(PICK!=null&&!rs.includes(D[PICK]))PICK=null;
+ if(q&&PICK==null&&n>1){rs.sort((a,b)=>norm(a[F.name]).localeCompare(norm(b[F.name]))||b[F.yr]-a[F.yr]);const sh=rs.slice(0,40);
+  $('#res').innerHTML='<div class="card picklist"><div class="sub" style="margin-bottom:8px">'+n+' signings match. Pick one to open the full report.</div>'+sh.map(r=>`<button type="button" class="pickrow" data-pick="${D.indexOf(r)}"><span class="pn">${esc(r[F.name])}<small>${esc(r[F.from])} → ${esc(r[F.to])} · ${LG[r[F.lg]]} · ${r[F.win]=='W'?'winter '+(r[F.yr]+1):'summer '+r[F.yr]}${POSN[r[F.pos]]||r[F.pos]?' · '+(POSN[r[F.pos]]||r[F.pos]):''}</small></span><span class="pf">€${r[F.fee]}m</span>${tier(r)?`<span class="verdict v-${tier(r)}" style="font-size:12px;padding:2px 7px">${TIERS[tier(r)][0]}</span>`:'<span class="sub">Not graded</span>'}</button>`).join('')+(n>40?'<div class="note">Showing 40 of '+n+'. Type more of the name to narrow it down.</div>':'')+'</div>';SHOWTK++;return}
+ if(PICK!=null){PICKN=rs.length;rs=[D[PICK]]}
+ const tk=++SHOWTK;ensure(rs.slice(0,25).map(r=>r[F.yr])).then(()=>{if(tk!=SHOWTK)return;$('#res').innerHTML=(PICK!=null&&PICKN>1?`<button type="button" class="pickback" id="pickback">← Back to all ${PICKN} matches</button>`:'')+(n?rs.slice(0,25).map(card).join(''):'<div class="empty card">No signing matches.</div>')+(n>25?`<div class="note">Showing the 25 biggest fees of ${n}. Narrow it down above.</div>`:'')})}
 function board(){const l=$('#bl').value,p=$('#bp').value,f=+$('#bf').value,w=$('#bs').value=='worst';
  let rs=D.filter(r=>inSec(r[F.lg])&&r[F.res]!=null&&(!l||r[F.lg]==l)&&(!p||r[F.pos]==p)&&r[F.fee]>=f&&(!$('#bv').value||tier(r)==$('#bv').value));rs.sort((a,b)=>w?a[F.res]-b[F.res]:b[F.res]-a[F.res]);
  $('#bt').innerHTML=rs.slice(0,40).map((r,i)=>`<tr class="row" data-i="${D.indexOf(r)}"><td>${esc(r[F.name])}<div class="sub">${POSN[r[F.pos]]||r[F.pos]}</div></td><td>${esc(r[F.to])}</td><td>${r[F.yr]}</td><td class="n">${r[F.fee]}</td><td class="n">${r[F.mean]}</td><td class="n">${r[F.exp]}</td><td class="n" style="color:var(--${r[F.res]>=0?'good':'bad'})">${r[F.res]>0?'+':''}${r[F.res]}</td><td><span class="verdict v-${tier(r)}" style="font-size:13px;padding:3px 8px">${TIERS[tier(r)][0]}</span></td></tr>`).join('')||'<tr><td colspan=8 class="empty">Nothing matches.</td></tr>'}
 function tab(b){const n=b===true?1:b===false?0:b,P=['pSearch','pBoard','pPlayers','pCompare','pClubs'],T=['tSearch','tBoard','tPlayers','tCompare','tClubs'];P.forEach((id,i)=>$('#'+id).style.display=i==n?'grid':'none');T.forEach((id,i)=>$('#'+id).setAttribute('aria-pressed',i==n));if(n==1)board();if(n==2)pShow();if(n==3)cmpInit();if(n==4)clubs()}
 $('#tCompare').onclick=()=>tab(3);$('#tClubs').onclick=()=>tab(4);$('#tSearch').onclick=()=>tab(0);$('#tBoard').onclick=()=>tab(1);$('#tPlayers').onclick=()=>tab(2);
-for(const id of['q','fl','fy','fp','fv'])$('#'+id).addEventListener('input',()=>{show();hashSet()});
+for(const id of['q','fl','fy','fp','fv'])$('#'+id).addEventListener('input',()=>{PICK=null;show();hashSet()});
+$('#res').addEventListener('click',e=>{const b=e.target.closest('[data-pick]');if(b){PICK=+b.dataset.pick;show();hashSet();scrollTo(0,0);return}if(e.target.closest('#pickback')){PICK=null;show();hashSet()}});
 for(const id of['bs','bl','bp','bf','bv'])$('#'+id).addEventListener('input',board);
-$('#bt').addEventListener('click',e=>{const t=e.target.closest('tr');if(!t)return;const r=D[+t.dataset.i];tab(false);$('#q').value=r[F.name];$('#fy').value=r[F.yr];$('#fl').value='';$('#fp').value='';show();hashSet();scrollTo(0,0)});
+$('#bt').addEventListener('click',e=>{const t=e.target.closest('tr');if(!t)return;const r=D[+t.dataset.i];tab(false);$('#q').value=r[F.name];$('#fy').value=r[F.yr];$('#fl').value='';$('#fp').value='';PICK=+t.dataset.i;show();hashSet();scrollTo(0,0)});
 $('#res').addEventListener('click',e=>{const b=e.target.closest('[data-share]');if(!b)return;const [n,t,y]=b.dataset.share.split('|');const u=location.href.split('#')[0]+'#p='+encodeURIComponent(n)+'&to='+encodeURIComponent(t)+'&y='+y;navigator.clipboard&&navigator.clipboard.writeText(u).then(()=>{b.textContent='Copied'},()=>{});history.replaceState(null,'',u)});
-function hashSet(){const q=$('#q').value.trim(),y=$('#fy').value;history.replaceState(null,'',q||y?'#p='+encodeURIComponent(q)+(y?'&y='+y:''):location.pathname)}
-function hashGet(){try{const h=new URLSearchParams(location.hash.slice(1));if(h.get('p')){$('#q').value=h.get('p');if(h.get('y'))$('#fy').value=h.get('y')}}catch(e){}}
+function hashSet(){const q=$('#q').value.trim(),y=$('#fy').value,r=PICK!=null?D[PICK]:null;history.replaceState(null,'',q||y?'#p='+encodeURIComponent(r?r[F.name]:q)+(r?'&to='+encodeURIComponent(r[F.to])+'&y='+r[F.yr]:(y?'&y='+y:'')):location.pathname)}
+function hashGet(){try{const h=new URLSearchParams(location.hash.slice(1));if(h.get('p')){$('#q').value=h.get('p');if(h.get('y'))$('#fy').value=h.get('y');if(h.get('to')&&h.get('y')){const i=D.findIndex(r=>norm(r[F.name])==norm(h.get('p'))&&r[F.to]==h.get('to')&&r[F.yr]==+h.get('y'));if(i>=0)PICK=i}}}catch(e){}}
 for(const id of['fv','bv'])for(const k of['bargain','great','good','mid','over','bad'])$('#'+id).add(new Option(TIERS[k][0],k));
 
 const PL=__PL__;let PIDX=null;const PBK={};let PTK=0;
@@ -358,7 +364,7 @@ function setSec(v){SEC=v;$('#sPL').setAttribute('aria-pressed',v=='ENG');$('#sRe
 function secGo(v){if(v==SEC)return;setSec(v);$('#q').value='';$('#fl').value='';$('#fp').value='';$('#fv').value='';$('#pq').value='';history.replaceState(null,'',location.pathname);CMP=[null,null];CLUBSEL=null;show();board();if($('#pPlayers').style.display!='none')pShow();cmpInit();fillClubYears();clubs()}
 {const hc=new URLSearchParams(location.hash.slice(1)).get('c');if(hc){const f=k=>{const [n,t,y]=k.split('|').map(decodeURIComponent);return D.findIndex(r=>r[F.name]==n&&r[F.to]==t&&r[F.yr]==+y)},ix=hc.split('~').map(f);if(ix.length==2&&ix.every(i=>i>=0)){setSec(D[ix[0]][F.lg]=='ENG'?'ENG':'ALL');CMP=ix;fillClubYears();tab(3)}}}
 $('#sPL').onclick=()=>secGo('ENG');$('#sRest').onclick=()=>secGo('ALL');
-{const h=new URLSearchParams(location.hash.slice(1)).get('p');if(h){const m=D.find(r=>norm(r[F.name])==norm(h));if(m&&!inSec(m[F.lg])){setSec(m[F.lg]=='ENG'?'ENG':'ALL');$('#q').value=h;const y=new URLSearchParams(location.hash.slice(1)).get('y');if(y)$('#fy').value=y;show()}}}
+{const h=new URLSearchParams(location.hash.slice(1)).get('p');if(h){const ht=new URLSearchParams(location.hash.slice(1)).get('to'),hy=new URLSearchParams(location.hash.slice(1)).get('y'),m=D.find(r=>norm(r[F.name])==norm(h)&&(!ht||r[F.to]==ht)&&(!hy||r[F.yr]==+hy))||D.find(r=>norm(r[F.name])==norm(h));if(m&&!inSec(m[F.lg])){setSec(m[F.lg]=='ENG'?'ENG':'ALL');$('#q').value=h;const y=new URLSearchParams(location.hash.slice(1)).get('y');if(y)$('#fy').value=y;show()}}}
 
 </script>
 </body>
