@@ -19,6 +19,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Probe
+        run: python Tools/Player-Style-Finder/pipeline/fetch_understat.py --probe
       - name: Download
         run: python Tools/Player-Style-Finder/pipeline/fetch_understat.py
       - name: Commit the CSVs to this branch

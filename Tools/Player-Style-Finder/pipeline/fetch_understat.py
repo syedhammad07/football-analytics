@@ -40,9 +40,23 @@ def players(league, season):
         return json.loads(m.group(1).encode().decode("unicode_escape"))
 
 
+def probe():
+    """Print what Understat returns, to diagnose blocked or changed endpoints."""
+    for url, h in [("https://understat.com/getLeagueData/EPL/2015", {**UA, "Referer": "https://understat.com/league/EPL/2015"}),
+                   ("https://understat.com/league/EPL/2015", {"User-Agent": UA["User-Agent"]})]:
+        try:
+            r = urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=60)
+            body = r.read().decode("utf-8", "replace")
+            print("PROBE", url, r.status, len(body), repr(body[:300]), "| vars:", re.findall(r"var (\w+)\s*=", body)[:10], flush=True)
+        except Exception as e:
+            print("PROBE", url, "ERROR", repr(e)[:300], flush=True)
+
+
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("--season", type=int)
+    ap = argparse.ArgumentParser(); ap.add_argument("--season", type=int); ap.add_argument("--probe", action="store_true")
     a = ap.parse_args()
+    if a.probe:
+        return probe()
     now = date.today().year if date.today().month >= 8 else date.today().year - 1
     seasons = [a.season] if a.season else list(range(2014, now + 1))
     os.makedirs(OUT, exist_ok=True)
