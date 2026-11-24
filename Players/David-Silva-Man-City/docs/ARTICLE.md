@@ -129,6 +129,18 @@ And when Silva announced his retirement in July 2023, his old captain **Vincent 
 
 > "everyone would be saying he is one of the best players in the world"<br>— **Roberto Mancini**, on what would have happened had Silva joined Barcelona
 
+**What they saw him do.** The most revealing quotes aren't about how good he was, but about *how* he did it.
+
+> "Moving between the lines I have never seen someone like him."<br>— **Pep Guardiola**, July 2020, on his ability to find space in the tightest areas
+
+> "he knows where to turn so that he has time"<br>— **Leroy Sané**, on his vision. Sané added that in training rondos, Silva was never the one stuck in the middle chasing the ball
+
+> "He feels and senses every situation."<br>— **Joe Hart**, describing what it was like to face Silva one-on-one in training: whatever a goalkeeper chose, committing early or waiting, Silva picked the other finish
+
+> "You pass him a bad ball and he makes it look like a good ball"<br>— **Kyle Walker**, on the first touch that made teammates look better
+
+Hart's first impression is the best measure of how much Silva surprised people. When the "wizard" arrived in 2010, Hart remembered thinking he looked "tiny, slow, only left-footed". Guardiola, watching from Barcelona, admitted he had expected the small Spaniard to struggle in England too.
+
 > "one of the best No 10s in the Premier League"<br>— **Owen Hargreaves**, his City teammate in 2011/12
 
 > "one of the most talented players Spain has ever produced"<br>— **Xavi**, his Spain teammate
@@ -137,7 +149,15 @@ And when Silva announced his retirement in July 2023, his old captain **Vincent 
 
 > "Silva is Manchester City's greatest ever player"<br>— **Jamie Carragher** (Liverpool), who put him alongside Henry, Bergkamp and Cantona
 
-> "probably City's first world-class player in my lifetime"<br>— **Gary Neville** (Manchester United)
+> "His awareness is the best in world football, (Andres) Iniesta and Xavi are the nearest level to him."<br>— **Jamie Carragher**, on Sky Sports after Silva's display at Aston Villa, October 2014
+
+> "It is almost like trying to tackle dust."<br>— **Jamie Carragher**, on Sky Sports after Silva's last game for City, July 2020
+
+> "would've twisted me inside out"<br>— **Roy Keane** (Manchester United), on Sky Sports in July 2020. Keane, the hardest midfielder of his era, said he was glad he had never had to play against Silva, and called him a genius
+
+Graeme Souness (Liverpool) said on the same Sky panel that Silva was good enough to have walked into Guardiola's great Barcelona side alongside Xavi and Iniesta. In his Times column he went further: choosing between Silva and De Bruyne, he said he would take Silva, but only just.
+
+**Gary Neville** (Manchester United) said on the same panel that, in his lifetime, Silva was probably the first City player who was truly world class.
 
 > "undoubtedly one of the best players in the Premier League"<br>— **Frank Lampard**, a Chelsea rival for years before a season as his City teammate in 2014/15. He has also compared him with Zola, Robben and Hazard
 
@@ -248,7 +268,14 @@ For me, he belongs in the Hall of Fame, and in any serious list of the league's 
 - Zabaleta: [ESPN, July 2023](https://global.espn.com/football/story/_/id/38102283/manchester-city-spain-world-cup-winner-legend-david-silva-legend-grows-retirement)
 - Mancini: [Manchester City, January 2019](https://www.mancity.com/news/first-team/first-team-news/2019/january/david-silva-267-pl-appearances-what-they-said)
 - Carragher: [Sky Sports, December 2017](https://www.skysports.com/football/news/29327/11155615/david-silva-is-manchester-citys-greatest-ever-player-says-jamie-carragher)
-- Neville: [Sky Sports, July 2020](https://www.skysports.com/football/news/11679/12037197/david-silva-salute-to-manchester-city-legend-after-final-premier-league-appearance)
+- Neville, Souness (Barcelona) and Carragher ("tackle dust"), Sky Sports pundit panel after Silva's last game, July 2020: [Sky Sports](https://www.skysports.com/football/news/11679/12037197/david-silva-salute-to-manchester-city-legend-after-final-premier-league-appearance)
+- Carragher on his awareness, October 2014: [HITC, quoting the Daily Mail](https://www.hitc.com/tt-carragher-david-silva-is-levels-above-these-united-and-arsena/)
+- Keane: [SPORTbible, from Sky Sports, July 2020](https://www.sportbible.com/football/football-news/man-utd/man-utd-man-city-roy-keane-david-silva-899994-20231211)
+- Souness picking Silva over De Bruyne (The Times): [The Football Faithful](https://thefootballfaithful.com/silva-better-than-de-bruyne-claims-pundit/)
+- Guardiola on moving between the lines, July 2020: [FourFourTwo](https://www.fourfourtwo.com/news/guardiola-hails-silva-in-impressive-manchester-city-display-1594265554000); expecting him to struggle: [World Soccer Talk / AFP, August 2019](https://worldsoccertalk.com/afp/guardiola-surprised-by-silvas-success-in-england-20190823-CMS-278169.html/)
+- Sané: [FourFourTwo](https://www.fourfourtwo.com/us/news/sane-david-silva-sees-everything)
+- Hart on facing him in training: [Goal](https://www.goal.com/en-gb/news/25m-tiny-slow-only-left-footed-didnt-know-his-position-hart/10zhr60hhikrd1ii2ttt8oavhl); first impression (Kickback podcast): [Football España](https://www.football-espana.net/2019/10/01/david-silva-was-tiny-slow-one-footed-joe-hart)
+- Walker on bad passes (Vibe with FIVE): [SPORTbible](https://sportbible.com/football/football-news/man-city/kyle-walker-best-teammates-tottenham-player-831408-20240325)
 - Lampard: [Manchester City, March 2015](https://live.mancity.com/news/first-team/first-team-news/2015/march/lampard-on-silva-1010) and [ESPN](https://africa.espn.com/football/story/_/id/37406902/david-silva-good-eden-hazard-arjen-robben-says-frank-lampard)
 - Hargreaves (a former teammate): [premierleague.com](https://premierleague.com/news/643626)
 - Xavi: [The National](https://thenational-the-national-prod.cdn.arcpublishing.com/sport/football/manchester-city-talisman-david-silva-heads-off-into-the-sunset-lauded-as-one-of-the-best-ever-1.997270)
