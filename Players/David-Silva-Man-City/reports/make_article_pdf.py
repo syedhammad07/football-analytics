@@ -17,7 +17,9 @@ from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, Image, Kee
 HERE = Path(__file__).parent
 SRC = HERE.parent / "docs" / "ARTICLE.md"
 OUT = HERE / "David_Silva_article.pdf"
-DARK, MUTED, BLUE, RULE = HexColor("#1A1A18"), HexColor("#6B6A64"), HexColor("#1C2C5B"), HexColor("#DCDAD3")
+# Manchester City colours: navy text, sky-blue headings and accents, a deeper sky blue where small text needs contrast
+DARK, MUTED, BLUE, RULE = HexColor("#1C2C5B"), HexColor("#5E6B85"), HexColor("#1C2C5B"), HexColor("#CFE3F4")
+SKY, SKY_TEXT = HexColor("#6CABDD"), HexColor("#2B78B8")
 
 FONT_DIR = str(HERE.parent / "assets" / "fonts") + "/"  # Barlow (SIL Open Font License)
 try:
@@ -35,20 +37,20 @@ S = {
     "title": ParagraphStyle("title", fontName=HEAD, fontSize=34, leading=37, textColor=DARK, spaceAfter=8),
     "sub": ParagraphStyle("sub", fontName=BOLD, fontSize=13, leading=17, textColor=DARK, spaceAfter=6),
     "meta": ParagraphStyle("meta", fontName=BODY, fontSize=9, leading=13, textColor=MUTED, spaceAfter=14),
-    "part": ParagraphStyle("part", fontName=HEAD, fontSize=24, leading=28, textColor=BLUE, spaceBefore=4, spaceAfter=10),
+    "part": ParagraphStyle("part", fontName=HEAD, fontSize=24, leading=28, textColor=SKY, spaceBefore=4, spaceAfter=10),
     "chart": ParagraphStyle("chart", fontName=BOLD, fontSize=12.5, leading=16, textColor=DARK, spaceBefore=14, spaceAfter=6),
     "cell": ParagraphStyle("cell", fontName=BODY, fontSize=8.5, leading=11, textColor=DARK),
     "callout": ParagraphStyle("callout", fontName=BODY, fontSize=10.5, leading=15, textColor=DARK, backColor=HexColor("#E8F1FA"),
                               borderColor=BLUE, borderWidth=0, borderPadding=(8, 10, 8, 10), leftIndent=10, rightIndent=10,
                               spaceBefore=10, spaceAfter=14),
-    "quote": ParagraphStyle("quote", fontName=BODY, fontSize=10.5, leading=15, textColor=DARK, backColor=HexColor("#F4F2EE"),
+    "quote": ParagraphStyle("quote", fontName=BODY, fontSize=10.5, leading=15, textColor=DARK, backColor=HexColor("#EEF5FC"),
                             borderPadding=(6, 10, 6, 10), leftIndent=10, rightIndent=10, spaceBefore=6, spaceAfter=12),
     "body": ParagraphStyle("body", fontName=BODY, fontSize=10.5, leading=15, textColor=DARK, spaceAfter=7, alignment=TA_LEFT),
 }
 
 def inline(text):
     text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-    text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2" color="#1C2C5B"><u>\1</u></a>', text)   # clickable links
+    text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2" color="#2B78B8"><u>\1</u></a>', text)   # clickable links
     text = re.sub(r"`([^`]+)`", r"\1", text)
     text = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", text)
     text = re.sub(r"\*(.+?)\*", r"<i>\1</i>", text)
@@ -68,7 +70,7 @@ def flush_lists():
     if rows:
         cells = [[Paragraph(("<b>%s</b>" if i == 0 else "%s") % inline(c), S["cell"]) for c in r] for i, r in enumerate(rows)]
         tbl = Table(cells, colWidths=[(A4[0] - 40 * mm) / len(rows[0])] * len(rows[0]), repeatRows=1)
-        tbl.setStyle(TableStyle([("LINEBELOW", (0, 0), (-1, 0), 0.8, BLUE), ("LINEBELOW", (0, 1), (-1, -1), 0.4, RULE),
+        tbl.setStyle(TableStyle([("LINEBELOW", (0, 0), (-1, 0), 0.8, SKY), ("LINEBELOW", (0, 1), (-1, -1), 0.4, RULE),
                                  ("VALIGN", (0, 0), (-1, -1), "TOP"), ("BOTTOMPADDING", (0, 0), (-1, -1), 5)]))
         (block if block is not None else story).extend([tbl, Spacer(1, 8)])
         rows = []
@@ -110,12 +112,12 @@ for line in SRC.read_text(encoding="utf-8").splitlines():
                          "My take", "What clubs can learn"):    # and the verdict, my take and lessons on one page
             story.append(PageBreak())   # every chapter starts on a new page
         story.append(Paragraph(inline(t[3:]), S["part"]))
-        story.append(HRFlowable(width="100%", color=RULE, thickness=0.8, spaceAfter=6))
+        story.append(HRFlowable(width="100%", color=SKY, thickness=0.8, spaceAfter=6))
     elif t.startswith("### "):
         close_block()
         block = [Paragraph(inline(t[4:]), S["chart"])]
     elif t.startswith('> "'):                    # a quote from a player, with "<br>" before the attribution
-        target.append(Paragraph(inline(t[2:]), S["quote"]))
+        target.append(Paragraph(inline(t[2:]).replace("<b>", '<font color="#2B78B8"><b>').replace("</b>", "</b></font>"), S["quote"]))
     elif t.startswith("> "):
         target.append(Paragraph(inline(t[2:]), S["callout"]))
     elif t.startswith("!["):
@@ -131,7 +133,7 @@ close_block()
 
 def footer(c, doc):
     c.saveState()
-    c.setFillColor(BLUE); c.rect(0, A4[1] - 6, A4[0], 6, fill=1, stroke=0)
+    c.setFillColor(SKY); c.rect(0, A4[1] - 6, A4[0], 6, fill=1, stroke=0)
     c.setFont(BODY, 8); c.setFillColor(MUTED)
     c.drawString(20 * mm, 10 * mm, "David Silva · The most under-rated great? · Hammad")
     c.drawRightString(A4[0] - 20 * mm, 10 * mm, str(doc.page))
