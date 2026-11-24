@@ -106,7 +106,8 @@ for line in SRC.read_text(encoding="utf-8").splitlines():
         story.append(Paragraph(inline(t[2:]), S["title"]))
     elif t.startswith("## "):
         close_block()
-        if t[3:] not in ("The career in numbers", "The question"):  # keep the summary on the cover page
+        if t[3:] not in ("The career in numbers", "The question",   # keep the summary on the cover page
+                         "My take", "What clubs can learn"):    # and the verdict, my take and lessons on one page
             story.append(PageBreak())   # every chapter starts on a new page
         story.append(Paragraph(inline(t[3:]), S["part"]))
         story.append(HRFlowable(width="100%", color=RULE, thickness=0.8, spaceAfter=6))
