@@ -25,10 +25,7 @@ When people list the best players the Premier League has ever had, David Silva i
 
 My view going in: **Silva is under-rated, and badly neglected in the conversation about the greatest Premier League players.** I also remember him as a dribbler, a player who glided past people. I wanted to test both against the numbers, and to collect what the players themselves said about him.
 
-- **Chapters 1–4:** what Silva actually did, compared with every Premier League midfielder from 2010/11 to 2019/20, including a test of how much of a dribbler he really was.
-- **Chapter 5:** what his teammates and rivals said.
-- **Chapter 6:** a simple model of the PFA Team of the Year: was he recognised at the time?
-- **Chapter 7:** how he's rated now, in the all-time conversation and the Hall of Fame.
+**Chapters 1–4** compare what Silva did with every Premier League midfielder of 2010/11 to 2019/20, including how much of a dribbler he was; **Chapter 5** is what his teammates and rivals said; **Chapter 6** asks whether he was recognised at the time; **Chapter 7** is how he's rated now.
 
 ---
 
