@@ -1,6 +1,7 @@
 """The first code cell shared by every notebook in this project (imported by the build_*.py scripts)."""
 
 SETUP = r'''
+import os
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -10,10 +11,15 @@ from matplotlib import font_manager
 
 ROOT = Path.cwd().parent if Path.cwd().name == "notebooks" else Path.cwd()  # project folder
 EXT = ROOT / "data" / "external"
-FIGS = ROOT / "reports" / "figures"
+DARK_THEME = os.environ.get("REPORT_THEME") == "dark"  # dark = black-background charts for the PDF; the README uses the light ones
+FIGS = ROOT / "reports" / ("figures_dark" if DARK_THEME else "figures")
 FIGS.mkdir(parents=True, exist_ok=True)
 
 SKY, NAVY, GREY, DARK, MUTED, LIGHT, GOLD = "#6CABDD", "#1C2C5B", "#B4B2A9", "#2B2B2A", "#6B6A64", "#F4F2EE", "#C9A227"
+BG, GRID, SPAN, HEAT, HEAT_HI = "white", "#ECEAE4", "#FBF3DC", [NAVY, SKY, "#E8F1FA", "#FFFFFF"], "white"
+if DARK_THEME:  # on black, the emphasis colour (navy) becomes sky blue and the secondary blue gets deeper
+    SKY, NAVY, GREY, DARK, MUTED = "#2F6FA6", "#6CABDD", "#4A4A50", "#ECECEC", "#9A9AA0"
+    BG, GRID, SPAN, HEAT, HEAT_HI = "#000000", "#222226", "#2A2410", ["#8CC3EC", "#3D7DB3", "#17283A", "#0B0B0D"], "#000000"
 SRC_PL = "Data: Premier League official stats (Opta), premierleague.com. Midfielders as listed in each club's squad, 2010/11 to 2019/20"
 for _f in (ROOT / "assets" / "fonts").glob("*.ttf"):  # Barlow, bundled with the project (SIL Open Font License)
     font_manager.fontManager.addfont(str(_f))
@@ -21,6 +27,7 @@ plt.rcParams.update({
     "font.family": "Barlow", "figure.dpi": 110, "savefig.dpi": 200, "savefig.bbox": "tight", "font.size": 10,
     "axes.spines.top": False, "axes.spines.right": False, "axes.edgecolor": GREY,
     "axes.labelcolor": DARK, "xtick.color": DARK, "ytick.color": DARK,
+    "figure.facecolor": BG, "axes.facecolor": BG, "savefig.facecolor": BG, "text.color": DARK, "legend.labelcolor": DARK,
 })
 
 

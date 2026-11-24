@@ -18,8 +18,10 @@ HERE = Path(__file__).parent
 SRC = HERE.parent / "docs" / "ARTICLE.md"
 OUT = HERE / "David_Silva_article.pdf"
 # Manchester City colours: navy text, sky-blue headings and accents, a deeper sky blue where small text needs contrast
-DARK, MUTED, BLUE, RULE = HexColor("#1C2C5B"), HexColor("#5E6B85"), HexColor("#1C2C5B"), HexColor("#CFE3F4")
-SKY, SKY_TEXT = HexColor("#6CABDD"), HexColor("#2B78B8")
+# Black page, Manchester City accents: off-white text, sky-blue headings, dark navy boxes
+PAGE = HexColor("#000000")
+DARK, MUTED, BLUE, RULE = HexColor("#ECECEC"), HexColor("#9A9AA0"), HexColor("#6CABDD"), HexColor("#2A2E36")
+SKY, SKY_TEXT = HexColor("#6CABDD"), HexColor("#8CC3EC")
 
 FONT_DIR = str(HERE.parent / "assets" / "fonts") + "/"  # Barlow (SIL Open Font License)
 try:
@@ -40,24 +42,24 @@ S = {
     "part": ParagraphStyle("part", fontName=HEAD, fontSize=24, leading=28, textColor=SKY, spaceBefore=4, spaceAfter=10),
     "chart": ParagraphStyle("chart", fontName=BOLD, fontSize=12.5, leading=16, textColor=DARK, spaceBefore=14, spaceAfter=6),
     "cell": ParagraphStyle("cell", fontName=BODY, fontSize=8.5, leading=11, textColor=DARK),
-    "callout": ParagraphStyle("callout", fontName=BODY, fontSize=10.5, leading=15, textColor=DARK, backColor=HexColor("#E8F1FA"),
+    "callout": ParagraphStyle("callout", fontName=BODY, fontSize=10.5, leading=15, textColor=DARK, backColor=HexColor("#101C2E"),
                               borderColor=BLUE, borderWidth=0, borderPadding=(8, 10, 8, 10), leftIndent=10, rightIndent=10,
                               spaceBefore=10, spaceAfter=14),
-    "quote": ParagraphStyle("quote", fontName=BODY, fontSize=10.5, leading=15, textColor=DARK, backColor=HexColor("#EEF5FC"),
+    "quote": ParagraphStyle("quote", fontName=BODY, fontSize=10.5, leading=15, textColor=DARK, backColor=HexColor("#0E1622"),
                             borderPadding=(6, 10, 6, 10), leftIndent=10, rightIndent=10, spaceBefore=6, spaceAfter=12),
     "body": ParagraphStyle("body", fontName=BODY, fontSize=10.5, leading=15, textColor=DARK, spaceAfter=7, alignment=TA_LEFT),
 }
 
 def inline(text):
     text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-    text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2" color="#2B78B8"><u>\1</u></a>', text)   # clickable links
+    text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2" color="#8CC3EC"><u>\1</u></a>', text)   # clickable links
     text = re.sub(r"`([^`]+)`", r"\1", text)
     text = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", text)
     text = re.sub(r"\*(.+?)\*", r"<i>\1</i>", text)
     return text.replace("&lt;br&gt;", "<br/>")
 
 def chart_image(rel):
-    path = (SRC.parent / rel).resolve()
+    path = (SRC.parent / rel.replace("/figures/", "/figures_dark/")).resolve()  # black-background charts for the black page
     w, h = PILImage.open(path).size
     max_w, max_h = A4[0] - 40 * mm, 120 * mm
     s = min(max_w / w, max_h / h)
@@ -117,7 +119,7 @@ for line in SRC.read_text(encoding="utf-8").splitlines():
         close_block()
         block = [Paragraph(inline(t[4:]), S["chart"])]
     elif t.startswith('> "'):                    # a quote from a player, with "<br>" before the attribution
-        target.append(Paragraph(inline(t[2:]).replace("<b>", '<font color="#2B78B8"><b>').replace("</b>", "</b></font>"), S["quote"]))
+        target.append(Paragraph(inline(t[2:]).replace("<b>", '<font color="#8CC3EC"><b>').replace("</b>", "</b></font>"), S["quote"]))
     elif t.startswith("> "):
         target.append(Paragraph(inline(t[2:]), S["callout"]))
     elif t.startswith("!["):
@@ -133,6 +135,7 @@ close_block()
 
 def footer(c, doc):
     c.saveState()
+    c.setFillColor(PAGE); c.rect(0, 0, A4[0], A4[1], fill=1, stroke=0)
     c.setFillColor(SKY); c.rect(0, A4[1] - 6, A4[0], 6, fill=1, stroke=0)
     c.setFont(BODY, 8); c.setFillColor(MUTED)
     c.drawString(20 * mm, 10 * mm, "David Silva · The most under-rated great? · Hammad")

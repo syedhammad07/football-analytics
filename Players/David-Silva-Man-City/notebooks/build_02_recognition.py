@@ -96,15 +96,15 @@ fig, ax = plt.subplots(figsize=(10, 6))
 yy = np.arange(len(show))
 for yi, (n, r) in zip(yy, show.iterrows()):
     ax.plot([r.expected, r.actual], [yi, yi], color=GREY, lw=2.2, zorder=1)
-ax.scatter(show.expected, yy, s=80, color="white", edgecolors=MUTED, lw=1.8, zorder=2, label="Expected selections (from his numbers)")
+ax.scatter(show.expected, yy, s=80, color=BG, edgecolors=MUTED, lw=1.8, zorder=2, label="Expected selections (from his numbers)")
 ax.scatter(show.actual, yy, s=80, color=[NAVY if n == SILVA else SKY for n in show.index], zorder=3, label="Actual selections")
 for yi, (n, r) in zip(yy, show.iterrows()):
     ax.text(max(r.expected, r.actual) + 0.12, yi, f"{r.gap:+.1f}", va="center", fontsize=9.5,
             color=NAVY if n == SILVA else DARK, fontweight="bold" if n == SILVA else "normal")
 ax.set_yticks(yy, [f"{n} ({int(r.seasons)} seasons)" for n, r in show.iterrows()], fontsize=10)
-ax.set_xlabel("PFA Team of the Year selections, 2010/11 to 2019/20"); ax.grid(axis="x", color="#ECEAE4"); ax.set_axisbelow(True)
+ax.set_xlabel("PFA Team of the Year selections, 2010/11 to 2019/20"); ax.grid(axis="x", color=GRID); ax.set_axisbelow(True)
 ax.tick_params(axis="y", length=0); ax.legend(frameon=False, loc="lower right")
-ax.axhspan(-0.5, (show.gap < 0).sum() - 0.5, color="#FBF3DC", zorder=0)
+ax.axhspan(-0.5, (show.gap < 0).sum() - 0.5, color=SPAN, zorder=0)
 ax.text(ax.get_xlim()[1], (show.gap < 0).sum() - 0.7, "Under-rated: picked less than their numbers predict", ha="right", va="top", fontsize=9, color=GOLD, fontweight="bold")
 r = CAREER.loc[SILVA]
 titles(fig, f"The voters didn't miss him: picked {int(r.actual)} times when his numbers predicted {r.expected:.1f}",

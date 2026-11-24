@@ -111,16 +111,16 @@ code(r'''
 # Figure 3: rank in every season
 M = RS[["r_" + c for c in RANKS]].T
 fig, ax = plt.subplots(figsize=(11.5, 4.4))
-cmap = plt.matplotlib.colors.LinearSegmentedColormap.from_list("rk", [NAVY, SKY, "#E8F1FA", "#FFFFFF"])
+cmap = plt.matplotlib.colors.LinearSegmentedColormap.from_list("rk", HEAT)
 ax.imshow(np.clip(M.values, 1, 40), cmap=cmap, vmin=1, vmax=40, aspect="auto")
 for i in range(M.shape[0]):
     for j in range(M.shape[1]):
-        v = int(M.values[i, j]); ax.text(j, i, v, ha="center", va="center", fontsize=10.5, fontweight="bold", color="white" if v <= 6 else DARK)
+        v = int(M.values[i, j]); ax.text(j, i, v, ha="center", va="center", fontsize=10.5, fontweight="bold", color=HEAT_HI if v <= 6 else DARK)
 ax.set_yticks(range(len(RANKS)), [RANKS[c[2:]] + " per 90" for c in M.index], fontsize=10)
 ax.set_xticks(range(M.shape[1]), [f"{season_label(s)}\n(of {int(n)})" for s, n in zip(RS.index, RS.n)], fontsize=8.5)
 ax.tick_params(length=0); [s.set_visible(False) for s in ax.spines.values()]
 titles(fig, "Near the top of the league for creating, every season for ten years",
-       "David Silva's rank among Premier League midfielders with 1,800+ minutes in each season (1 = best; darker = higher)", SRC_PL)
+       f"David Silva's rank among Premier League midfielders with 1,800+ minutes in each season (1 = best; {'brighter' if DARK_THEME else 'darker'} = higher)", SRC_PL)
 fig.savefig(FIGS / "03_rank_every_season.png")
 ''')
 
@@ -148,14 +148,14 @@ code(r'''
 fig, ax = plt.subplots(figsize=(10.5, 6.4))
 ax.scatter(R.passing, R.creating, s=14, color=GREY, alpha=0.55, edgecolors="none", label="A midfield season (1,800+ min)")
 o = BOTH[BOTH.name != SILVA]
-ax.scatter(o.passing, o.creating, s=46, color=SKY, edgecolors="white", lw=0.8, zorder=3, label="Top 5 that season for both")
+ax.scatter(o.passing, o.creating, s=46, color=SKY, edgecolors=BG, lw=0.8, zorder=3, label="Top 5 that season for both")
 s = BOTH[BOTH.name == SILVA]
-ax.scatter(s.passing, s.creating, s=95, color=NAVY, edgecolors="white", lw=1.2, zorder=4, label="David Silva, top 5 for both")
+ax.scatter(s.passing, s.creating, s=95, color=NAVY, edgecolors=BG, lw=1.2, zorder=4, label="David Silva, top 5 for both")
 for k, r in enumerate(s.sort_values("creating").itertuples()):
     ax.annotate(season_label(r.season), (r.passing, r.creating), xytext=(-8 if k % 2 else 8, -3), ha="right" if k % 2 else "left", textcoords="offset points", fontsize=8.5, color=NAVY)
 ax.annotate(f"Others: {', '.join(f'{n} ({k})' for n, k in o.name.value_counts().items())}", xy=(0.99, 0.02), xycoords="axes fraction", ha="right", fontsize=8.5, color=MUTED)
 ax.set_xlabel("Completed passes in the opposition half per 90"); ax.set_ylabel("Chances created per 90")
-ax.grid(color="#ECEAE4", lw=0.8); ax.set_axisbelow(True); ax.legend(frameon=False, loc="upper left")
+ax.grid(color=GRID, lw=0.8); ax.set_axisbelow(True); ax.legend(frameon=False, loc="upper left")
 n_s = len(s)
 titles(fig, f"Only {len(BOTH)} midfield seasons in ten years were top 5 for both creating and passing. {n_s} were Silva's",
        f"Every Premier League midfield season with 1,800+ minutes, 2010/11 to 2019/20 ({len(R)} seasons). Next most: Özil, {int((o.name == 'Mesut Özil').sum())}", SRC_PL)
@@ -167,14 +167,14 @@ code(r'''
 fig, ax = plt.subplots(figsize=(10.5, 6.2))
 ax.scatter(DR.carrying, DR.dribble_pct * 100, s=16, color=GREY, alpha=0.55, edgecolors="none")
 s = DR[DR.name == SILVA]
-ax.scatter(s.carrying, s.dribble_pct * 100, s=90, color=NAVY, edgecolors="white", lw=1.2, zorder=3)
+ax.scatter(s.carrying, s.dribble_pct * 100, s=90, color=NAVY, edgecolors=BG, lw=1.2, zorder=3)
 for k, r in enumerate(s.sort_values("dribble_pct").itertuples()):
     ax.annotate(season_label(r.season), (r.carrying, r.dribble_pct * 100), xytext=(-8 if k % 2 else 8, -3), ha="right" if k % 2 else "left", textcoords="offset points", fontsize=8.5, color=NAVY)
 for r in DR.sort_values("carrying", ascending=False).head(5).itertuples():
     ax.annotate(f"{r.name} {season_label(r.season)[2:]}", (r.carrying, r.dribble_pct * 100), xytext=(-6, 6), textcoords="offset points", ha="right", fontsize=8, color=MUTED)
 ax.axvline(DR.carrying.median(), color=GREY, lw=0.8, ls="--"); ax.axhline(DR.dribble_pct.median() * 100, color=GREY, lw=0.8, ls="--")
 ax.set_xlabel("Successful dribbles (take-ons) per 90"); ax.set_ylabel("Dribble success %")
-ax.grid(color="#ECEAE4", lw=0.8); ax.set_axisbelow(True)
+ax.grid(color=GRID, lw=0.8); ax.set_axisbelow(True)
 titles(fig, "A reliable dribbler, not a prolific one: Silva rarely lost a take-on, but didn't attempt many",
        "Premier League midfielders with 1,800+ minutes and 40+ attempted dribbles, 2010/11 to 2019/20. Dashed lines = medians", SRC_PL)
 fig.savefig(FIGS / "06_dribbling.png")
