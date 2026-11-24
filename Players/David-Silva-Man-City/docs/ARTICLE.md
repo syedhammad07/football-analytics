@@ -129,6 +129,10 @@ And when Silva announced his retirement in July 2023, his old captain **Vincent 
 
 > "everyone would be saying he is one of the best players in the world"<br>— **Roberto Mancini**, on what would have happened had Silva joined Barcelona
 
+> "one of the best No 10s in the Premier League"<br>— **Owen Hargreaves**, his City teammate in 2011/12
+
+> "one of the most talented players Spain has ever produced"<br>— **Xavi**, his Spain teammate
+
 **What they saw him do.** The most revealing quotes aren't about how good he was, but about *how* he did it.
 
 > "Moving between the lines I have never seen someone like him."<br>— **Pep Guardiola**, July 2020, on his ability to find space in the tightest areas
@@ -144,10 +148,6 @@ Guardiola, who had coached Xavi and Iniesta at Barcelona, counted Silva in the s
 > "You pass him a bad ball and he makes it look like a good ball"<br>— **Kyle Walker**, on the first touch that made teammates look better
 
 Hart's first impression is the best measure of how much Silva surprised people. When the "wizard" arrived in 2010, Hart remembered thinking he looked "tiny, slow, only left-footed". Guardiola, watching from Barcelona, admitted he had expected the small Spaniard to struggle in England too.
-
-> "one of the best No 10s in the Premier League"<br>— **Owen Hargreaves**, his City teammate in 2011/12
-
-> "one of the most talented players Spain has ever produced"<br>— **Xavi**, his Spain teammate
 
 **His rivals:**
 
