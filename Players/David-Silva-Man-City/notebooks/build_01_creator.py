@@ -72,7 +72,7 @@ md("## Charts")
 
 code(r'''
 # Figure 1: ten seasons
-fig, ax = plt.subplots(figsize=(11, 5))
+fig, ax = plt.subplots(figsize=fs((11, 5), (9.2, 4.6)))
 x = np.arange(len(S)); w = 0.38
 ax.bar(x - w / 2, S.goals, w, color=SKY, label="Goals")
 ax.bar(x + w / 2, S.goalAssists, w, color=NAVY, label="Assists")
@@ -110,7 +110,7 @@ fig.savefig(FIGS / "02_decade_assists.png")
 code(r'''
 # Figure 3: rank in every season
 M = RS[["r_" + c for c in RANKS]].T
-fig, ax = plt.subplots(figsize=(11.5, 4.4))
+fig, ax = plt.subplots(figsize=fs((11.5, 4.4), (9.6, 3.8)))
 cmap = plt.matplotlib.colors.LinearSegmentedColormap.from_list("rk", HEAT)
 ax.imshow(np.clip(M.values, 1, 40), cmap=cmap, vmin=1, vmax=40, aspect="auto")
 for i in range(M.shape[0]):
@@ -135,7 +135,7 @@ best = R[R.season == 2011].copy()
 for c in DIMS:
     best["p_" + c] = best[c].rank(pct=True) * 100
 row = best[best.name == SILVA].iloc[0]
-fig, ax = plt.subplots(figsize=(10, 4.6))
+fig, ax = plt.subplots(figsize=fs((10, 4.6), (9, 3.6)))
 vals = [row["p_" + c] for c in DIMS]
 ax.barh(range(len(DIMS)), vals, color=[NAVY if v >= 90 else SKY if v >= 60 else GREY for v in vals], height=0.6)
 for i, v in enumerate(vals):
@@ -150,7 +150,7 @@ fig.savefig(FIGS / "04_profile_2011_12.png")
 
 code(r'''
 # Figure 5: creator and passer at once
-fig, ax = plt.subplots(figsize=(10.5, 6.4))
+fig, ax = plt.subplots(figsize=fs((10.5, 6.4), (9, 6.2)))
 ax.scatter(R.passing, R.creating, s=14, color=GREY, alpha=0.55, edgecolors="none", label="A midfield season (1,800+ min)")
 o = BOTH[BOTH.name != SILVA]
 ax.scatter(o.passing, o.creating, s=46, color=SKY, edgecolors=BG, lw=0.8, zorder=3, label="Top 5 that season for both")
@@ -169,7 +169,7 @@ fig.savefig(FIGS / "05_creator_and_passer.png")
 
 code(r'''
 # Figure 6: the dribbling test
-fig, ax = plt.subplots(figsize=(10.5, 6.2))
+fig, ax = plt.subplots(figsize=fs((10.5, 6.2), (9, 6)))
 ax.scatter(DR.carrying, DR.dribble_pct * 100, s=16, color=GREY, alpha=0.55, edgecolors="none")
 s = DR[DR.name == SILVA]
 ax.scatter(s.carrying, s.dribble_pct * 100, s=90, color=NAVY, edgecolors=BG, lw=1.2, zorder=3)

@@ -31,6 +31,11 @@ plt.rcParams.update({
 })
 
 
+def fs(light, pdf):
+    """Figure size: the README (light) size, or a narrower one for the PDF so the text prints larger on the page."""
+    return pdf if DARK_THEME else light
+
+
 def titles(fig, title, subtitle, source, y=1.06):
     fig.suptitle(title, x=0.01, y=y, ha="left", va="bottom", fontsize=17, fontweight="bold", color=DARK, family="Barlow Condensed")
     fig.text(0.01, y - 0.005, subtitle, ha="left", va="top", fontsize=10.5, color=MUTED)

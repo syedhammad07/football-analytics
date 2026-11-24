@@ -61,7 +61,7 @@ def inline(text):
 def chart_image(rel):
     path = (SRC.parent / rel.replace("/figures/", "/figures_dark/")).resolve()  # black-background charts for the black page
     w, h = PILImage.open(path).size
-    max_w, max_h = A4[0] - 40 * mm, 120 * mm
+    max_w, max_h = A4[0] - 40 * mm, 140 * mm
     s = min(max_w / w, max_h / h)
     return Image(str(path), w * s, h * s)
 
@@ -88,8 +88,8 @@ def close_block():
     global block
     flush_lists()
     if block:
-        story.append(KeepTogether(block[:3]))   # keep heading, chart and first paragraph on one page
-        story.extend(block[3:])
+        story.append(KeepTogether(block[:4]))   # keep heading, chart and its figure caption on one page
+        story.extend(block[4:])
     block = None
 
 for line in SRC.read_text(encoding="utf-8").splitlines():
@@ -128,7 +128,11 @@ for line in SRC.read_text(encoding="utf-8").splitlines():
     elif t.startswith("**") and t.endswith("**") and story and len(story) == 1:
         story.append(Paragraph(inline(t), S["sub"]))
     elif t.startswith("*") and t.endswith("*") and not t.startswith("**"):
-        target.append(Paragraph(inline(t), S["meta"]))
+        cap = Paragraph(inline(t), S["meta"])
+        if len(target) >= 2 and isinstance(target[-2], Image):   # a figure caption: never let it fall onto the next page alone
+            sp = target.pop(); img = target.pop(); target.append(KeepTogether([img, sp, cap]))
+        else:
+            target.append(cap)
     else:
         target.append(Paragraph(inline(t), S["body"]))
 close_block()

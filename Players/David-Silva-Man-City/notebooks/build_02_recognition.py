@@ -92,7 +92,7 @@ show = pd.concat([sub.sort_values("gap").head(6), sub.sort_values("gap", ascendi
 if SILVA not in show.index:
     show = pd.concat([show, sub.loc[[SILVA]]])
 show = show.sort_values("gap")
-fig, ax = plt.subplots(figsize=(10, 6))
+fig, ax = plt.subplots(figsize=fs((10, 6), (9, 5.8)))
 yy = np.arange(len(show))
 for yi, (n, r) in zip(yy, show.iterrows()):
     ax.plot([r.expected, r.actual], [yi, yi], color=GREY, lw=2.2, zorder=1)
@@ -116,7 +116,7 @@ fig.savefig(FIGS / "08_expected_vs_actual_selections.png")
 code(r'''
 # Figure 9: against the all-time greats, per game
 g = G.sort_values("a_pg")
-fig, ax = plt.subplots(figsize=(10.5, 5.6))
+fig, ax = plt.subplots(figsize=fs((10.5, 5.6), (9.6, 5.4)))
 y = np.arange(len(g))
 ax.barh(y, g.a_pg, color=[NAVY if n == SILVA else SKY if h != "no" else GREY for n, h in zip(g.name, g.hall_of_fame)], height=0.62)
 for yi, r in zip(y, g.itertuples()):
