@@ -144,7 +144,7 @@ Guardiola, who had coached Xavi and Iniesta at Barcelona, counted Silva in the s
 
 > "You pass him a bad ball and he makes it look like a good ball"<br>— **Kyle Walker**, on the first touch that made teammates look better
 
-Hart's first impression is the best measure of how much Silva surprised people. When the "wizard" arrived in 2010, Hart remembered thinking he looked "tiny, slow, only left-footed". Guardiola, watching from Barcelona, admitted he had expected the small Spaniard to struggle in England too.
+Not everyone saw it at first. When he arrived in 2010, Hart thought he looked "tiny, slow, only left-footed", and Guardiola admitted he had expected him to struggle in England.
 
 **His rivals:**
 
@@ -156,15 +156,13 @@ Hart's first impression is the best measure of how much Silva surprised people. 
 
 > "would've twisted me inside out"<br>— **Roy Keane** (Manchester United), on Sky Sports in July 2020. Keane, the hardest midfielder of his era, said he was glad he had never had to play against Silva, and called him a genius
 
-Graeme Souness (Liverpool) said on the same Sky panel that Silva was good enough to have walked into Guardiola's great Barcelona side alongside Xavi and Iniesta. In his Times column he went further: choosing between Silva and De Bruyne, he said he would take Silva, but only just.
+Graeme Souness (Liverpool) said on the same Sky panel that Silva would have walked into Guardiola's great Barcelona side with Xavi and Iniesta, and in his Times column he picked Silva over De Bruyne, just.
 
 **Gary Neville** (Manchester United) said on the same panel that, in his lifetime, Silva was probably the first City player who was truly world class.
 
-> "undoubtedly one of the best players in the Premier League"<br>— **Frank Lampard**, a Chelsea rival for years before a season as his City teammate in 2014/15. He has also compared him with Zola, Robben and Hazard
+> "undoubtedly one of the best players in the Premier League"<br>— **Frank Lampard**, a Chelsea rival before a season as his City teammate in 2014/15, who also compared him with Zola, Robben and Hazard
 
-Alan Shearer wrote that among the best foreign players the league has had, Silva is one of the best, if not the best. And Sir Alex Ferguson is reported to believe that not signing him from Valencia was a mistake.
-
-That's the pattern I was looking for. The people who know the game best, the ones who had to mark him, rank him with the greatest.
+Alan Shearer wrote that among the best foreign players the league has had, Silva is one of the best, if not the best, and Sir Alex Ferguson reportedly regrets not signing him from Valencia. That's the pattern I was looking for: the people who had to mark him rank him with the greatest.
 
 ---
 
