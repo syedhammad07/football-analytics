@@ -117,7 +117,7 @@ And when Silva announced his retirement in July 2023, his old captain **Vincent 
 
 > "one of the best players who has ever played in the Premier League"<br>— **Kevin De Bruyne**, July 2020
 
-**Kyle Walker** explained what made Silva different under Guardiola. As a kid he was taught to receive the ball on the half-turn, he told BBC Football Focus in 2021, but at City "if you get on the half-turn here, Pep goes mental": Guardiola wants the ball set back and moved on quickly. On The Overlap, Gary Neville's show, Walker went further. Guardiola hates midfielders receiving on the half-turn, he said, and the one player who was given that freedom was David Silva. Not even De Bruyne was. When Walker named the best player he played with at City on his own podcast in 2024, he chose Silva: "I think he just pips Kevin."
+**Kyle Walker** explained what made Silva different under Guardiola. As a kid he was taught to receive the ball on the half-turn, he told BBC Football Focus in 2021, but at City "if you get on the half-turn here, Pep goes mental": Guardiola wants the ball set back and moved on quickly. On The Overlap, Gary Neville's show, Walker went further. Guardiola hates midfielders receiving on the half-turn, he said, and the one player who was given that freedom was David Silva. Not even De Bruyne was. When Walker named the best player he played with at City on his own podcast in 2024, he chose Silva: "I think he just pips Kevin." On Rio Ferdinand's channel he drew the line between them: "All-rounder Kevin, all-rounder, but David individually."
 
 > "one of the best midfielders of all-time"<br>— **Bernardo Silva**, who also said Silva hadn't always had the praise he deserved
 
@@ -132,6 +132,10 @@ And when Silva announced his retirement in July 2023, his old captain **Vincent 
 **What they saw him do.** The most revealing quotes aren't about how good he was, but about *how* he did it.
 
 > "Moving between the lines I have never seen someone like him."<br>— **Pep Guardiola**, July 2020, on his ability to find space in the tightest areas
+
+> "In the small spaces, he is maybe the best I have seen."<br>— **Pep Guardiola**, after Silva scored one and made two in a 5–0 win over Newcastle, July 2020
+
+Guardiola, who had coached Xavi and Iniesta at Barcelona, counted Silva in the same company. Marking Silva's 300th game for City, he called himself a lucky man because "I was with Xavi, [Andres] Iniesta and now Silva".
 
 > "he knows where to turn so that he has time"<br>— **Leroy Sané**, on his vision. Sané added that in training rondos, Silva was never the one stuck in the middle chasing the ball
 
@@ -275,6 +279,8 @@ For me, he belongs in the Hall of Fame, and in any serious list of the league's 
 - Guardiola on moving between the lines, July 2020: [FourFourTwo](https://www.fourfourtwo.com/news/guardiola-hails-silva-in-impressive-manchester-city-display-1594265554000); expecting him to struggle: [World Soccer Talk / AFP, August 2019](https://worldsoccertalk.com/afp/guardiola-surprised-by-silvas-success-in-england-20190823-CMS-278169.html/)
 - Sané: [FourFourTwo](https://www.fourfourtwo.com/us/news/sane-david-silva-sees-everything)
 - Hart on facing him in training: [Goal](https://www.goal.com/en-gb/news/25m-tiny-slow-only-left-footed-didnt-know-his-position-hart/10zhr60hhikrd1ii2ttt8oavhl); first impression (Kickback podcast): [Football España](https://www.football-espana.net/2019/10/01/david-silva-was-tiny-slow-one-footed-joe-hart)
+- Walker on De Bruyne vs Silva (Vibe with FIVE): [EssentiallySports](https://essentiallysports.com/soccer-football-news-not-erling-haaland-or-kevin-de-bruyne-ex-manchester-city-star-crowned-best-teammate-by-kyle-walker)
+- Guardiola on small spaces, July 2020: [Manchester City](https://www.mancity.com/news/mens/city-v-newcastle-pep-guardiola-reaction-63729833); on Xavi, Iniesta and Silva: [FourFourTwo](https://www.fourfourtwo.com/news/guardiola-emery-told-me-sign-silva-barcelona)
 - Walker on bad passes (Vibe with FIVE): [SPORTbible](https://sportbible.com/football/football-news/man-city/kyle-walker-best-teammates-tottenham-player-831408-20240325)
 - Lampard: [Manchester City, March 2015](https://live.mancity.com/news/first-team/first-team-news/2015/march/lampard-on-silva-1010) and [ESPN](https://africa.espn.com/football/story/_/id/37406902/david-silva-good-eden-hazard-arjen-robben-says-frank-lampard)
 - Hargreaves (a former teammate): [premierleague.com](https://premierleague.com/news/643626)
