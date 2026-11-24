@@ -97,7 +97,7 @@ I remember Silva as a dribbler: the shoulder drop, the half-turn, the way defend
 - **Reliable, yes.** Among midfielders with 40+ attempts, his dribble success was in the **top 16 every season**, and 5th or 6th in five of them. In 2017/18 he completed 78% of his take-ons.
 - **Prolific, no.** For successful dribbles per 90 he ranked between **13th and 29th** of roughly 75 regular midfielders each season. Hazard and Zaha completed two or three times as many.
 
-So the honest answer is that Silva wasn't a dribbler in the way Hazard was. An Opta "dribble" is a take-on: an attempt to beat a defender by running past him. Silva rarely needed to. His way out of pressure was the turn, the first touch away from the challenge and the quick pass, none of which is recorded as a dribble. When he did take a defender on, he almost always won. He just preferred not to have to.
+So the honest answer is that Silva wasn't a dribbler in the way Hazard was. An Opta "dribble" is a take-on: an attempt to beat a defender by running past him. Silva rarely needed to. His way out of pressure was the turn, the first touch away from the challenge and the quick pass, none of which is recorded as a dribble. Kyle Walker tells a story in Chapter 5 that fits exactly: Guardiola banned his midfielders from receiving on the half-turn, with one exception, Silva. When he did take a defender on, he almost always won. He just preferred not to have to.
 
 ---
 
@@ -111,13 +111,13 @@ The best evidence for Silva may not be a number. It's how the people who played 
 
 > "It was an honour to play with and wish you all the best"<br>— **Kevin De Bruyne**
 
-> "It was an honour to play alongside a such great player and incredible person."<br>— **Fernandinho**
-
 And when Silva announced his retirement in July 2023, his old captain **Vincent Kompany** replied with two words: "The wizard!"
 
 **His teammates and managers, in interviews:**
 
 > "one of the best players who has ever played in the Premier League"<br>— **Kevin De Bruyne**, July 2020
+
+**Kyle Walker** explained what made Silva different under Guardiola. As a kid he was taught to receive the ball on the half-turn, he told BBC Football Focus in 2021, but at City "if you get on the half-turn here, Pep goes mental": Guardiola wants the ball set back and moved on quickly. On The Overlap, Gary Neville's show, Walker went further. Guardiola hates midfielders receiving on the half-turn, he said, and the one player who was given that freedom was David Silva. Not even De Bruyne was. When Walker named the best player he played with at City on his own podcast in 2024, he chose Silva: "I think he just pips Kevin."
 
 > "one of the best midfielders of all-time"<br>— **Bernardo Silva**, who also said Silva hadn't always had the praise he deserved
 
@@ -236,7 +236,10 @@ For me, he belongs in the Hall of Fame, and in any serious list of the league's 
 ## Sources
 
 **Tweets and quotes**
-- Agüero, De Bruyne and Fernandinho tweets, 17 August 2020: [Stadium Astro](https://english.stadiumastro.com/node/259422), [SportsLens](https://sportslens.com/?p=308423), [The18](https://the18.com/node/75771)
+- Agüero and De Bruyne tweets, 17 August 2020: [Stadium Astro](https://english.stadiumastro.com/node/259422), [SportsLens](https://sportslens.com/?p=308423)
+- Walker on the half-turn, BBC Football Focus 2021: [All Football](https://www.allfootballapp.com/articles/2909874-kyle-walker-reveals-what-pep-guardiola), quote as posted by [Caño Football](https://x.com/CanoFootball/status/1464986505496178700)
+- Walker on The Overlap (Silva the only one allowed the half-turn): video clip from The Overlap, described by [Man City Brazil](https://x.com/ManCityBrazil/status/2036158337654362334); no written transcript found, so it is paraphrased
+- Walker naming Silva the best he played with at City, *You'll Never Beat Kyle Walker* podcast, 2024: [Manchester City News](https://www.manchestercity.news/kyle-walker-says-player-who-left-man-city-in-2020-was-better-than-kevin-de-bruyne/)
 - Kompany's reply to Silva's retirement: [Sporza, 27 July 2023](https://sporza.be/nl/2023/07/27/david-silva-moet-stoppen-door-blessure-kompany-tovenaar-jij-was-zo-speciaal~1690466016756/)
 - De Bruyne: [FourFourTwo, July 2020](https://fourfourtwo.com/news/kevin-de-bruyne-wants-champions-league-win-to-give-david-silva-perfect-send-off-1595844804000)
 - Bernardo Silva: [Goal](https://www.goal.com/en-gb/news/david-silva-is-one-of-the-best-midfielders-of-all-time-bernardo-hails-man-city-team-mate/lqqh7hw2whn91piescbs2qo66)

@@ -16,7 +16,7 @@ David Silva's ten seasons at Manchester City, compared with every Premier League
 - **Every season, near the top:** top 10 for chances created per 90 in all ten seasons, first in 2012/13 and 2013/14; top 5 for passes in the opposition half in nine.
 - **A rare profile:** of 757 regular midfield seasons, only 17 were top 5 for both chances created and passing in the opposition half. Seven were Silva's; Özil had five.
 - **The dribbler question:** reliable, not prolific. Top 16 for dribble success every season, but only 13th–29th for successful dribbles per 90. His escapes were turns and passes, which Opta doesn't count as dribbles.
-- **What the players said:** Agüero, De Bruyne, Bernardo Silva, Carragher, Neville, Lampard, Shearer and others rank him among the league's best ever (sourced in the report).
+- **What the players said:** Agüero, De Bruyne, Bernardo Silva, Carragher, Neville, Lampard, Shearer and others rank him among the league's best ever. Kyle Walker says Guardiola banned receiving on the half-turn for everyone except Silva, and names him the best player he played with at City (all sourced in the report).
 - **The model:** the voters reward minutes, passing, dribbling and goals, and give almost no weight to chances created, Silva's best number. Even so they didn't miss him: picked 3 times against 1.8 expected. Özil and Cazorla were the under-rated ones.
 - **The all-time conversation:** 0.30 assists per game, third among the great midfielders behind De Bruyne and Fàbregas, ahead of Hazard (0.22), Gerrard (0.18) and Lampard (0.17). Shortlisted for the Hall of Fame in 2024 and 2025 and not inducted.
 
