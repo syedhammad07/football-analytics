@@ -115,7 +115,12 @@ cmap = plt.matplotlib.colors.LinearSegmentedColormap.from_list("rk", HEAT)
 ax.imshow(np.clip(M.values, 1, 40), cmap=cmap, vmin=1, vmax=40, aspect="auto")
 for i in range(M.shape[0]):
     for j in range(M.shape[1]):
-        v = int(M.values[i, j]); ax.text(j, i, v, ha="center", va="center", fontsize=10.5, fontweight="bold", color=HEAT_HI if v <= 6 else DARK)
+        v = int(M.values[i, j])
+        if DARK_THEME:  # black numbers on any light cell, light numbers only on the darkest cells
+            r, g, b, _ = cmap((min(v, 40) - 1) / 39); txt = "#000000" if 0.2126 * r + 0.7152 * g + 0.0722 * b > 0.25 else DARK
+        else:
+            txt = HEAT_HI if v <= 6 else DARK
+        ax.text(j, i, v, ha="center", va="center", fontsize=10.5, fontweight="bold", color=txt)
 ax.set_yticks(range(len(RANKS)), [RANKS[c[2:]] + " per 90" for c in M.index], fontsize=10)
 ax.set_xticks(range(M.shape[1]), [f"{season_label(s)}\n(of {int(n)})" for s, n in zip(RS.index, RS.n)], fontsize=8.5)
 ax.tick_params(length=0); [s.set_visible(False) for s in ax.spines.values()]
