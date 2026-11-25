@@ -32,6 +32,7 @@ Projects are grouped by competition. Each project has its own folder with an art
 | --- | --- | --- |
 | 🩵 [**Yaya Touré: Was He Under-Rated?**](Players/Yaya-Toure-Man-City/) | Was Yaya Touré under-rated, and who really was? | 1,629 midfielder-seasons · under-rated model · 11 charts · [report](Players/Yaya-Toure-Man-City/docs/ARTICLE.md) |
 | 🪄 [**David Silva: The Most Under-Rated Great?**](Players/David-Silva-Man-City/) | Why is the decade's best creator left out of the all-time conversation? | 757 midfielder-seasons · recognition model · sourced player quotes · 9 charts · [report](Players/David-Silva-Man-City/docs/ARTICLE.md) |
+| 🎯 [**Christian Eriksen: The Most Productive Midfielder Nobody Talks About?**](Players/Christian-Eriksen-Spurs/) | More goals + assists than any midfielder of his time, and almost forgotten | xG and xA · shooting and risk · pizza charts · recognition model · sourced quotes · 11 charts · [report](Players/Christian-Eriksen-Spurs/docs/ARTICLE.md) |
 
 ### 🛠️ [Projects](Projects/)
 
@@ -92,7 +93,8 @@ football-analytics/
 ├── Players/                           ← projects about one player
 │   ├── README.md
 │   ├── Yaya-Toure-Man-City/            ← was Yaya Touré under-rated? report + model
-│   └── David-Silva-Man-City/           ← David Silva: the most under-rated great? report + model
+│   ├── David-Silva-Man-City/           ← David Silva: the most under-rated great? report + model
+│   └── Christian-Eriksen-Spurs/        ← Christian Eriksen: the most productive midfielder nobody talks about?
 ├── Projects/                          ← interactive pages and tools
 │   ├── Midfield-Matchup/               ← compare any two Premier League midfielders
 │   ├── Scout-Finder/                   ← find a cheaper player with the same numbers
